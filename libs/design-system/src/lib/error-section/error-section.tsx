@@ -4,11 +4,11 @@ import styles from './error-section.module.scss';
 import classNames from 'classnames';
 
 import { FourHundredFour } from './assets/four-hundred-four';
-import { FiveHundredFive } from './assets/five-hundred-five';
+import { FiveHundred } from './assets/five-hundred';
 import { Waves } from './assets/waves';
 
 interface ErrorSectionProps {
-  errorNumber?: 404 | 505;
+  errorNumber?: 404 | 500;
 }
 
 export function ErrorSection({ errorNumber = 404 }: ErrorSectionProps) {
@@ -24,11 +24,11 @@ export function ErrorSection({ errorNumber = 404 }: ErrorSectionProps) {
       Image = <FourHundredFour />;
       break;
     }
-    case 505: {
-      mod = 'error_section--505_mod';
+    case 500: {
+      mod = 'error_section--500_mod';
       title = 'Server Error';
       text = 'Oops.. Something went wrong. Try to refresh the page.';
-      Image = <FiveHundredFive />;
+      Image = <FiveHundred />;
       break;
     }
 
