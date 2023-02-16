@@ -31,7 +31,7 @@ function Category({ category, sections }: CategoryProps) {
     <>
       <CustomHead title={category?.name} />
       <GradientSection>
-        {/* <SearchHero
+        <SearchHero
           title={category?.name}
           isBackButton={'Back'}
           iconName={icon}
@@ -51,7 +51,7 @@ function Category({ category, sections }: CategoryProps) {
               );
             })}
           </LinksBlocksList>
-        </LinksBlocksSection> */}
+        </LinksBlocksSection>
       </GradientSection>
     </>
   );
@@ -77,16 +77,17 @@ const prepareSections = (sections: Section[], articles: Article[]) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
-  const categories = await CATEGORIES_API.getAllCategories();
+  // const categories = await CATEGORIES_API.getAllCategories();
 
-  const paths = categories?.map((category) => ({
-    params: { id: category.slug },
-  }));
+  // const paths = categories?.map((category) => ({
+  //   params: { id: category.slug },
+  // }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+  // return {
+  //   paths,
+  //   fallback: false,
+  // };
+  return 0;
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
