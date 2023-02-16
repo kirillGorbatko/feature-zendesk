@@ -5,7 +5,7 @@ const ServerErrorPage = () => {
   return (
     <>
       <CustomHead title="Server Error" />
-      <ErrorSection errorNumber={505} />
+      <ErrorSection errorNumber={500} />
     </>
   );
 };

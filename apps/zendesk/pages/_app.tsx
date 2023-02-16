@@ -7,7 +7,7 @@ import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const isErrorPage = router.pathname === '/404' || router.pathname === '/505';
+  const isErrorPage = router.pathname === '/404' || router.pathname === '/500';
 
   return (
     <>
