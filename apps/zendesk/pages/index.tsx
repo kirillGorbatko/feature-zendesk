@@ -12,7 +12,7 @@ interface IndexProps {
   categories: Category[];
 }
 
-export function Index({ categories }: IndexProps) {
+export function Index() {
   return (
     <>
       <CustomHead title="Home" />
@@ -32,12 +32,12 @@ export function Index({ categories }: IndexProps) {
 
 export default Index;
 
-export async function getServerSideProps() {
-  const categories = await CATEGORIES_API.getAllCategories();
+// export async function getServerSideProps() {
+//   const categories = await CATEGORIES_API.getAllCategories();
 
-  return {
-    props: {
-      categories,
-    },
-  };
-}
+//   return {
+//     props: {
+//       categories,
+//     },
+//   };
+// }
