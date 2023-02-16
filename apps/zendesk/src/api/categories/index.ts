@@ -10,7 +10,7 @@ type GetCategoryResponse = {
   category: Category;
 };
 
-const BASE_URL = 'feature-zendesk-kirillgorbatko.vercel.app/categories';
+const BASE_URL = '/categories';
 
 const getAllCategories = async () => {
   const allCetegories = await getContentByType<Category>({
