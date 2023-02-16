@@ -94,7 +94,7 @@ export async function getServerSideProps({ req, query, res }) {
       featureConsent: data.featureConsent,
       isAnnual: false,
       isArtist: false,
-      meta: {},
+      meta: data.meta || {},
     },
   };
 }

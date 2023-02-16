@@ -88,7 +88,7 @@ export async function getServerSideProps({ req, query, res }) {
       variant: data.variant,
       isAnnual: false,
       isArtist: true,
-      meta: {},
+      meta: data.meta || {},
     },
   };
 }
