@@ -1,0 +1,213 @@
+{
+  "id": "6324ea15a5f0557e9fdfba2f",
+  "title": "Solutions Page - new_default",
+  "slug": "new_default",
+  "heroSection": {
+    "title": "Your music.<br/>Your fans.<br/>Your data.",
+    "description": "Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis."
+  },
+  "featuresSection": {
+    "features": [
+      {
+        "tag": "Fan contact info",
+        "title": {
+          "desktop": "Who are my fans?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Collect fan contact info and organize your fan base in an Audience Dashboard that you can sort, segment and sync to email platforms like Mailchimp and Active Campaign.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/fan-contact-info.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "6324e9f96982b64faba1763f",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Geo-location",
+        "title": {
+          "desktop": "Where do my fans live?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Identify which countries drive the most streams and where your fans live to focus on building an authentic community of fans.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/geo-location.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "6324e9f96982b64faba17640",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Social platforms",
+        "title": {
+          "desktop": "Which music services do my fans use?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "See which music services your fans use most to listen to your music and take advantage of opportunities for in service promotion.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/social-platforms.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "6324e9f96982b64faba17641",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Streaming services",
+        "title": {
+          "desktop": "Which music services do my fans use?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "See which music services your fans use most to listen to your music and take advantage of opportunities for in service promotion.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/streaming-services.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "6324e9f96982b64faba17642",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Marketing Campaigns and Activities",
+        "title": {
+          "desktop": "How do I track my marketing efforts?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Wherever you share your links online, identify which marketing channels, like posts, ads or email newsletters, give you the best results.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/marketing-campaigns-and-activities.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "6324e9f96982b64faba17643",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Sales conversion tracking",
+        "title": {
+          "desktop": "How much am I selling?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Track sales revenue and streams from your merch store as well as from Feature.fm’s data partners including YouTube Music, Rough Trade, Boomplay, Anghami, and Qobuz.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/sales-conversion-tracking.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "6324e9f96982b64faba17644",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Some Tag",
+        "title": {
+          "desktop": "Real-time data at both the link and artist level ",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Collect fan contact info and organize your fan base in an Audience Dashboard that you can sort, segment and sync to email platforms like Mailchimp and Active Campaign.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/real-time-data.png",
+        "isInverse": true,
+        "padding": "medium",
+        "id": "6324e9f96982b64faba17645",
+        "topCapabilites": []
+      },
+      {
+        "tag": "Some Tag",
+        "title": {
+          "desktop": "Improve your ad performance by sending your data to retargeting programs",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Use your data to improve ad campaigns with powerful retargeting sent directly to your ad platforms or connect to analytics platforms that bring all of your data together.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/improve-ad-performance.png",
+        "isInverse": true,
+        "padding": "medium",
+        "id": "6324e9f96982b64faba17646",
+        "topCapabilites": []
+      }
+    ]
+  },
+  "youShouldAlsoCheckOut": {
+    "title": "Two more things you should check out ",
+    "features": [
+      {
+        "title": {
+          "desktop": "Landing Pages & Smart Links ",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Create links and landing pages for everything you need to promote as an artist.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/links",
+        "imageUrl": "/img/solutions/feature-links.png",
+        "id": "6324e9f96982b64faba17647"
+      },
+      {
+        "title": {
+          "desktop": "Audience Relationship Management",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Manage your relationships with your fans like never before, collect fan contact info, get real-time insights and keep your fans notified about your latest drops.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/audience",
+        "imageUrl": "/img/solutions/audience.png",
+        "id": "6324e9f96982b64faba17648"
+      }
+    ]
+  },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Get Started for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Start free",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "_status": "draft",
+  "createdAt": "2022-09-16T21:26:45.834Z",
+  "updatedAt": "2022-09-16T21:26:45.834Z",
+  "meta": {}
+}

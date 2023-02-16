@@ -1,0 +1,671 @@
+{
+  "summary": {
+    "enterprise": {
+      "name": "Enterprise",
+      "price_monthly": "Contact Us",
+      "price_yearly": "Contact Us",
+      "description": "For businesses who require automation, integrations and custom solutions that scale",
+      "CTA": "Start for Free",
+      "features": [
+        "Unlimited artist folders",
+        "Unlimited account team members",
+        "Unlimited artist folder team members",
+        "Unlimited links and landing pages",
+        "All available services",
+        "Artist Bio Links",
+        "All Pre-Save services, global/local release conversion",
+        "Collect unlimited emails, access all emails",
+        "Lifetime insight data",
+        "3 Spotify Pre-Save Multiple Follows",
+        "Unlimited custom domains/sub-domains",
+        "Full design customization",
+        "Retargeting pixels by geo-location",
+        "Email synching*",
+        "Unlimited territory settings",
+        "API & automated link creation"
+      ]
+    },
+    "marketer": {
+      "name": "Marketer",
+      "price_monthly": 99,
+      "price_yearly": 89,
+      "description": "For growing businesses with access to manage your marketing across multiple artists",
+      "CTA": "Start for Free",
+      "features": [
+        "Unlimited artist folders",
+        "5 account team members",
+        "5 artist folder team members",
+        "Unlimited links and landing pages",
+        "All available services",
+        "Artist Bio Links",
+        "All Pre-Save services, global release conversion",
+        "Collect unlimited emails, access 250 emails per link",
+        "Lifetime insight data",
+        "3 Spotify Pre-Save Multiple Follows",
+        "5 custom sub-domain",
+        "Full design customization",
+        "Retargeting pixels",
+        "Email synching*",
+        "3 territory settings"
+      ]
+    },
+    "promarketer": {
+      "name": "Pro Marketer",
+      "price_monthly": 199,
+      "price_yearly": 179,
+      "description": "For professional marketers with access to the most advanced features for marketing your roster",
+      "CTA": "Start for Free",
+      "features": [
+        "Unlimited artist folders",
+        "10 account team members",
+        "10 artist folder team members",
+        "Unlimited links and landing pages",
+        "All available services",
+        "Artist Bio Links",
+        "All Pre-Save services, global/local release conversion",
+        "Collect unlimited emails, access all emails",
+        "Lifetime insight data",
+        "3 Spotify Pre-Save Multiple Follows",
+        "1 custom domain and unlimited custom sub-domain",
+        "Full design customization",
+        "Retargeting pixels by geo-location",
+        "Email synching*",
+        "Unlimited territory settings"
+      ]
+    }
+  },
+  "detailed": {
+    "accounts_and_permissions": [
+      {
+        "feature": "Artist Folders",
+        "tooltip": "Organize your work by artist across your roster",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited1"
+      },
+      {
+        "feature": "Account Team Members",
+        "tooltip": "Invite team members to access your Feature.fm Account",
+        "link": "#",
+        "marketer": "5",
+        "pro_marketer": "10",
+        "enterprise": "Custom"
+      },
+      {
+        "feature": "Artist Folder Permissions",
+        "tooltip": "Invite team members to specific artist folders",
+        "link": "#",
+        "marketer": "5",
+        "pro_marketer": "10",
+        "enterprise": "Custom"
+      }
+    ],
+    "landing_pages": [
+      {
+        "feature": "Artist Bio Links",
+        "tooltip": "A link in bio for your social media profiles that connects all of your latest work and content in one place",
+        "link": "#",
+        "marketer": "1 per artist",
+        "pro_marketer": "1 per artist",
+        "enterprise": "1 per artist"
+      },
+      {
+        "feature": "Pre-Save Links",
+        "tooltip": "Collect saves and promote your music ahead of your release date",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Released Smart Links",
+        "tooltip": "A smart link that routes fans to your music in their preferred music serice",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Scheduled Release Smart Links",
+        "tooltip": "Create your smart link ahead of time and schedule it to go live on release day.",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Contests",
+        "tooltip": "Run giveaways and contests with prizes for taking actions that grow your followings",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Tour & Event Links",
+        "tooltip": "Route fans to your latest tour dates to buy tickets",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Podcast Links",
+        "tooltip": "Route fans to your podcast in their favorite audio platform",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Action pages",
+        "tooltip": "Reward fans or unlock content for taking actions in a specific service",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Short Links",
+        "tooltip": "Shorten and track and URL that routes fans to a destination of your choice",
+        "link": "#",
+        "marketer": "NUnlimitedo",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      }
+    ],
+    "services": [
+      {
+        "feature": "Available services",
+        "tooltip": "How many services can you route your fans to",
+        "link": "#",
+        "marketer": "All",
+        "pro_marketer": "All",
+        "enterprise": "All"
+      },
+      {
+        "feature": "Custom stores",
+        "tooltip": "Send people to custom destinations, such as your artist’s website",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Customize store order",
+        "tooltip": "Decide the order of stores and services on your landing pages",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Customize CTA button text",
+        "tooltip": "Customize the button text for each music service",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "link_settings": [
+      {
+        "feature": "Marketing channels management",
+        "tooltip": "Organize traffic to your links by where fans come from like TikTok vs. Facebook.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Activities",
+        "tooltip": "Append and link URL with a custom activity to track where your link traffic comes from",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Conditional redirects",
+        "tooltip": "Redirect fans to different destinations based on rules like marketing channels, devices and more.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Bounce redirect",
+        "tooltip": "Send fans to a destination of your choice if they don't click on any service buttons on your landing page",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Remember fan's favorite service",
+        "tooltip": "Automatically send fans to their preferred service if they've visited a Feature.fm link before",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Territory Management",
+        "tooltip": "Customize your link's behavior, store orders and destintions by which coutnry your fans visit from",
+        "link": "#",
+        "marketer": "3 Territories",
+        "pro_marketer": "Unlimited Territories",
+        "enterprise": "Unlimited Territories"
+      },
+      {
+        "feature": "Language localization",
+        "tooltip": "Default texts are automatically translated to fan's preferred languages based on browser language.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Privacy Policy and Terms of Use",
+        "tooltip": "Add your own custom Privacy Policy and Terms of Use to your links and landing pages",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "No"
+      }
+    ],
+    "bio_links": [
+      {
+        "feature": "Automatically add existing links and landing pages",
+        "tooltip": "Automatically pull in your existing Feature.fm links and landing pages to your bio link",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Embed media players",
+        "tooltip": "Embed media players from Spotify, SoundCloud and YouTube to play content on your landing pages",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Messaging Buttons",
+        "tooltip": "Add buttons for fans to text or message you directly",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Action buttons",
+        "tooltip": "Add actions like follow or save where fans log in with their service account and share their email.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "presave_links": [
+      {
+        "feature": "Number of Pre-Save stores",
+        "tooltip": "Supported Pre-Save stores: Spotify, Apple Music, Tidal, SoundCloud, Amazon Music, Deezer, YouTube Music, Anghami",
+        "link": "#",
+        "marketer": "All",
+        "pro_marketer": "All",
+        "enterprise": "All"
+      },
+      {
+        "feature": "Spotify Multiple Follows",
+        "tooltip": "Additional Spotify profiles, playlists or users that you want followed",
+        "link": "#",
+        "marketer": "3 Multiple Follow",
+        "pro_marketer": "3 Multiple Follow",
+        "enterprise": "3 Multiple Follows"
+      },
+      {
+        "feature": "Local Release Pre-Saves",
+        "tooltip": "Automatically convert your Pre-Save links at the local release time in each timezone",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Global Release Pre-Saves",
+        "tooltip": "Automatically convert your Pre-Save links at the same time globally",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "UPC / ISRC requirement",
+        "tooltip": "Collect pre-saves even before you have a UPC or ISRC to maximize your pre-release strategy or make your Pre-Save 'Evergreen'",
+        "link": "#",
+        "marketer": "Not until release day",
+        "pro_marketer": "Not until release day",
+        "enterprise": "Not until release day"
+      },
+      {
+        "feature": "Pre-Save text conversion",
+        "tooltip": "Customize your link's description text when it converts on release day.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "contest_links": [
+      {
+        "feature": "Available actions",
+        "tooltip": "Which actions from popular services are available to include in your contest",
+        "link": "#",
+        "marketer": "All",
+        "pro_marketer": "All",
+        "enterprise": "All"
+      },
+      {
+        "feature": "Action per service",
+        "tooltip": "How many actions can be included from the same service",
+        "link": "#",
+        "marketer": "2",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Custom destinations",
+        "tooltip": "Ask fans to visit any URL or destination of your choice.",
+        "link": "#",
+        "marketer": "3",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Number of entries",
+        "tooltip": "The number of fans who can enter your contest",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Access to emails",
+        "tooltip": "How many entrant emails you can access",
+        "link": "#",
+        "marketer": "250",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Winners",
+        "tooltip": "How many winners you can select for your contest",
+        "link": "#",
+        "marketer": "3",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Redraws",
+        "tooltip": "Redraw winners who may not be eligible",
+        "link": "#",
+        "marketer": "10",
+        "pro_marketer": "10",
+        "enterprise": "10"
+      },
+      {
+        "feature": "Fan referral-based entries",
+        "tooltip": "Allow fans to earn extra contest entries by sharing your contest with their networks",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "fanbase_management": [
+      {
+        "feature": "Email collection",
+        "tooltip": "How many fan emails you can collect",
+        "link": "#",
+        "marketer": "Unlimited",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Access to emails",
+        "tooltip": "How many of your collected fan emails you can access",
+        "link": "#",
+        "marketer": "250 per link",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Email exports",
+        "tooltip": "Export your fan contact info",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Fan segmentation and smart audiences",
+        "tooltip": "Sort and segment your fan base by attributes like preferred music services, locations and number of followers",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "analytics": [
+      {
+        "feature": "Artist Analytics Dashboard",
+        "tooltip": "A consolidated analytics dashboard at the aritst level across all links and landing pages",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Analytics history",
+        "tooltip": "How many of your collected fan emails you can access",
+        "link": "#",
+        "marketer": "All time",
+        "pro_marketer": "All time",
+        "enterprise": "All time"
+      },
+      {
+        "feature": "Link-level analytics",
+        "tooltip": "Comprehensive analytics for each link and landing page",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Analytics sharing",
+        "tooltip": "A shareable link to your analytics results to share with team members like managers, labels and artists.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Conversion and attribution reporting",
+        "tooltip": "Track sales and streams from your merch stores and select partners after fans visit services from your links and landing pages",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "integrations": [
+      {
+        "feature": "Email syncing integrations",
+        "tooltip": "Sync your audience contact info with Mailchimp or Activecampaign",
+        "link": "#",
+        "marketer": "Yes*",
+        "pro_marketer": "Yes*",
+        "enterprise": "Yes*"
+      },
+      {
+        "feature": "Retargeting (TikTok, FB/IG, Google, Snap)",
+        "tooltip": "Send your data to ad retargeting programs like TikTok Ads, Facebook Ads, Google Ads, and Snapchat Ads",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Affiliate commission",
+        "tooltip": "Earn commission with affiliate programs like Amazon, Apple and Spotify",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Google Analytics",
+        "tooltip": "Send your data to Google Analytics to centralize your data ",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Google Tag Manager",
+        "tooltip": "Integrate GTM to have more control over data and events that are sent to third parties",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      }
+    ],
+    "customization_branding": [
+      {
+        "feature": "Custom sub-domains",
+        "tooltip": "Add custom sub-domains to your ffm.to domains like 'subdomain.ffm.to'",
+        "link": "#",
+        "marketer": "5",
+        "pro_marketer": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "feature": "Custom domains",
+        "tooltip": "Replace 'ffm.to' with a full custom domain such as 'yourdomain.to'",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes*",
+        "enterprise": "Yes*"
+      },
+      {
+        "feature": "Social profile links",
+        "tooltip": "Include links to your social profiles on your landing pages",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Landing page design",
+        "tooltip": "Design backgrounds, button colors and text colors",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Customizable social cards",
+        "tooltip": "Manage how your link previews appear on social media platforms and in search results.",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Embeddable Widgets",
+        "tooltip": "Embed your landing pages on your own website or other landing page",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Custom landing page branding",
+        "tooltip": "Add your logo and custom favicon to every landing page",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Add-on",
+        "enterprise": "Add-on"
+      },
+      {
+        "feature": "Feature.fm Branding",
+        "tooltip": "'Powered by Feature.fm' branding included on the landing page",
+        "link": "#",
+        "marketer": "Removed",
+        "pro_marketer": "Removed",
+        "enterprise": "Removed"
+      }
+    ],
+    "support": [
+      {
+        "feature": "Guided onboarding",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "1 on 1 onboarding available",
+        "pro_marketer": "1 on 1 onboarding available",
+        "enterprise": "1 on 1 onboarding available"
+      },
+      {
+        "feature": "Dedicated Account Manager",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Email Support",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "In-App Support",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Help Center",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "Yes",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Ongoing Training",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "No",
+        "pro_marketer": "Yes",
+        "enterprise": "Yes"
+      },
+      {
+        "feature": "Access the Feature.fm Community",
+        "tooltip": "",
+        "link": "#",
+        "marketer": "General",
+        "pro_marketer": "General",
+        "enterprise": "Premium"
+      }
+    ]
+  }
+}

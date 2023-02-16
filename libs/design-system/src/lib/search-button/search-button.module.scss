@@ -1,0 +1,13 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.search_button {
+	position: absolute;
+	top: 50%;
+	left: calculateSize(2rem);
+
+	width: calculateSize(3.2rem);
+	height: calculateSize(3.2rem);
+	margin-top: calculateSize(-1.6rem);
+
+	cursor: pointer;
+}

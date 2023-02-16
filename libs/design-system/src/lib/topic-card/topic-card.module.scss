@@ -1,0 +1,67 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.topic_card {
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	border-radius: calculateSize(2rem);
+	background-color: $white;
+	box-shadow: 0 3px calculateSize(1rem) 0 rgba($black, .1);
+
+	transition: box-shadow .3s ease;
+	will-change: box-shadow;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		box-shadow: 0 calculateSize(1rem) calculateSize(2rem) 0 rgba($black, .15);
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(3rem) calculateSize(4rem) calculateSize(3.8rem) calculateSize(3rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(2rem);
+	}
+}
+
+.topic_card__icon {
+	display: block;
+	flex-shrink: 0;
+
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-right: calculateSize(2rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-right: calculateSize(1rem);
+		}
+	}
+}
+
+.topic_card__title {
+	@include h5;
+
+	&:not(:last-child) {
+		margin-bottom: calculateSize(.8rem);
+	}
+}
+
+.topic_card__text {
+	font-weight: 300;
+	color: #696868;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(1.6rem);
+		line-height: 1.3125;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.4rem);
+		line-height: 1.21;
+	}
+}

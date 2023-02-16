@@ -1,0 +1,144 @@
+@import "variables";
+@import "mixins";
+
+@mixin h1 {
+	font-weight: 900;
+	font-family: $font_gpsuper;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(7rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(4rem);
+		line-height: 1.15;
+	}
+}
+
+@mixin h2 {
+	font-weight: 900;
+	font-family: $font_gpsuper;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(6rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(4rem);
+	}
+}
+
+@mixin h3 {
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(4rem);
+		font-weight: 400;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(3rem);
+		font-weight: 500;
+	}
+}
+
+@mixin h4 {
+	font-weight: 400;
+	line-height: 1.17;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(3rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.6rem);
+	}
+}
+
+@mixin h5 {
+	font-weight: 500;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(1.8rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.6rem);
+	}
+}
+
+@mixin h6 {
+	font-weight: 500;
+	font-size: calculateSize(1.6rem);
+}
+
+@mixin text {
+	font-weight: 400;
+	font-size: calculateSize(1.6rem);
+}
+
+@mixin text_light {
+	line-height: 1.52;
+	font-weight: 300;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: calculateSize(1.7rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.5rem);
+	}
+}
+
+@mixin link_light {
+	font-weight: 300;
+	color: theme('colors.primary1');
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	@include transition_color;
+}
+
+@mixin link_1 {
+	font-size: calculateSize(1.5rem);
+	line-height: 1.6;
+	// font-weight: 500;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+@mixin link_hover_dark {
+	transition: color .2s ease-in-out;
+
+	&:hover,
+	&:focus {
+		color: theme('colors.foreground');
+		text-decoration: none;
+	}
+}
+
+@mixin link_hover_dark_shadow {
+	transition: color .2s ease-in-out, text-shadow .2s ease-in-out;
+
+	&:hover,
+	&:focus {
+		color: theme('colors.foreground');
+		text-shadow: .6px 0 0 currentColor;
+		text-decoration: none;
+	}
+}
+
+@mixin link_hover_light {
+	transition: opacity .2s ease-in-out;
+
+	&:hover,
+	&:focus {
+		// color: rgba(theme('colors.foreground'), .6);
+		opacity: .6;
+		text-decoration: none;
+	}
+}

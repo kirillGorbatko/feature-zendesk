@@ -1,0 +1,109 @@
+@import '../sass-helpers/helpers-all.scss';
+
+$top_offset: 2.2rem;
+$header_vr_padding: 1.6rem;
+
+.header {
+	@include flex_block(row, nowrap, flex-start, center, center);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	padding-top: $header_vr_padding;
+	padding-bottom: $header_vr_padding;
+
+	font-size: 1rem;
+
+	will-change: transform;
+	z-index: 100;
+
+	&.header--transparent_mod:not(.header--scroll_state) {
+		background-color: transparent;
+	}
+
+	&:not(.header--transparent_mod) {
+		background-color: theme('colors.background');
+	}
+
+	&.header--scroll_state {
+		background-color: theme('colors.background');
+	}
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: #b8b6b5;
+		content: ''
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		height: $header_height_desktop;
+		padding-left: $gl_desktop_indent;
+		padding-right: $gl_desktop_indent;
+
+		transition: transform $menu_animation_duration $base_ease, background .3s $base_ease;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		height: $header_height_mobile;
+		padding-left: $gl_mobile_indent;
+		padding-right: $gl_mobile_indent;
+
+		transition: height $menu_animation_duration $base_ease, background .3s $base_ease;
+
+		&.header--menu_open_state {
+			height: $header_height_mobile_menu_open;
+		}
+
+		// .body--menu_open_state & {
+		// 	transform: translateY($top_offset)
+		// }
+	}
+}
+
+.header__in {
+	max-width: $page_width;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header__navigation {
+	@include flex_block(row, nowrap, flex-start, center, center);
+}
+
+.header__logo {
+	position: relative;
+	z-index: 10;
+
+	display: block;
+
+	flex-shrink: 0;
+	transition: transform $menu_animation_duration $base_ease;
+
+	&:not(:last-child) {
+		margin-right: calculateSize(3rem);
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		margin-top: calculateSize(-1rem);
+	}
+
+	// @include bp(theme('screens.fm-tablet')) {
+	// 	.body--menu_open_state & {
+	// 		transform: translateY(-$top_offset / 2)
+	// 	}
+	// }
+}
+
+.hamburger {
+	margin-left: auto;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		display: none;
+	}
+}

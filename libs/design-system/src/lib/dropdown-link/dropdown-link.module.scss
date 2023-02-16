@@ -1,0 +1,8 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.dropdown_link {
+	line-height: 1.25;
+
+	@include text;
+	@include link_hover_dark_shadow;
+}

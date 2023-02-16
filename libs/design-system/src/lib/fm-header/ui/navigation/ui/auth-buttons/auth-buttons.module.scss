@@ -1,0 +1,69 @@
+@import '../../../../../sass-helpers/helpers-all.scss';
+
+.header__auth {
+	@include bp(theme('screens.fm-desktop'), min) {
+		@include flex_block(row, nowrap, flex-start, center, center);
+
+		margin: 0 calculateSize(-2rem) calculateSize(-1rem) auto;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		position: relative;
+		padding-top: calculateSize(3rem);
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: auto;
+
+		&::after {
+			position: absolute;
+			left: calculateSize(-1rem);
+			right: calculateSize(-1rem);
+			top: 0;
+			height: 1px;
+			background-color: $white;
+			content: '';
+		}
+	}
+}
+
+.header__auth_item {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: 0 calculateSize(2rem) calculateSize(1rem) 0;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		display: flex;
+		justify-content: center;
+
+		&:not(:first-child) {
+			margin-bottom: calculateSize(1.6rem);
+		}
+	}
+}
+
+.header__auth_link {
+	@include link_1;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		@include link_hover_light;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.7rem);
+		color: $white;
+	}
+}
+
+.header__auth_button {
+	@include bp(theme('screens.fm-desktop'), min) {
+		&.header__auth_button--mobile_mod {
+			display: none;
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		&.header__auth_button--desktop_mod {
+			display: none;
+		}
+	}
+}

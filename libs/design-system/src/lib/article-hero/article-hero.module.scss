@@ -1,0 +1,47 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.article_hero {
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(7.8rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(3.9rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: 0 calculateSize(8rem);
+	}
+}
+
+.article_hero__bread_crumbs {
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(2rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(3.8rem);
+		}
+	}
+}
+
+.article_hero__dropdown {
+	&:not(:last-child) {
+		margin-bottom: calculateSize(4rem);
+	}
+
+	&.article_hero__dropdown--mobile_mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			display: none;
+		}
+	}
+}
+
+.article_hero__title {
+	line-height: 1.27;
+
+	@include h3;
+}

@@ -1,0 +1,162 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.hero {
+  &:not(.hero--search_mod) {
+    @include bp(theme('screens.fm-desktop'), min) {
+      padding: calculateSize(6.8rem) $gl_desktop_indent calculateSize(4rem);
+    }
+  }
+
+  &.hero--search_mod {
+    @include bp(theme('screens.fm-desktop'), min) {
+      padding: calculateSize(6.8rem) $gl_desktop_indent calculateSize(8rem);
+    }
+  }
+
+  @include bp(theme('screens.fm-tablet')) {
+    padding: calculateSize(5.7rem) $gl_mobile_indent calculateSize(1.9rem);
+  }
+}
+
+.hero__in {
+  max-width: $page_width;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero__wrap {
+  max-width: calculateSize(90rem);
+
+  &.hero__wrap--center_align {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &.hero__wrap--right_align {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.hero__head {
+  &:not(:last-child) {
+    .hero--search_mod & {
+      @include bp(theme('screens.fm-desktop'), min) {
+        margin-bottom: calculateSize(7rem);
+      }
+
+      @include bp(theme('screens.fm-tablet')) {
+        margin-bottom: calculateSize(4rem);
+      }
+    }
+  }
+
+  .hero--search_mod & {
+    @include bp(theme('screens.fm-mobile-max')) {
+      margin-bottom: calculateSize(3.7rem);
+    }
+  }
+}
+
+.hero__back {
+  display: flex;
+  align-items: center;
+  margin-bottom: calculateSize(3rem);
+
+  font-size: calculateSize(1.6rem);
+  font-weight: 500;
+
+  @include bp(theme('screens.fm-desktop'), min) {
+    display: none;
+  }
+
+  svg {
+    display: block;
+    width: calculateSize(0.6rem);
+    height: calculateSize(1.2rem);
+    margin-right: calculateSize(1rem);
+    flex-shrink: 0;
+  }
+}
+
+.hero__title {
+  display: flex;
+  line-height: 1.15;
+
+  @include bp(theme('screens.fm-mobile-min'), min) {
+    letter-spacing: 0.05rem;
+  }
+
+  @include bp(theme('screens.fm-mobile-max')) {
+    text-align: center;
+  }
+
+  &.hero__title--icon_mod {
+    display: flex;
+    align-items: center;
+    h1 {
+      @include bp(theme('screens.fm-tablet')) {
+        font-size: calculateSize(1.8rem);
+        font-weight: 500;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    @include bp(theme('screens.fm-desktop'), min) {
+      margin-bottom: calculateSize(2rem);
+    }
+
+    @include bp(theme('screens.fm-tablet')) {
+      margin-bottom: calculateSize(4.2rem);
+    }
+  }
+}
+
+.hero__title_icon {
+  @include bp(theme('screens.fm-desktop'), min) {
+    display: none;
+  }
+
+  width: calculateSize(4.4rem);
+  height: calculateSize(4.2rem);
+  margin-right: calculateSize(2.6rem);
+  flex-shrink: 0;
+}
+
+.hero__subtitle {
+  font-size: calculateSize(1.6rem);
+
+  @include bp(theme('screens.fm-mobile-max')) {
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &:not(:last-child) {
+    @include bp(theme('screens.fm-desktop'), min) {
+      margin-bottom: calculateSize(1.2rem);
+    }
+
+    @include bp(theme('screens.fm-tablet')) {
+      margin-bottom: calculateSize(1rem);
+    }
+  }
+}
+
+.hero__search {
+  @include bp(theme('screens.fm-mobile-min'), min) {
+    display: none;
+  }
+}
+
+.hero__search_subtitle {
+  font-size: calculateSize(1.8rem);
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.hero__search_title {
+  font-size: calculateSize(3rem);
+}

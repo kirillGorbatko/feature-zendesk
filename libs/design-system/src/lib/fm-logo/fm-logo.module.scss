@@ -1,0 +1,25 @@
+@import '../sass-helpers/mixins.scss';
+
+.logo {
+	display: block;
+	height: calculateSize(3.4rem);
+	width: calculateSize(12.6rem);
+
+	color: $black;
+
+	transition: color .4s ease-in-out;
+}
+
+.logo--inverted {
+	color: $white;
+}
+
+.logo svg,
+.logo__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	object-fit: contain;
+	fill: currentColor;
+}

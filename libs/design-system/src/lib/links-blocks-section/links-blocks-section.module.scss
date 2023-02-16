@@ -1,0 +1,37 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.blocks {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(4rem) $gl_desktop_indent calculateSize(7rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(3rem) $gl_mobile_indent calculateSize(9rem);
+	}
+}
+
+.blocks__in {
+	position: relative;
+
+	max-width: $page_width;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.blocks__decor {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+
+	display: block;
+	width: calculateSize(25rem);
+	height: calculateSize(25rem);
+	margin: calculateSize(-8rem) calculateSize(-8.2rem) 0 0;
+
+	background-color: $white;
+
+	@include bp(theme('screens.fm-tablet')) {
+		display: none;
+	}
+}

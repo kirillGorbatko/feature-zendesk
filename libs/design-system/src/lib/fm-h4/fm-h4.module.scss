@@ -1,0 +1,5 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.fm-h4 {
+	@include h4;
+}

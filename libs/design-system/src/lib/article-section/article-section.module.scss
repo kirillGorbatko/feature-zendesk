@@ -1,0 +1,17 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.article_section {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(7rem) $gl_desktop_indent 0;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(2.9rem) $gl_mobile_indent calculateSize(12.6rem);
+	}
+}
+
+.article_section__in {
+	max-width: $page_width;
+	margin: 0 auto;
+	width: 100%;
+}

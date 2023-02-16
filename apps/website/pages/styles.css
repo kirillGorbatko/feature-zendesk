@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.parent {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.content {
+  @apply font-supergt;
+  display: block;
+  position: absolute;
+  font-size: 90px;
+  font-weight: bolder;
+  width: 100%;
+  z-index: 10004;
+}
+
+@media only screen and (max-width: 1199px) {
+  .content {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+}
+
+.testimonial-profile-image-overlay {
+  opacity: 0.1;
+  background: linear-gradient(
+    270deg,
+    rgba(63, 21, 138, 1) 0%,
+    rgba(255, 113, 113, 1) 100%
+  );
+}
+
+.testimonial-profile-image-bottom-overlay {
+  opacity: 0.804524;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}

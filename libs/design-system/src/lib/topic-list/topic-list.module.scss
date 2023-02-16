@@ -1,0 +1,52 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.topic_list {
+	position: relative;
+	z-index: 2;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(4rem) $gl_desktop_indent calculateSize(3.9rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(5rem) $gl_mobile_indent calculateSize(4.9rem);
+	}
+}
+
+.topic_list__in {
+	max-width: $page_width;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.topic_list__body {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		margin: 0 calculateSize(-4rem) calculateSize(-3.9rem) 0;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		margin: 0 calculateSize(-2rem) calculateSize(-2rem) 0;
+	}
+}
+
+.topic_list__item {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: 0 calculateSize(4rem) calculateSize(3.9rem) 0;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: 0 calculateSize(2rem) calculateSize(2rem) 0;
+	}
+
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		width: 50%;
+	}
+
+	@include bp(theme('screens.fm-mobile-max')) {
+		width: 100%;
+	}
+}

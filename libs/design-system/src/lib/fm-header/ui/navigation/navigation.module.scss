@@ -1,0 +1,101 @@
+@import '../../../sass-helpers/helpers-all.scss';
+
+.header__menu {
+	@include bp(theme('screens.fm-desktop'), min) {
+		@include flex_block(row, wrap, flex-start, center, center);
+
+		flex: auto;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 100%;
+		// 2 rem for pixel perfect
+		padding: ($header_height_mobile + calculateSize(2rem)) $gl_mobile_indent calculateSize(2.8rem);
+		background-color: $black;
+
+		transition: opacity $menu_animation_duration $base_ease, transform $menu_animation_duration $base_ease;
+
+		&.header__menu--hiden_state {
+			opacity: 0;
+			pointer-events: none;
+			transform: translateY(calculateSize(-1.4rem));
+		}
+	}
+}
+
+.header__links_w {
+	@include bp(theme('screens.fm-desktop'), min) {
+		&:not(:last-child) {
+			margin-right: calculateSize(4rem);
+		}
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(4.6rem) calculateSize(1rem) calculateSize(5rem);
+		margin: 0 calculateSize(-1rem);
+		overflow-y: auto;
+		border-top: 1px solid transparent;
+		transition: border-color .2s ease-in-out;
+
+		&.header__links_w--scroll_state {
+			border-color: $white;
+		}
+	}
+}
+
+.header__links {
+	@include bp(theme('screens.fm-desktop'), min) {
+		@include flex_block(row, wrap, flex-start, center, center);
+		margin: 0 calculateSize(-3rem) calculateSize(-.5rem) 0;
+	}
+}
+
+.header__item {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: 0 calculateSize(3rem) calculateSize(.5rem) 0;
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(.header__item--current_state):not(:last-child) {
+			border-bottom: 1px solid #3A3A3A;
+		}
+	}
+}
+
+.header__link {
+	@include link_1;
+
+	color: #b8b6b5;
+
+	&.header__link--current_state {
+		@include bp(theme('screens.fm-desktop'), min) {
+			body:not(.body--submenu_open_state) & {
+				color: $black;
+			}
+		}
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		@include link_hover_dark;
+
+		.header__item--active_state & {
+			color: $black;
+		}
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		display: block;
+		padding: calculateSize(2.6rem) 0;
+		font-size: calculateSize(2rem);
+		color: $white;
+		font-weight: 400;
+
+		.header__item:first-child & {
+			padding-top: 0;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.blocks__item {
+	position: relative;
+	list-style: none;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding-left: calculateSize(8rem);
+		padding-right: calculateSize(8rem);
+
+		min-height: calculateSize(16.2rem);
+	}
+
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		&:not(:first-child) {
+			padding-top: calculateSize(8rem);
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #e9e9e9;
+			padding-bottom: calculateSize(8.5rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-mobile-max')) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(2.5rem);
+		}
+	}
+}

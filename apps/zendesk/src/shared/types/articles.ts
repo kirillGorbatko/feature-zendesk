@@ -1,0 +1,28 @@
+export type Article = {
+  id: number;
+  url: string;
+  slug: string;
+  html_url: string;
+  author_id: number;
+  comments_disabled: boolean;
+  draft: boolean;
+  promoted: boolean;
+  position: number;
+  vote_sum: number;
+  vote_count: number;
+  section_id: number;
+  created_at: Date;
+  updated_at: Date;
+  name: string;
+  title: string;
+  source_locale: string;
+  locale: string;
+  outdated: boolean;
+  outdated_locales: any[];
+  edited_at: Date;
+  user_segment_id: null;
+  permission_group_id: number;
+  content_tag_ids: any[];
+  label_names: any[];
+  body: string;
+};

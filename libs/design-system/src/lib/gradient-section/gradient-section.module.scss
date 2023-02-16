@@ -1,0 +1,35 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.gradient_section {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+
+		display: block;
+		width: 100%;
+		height: calculateSize(75.7rem);
+
+		pointer-events: none;
+		content: '';
+
+		@include bp(theme('screens.fm-tablet')) {
+			display: none;
+		}
+	}
+
+	&.gradient_section--color_mod_1::before {
+		background: linear-gradient(0deg,
+				rgba(0, 0, 0, 0) 13%,
+				rgba(141, 76, 255, 0.5) 100%);
+	}
+
+	&.gradient_section--color_mod_2::before {
+		background: linear-gradient(0deg,
+				rgba(0, 0, 0, 0) 13%,
+				rgba(255, 82, 98, 0.5) 100%);
+	}
+}

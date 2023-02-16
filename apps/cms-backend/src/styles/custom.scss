@@ -1,0 +1,221 @@
+@import '~payload/scss';
+
+.group-Plans {
+  padding-top: 40px !important;
+
+  .tabs-field {
+    margin-left: 0;
+    margin-right: 0;
+
+    .tabs-field__content-wrap {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .tabs-field__tabs:before,
+    .tabs-field__tabs:after {
+      content: none;
+    }
+  }
+}
+.plan-display-order .collapsible__content {
+  /*display: none;*/
+  padding: 0;
+  .field-label {
+    display: none;
+  }
+}
+
+.plan-display-order {
+  .collapsible__actions-wrap,
+  .collapsible__header-wrap {
+    display: none;
+  }
+  .array-field__row {
+    display: flex;
+  }
+
+  .collapsible__toggle-wrap {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .collapsible__drag {
+    top: inherit;
+    left: inherit;
+  }
+
+  .rah-static.rah-static--height-auto {
+    display: flex;
+    align-items: center;
+  }
+
+  .field-type.text input {
+    border: none;
+  }
+
+  .field-type.text input:disabled {
+    background: inherit;
+    color: inherit;
+  }
+
+  .collapsible {
+    --toggle-pad-h: 0;
+    --toggle-pad-v: 0;
+  }
+}
+
+.plan-display-order div[data-rbd-droppable-id='array-drop'] {
+  display: flex;
+  gap: 20px;
+}
+
+.plan-display-order div[data-rbd-droppable-id='array-drop'] > div {
+  width: 33.3%;
+}
+
+.collapsible-field {
+  margin-bottom: 1.9230769231rem;
+}
+
+.planFeaturesArray {
+  .collapsible.array-field__row {
+    display: flex;
+    flex-direction: row-reverse;
+    div:nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+  .collapsible__header-wrap {
+    display: none;
+  }
+  .collapsible__actions-wrap {
+    flex-direction: row-reverse;
+    right: inherit;
+    left: 10px;
+  }
+  .collapsible__toggle-wrap {
+    width: 6rem;
+    .collapsible__toggle {
+      display: none;
+    }
+  }
+  .collapsible__drag {
+    right: 1rem;
+    left: inherit;
+  }
+
+  .collapsible__indicator {
+    display: none;
+  }
+  .collapsible__content {
+    padding: 0;
+    .field-type.text label {
+      display: none;
+    }
+  }
+}
+
+.group-planValues .render-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.group-pricingPlans .tabs-field__tabs-wrap {
+  padding-top: 20px;
+  z-index: 100;
+  position: sticky;
+  background: var(--theme-bg);
+  opacity: 0.95;
+  top: 100px;
+}
+
+.detailed-plans-comparison > .array-field__header {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  z-index: 100;
+  position: sticky;
+  background: var(--theme-bg);
+  opacity: 0.95;
+  top: 100px;
+}
+
+.group-pricingTiers {
+  .tabs-field__tabs-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 12;
+    position: sticky;
+    background: var(--theme-bg);
+    opacity: 0.95;
+    top: 100px;
+  }
+
+  .group-pricingPlans {
+    .tabs-field__tabs-wrap {
+      padding-top: 20px;
+      z-index: 11;
+      position: sticky;
+      background: var(--theme-bg);
+      opacity: 0.95;
+      top: 180px;
+      .tabs-field__tab-button {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.detailed-plans-comparison-blocks {
+  .blocks-field__header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
+    position: sticky;
+    background: var(--theme-bg);
+    opacity: 0.95;
+    top: 180px;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .detailed-plans-comparison-features {
+    .blocks-field__header {
+      z-index: 0;
+    }
+  }
+}
+
+.homepage.field-type.group-field {
+  & > .group-field__wrap {
+    & > .group-field__header {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      z-index: 10;
+      position: sticky;
+      background: var(--theme-bg);
+      opacity: 0.95;
+      top: 80px;
+    }
+    .array-field__header {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      z-index: 10;
+      position: sticky;
+      background: var(--theme-bg);
+      opacity: 0.95;
+      top: 140px;
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.group-field + .group-field {
+  margin-top: 40px;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7@3x</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50"></rect>
+        <rect id="path-3" x="0" y="0" width="25" height="25"></rect>
+    </defs>
+    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-homepage-v4" transform="translate(-50.000000, -2594.000000)">
+            <g id="Group-52" transform="translate(0.000000, 879.000000)">
+                <g id="Group-2" transform="translate(0.000000, 992.000000)">
+                    <g id="Group-7" transform="translate(50.000000, 723.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g mask="url(#mask-2)">
+                            <g transform="translate(9.000000, 0.000000)">
+                                <g id="Stroke-1-Copy-7">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#FF5262" xlink:href="#path-3"></use>
+                                    <path d="M13.8726256,24.9785431 C13.8726256,29.2572414 17.0058256,32.7260653 20.8726256,32.7260653 C24.7384922,32.7260653 27.8726256,29.2572414 27.8726256,24.9785431 L27.8726256,17.7475223 C27.8726256,13.467791 24.7384922,10 20.8726256,10 C17.0058256,10 13.8726256,13.467791 13.8726256,17.7475223 L13.8726256,24.9785431 Z" fill="#58ECCA" mask="url(#mask-4)"></path>
+                                </g>
+                                <g id="Group-45" transform="translate(10.657601, 10.000000)">
+                                    <path d="M3.0949802,14.9785431 C3.0949802,19.2572414 6.56277116,22.7260653 10.8425025,22.7260653 C15.1212008,22.7260653 18.5900247,19.2572414 18.5900247,14.9785431 L18.5900247,7.74752227 C18.5900247,3.46779097 15.1212008,0 10.8425025,0 C6.56277116,0 3.0949802,3.46779097 3.0949802,7.74752227 L3.0949802,14.9785431 Z" id="Stroke-1" stroke="#000000" stroke-width="2"></path>
+                                    <line x1="10.8425025" y1="27.890667" x2="10.8425025" y2="34.4837051" id="Stroke-3" stroke="#000000" stroke-width="2"></line>
+                                    <line x1="4.27332668" y1="34.4834985" x2="17.4120914" y2="34.4834985" id="Stroke-5" stroke="#000000" stroke-width="2"></line>
+                                    <path d="M0,21.9663949 C2.30256362,25.5250902 6.2982191,27.890667 10.8423992,27.890667 C15.3876122,27.890667 19.3832677,25.5250902 21.6847983,21.9663949" id="Stroke-7" stroke="#000000" stroke-width="2"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

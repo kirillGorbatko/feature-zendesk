@@ -1,0 +1,12 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.blocks__list {
+	position: relative;
+	z-index: 2;
+
+	background-color: $white;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(8rem) 0;
+	}
+}

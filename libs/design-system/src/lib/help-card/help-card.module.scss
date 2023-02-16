@@ -1,0 +1,102 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.help_card {
+	@include flex_block(row, nowrap, flex-start);
+
+	position: relative;
+
+	min-height: 100%;
+
+	cursor: pointer;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(4rem) calculateSize(3.3rem);
+	}
+
+	&::after {
+		@include bp(theme('screens.fm-desktop'), min) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+	
+			width: 100%;
+			height: 2px;
+			content: '';
+			transition: background-color .3s ease-in-out;
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			display: none;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+
+		@include bp(theme('screens.fm-desktop'), min) {
+			&.help_card--primary {
+				&::after {
+					background-color: theme('colors.primary1');
+				}
+			}
+			&.help_card--secondary {
+				&::after {
+					background-color: theme('colors.primary2');
+				}
+			}
+			&.help_card--tertiary {
+				&::after {
+					background-color: theme('colors.primary3');
+				}
+			}
+		}
+	}
+}
+
+.help_card__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.help_card__title {
+	font-size: calculateSize(1.4rem);
+	font-weight: 500;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(1rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		color: $white;
+
+		&:not(:last-child) {
+			margin-bottom: calculateSize(.4rem);
+		}
+	}
+}
+
+.help_card__content {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding-top: calculateSize(1.6rem);
+	}
+}
+
+.help_card__descr {
+	font-weight: 300;
+	line-height: 1.3;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		color: #666665;
+		font-size: calculateSize(1.2rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.4rem);
+		line-height: 1.45;
+		color: #959595;
+	}
+}

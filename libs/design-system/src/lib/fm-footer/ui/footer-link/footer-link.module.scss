@@ -1,0 +1,33 @@
+@import '../../../sass-helpers/helpers-all.scss';
+
+.footer_link {
+	transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+	color: theme('colors.muted');
+	font-weight: 300;
+
+	&:hover,
+	&:focus {
+		color: theme('colors.foreground');
+		text-shadow: 0.6px 0 0 currentColor;
+		text-decoration: none;
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		font-size: 0.94rem;
+	}
+
+	@include bp(theme('screens.fm-tablet'), max) {
+		font-size: 0.84rem;
+	}
+}
+
+.footer_link--accent {
+	color: theme('colors.foreground');
+	font-weight: 500;
+	font-size: 1rem;
+
+	&:hover {
+		color: rgba(0, 0, 0, 0.6);
+		text-shadow: none;
+	}
+}

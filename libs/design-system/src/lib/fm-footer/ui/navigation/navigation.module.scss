@@ -1,0 +1,57 @@
+@import '../../../sass-helpers/helpers-all.scss';
+
+.footer__nav {
+	@include bp(theme('screens.fm-desktop'), min) {
+		&:not(:last-child) {
+			margin-right: calculateSize(4rem);
+		}
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(7.6rem);
+		}
+	}
+}
+
+.footer__nav_in {
+	@include flex_block(row, wrap, flex-start);
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		margin: 0 clamp(calculateSize(-10rem), -7.6vw, -1px) calculateSize(-4rem) 0;
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		margin: 0 calculateSize(-2rem) calculateSize(-3.6rem) 0;
+		padding-right: calculateSize(1.8rem);
+	}
+}
+
+.footer__nav_col {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: 0 clamp(1px, 7.6vw, calculateSize(10rem)) calculateSize(4rem) 0;
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		padding: 0 calculateSize(2rem) calculateSize(3.6rem) 0;
+
+		&:first-child {
+			flex: 1 1 100%;
+		}
+		&:not(:first-child) {
+			flex: 1 1 50%;
+		}
+	}
+}
+
+.footer__nav_title {
+	@include h6;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(2.2rem);
+		}
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(1.8rem);
+		}
+	}
+}

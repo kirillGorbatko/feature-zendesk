@@ -1,0 +1,29 @@
+@use "sass:math";
+
+// FONTS
+$font_outfit: 'Outfit', sans-serif;
+$font_gpsuper: 'GTSuper', sans-serif;
+$font_helvetica: 'HelveticaNeue', sans-serif;
+
+$font_size_base: 1.6;
+
+// COLORS
+$black: #000;
+$white: #fff;
+$gray: #737373;
+$dark: #1d1d1b;
+
+// INDENTS & CONTAINERS
+$gl_desktop_indent: math.div(8.4rem, $font_size_base);
+$gl_mobile_indent: math.div(3rem, $font_size_base);
+
+$page_width: math.div(120rem, $font_size_base);
+
+// OTHER
+$menu_animation_duration: .4s;
+$base_ease: ease-in-out;
+
+// SIZES
+$header_height_desktop: math.div(9.2rem, $font_size_base);
+$header_height_mobile: math.div(7.8rem, $font_size_base);
+$header_height_mobile_menu_open: $header_height_mobile + 1.4rem;

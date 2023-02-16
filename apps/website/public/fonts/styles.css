@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'GT-Super-Display-Super';
+  src: url('/fonts/GT-Super-Display-Super.woff2')
+      format('woff2'),
+    url('/fonts/GT-Super-Display-Super.woff')
+      format('woff');
+  font-display: swap;
+}

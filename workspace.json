@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "cms-backend": "apps/cms-backend",
+    "cms-types": "libs/cms-types",
+    "design-system": "libs/design-system",
+    "shared-hooks": "libs/shared/hooks",
+    "website": "apps/website",
+    "zendesk": "apps/zendesk"
+  }
+}

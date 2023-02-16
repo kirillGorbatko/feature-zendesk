@@ -1,0 +1,92 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.dropdown {
+	position: relative;
+
+	padding: 0 1px calculateSize(1.5rem);
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 6;
+
+		width: 100%;
+		height: 2px;
+
+		background-color: #CDCDCD;
+		content: '';
+	}
+}
+
+.dropdown__current {
+	position: relative;
+	z-index: 6;
+
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	font-family: $font_outfit;
+	color: $black;
+	cursor: pointer;
+	text-align: left;
+
+	@include text;
+}
+
+.dropdown__icon {
+	display: block;
+	width: calculateSize(.7rem);
+	height: calculateSize(1.2rem);
+
+	flex-shrink: 0;
+	margin-left: auto;
+
+	color: inherit;
+	transition: transform .3s ease;
+	will-change: transform;
+
+	&:not(.dropdown--active_state &) {
+		transform: rotate(90deg);
+	}
+
+	.dropdown--active_state & {
+		transform: rotate(-90deg);
+	}
+}
+
+.dropdown__list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+
+	width: 100%;
+	height: auto;
+	padding: calculateSize(4.5rem) calculateSize(4rem) calculateSize(8rem);
+
+	background: $white linear-gradient(180deg, rgba(#ff5262, 0) 0%, rgba(#ff5262, .11) 100%);
+	box-shadow: 0 calculateSize(8rem) calculateSize(8rem) rgba($black, .2);
+
+	transition: opacity .3s ease-out, transform .3s ease-out;
+	will-change: opacity, transform;
+
+	&:not(.dropdown--active_state &) {
+		pointer-events: none;
+		opacity: 0;
+		transform: translateY(0);
+	}
+
+	.dropdown--active_state & {
+		pointer-events: auto;
+		opacity: 1;
+		transform: translateY(calculateSize(3.9rem));
+	}
+}
+
+.dropdown__item {
+	&:not(:last-child) {
+		margin-bottom: calculateSize(2.5rem);
+	}
+}

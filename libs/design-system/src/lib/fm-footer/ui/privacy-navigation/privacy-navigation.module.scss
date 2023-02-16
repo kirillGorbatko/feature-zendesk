@@ -1,0 +1,49 @@
+@import '../../../sass-helpers/helpers-all.scss';
+
+.footer__copy {
+	@include flex_block(row, wrap, flex-start, center, center);
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		margin: 0 calculateSize(-2rem) calculateSize(-1rem) 0;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		margin: 0 calculateSize(-2rem) calculateSize(-2.5rem) 0;
+		padding: 0 calculateSize(3.4rem);
+		justify-content: center;
+	}
+}
+
+.footer__copy_item {
+	@include link_1;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: 0 calculateSize(2rem) calculateSize(1rem) 0;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: 0 calculateSize(2rem) calculateSize(2.5rem) 0;
+		flex: 1 1 50%;
+		text-align: center;
+	}
+}
+
+.footer__copy_link {
+	@include link_hover_dark_shadow;
+
+	color: theme('colors.muted');
+	font-weight: 300;
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.4rem);
+	}
+}
+
+.footer__copy_text {
+	color: theme('colors.muted');
+	font-weight: 300;
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-size: calculateSize(1.4rem);
+	}
+}

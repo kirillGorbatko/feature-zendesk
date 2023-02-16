@@ -1,0 +1,67 @@
+@import '../sass-helpers/mixins.scss';
+
+.hamburger {
+	position: relative;
+
+	display: block;
+	width: calculateSize(2.8rem);
+	height: calculateSize(2.2rem);
+
+	color: #000;
+
+	cursor: pointer;
+	transform-origin: center;
+
+	&::after,
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		height: 2px;
+		width: 100%;
+		margin-top: -1px;
+
+		background-color: currentColor;
+		content: '';
+		transition: transform .2s ease-in-out;
+		transform-origin: center;
+	}
+
+	&::after {
+		transform: translateY(calculateSize(-.5rem));
+	}
+
+	&::before {
+		transform: translateY(calculateSize(.5rem));
+	}
+
+	&.hamburger--open_state {
+		&::after {
+			transform: rotateZ(-45deg) translateY(0);
+		}
+		&::before {
+			transform: rotateZ(45deg) translateY(0);
+		}
+	}
+
+	&.hamburger--secondary {
+		color: #fff;
+	}
+
+	// .body--menu_open_state & {
+	// 	animation: burger;
+	// 	animation-duration: $menu_trans;
+	// 	animation-timing-function: ease-in-out;
+	// 	animation-iteration-count: 1;
+	// 	animation-fill-mode: forwards;
+	// 	color: $white;
+
+		// &::after {
+		// 	transform: rotateZ(-45deg) translateY(0);
+		// }
+		// &::before {
+		// 	transform: rotateZ(45deg) translateY(0);
+		// }
+	// }
+}

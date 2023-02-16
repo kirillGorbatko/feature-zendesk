@@ -1,0 +1,85 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.rectangle_decor {
+  // colors
+  &.rectangle_decor--color_1_mod {
+    background: theme('colors.foreground');
+  }
+  &.rectangle_decor--color_2_mod {
+    background: theme('colors.primary1');
+  }
+  &.rectangle_decor--color_3_mod {
+    background: theme('colors.primary3');
+  }
+  &.rectangle_decor--color_4_mod {
+    background: linear-gradient(
+      180deg,
+      rgba(#9b62ff, 0.5) 0%,
+      rgba(#9b62ff, 0) 91%
+    );
+  }
+  &.rectangle_decor--image_mod {
+    background: theme('colors.background');
+  }
+
+  &.rectangle_decor--mod_1 {
+    width: calculateSize(15rem);
+    height: calculateSize(15rem);
+  }
+
+  &.rectangle_decor--mod_2 {
+    @include bp(theme('screens.fm-desktop'), min) {
+      width: calculateSize(14.8rem);
+      height: calculateSize(7.3rem);
+    }
+    @include bp(theme('screens.fm-tablet')) {
+      width: calculateSize(10rem);
+      height: calculateSize(5rem);
+    }
+  }
+  &.rectangle_decor--mod_3 {
+    width: calculateSize(7.7rem);
+    height: calculateSize(7.7rem);
+  }
+  &.rectangle_decor--mod_4 {
+    @include bp(theme('screens.fm-desktop'), min) {
+      width: calculateSize(5.1rem);
+      height: calculateSize(5.1rem);
+    }
+    @include bp(theme('screens.fm-tablet')) {
+      width: calculateSize(3rem);
+      height: calculateSize(3rem);
+    }
+  }
+  &.rectangle_decor--mod_5 {
+    @include bp(theme('screens.fm-desktop'), min) {
+      width: calculateSize(5rem);
+      height: calculateSize(5rem);
+    }
+    @include bp(theme('screens.fm-tablet')) {
+      width: calculateSize(3rem);
+      height: calculateSize(3rem);
+    }
+  }
+  &.rectangle_decor--mod_6 {
+    width: calculateSize(20.2rem);
+    height: calculateSize(20.2rem);
+  }
+  &.rectangle_decor--mod_7 {
+    @include bp(theme('screens.fm-desktop'), min) {
+      width: calculateSize(7.5rem);
+      height: calculateSize(7.5rem);
+    }
+    @include bp(theme('screens.fm-tablet')) {
+      width: calculateSize(5rem);
+      height: calculateSize(5rem);
+    }
+  }
+}
+
+.rectangle_decor__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}

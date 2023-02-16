@@ -1,0 +1,27 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.list {
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		margin: 0 calculateSize(-2rem) calculateSize(-3rem) 0;
+
+		column-count: 2;
+	}
+
+	@include bp(theme('screens.fm-mobile-max')) {
+		padding-top: calculateSize(3.9rem);
+		padding-bottom: calculateSize(5.4rem);
+	}
+}
+
+.list__item {
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		break-inside: avoid;
+		padding: 0 calculateSize(2rem) calculateSize(2.6rem) 0;
+	}
+
+	@include bp(theme('screens.fm-mobile-max')) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(2.6rem);
+		}
+	}
+}

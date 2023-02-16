@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 75@3x</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50"></rect>
+        <rect id="path-3" x="0" y="0" width="25" height="25"></rect>
+    </defs>
+    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-homepage-v4" transform="translate(-50.000000, -2457.000000)">
+            <g id="Group-52" transform="translate(0.000000, 879.000000)">
+                <g id="Group-2" transform="translate(0.000000, 992.000000)">
+                    <g id="Group-75" transform="translate(50.000000, 586.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g mask="url(#mask-2)">
+                            <g transform="translate(8.000000, 0.000000)">
+                                <g id="Path-Copy-2">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3" transform="translate(12.500000, 12.500000) scale(-1, 1) translate(-12.500000, -12.500000) "></use>
+                                    </mask>
+                                    <use id="Mask" fill="#58ECCA" transform="translate(12.500000, 12.500000) scale(-1, 1) translate(-12.500000, -12.500000) " xlink:href="#path-3"></use>
+                                    <path d="M12.9687729,12.5 L19.6508662,12.5 C19.6508662,14.9602788 21.6453162,16.9547289 24.105595,16.9547289 C26.5658738,16.9547289 28.5603239,14.9602788 28.5603239,12.5 L34.7316895,12.5 L34.7316895,43 L28.5603239,43 C28.5603239,40.5397212 26.5658738,38.5452711 24.105595,38.5452711 C21.6453162,38.5452711 19.6508662,40.5397212 19.6508662,43 L12.9687729,43 L12.9687729,12.5 Z" fill="#FF5262" mask="url(#mask-4)"></path>
+                                </g>
+                                <g id="Group-33" transform="translate(11.500000, 12.500000)">
+                                    <path d="M0.5,0 L7.18209329,0 C7.18209329,2.46027881 9.17654333,4.45472886 11.6368221,4.45472886 C14.097101,4.45472886 16.091551,2.46027881 16.091551,0 L22.2629166,0 L22.2629166,30.5 L16.091551,30.5 C16.091551,28.0397212 14.097101,26.0452711 11.6368221,26.0452711 C9.17654333,26.0452711 7.18209329,28.0397212 7.18209329,30.5 L0.5,30.5 L0.5,0 Z" id="Path" stroke="#000000" stroke-width="2"></path>
+                                    <g id="Group-32" transform="translate(0.000000, 19.500000)" stroke="#000000" stroke-width="2">
+                                        <line x1="0.5" y1="0.5" x2="4.46337891" y2="0.5" id="Line-25"></line>
+                                        <line x1="6.75" y1="0.5" x2="10.7133789" y2="0.5" id="Line-25-Copy"></line>
+                                        <line x1="12.9816895" y1="0.5" x2="16.9450684" y2="0.5" id="Line-25-Copy-2"></line>
+                                        <line x1="19.2316895" y1="0.5" x2="22.2629166" y2="0.5" id="Line-25-Copy-3"></line>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

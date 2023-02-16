@@ -1,0 +1,157 @@
+{
+  "id": "6324e9f5a5f0557e9fdfba19",
+  "title": "Solutions Page - new_default",
+  "slug": "new_default",
+  "heroSection": {
+    "title": "Own your<br/>relationships<br/>with your<br/>fans. [VARIANT1]",
+    "description": "Create links and landing pages that direct fans to listen to your music in the right service, save your music, pre-save, follow, subscribe, buy tickets, enter a contest or connect it all together in your Artist Bio Link."
+  },
+  "featuresSection": {
+    "features": [
+      {
+        "title": {
+          "desktop": "Maintain all of your fan contacts",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Easily manage all of your fan contacts, collected in an intuitive fan database to keep control of fan contact info, activity and demographics.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/maintain-your-fans.png",
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "primary"
+        },
+        "id": "6324e9dd6982b64faba1762f",
+        "topCapabilites": []
+      },
+      {
+        "title": {
+          "desktop": "Use Smart Audiences to narrow down your fans",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Feature.fm automatically groups your fans into lists like super fans, influencers, and Spotify users based on their attributes. ",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/use-smart-audience.png",
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "secondary"
+        },
+        "id": "6324e9dd6982b64faba17630",
+        "topCapabilites": []
+      },
+      {
+        "title": {
+          "desktop": "Sync fan contacts to your email platform",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Sync your fan emails to your preferred email platform like Mailchimp and ActiveCampaign to communicate to your growing fanbase.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/sync-fans-contacts.png",
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "primary"
+        },
+        "id": "6324e9dd6982b64faba17631",
+        "topCapabilites": []
+      },
+      {
+        "title": {
+          "desktop": "Collect fan contact info across all of your links and landing pages",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Encourage fans to share their contact information and subscribe to your email list through any of your links and landing pages with Feature.fm’s email collection tools.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/collect-fans-contacts.png",
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "secondary"
+        },
+        "id": "6324e9dd6982b64faba17632",
+        "topCapabilites": []
+      }
+    ]
+  },
+  "youShouldAlsoCheckOut": {
+    "title": "Two more things you should check out ",
+    "features": [
+      {
+        "title": {
+          "desktop": "Performance Analytics & Insights",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/analytics",
+        "imageUrl": "/img/solutions/analytics.png",
+        "id": "6324e9dd6982b64faba17633"
+      },
+      {
+        "title": {
+          "desktop": "Landing Pages & Smart Links ",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Create links and landing pages for everything you need to promote as an artist.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/links",
+        "imageUrl": "/img/solutions/feature-links.png",
+        "id": "6324e9dd6982b64faba17634"
+      }
+    ]
+  },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Get Started for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Start free",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "_status": "draft",
+  "createdAt": "2022-09-16T21:26:13.220Z",
+  "updatedAt": "2022-09-16T21:26:13.220Z",
+  "meta": {}
+}

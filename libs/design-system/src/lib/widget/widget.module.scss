@@ -1,0 +1,49 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.widget {
+	position: fixed;
+	z-index: 10;
+
+	width: calculateSize(6rem);
+	height: calculateSize(6rem);
+	border-radius: 50%;
+
+	background-color: $black;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		right: calculateSize(3rem);
+		bottom: calculateSize(3rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		bottom: calculateSize(1rem);
+		right: calculateSize(1rem);
+	}
+}
+
+.widget__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.widget__icon {
+	display: block;
+	width: calculateSize(2.8rem);
+	height: calculateSize(3.2rem);
+
+	color: $white;
+
+	transition: transform .3s ease;
+	will-change: transform;
+
+	.widget:hover &,
+	.widget:focus & {
+		transform: scale(1.1);
+	}
+}

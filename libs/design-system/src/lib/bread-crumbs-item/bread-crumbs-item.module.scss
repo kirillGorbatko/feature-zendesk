@@ -1,0 +1,68 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.item {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+
+	&.item--current_mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			pointer-events: none;
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		flex-direction: row-reverse;
+	}
+}
+
+.item a {
+	display: block;
+	flex-shrink: 0;
+
+	@include text;
+	@include link_hover_dark_shadow;
+
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-right: calculateSize(1.2rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-left: calculateSize(1.2rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		font-weight: 500;
+	}
+}
+
+.item__icon {
+	flex-shrink: 0;
+
+	width: calculateSize(.6rem);
+	height: calculateSize(1.1rem);
+	color: $black;
+
+	&:not(.item--current_mod &) {
+		display: block;
+	}
+
+	.item--current_mod & {
+		@include bp(theme('screens.fm-desktop'), min) {
+			display: none;
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		transform: rotate(-180deg);
+
+		display: block;
+		margin-top: 2px;
+
+		&:not(:last-child) {
+			margin-right: calculateSize(1.1rem);
+		}
+	}
+}

@@ -1,0 +1,183 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.get_started {
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(7rem) $gl_desktop_indent calculateSize(12rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(10rem) $gl_mobile_indent calculateSize(14rem);
+	}
+}
+
+.get_started_in {
+	position: relative;
+	max-width: $page_width;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.get_started__decors {
+	position: absolute;
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+
+	pointer-events: none;
+}
+
+.get_started__decor {
+	position: absolute;
+
+	@include bp(theme('screens.fm-tablet')) {
+		bottom: 0;
+	}
+
+	// position + sizes
+	&.get_started__decor--pos-1-mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			bottom: 0;
+			left: 0;
+
+			margin: 0 0 calculateSize(1rem) calculateSize(-8.4rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			display: none;
+		}
+	}
+
+	&.get_started__decor--pos-2-mod {
+		right: 0;
+
+		@include bp(theme('screens.fm-desktop'), min) {
+			bottom: 0;
+			margin: 0 calculateSize(-0.9rem) calculateSize(-7rem) 0;
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin: 0 calculateSize(2rem) calculateSize(-14rem) 0;
+		}
+	}
+
+	&.get_started__decor--pos-3-mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			bottom: 0;
+			left: 0;
+
+			margin: 0 0 calculateSize(-6.7rem) calculateSize(6.6rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			display: none;
+		}
+	}
+
+	&.get_started__decor--pos-4-mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			top: 50%;
+			right: 0;
+			margin: calculateSize(-1.6rem) calculateSize(-0.8rem) 0 0;
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			left: 0;
+			margin: 0 0 calculateSize(-14rem) calculateSize(-3rem);
+		}
+	}
+
+	&.get_started__decor--pos-5-mod {
+		right: 0;
+
+		@include bp(theme('screens.fm-desktop'), min) {
+			bottom: 0;
+			margin: 0 calculateSize(14rem) calculateSize(-12rem) 0;
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin: 0 calculateSize(12rem) calculateSize(-17.1rem) 0;
+		}
+	}
+
+	&.get_started__decor--pos-6-mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			top: 0;
+			right: 0;
+			margin: calculateSize(-18rem) calculateSize(-8.2rem) 0 0;
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			display: none;
+		}
+	}
+
+	&.get_started__decor--pos-7-mod {
+		right: 0;
+
+		@include bp(theme('screens.fm-desktop'), min) {
+			bottom: 0;
+			margin: 0 calculateSize(-8.5rem) 4px 0;
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin: 0 calculateSize(-3rem) calculateSize(-9rem) 0;
+		}
+	}
+}
+
+.get_started__content {
+	position: relative;
+	z-index: 2;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		max-width: calculateSize(53rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		max-width: calculateSize(40rem);
+	}
+}
+
+.get_started__title {
+	line-height: 1.18;
+
+	&:not(:last-child) {
+		margin-bottom: calculateSize(1.9rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		max-width: calculateSize(26rem);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.get_started__text {
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(4rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(2.9rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		line-height: 1.48;
+
+		p {
+			display: inline;
+		}
+	}
+}

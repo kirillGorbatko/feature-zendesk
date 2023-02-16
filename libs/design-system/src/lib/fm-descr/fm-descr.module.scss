@@ -1,0 +1,5 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.fm-descr {
+  @include text_light;
+}

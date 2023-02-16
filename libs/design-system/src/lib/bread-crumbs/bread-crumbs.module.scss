@@ -1,0 +1,24 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.bread_crumbs {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+.bread_crumbs__list {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.bread_crumbs__item {
+	&:not(:last-child) {
+		margin-right: calculateSize(1rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(.bread_crumbs__item--mobile_mod) {
+			display: none;
+		}
+	}
+}

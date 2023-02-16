@@ -1,0 +1,57 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.footer {
+	width: 100%;
+	min-height: calculateSize(41rem);
+	border-top: 1px solid theme('colors.line2');
+	flex: 0 0 auto;
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		padding: calculateSize(4.5rem) $gl_desktop_indent calculateSize(2rem);
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		padding: calculateSize(6rem) $gl_mobile_indent calculateSize(5.6rem);
+	}
+}
+
+.footer__in {
+	max-width: $page_width;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.footer__top {
+	@include bp(theme('screens.fm-desktop'), min) {
+		@include flex_block(row, nowrap, flex-start);
+
+		&:not(:last-child) {
+			margin-bottom: calculateSize(8.5rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(8.9rem);
+		}
+	}
+}
+
+.footer__side {
+	margin-left: auto;
+}
+
+.footer__btn_w {
+	@include flex_block(row, wrap, center, center, center);
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(4.1rem);
+		}
+	}
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(:last-child) {
+			margin-bottom: calculateSize(5.8rem);
+		}
+	}
+}

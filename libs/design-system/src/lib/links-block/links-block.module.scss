@@ -1,0 +1,131 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.block {
+	&.block--has_decor {
+		@include bp(theme('screens.fm-desktop'), min) {
+			padding-right: calculateSize(7rem);
+		}
+	}
+}
+
+.block__decor {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+
+	background-color: $white;
+	pointer-events: none;
+
+	svg {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		display: none;
+	}
+}
+
+.block__head {
+	display: flex;
+	align-items: center;
+
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		&[role="button"] {
+			cursor: default;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: calculateSize(4.2rem);
+		}
+	}
+}
+
+.block__icon {
+	position: relative;
+
+	flex-shrink: 0;
+	width: calculateSize(2rem);
+	height: calculateSize(2rem);
+
+	border-radius: 50%;
+	background-color: $black;
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		display: block;
+		width: calculateSize(.8rem);
+		height: 2px;
+
+		background-color: $white;
+		content: '';
+		opacity: 0;
+
+		transition: opacity .3s ease;
+		will-change: opacity;
+
+		.block--active_state & {
+			opacity: 1;
+		}
+	}
+
+	&:not(:last-child) {
+		margin-right: calculateSize(2rem);
+	}
+
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		display: none;
+	}
+
+	@include bp(theme('screens.fm-mobile-max')) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.block__val {
+	font-size: calculateSize(1rem);
+	font-weight: 600;
+	color: $white;
+	font-family: $font_outfit;
+
+	transition: transform .3s ease;
+	will-change: transform;
+
+	.block--active_state & {
+		transform: scale(0);
+	}
+}
+
+.block__wrap {
+	max-width: calculateSize(93rem);
+
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		max-height: unset !important;
+	}
+
+	@include bp(theme('screens.fm-mobile-max')) {
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		pointer-events: none;
+
+		transition: opacity .25s ease-out, max-height .25s ease-out;
+		will-change: opacity, max-height;
+
+		.block--active_state & {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+}

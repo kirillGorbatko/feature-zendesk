@@ -1,0 +1,196 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.error_section {
+	position: relative;
+	height: 100%;
+
+	&::before,
+	&::after {
+		position: absolute;
+		z-index: -1;
+
+		pointer-events: none;
+		content: '';
+	}
+
+	&::before {
+		right: 0;
+
+		@include bp(theme('screens.fm-desktop'), min) {
+			top: -5.75rem;
+			height: calc(100% + 5.75rem);
+			width: 27%;
+			background: linear-gradient(258deg, rgba(255, 82, 98, .1) 10%, rgba(255, 103, 117, 0) 60%);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			top: -4.875rem;
+			height: calc(100% + 4.875rem);
+			width: 100%;
+			background: linear-gradient(258deg, rgba(255, 82, 98, .2) 0%, rgba(255, 103, 117, 0) 60%);
+		}
+	}
+
+	&::after {
+		top: 0;
+		left: 0;
+
+		width: 73.333%;
+		height: 100%;
+
+		background: linear-gradient(17deg, rgba(155, 98, 255, .2) 5%, rgba(155, 98, 255, 0) 38%);
+
+		@include bp(theme('screens.fm-tablet')) {
+			display: none;
+		}
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		min-height: calc(100vh - 5.75rem);
+
+		&.error_section--404_mod {
+			padding: calculateSize(7rem) $gl_desktop_indent;
+		}
+
+		&.error_section--505_mod {
+			padding: calculateSize(5.8rem) $gl_desktop_indent;
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		min-height: calc(100vh - 4.875rem);
+
+		&.error_section--404_mod {
+			padding: calculateSize(4.9rem) $gl_mobile_indent;
+		}
+
+		&.error_section--505_mod {
+			padding: calculateSize(5.7rem) $gl_mobile_indent;
+		}
+	}
+}
+
+.error_section__in {
+	max-width: $page_width;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.error_section__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.error_section__number {
+	position: relative;
+
+	.error_section--404_mod & {
+		height: calculateSize(20.8rem);
+	}
+
+	.error_section--505_mod & {
+		height: calculateSize(20rem);
+		width: calculateSize(40.6rem);
+
+
+		@include bp(theme('screens.fm-mobile-max')) {
+			margin-left: calculateSize(10rem);
+		}
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+
+		display: block;
+		content: '';
+		pointer-events: none;
+
+		.error_section--404_mod & {
+			width: calculateSize(23.1rem);
+			height: calculateSize(20.1rem);
+
+			margin-top: calculateSize(6.6rem);
+			margin-left: calculateSize(-18rem);
+
+			clip-path: polygon(1% 31%, 0% 100%, 100% 100%, 100% 0%, 79% 32%);
+
+			@include bp(theme('screens.fm-desktop'), min) {
+				background: linear-gradient(203deg, rgba(255, 103, 117, 0.1) 0%, rgba(255, 103, 117, 0) 100%);
+			}
+		}
+
+		.error_section--505_mod & {
+			width: calculateSize(16.2rem);
+			height: calculateSize(14rem);
+
+			margin-top: calculateSize(2rem);
+			margin-left: calculateSize(-10.5rem);
+
+			clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 46%, 76% 44%, 88% 0%);
+
+			@include bp(theme('screens.fm-desktop'), min) {
+				background: linear-gradient(229deg, rgba(255, 103, 117, .2) 20%, rgba(0, 0, 0, 0) 65%);
+			}
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			background: linear-gradient(23deg, rgba(0, 0, 0, 0) 0%, rgba(88, 236, 202, .3) 100%);
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.error_section__waves {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	display: block;
+	width: calculateSize(22.8rem);
+	height: calculateSize(18.8rem);
+
+	margin-top: calculateSize(-1.2rem);
+	margin-right: calculateSize(-20rem);
+
+	pointer-events: none;
+}
+
+.error_section__title {
+	font-family: $font_gpsuper;
+	font-size: calculateSize(6rem);
+	font-weight: 900;
+	line-height: 1.317;
+
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(1.5rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(2rem);
+		}
+	}
+}
+
+.error_section__text {
+	font-size: calculateSize(2rem);
+	line-height: 1.25;
+
+	&:not(:last-child) {
+		margin-bottom: calculateSize(4rem);
+	}
+}
+
+.error_section__btn_text {
+	font-size: calculateSize(1.8rem);
+}
