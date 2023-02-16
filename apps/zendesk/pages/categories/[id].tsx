@@ -77,17 +77,16 @@ const prepareSections = (sections: Section[], articles: Article[]) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
-  // const categories = await CATEGORIES_API.getAllCategories();
+  const categories = await CATEGORIES_API.getAllCategories();
 
-  // const paths = categories?.map((category) => ({
-  //   params: { id: category.slug },
-  // }));
+  const paths = categories?.map((category) => ({
+    params: { id: category.slug },
+  }));
 
-  // return {
-  //   paths,
-  //   fallback: false,
-  // };
-  return 0;
+  return {
+    paths,
+    fallback: false,
+  };
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
