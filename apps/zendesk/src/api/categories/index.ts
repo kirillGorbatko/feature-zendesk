@@ -10,7 +10,7 @@ type GetCategoryResponse = {
   category: Category;
 };
 
-const BASE_URL = '/categories';
+const BASE_URL = 'https://feature-zendesk-kirillgorbatko.vercel.app/categories';
 
 const getAllCategories = async () => {
   const allCetegories = await getContentByType<Category>({
@@ -32,9 +32,9 @@ const getCategory = async (id: DocumentId): Promise<Category | null> => {
 
   return response
     ? prepareSingleDataContainer(
-      response.category,
-      DATA_CONTAINERS_TYPE.categories
-    )
+        response.category,
+        DATA_CONTAINERS_TYPE.categories
+      )
     : null;
 };
 
