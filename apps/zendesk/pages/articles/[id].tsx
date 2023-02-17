@@ -63,11 +63,6 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     endPage: 1,
   });
 
-  const newArticle = [];
-  for (let index = 0; index < 10; index++) {
-    newArticle.push(articles[index]);
-  }
-
   const paths = articles?.map((article) => ({
     params: { id: article.slug },
   }));

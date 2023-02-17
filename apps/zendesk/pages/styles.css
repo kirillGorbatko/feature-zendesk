@@ -5,8 +5,8 @@
   font-family: GTSuper;
   font-style: normal;
   font-weight: 900;
-  src: url(/fonts/GTSuperDsTrial-Su.woff2) format('woff2'),
-    url(/fonts/GTSuperDsTrial-Su.woff) format('woff');
+  src: url(../src/fonts/GTSuperDsTrial-Su.woff2) format('woff2'),
+    url(../src/fonts/GTSuperDsTrial-Su.woff) format('woff');
 }
 
 @tailwind base;
