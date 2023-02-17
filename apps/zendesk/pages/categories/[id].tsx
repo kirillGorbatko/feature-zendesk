@@ -90,7 +90,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const paramsId = context?.params?.id;
+  const paramsId = context?.params?.id as string;
   const categoryId = getIdFromSlug(paramsId);
   const category = await CATEGORIES_API.getCategory(categoryId);
   const sections = await SECTIONS_API.getCategorySections(categoryId);
