@@ -38,7 +38,7 @@
 		width: 73.333%;
 		height: 100%;
 
-		background: linear-gradient(17deg, rgba(155, 98, 255, .2) 5%, rgba(155, 98, 255, 0) 38%);
+		background: linear-gradient(17deg, rgba(155, 98, 255, .2) 5%, rgba(155, 98, 255, 0) 30%);
 
 		@include bp(theme('screens.fm-tablet')) {
 			display: none;
@@ -53,7 +53,7 @@
 		}
 
 		&.error_section--500_mod {
-			padding: calculateSize(5.8rem) $gl_desktop_indent;
+			padding: calculateSize(5.1rem) $gl_desktop_indent;
 		}
 	}
 
@@ -65,7 +65,7 @@
 		}
 
 		&.error_section--500_mod {
-			padding: calculateSize(5.7rem) $gl_mobile_indent;
+			padding: calculateSize(5.1rem) $gl_mobile_indent;
 		}
 	}
 }
@@ -87,13 +87,23 @@
 	position: relative;
 
 	.error_section--404_mod & {
-		height: calculateSize(20.8rem);
+		>svg {
+			height: calculateSize(20.8rem);
+			width: calculateSize(32rem);
+		}
 	}
 
 	.error_section--500_mod & {
-		height: calculateSize(20rem);
-		width: calculateSize(40.6rem);
+		>svg {
+			height: calculateSize(20rem);
+			width: calculateSize(40.6rem);
+		}
 
+		@include bp(theme('screens.fm-desktop'), min) {
+			&:not(:last-child) {
+				margin-bottom: .6rem;
+			}
+		}
 
 		@include bp(theme('screens.fm-mobile-max')) {
 			margin-left: calculateSize(10rem);
@@ -128,24 +138,30 @@
 			width: calculateSize(16.2rem);
 			height: calculateSize(14rem);
 
-			margin-top: calculateSize(2rem);
+			margin-top: calculateSize(2.7rem);
 			margin-left: calculateSize(-10.5rem);
 
 			clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 46%, 76% 44%, 88% 0%);
 
 			@include bp(theme('screens.fm-desktop'), min) {
-				background: linear-gradient(229deg, rgba(255, 103, 117, .2) 20%, rgba(0, 0, 0, 0) 65%);
+				background: linear-gradient(229deg, rgba(255, 103, 117, .2) 20%, rgba(255, 103, 117, 0) 65%);
 			}
 		}
 
 		@include bp(theme('screens.fm-tablet')) {
-			background: linear-gradient(23deg, rgba(0, 0, 0, 0) 0%, rgba(88, 236, 202, .3) 100%);
+			background: linear-gradient(23deg, rgba(88, 236, 202, 0) 26%, rgba(88, 236, 202, .3) 100%);
 		}
 	}
 
 	@include bp(theme('screens.fm-tablet')) {
 		&:not(:last-child) {
-			margin-bottom: 5px;
+			.error_section--404_mod & {
+				margin-bottom: 5px;
+			}
+
+			.error_section--500_mod & {
+				margin-bottom: 1.1rem;
+			}
 		}
 	}
 }
@@ -156,8 +172,11 @@
 	right: 0;
 
 	display: block;
-	width: calculateSize(22.8rem);
-	height: calculateSize(18.8rem);
+
+	svg {
+		width: calculateSize(22.8rem);
+		height: calculateSize(18.8rem);
+	}
 
 	margin-top: calculateSize(-1.2rem);
 	margin-right: calculateSize(-20rem);
@@ -193,4 +212,5 @@
 
 .error_section__btn_text {
 	font-size: calculateSize(1.8rem);
+	font-weight: 500;
 }

@@ -8,6 +8,7 @@
 
 		width: 100%;
 		padding: 0 $gl_desktop_indent;
+		pointer-events: none;
 
 		transition: transform .4s $base_ease, opacity .4s $base_ease;
 
@@ -46,6 +47,8 @@
 
 		background-color: $white;
 		box-shadow: calculateSize(1rem) calculateSize(1rem) calculateSize(4rem) rgba(#13193E, .1);
+
+		pointer-events: auto;
 	}
 
 	@include bp(theme('screens.fm-tablet')) {

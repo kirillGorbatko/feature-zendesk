@@ -1,12 +1,6 @@
 export function FiveHundred() {
   return (
-    <svg
-      width="407px"
-      height="186px"
-      viewBox="0 0 407 186"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 407 186" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient
           gradientUnits="userSpaceOnUse"

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DOMPurify from 'isomorphic-dompurify';
 import styles from './article.module.scss';
 
@@ -7,7 +7,11 @@ export interface ArticleProps {
 }
 
 export function Article({ body }: ArticleProps) {
-  const [content] = useState(DOMPurify.sanitize(body));
+  const [content, setContent] = useState(DOMPurify.sanitize(body));
+
+  useEffect(() => {
+    setContent(DOMPurify.sanitize(body));
+  }, [body]);
 
   return (
     <article

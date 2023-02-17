@@ -6,8 +6,6 @@ export function CrossIcon(props: CrossIconProps) {
     <svg
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
       viewBox="0 0 512 512"
     >
       <title>Cross icon</title>

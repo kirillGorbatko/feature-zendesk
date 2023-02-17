@@ -13,7 +13,7 @@ module.exports = {
       'fm-mobile-max': '767px',
     },
     colors: {
-      primary1: '#9B62FF',
+      primary1: '#7931f8',
       primary2: '#FF5262',
       primary3: '#58ECCA',
       muted: '#737373',

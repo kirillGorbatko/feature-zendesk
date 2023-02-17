@@ -2,7 +2,7 @@ import { Hamburger, FmLogo } from '@featurefm/design-system';
 import { useMatchMedia } from '@featurefm/shared/hooks';
 import { Navigation, NavigationProps } from './ui';
 import styles from './fm-header.module.scss';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 export interface FmHeaderProps extends NavigationProps {
@@ -13,6 +13,10 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
   const { isMobile } = useMatchMedia();
   const [isScrollState, setScrollState] = useState<boolean>(false);
   const [isNavOpen, setNavOpen] = useState<boolean>(false);
+  const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+  const $documentBody = useRef(
+    typeof window !== 'undefined' ? document.body : null
+  );
 
   const scrollStartPoint = 10;
 
@@ -36,13 +40,25 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
   }, [isMobile]);
 
   useEffect(() => {
+    setMobileNavOpen(isNavOpen && isMobile);
+  }, [isNavOpen, isMobile]);
+
+  useEffect(() => {
+    if ($documentBody.current) {
+      if (isMobileNavOpen) {
+        $documentBody.current.classList.add(styles['body--menu_open']);
+      } else {
+        $documentBody.current.classList.remove(styles['body--menu_open']);
+      }
+    }
+  }, [isMobileNavOpen]);
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const isMobileNavOpen = isNavOpen && isMobile;
 
   return (
     <header
@@ -65,6 +81,7 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
             <Hamburger
               onClick={handleTriggerClick}
               variant={isMobileNavOpen ? 'secondary' : undefined}
+              isMenuOpen={isMobileNavOpen}
             />
           </div>
         </nav>

@@ -55,7 +55,7 @@ export function FMButton({
           justify-content: center;
           align-items: center;
 
-          font-weight: 400;
+          font-weight: 500;
           font-family: 'Outfit', sans-serif;
           text-align: center;
           line-height: normal;
@@ -75,11 +75,11 @@ export function FMButton({
 
         .button-primary-variant::before {
           position: absolute;
-          top: 0;
-          left: 0;
+          top: -1px;
+          left: -1px;
           z-index: -1;
-          width: 100%;
-          height: 100%;
+          width: calc(100% + 2px);
+          height: calc(100% + 2px);
           background-color: #9b62ff;
           border-radius: inherit;
           transform: translateX(-100%);
@@ -130,13 +130,11 @@ export function FMButton({
           height: 3.1rem;
           padding: 0 1.2rem;
 
-          font-size: 1.06rem;
           border-radius: 2.5rem;
         }
 
         .button-lg-size {
           min-width: 14.4rem;
-          height: 4.4rem;
           padding: 0 1.2rem;
 
           font-size: 0.94rem;
@@ -155,17 +153,25 @@ export function FMButton({
         }
 
         @media screen and (min-width: 1024px) {
+          .button-lg-size {
+            height: 4.4rem;
+          }
           .button-base-size {
             padding: 0 3.6rem;
+            font-size: 1rem;
           }
         }
 
         @media screen and (max-width: 1023px) {
           .button-base-size {
             padding: 0 3.2rem;
+            font-size: 1.05rem;
           }
           .button-lg-size {
+            // font-size: 1.125rem;
             font-size: 1rem;
+            font-weight: 500;
+            height: 4.24rem;
           }
           .button--mobile-width-full {
             width: 100%;

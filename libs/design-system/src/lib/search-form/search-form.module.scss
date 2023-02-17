@@ -119,6 +119,13 @@
 		opacity: 1;
 		pointer-events: initial;
 	}
+
+  svg,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .search_form__hint {

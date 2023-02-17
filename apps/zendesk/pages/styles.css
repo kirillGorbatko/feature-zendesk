@@ -17,6 +17,13 @@ html {
   height: 100%;
 }
 
+@media (max-width: 1365px) and (min-width: theme('screens.fm-desktop')) {
+  /* 16 it's default html font-size */
+  html {
+    font-size: calc(100vw / 1366 * 16);
+  }
+}
+
 body {
   position: relative;
   height: 100%;

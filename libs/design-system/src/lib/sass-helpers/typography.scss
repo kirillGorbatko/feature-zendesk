@@ -2,7 +2,7 @@
 @import "mixins";
 
 @mixin h1 {
-	font-weight: 900;
+	font-weight: 700;
 	font-family: $font_gpsuper;
 
 	@include bp(theme('screens.fm-desktop'), min) {

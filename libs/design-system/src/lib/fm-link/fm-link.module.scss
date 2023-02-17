@@ -4,7 +4,6 @@
 	display: inline-block;
 
 	font-size: calculateSize(1.6rem);
-	cursor: pointer;
 
 	@include link_light;
 	@include link_hover_dark_shadow;

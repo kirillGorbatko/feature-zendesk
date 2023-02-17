@@ -9,7 +9,9 @@ export interface FmLinkProps {
 export function FmLink({ url, title }: FmLinkProps) {
   return (
     <Link href={url}>
-      <span className={styles['link']}>{title}</span>
+      <a href={url} className={styles['link']}>
+        {title}
+      </a>
     </Link>
   );
 }

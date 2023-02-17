@@ -42,7 +42,8 @@ export function SearchHero({
   return (
     <section
       className={classNames(styles['hero'], {
-        [styles['hero--search_mod']]: initialQuery !== undefined,
+        [styles['hero--search_mod']]: initialQuery !== '',
+        [styles['hero--back_mod']]: isBackButton,
       })}
     >
       <div className={styles['hero__in']}>

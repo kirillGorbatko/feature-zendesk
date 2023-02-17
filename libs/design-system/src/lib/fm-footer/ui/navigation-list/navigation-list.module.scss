@@ -35,10 +35,13 @@
 }
 
 .footer__nav_item {
+
+  line-height: 1.39;
+
 	&:not(:last-child) {
 		.footer__nav_list_w:not(.footer__nav_list_w--v2_mod) & {
 			@include bp(theme('screens.fm-desktop'), min) {
-				margin-bottom: calculateSize(2rem);
+				margin-bottom: calculateSize(2.1rem);
 			}
 
 			@include bp(theme('screens.fm-tablet')) {
@@ -48,11 +51,11 @@
 
 		.footer__nav_list_w.footer__nav_list_w--v2_mod & {
 			@include bp(theme('screens.fm-desktop'), min) {
-				margin-bottom: calculateSize(2.4rem);
+				margin-bottom: calculateSize(2.2rem);
 			}
 
 			@include bp(theme('screens.fm-tablet')) {
-				margin-bottom: calculateSize(2.2rem);
+				margin-bottom: calculateSize(2rem);
 			}
 		}
 	}

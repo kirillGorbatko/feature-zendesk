@@ -8,13 +8,13 @@
 	}
 
 	@include bp(theme('screens.fm-tablet')) {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		height: 100%;
 		width: 100%;
 		// 2 rem for pixel perfect
 		padding: ($header_height_mobile + calculateSize(2rem)) $gl_mobile_indent calculateSize(2.8rem);

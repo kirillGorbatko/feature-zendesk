@@ -3,6 +3,12 @@
 $top_offset: 2.2rem;
 $header_vr_padding: 1.6rem;
 
+.body--menu_open {
+	@include bp(theme('screens.fm-tablet')) {
+		overflow: hidden;
+	}
+}
+
 .header {
 	@include flex_block(row, nowrap, flex-start, center, center);
 
@@ -16,7 +22,6 @@ $header_vr_padding: 1.6rem;
 
 	font-size: 1rem;
 
-	will-change: transform;
 	z-index: 100;
 
 	&.header--transparent_mod:not(.header--scroll_state) {
@@ -47,6 +52,8 @@ $header_vr_padding: 1.6rem;
 		padding-right: $gl_desktop_indent;
 
 		transition: transform $menu_animation_duration $base_ease, background .3s $base_ease;
+
+		will-change: transform;
 	}
 
 	@include bp(theme('screens.fm-tablet')) {

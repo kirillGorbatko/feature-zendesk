@@ -1,12 +1,6 @@
 export function Waves() {
   return (
-    <svg
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      width="100%"
-      height="100%"
-      viewBox="0 0 628 512"
-    >
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 628 512">
       <path
         fill="#000"
         d="M194.964-91.197c-210.909 215.905-317.099 418.829-317.089 603.197h-8.303c-0.011-187.55 107.93-392.466 319.452-608.999l5.939 5.802z"

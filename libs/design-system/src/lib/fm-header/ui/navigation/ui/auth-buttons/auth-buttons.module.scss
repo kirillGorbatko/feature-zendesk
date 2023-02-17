@@ -51,10 +51,13 @@
 	@include bp(theme('screens.fm-tablet')) {
 		font-size: calculateSize(1.7rem);
 		color: $white;
+		font-weight: 500;
 	}
 }
 
 .header__auth_button {
+	width: 100%;
+
 	@include bp(theme('screens.fm-desktop'), min) {
 		&.header__auth_button--mobile_mod {
 			display: none;

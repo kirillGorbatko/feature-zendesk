@@ -24,7 +24,7 @@ export function Index({ categories }: IndexProps) {
       <TopicList<Category> items={categories} />
       <FmGetStartedCta
         title="Get started for free"
-        descr="You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan'"
+        descr="You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan."
       />
     </>
   );

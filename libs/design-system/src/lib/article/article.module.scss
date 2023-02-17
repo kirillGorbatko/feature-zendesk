@@ -135,9 +135,10 @@
 
 	img {
 		display: block;
-		// height: 100%;
-		// width: 100%;
 		object-fit: contain;
+
+		margin-left: auto;
+		margin-right: auto;
 
 		&:not(:last-child) {
 			@include bp(theme('screens.fm-desktop'), min) {
@@ -151,8 +152,6 @@
 
 		@include bp(theme('screens.fm-desktop'), min) {
 			max-width: calculateSize(81rem);
-			margin-left: auto;
-			margin-right: auto;
 
 			border: 5px solid $white;
 			box-shadow: 0 calculateSize(1.3rem) calculateSize(2.7rem) 0 rgba($black, .2);

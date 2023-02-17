@@ -31,7 +31,7 @@ const GetStartedCTABlock: Block = {
       type: 'textarea',
       required: true,
       defaultValue:
-        'You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan',
+        'You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan.',
     },
     {
       type: 'row',
