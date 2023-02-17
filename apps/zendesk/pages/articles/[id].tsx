@@ -1,11 +1,10 @@
-import { GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { ArticleSection, GradientSection } from '@featurefm/design-system';
 import { CustomHead } from '../../custom-head/custom-head';
 import { ARTICLES_API, CATEGORIES_API, SECTIONS_API } from '../../src/api';
 import { getIdFromSlug } from '../../src/shared/utils';
 import { Article, Category, Section } from '../../src/shared/types';
 
-// FIXME: add correct types to breadcrumbs
 interface ArticleProps {
   article: Article;
   breadcrumbs: [{ name: string; url: string }];
@@ -58,7 +57,23 @@ const preparedArticles = (items: Article[], activeArticleId: number) => {
   return updatedArticles;
 };
 
-export const getServerSideProps: GetStaticProps = async (context) => {
+export const getStaticPaths: GetStaticPaths = async (context) => {
+  const articles = await ARTICLES_API.getArticlesByPage({
+    startPage: 1,
+    endPage: 1,
+  });
+
+  const paths = articles?.map((article) => ({
+    params: { id: article.slug },
+  }));
+
+  return {
+    paths,
+    fallback: true,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
   const paramsId = context?.params?.id as string;
   const articleId = getIdFromSlug(paramsId);
   const article = await ARTICLES_API.getArticle(articleId);
@@ -76,9 +91,11 @@ export const getServerSideProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      article,
-      breadcrumbs,
-      sectionArticles: prepareSectionArticles,
+      article: article || {},
+      breadcrumbs: breadcrumbs || [],
+      sectionArticles: prepareSectionArticles || [],
     },
+    // 3600 = 1 hour
+    revalidate: 3600,
   };
 };

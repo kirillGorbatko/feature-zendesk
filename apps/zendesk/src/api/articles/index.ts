@@ -46,7 +46,27 @@ const getArticle = async (id: DocumentId): Promise<Article | null> => {
     : null;
 };
 
+const getArticlesByPage = async ({
+  startPage,
+  endPage,
+}: {
+  startPage: number,
+  endPage: number,
+}) => {
+  const query = '/articles'
+
+  const articles = await getContentByType<Article>({
+    query,
+    startPage,
+    endPage,
+    type: DATA_CONTAINERS_TYPE.articles,
+  });
+
+  return articles ? prepareDataContainers(articles, DATA_CONTAINERS_TYPE.articles) : [];
+};
+
 export const ARTICLES_API = {
   getAllContainerArticle,
   getArticle,
+  getArticlesByPage,
 };

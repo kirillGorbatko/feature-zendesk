@@ -31,7 +31,13 @@ function Category({ category, sections }: CategoryProps) {
     <>
       <CustomHead title={category?.name} />
       <GradientSection>
-        <SearchHero title={category?.name} isBackButton={'Back'} iconName={icon} iconTitleMod={true} hiddenMobileForm={true} />
+        <SearchHero
+          title={category?.name}
+          isBackButton={'Back'}
+          iconName={icon}
+          iconTitleMod={true}
+          hiddenMobileForm={true}
+        />
         <LinksBlocksSection>
           <LinksBlocksList>
             {sections.map(({ name, articles }, index) => {

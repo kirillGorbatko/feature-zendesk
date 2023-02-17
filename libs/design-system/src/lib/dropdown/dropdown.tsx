@@ -55,7 +55,7 @@ export function Dropdown({ items }: DropdownProps) {
         </span>
       </button>
       <ul className={styles['dropdown__list']}>
-        {items.map(({ name, url }: any, index: number) => {
+        {items?.map(({ name, url }: any, index: number) => {
           return (
             <li key={index} className={styles['dropdown__item']}>
               <DropdownLink name={name} url={url} onClick={handleClick} />

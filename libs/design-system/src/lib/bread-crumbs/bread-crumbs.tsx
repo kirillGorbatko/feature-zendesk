@@ -15,7 +15,7 @@ export function BreadCrumbs({ items }: BreadCrumbsProps) {
   return (
     <div className={styles['bread_crumbs']}>
       <ul className={styles['bread_crumbs__list']}>
-        {items.map(({ url, name }, index) => {
+        {items?.map(({ url, name }, index) => {
           return (
             <li
               key={index}
