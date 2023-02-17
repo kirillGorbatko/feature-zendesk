@@ -48,10 +48,10 @@ export const getContentByType = async <T>({
       page: currentPage,
       query,
     });
-    if (success) {
+    if (success && response[type]) {
       finalArr.push(...response[type]);
     }
-    preparedEndPage = endPage || response.page_count;
+    preparedEndPage = endPage || response?.page_count;
     currentPage++;
   }
 
