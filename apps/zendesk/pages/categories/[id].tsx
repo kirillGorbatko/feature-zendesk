@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetServerSideProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import {
   GradientSection,
   LinksBlocksSection,
@@ -78,7 +78,14 @@ const prepareSections = (sections: Section[], articles: Article[]) => {
   return updatedSections;
 };
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getStaticPaths: GetStaticPaths = async (context) => {
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
   const paramsId = context?.params?.id as string;
   const categoryId = getIdFromSlug(paramsId);
   const category = await CATEGORIES_API.getCategory(categoryId);
@@ -95,5 +102,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       category,
       sections: updatedSections,
     },
+    revalidate: 60,
   };
 };
