@@ -81,7 +81,7 @@ const prepareSections = (sections: Section[], articles: Article[]) => {
 export const getStaticPaths: GetStaticPaths = async (context) => {
   return {
     paths: [],
-    fallback: 'blocking',
+    fallback: true,
   };
 };
 
@@ -102,5 +102,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       category,
       sections: updatedSections,
     },
+    revalidate: 60,
   };
 };

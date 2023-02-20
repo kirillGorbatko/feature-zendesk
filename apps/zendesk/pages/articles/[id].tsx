@@ -61,7 +61,7 @@ const preparedArticles = (items: Article[], activeArticleId: number) => {
 export const getStaticPaths: GetStaticPaths = async (context) => {
   return {
     paths: [],
-    fallback: 'blocking',
+    fallback: true,
   };
 };
 
@@ -104,5 +104,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
       breadcrumbs,
       sectionArticles: prepareSectionArticles,
     },
+    revalidate: 60,
   };
 };
