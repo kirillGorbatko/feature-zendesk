@@ -21,7 +21,7 @@ const createHeaders = () => {
 };
 
 const createUrl = (url: string) => {
-  return `${API_URL}${url}`;
+  return `https://featurefm.zendesk.com/api/v2/help_center/${url}`;
 };
 
 export const apiRequestHandler = <T>(): {
@@ -36,7 +36,9 @@ export const apiRequestHandler = <T>(): {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error(`HTTP error ${response.statusText}, status = ${response.status}`);
+        throw new Error(
+          `HTTP error ${response.statusText}, status = ${response.status}`
+        );
       }
     } catch (err) {
       console.error(err);

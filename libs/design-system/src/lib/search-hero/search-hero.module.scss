@@ -45,10 +45,10 @@
 }
 
 .hero__head {
-	&:not(:last-child) {
-		.hero--search_mod & {
+	.hero--search_mod & {
+		&:not(:last-child) {
 			@include bp(theme('screens.fm-desktop'), min) {
-        display: none;
+				display: none;
 				margin-bottom: calculateSize(7rem);
 			}
 
@@ -56,27 +56,23 @@
 				margin-bottom: calculateSize(3.8rem);
 			}
 		}
+	}
 
-		.hero--back_mod & {
+	.hero--back_mod & {
+		&:not(:last-child) {
 			@include bp(theme('screens.fm-desktop'), min) {
 				margin-bottom: calculateSize(7rem);
-			}
-		}
-
-		&:not(.hero--search_mod &, .hero--back_mod &) {
-			@include bp(theme('screens.fm-desktop'), min) {
-				margin-bottom: calculateSize(7rem);
-			}
-
-			@include bp(theme('screens.fm-tablet')) {
-				margin-bottom: calculateSize(4rem);
 			}
 		}
 	}
 
-	@include bp(theme('screens.fm-mobile-max')) {
-		.hero--search_mod & {
-			margin-bottom: calculateSize(3.7rem);
+	&:not(:last-child, .hero--search_mod &, .hero--back_mod &) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(7rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(4rem);
 		}
 	}
 }
@@ -180,25 +176,25 @@
 .hero__search_subtitle {
 	font-size: calculateSize(1.8rem);
 
-  @include bp(theme('screens.fm-tablet')) {
-    line-height: 1.33;
-  }
+	@include bp(theme('screens.fm-tablet')) {
+		line-height: 1.33;
+	}
 
 	&:not(:last-child) {
-    @include bp(theme('screens.fm-desktop'), min) {
-      margin-bottom: 4px;
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: 4px;
 		}
 
-    @include bp(theme('screens.fm-tablet')) {
-      margin-bottom: calculateSize(1.2rem);
-    }
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(1.2rem);
+		}
 	}
 }
 
 .hero__search_title {
 	font-size: calculateSize(3rem);
 
-  @include bp(theme('screens.fm-tablet')) {
-    line-height: 1.33;
-  }
+	@include bp(theme('screens.fm-tablet')) {
+		line-height: 1.33;
+	}
 }
