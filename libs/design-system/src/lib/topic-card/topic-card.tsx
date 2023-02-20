@@ -20,11 +20,11 @@ export function TopicCard({
     <Link href={url} prefetch={false}>
       <a href={url}>
         <div className={styles['topic_card']}>
-          <div className={styles['topic_cardicon']}>
+          <div className={styles['topic_card__icon']}>
             <TopicIcon iconName={iconName} />
           </div>
           <div>
-            {name && <h5 className={styles['topic_cardtitle']}>{name}</h5>}
+            {name && <h5 className={styles['topic_card__title']}>{name}</h5>}
             {description && (
               <div className={styles['topic_card__text']}>{description} </div>
             )}
