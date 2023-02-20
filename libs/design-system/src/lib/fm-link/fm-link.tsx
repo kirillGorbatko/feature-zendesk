@@ -8,7 +8,7 @@ export interface FmLinkProps {
 
 export function FmLink({ url, title }: FmLinkProps) {
   return (
-    <Link href={url}>
+    <Link href={url} prefetch={false}>
       <a href={url} className={styles['link']}>
         {title}
       </a>
