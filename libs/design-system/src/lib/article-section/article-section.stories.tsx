@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ArticleSection } from './article-section';
 
 const Story: ComponentMeta<typeof ArticleSection> = {
-  title: 'Templates/ArticleSection',
+  title: 'Glivera/ArticleSection',
   component: ArticleSection,
 };
 export default Story;

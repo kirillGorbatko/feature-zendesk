@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Article } from './article';
 
 const Story: ComponentMeta<typeof Article> = {
-  title: 'Organisms/Article',
+  title: 'Glivera/Article',
   component: Article,
 };
 export default Story;

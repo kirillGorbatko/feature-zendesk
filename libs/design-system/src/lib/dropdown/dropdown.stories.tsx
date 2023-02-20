@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Dropdown } from './dropdown';
 
 const Story: ComponentMeta<typeof Dropdown> = {
-  title: 'Molecules/Dropdown',
+  title: 'Glivera/Dropdown',
   component: Dropdown,
 };
 export default Story;

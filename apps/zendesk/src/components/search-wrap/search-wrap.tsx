@@ -34,6 +34,7 @@ function SearchWrap(props: SearchHeroWrapProps) {
 
   // { query }: SearchWrapProps
   const handleSubmit = async (e: any) => {
+    // FIXME: Change type
     e.preventDefault();
     const userQuery = e?.target?.query?.value;
 

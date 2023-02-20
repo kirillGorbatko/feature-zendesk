@@ -3,7 +3,7 @@ import { LinksBlockImg } from './links-block-image';
 
 export default {
   component: LinksBlockImg,
-  title: 'Images/LinksBlockImg',
+  title: 'Glivera/LinksBlockImg',
 } as ComponentMeta<typeof LinksBlockImg>;
 
 const Template: ComponentStory<typeof LinksBlockImg> = (args) => (

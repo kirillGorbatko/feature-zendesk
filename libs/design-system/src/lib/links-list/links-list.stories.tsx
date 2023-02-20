@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { LinksList } from './links-list';
 
 const Story: ComponentMeta<typeof LinksList> = {
-  title: 'Molecules/LinksList',
+  title: 'Glivera/LinksList',
   component: LinksList,
 };
 export default Story;

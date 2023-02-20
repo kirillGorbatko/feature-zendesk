@@ -3,7 +3,7 @@ import { ServicePlayImage } from './service-play-image';
 
 const Story: ComponentMeta<typeof ServicePlayImage> = {
   component: ServicePlayImage,
-  title: 'Images/ServicePlayImage',
+  title: 'Glivera/ServicePlayImage',
   argTypes: {
     variant: {
       options: ['inverted'],

@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { RectangleDecor } from './rectangle-decor';
 
 const Story: ComponentMeta<typeof RectangleDecor> = {
-  title: 'Atoms/RectangleDecor',
+  title: 'Glivera/RectangleDecor',
   component: RectangleDecor,
   argTypes: {
     variant: {

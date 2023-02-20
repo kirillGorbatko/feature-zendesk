@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { FmH2 } from './fm-h2';
 
 const Story: ComponentMeta<typeof FmH2> = {
-  title: 'Atoms/FmH2',
+  title: 'Glivera/FmH2',
   component: FmH2,
 };
 export default Story;

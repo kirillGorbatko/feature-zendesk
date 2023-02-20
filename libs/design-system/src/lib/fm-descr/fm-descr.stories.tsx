@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { FmDescr } from './fm-descr';
 
 const Story: ComponentMeta<typeof FmDescr> = {
-  title: 'Atoms/FmDescr',
+  title: 'Glivera/FmDescr',
   component: FmDescr,
 };
 export default Story;

@@ -3,7 +3,7 @@ import { CrossIcon } from './cross-icon';
 
 export default {
   component: CrossIcon,
-  title: 'Icons/CrossIcon',
+  title: 'Glivera/CrossIcon',
 } as ComponentMeta<typeof CrossIcon>;
 
 const Template: ComponentStory<typeof CrossIcon> = (args) => (

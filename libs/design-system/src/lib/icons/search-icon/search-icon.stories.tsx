@@ -3,7 +3,7 @@ import SearchIcon from './search-icon';
 
 export default {
   component: SearchIcon,
-  title: 'Icons/SearchIcon',
+  title: 'Glivera/SearchIcon',
 } as ComponentMeta<typeof SearchIcon>;
 
 const Template: ComponentStory<typeof SearchIcon> = (args) => (

@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { FmGetStartedCta } from './fm-get-started-cta';
 
 const Story: ComponentMeta<typeof FmGetStartedCta> = {
-  title: 'Molecules/FmGetStartedCta',
+  title: 'Glivera/FmGetStartedCta',
   component: FmGetStartedCta,
 };
 export default Story;

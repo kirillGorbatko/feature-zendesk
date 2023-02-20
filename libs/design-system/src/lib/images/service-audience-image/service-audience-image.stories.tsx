@@ -3,7 +3,7 @@ import { ServiceAudienceImage } from './service-audience-image';
 
 const Story: ComponentMeta<typeof ServiceAudienceImage> = {
   component: ServiceAudienceImage,
-  title: 'Images/ServiceAudienceImage',
+  title: 'Glivera/ServiceAudienceImage',
   argTypes: {
     variant: {
       options: ['inverted'],

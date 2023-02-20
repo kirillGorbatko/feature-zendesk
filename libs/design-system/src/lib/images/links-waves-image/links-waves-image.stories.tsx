@@ -3,7 +3,7 @@ import { LinksWavesImg } from './links-waves-image';
 
 export default {
   component: LinksWavesImg,
-  title: 'Images/LinksWavesImg',
+  title: 'Glivera/LinksWavesImg',
 } as ComponentMeta<typeof LinksWavesImg>;
 
 const Template: ComponentStory<typeof LinksWavesImg> = (args) => (

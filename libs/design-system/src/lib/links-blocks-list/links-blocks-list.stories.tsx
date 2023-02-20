@@ -3,7 +3,7 @@ import { LinksBlocksList } from './links-blocks-list';
 import { LinksBlocksItem } from '../links-blocks-item/links-blocks-item';
 
 const Story: ComponentMeta<typeof LinksBlocksList> = {
-  title: 'Templates/LinksBlocksList',
+  title: 'Glivera/LinksBlocksList',
   component: LinksBlocksList,
 };
 export default Story;

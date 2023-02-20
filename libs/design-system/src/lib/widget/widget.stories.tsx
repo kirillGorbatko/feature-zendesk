@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Widget } from './widget';
 
 const Story: ComponentMeta<typeof Widget> = {
-  title: 'Atoms/Widget',
+  title: 'Glivera/Widget',
   component: Widget,
 };
 export default Story;

@@ -3,7 +3,7 @@ import { HelpCardIcon } from './help-card-icon';
 
 const Story: ComponentMeta<typeof HelpCardIcon> = {
   component: HelpCardIcon,
-  title: 'Atoms/HelpCardIcon',
+  title: 'Glivera/HelpCardIcon',
   argTypes: {
     iconName: {
       defaultValue: 'play',

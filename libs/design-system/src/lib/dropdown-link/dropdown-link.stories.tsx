@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { DropdownLink } from './dropdown-link';
 
 const Story: ComponentMeta<typeof DropdownLink> = {
-  title: 'Atoms/DropdownLink',
+  title: 'Glivera/DropdownLink',
   component: DropdownLink,
 };
 export default Story;

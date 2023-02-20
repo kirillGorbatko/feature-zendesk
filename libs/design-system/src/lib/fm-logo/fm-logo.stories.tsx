@@ -3,7 +3,7 @@ import { FmLogo } from './fm-logo';
 
 const Story: ComponentMeta<typeof FmLogo> = {
   component: FmLogo,
-  title: 'Atoms/FmLogo',
+  title: 'Glivera/FmLogo',
   argTypes: {
     variant: {
       defaultValue: 'primary',

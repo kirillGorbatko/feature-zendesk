@@ -3,7 +3,7 @@ import { ArrowIcon } from './arrow-icon';
 
 export default {
   component: ArrowIcon,
-  title: 'Icons/ArrowIcon',
+  title: 'Glivera/ArrowIcon',
 } as ComponentMeta<typeof ArrowIcon>;
 
 const Template: ComponentStory<typeof ArrowIcon> = (args) => (

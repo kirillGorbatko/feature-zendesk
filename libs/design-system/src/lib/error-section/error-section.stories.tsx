@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ErrorSection } from './error-section';
 
 const Story: ComponentMeta<typeof ErrorSection> = {
-  title: 'Templates/ErrorSection',
+  title: 'Glivera/ErrorSection',
   component: ErrorSection,
   argTypes: {
     errorNumber: {

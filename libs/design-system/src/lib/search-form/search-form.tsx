@@ -40,6 +40,12 @@ export function SearchForm({
     document.body.classList.remove(popupOpenClass);
   };
 
+  const onSubmit = (e: any) => {
+    // FIXME: Change type
+    handleClose();
+    handleSubmit(e);
+  };
+
   return (
     <div
       className={classNames(styles['search_form'], {
@@ -65,7 +71,7 @@ export function SearchForm({
             // action="/hc/en-us/search/"
             action="/search"
             acceptCharset="UTF-8"
-            onSubmit={handleSubmit}
+            onSubmit={onSubmit}
           >
             <input
               name="utf8"

@@ -5,7 +5,7 @@ import { LinksBlocksItem } from '../links-blocks-item/links-blocks-item';
 
 const Story: ComponentMeta<typeof LinksBlocksSection> = {
   component: LinksBlocksSection,
-  title: 'Organisms/LinksBlocksSection',
+  title: 'Glivera/LinksBlocksSection',
 };
 export default Story;
 

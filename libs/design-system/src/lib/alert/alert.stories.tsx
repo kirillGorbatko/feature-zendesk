@@ -3,7 +3,7 @@ import { Alert } from './alert';
 
 const Story: ComponentMeta<typeof Alert> = {
   component: Alert,
-  title: 'Atoms/Alert',
+  title: 'Glivera/Alert',
 };
 export default Story;
 

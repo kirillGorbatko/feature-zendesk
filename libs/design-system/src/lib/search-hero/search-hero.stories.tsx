@@ -3,7 +3,7 @@ import { SearchHero } from './search-hero';
 
 const Story: ComponentMeta<typeof SearchHero> = {
   component: SearchHero,
-  title: 'Organisms/SearchHero',
+  title: 'Glivera/SearchHero',
   argTypes: {
     align: {
       defaultValue: 'left',

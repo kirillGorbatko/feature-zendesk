@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { TopicCard } from './topic-card';
 
 const Story: ComponentMeta<typeof TopicCard> = {
-  title: 'Molecules/TopicCard',
+  title: 'Glivera/TopicCard',
   component: TopicCard,
   argTypes: {
     iconName: {

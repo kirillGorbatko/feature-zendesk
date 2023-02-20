@@ -3,7 +3,7 @@ import { SpeakerIcon } from './speaker-icon';
 
 export default {
   component: SpeakerIcon,
-  title: 'Icons/SpeakerIcon',
+  title: 'Glivera/SpeakerIcon',
 } as ComponentMeta<typeof SpeakerIcon>;
 
 const Template: ComponentStory<typeof SpeakerIcon> = (args) => (

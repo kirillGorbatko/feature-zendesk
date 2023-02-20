@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SocialLink } from './social-link';
 
 const Story: ComponentMeta<typeof SocialLink> = {
-  title: 'Atoms/SocialLink',
+  title: 'Glivera/SocialLink',
   component: SocialLink,
   argTypes: {
     iconName: {

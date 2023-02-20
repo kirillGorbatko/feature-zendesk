@@ -3,7 +3,7 @@ import { SearchForm } from './search-form';
 
 const Story: ComponentMeta<typeof SearchForm> = {
   component: SearchForm,
-  title: 'Molecules/SearchForm',
+  title: 'Glivera/SearchForm',
   argTypes: {
     mobAlign: {
       defaultValue: 'center',

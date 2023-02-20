@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { LinksBlock } from './links-block';
 
 const Story: ComponentMeta<typeof LinksBlock> = {
-  title: 'Organisms/LinksBlock',
+  title: 'Glivera/LinksBlock',
   component: LinksBlock,
   argTypes: {
     name: {

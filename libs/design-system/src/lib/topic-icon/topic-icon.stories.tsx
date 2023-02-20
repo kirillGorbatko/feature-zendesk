@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { TopicIcon } from './topic-icon';
 
 const Story: ComponentMeta<typeof TopicIcon> = {
-  title: 'Atoms/TopicIcon',
+  title: 'Glivera/TopicIcon',
   component: TopicIcon,
   argTypes: {
     iconName: {

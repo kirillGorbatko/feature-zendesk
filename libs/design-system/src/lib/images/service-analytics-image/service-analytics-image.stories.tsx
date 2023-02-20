@@ -3,7 +3,7 @@ import { ServiceAnalyticsImage } from './service-analytics-image';
 
 const Story: ComponentMeta<typeof ServiceAnalyticsImage> = {
   component: ServiceAnalyticsImage,
-  title: 'Images/ServiceAnalyticsImage',
+  title: 'Glivera/ServiceAnalyticsImage',
   argTypes: {
     variant: {
       options: ['inverted'],

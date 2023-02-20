@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { GradientSection } from './gradient-section';
 
 const Story: ComponentMeta<typeof GradientSection> = {
-  title: 'Atoms/GradientSection',
+  title: 'Glivera/GradientSection',
   component: GradientSection,
   argTypes: {
     variant: {

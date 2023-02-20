@@ -3,7 +3,7 @@ import { HelpCard } from './help-card';
 
 const Story: ComponentMeta<typeof HelpCard> = {
   component: HelpCard,
-  title: 'Molecules/HelpCard',
+  title: 'Glivera/HelpCard',
   argTypes: {
     variant: {
       defaultValue: 'primary',

@@ -3,7 +3,7 @@ import { Hamburger } from './hamburger';
 
 const Story: ComponentMeta<typeof Hamburger> = {
   component: Hamburger,
-  title: 'Atoms/Hamburger',
+  title: 'Glivera/Hamburger',
   argTypes: {
     variant: {
       options: ['secondary'],

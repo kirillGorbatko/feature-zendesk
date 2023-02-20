@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { FmLink } from './fm-link';
 
 const Story: ComponentMeta<typeof FmLink> = {
-  title: 'Atoms/FmLink',
+  title: 'Glivera/FmLink',
   component: FmLink,
 };
 export default Story;

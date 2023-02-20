@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { BreadCrumbs } from './bread-crumbs';
 
 const Story: ComponentMeta<typeof BreadCrumbs> = {
-  title: 'Molecules/BreadCrumbs',
+  title: 'Glivera/BreadCrumbs',
   component: BreadCrumbs,
 };
 export default Story;

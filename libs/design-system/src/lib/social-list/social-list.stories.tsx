@@ -2,7 +2,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SocialList } from './social-list';
 
 const Story: ComponentMeta<typeof SocialList> = {
-  title: 'Molecules/SocialList',
+  title: 'Glivera/SocialList',
   component: SocialList,
   argTypes: {
     align: {

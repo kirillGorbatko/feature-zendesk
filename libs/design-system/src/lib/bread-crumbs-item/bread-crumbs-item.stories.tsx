@@ -3,7 +3,7 @@ import { BreadCrumbsItem } from './bread-crumbs-item';
 
 const Story: ComponentMeta<typeof BreadCrumbsItem> = {
   component: BreadCrumbsItem,
-  title: 'Atoms/BreadCrumbsItem',
+  title: 'Glivera/BreadCrumbsItem',
   argTypes: {
     name: {
       defaultValue: 'Default text',
