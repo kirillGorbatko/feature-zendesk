@@ -34,3 +34,5 @@ export function TopicCard({
     </Link>
   );
 }
+
+export default TopicCard;
