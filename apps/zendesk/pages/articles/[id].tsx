@@ -5,13 +5,14 @@ import { ARTICLES_API, CATEGORIES_API, SECTIONS_API } from '../../src/api';
 import { getIdFromSlug } from '../../src/shared/utils';
 import { Article, Category, Section } from '../../src/shared/types';
 
+type BreadCrumbs = { name: string; url: string };
+type BreadcrumbsParams = [BreadCrumbs, Category, Section];
+
 interface ArticleProps {
   article: Article;
-  breadcrumbs: [{ name: string; url: string }];
+  breadcrumbs: BreadCrumbs[];
   sectionArticles: any[];
 }
-
-type BreadcrumbsParams = [{ name: string; url: string }, Category, Section];
 
 export function Article({
   article,
@@ -78,22 +79,39 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const articleId = getIdFromSlug(paramsId);
   const article = await ARTICLES_API.getArticle(articleId);
   const sectionId = article?.section_id;
-  const section = await SECTIONS_API.getSection(sectionId);
-  const sectionArticles = await ARTICLES_API.getAllContainerArticle(
-    sectionId,
-    'sections'
-  );
-  const category = await CATEGORIES_API.getCategory(section?.category_id);
-  const prepareSectionArticles = preparedArticles(sectionArticles, articleId);
 
+  let section: Section = null;
+  let sectionArticles: Article[] = null;
+  let category: Category;
+
+  if (sectionId) {
+    section = await SECTIONS_API.getSection(sectionId);
+    sectionArticles = await ARTICLES_API.getAllContainerArticle(
+      sectionId,
+      'sections'
+    );
+
+    const categoryId = section?.category_id;
+
+    if (categoryId) {
+      category = await CATEGORIES_API.getCategory(categoryId);
+    }
+  }
+
+  const prepareSectionArticles = sectionArticles
+    ? preparedArticles(sectionArticles, articleId)
+    : null;
   const helpPage = { name: 'Help', url: '/' };
-  const breadcrumbs = createBreadcrumbs([helpPage, category, section]);
+  const breadcrumbs =
+    category && section
+      ? createBreadcrumbs([helpPage, category, section])
+      : null;
 
   return {
     props: {
-      article: article || {},
-      breadcrumbs: breadcrumbs || [],
-      sectionArticles: prepareSectionArticles || [],
+      article: article || null,
+      breadcrumbs,
+      sectionArticles: prepareSectionArticles,
     },
     // 3600 = 1 hour
     revalidate: 3600,

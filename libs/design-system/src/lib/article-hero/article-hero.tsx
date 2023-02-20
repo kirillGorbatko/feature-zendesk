@@ -29,7 +29,7 @@ export function ArticleHero({
             styles['article_hero__dropdown--mobile_mod'],
           ])}
         >
-          <Dropdown items={sectionsArticles} />
+          {sectionsArticles && <Dropdown items={sectionsArticles} />}
         </div>
         <h1 className={styles['article_hero__title']}>{title}</h1>
       </div>

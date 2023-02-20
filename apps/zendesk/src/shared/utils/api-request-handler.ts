@@ -33,14 +33,11 @@ export const apiRequestHandler = <T>(): {
         headers: createHeaders(),
       });
 
-      if (response.status === 200) {
+      if (response.ok) {
         return response.json();
+      } else {
+        throw new Error(`HTTP error ${response.statusText}, status = ${response.status}`);
       }
-
-      if (response.status === 429) {
-        throw new Error(response.statusText);
-      }
-
     } catch (err) {
       console.error(err);
     }

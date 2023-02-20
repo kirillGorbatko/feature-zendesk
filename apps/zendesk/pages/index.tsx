@@ -1,8 +1,4 @@
-import {
-  SearchHero,
-  TopicList,
-  FmGetStartedCta,
-} from '@featurefm/design-system';
+import { TopicList, FmGetStartedCta } from '@featurefm/design-system';
 import { CustomHead } from '../custom-head/custom-head';
 import { CATEGORIES_API } from '../src/api';
 import { Category } from '../src/shared/types';

@@ -24,7 +24,7 @@ interface CategoryProps {
 
 function Category({ category, sections }: CategoryProps) {
   let icon = '';
-  jsyaml.loadAll(category.description, function (doc: any) {
+  jsyaml.loadAll(category?.description, function (doc: any) {
     icon = doc?.icon || '';
   });
   return (
@@ -38,20 +38,22 @@ function Category({ category, sections }: CategoryProps) {
           iconTitleMod={true}
           hiddenMobileForm={true}
         />
-        <LinksBlocksSection>
-          <LinksBlocksList>
-            {sections.map(({ name, articles }, index) => {
-              return (
-                <LinksBlocksItem<Article>
-                  key={index}
-                  index={index}
-                  name={name}
-                  links={articles}
-                />
-              );
-            })}
-          </LinksBlocksList>
-        </LinksBlocksSection>
+        {sections && (
+          <LinksBlocksSection>
+            <LinksBlocksList>
+              {sections.map(({ name, articles }, index) => {
+                return (
+                  <LinksBlocksItem<Article>
+                    key={index}
+                    index={index}
+                    name={name}
+                    links={articles}
+                  />
+                );
+              })}
+            </LinksBlocksList>
+          </LinksBlocksSection>
+        )}
       </GradientSection>
     </>
   );
@@ -98,7 +100,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     categoryId,
     'categories'
   );
-  const updatedSections = prepareSections(sections, articles);
+  const updatedSections =
+    sections && articles ? prepareSections(sections, articles) : null;
 
   return {
     props: {

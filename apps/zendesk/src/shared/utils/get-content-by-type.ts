@@ -22,14 +22,10 @@ const getContent = async ({ page, query }: GetContent): Promise<any> => {
     });
 
     return {
-      success: true,
       response,
     };
   } catch (error) {
     console.error(error);
-    return {
-      success: false,
-    };
   }
 };
 
@@ -40,18 +36,18 @@ export const getContentByType = async <T>({
   endPage,
 }: GetContentByType): Promise<T[]> => {
   let currentPage = startPage;
-  let preparedEndPage = endPage || currentPage + 1;
+  let preparedEndPage = endPage || currentPage;
   const finalArr: T[] = [];
 
   while (currentPage <= preparedEndPage) {
-    const { success, response } = await getContent({
+    const { response } = await getContent({
       page: currentPage,
       query,
     });
-    if (success && response[type]) {
+    if (response && response[type]) {
       finalArr.push(...response[type]);
+      preparedEndPage = response?.page_count;
     }
-    preparedEndPage = endPage || response?.page_count;
     currentPage++;
   }
 
