@@ -46,9 +46,6 @@ function SearchWrap(props: SearchHeroWrapProps) {
 
     const encodedQuery = encodeURIComponent(userQuery);
 
-    console.log(window.location);
-
-
     router.push(`/search?query=${encodedQuery}`);
 
     if (router.route === '/search') {

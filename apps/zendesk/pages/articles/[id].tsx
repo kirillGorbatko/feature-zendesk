@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { ArticleSection, GradientSection } from '@featurefm/design-system';
 import { CustomHead } from '../../custom-head/custom-head';
 import { ARTICLES_API, CATEGORIES_API, SECTIONS_API } from '../../src/api';
@@ -58,23 +58,7 @@ const preparedArticles = (items: Article[], activeArticleId: number) => {
   return updatedArticles;
 };
 
-export const getStaticPaths: GetStaticPaths = async (context) => {
-  const articles = await ARTICLES_API.getArticlesByPage({
-    startPage: 1,
-    endPage: 1,
-  });
-
-  const paths = articles?.map((article) => ({
-    params: { id: article.slug },
-  }));
-
-  return {
-    paths,
-    fallback: true,
-  };
-};
-
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const paramsId = context?.params?.id as string;
   const articleId = getIdFromSlug(paramsId);
   const article = await ARTICLES_API.getArticle(articleId);
@@ -113,7 +97,5 @@ export const getStaticProps: GetStaticProps = async (context) => {
       breadcrumbs,
       sectionArticles: prepareSectionArticles,
     },
-    // 3600 = 1 hour
-    revalidate: 3600,
   };
 };

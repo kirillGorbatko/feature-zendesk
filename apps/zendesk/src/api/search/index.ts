@@ -37,7 +37,7 @@ export const connectToSearchAPI = async ({
     }
 
     const response = await fetch(
-      `http://${hostUrl}/api/search?query=${query}&page=${pageIndex}&per_page=25`
+      `https://${hostUrl}/api/search?query=${query}&page=${pageIndex}&per_page=25`
     );
 
     return response.json();
