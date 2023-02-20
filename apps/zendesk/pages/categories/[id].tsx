@@ -81,7 +81,7 @@ const prepareSections = (sections: Section[], articles: Article[]) => {
 export const getStaticPaths: GetStaticPaths = async (context) => {
   return {
     paths: [],
-    fallback: true,
+    fallback: 'blocking',
   };
 };
 

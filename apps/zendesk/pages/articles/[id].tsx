@@ -61,7 +61,7 @@ const preparedArticles = (items: Article[], activeArticleId: number) => {
 export const getStaticPaths: GetStaticPaths = async (context) => {
   return {
     paths: [],
-    fallback: true,
+    fallback: 'blocking',
   };
 };
 
