@@ -21,7 +21,7 @@ module.exports = {
   sitemapSize: 7000,
   changefreq: 'daily',
   priority: 0.7,
-  sourceDir: '.test-next',
+  sourceDir: 'dist/apps/zendesk/.next',
   outDir: './apps/zendesk/public',
   exclude: ['/404', '/500', '/api/search'],
 };
