@@ -1,3 +1,4 @@
+import { HOST_PROTOCOL } from '../../shared/constants';
 import { apiRequestHandler } from '../../shared/utils';
 
 type SearchByPageProps = {
@@ -37,7 +38,7 @@ export const connectToSearchAPI = async ({
     }
 
     const response = await fetch(
-      `https://${hostUrl}/api/search?query=${query}&page=${pageIndex}&per_page=25`
+      `${HOST_PROTOCOL}://${hostUrl}/api/search?query=${query}&page=${pageIndex}&per_page=25`
     );
 
     return response.json();
