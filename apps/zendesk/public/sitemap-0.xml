@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://feature-zendesk.vercel.app</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/505</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/search</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/sitemap.xml</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003594132-Contact-Support</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003619811-Getting-Started-with-Feature-fm</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003089992-Using-the-Marketing-Suite</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003113491-Using-the-Advertising-Suite</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003602072-Analytics-Reporting</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003610532-Best-Practices-Tips</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003602132-Payments</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003090012-Account-Maintenance-Team-Members</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360003090032-About-Feature-fm</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://feature-zendesk.vercel.app/categories/360000307331-Work-With-Us</loc><lastmod>2023-02-21T09:23:26.276Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/505</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/search</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/sitemap.xml</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003594132-Contact-Support</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003619811-Getting-Started-with-Feature-fm</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003089992-Using-the-Marketing-Suite</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003113491-Using-the-Advertising-Suite</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003602072-Analytics-Reporting</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003610532-Best-Practices-Tips</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003602132-Payments</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003090012-Account-Maintenance-Team-Members</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360003090032-About-Feature-fm</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://feature-zendesk.vercel.app/categories/360000307331-Work-With-Us</loc><lastmod>2023-02-21T09:31:04.834Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
