@@ -22,6 +22,6 @@ module.exports = {
   changefreq: 'daily',
   priority: 0.7,
   sourceDir: 'dist/apps/zendesk/.next',
-  outDir: './apps/zendesk/public',
+  outDir: 'apps/zendesk/public',
   exclude: ['/404', '/500', '/api/search'],
 };
