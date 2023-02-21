@@ -1,0 +1,16 @@
+# *
+User-agent: *
+Disallow: /404
+Disallow: /500
+Disallow: /api/search
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://feature-zendesk.vercel.app/
+
+# Sitemaps
+Sitemap: https://feature-zendesk.vercel.app/sitemap.xml
+Sitemap: https://feature-zendesk.vercel.app/server-sitemap.xml
