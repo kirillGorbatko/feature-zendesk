@@ -15,19 +15,19 @@ export const Default = Template.bind({});
 Default.args = {
   links: [
     {
-      name: 'Link 1',
+      title: 'Link 1',
       url: './',
     },
     {
-      name: 'Link 2',
+      title: 'Link 2',
       url: './',
     },
     {
-      name: 'Link 3',
+      title: 'Link 3',
       url: './',
     },
     {
-      name: 'Link 4',
+      title: 'Link 4',
       url: './',
     },
   ],

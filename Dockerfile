@@ -11,8 +11,7 @@ FROM node:16.13.0-alpine
 
 WORKDIR /app
 COPY --from=storage /storage/node_modules node_modules
-COPY ./node_modules ./
-COPY ./apps/zendesk/.next/standalone ./apps/zendesk/
+
 COPY dist/apps/website/next.config.js .
 COPY dist/apps/website/package.json .
 COPY dist/apps/website/public public/

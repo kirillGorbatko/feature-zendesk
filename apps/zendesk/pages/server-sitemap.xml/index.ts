@@ -13,21 +13,23 @@ export const getServerSideProps = async (ctx) => {
   const postTypes = ['articles', 'categories'];
   let sitemapData = [];
 
-  const getNextPagePosts = async (fullUrl, resArray, key) => {
+  const getNextPagePosts = async ({ pageUrl, inheritedResults, postType }) => {
     const response: Response = await apiRequestHandler().get({
-      fullUrl,
+      fullUrl: pageUrl,
     });
 
-    if (!response[key]?.length) return;
+    if (!response || !response[postType]?.length) return [];
 
     if (response.next_page) {
-      return await getNextPagePosts(
-        response.next_page,
-        [...resArray, ...response[key]],
-        key
-      );
+      const newResults = [...inheritedResults, ...response[postType]];
+      const nextPagesResult = await getNextPagePosts({
+        pageUrl: response.next_page,
+        inheritedResults: newResults,
+        postType,
+      });
+      return nextPagesResult;
     } else {
-      return [...resArray, ...response[key]];
+      return [...inheritedResults, ...response[postType]];
     }
   };
 
@@ -37,14 +39,19 @@ export const getServerSideProps = async (ctx) => {
         url: postType,
       });
 
+      if (!response) return resolve();
+
       let posts = response[postType];
       const currentDate = new Date().toISOString();
 
-      if (response && response.next_page && posts?.length) {
-        posts = [
-          ...posts,
-          ...(await getNextPagePosts(response.next_page, [], postType)),
-        ];
+      if (response.next_page && posts?.length) {
+        const nextPagesPosts = await getNextPagePosts({
+          pageUrl: response.next_page,
+          inheritedResults: [],
+          postType,
+        });
+
+        posts = [...posts, ...nextPagesPosts];
       }
 
       const preparedUrls = prepareDataContainers(posts, postType).map(
@@ -76,6 +83,6 @@ export const getServerSideProps = async (ctx) => {
   return getServerSideSitemap(ctx, sitemapData);
 };
 
-export default function Site() {
+export default function Sitemap() {
   return null;
 }

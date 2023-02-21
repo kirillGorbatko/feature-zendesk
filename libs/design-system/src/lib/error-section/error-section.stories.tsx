@@ -7,7 +7,7 @@ const Story: ComponentMeta<typeof ErrorSection> = {
   argTypes: {
     errorNumber: {
       defaultValue: 404,
-      options: [404, 505],
+      options: [404, 500],
       control: { type: 'select' },
     },
   },
@@ -25,5 +25,5 @@ PageNotFoundError.args = {
 
 export const ServerError = Template.bind({});
 ServerError.args = {
-  errorNumber: 505,
+  errorNumber: 500,
 };

@@ -38,3 +38,38 @@ const Template: ComponentStory<typeof TopicCard> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const Circle = Template.bind({});
+Circle.args = {
+  iconName: 'circle',
+};
+
+export const Flag = Template.bind({});
+Flag.args = {
+  iconName: 'flag',
+};
+
+export const Rectangles = Template.bind({});
+Rectangles.args = {
+  iconName: 'rectangles',
+};
+
+export const Speaker = Template.bind({});
+Speaker.args = {
+  iconName: 'speaker',
+};
+
+export const Triangles = Template.bind({});
+Triangles.args = {
+  iconName: 'triangles',
+};
+
+export const Union = Template.bind({});
+Union.args = {
+  iconName: 'union',
+};
+
+export const Wrench = Template.bind({});
+Wrench.args = {
+  iconName: 'wrench',
+};

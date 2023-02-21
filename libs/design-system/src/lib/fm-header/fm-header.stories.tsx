@@ -5,6 +5,12 @@ import { FmHeader } from './fm-header';
 const Story: ComponentMeta<typeof FmHeader> = {
   title: 'Glivera/FMHeader',
   component: FmHeader,
+  argTypes: {
+    variant: {
+      options: ['transparent'],
+      control: { type: 'select' },
+    },
+  },
 };
 export default Story;
 
