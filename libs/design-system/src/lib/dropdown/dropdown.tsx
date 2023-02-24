@@ -17,7 +17,6 @@ export function Dropdown({ items }: DropdownProps) {
   const [activeItem, setActiveItem] = useState();
 
   const handleClick = () => {
-    console.log('ccc');
     setOpen((isOpen) => !isOpen);
   };
 
@@ -58,7 +57,12 @@ export function Dropdown({ items }: DropdownProps) {
         {items?.map(({ name, url }: any, index: number) => {
           return (
             <li key={index} className={styles['dropdown__item']}>
-              <DropdownLink name={name} url={url} onClick={handleClick} />
+              <DropdownLink
+                name={name}
+                url={url}
+                onClick={handleClick}
+                activeItem={activeItem === name}
+              />
             </li>
           );
         })}

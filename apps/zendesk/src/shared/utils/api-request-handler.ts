@@ -7,10 +7,8 @@ type RequestUrl = {
 
 const createHeaders = () => {
   const ACCOUNT_EMAIL = 'support@feature.fm';
-  const EMAIL_AND_API = `${ACCOUNT_EMAIL}:${process.env.API_KEY}`;
+  const EMAIL_AND_API = `${ACCOUNT_EMAIL}/token:${process.env.API_KEY}`;
   const TOKEN = Buffer.from(EMAIL_AND_API).toString('base64');
-
-  // console.log(TOKEN);
 
   const headers = new Headers({
     Authorization: `Basic ${TOKEN}`,

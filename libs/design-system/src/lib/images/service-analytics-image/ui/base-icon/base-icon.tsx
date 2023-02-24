@@ -9,12 +9,12 @@ export function BaseIcon() {
       viewBox="0 0 83 89"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect id="Mask" width="83" height="89" fill="none" />
         </clipPath>
       </defs>
       <rect id="Mask-2" data-name="Mask" width="83" height="89" fill="none" />
-      <g id="Group_36-2" data-name="Group 36" clip-path="url(#clip-path)">
+      <g id="Group_36-2" data-name="Group 36" clipPath="url(#clipPath)">
         <g id="Group_36-3" data-name="Group 36" transform="translate(0.398 1)">
           <g id="Group_33" data-name="Group 33">
             <rect
@@ -38,8 +38,8 @@ export function BaseIcon() {
               transform="translate(18.428 35.738)"
               fill="#fff"
               stroke="#1d1d1b"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
             <path
               id="Path"
@@ -54,8 +54,8 @@ export function BaseIcon() {
               transform="translate(19.611)"
               fill="none"
               stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
           </g>
         </g>

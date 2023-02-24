@@ -10,7 +10,7 @@
 		padding: 0 $gl_desktop_indent;
 		pointer-events: none;
 
-		transition: transform .4s $base_ease, opacity .4s $base_ease;
+		transition: transform .3s $base_ease, opacity .3s $base_ease;
 
 		&.dropdown--hide_state {
 			transform: translateY(1rem);
@@ -18,6 +18,7 @@
 			pointer-events: none;
 		}
 	}
+
 	@include bp(theme('screens.fm-tablet')) {
 		// max-height: 0;
 		// overflow: hidden;
@@ -46,7 +47,7 @@
 		margin: 0 auto;
 
 		background-color: $white;
-		box-shadow: calculateSize(1rem) calculateSize(1rem) calculateSize(4rem) rgba(#13193E, .1);
+		box-shadow: calculateSize(1rem) calculateSize(1rem) calculateSize(5rem) rgba(19, 25, 62, .1);
 
 		pointer-events: auto;
 	}

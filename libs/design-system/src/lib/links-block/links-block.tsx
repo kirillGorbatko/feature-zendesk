@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { useMatchMedia } from '@featurefm/shared/hooks';
 import styles from './links-block.module.scss';
 import classNames from 'classnames';
@@ -10,29 +10,24 @@ export type LinksBlockProps<T> = {
   name: string;
   hasDecor?: boolean;
   links: T[];
+  activeItemId: boolean;
+  handleClick: () => void;
 };
 
 export function LinksBlock<T>({
   name,
   hasDecor = false,
   links,
+  activeItemId,
+  handleClick,
 }: LinksBlockProps<T>) {
-  const [isOpen, setOpen] = useState(false);
   const { isTablet } = useMatchMedia();
   const contentRef = useRef<HTMLDivElement>(null);
-
-  const handleClick = () => {
-    setOpen((isOpen) => !isOpen);
-  };
-
-  useEffect(() => {
-    setOpen(false);
-  }, [isTablet]);
 
   return (
     <div
       className={classNames(styles['block'], {
-        [styles['block--active_state']]: isOpen,
+        [styles['block--active_state']]: activeItemId,
         [styles['block--has_decor']]: hasDecor,
       })}
     >
@@ -56,7 +51,7 @@ export function LinksBlock<T>({
         className={styles['block__wrap']}
         ref={isTablet ? contentRef : null}
         style={{
-          maxHeight: `${isOpen ? contentRef.current?.scrollHeight : 0}px`,
+          maxHeight: `${activeItemId ? contentRef.current?.scrollHeight : 0}px`,
         }}
       >
         <LinksList links={links} />

@@ -21,7 +21,7 @@ export function InstagramIcon(props: InstagramIconProps) {
         <g
           id="Homepage-v2---1366"
           transform="translate(-1178.000000, -6180.000000)"
-          fill="#000000"
+          fill="currentColor"
         >
           <g id="Group-104" transform="translate(-1.000000, 4835.500000)">
             <g id="Group-103" transform="translate(1.083333, 655.000000)">

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 
+import { useMatchMedia } from '@featurefm/shared/hooks';
 import { useOnClickOutside } from '@featurefm/shared/hooks';
 
 import styles from './navigation.module.scss';
@@ -19,6 +20,7 @@ export interface NavigationProps {
 export function Navigation({ items, isShowing }: NavigationProps) {
   const [activeItem, setActiveItem] = useState<null | string>(null);
   const [isScrolled, setScrolled] = useState<null | boolean>(null);
+  const { isMobile } = useMatchMedia();
 
   const $linksContainer = useRef<HTMLUListElement | null>(null);
   const $linksContainerWrapper = useRef<HTMLDivElement | null>(null);
@@ -34,7 +36,7 @@ export function Navigation({ items, isShowing }: NavigationProps) {
     title: string,
     isDropdownExist: boolean
   ) => {
-    if (isDropdownExist) {
+    if (isDropdownExist && !isMobile) {
       event?.preventDefault();
 
       const preparedActiveItem = title === activeItem ? null : title;
@@ -93,7 +95,17 @@ export function Navigation({ items, isShowing }: NavigationProps) {
                   </a>
                 </Link>
                 {dropdown?.length ? (
-                  <Dropdown items={dropdown} isShowing={isActive} />
+                  <>
+                    <div
+                      className={classNames(styles['header__overlay'], {
+                        [styles['header__overlay--show_state']]: isActive,
+                      })}
+                    />
+                    <Dropdown
+                      items={dropdown}
+                      isShowing={isMobile ? true : isActive}
+                    />
+                  </>
                 ) : null}
               </li>
             );

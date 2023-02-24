@@ -9,12 +9,12 @@ export function BaseIcon() {
       viewBox="0 0 83 89"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect id="Mask" width="83" height="89" fill="none" />
         </clipPath>
       </defs>
       <rect id="Mask-2" data-name="Mask" width="83" height="89" fill="none" />
-      <g id="Group_37-2" data-name="Group 37" clip-path="url(#clip-path)">
+      <g id="Group_37-2" data-name="Group 37" clipPath="url(#clipPath)">
         <g id="Group_37-3" data-name="Group 37" transform="translate(10 16)">
           <g
             id="Group_60"
@@ -25,8 +25,8 @@ export function BaseIcon() {
               id="Rectangle"
               fill="none"
               stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             >
               <rect width="40" height="40" stroke="none" />
               <rect x="1" y="1" width="38" height="38" fill="none" />
@@ -49,7 +49,7 @@ export function BaseIcon() {
               data-name="Rectangle Copy 47"
               transform="translate(17.938 12.243)"
               fill="#fff"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             >
               <path
                 d="M 6.281109809875488 15.25467681884766 C 3.369099855422974 15.25467681884766 0.9999998211860657 12.88557624816895 0.9999998211860657 9.973566055297852 L 0.9999998211860657 1.018204927444458 L 11.56221961975098 1.208778977394104 L 11.56221961975098 9.973566055297852 C 11.56221961975098 12.88557624816895 9.193120002746582 15.25467681884766 6.281109809875488 15.25467681884766 Z"
@@ -113,8 +113,8 @@ export function BaseIcon() {
               transform="translate(14.938 8.842)"
               fill="#f9f9f9"
               stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             >
               <path
                 d="M0,0H10.724a0,0,0,0,1,0,0V10.6a5.362,5.362,0,0,1-5.362,5.362h0A5.362,5.362,0,0,1,0,10.6V0A0,0,0,0,1,0,0Z"

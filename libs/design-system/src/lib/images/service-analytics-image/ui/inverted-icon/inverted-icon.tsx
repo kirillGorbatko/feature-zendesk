@@ -9,12 +9,12 @@ export function InvertedIcon() {
       viewBox="0 0 70 67"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect id="Mask" width="70" height="67" fill="none" />
         </clipPath>
       </defs>
       <rect id="Mask-2" data-name="Mask" width="70" height="67" fill="none" />
-      <g id="Group_36-2" data-name="Group 36" clip-path="url(#clip-path)">
+      <g id="Group_36-2" data-name="Group 36" clipPath="url(#clipPath)">
         <g id="Group_36-3" data-name="Group 36" transform="translate(0 1)">
           <g id="Group_33" data-name="Group 33">
             <rect
@@ -39,8 +39,8 @@ export function InvertedIcon() {
               transform="translate(16.894 26.728)"
               fill="#fff"
               stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
             <path
               id="Path"
@@ -55,8 +55,8 @@ export function InvertedIcon() {
               transform="translate(17.053)"
               fill="none"
               stroke="#fff"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
           </g>
         </g>

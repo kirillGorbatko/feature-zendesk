@@ -11,9 +11,36 @@ type SocialLinkProps = {
 export function SocialLink({ href, iconName }: SocialLinkProps) {
   return (
     <A href={href}>
-      {iconName === 'facebook' && <FacebookIcon />}
-      {iconName === 'instagram' && <InstagramIcon />}
-      {iconName === 'linkedin' && <LinkedinIcon />}
+      <span className="social_list__link">
+        {iconName === 'facebook' && <FacebookIcon />}
+        {iconName === 'instagram' && <InstagramIcon />}
+        {iconName === 'linkedin' && <LinkedinIcon />}
+      </span>
+      <style jsx>
+        {`
+          .social_list__link {
+            transition: color 0.2s ease-in-out;
+            display: block;
+          }
+          .social_list__link:hover,
+          .social_list__link:focus {
+            color: #9b62ff;
+            text-decoration: none;
+          }
+          @media screen and (min-width: 1024px) {
+            .social_list__link {
+              max-width: 1.5rem;
+              height: 1.3rem;
+            }
+          }
+          @media screen and (max-width: 1023px) {
+            .social_list__link {
+              max-width: 1.3rem;
+              height: 1.1rem;
+            }
+          }
+        `}
+      </style>
     </A>
   );
 }

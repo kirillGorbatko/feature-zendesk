@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useMatchMedia } from '@featurefm/shared/hooks';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import {
   GradientSection,
@@ -23,6 +24,17 @@ interface CategoryProps {
 }
 
 function Category({ category, sections }: CategoryProps) {
+  const [activeItemId, setActiveItemId] = useState(null);
+  const { isTablet } = useMatchMedia();
+
+  useEffect(() => {
+    setActiveItemId(null);
+  }, [isTablet]);
+
+  const handleClick = (id: number) => {
+    setActiveItemId(id === activeItemId ? null : id);
+  };
+
   let icon = '';
   jsyaml.loadAll(category?.description, function (doc: any) {
     icon = doc?.icon || '';
@@ -41,13 +53,15 @@ function Category({ category, sections }: CategoryProps) {
         {sections && (
           <LinksBlocksSection>
             <LinksBlocksList>
-              {sections.map(({ name, articles }, index) => {
+              {sections.map(({ name, articles, id }, index) => {
                 return (
                   <LinksBlocksItem<Article>
                     key={index}
                     index={index}
                     name={name}
                     links={articles}
+                    activeItemId={id === activeItemId}
+                    handleClick={() => handleClick(id)}
                   />
                 );
               })}

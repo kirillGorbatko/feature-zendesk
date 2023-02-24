@@ -97,8 +97,23 @@ export function FMButton({
           background-color: #000;
         }
 
-        .button-secondary-variant:hover {
-          background-color: #333333;
+        .button-secondary-variant::before {
+          position: absolute;
+          top: -1px;
+          left: -1px;
+          z-index: -1;
+          width: calc(100% + 2px);
+          height: calc(100% + 2px);
+          background-color: #9b62ff;
+          border-radius: inherit;
+          transform: translateX(-100%);
+          content: '';
+          transition: transform 0.3s ease;
+          will-change: transform;
+        }
+
+        .button-secondary-variant:hover::before {
+          transform: translateX(0);
         }
 
         .button-tertiary-variant {

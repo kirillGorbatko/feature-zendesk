@@ -9,12 +9,12 @@ export function InvertedIcon() {
       viewBox="0 0 70 67"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect id="Mask" width="70" height="67" fill="none" />
         </clipPath>
       </defs>
       <rect id="Mask-2" data-name="Mask" width="70" height="67" fill="none" />
-      <g id="Group_37-2" data-name="Group 37" clip-path="url(#clip-path)">
+      <g id="Group_37-2" data-name="Group 37" clipPath="url(#clipPath)">
         <g id="Group_37-3" data-name="Group 37" transform="translate(0)">
           <g
             id="Group_60"
@@ -25,8 +25,8 @@ export function InvertedIcon() {
               id="Rectangle"
               fill="none"
               stroke="#fff"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             >
               <rect width="34.783" height="34.783" stroke="none" />
               <rect x="1" y="1" width="32.783" height="32.783" fill="none" />
@@ -49,7 +49,7 @@ export function InvertedIcon() {
               data-name="Rectangle Copy 47"
               transform="translate(15.598 10.646)"
               fill="#fff"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
             >
               <path
                 d="M 5.46183443069458 13.13449859619141 C 3.001574516296387 13.13449859619141 1.000004410743713 11.1329288482666 1.000004410743713 8.672658920288086 L 1.000004410743713 1.018207669258118 L 9.923664093017578 1.179220914840698 L 9.923664093017578 8.672658920288086 C 9.923664093017578 11.1329288482666 7.922094345092773 13.13449859619141 5.46183443069458 13.13449859619141 Z"
@@ -113,8 +113,8 @@ export function InvertedIcon() {
               transform="translate(12.989 7.688)"
               fill="#f9f9f9"
               stroke="#000"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             >
               <path
                 d="M0,0H9.326a0,0,0,0,1,0,0V9.219a4.663,4.663,0,0,1-4.663,4.663h0A4.663,4.663,0,0,1,0,9.219V0A0,0,0,0,1,0,0Z"

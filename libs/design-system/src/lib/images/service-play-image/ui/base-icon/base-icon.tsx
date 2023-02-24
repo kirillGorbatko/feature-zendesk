@@ -11,13 +11,13 @@ export function BaseIcon() {
       {' '}
       <defs>
         {' '}
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           {' '}
           <rect id="Mask" width="83" height="89" fill="none" />{' '}
         </clipPath>{' '}
       </defs>{' '}
       <rect id="Mask-2" data-name="Mask" width="83" height="89" fill="none" />{' '}
-      <g id="Group_44-2" data-name="Group 44" clip-path="url(#clip-path)">
+      <g id="Group_44-2" data-name="Group 44" clipPath="url(#clipPath)">
         {' '}
         <g id="Group_44-3" data-name="Group 44" transform="translate(0 -0.011)">
           {' '}
@@ -27,8 +27,8 @@ export function BaseIcon() {
             d="M.043.043,17.62,0l-.043,17.476L0,17.519Z"
             transform="translate(64.442 43.425) rotate(20)"
             stroke="#000"
-            stroke-miterlimit="10"
-            stroke-width="2.1"
+            strokeMiterlimit="10"
+            strokeWidth="2.1"
           />{' '}
           <path
             id="Rectangle_Copy_17"
@@ -37,8 +37,8 @@ export function BaseIcon() {
             transform="translate(32.828 55.047) rotate(-20)"
             fill="#fff"
             stroke="#000"
-            stroke-miterlimit="10"
-            stroke-width="2"
+            strokeMiterlimit="10"
+            strokeWidth="2"
           />{' '}
           <rect
             id="Rectangle_Copy_16"
@@ -48,8 +48,8 @@ export function BaseIcon() {
             transform="translate(17 33.958)"
             fill="#fff"
             stroke="#000"
-            stroke-miterlimit="10"
-            stroke-width="2"
+            strokeMiterlimit="10"
+            strokeWidth="2"
           />{' '}
           <g id="Group_22" data-name="Group 22" transform="translate(0 16.011)">
             {' '}

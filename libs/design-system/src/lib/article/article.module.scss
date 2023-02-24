@@ -55,13 +55,7 @@
 	center,
 	p {
 		&:not(:last-child) {
-			@include bp(theme('screens.fm-desktop'), min) {
-				margin-bottom: calculateSize(4rem);
-			}
-
-			@include bp(theme('screens.fm-tablet')) {
-				margin-bottom: calculateSize(2rem);
-			}
+			margin-bottom: calculateSize(4rem);
 		}
 	}
 

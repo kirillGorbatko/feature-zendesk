@@ -10,7 +10,7 @@ export function FacebookIcon(props: FacebookIconProps) {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Fill 1@3x</title>
+      <title>Facebook</title>
       <g
         id="Desktop"
         stroke="none"
@@ -21,7 +21,7 @@ export function FacebookIcon(props: FacebookIconProps) {
         <g
           id="Homepage-v2---1366"
           transform="translate(-1147.000000, -6180.000000)"
-          fill="#000000"
+          fill="currentColor"
         >
           <g id="Group-104" transform="translate(-1.000000, 4835.500000)">
             <g id="Group-103" transform="translate(1.083333, 655.000000)">
