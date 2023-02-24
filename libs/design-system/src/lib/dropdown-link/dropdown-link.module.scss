@@ -9,6 +9,6 @@
 	&.dropdown_link--current_mod {
 		pointer-events: none;
 		color: theme('colors.foreground');
-		text-shadow: .6px 0 0 currentColor;
+		font-weight: 700;
 	}
 }
