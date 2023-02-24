@@ -107,7 +107,9 @@
 	}
 
 	@include bp(theme('screens.fm-mobile-max')) {
-		text-align: center;
+		&:not(.hero--back_mod &) {
+			text-align: center;
+		}
 	}
 
 	&.hero__title--icon_mod {
