@@ -13,6 +13,7 @@ interface SearchHeroWrapProps {
   initialQuery?: string;
   setSearchResultsData?: Dispatch<SetStateAction<any[]>>;
   setUserQuery?: Dispatch<SetStateAction<string>>;
+  loadingStatus?: 'idle' | 'pending' | 'fullfilled' | 'rejected';
   setLoadingStatus?: Dispatch<
     SetStateAction<'idle' | 'pending' | 'fullfilled' | 'rejected'>
   >;
@@ -49,6 +50,8 @@ function SearchWrap(props: SearchHeroWrapProps) {
     router.push(`/search?query=${encodedQuery}`);
 
     if (router.route === '/search') {
+      setUserQuery(userQuery);
+
       try {
         setLoadingStatus('pending');
 
@@ -64,7 +67,6 @@ function SearchWrap(props: SearchHeroWrapProps) {
         }
 
         setSearchResultsData(searchResults || []);
-        setUserQuery(userQuery);
         setNextPageIndex(nextPageIndex);
         setLoadingStatus('fullfilled');
       } catch (error) {

@@ -45,7 +45,6 @@ export function Search({
 
     try {
       setIsLoadingMore(true);
-      console.log(userQuery);
 
       const response = await connectToSearchAPI({
         query: encodeURIComponent(userQuery),
@@ -83,6 +82,7 @@ export function Search({
           setSearchResultsData={setSearchResultsData}
           setUserQuery={setUserQuery}
           setLoadingStatus={setLoadingStatus}
+          loadingStatus={loadingStatus}
           setNextPageIndex={setNextPageIndex}
           resultsCount={searchResultsData.length}
           isSearchResults={true}

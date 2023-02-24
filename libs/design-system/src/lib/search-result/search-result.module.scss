@@ -117,6 +117,13 @@
     animation-name: loading2;
     animation-duration: 1.2s;
   }
+
+  @include bp(theme('screens.fm-tablet'), theme('screens.fm-mobile-min')) {
+    font-size: calculateSize(2rem);
+  }
+  @include bp(theme('screens.fm-mobile-max')) {
+    font-size: calculateSize(3rem);
+  }
 }
 
 .search_result__load_more {

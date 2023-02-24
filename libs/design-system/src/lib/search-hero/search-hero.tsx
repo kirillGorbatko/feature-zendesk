@@ -23,6 +23,7 @@ interface SearchHeroProps {
   isSearchResults?: boolean;
   hiddenMobileForm?: boolean;
   iconTitleMod?: boolean;
+  loadingStatus?: 'idle' | 'pending' | 'fullfilled' | 'rejected';
 }
 
 export function SearchHero({
@@ -38,12 +39,14 @@ export function SearchHero({
   handleSubmit,
   resultsCount = 0,
   isSearchResults = false,
+  loadingStatus,
 }: SearchHeroProps) {
   return (
     <section
       className={classNames(styles['hero'], {
         [styles['hero--search_mod']]: initialQuery !== '',
         [styles['hero--back_mod']]: isBackButton,
+        [styles['hero--loading_state']]: loadingStatus === 'pending',
       })}
     >
       <div className={styles['hero__in']}>
