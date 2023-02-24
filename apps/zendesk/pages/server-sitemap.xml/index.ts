@@ -57,7 +57,7 @@ export const getServerSideProps = async (ctx) => {
       const preparedUrls = prepareDataContainers(posts, postType).map(
         ({ url: postUrl }) => {
           return {
-            loc: `${HOST_URL}${postUrl}`,
+            loc: `${HOST_URL.replace(/w+\//g, '')}${postUrl}`,
             lastmod: currentDate,
           };
         }
