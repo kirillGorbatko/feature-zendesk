@@ -11,7 +11,13 @@ interface IndexProps {
 export function Index({ categories }: IndexProps) {
   return (
     <>
-      <CustomHead title="Home" />
+      <CustomHead
+        title="Home"
+        metaDescr="Welcome to our website! Here you’ll find everything you need to know to start promoting your music like a pro."
+        metaRobots="index"
+        ogTitlte="Home"
+        ogDescr="Welcome to our website! Here you’ll find everything you need to know to start promoting your music like a pro."
+      />
       <SearchWrap
         align="center"
         title="Don’t sweat it, we got you"

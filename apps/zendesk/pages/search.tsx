@@ -6,13 +6,13 @@ import {
 import { CustomHead } from '../custom-head/custom-head';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { SearchWrap } from '../src/components/search-wrap';
-import { useState } from 'react';
+import { useState, MouseEvent } from 'react';
 import { connectToSearchAPI } from '../src/api/search';
 import { FormatURL } from '../src/shared/utils';
 import { prepareDataContainers } from '../src/shared/utils/prepare-data-containers';
 
 type SearchProps = {
-  searchResults?: any[]; // FIXME: add correct types
+  searchResults?: FmLinkProps[];
   userQueryByUrl?: string;
   nextPageIndexInitial?: number;
   errorMessage?: string;
@@ -38,8 +38,7 @@ export function Search({
     console.error(errorMessage);
   }
 
-  const handleLoadMore = async (e: any) => {
-    // FIXME: add correct types
+  const handleLoadMore = async (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     if (loadingStatus === 'pending' || isLoadingMore) return;
@@ -70,7 +69,13 @@ export function Search({
 
   return (
     <>
-      <CustomHead title={`Results for: “${userQuery}”`} />
+      <CustomHead
+        title={`Results for: “${userQuery}”`}
+        metaDescr="Find what you're looking for quickly and easily with our powerful search tool. Discover new services, and information in seconds. Try it now and streamline your search experience."
+        metaRobots="index"
+        ogTitlte={`Results for: “${userQuery}”`}
+        ogDescr="Find what you're looking for quickly and easily with our powerful search tool. Discover new services, and information in seconds. Try it now and streamline your search experience."
+      />
       <GradientSection>
         <SearchWrap
           mobAlign="left"

@@ -7,6 +7,8 @@ describe('LinksBlocksItem', () => {
       <LinksBlocksItem
         name="Default name"
         index={0}
+        activeItemId={false}
+        handleClick={() => 0}
         links={[
           {
             url: './',

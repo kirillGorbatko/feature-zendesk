@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import styles from './dropdown.module.scss';
 import classNames from 'classnames';
 import { useOnClickOutside } from '@featurefm/shared/hooks';
@@ -6,15 +6,21 @@ import { useOnClickOutside } from '@featurefm/shared/hooks';
 import { ArrowIcon } from '@featurefm/design-system';
 import { DropdownLink } from '../dropdown-link/dropdown-link';
 
-// FIXME: add correct types
-export interface DropdownProps {
-  items: any;
+export type DropdownItem = {
+  id: number;
+  name: string;
+  url: string;
+  isActive: boolean;
+};
+
+interface DropdownProps {
+  items: DropdownItem[];
 }
 
 export function Dropdown({ items }: DropdownProps) {
   const [isOpen, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [activeItem, setActiveItem] = useState();
+  const [activeItem, setActiveItem] = useState<undefined | string>();
 
   const handleClick = () => {
     setOpen((isOpen) => !isOpen);
@@ -26,7 +32,7 @@ export function Dropdown({ items }: DropdownProps) {
 
   useEffect(() => {
     if (items && items.length) {
-      const active = items.filter((item: any) => item.isActive)[0];
+      const active = items.filter((item) => item.isActive)[0];
 
       if (active?.name) {
         setActiveItem(active.name);

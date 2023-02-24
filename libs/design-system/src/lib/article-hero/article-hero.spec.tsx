@@ -8,9 +8,7 @@ describe('ArticleHero', () => {
       <ArticleHero
         title="Where do I access my Bio Links?"
         breadCrumbs={[{ name: 'Text', url: './' }]}
-        sectionsArticles={{
-          items: [{ text: 'Text', href: './' }],
-        }}
+        sectionsArticles={[{ id: 0, name: 'Text', url: './', isActive: false }]}
       />
     );
     expect(baseElement).toBeTruthy();

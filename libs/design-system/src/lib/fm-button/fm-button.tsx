@@ -71,6 +71,7 @@ export function FMButton({
           color: #fff;
           font-weight: 700;
           background-color: #ff5262;
+          -webkit-mask-image: -webkit-radial-gradient(#ff5262, #ff5262);
         }
 
         .button-primary-variant::before {
@@ -95,6 +96,7 @@ export function FMButton({
         .button-secondary-variant {
           color: #fff;
           background-color: #000;
+          -webkit-mask-image: -webkit-radial-gradient(#000, #000);
         }
 
         .button-secondary-variant::before {
@@ -120,15 +122,16 @@ export function FMButton({
           color: #fff;
           font-weight: 600;
           background-color: #9b62ff;
+          -webkit-mask-image: -webkit-radial-gradient(#9b62ff, #9b62ff);
         }
 
         .button-tertiary-variant::before {
           position: absolute;
-          top: 0;
-          left: 0;
+          top: -1px;
+          left: -1px;
           z-index: -1;
-          width: 100%;
-          height: 100%;
+          width: calc(100% + 2px);
+          height: calc(100% + 2px);
           background-color: #ff5262;
           border-radius: inherit;
           transform: translateX(-100%);

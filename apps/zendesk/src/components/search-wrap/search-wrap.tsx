@@ -2,7 +2,7 @@ import { SearchHero } from '@featurefm/design-system';
 import { Align as SearchFormAlign } from '@featurefm/design-system';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { useRouter } from 'next/router';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, FormEvent } from 'react';
 import { connectToSearchAPI } from '../../api/search';
 
 interface SearchHeroWrapProps {
@@ -32,16 +32,15 @@ function SearchWrap(props: SearchHeroWrapProps) {
     hostUrl,
   } = props;
 
-  // { query }: SearchWrapProps
-  const handleSubmit = async (e: any) => {
-    // FIXME: Change type
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const userQuery = e?.target?.query?.value;
+
+    const userQuery = e?.currentTarget?.query?.value;
 
     if (!userQuery) return;
 
     if (!userQuery?.replace(/\s/g, '').length) {
-      e.target.query.value = '';
+      e.currentTarget.query.value = '';
       return;
     }
 

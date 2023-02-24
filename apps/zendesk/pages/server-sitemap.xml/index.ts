@@ -1,10 +1,11 @@
 import { apiRequestHandler } from '../../src/shared/utils';
 import { getServerSideSitemap } from 'next-sitemap';
 import { prepareDataContainers } from '../../src/shared/utils/prepare-data-containers';
+import Article from '../articles/[id]';
 import { HOST_URL } from '../../src/shared/constants';
 
 type Response = {
-  articles?: any; // FIXME: add correct type
+  articles?: Article[];
   next_page?: string | null | unknown;
   error?: string;
 };
@@ -71,8 +72,7 @@ export const getServerSideProps = async (ctx) => {
     resolve();
   };
 
-  const getDataPromises = postTypes.map((postType: any) => {
-    // FIXME: add proper type
+  const getDataPromises = postTypes.map((postType: string) => {
     return new Promise((resolve, reject) => {
       getPostsData(postType, resolve, reject);
     });

@@ -1,4 +1,4 @@
-import React, { FormEventHandler, useState } from 'react';
+import React, { FormEvent, FormEventHandler, useState } from 'react';
 
 // import { SearchButton } from '../search-button/search-button';
 import { SearchIcon, CrossIcon, SearchButton } from '@featurefm/design-system';
@@ -40,8 +40,7 @@ export function SearchForm({
     document.body.classList.remove(popupOpenClass);
   };
 
-  const onSubmit = (e: any) => {
-    // FIXME: Change type
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     handleClose();
     handleSubmit(e);
   };

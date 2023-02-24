@@ -6,12 +6,13 @@ describe('SearchResult', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
       <SearchResult
-        searchValue={'Retargeting'}
+        query={'Retargeting'}
+        nextPageIndex={null}
         links={[
-          { children: 'Link', url: './' },
-          { children: 'Link', url: './' },
-          { children: 'Link', url: './' },
-          { children: 'Link', url: './' },
+          { title: 'Link', url: './' },
+          { title: 'Link', url: './' },
+          { title: 'Link', url: './' },
+          { title: 'Link', url: './' },
         ]}
       />
     );

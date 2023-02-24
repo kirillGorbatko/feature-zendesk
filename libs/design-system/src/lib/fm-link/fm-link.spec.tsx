@@ -4,7 +4,7 @@ import { FmLink } from './fm-link';
 
 describe('FmLink', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<FmLink url="./">Link</FmLink>);
+    const { baseElement } = render(<FmLink url="./" title="Link" />);
     expect(baseElement).toBeTruthy();
   });
 });

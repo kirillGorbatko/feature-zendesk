@@ -2,7 +2,7 @@ import {
   BreadCrumbs,
   BreadCrumbsItemProps,
   Dropdown,
-  DropdownProps,
+  DropdownItem,
 } from '@featurefm/design-system';
 import styles from './article-hero.module.scss';
 import classNames from 'classnames';
@@ -10,7 +10,7 @@ import classNames from 'classnames';
 export interface ArticleHeroProps {
   title: string;
   breadCrumbs: BreadCrumbsItemProps[];
-  sectionsArticles: DropdownProps;
+  sectionsArticles: DropdownItem[];
 }
 
 export function ArticleHero({

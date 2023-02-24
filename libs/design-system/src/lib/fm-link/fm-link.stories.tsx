@@ -11,6 +11,6 @@ const Template: ComponentStory<typeof FmLink> = (args) => <FmLink {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Link',
+  title: 'Link',
   url: './',
 };

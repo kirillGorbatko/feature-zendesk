@@ -21,7 +21,13 @@ export function Article({
 }: ArticleProps) {
   return (
     <>
-      <CustomHead title={article?.name} />
+      <CustomHead
+        title={article?.name}
+        metaDescr={`Discover the latest trends and insights in the music industry with our in-depth article on ${article?.name}.`}
+        metaRobots="index"
+        ogTitlte={article?.name}
+        ogDescr={`Discover the latest trends and insights in the music industry with our in-depth article on ${article?.name}.`}
+      />
       <GradientSection variant="tomato">
         <ArticleSection
           title={article?.name}

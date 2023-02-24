@@ -41,7 +41,13 @@ function Category({ category, sections }: CategoryProps) {
   });
   return (
     <>
-      <CustomHead title={category?.name} />
+      <CustomHead
+        title={category?.name}
+        metaDescr="Discover the latest articles on feature.fm and stay up-to-date with the latest trends, tips, and news. Browse our comprehensive list of articles and find the information you need."
+        metaRobots="index"
+        ogTitlte={category?.name}
+        ogDescr="Discover the latest articles on feature.fm and stay up-to-date with the latest trends, tips, and news. Browse our comprehensive list of articles and find the information you need."
+      />
       <GradientSection>
         <SearchHero
           title={category?.name}

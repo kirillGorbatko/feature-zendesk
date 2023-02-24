@@ -9,6 +9,8 @@ describe('LinksBlock', () => {
         hasDecor={true}
         name="Default title"
         links={[{ name: 'Link', url: 'url' }]}
+        activeItemId={false}
+        handleClick={() => 0}
       />
     );
     expect(baseElement).toBeTruthy();
