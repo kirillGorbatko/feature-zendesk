@@ -27,6 +27,9 @@ export function SearchForm({
   const [isOpen, setOpen] = useState(false);
   const [tl, setTl] = useState(gsap.timeline({
     paused: true,
+    onComplete: () => {
+      $form.current?.querySelector('input[type="search"]')?.focus();
+    },
   }));
   const [inputText, setInputText] = useState(initialQuery);
 
