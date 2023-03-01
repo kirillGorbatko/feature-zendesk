@@ -50,6 +50,9 @@ export function SearchForm({
 
     const triggerOffset = triggerPos.top - formPos.top
     const triggerSideOffset = triggerPos.left - formPos.left;
+    const decorSideOffset = triggerSideOffset !== 0 ? triggerSideOffset * 2 : formPos.right - triggerPos.right;
+
+    console.log(triggerSideOffset);
 
     const formBorderRadius = parseFloat(window.getComputedStyle($triggerBgDecor.current).getPropertyValue("border-radius"));
     const triggerWidth = $triggerBg.current?.clientWidth;
@@ -70,7 +73,7 @@ export function SearchForm({
         scaleX: widthRatio,
       }, 'step1')
       .to($triggerBgDecor.current, {
-        x: triggerSideOffset * 2,
+        x: decorSideOffset,
       }, 'step1')
       .addLabel('step2')
       .set($formWrap.current, {
@@ -87,7 +90,8 @@ export function SearchForm({
         opacity: 1,
       }, 'step2')
 
-    tl.timeScale(2)
+    // tl.timeScale(2)
+    tl.timeScale(0.4)
     tl.play();
   }
 
