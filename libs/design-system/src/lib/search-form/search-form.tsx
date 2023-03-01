@@ -28,7 +28,7 @@ export function SearchForm({
   const [tl, setTl] = useState(gsap.timeline({
     paused: true,
     onComplete: () => {
-      $form.current?.querySelector('input[type="search"]')?.focus();
+      $input.current?.focus();
     },
   }));
   const [inputText, setInputText] = useState(initialQuery);
@@ -38,6 +38,7 @@ export function SearchForm({
   const $triggerBgDecor = useRef<HTMLDivElement>(null);
   const $bg = useRef<HTMLDivElement>(null);
   const $form = useRef<HTMLFormElement>(null);
+  const $input = useRef<HTMLInputElement>(null);
   const $formWrap = useRef<HTMLDivElement>(null);
   const $hint = useRef<HTMLDivElement>(null);
 
@@ -152,6 +153,7 @@ export function SearchForm({
               autoComplete="off"
             />
             <Input
+              ref={$input}
               onChange={handleChange}
               value={inputText || ''}
               type="search"

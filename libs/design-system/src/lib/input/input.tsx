@@ -1,3 +1,4 @@
+import React, { ForwardRefRenderFunction } from 'react';
 import { InputHTMLAttributes } from 'react';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -10,11 +11,12 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   ariaLabel?: string;
   value?: string;
   required?: boolean;
+  ref?: React.Ref<HTMLInputElement>;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-function Input({ id, name, type, ...props }: InputProps) {
-  return <input id={id} name={name} type={type || 'text'} {...props} />;
-}
+const Input = React.forwardRef<HTMLInputElement, InputProps>(({ id, name, type, ...props }, ref) => {
+  return <input ref={ref} id={id} name={name} type={type || 'text'} {...props} />;
+});
 
 export default Input;
