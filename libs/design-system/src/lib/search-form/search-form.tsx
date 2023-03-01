@@ -1,4 +1,5 @@
-import React, { FormEvent, FormEventHandler, useState } from 'react';
+import React, { FormEvent, FormEventHandler, useState, useRef, useEffect } from 'react';
+import gsap from 'gsap';
 
 // import { SearchButton } from '../search-button/search-button';
 import { SearchIcon, CrossIcon, SearchButton } from '@featurefm/design-system';
@@ -6,6 +7,7 @@ import Input from '../input/input';
 
 import styles from './search-form.module.scss';
 import classNames from 'classnames';
+import { clearConfig } from 'isomorphic-dompurify';
 
 export type Align = 'center' | 'right' | 'left';
 
@@ -23,25 +25,89 @@ export function SearchForm({
   handleSubmit = (e) => e.preventDefault,
 }: SearchFormProps) {
   const [isOpen, setOpen] = useState(false);
+  const [tl, setTl] = useState(gsap.timeline({
+    paused: true,
+  }));
   const [inputText, setInputText] = useState(initialQuery);
+
+  const $trigger = useRef<HTMLDivElement>(null);
+  const $triggerBg = useRef<HTMLDivElement>(null);
+  const $triggerBgDecor = useRef<HTMLDivElement>(null);
+  const $bg = useRef<HTMLDivElement>(null);
+  const $form = useRef<HTMLFormElement>(null);
+  const $formWrap = useRef<HTMLDivElement>(null);
+  const $hint = useRef<HTMLDivElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputText(e.target.value);
   };
 
   const popupOpenClass = 'body--popup_open';
+
+  const initAnim = () => {
+    const formPos = $form.current?.getBoundingClientRect()
+    const triggerPos = $trigger.current?.getBoundingClientRect();
+
+    const triggerOffset = triggerPos.top - formPos.top
+    const triggerSideOffset = triggerPos.left - formPos.left;
+
+    const formBorderRadius = parseFloat(window.getComputedStyle($triggerBgDecor.current).getPropertyValue("border-radius"));
+    const triggerWidth = $triggerBg.current?.clientWidth;
+    const formWidth = $form.current?.clientWidth - formBorderRadius * 2;
+    const widthRatio = formWidth / triggerWidth;
+    
+    tl
+      .addLabel('start')
+      .to($trigger.current, {
+        y: triggerOffset * -1,
+        zIndex: 300,
+      })
+      .addLabel('step1')
+      .to($trigger.current, {
+        x: triggerSideOffset * -1,
+      })
+      .to($triggerBg.current, {
+        scaleX: widthRatio,
+      }, 'step1')
+      .to($triggerBgDecor.current, {
+        x: triggerSideOffset * 2,
+      }, 'step1')
+      .addLabel('step2')
+      .set($formWrap.current, {
+        opacity: 1,
+      }, 'step2')
+      .to($trigger.current, {
+        opacity: 0,
+        pointerEvents: 'none',
+      }, 'step2')
+      .to($bg.current, {
+        opacity: 1,
+      }, 'step2-=.8')
+      .to($hint.current, {
+        opacity: 1,
+      }, 'step2')
+
+    tl.timeScale(2)
+    tl.play();
+  }
+
   const handleOpen = () => {
+    tl.clear();
     setOpen(true);
     document.body.classList.add(popupOpenClass);
+    initAnim();
   };
-  const handleClose = () => {
+
+  const handleClose = (e:any) => {
+    e.preventDefault();
     setOpen(false);
     setInputText('');
     document.body.classList.remove(popupOpenClass);
+    tl.reverse();
   };
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    handleClose();
+    handleClose(e);
     handleSubmit(e);
   };
 
@@ -56,13 +122,16 @@ export function SearchForm({
           [styles['search_form__main--open_state']]: isOpen,
         })}
       >
+        <div  className={styles['search_form__bg']} ref={$bg}></div>
         <div
+          ref={$formWrap}
           className={classNames(styles['search_form__container'], {
             [styles['search_form__container--active_state']]:
               inputText && inputText.length > 0,
           })}
         >
           <form
+            ref={$form}
             role="search"
             data-search=""
             data-instant="true"
@@ -99,7 +168,7 @@ export function SearchForm({
             <CrossIcon />
           </button>
         </div>
-        <div className={styles['search_form__hint']}>
+        <div className={styles['search_form__hint']} ref={$hint}>
           Go ahead, <br /> type something
         </div>
       </div>
@@ -109,7 +178,12 @@ export function SearchForm({
           [styles['search_form__trigger--right_align']]: mobAlign === 'right',
         })}
       >
-        <div className={styles['search_form__wrap']}>
+        <div className={styles['search_form__wrap']} ref={$trigger}>
+          <div className={styles['search_form__wrap_bg']}>
+            <div className={styles['search_form__wrap_bg_decor']}></div>
+            <div className={styles['search_form__wrap_bg_in']} ref={$triggerBg}></div>
+            <div className={styles['search_form__wrap_bg_decor']} ref={$triggerBgDecor}></div>
+          </div>
           <button
             onClick={handleOpen}
             className={styles['search_form__trigger_btn']}

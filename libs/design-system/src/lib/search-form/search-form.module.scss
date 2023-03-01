@@ -18,22 +18,28 @@
 
 		padding: calculateSize(4rem) calculateSize(3rem);
 
-		background-color: $white;
-
 		overflow-y: auto;
 		z-index: 101;
-		transition: opacity .3s;
 
 		&:not(.search_form__main--open_state) {
-			opacity: 0;
 			pointer-events: none;
 		}
 
 		&.search_form__main--open_state {
-			opacity: 1;
 			pointer-events: initial;
 		}
 	}
+}
+
+.search_form__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	opacity: 0;
+	z-index: -1;
 }
 
 .search_form__container {
@@ -84,7 +90,12 @@
 		}
 	}
 
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		opacity: 1 !important;
+	}
+
 	@include bp(theme('screens.fm-mobile-max')) {
+		opacity: 0;
 		&:not(:last-child) {
 			margin-bottom: calculateSize(8rem);
 		}
@@ -107,7 +118,9 @@
 
 	&:hover,
 	&:focus {
-		transform: scale(1.5);
+		@include bp(theme('screens.fm-mobile-min'), min) {
+			transform: scale(1.5);
+		}
 	}
 
 	@include bp(theme('screens.fm-mobile-min'), min) {
@@ -138,9 +151,11 @@
 	font-family: $font_gpsuper;
 	color: #cfcfcf;
 	text-align: center;
+	opacity: 0;
 }
 
 .search_form__trigger {
+	position: relative;
 	display: flex;
 
 	&.search_form__trigger--center_align {
@@ -157,9 +172,47 @@
 }
 
 .search_form__wrap {
+	position: relative;
 	min-height: calculateSize(7rem);
+	will-change: transform;
+}
+
+.search_form__wrap_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.search_form__wrap_bg_decor {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: calc(calculateSize(3.5rem) * 2);
+	height: 100%;
 	border-radius: calculateSize(3.5rem);
 	background-color: $black;
+	z-index: 2;
+	
+	&:first-child {
+		left: 0;
+	}
+
+	&:last-child {
+		right: 0;
+	}
+}
+
+.search_form__wrap_bg_in {
+	position: absolute;
+	top: 0;
+	left: calculateSize(3.5rem);
+	width: calc(100% - calculateSize(3.5rem) * 2);
+	height: 100%;
+	background-color: $black;
+	transform-origin: 0 0;
 }
 
 .search_form__trigger_btn {
@@ -180,6 +233,6 @@
 }
 
 .search_form__trigger_title {
-	font-size: calculateSize(1.6rem);
+	font-size: calculateSize(1.8rem);
 	font-weight: 300;
 }
