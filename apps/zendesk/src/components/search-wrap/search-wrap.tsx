@@ -1,29 +1,23 @@
-import { SearchHero } from '@featurefm/design-system';
-import { Align as SearchFormAlign } from '@featurefm/design-system';
-import { NextApiRequest, NextApiResponse } from 'next';
+import { SearchHero, SearchHeroProps } from '@featurefm/design-system';
+// import { Align as SearchFormAlign } from '@featurefm/design-system';
+// import { NextApiRequest, NextApiResponse } from 'next';
 import { useRouter } from 'next/router';
 import { Dispatch, SetStateAction, FormEvent } from 'react';
 import { connectToSearchAPI } from '../../api/search';
 
 interface SearchHeroWrapProps {
-  title?: string;
-  subTitle?: string;
-  align?: SearchFormAlign;
-  mobAlign?: SearchFormAlign;
-  initialQuery?: string;
   setSearchResultsData?: Dispatch<SetStateAction<any[]>>;
   setUserQuery?: Dispatch<SetStateAction<string>>;
-  loadingStatus?: 'idle' | 'pending' | 'fullfilled' | 'rejected';
   setLoadingStatus?: Dispatch<
     SetStateAction<'idle' | 'pending' | 'fullfilled' | 'rejected'>
   >;
   setNextPageIndex?: Dispatch<SetStateAction<number>>;
-  resultsCount?: number;
-  isSearchResults?: boolean;
   hostUrl?: string | null;
 }
 
-function SearchWrap(props: SearchHeroWrapProps) {
+type PropsGroup = SearchHeroProps & SearchHeroWrapProps;
+
+function SearchWrap(props: PropsGroup) {
   const router = useRouter();
   const {
     setLoadingStatus,

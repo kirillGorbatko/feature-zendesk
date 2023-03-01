@@ -17,6 +17,7 @@ import {
   Section,
 } from '../../src/shared/types';
 import { getIdFromSlug } from '../../src/shared/utils';
+import { SearchWrap } from '../../src/components';
 
 interface CategoryProps {
   category: CategoryType;
@@ -49,7 +50,7 @@ function Category({ category, sections }: CategoryProps) {
         ogDescr="Discover the latest articles on feature.fm and stay up-to-date with the latest trends, tips, and news. Browse our comprehensive list of articles and find the information you need."
       />
       <GradientSection>
-        <SearchHero
+        <SearchWrap
           title={category?.name}
           isBackButton={'Back'}
           iconName={icon}

@@ -10,7 +10,7 @@ import { TopicIcon } from '../topic-icon/topic-icon';
 
 import { FormEventHandler } from 'react';
 
-interface SearchHeroProps {
+export interface SearchHeroProps {
   isBackButton?: string;
   iconName?: string;
   title?: string;
