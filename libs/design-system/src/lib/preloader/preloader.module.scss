@@ -1,0 +1,49 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.preloader {
+  @include flex_block(row, wrap, center, center, center);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: calculateSize(10rem 4rem);
+  background-color: rgba(#fff, 0.9);
+
+  @include bp(theme('screens.fm-mobile-min'), min) {
+    z-index: 30;
+  }
+  @include bp(theme('screens.fm-mobile-max')) {
+    z-index: 105;
+  }
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+
+  &.preloader--active_state {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+.preloader__logo_w {
+  width: calculateSize(10rem);
+  height: calculateSize(10rem);
+  animation: loading_anim;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes loading_anim {
+  0% {
+    transform: rotateZ(0);
+  }
+  69% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

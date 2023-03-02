@@ -41,9 +41,9 @@ function SearchWrap(props: PropsGroup) {
 
     const encodedQuery = encodeURIComponent(userQuery);
 
-    router.push(`/search?query=${encodedQuery}`);
-
     if (router.route === '/search') {
+      router.push(`/search?query=${encodedQuery}`);
+
       setUserQuery(userQuery);
 
       try {
@@ -66,6 +66,15 @@ function SearchWrap(props: PropsGroup) {
       } catch (error) {
         setLoadingStatus('rejected');
         console.log(error.message);
+      }
+    } else {
+      setLoadingStatus('pending');
+      try {
+        await router.push(`/search?query=${encodedQuery}`);
+        setLoadingStatus('fullfilled');
+      } catch (error) {
+        setLoadingStatus('pending');
+        console.log(error); //!
       }
     }
   };

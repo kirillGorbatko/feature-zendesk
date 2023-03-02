@@ -1,4 +1,10 @@
-import React, { FormEvent, FormEventHandler, useState, useRef, useEffect } from 'react';
+import React, {
+  FormEvent,
+  FormEventHandler,
+  useState,
+  useRef,
+  useEffect,
+} from 'react';
 import gsap from 'gsap';
 
 // import { SearchButton } from '../search-button/search-button';
@@ -25,12 +31,14 @@ export function SearchForm({
   handleSubmit = (e) => e.preventDefault,
 }: SearchFormProps) {
   const [isOpen, setOpen] = useState(false);
-  const [tl, setTl] = useState(gsap.timeline({
-    paused: true,
-    onComplete: () => {
-      $input.current?.focus();
-    },
-  }));
+  const [tl, setTl] = useState(
+    gsap.timeline({
+      paused: true,
+      onComplete: () => {
+        $input.current?.focus();
+      },
+    })
+  );
   const [inputText, setInputText] = useState(initialQuery);
 
   const $trigger = useRef<HTMLDivElement>(null);
@@ -49,20 +57,26 @@ export function SearchForm({
   const popupOpenClass = 'body--popup_open';
 
   const initAnim = () => {
-    const formPos = $form.current?.getBoundingClientRect()
+    const formPos = $form.current?.getBoundingClientRect();
     const triggerPos = $trigger.current?.getBoundingClientRect();
 
-    const triggerOffset = triggerPos.top - formPos.top
+    const triggerOffset = triggerPos.top - formPos.top;
     const triggerSideOffset = triggerPos.left - formPos.left;
-    const decorSideOffset = triggerSideOffset !== 0 ? triggerSideOffset * 2 : formPos.right - triggerPos.right;
+    const decorSideOffset =
+      triggerSideOffset !== 0
+        ? triggerSideOffset * 2
+        : formPos.right - triggerPos.right;
 
-    const formBorderRadius = parseFloat(window.getComputedStyle($triggerBgDecor.current).getPropertyValue("border-radius"));
+    const formBorderRadius = parseFloat(
+      window
+        .getComputedStyle($triggerBgDecor.current)
+        .getPropertyValue('border-radius')
+    );
     const triggerWidth = $triggerBg.current?.clientWidth;
     const formWidth = $form.current?.clientWidth - formBorderRadius * 2;
     const widthRatio = formWidth / triggerWidth;
-    
-    tl
-      .addLabel('start')
+
+    tl.addLabel('start')
       .to($trigger.current, {
         y: triggerOffset * -1,
         zIndex: 300,
@@ -71,30 +85,54 @@ export function SearchForm({
       .to($trigger.current, {
         x: triggerSideOffset * -1,
       })
-      .to($triggerBg.current, {
-        scaleX: widthRatio,
-      }, 'step1')
-      .to($triggerBgDecor.current, {
-        x: decorSideOffset,
-      }, 'step1')
+      .to(
+        $triggerBg.current,
+        {
+          scaleX: widthRatio,
+        },
+        'step1'
+      )
+      .to(
+        $triggerBgDecor.current,
+        {
+          x: decorSideOffset,
+        },
+        'step1'
+      )
       .addLabel('step2')
-      .set($formWrap.current, {
-        opacity: 1,
-      }, 'step2')
-      .to($trigger.current, {
-        opacity: 0,
-        pointerEvents: 'none',
-      }, 'step2')
-      .to($bg.current, {
-        opacity: 1,
-      }, 'step2-=.8')
-      .to($hint.current, {
-        opacity: 1,
-      }, 'step2')
+      .set(
+        $formWrap.current,
+        {
+          opacity: 1,
+        },
+        'step2'
+      )
+      .to(
+        $trigger.current,
+        {
+          opacity: 0,
+          pointerEvents: 'none',
+        },
+        'step2'
+      )
+      .to(
+        $bg.current,
+        {
+          opacity: 1,
+        },
+        'step2-=.8'
+      )
+      .to(
+        $hint.current,
+        {
+          opacity: 1,
+        },
+        'step2'
+      );
 
-    tl.timeScale(2)
+    tl.timeScale(2);
     tl.play();
-  }
+  };
 
   const handleOpen = () => {
     tl.clear();
@@ -103,7 +141,7 @@ export function SearchForm({
     initAnim();
   };
 
-  const handleClose = (e:any) => {
+  const handleClose = (e: any) => {
     e.preventDefault();
     setOpen(false);
     setInputText('');
@@ -111,9 +149,11 @@ export function SearchForm({
     tl.reverse();
   };
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    try {
+      await handleSubmit(e);
+    } catch (e) {}
     handleClose(e);
-    handleSubmit(e);
   };
 
   return (
@@ -127,7 +167,7 @@ export function SearchForm({
           [styles['search_form__main--open_state']]: isOpen,
         })}
       >
-        <div  className={styles['search_form__bg']} ref={$bg}></div>
+        <div className={styles['search_form__bg']} ref={$bg}></div>
         <div
           ref={$formWrap}
           className={classNames(styles['search_form__container'], {
@@ -187,8 +227,14 @@ export function SearchForm({
         <div className={styles['search_form__wrap']} ref={$trigger}>
           <div className={styles['search_form__wrap_bg']}>
             <div className={styles['search_form__wrap_bg_decor']}></div>
-            <div className={styles['search_form__wrap_bg_in']} ref={$triggerBg}></div>
-            <div className={styles['search_form__wrap_bg_decor']} ref={$triggerBgDecor}></div>
+            <div
+              className={styles['search_form__wrap_bg_in']}
+              ref={$triggerBg}
+            ></div>
+            <div
+              className={styles['search_form__wrap_bg_decor']}
+              ref={$triggerBgDecor}
+            ></div>
           </div>
           <button
             onClick={handleOpen}

@@ -2,6 +2,7 @@ import {
   SearchResult,
   GradientSection,
   FmLinkProps,
+  Preloader,
 } from '@featurefm/design-system';
 import { CustomHead } from '../custom-head/custom-head';
 import { NextApiRequest, NextApiResponse } from 'next';
@@ -68,6 +69,7 @@ export function Search({
 
   return (
     <>
+      <Preloader open={loadingStatus === 'pending'} />
       <CustomHead
         title={`Results for: “${userQuery}”`}
         metaDescr="Find what you're looking for quickly and easily with our powerful search tool. Discover new services, and information in seconds. Try it now and streamline your search experience."

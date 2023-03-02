@@ -7,6 +7,7 @@ import {
   LinksBlocksItem,
   LinksBlocksList,
   SearchHero,
+  Preloader,
 } from '@featurefm/design-system';
 import jsyaml from 'js-yaml';
 import { CustomHead } from '../../custom-head/custom-head';
@@ -27,6 +28,9 @@ interface CategoryProps {
 function Category({ category, sections }: CategoryProps) {
   const [activeItemId, setActiveItemId] = useState(null);
   const { isTablet } = useMatchMedia();
+  const [loadingStatus, setLoadingStatus] = useState<
+    'idle' | 'pending' | 'fullfilled' | 'rejected'
+  >('idle');
 
   useEffect(() => {
     setActiveItemId(null);
@@ -42,6 +46,7 @@ function Category({ category, sections }: CategoryProps) {
   });
   return (
     <>
+      <Preloader open={loadingStatus === 'pending'} />
       <CustomHead
         title={category?.name}
         metaDescr="Discover the latest articles on feature.fm and stay up-to-date with the latest trends, tips, and news. Browse our comprehensive list of articles and find the information you need."
@@ -55,6 +60,7 @@ function Category({ category, sections }: CategoryProps) {
           isBackButton={'Back'}
           iconName={icon}
           iconTitleMod={true}
+          setLoadingStatus={setLoadingStatus}
           hiddenMobileForm={true}
         />
         {sections && (

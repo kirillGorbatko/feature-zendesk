@@ -83,11 +83,11 @@ export function SearchResult({
               )}
             </>
           )}
-          {loadingStatus === 'pending' && (
+          {/* {loadingStatus === 'pending' && (
             <>
               <div className={styles['search_result__loading']}>Loading.</div>
             </>
-          )}
+          )} */}
           {loadingStatus === 'rejected' && (
             <>
               <div className={styles['search_result__title']}>
