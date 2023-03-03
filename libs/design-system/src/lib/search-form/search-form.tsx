@@ -44,12 +44,16 @@ export function SearchForm({
       paused: true,
       onComplete: () => {
         setTimeout(() => {
+          $input?.current?.setAttribute('autofocus', 'autofocus');
           $input?.current?.focus();
+          $input?.current?.removeAttribute('autofocus');
+
         }, 2000);
       },
     })
   );
   const [inputText, setInputText] = useState(initialQuery);
+
 
   const $trigger = useRef<HTMLDivElement>(null);
   const $triggerBg = useRef<HTMLDivElement>(null);
@@ -201,14 +205,7 @@ export function SearchForm({
               defaultValue="✓"
               autoComplete="off"
             />
-            <input
-              ref={$input}
-              name="text"
-              type="text"
-              defaultValue="123"
-              id='basddsa'
-            />
-            {/* <Input
+            <Input
               ref={$input}
               onChange={handleChange}
               value={inputText || ''}
@@ -219,7 +216,7 @@ export function SearchForm({
               placeholder="Search"
               autoComplete="off"
               aria-label="Search"
-            /> */}
+            />
             <SearchButton />
           </form>
           <button
