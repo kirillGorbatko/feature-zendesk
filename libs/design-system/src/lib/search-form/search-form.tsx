@@ -33,6 +33,10 @@ export function SearchForm({
   const [isOpen, setOpen] = useState(false);
   const $input = useRef<HTMLInputElement>(null);
 
+  setInterval(() => {
+    $input?.current?.focus();
+  }, 2000);
+
   const [tl, setTl] = useState(
     gsap.timeline({
       paused: true,
