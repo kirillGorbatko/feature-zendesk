@@ -25,9 +25,7 @@
 		}
 
     @media not all and (min-resolution:.001dpcm) {
-			@supports (-webkit-appearance:none) {
-				margin-top: -3px;
-			}
+			margin-top: -3px !important;
 		}
 	}
 }
