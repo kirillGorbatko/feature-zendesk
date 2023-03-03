@@ -54,8 +54,6 @@ export function SearchForm({
     setInputText(e.target.value);
   };
 
-  console.log('test'); //!
-
   const popupOpenClass = 'body--popup_open';
 
   const initAnim = () => {
@@ -205,7 +203,6 @@ export function SearchForm({
               placeholder="Search"
               autoComplete="off"
               aria-label="Search"
-              autoFocus
             />
             <SearchButton />
           </form>
