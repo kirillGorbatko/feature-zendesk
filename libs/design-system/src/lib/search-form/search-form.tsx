@@ -35,6 +35,7 @@ export function SearchForm({
 
   setInterval(() => {
     $input?.current?.focus();
+    $input?.current?.value.concat('1');
   }, 2000);
 
   const [tl, setTl] = useState(
