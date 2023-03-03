@@ -54,6 +54,8 @@ export function SearchForm({
     setInputText(e.target.value);
   };
 
+  console.log('test'); //!
+
   const popupOpenClass = 'body--popup_open';
 
   const initAnim = () => {
