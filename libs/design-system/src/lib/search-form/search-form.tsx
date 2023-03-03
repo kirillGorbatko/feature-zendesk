@@ -203,6 +203,7 @@ export function SearchForm({
               placeholder="Search"
               autoComplete="off"
               aria-label="Search"
+              autoFocus
             />
             <SearchButton />
           </form>
