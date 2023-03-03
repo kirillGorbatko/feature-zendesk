@@ -12,6 +12,8 @@ export function Preloader({ open = false }: PreloaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const $preloader = useRef<HTMLDivElement>(null);
+  const openTransition = 50;
+  const closeTransition = 300;
 
   useEffect(() => {
     if (open) {
@@ -20,7 +22,7 @@ export function Preloader({ open = false }: PreloaderProps) {
       $preloader.current?.classList.remove(styles['preloader--active_state']);
       setTimeout(() => {
         if (!open) setIsOpen(false);
-      }, 300);
+      }, closeTransition);
     }
   }, [open]);
 
@@ -29,20 +31,21 @@ export function Preloader({ open = false }: PreloaderProps) {
       setTimeout(() => {
         if (isOpen)
           $preloader.current?.classList.add(styles['preloader--active_state']);
-      }, 50);
+      }, openTransition);
     }
   }, [isOpen]);
 
-  return (
-    (isOpen && (
+  if (isOpen) {
+    return (
       <div className={styles['preloader']} ref={$preloader}>
         <div className={styles['preloader__logo_w']}>
           <PreloaderLogo />
         </div>
       </div>
-    )) ||
-    null
-  );
+    )
+  } else {
+    return null;
+  }
 }
 
 export default Preloader;

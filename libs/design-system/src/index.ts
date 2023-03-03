@@ -110,4 +110,5 @@ export * from './lib/widget/widget';
 export * from './lib/error-section/error-section';
 export * from './lib/search-button/search-button';
 export * from './lib/search-form/search-form';
+export * from './lib/back-link/back-link';
 export * from './lib/preloader/preloader';

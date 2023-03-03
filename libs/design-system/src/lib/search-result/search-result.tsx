@@ -1,6 +1,7 @@
 import styles from './search-result.module.scss';
 
 import { FMButton } from '@featurefm/design-system';
+import { PromiseStatus } from '@featurefm/shared/types';
 
 import {
   FmLinkProps,
@@ -15,7 +16,7 @@ type SearchResultProps = {
   decor?: boolean;
   links: FmLinkProps[];
   query?: string | null;
-  loadingStatus?: 'idle' | 'pending' | 'fullfilled' | 'rejected';
+  loadingStatus?: PromiseStatus;
   isLoadingMore?: boolean;
   nextPageIndex: number | null;
   handleLoadMore?: MouseEventHandler<HTMLButtonElement> | undefined;
@@ -83,11 +84,6 @@ export function SearchResult({
               )}
             </>
           )}
-          {/* {loadingStatus === 'pending' && (
-            <>
-              <div className={styles['search_result__loading']}>Loading.</div>
-            </>
-          )} */}
           {loadingStatus === 'rejected' && (
             <>
               <div className={styles['search_result__title']}>

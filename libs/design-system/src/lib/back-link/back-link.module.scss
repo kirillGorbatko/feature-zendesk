@@ -1,0 +1,26 @@
+@import '../sass-helpers/helpers-all.scss';
+
+.back_link {
+	display: flex;
+	align-items: center;
+
+	font-size: calculateSize(1.6rem);
+	font-weight: 500;
+
+	@include link_hover_dark_shadow;
+
+	svg {
+		display: block;
+		width: calculateSize(0.6rem);
+		height: calculateSize(1.2rem);
+		flex-shrink: 0;
+
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-right: calculateSize(.7rem);
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-right: calculateSize(1rem);
+		}
+	}
+}

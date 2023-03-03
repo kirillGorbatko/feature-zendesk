@@ -11,6 +11,7 @@ import { useState, MouseEvent } from 'react';
 import { connectToSearchAPI } from '../src/api/search';
 import { FormatURL } from '../src/shared/utils';
 import { prepareDataContainers } from '../src/shared/utils/prepare-data-containers';
+import { PromiseStatus } from '@featurefm/shared/types';
 
 type SearchProps = {
   searchResults?: FmLinkProps[];
@@ -28,9 +29,7 @@ export function Search({
   hostUrl,
 }: SearchProps) {
   const [searchResultsData, setSearchResultsData] = useState(searchResults);
-  const [loadingStatus, setLoadingStatus] = useState<
-    'idle' | 'pending' | 'fullfilled' | 'rejected'
-  >(errorMessage ? 'rejected' : 'idle');
+  const [loadingStatus, setLoadingStatus] = useState<PromiseStatus>(errorMessage ? 'rejected' : 'idle');
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [userQuery, setUserQuery] = useState(userQueryByUrl);
   const [nextPageIndex, setNextPageIndex] = useState(nextPageIndexInitial);
@@ -80,6 +79,8 @@ export function Search({
       <GradientSection>
         <SearchWrap
           mobAlign="left"
+          isBackButton="Back to main lobby"
+          isMobileBackButton={false}
           initialQuery={userQuery}
           setSearchResultsData={setSearchResultsData}
           setUserQuery={setUserQuery}
@@ -112,7 +113,6 @@ export async function getServerSideProps(context: {
   try {
     const requestReferer = context.req?.url;
     if (requestReferer) {
-      // const hostUrlData = new URL(requestReferer);
       hostUrl = context.req?.headers?.host || null;
 
       const query = new FormatURL(requestReferer);

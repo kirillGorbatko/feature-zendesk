@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { SearchForm } from '../search-form/search-form';
 import { FmH1 } from '@featurefm/design-system';
-
-import { BackIcon, SpeakerIcon } from '@featurefm/design-system';
+import { PromiseStatus } from '@featurefm/shared/types';
+import { BackLink } from '@featurefm/design-system';
 import styles from './search-hero.module.scss';
 import classNames from 'classnames';
 import { Align as SearchFormAlign } from '../search-form/search-form';
@@ -23,7 +23,8 @@ export interface SearchHeroProps {
   isSearchResults?: boolean;
   hiddenMobileForm?: boolean;
   iconTitleMod?: boolean;
-  loadingStatus?: 'idle' | 'pending' | 'fullfilled' | 'rejected';
+  loadingStatus?: PromiseStatus;
+  isMobileBackButton?: boolean;
 }
 
 export function SearchHero({
@@ -40,6 +41,7 @@ export function SearchHero({
   resultsCount = 0,
   isSearchResults = false,
   loadingStatus,
+  isMobileBackButton = true,
 }: SearchHeroProps) {
   return (
     <section
@@ -51,11 +53,22 @@ export function SearchHero({
     >
       <div className={styles['hero__in']}>
         {isBackButton && (
-          <Link href="/">
-            <div className={styles['hero__back']}>
-              <BackIcon /> {isBackButton}
-            </div>
-          </Link>
+          <div
+            className={classNames(styles['hero__back'], [
+              styles['hero__back--desktop_mod'],
+            ])}
+          >
+            <BackLink>{isBackButton}</BackLink>
+          </div>
+        )}
+        {isMobileBackButton && (
+          <div
+            className={classNames(styles['hero__back'], [
+              styles['hero__back--mobile_mod'],
+            ])}
+          >
+            <BackLink>Back</BackLink>
+          </div>
         )}
         <div
           className={classNames(styles['hero__wrap'], {

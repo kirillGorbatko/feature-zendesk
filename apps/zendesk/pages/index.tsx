@@ -8,15 +8,14 @@ import { CATEGORIES_API } from '../src/api';
 import { Category } from '../src/shared/types';
 import { SearchWrap } from '../src/components/search-wrap';
 import { useState } from 'react';
+import { PromiseStatus } from '@featurefm/shared/types';
 
 interface IndexProps {
   categories: Category[];
 }
 
 export function Index({ categories }: IndexProps) {
-  const [loadingStatus, setLoadingStatus] = useState<
-    'idle' | 'pending' | 'fullfilled' | 'rejected'
-  >('idle');
+  const [loadingStatus, setLoadingStatus] = useState<PromiseStatus>('idle');
   return (
     <>
       <Preloader open={loadingStatus === 'pending'} />

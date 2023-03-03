@@ -6,7 +6,6 @@ import {
   LinksBlocksSection,
   LinksBlocksItem,
   LinksBlocksList,
-  SearchHero,
   Preloader,
 } from '@featurefm/design-system';
 import jsyaml from 'js-yaml';
@@ -19,6 +18,7 @@ import {
 } from '../../src/shared/types';
 import { getIdFromSlug } from '../../src/shared/utils';
 import { SearchWrap } from '../../src/components';
+import { PromiseStatus } from '@featurefm/shared/types';
 
 interface CategoryProps {
   category: CategoryType;
@@ -28,9 +28,7 @@ interface CategoryProps {
 function Category({ category, sections }: CategoryProps) {
   const [activeItemId, setActiveItemId] = useState(null);
   const { isTablet } = useMatchMedia();
-  const [loadingStatus, setLoadingStatus] = useState<
-    'idle' | 'pending' | 'fullfilled' | 'rejected'
-  >('idle');
+  const [loadingStatus, setLoadingStatus] = useState<PromiseStatus>('idle');
 
   useEffect(() => {
     setActiveItemId(null);
@@ -57,7 +55,7 @@ function Category({ category, sections }: CategoryProps) {
       <GradientSection>
         <SearchWrap
           title={category?.name}
-          isBackButton={'Back'}
+          isBackButton="Back to main lobby"
           iconName={icon}
           iconTitleMod={true}
           setLoadingStatus={setLoadingStatus}

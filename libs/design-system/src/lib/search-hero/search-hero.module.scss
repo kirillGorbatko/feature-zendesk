@@ -1,47 +1,57 @@
 @import '../sass-helpers/helpers-all.scss';
 
 .hero {
-  &:not(.hero--search_mod) {
-    @include bp(theme('screens.fm-desktop'), min) {
-      padding: calculateSize(6.8rem) $gl_desktop_indent calculateSize(4rem);
-    }
-  }
+	&:not(.hero--search_mod, .hero--back_mod) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			padding: calculateSize(6.8rem) $gl_desktop_indent calculateSize(4rem);
+		}
+	}
 
-  &.hero--search_mod {
-    @include bp(theme('screens.fm-desktop'), min) {
-      padding: calculateSize(6.8rem) $gl_desktop_indent calculateSize(8rem);
-    }
-  }
+	&.hero--search_mod {
+		@include bp(theme('screens.fm-desktop'), min) {
+			padding: calculateSize(6.8rem) $gl_desktop_indent calculateSize(8rem);
+		}
+	}
 
-  @include bp(theme('screens.fm-tablet')) {
-    &.hero--back_mod {
-      padding: calculateSize(3rem) $gl_mobile_indent calculateSize(4rem);
-    }
+	@include bp(theme('screens.fm-desktop'), min) {
+		&.hero--back_mod {
+			padding: calculateSize(3.1rem) $gl_desktop_indent calculateSize(4rem);
+		}
 
-    &:not(.hero--back_mod) {
-      padding: calculateSize(5.7rem) $gl_mobile_indent calculateSize(1.9rem);
-    }
-  }
+		&.hero--back_mod.hero--search_mod {
+			padding: calculateSize(3.1rem) $gl_desktop_indent calculateSize(8rem);
+		}
+	}
+
+	@include bp(theme('screens.fm-tablet')) {
+		&.hero--back_mod {
+			padding: calculateSize(3rem) $gl_mobile_indent calculateSize(4rem);
+		}
+
+		&:not(.hero--back_mod) {
+			padding: calculateSize(5.7rem) $gl_mobile_indent calculateSize(1.9rem);
+		}
+	}
 }
 
 .hero__in {
-  max-width: $page_width;
-  margin: 0 auto;
-  width: 100%;
+	max-width: $page_width;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .hero__wrap {
-  max-width: calculateSize(90rem);
+	max-width: calculateSize(90rem);
 
-  &.hero__wrap--center_align {
-    margin: 0 auto;
-    text-align: center;
-  }
+	&.hero__wrap--center_align {
+		margin: 0 auto;
+		text-align: center;
+	}
 
-  &.hero__wrap--right_align {
-    margin-left: auto;
-    text-align: right;
-  }
+	&.hero__wrap--right_align {
+		margin-left: auto;
+		text-align: right;
+	}
 
   // @include bp(theme('screens.fm-mobile-max')) {
   //   .hero--loading_state & {
@@ -51,158 +61,167 @@
 }
 
 .hero__head {
-  .hero--search_mod & {
-    &:not(:last-child) {
-      @include bp(theme('screens.fm-desktop'), min) {
-        display: none;
-        margin-bottom: calculateSize(7rem);
-      }
+	.hero--search_mod & {
+		&:not(:last-child) {
+			@include bp(theme('screens.fm-desktop'), min) {
+				display: none;
+				margin-bottom: calculateSize(7rem);
+			}
 
-      @include bp(theme('screens.fm-tablet')) {
-        margin-bottom: calculateSize(3.8rem);
-      }
-    }
-  }
+			@include bp(theme('screens.fm-tablet')) {
+				margin-bottom: calculateSize(3.8rem);
+			}
+		}
+	}
 
-  .hero--back_mod & {
-    &:not(:last-child) {
-      @include bp(theme('screens.fm-desktop'), min) {
-        margin-bottom: calculateSize(7rem);
-      }
-    }
-  }
+	.hero--back_mod & {
+		&:not(:last-child) {
+			@include bp(theme('screens.fm-desktop'), min) {
+				margin-bottom: calculateSize(7rem);
+			}
+		}
+	}
 
-  &:not(:last-child, .hero--search_mod &, .hero--back_mod &) {
-    @include bp(theme('screens.fm-desktop'), min) {
-      margin-bottom: calculateSize(7rem);
-    }
+	&:not(:last-child, .hero--search_mod &, .hero--back_mod &) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(7rem);
+		}
 
-    @include bp(theme('screens.fm-tablet')) {
-      margin-bottom: calculateSize(4rem);
-    }
-  }
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(4rem);
+		}
+	}
 }
 
 .hero__back {
-  display: flex;
-  align-items: center;
-  margin-bottom: calculateSize(3rem);
+	display: inline-block;
 
-  font-size: calculateSize(1.6rem);
-  font-weight: 500;
+	@include bp(theme('screens.fm-desktop'), min) {
+		&.hero__back--mobile_mod {
+			display: none;
+		}
+	}
 
-  @include bp(theme('screens.fm-desktop'), min) {
-    display: none;
-  }
+	@include bp(theme('screens.fm-tablet')) {
+		&.hero__back--desktop_mod {
+			display: none;
+		}
+	}
 
-  svg {
-    display: block;
-    width: calculateSize(0.6rem);
-    height: calculateSize(1.2rem);
-    margin-right: calculateSize(1rem);
-    flex-shrink: 0;
-  }
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(1.3rem);
+
+			.hero--back_mod.hero--search_mod & {
+				margin-bottom: calculateSize(3.2rem);
+			}
+		}
+
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(3rem);
+		}
+	}
 }
 
 .hero__title {
-  display: flex;
-  line-height: 1.15;
+	display: flex;
+	line-height: 1.15;
 
-  @include bp(theme('screens.fm-mobile-min'), min) {
-    letter-spacing: 0.03rem;
-  }
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		letter-spacing: 0.03rem;
+	}
 
-  @include bp(theme('screens.fm-mobile-max')) {
-    &:not(.hero--back_mod &) {
-      text-align: center;
-    }
-  }
+	@include bp(theme('screens.fm-mobile-max')) {
+		&:not(.hero--back_mod &) {
+			text-align: center;
+		}
+	}
 
-  &.hero__title--icon_mod {
-    align-items: center;
+	&.hero__title--icon_mod {
+		align-items: center;
 
-    h1 {
-      @include bp(theme('screens.fm-tablet')) {
-        font-size: calculateSize(1.8rem);
-        font-weight: 500;
-        font-family: $font_outfit;
-      }
-    }
-  }
+		h1 {
+			@include bp(theme('screens.fm-tablet')) {
+				font-size: calculateSize(1.8rem);
+				font-weight: 500;
+				font-family: $font_outfit;
+			}
+		}
+	}
 
-  .hero__wrap--center_align & {
-    justify-content: center;
-  }
+	.hero__wrap--center_align & {
+		justify-content: center;
+	}
 
-  &:not(:last-child) {
-    @include bp(theme('screens.fm-desktop'), min) {
-      margin-bottom: calculateSize(2rem);
-    }
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(2rem);
+		}
 
-    @include bp(theme('screens.fm-tablet')) {
-      margin-bottom: calculateSize(4.2rem);
-    }
-  }
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(4.2rem);
+		}
+	}
 }
 
 .hero__title_icon {
-  @include bp(theme('screens.fm-desktop'), min) {
-    display: none;
-  }
+	@include bp(theme('screens.fm-desktop'), min) {
+		display: none;
+	}
 
-  width: calculateSize(4.4rem);
-  height: calculateSize(4.2rem);
-  margin-right: calculateSize(2.6rem);
-  flex-shrink: 0;
+	width: calculateSize(4.4rem);
+	height: calculateSize(4.2rem);
+	margin-right: calculateSize(2.6rem);
+	flex-shrink: 0;
 }
 
 .hero__subtitle {
-  font-size: calculateSize(1.6rem);
+	font-size: calculateSize(1.6rem);
 
-  @include bp(theme('screens.fm-mobile-max')) {
-    line-height: 1.4;
-    text-align: center;
-  }
+	@include bp(theme('screens.fm-mobile-max')) {
+		line-height: 1.4;
+		text-align: center;
+	}
 
-  &:not(:last-child) {
-    @include bp(theme('screens.fm-desktop'), min) {
-      margin-bottom: calculateSize(1.2rem);
-    }
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: calculateSize(1.2rem);
+		}
 
-    @include bp(theme('screens.fm-tablet')) {
-      margin-bottom: calculateSize(1rem);
-    }
-  }
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(1rem);
+		}
+	}
 }
 
 .hero__search {
-  @include bp(theme('screens.fm-mobile-min'), min) {
-    display: none;
-  }
+	@include bp(theme('screens.fm-mobile-min'), min) {
+		display: none;
+	}
 }
 
 .hero__search_subtitle {
-  font-size: calculateSize(1.8rem);
+	font-size: calculateSize(1.8rem);
 
-  @include bp(theme('screens.fm-tablet')) {
-    line-height: 1.33;
-  }
+	@include bp(theme('screens.fm-tablet')) {
+		line-height: 1.33;
+	}
 
-  &:not(:last-child) {
-    @include bp(theme('screens.fm-desktop'), min) {
-      margin-bottom: 4px;
-    }
+	&:not(:last-child) {
+		@include bp(theme('screens.fm-desktop'), min) {
+			margin-bottom: 4px;
+		}
 
-    @include bp(theme('screens.fm-tablet')) {
-      margin-bottom: calculateSize(1.2rem);
-    }
-  }
+		@include bp(theme('screens.fm-tablet')) {
+			margin-bottom: calculateSize(1.2rem);
+		}
+	}
 }
 
 .hero__search_title {
-  font-size: calculateSize(3rem);
+	font-size: calculateSize(3rem);
 
-  @include bp(theme('screens.fm-tablet')) {
-    line-height: 1.33;
-  }
+	@include bp(theme('screens.fm-tablet')) {
+		line-height: 1.33;
+	}
 }

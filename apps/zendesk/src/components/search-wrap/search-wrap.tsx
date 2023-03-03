@@ -4,12 +4,13 @@ import { SearchHero, SearchHeroProps } from '@featurefm/design-system';
 import { useRouter } from 'next/router';
 import { Dispatch, SetStateAction, FormEvent } from 'react';
 import { connectToSearchAPI } from '../../api/search';
+import { PromiseStatus } from '@featurefm/shared/types';
 
 interface SearchHeroWrapProps {
   setSearchResultsData?: Dispatch<SetStateAction<any[]>>;
   setUserQuery?: Dispatch<SetStateAction<string>>;
   setLoadingStatus?: Dispatch<
-    SetStateAction<'idle' | 'pending' | 'fullfilled' | 'rejected'>
+    SetStateAction<PromiseStatus>
   >;
   setNextPageIndex?: Dispatch<SetStateAction<number>>;
   hostUrl?: string | null;
