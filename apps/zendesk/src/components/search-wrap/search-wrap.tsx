@@ -31,7 +31,9 @@ function SearchWrap(props: PropsGroup) {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const userQuery = e?.currentTarget?.query?.value;
+    const searchInput = e?.currentTarget?.query;
+    const userQuery = searchInput?.value;
+    searchInput?.blur();
 
     if (!userQuery) return;
 
