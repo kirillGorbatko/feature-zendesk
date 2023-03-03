@@ -47,7 +47,7 @@ export function SearchForm({
 
 
   useEffect(() => {
-    $input?.addEventListener('mouseup', (e) => {
+    $input?.current?.addEventListener('mouseup', (e) => {
       e.preventDefault();
     });
   }, [$input])
