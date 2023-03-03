@@ -37,7 +37,7 @@ export function SearchForm({
       onComplete: () => {
         setTimeout(() => {
           $input.current?.focus();
-          console.log('focus'); //!
+          window.alert('focus'); //!
         }, 2000);
       },
     })
@@ -141,9 +141,9 @@ export function SearchForm({
     tl.clear();
     setOpen(true);
     document.body.classList.add(popupOpenClass);
-    console.log('init anim'); //!
+    window.alert('init anim'); //!
     initAnim();
-    console.log('anim'); //!
+    window.alert('anim'); //!
   };
 
   const handleClose = (e: any) => {
