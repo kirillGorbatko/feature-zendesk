@@ -35,7 +35,10 @@ export function SearchForm({
     gsap.timeline({
       paused: true,
       onComplete: () => {
-        $input.current?.focus();
+        setTimeout(() => {
+          $input.current?.focus();
+          console.log('focus'); //!
+        }, 2000);
       },
     })
   );
@@ -138,7 +141,9 @@ export function SearchForm({
     tl.clear();
     setOpen(true);
     document.body.classList.add(popupOpenClass);
+    console.log('init anim'); //!
     initAnim();
+    console.log('anim'); //!
   };
 
   const handleClose = (e: any) => {
