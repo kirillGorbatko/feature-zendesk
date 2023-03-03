@@ -179,6 +179,7 @@ export function SearchForm({
         className={classNames(styles['search_form__main'], {
           [styles['search_form__main--open_state']]: isOpen,
         })}
+        role="dialog"
       >
         <div className={styles['search_form__bg']} ref={$bg}></div>
         <div

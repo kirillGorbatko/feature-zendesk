@@ -95,7 +95,7 @@
   }
 
   @include bp(theme('screens.fm-mobile-max')) {
-    // opacity: 0;
+    opacity: 0;
     &:not(:last-child) {
       margin-bottom: calculateSize(8rem);
     }
