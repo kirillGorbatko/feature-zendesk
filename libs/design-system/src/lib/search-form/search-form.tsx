@@ -45,6 +45,13 @@ export function SearchForm({
   );
   const [inputText, setInputText] = useState(initialQuery);
 
+
+  useEffect(() => {
+    $input?.addEventListener('mouseup', (e) => {
+      e.preventDefault();
+    });
+  }, [$input])
+
   const $trigger = useRef<HTMLDivElement>(null);
   const $triggerBg = useRef<HTMLDivElement>(null);
   const $triggerBgDecor = useRef<HTMLDivElement>(null);
