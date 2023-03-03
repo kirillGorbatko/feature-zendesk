@@ -31,6 +31,8 @@ export function SearchForm({
   handleSubmit = (e) => e.preventDefault,
 }: SearchFormProps) {
   const [isOpen, setOpen] = useState(false);
+  const $input = useRef<HTMLInputElement>(null);
+
   const [tl, setTl] = useState(
     gsap.timeline({
       paused: true,
@@ -49,7 +51,6 @@ export function SearchForm({
   const $triggerBgDecor = useRef<HTMLDivElement>(null);
   const $bg = useRef<HTMLDivElement>(null);
   const $form = useRef<HTMLFormElement>(null);
-  const $input = useRef<HTMLInputElement>(null);
   const $formWrap = useRef<HTMLDivElement>(null);
   const $hint = useRef<HTMLDivElement>(null);
 
