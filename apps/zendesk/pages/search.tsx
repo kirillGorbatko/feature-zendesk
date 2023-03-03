@@ -80,7 +80,6 @@ export function Search({
         <SearchWrap
           mobAlign="left"
           isBackButton="Back to main lobby"
-          isMobileBackButton={false}
           initialQuery={userQuery}
           setSearchResultsData={setSearchResultsData}
           setUserQuery={setUserQuery}

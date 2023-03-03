@@ -41,7 +41,7 @@ export function SearchHero({
   resultsCount = 0,
   isSearchResults = false,
   loadingStatus,
-  isMobileBackButton = true,
+  isMobileBackButton = false,
 }: SearchHeroProps) {
   return (
     <section

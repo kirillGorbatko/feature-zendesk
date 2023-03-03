@@ -56,6 +56,7 @@ function Category({ category, sections }: CategoryProps) {
         <SearchWrap
           title={category?.name}
           isBackButton="Back to main lobby"
+          isMobileBackButton
           iconName={icon}
           iconTitleMod={true}
           setLoadingStatus={setLoadingStatus}

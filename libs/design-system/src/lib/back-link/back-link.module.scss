@@ -21,6 +21,7 @@
 
 		@include bp(theme('screens.fm-tablet')) {
 			margin-right: calculateSize(1rem);
+			margin-top: 1px;
 		}
 	}
 }
