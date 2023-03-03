@@ -39,7 +39,7 @@ export function SearchForm({
       onComplete: () => {
         setTimeout(() => {
           $input?.current?.focus();
-          window.alert($input?.current); //!
+          window.alert(JSON.stringify($input?.current)); //!
           window.alert($input); //!
         }, 2000);
       },
