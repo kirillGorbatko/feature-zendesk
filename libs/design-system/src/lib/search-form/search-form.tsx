@@ -38,8 +38,9 @@ export function SearchForm({
       paused: true,
       onComplete: () => {
         setTimeout(() => {
-          $input.current?.focus();
-          window.alert($input.current, $input); //!
+          $input?.current?.focus();
+          window.alert($input?.current); //!
+          window.alert($input); //!
         }, 2000);
       },
     })
