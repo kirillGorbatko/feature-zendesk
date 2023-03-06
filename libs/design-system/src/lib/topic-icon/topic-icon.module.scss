@@ -1,15 +1,19 @@
 @import '../sass-helpers/helpers-all.scss';
 
 .topic_icon {
-	display: block;
+  display: block;
 
-	@include bp(theme('screens.fm-desktop'), min) {
-		width: calculateSize(6rem);
-		height: calculateSize(6rem);
-	}
+  @include bp(theme('screens.fm-desktop'), min) {
+    width: calculateSize(6rem);
+    height: calculateSize(6rem);
+  }
 
-	@include bp(theme('screens.fm-tablet')) {
-		width: calculateSize(5rem);
-		height: calculateSize(5rem);
-	}
+  @include bp(theme('screens.fm-tablet')) {
+    width: calculateSize(5rem);
+    height: calculateSize(5rem);
+  }
+
+  svg {
+    width: 100%;
+  }
 }

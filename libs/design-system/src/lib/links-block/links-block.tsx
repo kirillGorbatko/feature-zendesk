@@ -1,4 +1,6 @@
-import { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+import { useEffect, useRef } from 'react';
 import { useMatchMedia } from '@featurefm/shared/hooks';
 import styles from './links-block.module.scss';
 import classNames from 'classnames';
@@ -14,6 +16,9 @@ export type LinksBlockProps<T> = {
   handleClick: () => void;
 };
 
+const PAGE_OFFSET_TOP = 102;
+const COLLAPSE_DELAY = 300;
+
 export function LinksBlock<T>({
   name,
   hasDecor = false,
@@ -22,7 +27,30 @@ export function LinksBlock<T>({
   handleClick,
 }: LinksBlockProps<T>) {
   const { isTablet } = useMatchMedia();
-  const contentRef = useRef<HTMLDivElement>(null);
+  const $contentRef = useRef<HTMLDivElement>(null);
+  const $blockRef = useRef<HTMLDivElement>(null);
+
+  gsap.registerPlugin(ScrollToPlugin);
+
+  const scrollToActive = () => {
+    if (!$blockRef.current) return;
+
+    setTimeout(() => {
+      gsap.to(window, {
+        scrollTo: {
+          y: $blockRef.current || 0,
+          offsetY: PAGE_OFFSET_TOP,
+        },
+      });
+    }, COLLAPSE_DELAY);
+  };
+
+  useEffect(() => {
+    if (activeItemId) scrollToActive();
+  }, [activeItemId]);
+
+  const getMaxHeight = () =>
+    `${activeItemId ? $contentRef.current?.scrollHeight : 0}px`;
 
   return (
     <div
@@ -37,6 +65,7 @@ export function LinksBlock<T>({
         </div>
       )}
       <div
+        ref={$blockRef}
         className={styles['block__head']}
         onClick={isTablet ? handleClick : undefined}
         role="button"
@@ -49,9 +78,9 @@ export function LinksBlock<T>({
       </div>
       <div
         className={styles['block__wrap']}
-        ref={isTablet ? contentRef : null}
+        ref={isTablet ? $contentRef : null}
         style={{
-          maxHeight: `${activeItemId ? contentRef.current?.scrollHeight : 0}px`,
+          maxHeight: getMaxHeight(),
         }}
       >
         <LinksList links={links} />

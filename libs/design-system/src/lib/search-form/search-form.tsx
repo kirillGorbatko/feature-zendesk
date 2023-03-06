@@ -146,7 +146,7 @@ export function SearchForm({
     setOpen(false);
     setInputText('');
     document.body.classList.remove(popupOpenClass);
-    tl.reverse();
+    tl.timeScale(3).reverse();
   };
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
