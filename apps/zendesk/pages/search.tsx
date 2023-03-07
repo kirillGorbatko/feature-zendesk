@@ -29,7 +29,9 @@ export function Search({
   hostUrl,
 }: SearchProps) {
   const [searchResultsData, setSearchResultsData] = useState(searchResults);
-  const [loadingStatus, setLoadingStatus] = useState<PromiseStatus>(errorMessage ? 'rejected' : 'idle');
+  const [loadingStatus, setLoadingStatus] = useState<PromiseStatus>(
+    errorMessage ? 'rejected' : 'idle'
+  );
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [userQuery, setUserQuery] = useState(userQueryByUrl);
   const [nextPageIndex, setNextPageIndex] = useState(nextPageIndexInitial);
@@ -76,7 +78,7 @@ export function Search({
         ogTitlte={`Results for: “${userQuery}”`}
         ogDescr="Find what you're looking for quickly and easily with our powerful search tool. Discover new services, and information in seconds. Try it now and streamline your search experience."
       />
-      <GradientSection>
+      <GradientSection variant="purple">
         <SearchWrap
           mobAlign="left"
           isBackButton="Back to main lobby"

@@ -1,9 +1,11 @@
+import React, { useEffect, useState } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ArticleSection, GradientSection } from '@featurefm/design-system';
 import { CustomHead } from '../../custom-head/custom-head';
 import { ARTICLES_API, CATEGORIES_API, SECTIONS_API } from '../../src/api';
 import { getIdFromSlug } from '../../src/shared/utils';
 import { Article, Category, Section } from '../../src/shared/types';
+import jsyaml from 'js-yaml';
 
 type BreadCrumbs = { name: string; url: string };
 type BreadcrumbsParams = [BreadCrumbs, Category, Section];
@@ -12,13 +14,23 @@ interface ArticleProps {
   article: Article;
   breadcrumbs: BreadCrumbs[];
   sectionArticles: any[];
+  category: Category;
 }
 
 export function Article({
   article,
   breadcrumbs,
   sectionArticles,
+  category,
 }: ArticleProps) {
+  const [color, setColor] = useState(null);
+
+  useEffect(() => {
+    jsyaml.loadAll(category?.description, function (doc: any) {
+      setColor(doc?.color);
+    });
+  }, [category]);
+
   return (
     <>
       <CustomHead
@@ -28,7 +40,7 @@ export function Article({
         ogTitlte={article?.name}
         ogDescr={`Discover the latest trends and insights in the music industry with our in-depth article on ${article?.name}.`}
       />
-      <GradientSection variant="tomato">
+      <GradientSection variant={color}>
         <ArticleSection
           title={article?.name}
           breadCrumbs={breadcrumbs}
@@ -106,6 +118,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
+      category: category || null,
       article: article || null,
       breadcrumbs,
       sectionArticles: prepareSectionArticles,

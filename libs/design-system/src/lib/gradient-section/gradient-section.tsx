@@ -12,8 +12,6 @@ export function GradientSection({
   children,
 }: GradientSectionProps) {
   let colorMod = '';
-  console.log('variant:');
-  console.log(variant);
 
   switch (variant) {
     case 'purple': {
