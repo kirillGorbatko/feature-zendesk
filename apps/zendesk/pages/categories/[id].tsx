@@ -39,8 +39,10 @@ function Category({ category, sections }: CategoryProps) {
   };
 
   let icon = '';
+  let color = '';
   jsyaml.loadAll(category?.description, function (doc: any) {
     icon = doc?.icon || '';
+    color = doc?.color || '';
   });
   return (
     <>
@@ -52,7 +54,7 @@ function Category({ category, sections }: CategoryProps) {
         ogTitlte={category?.name}
         ogDescr="Discover the latest articles on feature.fm and stay up-to-date with the latest trends, tips, and news. Browse our comprehensive list of articles and find the information you need."
       />
-      <GradientSection>
+      <GradientSection variant={color}>
         <SearchWrap
           title={category?.name}
           isBackButton="Back to main lobby"

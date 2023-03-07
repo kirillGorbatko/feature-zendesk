@@ -3,7 +3,7 @@ import styles from './gradient-section.module.scss';
 import classNames from 'classnames';
 
 type GradientSectionProps = {
-  variant?: 'purple' | 'tomato';
+  variant?: string;
   children?: ReactNode;
 };
 
@@ -12,14 +12,20 @@ export function GradientSection({
   children,
 }: GradientSectionProps) {
   let colorMod = '';
+  console.log('variant:');
+  console.log(variant);
 
   switch (variant) {
     case 'purple': {
       colorMod = 'gradient_section--color_mod_1';
       break;
     }
-    case 'tomato': {
+    case 'red': {
       colorMod = 'gradient_section--color_mod_2';
+      break;
+    }
+    case 'green': {
+      colorMod = 'gradient_section--color_mod_3';
       break;
     }
 
