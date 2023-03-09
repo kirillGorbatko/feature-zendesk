@@ -53,11 +53,11 @@
 		text-align: right;
 	}
 
-  // @include bp(theme('screens.fm-mobile-max')) {
-  //   .hero--loading_state & {
-  //     display: none;
-  //   }
-  // }
+	// @include bp(theme('screens.fm-mobile-max')) {
+	//   .hero--loading_state & {
+	//     display: none;
+	//   }
+	// }
 }
 
 .hero__head {
@@ -100,6 +100,7 @@
 		&.hero__back--mobile_mod {
 			display: none;
 		}
+
 	}
 
 	@include bp(theme('screens.fm-tablet')) {
