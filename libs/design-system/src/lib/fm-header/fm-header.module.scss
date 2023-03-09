@@ -24,6 +24,12 @@ $header_vr_padding: 1.6rem;
 
 	z-index: 100;
 
+	&.header--transparent_mod {
+		&::before {
+			display: none;
+		}
+	}
+
 	&.header--transparent_mod:not(.header--scroll_state) {
 		background-color: transparent;
 	}
