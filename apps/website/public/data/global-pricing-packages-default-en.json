@@ -1,0 +1,2443 @@
+{
+  "id": "63ea2ba7dcebb0d2a419df4c",
+  "heroSection": {
+    "artist": {
+      "websiteHero": {
+        "title": "Plans for every stage of your career",
+        "description": "Choose any plan and get a 7 day free trial of Pro Artist"
+      },
+      "consoleHero": {
+        "title": "Choose the best plan for you",
+        "overrideTrialTitle": true,
+        "titleTrial": "Get Artist Pro free for 7 Days with any plan",
+        "overrideTrialDescription": false,
+        "ctaText": "All plans include unlimited links, clicks, and artist folders",
+        "overrideTrialCTA": false,
+        "partnerSection": {
+          "partnerBenefits": []
+        },
+        "isSpecialOffer": false,
+        "specialOffer": {
+          "monthlyPlan": {},
+          "yearlyPlan": {}
+        }
+      }
+    },
+    "business": {
+      "websiteHero": {
+        "title": "Grow your audience every day",
+        "description": "Choose the plan that works for you. Try for free!"
+      },
+      "consoleHero": {
+        "title": "Choose the best plan for you",
+        "overrideTrialTitle": true,
+        "titleTrial": "Get Marketing Pro free for 14 Days with any plan",
+        "overrideTrialDescription": false,
+        "ctaText": "All plans include unlimited links, clicks, and artist folders",
+        "overrideTrialCTA": false,
+        "partnerSection": {
+          "partnerBenefits": []
+        },
+        "isSpecialOffer": false,
+        "specialOffer": {
+          "monthlyPlan": {},
+          "yearlyPlan": {}
+        }
+      }
+    }
+  },
+  "pricingTiers": {
+    "artistTiers": {
+      "pricingPlans": {
+        "proArtist": {
+          "planName": "Pro Artist",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "39",
+          "planYearlyPrice": "35",
+          "isCustomPrice": false,
+          "planDescription": "For professional artists with full access to powerful features for growing and managing your fan base.",
+          "consoleAction": "Go Pro Artist",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited links and landing pages",
+              "id": "63e8f7f8913f6a8cc2915251"
+            },
+            {
+              "feature": "All available services",
+              "id": "63e8f7f8913f6a8cc2915252"
+            },
+            {
+              "feature": "Artist Bio Link",
+              "id": "63e8f7f8913f6a8cc2915253"
+            },
+            {
+              "feature": "All Pre-Save services",
+              "id": "63e8f7f8913f6a8cc2915254"
+            },
+            {
+              "feature": "Collect unlimited emails, access 200 emails per link",
+              "id": "63e8f7f8913f6a8cc2915255"
+            },
+            {
+              "feature": "Liftime day insight data",
+              "id": "63e8f7f8913f6a8cc2915256"
+            },
+            {
+              "feature": "3 Spotify Pre-Save Multiple Follow",
+              "id": "63e8f7f8913f6a8cc2915257"
+            },
+            {
+              "feature": "1 custom domain and 1 custom sub-domain",
+              "id": "63e8f7f8913f6a8cc2915258"
+            },
+            {
+              "feature": "Unlimited retargeting pixels",
+              "id": "63e8f7f8913f6a8cc2915259"
+            },
+            {
+              "feature": "Custom stores",
+              "id": "63e8f7f8913f6a8cc291525a"
+            },
+            {
+              "feature": "Email syncing to Mailchimp and ActiveCampaign",
+              "id": "63e8f7f8913f6a8cc291525b"
+            }
+          ]
+        },
+        "artist": {
+          "planName": "Artist",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "19",
+          "planYearlyPrice": "17",
+          "isCustomPrice": false,
+          "planDescription": "For growing artists with access to the features you need to get started.",
+          "consoleAction": "Go Artist",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited links and landing pages",
+              "id": "63e8f7f8913f6a8cc291525c"
+            },
+            {
+              "feature": "All available services",
+              "id": "63e8f7f8913f6a8cc291525d"
+            },
+            {
+              "feature": "Artist Bio Link",
+              "id": "63e8f7f8913f6a8cc291525e"
+            },
+            {
+              "feature": "All Pre-Save services",
+              "id": "63e8f7f8913f6a8cc291525f"
+            },
+            {
+              "feature": "Collect unlimited emails, access 200 emails per link",
+              "id": "63e8f7f8913f6a8cc2915260"
+            },
+            {
+              "feature": "90 day insight data",
+              "id": "63e8f7f8913f6a8cc2915261"
+            },
+            {
+              "feature": "1 Spotify Pre-Save Multiple Follow",
+              "id": "63e8f7f8913f6a8cc2915262"
+            },
+            {
+              "feature": "1 custom domain and 1 custom sub-domain",
+              "id": "63e8f7f8913f6a8cc2915263"
+            },
+            {
+              "feature": "2 retargeting pixels",
+              "id": "63e8f7f8913f6a8cc2915264"
+            },
+            {
+              "feature": "3 custom stores",
+              "id": "63e8f7f8913f6a8cc2915265"
+            }
+          ]
+        },
+        "liteArtist": {
+          "planName": "Basic Artist",
+          "isPlanEnabled": false,
+          "planMonthlyPrice": "9",
+          "planYearlyPrice": "7",
+          "isCustomPrice": false,
+          "planDescription": "Start promoting your music for free",
+          "consoleAction": "Go Basic Artist",
+          "ctaButton": {
+            "text": "Create Free Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited smart links",
+              "id": "63e8f7f8913f6a8cc2915266"
+            },
+            {
+              "feature": "Advanced pre-saves",
+              "id": "63e8f7f8913f6a8cc2915267"
+            },
+            {
+              "feature": "28 days insight data",
+              "id": "63e8f7f8913f6a8cc2915268"
+            },
+            {
+              "feature": "Collect 50 fan emails",
+              "id": "63e8f7f8913f6a8cc2915269"
+            },
+            {
+              "feature": "1 button action pages",
+              "id": "63e8f7f8913f6a8cc291526a"
+            }
+          ]
+        },
+        "free": {
+          "planName": "Free",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "0",
+          "planYearlyPrice": "0",
+          "isCustomPrice": false,
+          "planDescription": "For curious artists with limited access to basic features.",
+          "consoleAction": "Start Free",
+          "ctaButton": {
+            "text": "Create Free Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited links and landing pages*",
+              "id": "63e8f7eb9c0b097f81d64b6b"
+            },
+            {
+              "feature": "Limited services available",
+              "id": "63e8f7eb9c0b097f81d64b6c"
+            },
+            {
+              "feature": "Artist Bio Link",
+              "id": "63e8f7eb9c0b097f81d64b6d"
+            },
+            {
+              "feature": "1 Pre-Save service",
+              "id": "63e8f7eb9c0b097f81d64b6e"
+            },
+            {
+              "feature": "Collect unlimited emails, upgrade to access emails",
+              "id": "63e8f7eb9c0b097f81d64b6f"
+            },
+            {
+              "feature": "7 day insight data",
+              "id": "63e8f7eb9c0b097f81d64b70"
+            }
+          ]
+        },
+        "planComparison": [
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A link in bio for your social media profiles that connects all of your latest work and content in one place",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "1",
+                  "artist": "1",
+                  "liteArtist": "1",
+                  "free": "1"
+                },
+                "id": "63e8f7ea9c0b097f81d64b29",
+                "blockName": "Artist Bio Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Collect saves and promote your music ahead of your release date",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "Unlimited",
+                  "free": "Unlimited"
+                },
+                "id": "63e8f7ea9c0b097f81d64b2a",
+                "blockName": "Pre-Save Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A smart link that routes fans to your music in their preferred music serice",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "Unlimited",
+                  "free": "Unlimited"
+                },
+                "id": "63e8f7ea9c0b097f81d64b2b",
+                "blockName": "Released Smart Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Create your smart link ahead of time and schedule it to go live on release day.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b2c",
+                "blockName": "Scheduled Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Run giveaways and contests with prizes for taking actions that grow your followings",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b2d",
+                "blockName": "Contests",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Route fans to your latest tour dates to buy tickets",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "Unlimited",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b2e",
+                "blockName": "Tour & Event Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Route fans to your podcast in their favorite audio platform",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b2f",
+                "blockName": "Podcast Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Reward fans or unlock content for taking actions in a specific service",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b30",
+                "blockName": "Action pages",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Shorten and track and URL that routes fans to a destination of your choice",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b31",
+                "blockName": "Short Links",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b1e",
+            "blockName": "Landing Pages",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many services can you route your fans to",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "All",
+                  "artist": "All",
+                  "liteArtist": "Limited",
+                  "free": "Limited"
+                },
+                "id": "63e8f7ea9c0b097f81d64b32",
+                "blockName": "Available services",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send people to custom destinations, such as your artist’s website",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "3",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b33",
+                "blockName": "Custom stores",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Decide the order of stores and services on your landing pages",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b34",
+                "blockName": "Customize store order",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize the button text for each music service",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b35",
+                "blockName": "Customize CTA button text",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b1f",
+            "blockName": "Services",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Organize traffic to your links by where fans come from like TikTok vs. Facebook.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Custom",
+                  "artist": "System",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b36",
+                "blockName": "Channels management",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Append and link URL with a custom activity to track where your link traffic comes from",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b37",
+                "blockName": "Activities",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Redirect fans to different destinations based on rules like marketing channels, devices and more.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b38",
+                "blockName": "Conditional redirects",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send fans to a destination of your choice if they don't click on any service buttons on your landing page",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b39",
+                "blockName": "Bounce redirect",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically send fans to their preferred service if they've visited a Feature.fm link before",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b3a",
+                "blockName": "Remember fan's favorite service",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize your link's behavior, store orders and destintions by which coutnry your fans visit from",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b3b",
+                "blockName": "Territory Management",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Default texts are automatically translated to fan's preferred languages based on browser language.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b3c",
+                "blockName": "Language localization",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add your own custom Privacy Policy and Terms of Use to your links and landing pages",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b3d",
+                "blockName": "Privacy Policy and Terms of Use",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b20",
+            "blockName": "Link Settings",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically pull in your existing Feature.fm links and landing pages to your bio link",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b3e",
+                "blockName": "Automatically add existing links and landing pages",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Embed media players from Spotify, SoundCloud and YouTube to play content on your landing pages",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b3f",
+                "blockName": "Embed media players",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add buttons for fans to text or message you directly",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b40",
+                "blockName": "Messaging Buttons",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add actions like follow or save where fans log in with their service account and share their email.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "3",
+                  "liteArtist": "1",
+                  "free": "1"
+                },
+                "id": "63e8f7ea9c0b097f81d64b41",
+                "blockName": "Action buttons",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b21",
+            "blockName": "Bio Links",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Supported Pre-Save stores: Spotify, Apple Music, Tidal, SoundCloud, Amazon Music, Deezer, YouTube Music, Anghami",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "All",
+                  "artist": "All",
+                  "liteArtist": "3",
+                  "free": "1"
+                },
+                "id": "63e8f7ea9c0b097f81d64b42",
+                "blockName": "Pre-Save stores",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Additional Spotify profiles, playlists or users that you want followed",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "3",
+                  "artist": "1",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b43",
+                "blockName": "Spotify Multiple Follows",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically convert your Pre-Save links at the local release time in each timezone",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b44",
+                "blockName": "Local Release Pre-Saves",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically convert your Pre-Save links at the same time globally",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b45",
+                "blockName": "Global Release Pre-Saves",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Collect pre-saves even before you have a UPC or ISRC to maximize your pre-release strategy or make your Pre-Save 'Evergreen'",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "On release day",
+                  "artist": "On release day",
+                  "liteArtist": "On release day",
+                  "free": "On release day"
+                },
+                "id": "63e8f7ea9c0b097f81d64b46",
+                "blockName": "UPC / ISRC requirement",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize your link's description text when it converts on release day.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b47",
+                "blockName": "Pre-Save text conversion",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize your presave notification emails and send on release date.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "50 Incl.",
+                  "artist": "50 Incl.",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b48",
+                "blockName": "Pre-Save Notifications",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b22",
+            "blockName": "Pre-Save Links",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Which actions from popular services are available to include in your contest",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "All",
+                  "artist": "3",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b49",
+                "blockName": "Available actions",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many actions can be included from the same service",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "2",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b4a",
+                "blockName": "Action per service",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Ask fans to visit any URL or destination of your choice.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "3",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b4b",
+                "blockName": "Custom destinations",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "The number of fans who can enter your contest",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "No",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b4c",
+                "blockName": "Number of entries",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many entrant emails you can access",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "200",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b4d",
+                "blockName": "Access to emails",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many winners you can select for your contest",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "3",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b4e",
+                "blockName": "Winners",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Redraw winners who may not be eligible",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "10",
+                  "artist": "10",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b4f",
+                "blockName": "Redraws",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Allow fans to earn extra contest entries by sharing your contest with their networks",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b50",
+                "blockName": "Fan referral-based entries",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b23",
+            "blockName": "Contest Links",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many fan emails you can collect",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "Unlimited",
+                  "liteArtist": "Unlimited",
+                  "free": "Unlimited"
+                },
+                "id": "63e8f7ea9c0b097f81d64b51",
+                "blockName": "Email collection",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many of your collected fan emails you can access",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "200 Per link",
+                  "liteArtist": "50 Per link",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b52",
+                "blockName": "Access to emails",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Export your fan contact info",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b53",
+                "blockName": "Email exports",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Sort and segment your fan base by attributes like preferred music services, locations and number of followers",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b54",
+                "blockName": "Fan segmentation and smart audiences",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b24",
+            "blockName": "Fanbase Management",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A consolidated analytics dashboard at the aritst level across all links and landing pages",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b55",
+                "blockName": "Artist Analytics Dashboard",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many of your collected fan emails you can access",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "All time",
+                  "artist": "90 Days",
+                  "liteArtist": "28 Days",
+                  "free": "7 Days"
+                },
+                "id": "63e8f7ea9c0b097f81d64b56",
+                "blockName": "Analytics history",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Comprehensive analytics for each link and landing page",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b57",
+                "blockName": "Link-level analytics",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A shareable link to your analytics results to share with team members like managers, labels and artists.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b58",
+                "blockName": "Analytics sharing",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Track sales and streams from your merch stores and select partners after fans visit services from your links and landing pages",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b59",
+                "blockName": "Conversion and attribution reporting",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b25",
+            "blockName": "Analytics ",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Sync your audience contact info with Mailchimp or Activecampaign",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b5a",
+                "blockName": "Email syncing integrations",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send your data to ad retargeting programs like TikTok Ads, Facebook Ads, Google Ads, and Snapchat Ads",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Unlimited",
+                  "artist": "2",
+                  "liteArtist": "1",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b5b",
+                "blockName": "Retargeting (TikTok, FB/IG, Google, Snap)",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send your data to Google Analytics to centralize your data ",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b5c",
+                "blockName": "Google Analytics",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Integrate GTM to have more control over data and events that are sent to third parties",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b5d",
+                "blockName": "Google Tag Manager",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b26",
+            "blockName": "Integrations ",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add custom sub-domains to your ffm.to domains like 'subdomain.ffm.to'",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "3",
+                  "artist": "1",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b5e",
+                "blockName": "Custom sub-domains",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Replace 'ffm.to' with a full custom domain such as 'yourdomain.to'",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b5f",
+                "blockName": "Custom domains",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Include links to your social profiles on your landing pages",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b60",
+                "blockName": "Social profile links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Design backgrounds, button colors and text colors",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b61",
+                "blockName": "Landing page design",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Manage how your link previews appear on social media platforms and in search results.",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b62",
+                "blockName": "Customizable social cards",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Embed your landing pages on your own website or other landing page",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b63",
+                "blockName": "Embeddable Widgets",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add your logo and custom favicon to every landing page",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "No",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b64",
+                "blockName": "Custom landing page branding",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "'Powered by Feature.fm' branding included on the landing page",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "No",
+                  "artist": "No",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b65",
+                "blockName": "Feature.fm Branding",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b27",
+            "blockName": "Customization & Branding",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltiip",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "No",
+                  "free": "No"
+                },
+                "id": "63e8f7ea9c0b097f81d64b66",
+                "blockName": "1 on guided onboarding",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b67",
+                "blockName": "Email Support",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b68",
+                "blockName": "In-App Support",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Yes",
+                  "artist": "Yes",
+                  "liteArtist": "Yes",
+                  "free": "Yes"
+                },
+                "id": "63e8f7ea9c0b097f81d64b69",
+                "blockName": "Help Center",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proArtist": "Premium",
+                  "artist": "General",
+                  "liteArtist": "General",
+                  "free": "General"
+                },
+                "id": "63e8f7ea9c0b097f81d64b6a",
+                "blockName": "Access the Feature.fm Community",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7ea9c0b097f81d64b28",
+            "blockName": "Support ",
+            "blockType": "pricing-section"
+          }
+        ]
+      }
+    },
+    "businessTiers": {
+      "pricingPlans": {
+        "proMarketer": {
+          "planName": "Pro Marketer",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "199",
+          "planYearlyPrice": "179",
+          "isCustomPrice": false,
+          "planDescription": "For professional marketers with access to the most advanced features for marketing your roster",
+          "consoleAction": "Go Pro Marketer",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited artist folders",
+              "id": "63e8f7f8913f6a8cc291526b"
+            },
+            {
+              "feature": "10 account team members",
+              "id": "63e8f7f8913f6a8cc291526c"
+            },
+            {
+              "feature": "10 artist folder team members",
+              "id": "63e8f7f8913f6a8cc291526d"
+            },
+            {
+              "feature": "Unlimited links and landing pages",
+              "id": "63e8f7f8913f6a8cc291526e"
+            },
+            {
+              "feature": "All available services",
+              "id": "63e8f7f8913f6a8cc291526f"
+            },
+            {
+              "feature": "Artist Bio Links",
+              "id": "63e8f7f8913f6a8cc2915270"
+            },
+            {
+              "feature": "All Pre-Save services, global/local release conversion",
+              "id": "63e8f7f8913f6a8cc2915271"
+            },
+            {
+              "feature": "Collect unlimited emails, access all emails",
+              "id": "63e8f7f8913f6a8cc2915272"
+            },
+            {
+              "feature": "Lifetime insight data",
+              "id": "63e8f7f8913f6a8cc2915273"
+            },
+            {
+              "feature": "3 Spotify Pre-Save Multiple Follows",
+              "id": "63e8f7f8913f6a8cc2915274"
+            },
+            {
+              "feature": "1 custom domain and unlimited custom sub-domain",
+              "id": "63e8f7f8913f6a8cc2915275"
+            },
+            {
+              "feature": "Full design customization",
+              "id": "63e8f7f8913f6a8cc2915276"
+            },
+            {
+              "feature": "Retargeting pixels by geo-location",
+              "id": "63e8f7f8913f6a8cc2915277"
+            },
+            {
+              "feature": "Email synching*",
+              "id": "63e8f7f8913f6a8cc2915278"
+            },
+            {
+              "feature": "Unlimited territory settings",
+              "id": "63e8f7f8913f6a8cc2915279"
+            }
+          ]
+        },
+        "marketer": {
+          "planName": "Marketer",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "99",
+          "planYearlyPrice": "89",
+          "isCustomPrice": false,
+          "planDescription": "Smartly promote your music and grow your audience",
+          "consoleAction": "Go Marketer",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited artist folders",
+              "id": "63e8f7f8913f6a8cc291527a"
+            },
+            {
+              "feature": "5 account team members",
+              "id": "63e8f7f8913f6a8cc291527b"
+            },
+            {
+              "feature": "5 artist folder team members",
+              "id": "63e8f7f8913f6a8cc291527c"
+            },
+            {
+              "feature": "Unlimited links and landing pages",
+              "id": "63e8f7f8913f6a8cc291527d"
+            },
+            {
+              "feature": "All available services",
+              "id": "63e8f7f8913f6a8cc291527e"
+            },
+            {
+              "feature": "Artist Bio Links",
+              "id": "63e8f7f8913f6a8cc291527f"
+            },
+            {
+              "feature": "All Pre-Save services, global release conversion",
+              "id": "63e8f7f8913f6a8cc2915280"
+            },
+            {
+              "feature": "Collect unlimited emails, access 250 emails per link",
+              "id": "63e8f7f8913f6a8cc2915281"
+            },
+            {
+              "feature": "Lifetime insight data",
+              "id": "63e8f7f8913f6a8cc2915282"
+            },
+            {
+              "feature": "3 Spotify Pre-Save Multiple Follows",
+              "id": "63e8f7f8913f6a8cc2915283"
+            },
+            {
+              "feature": "5 custom sub-domain",
+              "id": "63e8f7f8913f6a8cc2915284"
+            },
+            {
+              "feature": "Full design customization",
+              "id": "63e8f7f8913f6a8cc2915285"
+            },
+            {
+              "feature": "Retargeting pixels",
+              "id": "63e8f7f8913f6a8cc2915286"
+            },
+            {
+              "feature": "Email synching*",
+              "id": "63e8f7f8913f6a8cc2915287"
+            },
+            {
+              "feature": "3 territory settings",
+              "id": "63e8f7f8913f6a8cc2915288"
+            }
+          ]
+        },
+        "enterprise": {
+          "planName": "Enterprise",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "Custom",
+          "planYearlyPrice": "Custom",
+          "isCustomPrice": true,
+          "planDescription": "For businesses who require automation, integrations and custom solutions that scale",
+          "consoleAction": "Contact Us",
+          "ctaButton": {
+            "text": "Contact Us",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": [
+            {
+              "feature": "Unlimited",
+              "id": "63e8f7f8913f6a8cc2915289"
+            }
+          ]
+        },
+        "planComparison": [
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Organize your work by artist across your roster",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited1"
+                },
+                "id": "63e8f7f8913f6a8cc291528a",
+                "blockName": "Artist Folders",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Invite team members to access your Feature.fm Account",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "10",
+                  "marketer": "5",
+                  "enterprise": "Custom"
+                },
+                "id": "63e8f7f8913f6a8cc291528b",
+                "blockName": "Account Team Members",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Invite team members to specific artist folders",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "10",
+                  "marketer": "5",
+                  "enterprise": "Custom"
+                },
+                "id": "63e8f7f8913f6a8cc291528c",
+                "blockName": "Artist Folder Permissions",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc291528d",
+            "blockName": "Accounts & Permissions",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A link in bio for your social media profiles that connects all of your latest work and content in one place",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "1 per artist",
+                  "marketer": "1 per artist",
+                  "enterprise": "1 per artist"
+                },
+                "id": "63e8f7f8913f6a8cc291528e",
+                "blockName": "Artist Bio Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Collect saves and promote your music ahead of your release date",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc291528f",
+                "blockName": "Pre-Save Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A smart link that routes fans to your music in their preferred music serice",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915290",
+                "blockName": "Released Smart Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Create your smart link ahead of time and schedule it to go live on release day.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915291",
+                "blockName": "Scheduled Release Smart Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Run giveaways and contests with prizes for taking actions that grow your followings",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915292",
+                "blockName": "Contests",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Route fans to your latest tour dates to buy tickets",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915293",
+                "blockName": "Tour & Event Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Route fans to your podcast in their favorite audio platform",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915294",
+                "blockName": "Podcast Links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Reward fans or unlock content for taking actions in a specific service",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915295",
+                "blockName": "Action pages",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Shorten and track and URL that routes fans to a destination of your choice",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "NUnlimitedo",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc2915296",
+                "blockName": "Short Links",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc2915297",
+            "blockName": "Landing Pages",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many services can you route your fans to",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "All",
+                  "marketer": "All",
+                  "enterprise": "All"
+                },
+                "id": "63e8f7f8913f6a8cc2915298",
+                "blockName": "Available services",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send people to custom destinations, such as your artist’s website",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc2915299",
+                "blockName": "Custom stores",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Decide the order of stores and services on your landing pages",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc291529a",
+                "blockName": "Customize store order",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize the button text for each music service",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc291529b",
+                "blockName": "Customize CTA button text",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc291529c",
+            "blockName": "Services",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Organize traffic to your links by where fans come from like TikTok vs. Facebook.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc291529d",
+                "blockName": "Marketing channels management",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Append and link URL with a custom activity to track where your link traffic comes from",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc291529e",
+                "blockName": "Activities",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Redirect fans to different destinations based on rules like marketing channels, devices and more.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc291529f",
+                "blockName": "Conditional redirects",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send fans to a destination of your choice if they don't click on any service buttons on your landing page",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a0",
+                "blockName": "Bounce redirect",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically send fans to their preferred service if they've visited a Feature.fm link before",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a1",
+                "blockName": "Remember fan's favorite service",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize your link's behavior, store orders and destintions by which coutnry your fans visit from",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited Territories",
+                  "marketer": "3 Territories",
+                  "enterprise": "Unlimited Territories"
+                },
+                "id": "63e8f7f8913f6a8cc29152a2",
+                "blockName": "Territory Management",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Default texts are automatically translated to fan's preferred languages based on browser language.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a3",
+                "blockName": "Language localization",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add your own custom Privacy Policy and Terms of Use to your links and landing pages",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "No"
+                },
+                "id": "63e8f7f8913f6a8cc29152a4",
+                "blockName": "Privacy Policy and Terms of Use",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152a5",
+            "blockName": "Link Settings",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically pull in your existing Feature.fm links and landing pages to your bio link",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a6",
+                "blockName": "Automatically add existing links and landing pages",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Embed media players from Spotify, SoundCloud and YouTube to play content on your landing pages",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a7",
+                "blockName": "Embed media players",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add buttons for fans to text or message you directly",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a8",
+                "blockName": "Messaging Buttons",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add actions like follow or save where fans log in with their service account and share their email.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152a9",
+                "blockName": "Action buttons",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152aa",
+            "blockName": "Bio Links",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Supported Pre-Save stores: Spotify, Apple Music, Tidal, SoundCloud, Amazon Music, Deezer, YouTube Music, Anghami",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "All",
+                  "marketer": "All",
+                  "enterprise": "All"
+                },
+                "id": "63e8f7f8913f6a8cc29152ab",
+                "blockName": "Number of Pre-Save stores",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Additional Spotify profiles, playlists or users that you want followed",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "3 Multiple Follow",
+                  "marketer": "3 Multiple Follow",
+                  "enterprise": "3 Multiple Follows"
+                },
+                "id": "63e8f7f8913f6a8cc29152ac",
+                "blockName": "Spotify Multiple Follows",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically convert your Pre-Save links at the local release time in each timezone",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "No",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152ad",
+                "blockName": "Local Release Pre-Saves",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Automatically convert your Pre-Save links at the same time globally",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152ae",
+                "blockName": "Global Release Pre-Saves",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Collect pre-saves even before you have a UPC or ISRC to maximize your pre-release strategy or make your Pre-Save 'Evergreen'",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Not until release day",
+                  "marketer": "Not until release day",
+                  "enterprise": "Not until release day"
+                },
+                "id": "63e8f7f8913f6a8cc29152af",
+                "blockName": "UPC / ISRC requirement",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Customize your link's description text when it converts on release day.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152b0",
+                "blockName": "Pre-Save text conversion",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152b1",
+            "blockName": "Pre-Save Links",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Which actions from popular services are available to include in your contest",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "All",
+                  "marketer": "All",
+                  "enterprise": "All"
+                },
+                "id": "63e8f7f8913f6a8cc29152b2",
+                "blockName": "Available actions",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many actions can be included from the same service",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "2",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152b3",
+                "blockName": "Action per service",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Ask fans to visit any URL or destination of your choice.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "3",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152b4",
+                "blockName": "Custom destinations",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "The number of fans who can enter your contest",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152b5",
+                "blockName": "Number of entries",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many entrant emails you can access",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "250",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152b6",
+                "blockName": "Access to emails",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many winners you can select for your contest",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "3",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152b7",
+                "blockName": "Winners",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Redraw winners who may not be eligible",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "10",
+                  "marketer": "10",
+                  "enterprise": "10"
+                },
+                "id": "63e8f7f8913f6a8cc29152b8",
+                "blockName": "Redraws",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Allow fans to earn extra contest entries by sharing your contest with their networks",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "No",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152b9",
+                "blockName": "Fan referral-based entries",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152ba",
+            "blockName": "Contest Links",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many fan emails you can collect",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "Unlimited",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152bb",
+                "blockName": "Email collection",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many of your collected fan emails you can access",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "250 per link",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152bc",
+                "blockName": "Access to emails",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Export your fan contact info",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152bd",
+                "blockName": "Email exports",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Sort and segment your fan base by attributes like preferred music services, locations and number of followers",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152be",
+                "blockName": "Fan segmentation and smart audiences",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152bf",
+            "blockName": "Fanbase Management",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A consolidated analytics dashboard at the aritst level across all links and landing pages",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c0",
+                "blockName": "Artist Analytics Dashboard",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "How many of your collected fan emails you can access",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "All time",
+                  "marketer": "All time",
+                  "enterprise": "All time"
+                },
+                "id": "63e8f7f8913f6a8cc29152c1",
+                "blockName": "Analytics history",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Comprehensive analytics for each link and landing page",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c2",
+                "blockName": "Link-level analytics",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "A shareable link to your analytics results to share with team members like managers, labels and artists.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c3",
+                "blockName": "Analytics sharing",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Track sales and streams from your merch stores and select partners after fans visit services from your links and landing pages",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "No",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c4",
+                "blockName": "Conversion and attribution reporting",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152c5",
+            "blockName": "Analytics ",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Sync your audience contact info with Mailchimp or Activecampaign",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes*",
+                  "marketer": "Yes*",
+                  "enterprise": "Yes*"
+                },
+                "id": "63e8f7f8913f6a8cc29152c6",
+                "blockName": "Email syncing integrations",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send your data to ad retargeting programs like TikTok Ads, Facebook Ads, Google Ads, and Snapchat Ads",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c7",
+                "blockName": "Retargeting (TikTok, FB/IG, Google, Snap)",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Earn commission with affiliate programs like Amazon, Apple and Spotify",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "No",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c8",
+                "blockName": "Affiliate commission",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Send your data to Google Analytics to centralize your data ",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152c9",
+                "blockName": "Google Analytics",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Integrate GTM to have more control over data and events that are sent to third parties",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152ca",
+                "blockName": "Google Tag Manager",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152cb",
+            "blockName": "Integrations ",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add custom sub-domains to your ffm.to domains like 'subdomain.ffm.to'",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Unlimited",
+                  "marketer": "5",
+                  "enterprise": "Unlimited"
+                },
+                "id": "63e8f7f8913f6a8cc29152cc",
+                "blockName": "Custom sub-domains",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Replace 'ffm.to' with a full custom domain such as 'yourdomain.to'",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes*",
+                  "marketer": "Yes",
+                  "enterprise": "Yes*"
+                },
+                "id": "63e8f7f8913f6a8cc29152cd",
+                "blockName": "Custom domains",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Include links to your social profiles on your landing pages",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152ce",
+                "blockName": "Social profile links",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Design backgrounds, button colors and text colors",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152cf",
+                "blockName": "Landing page design",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Manage how your link previews appear on social media platforms and in search results.",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152d0",
+                "blockName": "Customizable social cards",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Embed your landing pages on your own website or other landing page",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152d1",
+                "blockName": "Embeddable Widgets",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "Add your logo and custom favicon to every landing page",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Add-on",
+                  "marketer": "No",
+                  "enterprise": "Add-on"
+                },
+                "id": "63e8f7f8913f6a8cc29152d2",
+                "blockName": "Custom landing page branding",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "'Powered by Feature.fm' branding included on the landing page",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Removed",
+                  "marketer": "Removed",
+                  "enterprise": "Removed"
+                },
+                "id": "63e8f7f8913f6a8cc29152d3",
+                "blockName": "Feature.fm Branding",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152d4",
+            "blockName": "Customization & Branding",
+            "blockType": "pricing-section"
+          },
+          {
+            "featuresComparison": [
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "1 on 1 onboarding available",
+                  "marketer": "1 on 1 onboarding available",
+                  "enterprise": "1 on 1 onboarding available"
+                },
+                "id": "63e8f7f8913f6a8cc29152d5",
+                "blockName": "Guided onboarding",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "No",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152d6",
+                "blockName": "Dedicated Account Manager",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152d7",
+                "blockName": "Email Support",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152d8",
+                "blockName": "In-App Support",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "Yes",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152d9",
+                "blockName": "Help Center",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "Yes",
+                  "marketer": "No",
+                  "enterprise": "Yes"
+                },
+                "id": "63e8f7f8913f6a8cc29152da",
+                "blockName": "Ongoing Training",
+                "blockType": "feature-comparison-basic"
+              },
+              {
+                "feature": "Describe a Feature..",
+                "tooltip": "tooltip",
+                "link": "#",
+                "planValues": {
+                  "proMarketer": "General",
+                  "marketer": "General",
+                  "enterprise": "Premium"
+                },
+                "id": "63e8f7f8913f6a8cc29152db",
+                "blockName": "Access the Feature.fm Community",
+                "blockType": "feature-comparison-basic"
+              }
+            ],
+            "id": "63e8f7f8913f6a8cc29152dc",
+            "blockName": "Support ",
+            "blockType": "pricing-section"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "title": "Feature.fm | The best smart links and pre-saves in music today.",
+    "description": "From promoting a new single to merch, tours, and everything in between, Feature.fm empowers you to build your fan base and music career in a smarter way."
+  },
+  "_status": "published",
+  "globalType": "global-pricing-packages",
+  "createdAt": "2023-02-13T12:23:03.201Z",
+  "updatedAt": "2023-02-13T12:23:03.201Z"
+}

@@ -9,8 +9,9 @@ export function FacebookIcon(props: FacebookIconProps) {
       viewBox="0 0 11 20"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="fbIcon"
     >
-      <title>Facebook</title>
+      <title id="fbIcon">Facebook Logo</title>
       <g
         id="Desktop"
         stroke="none"

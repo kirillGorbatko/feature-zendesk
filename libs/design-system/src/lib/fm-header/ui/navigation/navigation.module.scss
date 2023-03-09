@@ -1,5 +1,9 @@
 @import '../../../sass-helpers/helpers-all.scss';
 
+.body--menu_open {
+	overflow: hidden;
+}
+
 .header__menu {
 	@include bp(theme('screens.fm-desktop'), min) {
 		@include flex_block(row, wrap, flex-start, center, center);

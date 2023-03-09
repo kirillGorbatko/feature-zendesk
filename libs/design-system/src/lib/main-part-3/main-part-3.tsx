@@ -21,7 +21,7 @@ export interface MainPart3Props {
 
 export function MainPart3(props: MainPart3Props) {
   return (
-    <>
+    <div className="overflow-hidden">
       <ViewPort className="text-primary1">
         {/*
         <ColorBlendOverlay
@@ -71,7 +71,7 @@ export function MainPart3(props: MainPart3Props) {
           </div>
         </ViewPort>
       </section>
-    </>
+    </div>
   );
 }
 

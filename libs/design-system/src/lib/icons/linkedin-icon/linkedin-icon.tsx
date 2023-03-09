@@ -9,8 +9,9 @@ export function LinkedinIcon(props: LinkedinIconProps) {
       viewBox="0 0 23 21"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="linkedinIcon"
     >
-      <title>LinkedIn</title>
+      <title id="linkedinIcon">LinkedIn Logo</title>
       <g
         id="Desktop"
         stroke="none"

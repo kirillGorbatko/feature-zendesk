@@ -1,6 +1,11 @@
 const amazon = {
   icon: 'amazon.svg',
-  title: 'Amazon music',
+  title: 'Amazon Music',
+};
+
+const amazonPreSave = {
+  icon: 'amazon.svg',
+  title: 'Pre-Save',
 };
 
 const spotify = {
@@ -8,9 +13,19 @@ const spotify = {
   title: 'Spotify',
 };
 
+const spotifyPreSave = {
+  icon: 'spotify.svg',
+  title: 'Pre-Save',
+};
+
 const apple = {
   icon: 'apple.svg',
-  title: 'Apple music',
+  title: 'Apple Music',
+};
+
+const applePreSAdd = {
+  icon: 'apple.svg',
+  title: 'Pre-Add',
 };
 
 const iTunes = {
@@ -28,9 +43,19 @@ const tidal = {
   title: 'Tidal',
 };
 
+const tidalPreSave = {
+  icon: 'tidal.svg',
+  title: 'Pre-Save',
+};
+
 const deezer = {
   icon: 'deezer.png',
   title: 'Deezer',
+};
+
+const deezerPreSave = {
+  icon: 'deezer.png',
+  title: 'Pre-Save',
 };
 
 const preOrder = {
@@ -40,12 +65,12 @@ const preOrder = {
 
 const youtube = {
   icon: 'youtube.svg',
-  title: 'youtube',
+  title: 'YouTube',
 };
 
 const facebook = {
   icon: 'facebook.svg',
-  title: 'facebook',
+  title: 'Facebook',
 };
 
 export const cardThirdData = [
@@ -53,7 +78,7 @@ export const cardThirdData = [
     img: '1.jpg',
     subtitle: 'Burna Boy',
     title: 'Love, Damini',
-    socials: [apple, spotify, boomplay, deezer, tidal, amazon],
+    socials: [applePreSAdd, spotifyPreSave, amazonPreSave, tidalPreSave],
   },
   {
     img: '9.png',
@@ -69,21 +94,15 @@ export const cardThirdData = [
   },
   {
     img: '2.jpg',
-    subtitle: 'Dayglow',
+    subtitle: 'Coti',
     title: 'La Chica de la Esquina Rosada',
     socials: [spotify, apple, iTunes, deezer, tidal, amazon],
   },
   {
-    img: '7.png',
-    subtitle: 'Dynamite',
-    title: 'La Chica de la Esquina Rosada',
-    socials: [amazon, apple, deezer, iTunes, tidal, amazon],
-  },
-  {
     img: '8.png',
     subtitle: 'Kelsea Ballerini',
-    title: 'HEARTFIRST',
-    socials: [youtube, facebook],
+    title: 'SUBJECT TO CHANGE',
+    socials: [spotifyPreSave, applePreSAdd, amazonPreSave],
   },
   {
     img: '6.png',
@@ -98,9 +117,9 @@ export const cardThirdData = [
     socials: [spotify, apple, iTunes, deezer, facebook],
   },
   {
-    img: '9.png',
+    img: '5.png',
     subtitle: 'Great Good Fine Ok',
-    title: 'Great Good Fine Ok',
+    title: 'Great Good Five Ok',
     socials: [spotify, apple, iTunes, deezer, facebook],
   },
 ];

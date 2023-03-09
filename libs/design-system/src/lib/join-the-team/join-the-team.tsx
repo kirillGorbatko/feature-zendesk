@@ -5,7 +5,8 @@ import {
   ButtonProps,
   H4,
   Text,
-  TextInlineProps, Image
+  TextInlineProps,
+  Image,
 } from '@featurefm/design-system';
 import React from 'react';
 
@@ -25,22 +26,41 @@ export function JoinTheTeam(props: JoinTheTeamProps) {
         <div className="hidden desktop:block w-[75px] h-[75px] bg-[#9B62FF]" />
         <div className="bg-foreground text-background flex-1 text-center py-32 tablet:py-24">
           <Text text={props.title} as="h4" />
-          <Text text={props.description} as="p" className="text-lg font-light mt-5"/>
+          <Text
+            text={props.description}
+            as="p"
+            className="text-lg font-light mt-5 px-10"
+          />
           <div className="mt-10">
-            <Button
-              {...props.ctaButton}
-              size="large"
-            />
+            <Button {...props.ctaButton} size="large" />
           </div>
         </div>
-        <Image src="/img/about-us/wave.png" width="75px" mobileSrc="hide" className="hidden desktop:block"/>
+        <Image
+          src="/img/about-us/wave.png"
+          width="75px"
+          mobileSrc="hide"
+          alt="Decorative element"
+          className="hidden desktop:block"
+        />
       </ViewPort>
       <div className="flex justify-between w-full absolute bottom-0 items-end">
         <div className="desktop:hidden w-[35px] h-[35px] bg-[#9B62FF]" />
         <div className="flex items-end">
           <div className="desktop:hidden w-[35px] h-[35px] bg-[#58ECCA] -mb-[35px]" />
-          <div className="desktop:hidden h-[55px] w-[110px]" style={{background: 'linear-gradient(215deg, rgba(255,255,255,1) 0%, rgba(255,82,98,1) 100%)'}} />
-          <Image src="hide" mobileSrc="/img/about-us/wave.png" width="54px" className="desktop:hidden mb-[54px]"/>
+          <div
+            className="desktop:hidden h-[55px] w-[110px]"
+            style={{
+              background:
+                'linear-gradient(215deg, rgba(255,255,255,1) 0%, rgba(255,82,98,1) 100%)',
+            }}
+          />
+          <Image
+            src="hide"
+            mobileSrc="/img/about-us/wave.png"
+            alt="Decorative element"
+            width="54px"
+            className="desktop:hidden mb-[54px]"
+          />
         </div>
       </div>
     </div>

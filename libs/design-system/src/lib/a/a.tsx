@@ -4,11 +4,13 @@ export interface AProps {
   type: 'default' | 'footer-link';
   href: string;
   children: React.ReactNode;
+  target: '_blank' | '_self' | '_parent' | '_top';
 }
 
 A.defaultProps = {
   type: 'default',
   href: '#',
+  target: '_self',
 };
 
 export function A(props: AProps) {
@@ -20,7 +22,7 @@ export function A(props: AProps) {
   }
 
   return (
-    <a href={props.href}>
+    <a href={props.href} target={props.target}>
       <style jsx>{`
         a {
           opacity: 1;

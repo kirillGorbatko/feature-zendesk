@@ -25,7 +25,7 @@ export interface MainPart2Props {
 
 export function MainPart2(props: MainPart2Props) {
   return (
-    <>
+    <div className="overflow-hidden">
       <ViewPort className="text-primary2">
         <div className="mt-64">
           {/*
@@ -79,7 +79,7 @@ export function MainPart2(props: MainPart2Props) {
           />
         </ViewPort>
       </div>
-    </>
+    </div>
   );
 }
 

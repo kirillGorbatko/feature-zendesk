@@ -9,8 +9,9 @@ export function InstagramIcon(props: InstagramIconProps) {
       viewBox="0 0 21 21"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="igIcon"
     >
-      <title>Instagram</title>
+      <title id="igIcon">Instagram Logo</title>
       <g
         id="Desktop"
         stroke="none"

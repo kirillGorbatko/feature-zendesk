@@ -1,10 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import classnames from 'classnames'
 
 export interface ButtonProps {
   type?: 'primary' | 'secondary' | 'tertiary' | 'tertiary-inverted';
   size?: 'small' | 'normal' | 'large' | 'extra-large' | 'extra-large-x2';
-  isVisible?: boolean;
+  disabled?: boolean,
+  isVisible?: boolean,
   mobileWidth?: 'fit' | 'full';
   onClick?: () => void;
   link?: string;
@@ -16,6 +18,7 @@ export interface ButtonProps {
 Button.defaultProps = {
   type: 'primary',
   size: 'normal',
+  disabled: false,
   text: '',
   isVisible: true,
   mobileWidth: 'full',
@@ -61,9 +64,12 @@ export function Button(props: ButtonProps) {
 
   const button = (
     <button
-      className={`rounded-full text-center w-${props.mobileWidth} tablet:w-${
-        props.width
-      } h-fit ${classes} ${props.className || ''}`}
+      className={classnames(`rounded-full text-center w-${props.mobileWidth} tablet:w-${props.width} h-fit ${classes} ${
+        props.className || ''
+      }`, {
+        'opacity-20': props.disabled,
+        'pointer-events-none': props.disabled
+      })}
       onClick={props.onClick}
     >
       {props.text}
@@ -73,7 +79,9 @@ export function Button(props: ButtonProps) {
   if (props.link) {
     return (
       <Link href={props.link}>
-        <a href={props.link}>{button}</a>
+        <a href={props.link} className={classnames("", {
+          'pointer-events-none': props.disabled
+        })}>{button}</a>
       </Link>
     );
   }

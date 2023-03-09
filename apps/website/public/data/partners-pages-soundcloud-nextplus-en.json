@@ -1,0 +1,193 @@
+{
+  "id": "63da3af13b9dc65a99c25890",
+  "title": "Partner - SoundCloud Next Plus",
+  "slug": "soundcloud-nextplus",
+  "heroSection": {
+    "heroTitle": {
+      "desktop": "Next Plus artists get 50% <br/> off\u000f your first 3 months",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "heroSubtitle": {
+      "desktop": "Claim this o!er and unlock all of your exclusive discounts",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Claim your offer",
+      "link": "http://",
+      "type": "primary"
+    }
+  },
+  "partnerBenefits": {
+    "title": "With SoundCloud <br/> Next Plus, you get",
+    "partnerBenefits": [
+      {
+        "benefit": "50% o! your first 3 months of any monthly plan",
+        "id": "63da3ad260ff624e277aba80"
+      },
+      {
+        "benefit": "30% off your first year of any annual plan",
+        "id": "63da3adb60ff624e277aba81"
+      },
+      {
+        "benefit": "No service fees on Smart Social Ads for 3 months",
+        "id": "63da3adf60ff624e277aba82"
+      },
+      {
+        "benefit": "Your SoundCloud account connected to Feature.fm",
+        "id": "63da3ae660ff624e277aba83"
+      }
+    ]
+  },
+  "marketingSection": {
+    "title": {
+      "desktop": "For <br/>every<br/>thing<br/>you do.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "subtitle": {
+      "desktop": "Marketing, built for music. From your new single to merch, tours, NFTs and everything in between.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "elements": [
+      {
+        "title": "Artist Bio Links",
+        "description": "Connect fans to all of your content with a single Link in Bio.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/artist_bio_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba79"
+      },
+      {
+        "title": "Pre-Release Links",
+        "description": "Build momentum ahead of your music release.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/pre_release_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba7a"
+      },
+      {
+        "title": "Release Links",
+        "description": "Get more streams with a link to your music in all services.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/released_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba7b"
+      },
+      {
+        "title": "Contest & Unlock Pages",
+        "description": "Reward your fans with prizes for taking actions you want.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/contest_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba7c"
+      },
+      {
+        "title": "Tour and Event Links",
+        "description": "Sell more tickets to shows with a link to all of your tour dates.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/tour_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba7d"
+      },
+      {
+        "title": "Podcast Links",
+        "description": "Grow listeners on your Podcast with a link to all audio platforms.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/podcast_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba7e"
+      },
+      {
+        "title": "Short Links",
+        "description": "Shorten and track any URL you share online to any destination.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/short_link_icon.svg",
+        "id": "63da3a5e60ff624e277aba7f"
+      }
+    ],
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/links",
+      "type": "primary",
+      "isVisible": false
+    }
+  },
+  "fanbaseManagementSection": {
+    "title": {
+      "desktop": "Your fans are <br/>your most <br/>valuable <br/>asset.",
+      "overrideMobile": true,
+      "mobile": "Your fans<br/>are your<br/>most<br/>valuable<br/>asset.",
+      "overrideTablet": false,
+      "tablet": "Your fans are <br/>your most <br/>valuable <br/>asset."
+    },
+    "description": {
+      "desktop": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info.",
+      "overrideMobile": false,
+      "mobile": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info.",
+      "overrideTablet": false,
+      "tablet": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info."
+    },
+    "tag": "Fan Base Management",
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/audience",
+      "type": "primary",
+      "isVisible": true
+    }
+  },
+  "analyticsAndInsightsSection": {
+    "title": {
+      "desktop": "Know what<br/>works and<br/>use it to grow.",
+      "overrideMobile": true,
+      "mobile": "Know<br/>what<br/>works and<br/>use it to<br/>grow.",
+      "overrideTablet": false,
+      "tablet": "Know what<br/>works and<br/>use it to grow."
+    },
+    "description": {
+      "desktop": "Use data to grow faster. All our links come with real-time insights and can be optmized to enhance your ad retargeting strategy.",
+      "overrideMobile": false,
+      "mobile": "Use data to grow faster. All our links come with real-time insights and can be optmized to enhance your ad retargeting strategy.",
+      "overrideTablet": false,
+      "tablet": "Use data to grow faster. All our links come with real-time insights and can be optmized to enhance your ad retargeting strategy."
+    },
+    "tag": "Analytics and Insights",
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/analytics",
+      "type": "primary",
+      "isVisible": true
+    }
+  },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Soundcloud users get more at FeatureFM",
+      "overrideMobile": true,
+      "mobile": "Get Started<br/>for free",
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "All soundcloud users get either free or discounted plans at FeatureFM So go ahead and claim this amazing deal",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Connect with Soundcloud",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "_status": "published",
+  "createdAt": "2023-02-01T10:12:01.898Z",
+  "updatedAt": "2023-02-01T10:23:42.907Z",
+  "signupFlow": {
+    "signupModal": {
+      "title": "First thing's first",
+      "description": "Enter your email address to create a Feature.fm account and connect with SoundCloud to unlock these exclusive offers",
+      "emailPlaceholder": "your@email.com",
+      "buttonText": "Connect with SoundCloud",
+      "partnerLogo": "/img/partner-affiliates/pricing-logos/soundcloud.png"
+    },
+    "signupSuccessModal": {
+      "title": "Success!",
+      "description": "Continue with one of the 3 plans available to start building your fanbase!",
+      "buttonText": "Let's do it!"
+    }
+  }
+}

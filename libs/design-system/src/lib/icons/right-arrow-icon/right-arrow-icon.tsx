@@ -9,13 +9,14 @@ export function RightArrowIcon(props: RightArrowIconProps) {
       viewBox="0 0 7 13"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
+      aria-labelledby="arrowRIcon"
     >
-      <title>Combined Shape Copy 9@3x</title>
+      <title id="arrowRIcon">Right Arrow Icon</title>
       <g id="v2" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g
           id="Homepage-v2---1366"
           transform="translate(-856.000000, -6876.000000)"
-          stroke="#000000"
+          stroke="currentColor"
           strokeWidth="2.002568"
         >
           <g id="Group-58" transform="translate(83.000000, 6539.500000)">

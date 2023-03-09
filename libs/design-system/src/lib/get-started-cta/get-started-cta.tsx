@@ -14,6 +14,7 @@ export interface CTAButtonProps {
   text: string;
   link: string;
   type: 'primary' | 'secondary' | 'tertiary';
+  onClick?: () => void;
 }
 
 /* eslint-disable-next-line */
@@ -37,7 +38,7 @@ GetStartedCta.defaultProps = {
   darkLayout: false,
   ctaButton: {
     text: 'Start now',
-    link: 'https://login.feature.fm/signup',
+    link: 'https://login.feature.fm/signup/',
     type: 'primary',
   },
 };
@@ -53,7 +54,7 @@ export function GetStartedCta(props: GetStartedCtaProps) {
         <div className="absolute top-[190px] left-0 hidden desktop:block">
           <GetStartedLeftImage darkLayout={props.darkLayout} />
         </div>
-        <div className="flex-grow text-center z-10 relative my-[140px] tablet:mt-32">
+        <div className="flex-grow text-center z-10 relative my-[140px] tablet:my-[120px] tablet:mt-32">
           <Text text={props.title} as="h3" />
           <div className="font-light leading-[22px] tablet:leading-[26px] text-base max-w-[600px] mx-auto tablet:text-[17px] mt-[30px]">
             <Text text={props.description} />
@@ -65,6 +66,9 @@ export function GetStartedCta(props: GetStartedCtaProps) {
                 text={props.ctaButton.text}
                 mobileWidth="fit"
                 type={props.ctaButton.type}
+                onClick={
+                  props.ctaButton.onClick ? props.ctaButton.onClick : undefined
+                }
               ></Button>
             </a>
           </div>

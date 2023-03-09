@@ -57,6 +57,7 @@ export function MainPart1(props: MainPart1Props) {
                 <Image
                   src={x.icon}
                   mobileSrc={x.icon.replace('.svg', '-mobile.svg')}
+                  alt={x.title}
                   svg
                 />
                 <div className="ml-6 desktop:ml-0 desktop:mt-6">

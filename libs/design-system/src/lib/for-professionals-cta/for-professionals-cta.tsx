@@ -145,13 +145,27 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
       </div>
       <div className="relative bg-foreground h-20 desktop:h-[134px] overflow-hidden">
         <div className="w-[calc(180px*12)] tablet:w-[calc(220px*12)] h-full items-center flex flex-row animate-[scroll-mobile_20s_linear_infinite] tablet:animate-[scroll_20s_linear_infinite]">
-          {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((x, index) => {
+          {[
+            { id: 1, name: 'Secretly Group' },
+            { id: 2, name: 'AWAL' },
+            { id: 3, name: '300 Entertainment' },
+            { id: 4, name: 'Disruptor Records' },
+            { id: 5, name: 'Universal Music' },
+            { id: 6, name: 'Foundation Media' },
+            { id: 1, name: '300 Entertainment' },
+            { id: 2, name: 'Dead Oceans' },
+            { id: 3, name: 'Jagjaguwar' },
+            { id: 4, name: 'Secretly Group' },
+            { id: 5, name: 'Universal Music' },
+            { id: 6, name: 'Foundation Media' },
+          ].map((item, index) => {
             return (
               <div key={index} className="w-[140px] mx-5 tablet:mx-10">
                 <Image
                   className="h-12"
-                  src={`${process.env['NEXT_PUBLIC_FFM_CDN']}/img/for-professionals-logos/${x}.svg`}
+                  src={`/img/for-professionals-logos/${item.id}@2x.png`}
                   svg
+                  alt={`Professional Customer Logo: ${item.name}`}
                 />
               </div>
             );

@@ -1,0 +1,198 @@
+{
+  "title": "Pricing Page - SoundCloud Next",
+  "slug": "soundcloud-next",
+  "heroSection": {
+    "artist": {
+      "websiteHero": {
+        "title": "Grow your audience every day",
+        "description": "Choose the plan that works for you. Try for free!"
+      },
+      "consoleHero": {
+        "title": "You are connected with Soundcloud",
+        "overrideTrialTitle": false,
+        "titleTrial": "Get Artist Pro free for 7 Days with any plan",
+        "description": "Soundcloud Next Artists get more",
+        "overrideTrialDescription": false,
+        "ctaText": "All plans include unlimited links, clicks, and artist folders",
+        "overrideTrialCTA": false,
+        "partnerSection": {
+          "partner": "https://site.test.feature.fm/img/partner-affiliates/pricing-logos/soundcloud.png",
+          "partnerBenefits": [
+            {
+              "benefit": "50% off your first 3 months of any monthly plan",
+              "id": "63c5f257e44f1e28fb722cfe"
+            },
+            {
+              "benefit": "30% off your first year of any annual plan",
+              "id": "63c5f25be44f1e28fb722cff"
+            },
+            {
+              "benefit": "No service fees on Smart Social Ads for 3 months",
+              "id": "63c5f25ce44f1e28fb722d00"
+            },
+            {
+              "benefit": "Your SoundCloud account connected to Feature.fm",
+              "id": "63c5f25de44f1e28fb722d01"
+            }
+          ]
+        },
+        "isSpecialOffer": true,
+        "specialOffer": {
+          "monthlyPlan": {
+            "code": "soundcloud-next-offer",
+            "percentOff": "50",
+            "offer": "1st 3 months"
+          },
+          "yearlyPlan": {
+            "code": "soundcloud-next-offer-yearly",
+            "percentOff": "30",
+            "offer": "off all plans"
+          }
+        }
+      }
+    },
+    "business": {
+      "websiteHero": {
+        "title": "Grow your audience every day",
+        "description": "Choose the plan that works for you. Try for free!"
+      },
+      "consoleHero": {
+        "title": "Choose the best plan for you",
+        "overrideTrialTitle": true,
+        "titleTrial": "Get Marketing Pro free for 14 Days with any plan",
+        "overrideTrialDescription": false,
+        "ctaText": "All plans include unlimited links, clicks, and artist folders",
+        "overrideTrialCTA": false,
+        "partnerSection": {
+          "partner": "/img/partner-affiliates/pricing-logos/soundcloud.png",
+          "partnerBenefits": []
+        },
+        "isSpecialOffer": false,
+        "specialOffer": {
+          "monthlyPlan": {},
+          "yearlyPlan": {}
+        }
+      }
+    }
+  },
+  "pricingTiers": {
+    "artistTiers": {
+      "pricingPlans": {
+        "proArtist": {
+          "planName": "Pro Artist",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "39",
+          "planYearlyPrice": "24.5",
+          "isCustomPrice": false,
+          "planDescription": "Effectivly promote your music and grow your audience",
+          "consoleAction": "Go Pro Artist",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "artist": {
+          "planName": "Artist",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "19",
+          "planYearlyPrice": "11.9",
+          "isCustomPrice": false,
+          "planDescription": "Smartly promote your music and grow your audience",
+          "consoleAction": "Go Artist",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "liteArtist": {
+          "planName": "Basic Artist",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "9",
+          "planYearlyPrice": "5",
+          "isCustomPrice": false,
+          "planDescription": "Start promoting your music for free",
+          "consoleAction": "Go Basic Artist",
+          "ctaButton": {
+            "text": "Create Free Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "free": {
+          "planName": "Free",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "0",
+          "planYearlyPrice": "0",
+          "isCustomPrice": false,
+          "planDescription": "Start promoting your music for free",
+          "consoleAction": "Start Free",
+          "ctaButton": {
+            "text": "Create Free Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "planComparison": []
+      }
+    },
+    "businessTiers": {
+      "pricingPlans": {
+        "proMarketer": {
+          "planName": "Pro Marketer",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "199",
+          "planYearlyPrice": "179",
+          "isCustomPrice": false,
+          "planDescription": "For professional marketers with access to the most advanced features for marketing your roster",
+          "consoleAction": "Go Pro Marketer",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "marketer": {
+          "planName": "Marketer",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "99",
+          "planYearlyPrice": "89",
+          "isCustomPrice": false,
+          "planDescription": "Smartly promote your music and grow your audience",
+          "consoleAction": "Go Marketer",
+          "ctaButton": {
+            "text": "Create an Account",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "enterprise": {
+          "planName": "Enterprise",
+          "isPlanEnabled": true,
+          "planMonthlyPrice": "Custom",
+          "planYearlyPrice": "Custom",
+          "isCustomPrice": true,
+          "planDescription": "For businesses who require automation, integrations and custom solutions that scale",
+          "consoleAction": "Contact Us",
+          "ctaButton": {
+            "text": "Contact Us",
+            "link": "http://...",
+            "type": "primary"
+          },
+          "planFeatures": []
+        },
+        "planComparison": []
+      }
+    }
+  },
+  "_status": "draft",
+  "id": "63dabcc83b9dc65a99c25ef6",
+  "meta": {}
+}

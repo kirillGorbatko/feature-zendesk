@@ -34,7 +34,10 @@ export function Footer(props: FooterProps) {
                     href="/solutions/links#type2"
                     text="Pre-Release Links"
                   />
-                  <FooterLink href="#" text="Short Links" />
+                  <FooterLink
+                    href="/solutions/links#type6"
+                    text="Short Links"
+                  />
                 </div>
                 <div className="flex flex-col gap-y-6 w-6/12 desktop:w-5/12">
                   <FooterLink
@@ -71,12 +74,12 @@ export function Footer(props: FooterProps) {
                   <FooterTitle text="Pricing" />
                 </a>
                 <a href="/business">
-                  <FooterTitle text="Professionals1" />
+                  <FooterTitle text="Professionals" />
                 </a>
-                <a href="https://ffm.to/helpcenter.owe">
+                <a href="https://ffm.to/helpcenter.owe/" target="_blank">
                   <FooterTitle text="Help Center" />
                 </a>
-                <a href="https://blog.feature.fm/">
+                <a href="https://blog.feature.fm/" target="_blank">
                   <FooterTitle text="Blog" />
                 </a>
               </div>
@@ -88,16 +91,16 @@ export function Footer(props: FooterProps) {
               <a href="/business">
                 <FooterTitle text="Professionals" />
               </a>
-              <a href="https://ffm.to/helpcenter.owe">
+              <a href="https://ffm.to/helpcenter.owe" target={'_blank'}>
                 <FooterTitle text="Help Center" />
               </a>
-              <a href="https://blog.feature.fm/">
+              <a href="https://blog.feature.fm/" target={'_blank'}>
                 <FooterTitle text="Blog" />
               </a>
             </div>
             <div className="flex flex-col tablet:gap-y-6 tablet:w-4/12 tablet:items-end">
               <div className="flex tablet:w-fit mt-10 tablet:mt-0 flex-col items-center">
-                <a href="https://login.feature.fm/signup">
+                <a href="https://login.feature.fm/signup/">
                   <Button
                     type="tertiary-inverted"
                     size="extra-large"
@@ -106,13 +109,19 @@ export function Footer(props: FooterProps) {
                   />
                 </a>
                 <div className="flex flex-row w-fit gap-x-5 mt-[60px] tablet:mt-10">
-                  <a href="https://www.facebook.com/ffm.to/">
+                  <a href="https://www.facebook.com/ffm.to/" target={'_blank'}>
                     <FacebookIcon />
                   </a>
-                  <a href="https://www.instagram.com/feature.fm/">
+                  <a
+                    href="https://www.instagram.com/feature.fm/"
+                    target={'_blank'}
+                  >
                     <InstagramIcon />
                   </a>
-                  <a href="https://www.linkedin.com/company/feature-fm">
+                  <a
+                    href="https://www.linkedin.com/company/feature-fm"
+                    target={'_blank'}
+                  >
                     <LinkedinIcon />
                   </a>
                 </div>
@@ -126,10 +135,12 @@ export function Footer(props: FooterProps) {
                 <FooterLink
                   href="https://help.feature.fm/hc/en-us/articles/360042764451-Privacy-Policy"
                   text="Privacy Policy"
+                  target="_blank"
                 />
                 <FooterLink
                   href="https://help.feature.fm/hc/en-us/articles/360042764691-GDPR-Feature-fm"
                   text="GDPR & Feature.fm"
+                  target="_blank"
                 />
                 <div className="hidden desktop:block">
                   <FooterLink href="/" text="@Feature.fm 2023" />

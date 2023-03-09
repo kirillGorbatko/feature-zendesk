@@ -24,6 +24,9 @@ export function Navigation({ items, isShowing }: NavigationProps) {
 
   const $linksContainer = useRef<HTMLUListElement | null>(null);
   const $linksContainerWrapper = useRef<HTMLDivElement | null>(null);
+  const $documentBody = useRef(
+    typeof window !== 'undefined' ? document.body : null
+  );
 
   const handleScroll = () => {
     if ($linksContainerWrapper.current) {
@@ -42,12 +45,20 @@ export function Navigation({ items, isShowing }: NavigationProps) {
       const preparedActiveItem = title === activeItem ? null : title;
 
       setActiveItem(preparedActiveItem);
+
+      if ($documentBody.current) {
+        $documentBody.current.classList.toggle(styles['body--menu_open']);
+      }
     }
   };
 
   const handleOutsideClick = () => {
     if (activeItem) {
       setActiveItem(null);
+
+      if ($documentBody.current) {
+        $documentBody.current.classList.remove(styles['body--menu_open']);
+      }
     }
   };
 

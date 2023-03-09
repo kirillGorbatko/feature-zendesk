@@ -30,7 +30,7 @@ Header.defaultProps = {
 };
 
 function useScrollDirection() {
-  const [scrollDirection, setScrollDirection] = useState(null);
+  const [scrollDirection, setScrollDirection] = useState<string | null>(null);
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
@@ -63,13 +63,13 @@ export function Header(props: HeaderProps) {
   const [solutionIsOpen, setSolutionIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const doc = document && document.querySelector('body')
+    const doc = document && document.querySelector('body');
     if (solutionIsOpen) {
       doc?.classList.add('disable-scroll');
     } else {
       doc?.classList.remove('disable-scroll');
     }
-  }, [solutionIsOpen])
+  }, [solutionIsOpen]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -90,10 +90,7 @@ export function Header(props: HeaderProps) {
     >
       <Popover className="relative bg-background dark:bg-foreground text-foreground dark:text-background border-b border-line2 dark:border-b-0">
         <div className="relative flex justify-between items-center tablet:h-[90px] tablet:space-x-8 max-w-[1200px] m-auto py-[22px] tablet:py-0 desktop-xl:max-w-[1300px] px-[30px] desktop:px-0">
-          <Logo
-            className="-mt-2"
-            inverted={props.darkMode || bodyDarkModeEnabled}
-          />
+          <Logo inverted={props.darkMode || bodyDarkModeEnabled} />
           <div className="tablet:hidden">
             <Popover.Button className="p-1 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
               <div className="h-6 w-6 flex items-center">
@@ -115,7 +112,11 @@ export function Header(props: HeaderProps) {
                     <g
                       id="Mobile-Nav/white"
                       transform="translate(-334.000000, -33.000000)"
-                      stroke={props.darkMode || bodyDarkModeEnabled ? 'white' : 'black'}
+                      stroke={
+                        props.darkMode || bodyDarkModeEnabled
+                          ? 'white'
+                          : 'black'
+                      }
                       strokeWidth="2"
                     >
                       <g
@@ -148,14 +149,17 @@ export function Header(props: HeaderProps) {
               </div>
             </Popover.Button>
           </div>
-          {solutionIsOpen && <div
-            className="fixed top-[90px] left-0 w-screen h-screen z-10"
-            style={{
-              background:
-                props.darkMode ? 'linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3) 100%)' : 'linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.3) 100%)',
-                margin: 0
-            }}
-          />}
+          {solutionIsOpen && (
+            <div
+              className="fixed top-[90px] left-0 w-screen h-screen z-10"
+              style={{
+                background: props.darkMode
+                  ? 'linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3) 100%)'
+                  : 'linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.3) 100%)',
+                margin: 0,
+              }}
+            />
+          )}
           <div className="hidden tablet:flex w-full tablet:items-center tablet:justify-between">
             <Popover.Group as="nav" className="flex space-x-8">
               <Popover>
@@ -197,25 +201,25 @@ export function Header(props: HeaderProps) {
                         </Popover.Panel>
                       </Transition>
                     </>
-                  )
+                  );
                 }}
               </Popover>
-              <HeaderMenuItem href="/pricing/artist" text="Pricing" />
-              <HeaderMenuItem href="/business" text="Professionals" />
-              <HeaderMenuItem href="/about-us" text="About Us" />
+              <HeaderMenuItem href="/pricing/artist/" text="Pricing" />
+              <HeaderMenuItem href="/business/" text="Professionals" />
+              <HeaderMenuItem href="/about-us/" text="About Us" />
               <HeaderMenuItem href="https://blog.feature.fm/" text="Blog" />
               <HeaderMenuItem
-                href="https://ffm.to/helpcenter.owe"
+                href="https://ffm.to/helpcenter.owe/"
                 text="Help"
               />
             </Popover.Group>
             <div className="flex items-center">
               <HeaderMenuItem
-                href={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/login`}
+                href={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/login/`}
                 text="Login"
               />
               <HeaderButtonItem
-                href={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/signup`}
+                href={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/signup/`}
                 text="Start Now"
               />
             </div>
@@ -237,7 +241,7 @@ export function Header(props: HeaderProps) {
           >
             <div className="text-background bg-foreground">
               <div className="flex items-center justify-between h-[90px] px-4">
-                <Logo className="-mt-2" inverted />
+                <Logo inverted />
                 <Popover.Button className="bg-foreground inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -256,11 +260,14 @@ export function Header(props: HeaderProps) {
                   ))}
                 </nav>
                 <div className="grid grid-cols-1 gap-8 mt-16 dark">
-                  <HeaderMenuItem href="/pricing/artist" text="Pricing" />
-                  <HeaderMenuItem href="/business" text="Professionals" />
-                  <HeaderMenuItem href="/about-us" text="About Us" />
-                  <HeaderMenuItem href="/blog" text="Blog" />
-                  <HeaderMenuItem href="/help" text="Help" />
+                  <HeaderMenuItem href="/pricing/artist/" text="Pricing" />
+                  <HeaderMenuItem href="/business/" text="Professionals" />
+                  <HeaderMenuItem href="/about-us/" text="About Us" />
+                  <HeaderMenuItem href="https://blog.feature.fm/" text="Blog" />
+                  <HeaderMenuItem
+                    href="https://ffm.to/helpcenter.owe/"
+                    text="Help"
+                  />
                 </div>
 
                 <div className="py-10 mt-10 border-t border-background">
@@ -269,10 +276,10 @@ export function Header(props: HeaderProps) {
                     size="large"
                     text="Start for Free"
                     className="w-full"
-                    link={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/signup`}
+                    link={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/signup/`}
                   />
                   <div className="mt-8 w-fit m-auto font-medium text-lg">
-                    <a href={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/login`}>
+                    <a href={`${process.env.NEXT_PUBLIC_LOGIN_DOMAIN}/login/`}>
                       Login
                     </a>
                   </div>

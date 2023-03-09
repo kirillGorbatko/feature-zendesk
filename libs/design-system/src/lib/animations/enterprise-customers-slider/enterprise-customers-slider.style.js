@@ -100,18 +100,14 @@ export default css.feature`
 }
 
 .shuffle_logo__in:nth-child(6) {
-  background: #0B3C5F;
-}
-
-.shuffle_logo__in:nth-child(7) {
   background: #F46003;
 }
 
-.shuffle_logo__in:nth-child(8) {
+.shuffle_logo__in:nth-child(7) {
   background: #17CB92;
 }
 
-.shuffle_logo__in:nth-child(9) {
+.shuffle_logo__in:nth-child(8) {
   background: #2E2E2E;
 }
 

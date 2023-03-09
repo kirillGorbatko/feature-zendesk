@@ -3,6 +3,9 @@ export * from './lib/links-blocks-section/links-blocks-section';
 export * from './lib/alert/alert';
 export * from './lib/animations/your-fans/your-fans';
 export * from './lib/animations/your-fans-mobile/your-fans-mobile';
+export * from './lib/icons/checkmark-icon/checkmark-icon'
+export * from './lib/oauth-email-confirmation/oauth-email-confirmation';
+export * from './lib/modal/modal';
 export * from './lib/animations/for-everything-you-do/for-everything-you-do';
 export * from './lib/animations/for-everything-you-do-mobile/for-everything-you-do-mobile';
 export * from './lib/animations/know-what-works/know-what-works';

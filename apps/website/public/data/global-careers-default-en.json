@@ -1,0 +1,70 @@
+{
+  "heroSection": {
+    "title": {
+      "desktop": "Join Our team today <br/> and get your own <br/> pet bear",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Of course you do! Who wouldn’t?.. All that and more for those who got what it takes!",
+      "overrideMobile": false,
+      "overrideTablet": false
+    }
+  },
+  "lookingForSection": {
+    "title": {
+      "desktop": "We are looking for…",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "qualities": [
+      {
+        "title": "Hard workers",
+        "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.",
+        "id": "6357a0377366bc4d10490425"
+      },
+      {
+        "title": "Risk takers",
+        "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.",
+        "id": "6357a0377366bc4d10490426"
+      },
+      {
+        "title": "Mind readers",
+        "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.",
+        "id": "6357a0377366bc4d10490427"
+      },
+      {
+        "title": "Grave diggers",
+        "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.",
+        "id": "6357a0377366bc4d10490428"
+      },
+      {
+        "title": "Mother f***ers",
+        "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.",
+        "id": "6357a0377366bc4d10490429"
+      }
+    ]
+  },
+  "joinTheTeamSection": {
+    "title": {
+      "desktop": "Ready to join us?",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "We are always open to connecting with people who believe in our mission and eager to join the team. ",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Reach out to us at ",
+      "link": "careers@feature.fm",
+      "type": "primary"
+    }
+  },
+  "_status": "published",
+  "globalType": "global-careers-page",
+  "createdAt": "2022-10-25T08:35:26.511Z",
+  "updatedAt": "2022-10-25T08:37:42.408Z",
+  "id": "63579fcea3fa33a64d550f26"
+}
