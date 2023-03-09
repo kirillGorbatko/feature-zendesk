@@ -21,6 +21,8 @@ const getLocalizedDefaultValue = (field, locale) => {
   return field[locale] || null;
 };
 
+const PAGE_COLLECTION_NAME = 'solution-links-pages';
+
 export const SolutionsLinksPages: CollectionConfig = {
   // the slug is used for naming the collection in the database and the APIs that are open. For example: api/pages/${id}
   slug: 'solution-links-pages',
@@ -44,7 +46,7 @@ export const SolutionsLinksPages: CollectionConfig = {
     drafts: true,
   },
   hooks: {
-    afterChange: [saveToJson('solutions-links')],
+    afterChange: [saveToJson(PAGE_COLLECTION_NAME)],
   },
   fields: [
     {
@@ -139,7 +141,7 @@ export const SolutionsLinksPages: CollectionConfig = {
               ctaButton: {
                 text: 'Start free',
                 type: 'primary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -171,7 +173,7 @@ export const SolutionsLinksPages: CollectionConfig = {
               ctaButton: {
                 text: 'Create a Release Link',
                 type: 'secondary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -202,7 +204,7 @@ export const SolutionsLinksPages: CollectionConfig = {
               ctaButton: {
                 text: 'Create a Pre-Save Link',
                 type: 'primary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -232,7 +234,7 @@ export const SolutionsLinksPages: CollectionConfig = {
               ctaButton: {
                 text: 'Create a Tour Link',
                 type: 'secondary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -261,7 +263,7 @@ export const SolutionsLinksPages: CollectionConfig = {
               ctaButton: {
                 text: 'Create a Podcast Link',
                 type: 'primary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -287,7 +289,7 @@ export const SolutionsLinksPages: CollectionConfig = {
               ctaButton: {
                 text: 'Create a Contest',
                 type: 'secondary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
           ],
@@ -368,7 +370,7 @@ export const SolutionsLinksPages: CollectionConfig = {
             },
             {
               title: {
-                desktop: 'Audience Relationship Management',
+                desktop: 'Fan Base Management',
               },
               description: {
                 desktop:

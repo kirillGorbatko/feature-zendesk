@@ -1,12 +1,6 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
 import express from 'express';
 import payload from 'payload';
 
-require('dotenv').config();
 const app = express();
 
 // Redirect root to Admin panel

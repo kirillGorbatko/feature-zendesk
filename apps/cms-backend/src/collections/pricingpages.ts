@@ -25,6 +25,8 @@ const getLocalizedDefaultValue = (field, locale) => {
   return field[locale] || null;
 };
 
+const PAGE_COLLECTION_NAME = 'pricing-pages';
+
 export const PricingPages: CollectionConfig = {
   // the slug is used for naming the collection in the database and the APIs that are open. For example: api/pages/${id}
   slug: 'pricing-pages',
@@ -48,7 +50,7 @@ export const PricingPages: CollectionConfig = {
     drafts: true,
   },
   hooks: {
-    afterChange: [saveToJson('pricing')],
+    afterChange: [saveToJson(PAGE_COLLECTION_NAME)],
   },
   fields: [
     {
@@ -210,17 +212,27 @@ export const PricingPages: CollectionConfig = {
                               name: 'partner',
                               label: 'Partner',
                               type: 'select',
-                              required: true,
+                              required: false,
                               options: [
                                 {
                                   label: 'SoundCloud',
-                                  value:
-                                    '/img/partner-affiliates/pricing-logos/soundcloud.png',
+                                  value: 'soundcloud',
                                 },
                               ],
                               admin: {
                                 width: '35%',
                                 readOnly: false,
+                              },
+                            },
+                            {
+                              name: 'partnerLogo',
+                              label: 'Partner Logo',
+                              type: 'upload',
+                              relationTo: 'media',
+                              required: false,
+                              admin: {
+                                description:
+                                  'Maximum upload file size: 12MB. Recommended file size for images is <500KB.',
                               },
                             },
                             {
@@ -268,7 +280,12 @@ export const PricingPages: CollectionConfig = {
                               { hideGutter: false },
                               [
                                 {
-                                  name: 'percentage',
+                                  name: 'code',
+                                  type: 'text',
+                                  required: false,
+                                },
+                                {
+                                  name: 'percentOff',
                                   type: 'text',
                                   required: false,
                                 },
@@ -285,7 +302,12 @@ export const PricingPages: CollectionConfig = {
                               { hideGutter: false },
                               [
                                 {
-                                  name: 'percentage',
+                                  name: 'code',
+                                  type: 'text',
+                                  required: false,
+                                },
+                                {
+                                  name: 'percentOff',
                                   type: 'text',
                                   required: false,
                                 },
@@ -451,17 +473,27 @@ export const PricingPages: CollectionConfig = {
                                 name: 'partner',
                                 label: 'Partner',
                                 type: 'select',
-                                required: true,
+                                required: false,
                                 options: [
                                   {
                                     label: 'SoundCloud',
-                                    value:
-                                      '/img/partner-affiliates/pricing-logos/soundcloud.png',
+                                    value: 'soundcloud',
                                   },
                                 ],
                                 admin: {
                                   width: '35%',
                                   readOnly: false,
+                                },
+                              },
+                              {
+                                name: 'partnerLogo',
+                                label: 'Partner Logo',
+                                type: 'upload',
+                                relationTo: 'media',
+                                required: false,
+                                admin: {
+                                  description:
+                                    'Maximum upload file size: 12MB. Recommended file size for images is <500KB.',
                                 },
                               },
                               {
@@ -509,7 +541,12 @@ export const PricingPages: CollectionConfig = {
                                 { hideGutter: false },
                                 [
                                   {
-                                    name: 'percentage',
+                                    name: 'code',
+                                    type: 'text',
+                                    required: false,
+                                  },
+                                  {
+                                    name: 'percentOff',
                                     type: 'text',
                                     required: false,
                                   },
@@ -526,7 +563,12 @@ export const PricingPages: CollectionConfig = {
                                 { hideGutter: false },
                                 [
                                   {
-                                    name: 'percentage',
+                                    name: 'code',
+                                    type: 'text',
+                                    required: false,
+                                  },
+                                  {
+                                    name: 'percentOff',
                                     type: 'text',
                                     required: false,
                                   },

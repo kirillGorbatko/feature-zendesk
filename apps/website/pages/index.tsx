@@ -40,31 +40,28 @@ export function Index(props: PageData) {
   return (
     <div>
       <Header solutions={solutions} />
-      <div className="app-content">
-        <MainHero1 {...props.heroSection} />
-        <div className="relative h-[400px] tablet:h-[510px] -mt-20">
-          <HeroArtistCarousel isMobile={props.isMobile} />
-        </div>
-        <div className="-mt-[120px] tablet:mt-[0px]">
-          <MainPart1 {...props.marketingSection} />
-        </div>
-        <MainPart2
-          isMobile={props.isMobile}
-          {...props.fanbaseManagementSection}
-        />
-        <MainPart3
-          isMobile={props.isMobile}
-          {...props.analyticsAndInsightsSection}
-        />
-        <Testimonials {...props.testimonialsSection} />
-
-        <ViewPort>
-          <ForProfessionalsCta {...props.forProfessionalsCTASection} />
-        </ViewPort>
-        <GetStartedCta {...props.getStartedCTASection} />
-        <LineSeparator className="-mt-0" />
-        <Footer />
+      <MainHero1 {...props.heroSection} />
+      <div className="relative h-[400px] tablet:h-[510px] -mt-20">
+        <HeroArtistCarousel isMobile={props.isMobile} />
       </div>
+      <div className="-mt-[120px] tablet:mt-[0px]">
+        <MainPart1 {...props.marketingSection} />
+      </div>
+      <MainPart2
+        isMobile={props.isMobile}
+        {...props.fanbaseManagementSection}
+      />
+      <MainPart3
+        isMobile={props.isMobile}
+        {...props.analyticsAndInsightsSection}
+      />
+      <Testimonials {...props.testimonialsSection} />
+
+      <ViewPort>
+        <ForProfessionalsCta {...props.forProfessionalsCTASection} />
+      </ViewPort>
+      <GetStartedCta {...props.getStartedCTASection} />
+      <Footer />
     </div>
   );
 }
@@ -72,7 +69,7 @@ export function Index(props: PageData) {
 export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: PageData = await loadPageProps<PageData>(
-    'homepage',
+    'home-pages',
     query || {},
     req,
     res,

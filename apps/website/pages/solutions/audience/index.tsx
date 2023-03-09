@@ -49,7 +49,6 @@ export function SolutionAudience(props: SolutionAudienceProps) {
       <div className="mt-20">
         <GetStartedCta {...props.getStartedCTASection} />
       </div>
-      <LineSeparator />
       <Footer />
     </div>
   );
@@ -59,7 +58,7 @@ export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: SolutionAudienceProps =
     await loadPageProps<SolutionAudienceProps>(
-      'solutions-audience',
+      'solution-audience-pages',
       query || {},
       req,
       res,

@@ -23,7 +23,7 @@ export function UnionIcon() {
           </g>
           <g transform="translate(0)">
             <g>
-              <rect width={25} height={25} fill="#58ecca" />
+              <rect width={25} height={25} fill="currentColor" />
               <g clipPath="url(#clip-path-2)">
                 <circle
                   cx={15}

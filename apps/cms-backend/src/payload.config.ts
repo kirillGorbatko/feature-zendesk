@@ -22,7 +22,8 @@ import PricingPackages from './globals/pricingpackages';
 
 let cloudStorageAdapter: Adapter;
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production' || true) {
+  console.log('Setting up s3 integration');
   cloudStorageAdapter = s3Adapter({
     config: {
       forcePathStyle: false,
@@ -74,6 +75,14 @@ export default buildConfig({
       collections: {
         media: {
           adapter: cloudStorageAdapter,
+          generateFileURL: ({
+            collection,
+            filename,
+            prefix,
+            size,
+          }) => {
+            return `https://${process.env.S3_BUCKET}.s3.us-west-2.amazonaws.com/${filename}`
+          }
         },
       },
     }),
@@ -103,7 +112,7 @@ export default buildConfig({
         return `From promoting a new single to merch, tours, and everything in between, Feature.fm empowers you to build your fan base and music career in a smarter way.`;
       },
       generateURL: ({ doc, locale }) => {
-        return `https://www.feature.fm/${doc?.['fields'].slug.value}`;
+        return `https://www.feature.fm/${doc?.['fields'].slug.value}/`;
       },
     }),
   ],

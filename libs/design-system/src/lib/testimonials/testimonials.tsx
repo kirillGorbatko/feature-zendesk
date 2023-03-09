@@ -79,6 +79,7 @@ export function Testimonials(props: TestimonialsProps) {
                     <a
                       className="font-semibold flex items-center"
                       href={item.quoterLink.url}
+                      target={'_blank'}
                     >
                       {item.quoterLink.name}
                       <div className="ml-2 mt-1">
@@ -105,21 +106,19 @@ export function Testimonials(props: TestimonialsProps) {
                   <div className="relative">
                     <div className="absolute top-0 left-0 opacity-1 animate-[opacity-out-testimonial_0.2s_linear_forwards]">
                       <Image
-                        src={`${
-                          process.env['NEXT_PUBLIC_FFM_CDN']
-                        }/img/testimonials/testimonial-${
+                        src={`/img/testimonials/testimonial-${
                           prevSlide + 1
                         }-profile-image.png`}
+                        alt={item.quoter}
                         className=""
                       ></Image>
                     </div>
                     <div className="absolute top-0 left-0 opacity-0 animate-[opacity-in-testimonial_0.2s_linear_forwards] animation-delay-200">
                       <Image
-                        src={`${
-                          process.env['NEXT_PUBLIC_FFM_CDN']
-                        }/img/testimonials/testimonial-${
+                        src={`/img/testimonials/testimonial-${
                           activeSlide + 1
                         }-profile-image.png`}
+                        alt={item.quoter}
                         className=""
                       ></Image>
                     </div>
@@ -169,6 +168,7 @@ export function Testimonials(props: TestimonialsProps) {
                             mobileSrc={`/img/testimonials/testimonial-${
                               activeSlide + 1
                             }-mobile.png`}
+                            alt={`${item.quoter} Smart Link`}
                           />
                         </div>
                         <div className="absolute z-20 bottom-0 mx-auto w-full px-[30px] tablet:px-0 tablet:w-[436px] animate-[slide-down-testimonial_0.2s_ease-out_forwards] animation-delay-200">
@@ -180,6 +180,7 @@ export function Testimonials(props: TestimonialsProps) {
                             mobileSrc={`/img/testimonials/testimonial-${
                               prevSlide + 1
                             }-mobile.png`}
+                            alt={`${item.quoter} Smart Link`}
                           />
                         </div>
                         <div

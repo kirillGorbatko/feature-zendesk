@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import classNames from 'classnames';
 import styles from './topic-icon.module.scss';
 
 import {
@@ -14,6 +15,7 @@ import {
 
 interface TopicIconProps {
   iconName?: string;
+  color?: string;
 }
 
 const switchIcon = (iconName: string) => {
@@ -60,8 +62,18 @@ const switchIcon = (iconName: string) => {
   return Icon;
 };
 
-export function TopicIcon({ iconName = 'bulb' }: TopicIconProps) {
+export function TopicIcon({ iconName = 'bulb', color }: TopicIconProps) {
   const Icon = switchIcon(iconName);
 
-  return <div className={styles['topic_icon']}>{Icon}</div>;
+  return (
+    <div
+      className={classNames(styles['topic_icon'], {
+        [styles['topic_icon--v1_mod']]: color === 'purple',
+        [styles['topic_icon--v2_mod']]: color === 'red',
+        [styles['topic_icon--v3_mod']]: color === 'green',
+      })}
+    >
+      {Icon}
+    </div>
+  );
 }

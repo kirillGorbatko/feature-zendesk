@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.app-content {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
 .overlay {
   position: absolute;
 }

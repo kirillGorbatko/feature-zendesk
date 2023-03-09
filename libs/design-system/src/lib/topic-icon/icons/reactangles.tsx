@@ -26,7 +26,7 @@ export function RectanglesIcon() {
             <path
               d="M0 0L25 0L25 25L0 25L0 0Z"
               id="Rectangle"
-              fill="#58ECCA"
+              fill="currentColor"
               fillRule="evenodd"
               stroke="none"
             />

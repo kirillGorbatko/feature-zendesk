@@ -65,6 +65,72 @@ const planSummary = (
     defaultValue: defaults.isCustomPrice,
   },
   {
+    name: 'isSpecialOffer', // required
+    type: 'checkbox', // required
+    label: 'Enable Special Offer',
+    defaultValue: false,
+  },
+  groupField(
+    'specialOffer',
+    'Offer Details',
+    {
+      hideGutter: true,
+      condition: (data, sibling) => {
+        if (sibling?.isSpecialOffer) {
+          return true;
+        } else {
+          return false;
+        }
+      },
+    },
+    [
+      groupField(
+        'monthlyPlan',
+        'Monthly Plan Special Offer',
+        { hideGutter: false },
+        [
+          {
+            name: 'code',
+            type: 'text',
+            required: false,
+          },
+          {
+            name: 'percentOff',
+            type: 'text',
+            required: false,
+          },
+          {
+            name: 'offer',
+            type: 'text',
+            required: false,
+          },
+        ]
+      ),
+      groupField(
+        'yearlyPlan',
+        'Yearly Plan Special Offer',
+        { hideGutter: false },
+        [
+          {
+            name: 'code',
+            type: 'text',
+            required: false,
+          },
+          {
+            name: 'percentOff',
+            type: 'text',
+            required: false,
+          },
+          {
+            name: 'offer',
+            type: 'text',
+            required: false,
+          },
+        ]
+      ),
+    ]
+  ),
+  {
     name: 'planDescription',
     label: 'Plan Description',
     type: 'text',

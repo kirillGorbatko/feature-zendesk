@@ -52,4 +52,5 @@ export type FetchPricingResponse = {
   },
   featureConsent: string,
   variant: string,
+  meta: any,
 };

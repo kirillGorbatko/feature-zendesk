@@ -9,7 +9,7 @@ import TestimonialsSection from '../fields/homepage/testimonial-section';
 import { saveToJson } from '../hooks/save-to-json';
 import getResponsiveTextField from '../fields/responsive-text';
 
-const PAGE_COLLECTION_NAME = 'homepage';
+const PAGE_COLLECTION_NAME = 'home-pages';
 
 export const HomePages: CollectionConfig = {
   // the slug is used for naming the collection in the database and the APIs that are open. For example: api/pages/${id}
@@ -71,7 +71,7 @@ export const HomePages: CollectionConfig = {
           [
             getButtonField({
               buttonText: 'Start for free',
-              link: 'https://login.feature.fm/signup',
+              link: 'https://login.feature.fm/signup/',
             }),
           ]
         ),
@@ -327,7 +327,7 @@ export const HomePages: CollectionConfig = {
               quoterTitle: 'Indie Artist',
               quoterLink: {
                 name: 'Check out my Bio Link',
-                url: ' https://ffm.bio/zmn269q',
+                url: ' https://ffm.bio/zmn269q/',
               },
             },
             {
@@ -338,7 +338,7 @@ export const HomePages: CollectionConfig = {
               quoterTitle: 'Indie Artist',
               quoterLink: {
                 name: 'Check out our Bio Link',
-                url: 'https://ssffm.co/all',
+                url: 'https://ssffm.co/all/',
               },
             },
             {
@@ -348,7 +348,7 @@ export const HomePages: CollectionConfig = {
               quoterTitle: 'Indie Artist',
               quoterLink: {
                 name: 'Check out my Bio Link',
-                url: 'https://ffm.bio/draxafrica',
+                url: 'https://ffm.bio/draxafrica/',
               },
             },
             {
@@ -359,7 +359,7 @@ export const HomePages: CollectionConfig = {
               quoterTitle: 'Indie Artist',
               quoterLink: {
                 name: 'Check out my Bio Link',
-                url: 'https://ffm.bio/8q5dvyb',
+                url: 'https://ffm.bio/8q5dvyb/',
               },
             },
             {
@@ -370,7 +370,7 @@ export const HomePages: CollectionConfig = {
               quoterTitle: 'Indie Artist',
               quoterLink: {
                 name: 'Read Success Story',
-                url: 'https://ffm.to/emmymelicasestudy.OWE',
+                url: 'https://ffm.to/emmymelicasestudy.OWE/',
               },
             },
             {
@@ -381,7 +381,7 @@ export const HomePages: CollectionConfig = {
               quoterTitle: 'Indie Artist',
               quoterLink: {
                 name: 'Read Success Story',
-                url: 'https://ffm.to/staceyryan_zai1k_casestudy.OWE',
+                url: 'https://ffm.to/staceyryan_zai1k_casestudy.OWE/',
               },
             },
           ],

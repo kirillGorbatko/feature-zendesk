@@ -82,7 +82,7 @@ export function Business(props: BusinessProps) {
       'beggars',
       '300',
       'symphonic',
-      'ultra',
+      'domino',
       'redbullrecords',
       'mtheory',
       'empire',
@@ -103,6 +103,7 @@ export function Business(props: BusinessProps) {
             <div className="absolute right-0">
               <Image
                 src={props.heroSection.imageUrl}
+                alt="Business users hero image"
                 className="hidden desktop:flex justify-end -mr-[83px] mt-8"
               />
             </div>
@@ -128,6 +129,7 @@ export function Business(props: BusinessProps) {
         </ViewPort>
         <Image
           src="/img/business/hero-mobile.png"
+          alt="Business users hero image"
           className="block desktop:hidden w-full mt-20"
         />
         <ViewPort>
@@ -163,6 +165,7 @@ export function Business(props: BusinessProps) {
                       <Image
                         src={`/img/business/partners/${y}.png`}
                         width="140px"
+                        alt={`Partner Logo: ${y}`}
                       />
                     </div>
                   ))}
@@ -182,6 +185,7 @@ export function Business(props: BusinessProps) {
               <Image
                 src={x.icon}
                 mobileSrc={x.icon.replace('.svg', '-mobile.svg')}
+                alt={x.title}
                 svg
               />
               <div className="ml-3 desktop:m-0">
@@ -210,6 +214,7 @@ export function Business(props: BusinessProps) {
         src={props.manageFeatures.imageUrl}
         mobileSrc={props.manageFeatures.imageUrl.replace('-1', '-1-mobile')}
         className="desktop:absolute right-0 mt-10 desktop:mt-20"
+        alt="Dashboard illustration"
       />
       <ViewPort>
         <div className="w-full desktop:max-w-[500px] mt-[20px] desktop:mt-0">
@@ -234,6 +239,7 @@ export function Business(props: BusinessProps) {
         src={props.automationFeatures.imageUrl}
         mobileSrc={props.automationFeatures.imageUrl.replace('-2', '-2-mobile')}
         className="desktop:absolute -left-28 mt-[20px] desktop:mt-[200px]"
+        alt="Automation feature illustration"
       />
       <ViewPort>
         <div className="desktop:flex -mt-10 desktop:mt-[220px] flex-col items-end">
@@ -280,12 +286,18 @@ export function Business(props: BusinessProps) {
               className="block w-full desktop:w-fit mt-[60px]"
             />
           </div>
-          <Image src="/img/business/fans.png" mobileSrc="hide" />
+          <Image
+            src="/img/business/fans.png"
+            alt="Fans CRM dashboard"
+            mobileSrc="hide"
+            className="hidden desktop:block"
+          />
         </ViewPort>
         <Image
           src="hide"
           mobileSrc="/img/business/fans-mobile.png"
-          className="mt-20 desktop:mt-0"
+          className="mt-20 desktop:mt-0 tablet:hidden"
+          alt="Fans CRM dashboard"
         />
       </div>
       <ViewPort>
@@ -300,7 +312,7 @@ export function Business(props: BusinessProps) {
 
         <div className="relative desktop:mt-[100px]">
           <div className="flex flex-col desktop:pb-0">
-            <div className="desktop:absolute desktop:w-[570px] right-0">
+            <div className="desktop:absolute desktop:w-[570px] right-0 z-10">
               {props.needScaleSection.features.map((x, i) => (
                 <div key={i} className="mt-[60px]">
                   <Text
@@ -368,7 +380,7 @@ export function Business(props: BusinessProps) {
                 className="max-w-[470px] mt-[60px] desktop:odd:mt-0 even:flex even:text-right desktop:even:text-left flex-col items-end desktop:items-start"
                 key={x.title.toLowerCase()}
               >
-                <Image src={x.icon} width="90px" />
+                <Image src={x.icon} width="90px" alt={`${x.title} icon`} />
                 <div className="text-[26px] text-background font-medium mt-8">
                   {x.title}
                 </div>
@@ -386,7 +398,7 @@ export function Business(props: BusinessProps) {
 export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: BusinessProps = await loadPageProps<BusinessProps>(
-    'professionals',
+    'professionals-pages',
     query || {},
     req,
     res,

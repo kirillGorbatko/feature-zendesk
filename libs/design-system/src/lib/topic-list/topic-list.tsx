@@ -8,16 +8,6 @@ interface TopicListProps<T> {
   items: T[];
 }
 
-// const MAPPING = new Map();
-// MAPPING.set(0, 'bulb');
-// MAPPING.set(1, 'circle');
-// MAPPING.set(2, 'flag');
-// MAPPING.set(3, 'rectangles');
-// MAPPING.set(4, 'speaker');
-// MAPPING.set(5, 'triangles');
-// MAPPING.set(6, 'union');
-// MAPPING.set(7, 'wrench');
-
 export function TopicList<T extends Record<string, any>>({
   items,
 }: TopicListProps<T>) {
@@ -29,9 +19,11 @@ export function TopicList<T extends Record<string, any>>({
             {items.map(({ name, description, url, position }: T) => {
               let icon = '';
               let text = '';
+              let color = '';
               jsyaml.loadAll(description, function (doc: any) {
                 icon = doc?.icon || '';
                 text = doc?.description || '';
+                color = doc?.color || '';
               });
               return (
                 <li key={name} className={styles['topic_list__item']}>
@@ -40,6 +32,7 @@ export function TopicList<T extends Record<string, any>>({
                     description={text}
                     url={url}
                     iconName={icon}
+                    color={color}
                   />
                 </li>
               );

@@ -69,7 +69,11 @@ function AboutUsQuote(props: AboutUsQuoteProps) {
   return (
     <div className="relative flex justify-between flex-col desktop:flex-row desktop:even:flex-row-reverse items-end desktop:items-center">
       <div className="relative w-[240px] desktop:w-[500px] h-[240px] desktop:h-[500px]">
-        <Image width="100%" src="/img/beautiful.jpeg" />
+        <Image
+          width="100%"
+          src="/img/beautiful.jpeg"
+          alt={`${props.quoter} profile image`}
+        />
         <div
           className="w-full h-full absolute top-0 right-0"
           style={{ background: getGradient(props.quoteFill) }}
@@ -121,6 +125,7 @@ export interface AboutUsProps {
   ourPartnersSection: {
     text: TextInlineProps;
     partners: {
+      name: string;
       imageUrl: string;
     }[];
   };
@@ -156,6 +161,7 @@ export function AboutUs(props: AboutUsProps) {
                   <Image
                     src="/img/about-us/box-4.png"
                     className="hidden desktop:block -ml-[2px]"
+                    alt="Decorative element"
                   />
                 )}
                 {counter === 1 && (
@@ -196,6 +202,7 @@ export function AboutUs(props: AboutUsProps) {
                       src="/img/about-us/box-2.png"
                       className="hidden desktop:block"
                       mobileSrc="hide"
+                      alt="Decorative element"
                     />
                   )}
                   {counter === 2 && (
@@ -245,7 +252,11 @@ export function AboutUs(props: AboutUsProps) {
                   key={index}
                   className="w-1/2 desktop:w-1/5 mt-12 flex justify-center"
                 >
-                  <Image width="fit-content" src={x.imageUrl} />
+                  <Image
+                    width="fit-content"
+                    src={x.imageUrl}
+                    alt={`${x.name} Logo`}
+                  />
                 </div>
               ))}
             </div>
@@ -261,12 +272,13 @@ export function AboutUs(props: AboutUsProps) {
 export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: AboutUsProps = await loadPageProps<AboutUsProps>(
-    'about-us',
+    'global-about-us',
     query || {},
     req,
     res,
     72,
-    'en'
+    'en',
+    true
   );
 
   return { props: pageData };

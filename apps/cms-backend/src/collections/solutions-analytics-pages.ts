@@ -6,24 +6,11 @@ import GetStartedCTA from '../blocks/get-started-cta';
 import getSolutionListBlock from '../blocks/solutions-list';
 import { saveToJson } from '../hooks/save-to-json';
 
-const defaults = {
-  hero: {
-    title: {
-      en: 'Your music.<br/>Your fans.<br/>Your data.',
-      es: 'Your music.<br/>Your fans.<br/>Your data. Spanish',
-      de: 'Your music.<br/>Your fans.<br/>Your data. DE',
-    },
-    description: {
-      en: 'Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis.',
-      es: 'Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis. Spanish',
-      de: 'Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis. DE',
-    },
-  },
-};
-
 const getLocalizedDefaultValue = (field, locale) => {
   return field[locale] || null;
 };
+
+const PAGE_COLLECTION_NAME = 'solution-analytics-pages';
 
 export const SolutionsAnalyticsPages: CollectionConfig = {
   // the slug is used for naming the collection in the database and the APIs that are open. For example: api/pages/${id}
@@ -48,7 +35,7 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
     drafts: true,
   },
   hooks: {
-    afterChange: [saveToJson('solutions-analytics')],
+    afterChange: [saveToJson(PAGE_COLLECTION_NAME)],
   },
   fields: [
     {
@@ -73,8 +60,7 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
         label: 'Hero Title',
         type: 'text',
         required: true,
-        defaultValue: ({ locale }) =>
-          getLocalizedDefaultValue(defaults.hero.title, locale),
+        defaultValue: 'Your music.<br/>Your fans.<br/>Your data.',
       },
       {
         name: 'description',
@@ -83,8 +69,8 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
         minLength: 60,
         maxLength: 256,
         required: true,
-        defaultValue: ({ locale }) =>
-          getLocalizedDefaultValue(defaults.hero.description, locale),
+        defaultValue:
+          'Learn how to keep your fans engaged by understanding fan behaviors and preferences across all of your marketing activities.',
       },
     ]),
     groupField(
@@ -93,7 +79,7 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
       { hideGutter: false },
       getSolutionListBlock(
         {
-          sectionTitle: 'What insights can you gain with Feature.fm?',
+          sectionTitle: 'Get answers to your most important questions.',
           features: [
             {
               tag: 'Fan contact info',
@@ -136,7 +122,7 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
               },
               description: {
                 desktop:
-                  'See which music services your fans use most to listen to your music and take advantage of opportunities for in service promotion.',
+                  'Track which music services your fans use most to listen to your music and take advantage of opportunities for in service promotion.',
               },
               imageUrl: '/img/solutions/social-platforms.png',
               isInverse: false,
@@ -164,7 +150,7 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
               },
             },
             {
-              tag: 'Marketing Campaigns and Activities',
+              tag: 'Marketing campaigns and activities',
               title: {
                 desktop: 'How do I track my marketing efforts?',
               },
@@ -198,13 +184,14 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
               },
             },
             {
-              tag: 'Some Tag',
+              tag: 'Real-time insights',
               title: {
-                desktop: 'Real-time data at both the link and artist level ',
+                desktop:
+                  'Track your progress at both the link and artist level.',
               },
               description: {
                 desktop:
-                  'Collect fan contact info and organize your fan base in an Audience Dashboard that you can sort, segment and sync to email platforms like Mailchimp and Active Campaign.',
+                  'Get the most holistic view of your performance through a consolidated Artist Analytics Dashboard or drill down into the data for any individual link.',
               },
               imageUrl: '/img/solutions/real-time-data.png',
               isInverse: true,
@@ -216,14 +203,13 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
               },
             },
             {
-              tag: 'Some Tag',
+              tag: 'Ad retargeting',
               title: {
-                desktop:
-                  'Improve your ad performance by sending your data to retargeting programs',
+                desktop: 'Put your data to work with ad retargeting.',
               },
               description: {
                 desktop:
-                  'Use your data to improve ad campaigns with powerful retargeting sent directly to your ad platforms or connect to analytics platforms that bring all of your data together.',
+                  'Improve your ad campaigns and conversions with powerful retargeting data sent directly to your ad platforms.',
               },
               imageUrl: '/img/solutions/improve-ad-performance.png',
               isInverse: true,
@@ -245,22 +231,22 @@ export const SolutionsAnalyticsPages: CollectionConfig = {
       { hideGutter: false },
       getFeatureListBlock(
         {
-          title: 'Two more things you should check out ',
+          title: 'Discover more',
           features: [
             {
               title: {
-                desktop: 'Landing Pages & Smart Links ',
+                desktop: 'Smart Links & Landing Pages',
               },
               description: {
                 desktop:
-                  'Create links and landing pages for everything you need to promote as an artist.',
+                  'Create smart links and landing pages for everything you need to promote as an artist. Track fan engagement and measure results with in-depth analytics & insights.',
               },
               imageUrl: '/img/solutions/feature-links.png',
               link: '/solutions/links',
             },
             {
               title: {
-                desktop: 'Audience Relationship Management',
+                desktop: 'Fan Base Management',
               },
               description: {
                 desktop:

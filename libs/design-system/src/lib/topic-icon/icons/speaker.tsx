@@ -11,7 +11,7 @@ export function SpeakerIcon() {
         <path
           d="M0 0L26.5 0L26.5 26.5L0 26.5L0 0Z"
           id="Rectangle"
-          fill="#9B62FF"
+          fill="currentColor"
           fillRule="evenodd"
           stroke="none"
         />

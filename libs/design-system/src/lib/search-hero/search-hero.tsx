@@ -13,6 +13,7 @@ import { FormEventHandler } from 'react';
 export interface SearchHeroProps {
   isBackButton?: string;
   iconName?: string;
+  color?: string;
   title?: string;
   subTitle?: string;
   align?: SearchFormAlign;
@@ -30,6 +31,7 @@ export interface SearchHeroProps {
 export function SearchHero({
   isBackButton,
   iconName,
+  color,
   iconTitleMod,
   title,
   subTitle,
@@ -85,7 +87,7 @@ export function SearchHero({
               >
                 {iconName && (
                   <div className={styles['hero__title_icon']}>
-                    <TopicIcon iconName={iconName} />
+                    <TopicIcon iconName={iconName} color={color} />
                   </div>
                 )}
                 <FmH1>{title}</FmH1>

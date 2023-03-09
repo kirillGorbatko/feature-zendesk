@@ -5,7 +5,7 @@ import getResponsiveTextField from '../fields/responsive-text';
 import { CollectionConfig } from 'payload/types';
 import slug from '../fields/slug';
 
-const PAGE_COLLECTION_NAME = 'professionals';
+const PAGE_COLLECTION_NAME = 'professionals-pages';
 
 const ProfessionalsPages: CollectionConfig = {
   slug: 'professionals-pages',
@@ -14,6 +14,14 @@ const ProfessionalsPages: CollectionConfig = {
     useAsTitle: 'title',
     // defaultColumns is used on the listing screen in the admin UI for the collection
     defaultColumns: ['title', 'createdAt'],
+  },
+  access: {
+    // allow guest users to fetch pages
+    read: () => true,
+    // The access for the remaining options use the default which prevents all guest access and is allowed for authenticated users
+    // create,
+    // update,
+    // delete,
   },
   versions: {
     drafts: true,
@@ -53,13 +61,13 @@ const ProfessionalsPages: CollectionConfig = {
           defaultValue: '/img/business/hero.png',
         },
         getResponsiveTextField('title', 'Hero Title', {
-          desktop: 'Scalable marketing for <br/>your catalog.',
+          desktop: 'Market your artists with confidence.',
           overrideMobile: false,
           overrideTablet: false,
         }),
         getResponsiveTextField('description', 'Hero Description', {
           desktop:
-            'Grow your business with our unified marketing stack, built for any scale, and, trusted by top music companies.',
+            'Join the world’s best music companies who trust Feature.fm to grow artist fan bases and future proof their marketing capabilities.',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -70,7 +78,7 @@ const ProfessionalsPages: CollectionConfig = {
           [
             getButtonField({
               buttonText: 'Try free for 14-days',
-              link: 'https://login.feature.fm/signup',
+              link: 'https://login.feature.fm/signup/',
             }),
           ]
         ),
@@ -110,12 +118,12 @@ const ProfessionalsPages: CollectionConfig = {
               title: 'Artists',
             },
             {
-              kpi: '10%',
-              title: 'of recorded music',
+              kpi: '+3MM',
+              title: 'Links creataed',
             },
             {
-              kpi: '+200M',
-              title: 'Fans collected',
+              kpi: '+1B',
+              title: 'Fans reached',
             },
           ],
         },
@@ -127,8 +135,7 @@ const ProfessionalsPages: CollectionConfig = {
       { hideGutter: true, className: PAGE_COLLECTION_NAME },
       [
         getResponsiveTextField('text', 'Text', {
-          desktop:
-            'Trusted by the industry’s <br/> top labels, managers <br/> and distributors',
+          desktop: 'Trusted by top labels, managers <br/> and distributors',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -188,7 +195,7 @@ const ProfessionalsPages: CollectionConfig = {
                       value: '/img/link-icons/artist_bio_link_icon.svg',
                     },
                     {
-                      label: 'Pre-Release Links',
+                      label: 'Pre-Save Links',
                       value: '/img/link-icons/pre_release_link_icon.svg',
                     },
                     {
@@ -229,7 +236,7 @@ const ProfessionalsPages: CollectionConfig = {
               icon: '/img/link-icons/artist_bio_link_icon.svg',
             },
             {
-              title: 'Pre-Release Links',
+              title: 'Pre-Save Links',
               description: 'Build momentum ahead of your music release.',
               learnMoreLink: 'http://...',
               icon: '/img/link-icons/pre_release_link_icon.svg',
@@ -291,7 +298,7 @@ const ProfessionalsPages: CollectionConfig = {
         }),
         getResponsiveTextField('description', 'Description', {
           desktop:
-            'We’ve spent nearly a decade understanding the needs of music marketers to create the most advanced music marketing software.',
+            'We’ve spent nearly a decade understanding the needs of music marketers to create the most advanced marketing solution.',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -333,20 +340,20 @@ const ProfessionalsPages: CollectionConfig = {
           defaultValue: [
             {
               title: {
-                desktop: 'Easily manage multiple artists',
+                desktop: 'Easily manage multiple artists.',
               },
               description: {
                 desktop:
-                  'Organize all of your marketing efforts in artist folders, invite artist teams to their folders and access deep insights at the artist level.',
+                  'Organize your marketing efforts in artist folders, invite artist teams to manage their assets and access deep insights at the artist level.',
               },
             },
             {
               title: {
-                desktop: 'Collaborate with all of your team members',
+                desktop: 'Collaborate with all of your team members.',
               },
               description: {
                 desktop:
-                  'Built for companies with team members and collaborators around the world. Invite your company team members at the account level and invite artist teams to their artist folders.',
+                  'Unite your team members all around the world to work together, granting access at the account or artist level.',
               },
             },
           ],
@@ -389,7 +396,7 @@ const ProfessionalsPages: CollectionConfig = {
           defaultValue: [
             {
               title: {
-                desktop: 'Automate your workflows',
+                desktop: 'Automate your workflows.',
               },
               description: {
                 desktop:
@@ -398,7 +405,7 @@ const ProfessionalsPages: CollectionConfig = {
             },
             {
               title: {
-                desktop: 'Improve your conversions',
+                desktop: 'Improve your conversions.',
               },
               description: {
                 desktop:
@@ -407,7 +414,7 @@ const ProfessionalsPages: CollectionConfig = {
             },
             {
               title: {
-                desktop: 'Monetize with Affiliate Partners',
+                desktop: 'Monetize with Affiliate Partners.',
               },
               description: {
                 desktop:
@@ -424,7 +431,8 @@ const ProfessionalsPages: CollectionConfig = {
       { hideGutter: false },
       [
         getResponsiveTextField('title', 'Title', {
-          desktop: 'Designed to <br/>make your life<br/> easier.',
+          desktop:
+            'Powerfully <br/>actionable insights <br/>that work for you.',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -450,7 +458,8 @@ const ProfessionalsPages: CollectionConfig = {
           defaultValue: [
             {
               title: {
-                desktop: 'Use aggregated data for the benefit of each artist',
+                desktop:
+                  'Use your aggregatted artist roster data to your advantage.',
               },
               description: {
                 desktop:
@@ -459,29 +468,29 @@ const ProfessionalsPages: CollectionConfig = {
             },
             {
               title: {
-                desktop: 'Monetize with Affiliate Partners',
-              },
-              description: {
-                desktop:
-                  'Generate additional revenue from every campaign with affiliate marketing integrations like Apple, Amazon and Spotify.',
-              },
-            },
-            {
-              title: {
-                desktop: 'Retarget fans across your ad platforms',
-              },
-              description: {
-                desktop:
-                  'Integrate with your preferred retargeting and build highly segmented audiences by detailed event data like genres, artist names, locations and more.',
-              },
-            },
-            {
-              title: {
-                desktop: 'Access Artist level performance statistics',
+                desktop: 'Access artist level performance statistics.',
               },
               description: {
                 desktop:
                   'Every artist has an artist dashboard with aggregated insights across all of your marketing efforts, giving you a comprehensive view into how fans engage across all campaigns.',
+              },
+            },
+            {
+              title: {
+                desktop: 'Retarget fans across your ad platforms.',
+              },
+              description: {
+                desktop:
+                  'Integrate with your preferred retargeting program and build highly segmented audiences by detailed event data like genres, artist names, locations and more.',
+              },
+            },
+            {
+              title: {
+                desktop: 'Attribute sales and streams.',
+              },
+              description: {
+                desktop:
+                  'Track sales revenue and streams from your merch store as well as from Feature.fm’s streaming data partners like YouTube Music, Rough Trade, Boomplay, Anghami, and Qobuz.',
               },
             },
           ],
@@ -489,7 +498,7 @@ const ProfessionalsPages: CollectionConfig = {
         groupField('ctaButton', 'Call to action', { hideGutter: false }, [
           getButtonField({
             buttonText: 'Learn more about Analytics',
-            link: 'http://...',
+            link: '/solutions/analytics/',
           }),
         ]),
       ]
@@ -539,7 +548,7 @@ const ProfessionalsPages: CollectionConfig = {
         }),
         getResponsiveTextField('description', 'Description', {
           desktop:
-            'Nearly half of the world’s largest music distribution companies have integrated Feature.fm’s enterprise solutions to power their marketing tech stack.',
+            ' The industry’s largest music distribution companies have integrated Feature.fm’s enterprise solutions to power their marketing tech stack.',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -728,7 +737,7 @@ const ProfessionalsPages: CollectionConfig = {
         }),
         getResponsiveTextField('description', 'Description', {
           desktop:
-            'Interested in learning more about the feature.fm enterprise offering? Let one of our experts show you how Feature.fm can benefit you and take your business to the next level.',
+            'Interested in learning more about how Feature.fm works for your business?',
           overrideMobile: false,
           overrideTablet: false,
         }),

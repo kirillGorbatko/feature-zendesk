@@ -1020,6 +1020,46 @@ const tierPlans = (options: {
 }): Field[] => {
   return [
     groupField('pricingPlans', 'Pricing Plans', { hideGutter: true }, [
+      {
+        type: 'array',
+        name: 'planDisplayOrder',
+        required: true,
+        minRows: 3,
+        maxRows: 3,
+        fields: [
+          {
+            name: 'planName',
+            type: 'text',
+            required: true,
+            admin: {
+              readOnly: true,
+            },
+          },
+        ],
+        admin: {
+          initCollapsed: true,
+          components: {
+            RowLabel: ({ data }) => {
+              // Convert camel case value to title text (ex. proMarketer -> Pro Marketer)
+              return data?.planName
+                .replace(/([A-Z])/g, (match) => ` ${match}`)
+                .replace(/^./, (match) => match.toUpperCase())
+                .trim();
+            },
+          },
+        },
+        defaultValue: [
+          {
+            planName: 'marketer',
+          },
+          {
+            planName: 'proMarketer',
+          },
+          {
+            planName: 'enterprise',
+          },
+        ],
+      },
       tabField('Plans', [
         {
           label: 'Pro Marketer',
@@ -1109,7 +1149,7 @@ const tierPlans = (options: {
                       {
                         name: 'tooltip',
                         type: 'text',
-                        required: true,
+                        required: false,
                         defaultValue: 'Feature Tooltip..',
                       },
                       {

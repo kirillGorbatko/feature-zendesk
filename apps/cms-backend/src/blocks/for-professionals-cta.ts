@@ -68,7 +68,7 @@ const ForProfessionalsCTABlock: Block = {
           quoter: 'Nils Gums',
           quoterTitle: 'Founder, The Complex Group',
           link: 'Read success story',
-          url: 'https://ffm.to/staceyryan_zai1k_casestudy.OWE',
+          url: 'https://ffm.to/staceyryan_zai1k_casestudy.OWE/',
         },
         {
           quote:
@@ -76,7 +76,7 @@ const ForProfessionalsCTABlock: Block = {
           quoter: 'Sam Lockhart',
           quoterTitle: 'Manager, Disruptor',
           link: 'Read success story',
-          url: 'https://ffm.to/emmymelicasestudy.OWE',
+          url: 'https://ffm.to/emmymelicasestudy.OWE/',
         },
         {
           quote:

@@ -31,7 +31,7 @@ export function WrenchIcon() {
               <path
                 d="M0 0L25 0L25 25L0 25L0 0Z"
                 id="Mask"
-                fill="#FF5262"
+                fill="currentColor"
                 fillRule="evenodd"
                 stroke="none"
               />

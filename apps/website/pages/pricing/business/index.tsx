@@ -40,12 +40,13 @@ const toSymbol = (text: string): string | boolean => {
 export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const data: FetchPricingResponse = await loadPageProps<FetchPricingResponse>(
-    'pricing-packages',
+    'global-pricing-packages',
     query || {},
     req,
     res,
     72,
-    'en'
+    'en',
+    true
   );
 
   const detailed: any =

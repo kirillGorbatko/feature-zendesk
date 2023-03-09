@@ -39,15 +39,16 @@ export function PageHead(props: PageMetaTags) {
     title: 'Feature.fm | The best smart links and pre-saves in music today.',
     description:
       'From promoting a new single to merch, tours, and everything in between, Feature.fm empowers you to build your fan base and music career in a smarter way.',
-    imageUrl: 'https://feature.fm/static/og.jpg',
-    imageWidth: '2880',
-    imageHeight: '1660',
+    imageUrl: '/img/social-sharing/cover.png',
+    imageWidth: '1200',
+    imageHeight: '630',
     url: `https://www.feature.fm${router.asPath}`,
   };
 
   return (
     <Head>
-      <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+      <link rel="icon" href="/img/favicon.ico" sizes="any" />
+      <link rel="icon" href="/img//favicon.svg" type="image/svg+xml"></link>
       <link rel="canonical" href={defaults.url} />
 
       <title>{props?.title || defaults.title}</title>
@@ -94,7 +95,7 @@ export function PageHead(props: PageMetaTags) {
         name="twitter:description"
         content={props?.description || defaults.description}
       />
-      <meta name="twitter:url" content="https://feature.fm/" />
+      <meta name="twitter:url" content={defaults.url} />
       <meta
         name="twitter:image"
         content={props?.image?.url || defaults.imageUrl}
@@ -197,7 +198,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <PageHead {...meta} fireEvents={fireEvents}></PageHead>
+      <PageHead {...meta} fireEvents={fireEvents} />
       <main className="app">
         <CookieConsent
           cookieName="featureConsent"

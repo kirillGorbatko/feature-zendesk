@@ -13,26 +13,25 @@ const getDefaultPlanSummary = (options: { includePlanFeatures: boolean }) => {
         planMonthlyPrice: '39',
         planYearlyPrice: '35',
         isCustomPrice: false,
-        planDescription: 'Effectivly promote your music and grow your audience',
+        planDescription:
+          'For professional artists with full access to powerful features for growing and managing your fan base.',
         consoleAction: 'Go Pro Artist',
         ctaButton: {
           buttonText: 'Create an Account',
           link: 'http://...',
         },
         features: [
-          'Unlimited smart links',
-          'Unlimited pre-saves',
-          'Unlimited insight data',
-          'Collect fan emails',
-          'Email syncying integrations',
-          'Conversion data reporting',
-          '3 button action pages',
-          'Advanced Spotify growth tools',
-          '1 Artist subdomain',
-          'Basic audience retargeting',
-          'Music services customizations',
-          'Centrelized Audience tools',
-          'Free Pre-Save Notifications Incl.',
+          'Unlimited links and landing pages',
+          'All available services',
+          'Artist Bio Link',
+          'All Pre-Save services',
+          'Collect unlimited emails, access 200 emails per link',
+          'Liftime day insight data',
+          '3 Spotify Pre-Save Multiple Follow',
+          '1 custom domain and 1 custom sub-domain',
+          'Unlimited retargeting pixels',
+          'Custom stores',
+          'Email syncing to Mailchimp and ActiveCampaign',
         ],
       },
       { includePlanFeatures: options?.includePlanFeatures }
@@ -45,22 +44,24 @@ const getDefaultPlanSummary = (options: { includePlanFeatures: boolean }) => {
         planMonthlyPrice: '19',
         planYearlyPrice: '17',
         isCustomPrice: false,
-        planDescription: 'Smartly promote your music and grow your audience',
+        planDescription:
+          'For growing artists with access to the features you need to get started.',
         consoleAction: 'Go Artist',
         ctaButton: {
           buttonText: 'Create an Account',
           link: 'http://...',
         },
         features: [
-          'Unlimited smart links',
-          'Unlimited pre-saves',
-          '90 days insight data',
-          'Collect 200 fan emails',
-          '1 button action pages',
-          'Basic Spotify growth tools',
-          '1 Artist subdomain',
-          'Music services customizations',
-          'Free Pre-Save Notifications Incl.',
+          'Unlimited links and landing pages',
+          'All available services',
+          'Artist Bio Link',
+          'All Pre-Save services',
+          'Collect unlimited emails, access 200 emails per link',
+          '90 day insight data',
+          '1 Spotify Pre-Save Multiple Follow',
+          '1 custom domain and 1 custom sub-domain',
+          '2 retargeting pixels',
+          '3 custom stores',
         ],
       },
       { includePlanFeatures: options?.includePlanFeatures }
@@ -97,16 +98,20 @@ const getDefaultPlanSummary = (options: { includePlanFeatures: boolean }) => {
         planMonthlyPrice: '0',
         planYearlyPrice: '0',
         isCustomPrice: false,
-        planDescription: 'Start promoting your music for free',
+        planDescription:
+          'For curious artists with limited access to basic features.',
         consoleAction: 'Start Free',
         ctaButton: {
           buttonText: 'Create Free Account',
           link: 'http://...',
         },
         features: [
-          'Unlimited smart links',
-          'Basic pre-saves',
-          '7 days insight data',
+          'Unlimited links and landing pages*',
+          'Limited services available',
+          'Artist Bio Link',
+          '1 Pre-Save service',
+          'Collect unlimited emails, upgrade to access emails',
+          '7 day insight data',
         ],
       },
       { includePlanFeatures: options?.includePlanFeatures }
@@ -1086,6 +1091,49 @@ const tierPlans = (options: {
 }): Field[] => {
   return [
     groupField('pricingPlans', 'Pricing Plans', { hideGutter: true }, [
+      {
+        type: 'array',
+        name: 'planDisplayOrder',
+        required: true,
+        minRows: 4,
+        maxRows: 4,
+        fields: [
+          {
+            name: 'planName',
+            type: 'text',
+            required: true,
+            admin: {
+              readOnly: true,
+            },
+          },
+        ],
+        admin: {
+          initCollapsed: true,
+          components: {
+            // Convert camel case value to title text (ex. proArtist -> Pro Artist)
+            RowLabel: ({ data }) => {
+              return data?.planName
+                .replace(/([A-Z])/g, (match) => ` ${match}`)
+                .replace(/^./, (match) => match.toUpperCase())
+                .trim();
+            },
+          },
+        },
+        defaultValue: [
+          {
+            planName: 'liteArtist',
+          },
+          {
+            planName: 'artist',
+          },
+          {
+            planName: 'proArtist',
+          },
+          {
+            planName: 'free',
+          },
+        ],
+      },
       tabField('Plans', [
         {
           label: 'Pro Artist',
@@ -1191,7 +1239,7 @@ const tierPlans = (options: {
                       {
                         name: 'tooltip',
                         type: 'text',
-                        required: true,
+                        required: false,
                         defaultValue: 'Feature Tooltip..',
                       },
                       {

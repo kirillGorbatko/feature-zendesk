@@ -150,6 +150,7 @@ export function SolutionPageItem(props: SolutionPageItemProps) {
               'desktop:justify-end': !reverse,
             })}
             src={props.imageUrl}
+            alt={`${props.tag || 'Feature'} illustration`}
             mobileSrc={props.imageUrl.replace('.png', '-mobile.png')}
             mobileWidth="100%"
             width={props.imgWidth}

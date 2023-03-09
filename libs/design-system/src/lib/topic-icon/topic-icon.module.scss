@@ -16,4 +16,18 @@
   svg {
     width: 100%;
   }
+
+  // color: blue !important;
+
+  &.topic_icon--v1_mod {
+    color: rgba(141, 76, 255);
+  }
+
+  &.topic_icon--v2_mod {
+    color: rgba(255, 82, 98);
+  }
+
+  &.topic_icon--v3_mod {
+    color: rgba(88, 236, 202);
+  }
 }

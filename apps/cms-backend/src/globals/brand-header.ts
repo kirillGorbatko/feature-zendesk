@@ -17,6 +17,8 @@ const brandLogoOptions = [
   },
 ];
 
+const PAGE_COLLECTION_NAME = 'global-brand-header';
+
 const GlobalBrandHeader: GlobalConfig = {
   slug: 'global-brand-header',
   label: 'Header',

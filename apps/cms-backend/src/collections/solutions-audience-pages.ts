@@ -21,6 +21,8 @@ const getLocalizedDefaultValue = (field, locale) => {
   return field[locale] || null;
 };
 
+const PAGE_COLLECTION_NAME = 'solution-audience-pages';
+
 export const SolutionsAudiencePages: CollectionConfig = {
   // the slug is used for naming the collection in the database and the APIs that are open. For example: api/pages/${id}
   slug: 'solution-audience-pages',
@@ -44,7 +46,7 @@ export const SolutionsAudiencePages: CollectionConfig = {
     drafts: true,
   },
   hooks: {
-    afterChange: [saveToJson('solutions-audience')],
+    afterChange: [saveToJson(PAGE_COLLECTION_NAME)],
   },
   fields: [
     {
@@ -103,7 +105,7 @@ export const SolutionsAudiencePages: CollectionConfig = {
               ctaButton: {
                 text: 'Start for free',
                 type: 'primary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -119,7 +121,7 @@ export const SolutionsAudiencePages: CollectionConfig = {
               ctaButton: {
                 text: 'Start for free',
                 type: 'secondary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -135,7 +137,7 @@ export const SolutionsAudiencePages: CollectionConfig = {
               ctaButton: {
                 text: 'Start for free',
                 type: 'primary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
             {
@@ -151,7 +153,7 @@ export const SolutionsAudiencePages: CollectionConfig = {
               ctaButton: {
                 text: 'Start for free',
                 type: 'secondary',
-                link: 'https://login.feature.fm/signup',
+                link: 'https://login.feature.fm/signup/',
               },
             },
           ],

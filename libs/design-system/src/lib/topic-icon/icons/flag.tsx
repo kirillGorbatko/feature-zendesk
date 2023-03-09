@@ -32,7 +32,7 @@ export function FlagIcon() {
                 <path
                   d="M0 0L25 0L25 25L0 25L0 0Z"
                   id="Mask"
-                  fill="#9B62FF"
+                  fill="currentColor"
                   fillRule="evenodd"
                   stroke="none"
                 />

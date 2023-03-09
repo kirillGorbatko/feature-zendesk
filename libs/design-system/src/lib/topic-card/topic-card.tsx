@@ -8,6 +8,7 @@ export interface TopicCardProps {
   name: string;
   description: string;
   iconName: string;
+  color: string;
 }
 
 export function TopicCard({
@@ -15,13 +16,14 @@ export function TopicCard({
   name,
   description,
   iconName,
+  color,
 }: TopicCardProps) {
   return (
     <Link href={url} prefetch={false}>
       <a href={url}>
         <div className={styles['topic_card']}>
           <div className={styles['topic_card__icon']}>
-            <TopicIcon iconName={iconName} />
+            <TopicIcon iconName={iconName} color={color} />
           </div>
           <div>
             {name && <h5 className={styles['topic_card__title']}>{name}</h5>}

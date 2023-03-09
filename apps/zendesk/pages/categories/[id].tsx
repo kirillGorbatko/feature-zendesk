@@ -60,6 +60,7 @@ function Category({ category, sections }: CategoryProps) {
           isBackButton="Back to main lobby"
           isMobileBackButton
           iconName={icon}
+          color={color}
           iconTitleMod={true}
           setLoadingStatus={setLoadingStatus}
           hiddenMobileForm={true}

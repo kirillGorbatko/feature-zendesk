@@ -39,7 +39,7 @@ export interface SolutionLinksProps {
   getStartedCTASection: GetStartedCtaProps;
 }
 
-const integratedIcon = [
+const servicesIconsList = [
   'spotify',
   'apple',
   'deezer',
@@ -51,7 +51,11 @@ const integratedIcon = [
   'soundcloud',
   'instagram',
   'pandora',
-].map((x) => `/img/services-icons/${x}@2x.png`);
+];
+
+const integratedIcon = servicesIconsList.map(
+  (x) => `/img/services-icons/${x}@2x.png`
+);
 
 export function SolutionLinks(props: SolutionLinksProps) {
   return (
@@ -77,7 +81,15 @@ export function SolutionLinks(props: SolutionLinksProps) {
                 className="mx-4 desktop:mx-2 my-6 w-fit flex justify-center"
                 style={{ flex: '12%' }}
               >
-                <Image src={x} width="50px" retina={false} />
+                <Image
+                  src={x}
+                  width="50px"
+                  retina={false}
+                  alt={`${
+                    servicesIconsList[index].charAt(0).toUpperCase() +
+                    servicesIconsList[index].slice(1)
+                  } Icon`}
+                />
               </div>
             ))}
           </div>
@@ -115,7 +127,7 @@ export function SolutionLinks(props: SolutionLinksProps) {
 export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: SolutionLinksProps = await loadPageProps<SolutionLinksProps>(
-    'solutions-links',
+    'solution-links-pages',
     query || {},
     req,
     res,

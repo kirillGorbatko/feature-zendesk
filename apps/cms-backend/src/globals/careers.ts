@@ -4,13 +4,21 @@ import getButtonField from '../fields/button';
 import { saveGlobalToJson } from '../hooks/save-to-json';
 import getResponsiveTextField from '../fields/responsive-text';
 
-const PAGE_COLLECTION_NAME = 'careers-page';
+const PAGE_COLLECTION_NAME = 'global-careers-page';
 
 const GlobalCareersPage: GlobalConfig = {
   slug: 'global-careers-page',
   label: 'Careers',
   versions: {
     drafts: true,
+  },
+  access: {
+    // allow guest users to fetch pages
+    read: () => true,
+    // The access for the remaining options use the default which prevents all guest access and is allowed for authenticated users
+    // create,
+    // update,
+    // delete,
   },
   hooks: {
     afterChange: [saveGlobalToJson(PAGE_COLLECTION_NAME)],
@@ -23,13 +31,13 @@ const GlobalCareersPage: GlobalConfig = {
       [
         getResponsiveTextField('title', 'Hero Title', {
           desktop:
-            'Want to get your own pet bear and learn to shoot lazers from your eyeballs?',
+            'Join our team and help artists <br/> turn their passion into <br/> successful careers.',
           overrideMobile: false,
           overrideTablet: false,
         }),
         getResponsiveTextField('description', 'Hero Description', {
           desktop:
-            'Of course you do! Who wouldn’t?.. All that and more for those who got what it takes!',
+            'We want to work with pioneers who have a passion for music, can solve challenging problems, and want to make a real impact on helping artists reach their fans.',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -72,27 +80,27 @@ const GlobalCareersPage: GlobalConfig = {
             {
               title: 'Hard workers',
               description:
-                'Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.',
+                'You do what it takes to get the job done, getting out what you put into it.',
             },
             {
-              title: 'Risk takers',
+              title: 'Self motivators',
               description:
-                'Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.',
+                'You have the drive to push yourself, the team and the company forward.',
             },
             {
-              title: 'Mind readers',
+              title: 'Problem solvers',
               description:
-                'Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.',
+                'When things get challenging, you focus on finding solutions.',
             },
             {
-              title: 'Grave diggers',
+              title: 'Team players',
               description:
-                'Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.',
+                'You value others abilities and contributions, allowing others to work together towards our common goals.',
             },
             {
-              title: 'Mother f***ers',
+              title: 'Creative thinkers',
               description:
-                'Lorem ipsum dolor sit amet, consec tetur adipiscing Lorem ipsum dolor sit amet, conse elit, sed do eiusmod tempor incididunt ut labore equa.',
+                'You have the aptitude to be creative and entrepreneurial in how you approach your work.',
             },
           ],
         },
@@ -104,20 +112,20 @@ const GlobalCareersPage: GlobalConfig = {
       { hideGutter: false, className: PAGE_COLLECTION_NAME },
       [
         getResponsiveTextField('title', 'Title', {
-          desktop: 'Join the team',
+          desktop: 'Ready to join us?',
           overrideMobile: false,
           overrideTablet: false,
         }),
         getResponsiveTextField('description', 'Description', {
           desktop:
-            'This section will lead to the career section and open positions. <br/>Lorem ipsum dolor sit amet lorem ipsum etc',
+            'We are always open to connecting with people who believe in our mission and eager to join the team.',
           overrideMobile: false,
           overrideTablet: false,
         }),
         groupField('ctaButton', 'Contact Us', { hideGutter: false }, [
           getButtonField({
-            buttonText: 'Join us',
-            link: 'http://...',
+            buttonText: 'Contact us at',
+            link: 'careers@feature.fm',
           }),
         ]),
       ]

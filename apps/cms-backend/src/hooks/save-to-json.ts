@@ -4,6 +4,7 @@ import { GlobalAfterChangeHook } from 'payload/types';
 
 const saveToJson = (collectionName: string): AfterChangeHook => {
   return async (args) => {
+    return;
     if (process.env.NODE_ENV === 'production') return;
 
     const content = JSON.stringify(args['doc'], null, 2);
@@ -26,10 +27,11 @@ const saveGlobalToJson =
     previousDoc, // document data before updating the collection
     req, // full express request
   }) => {
+    return;
     if (process.env.NODE_ENV === 'production') return;
 
     writeFileSync(
-      `apps/website/public/data/${globalName}-${req.query.locale}.json`,
+      `apps/website/public/data/${globalName}-default-${req.query.locale}.json`,
       JSON.stringify(doc, null, 2),
       {
         flag: 'w',

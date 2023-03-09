@@ -67,7 +67,7 @@ export function Careers(props: CareersProps) {
           <Text text={props.heroSection.title} as="h4" className="mt-16" />
           <Text
             text={props.heroSection.description}
-            className="mt-20 font-light"
+            className="mt-20 font-light tablet:max-w-[600px]"
           />
         </div>
       </ViewPort>
@@ -142,12 +142,13 @@ export function Careers(props: CareersProps) {
 export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: CareersProps = await loadPageProps<CareersProps>(
-    'careers',
+    'global-careers-page',
     query || {},
     req,
     res,
     72,
-    'en'
+    'en',
+    true
   );
 
   return { props: pageData };

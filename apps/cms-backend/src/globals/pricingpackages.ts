@@ -10,13 +10,13 @@ const defaults = {
   hero: {
     title: {
       en: 'Grow your audience every day',
-      es: 'Grow your audience every day Spanish',
-      de: 'Grow your audience every day DE',
+      es: 'Grow your audience every day',
+      de: 'Grow your audience every day',
     },
     description: {
       en: 'Choose the plan that works for you. Try for free!',
-      es: 'Choose the plan that works for you. Try for free! Spanish',
-      de: 'Choose the plan that works for you. Try for free! DE',
+      es: 'Choose the plan that works for you. Try for free!',
+      de: 'Choose the plan that works for you. Try for free!',
     },
   },
 };
@@ -24,6 +24,8 @@ const defaults = {
 const getLocalizedDefaultValue = (field, locale) => {
   return field[locale] || null;
 };
+
+const PAGE_COLLECTION_NAME = 'global-pricing-packages';
 
 export const PricingPackages: GlobalConfig = {
   // the slug is used for naming the collection in the database and the APIs that are open. For example: api/pages/${id}
@@ -42,7 +44,7 @@ export const PricingPackages: GlobalConfig = {
     drafts: true,
   },
   hooks: {
-    afterChange: [saveGlobalToJson('pricing-packages-default')],
+    afterChange: [saveGlobalToJson(PAGE_COLLECTION_NAME)],
   },
   fields: [
     groupField('heroSection', 'Hero Section', { hideGutter: false }, [
@@ -66,22 +68,15 @@ export const PricingPackages: GlobalConfig = {
                           label: 'Main Title',
                           type: 'text',
                           required: true,
-                          defaultValue: ({ locale }) =>
-                            getLocalizedDefaultValue(
-                              defaults.hero.title,
-                              locale
-                            ),
+                          defaultValue: 'Plans for every stage of your career',
                         },
                         {
                           name: 'description',
                           label: 'Main Description',
                           type: 'text',
                           required: true,
-                          defaultValue: ({ locale }) =>
-                            getLocalizedDefaultValue(
-                              defaults.hero.description,
-                              locale
-                            ),
+                          defaultValue:
+                            'Choose any plan and get a 7 day free trial of Pro Artist',
                         },
                       ]
                     ),
@@ -188,7 +183,7 @@ export const PricingPackages: GlobalConfig = {
                               name: 'partner',
                               label: 'Partner',
                               type: 'select',
-                              required: true,
+                              required: false,
                               options: [
                                 {
                                   label: 'SoundCloud',
@@ -429,7 +424,7 @@ export const PricingPackages: GlobalConfig = {
                                 name: 'partner',
                                 label: 'Partner',
                                 type: 'select',
-                                required: true,
+                                required: false,
                                 options: [
                                   {
                                     label: 'SoundCloud',

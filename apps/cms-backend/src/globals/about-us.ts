@@ -4,13 +4,21 @@ import getButtonField from '../fields/button';
 import { saveGlobalToJson } from '../hooks/save-to-json';
 import getResponsiveTextField from '../fields/responsive-text';
 
-const PAGE_COLLECTION_NAME = 'about-us';
+const PAGE_COLLECTION_NAME = 'global-about-us';
 
 const GlobalAboutUs: GlobalConfig = {
   slug: 'global-about-us',
   label: 'About Us',
   versions: {
     drafts: true,
+  },
+  access: {
+    // allow guest users to fetch pages
+    read: () => true,
+    // The access for the remaining options use the default which prevents all guest access and is allowed for authenticated users
+    // create,
+    // update,
+    // delete,
   },
   hooks: {
     afterChange: [saveGlobalToJson(PAGE_COLLECTION_NAME)],
@@ -66,13 +74,13 @@ const GlobalAboutUs: GlobalConfig = {
               kpi: '2013',
               title: 'Founded Feature.fm',
               description:
-                'We’ve spent nearly a decade understanding the needs of artists to create the most advanced music marketing technology.',
+                'We’ve spent nearly a decade understanding your needs to create the most advanced music marketing technology.',
             },
             {
-              kpi: '1MM+',
+              kpi: '3MM+',
               title: 'Links created',
               description:
-                'Feature.fm has created over 1 million links and landing pages for artists.',
+                'Feature.fm has created over 3 million links and landing pages for artists.',
             },
             {
               kpi: '300K',
@@ -81,8 +89,8 @@ const GlobalAboutUs: GlobalConfig = {
                 'Over 300K artists use Feature.fm to promote their work.',
             },
             {
-              kpi: '193',
-              title: 'Countries',
+              kpi: '+1B',
+              title: 'Fans reached',
               description:
                 'Feature.fm reaches fans in every country on the planet, helping artists all over the world reach their fans.',
             },
@@ -129,7 +137,7 @@ const GlobalAboutUs: GlobalConfig = {
               label: 'Image',
               type: 'upload',
               relationTo: 'media',
-              required: true,
+              required: false,
               admin: {
                 description:
                   'Maximum upload file size: 12MB. Recommended file size for images is <500KB.',
@@ -152,7 +160,7 @@ const GlobalAboutUs: GlobalConfig = {
             {
               quoteTitle: 'We are in the age of the artist',
               quote:
-                'Today, there are more opportunities than ever before for artists to build a fanbase and generate revenue. With 60,000 tracks uploaded to Spotify every day, we are in the “age of the artist” and the role of technology is critical to scale with this explosion of music creators.',
+                'Today, there are more opportunities than ever before for artists to build a fanbase and generate revenue. With such a massive volume of tracks uploaded to DSPs every day, we are truly in the “age of the artist” where the role of technology is critical to scale with the explosion of music creators.',
               quoter: 'Dan Sander',
               quoterImageUrl: 'https://...',
               quoterTitle: 'CCO',
@@ -165,6 +173,24 @@ const GlobalAboutUs: GlobalConfig = {
               quoterImageUrl: 'https://...',
               quoterTitle: 'Director, Business Development',
             },
+            {
+              quoteTitle:
+                'We strive to earn trust with our highly scalable and reliable technology',
+              quote:
+                'With successful large-scale integrations with enterprise distribution, streaming, and ad tech companies, I am grateful to be at the forefront of technology that helps support so many artists. Feature.fm sits on a powerful infrastrcture of highly scalable technology that is built to handle large amounts of data, processing billions of monthly requests and deliver real-time analytics to our customers.',
+              quoter: 'Zohar Aharoni',
+              quoterImageUrl: 'https://...',
+              quoterTitle: 'Zohar Aharoni, Co-founder & CTO',
+            },
+            {
+              quoteTitle:
+                'The music industry deserves its own, specialized marketing technology',
+              quote:
+                'I am proud to lead the development of a team that utilizes technology to empower musicians and enhances the music listening experience for fans. We are revolutionizing the way music is marketed and discovered through cutting-edge technology that allows artists to directly connect with their fans and promote their music effectively.',
+              quoter: 'Lior Shapsa',
+              quoterImageUrl: 'https://...',
+              quoterTitle: 'Lior Shapsa, Co-founder & VP R&D',
+            },
           ],
         },
       ]
@@ -175,7 +201,7 @@ const GlobalAboutUs: GlobalConfig = {
       { hideGutter: true, className: PAGE_COLLECTION_NAME },
       [
         getResponsiveTextField('text', 'Text', {
-          desktop: 'Our partners',
+          desktop: 'Select industry partners.',
           overrideMobile: false,
           overrideTablet: false,
         }),
@@ -202,44 +228,44 @@ const GlobalAboutUs: GlobalConfig = {
           },
           defaultValue: [
             {
-              name: 'Universal Music',
-              imageUrl: '/img/about-us/partners/universal.png',
+              name: 'YouTube',
+              imageUrl: '/img/about-us/partners/youtube.png',
             },
             {
-              name: 'Secretly Group',
-              imageUrl: '/img/about-us/partners/sgtransparent.png',
+              name: 'Audiomack',
+              imageUrl: '/img/about-us/partners/audiomack.png',
             },
             {
-              name: 'Secretly Canadian',
-              imageUrl: '/img/about-us/partners/secretly-canadian.png',
+              name: 'Tidal',
+              imageUrl: '/img/about-us/partners/tidal.png',
             },
             {
-              name: 'Foundation Media',
-              imageUrl: '/img/about-us/partners/foundation.png',
+              name: 'Bandsintown',
+              imageUrl: '/img/about-us/partners/bandsintown.png',
             },
             {
-              name: 'Janjaguwar',
-              imageUrl: '/img/about-us/partners/jagjaguwar.png',
+              name: 'Amazon Music',
+              imageUrl: '/img/about-us/partners/amazonmusic.png',
             },
             {
-              name: 'Dangerbird',
-              imageUrl: '/img/about-us/partners/dangerbird.png',
+              name: 'Ditto',
+              imageUrl: '/img/about-us/partners/ditto.png',
             },
             {
-              name: 'Janjaguwar',
-              imageUrl: '/img/about-us/partners/jagjaguwar.png',
+              name: 'AWAL',
+              imageUrl: '/img/about-us/partners/awal.png',
             },
             {
-              name: 'Dead Oceans',
-              imageUrl: '/img/about-us/partners/deadoceans.png',
+              name: 'OneRPM',
+              imageUrl: '/img/about-us/partners/onerpm.png',
             },
             {
-              name: '300 Entertainnent',
-              imageUrl: '/img/about-us/partners/300.png',
+              name: 'Symphonic Distribution',
+              imageUrl: '/img/about-us/partners/symphonic.png',
             },
             {
-              name: 'Secretly Group',
-              imageUrl: '/img/about-us/partners/sgtransparent.png',
+              name: 'Altafonte',
+              imageUrl: '/img/about-us/partners/altafonte.png',
             },
           ],
         },
@@ -257,14 +283,14 @@ const GlobalAboutUs: GlobalConfig = {
         }),
         getResponsiveTextField('description', 'Description', {
           desktop:
-            'This section will lead to the career section and open positions. <br/>Lorem ipsum dolor sit amet lorem ipsum etc',
+            'If you believe in helping artists break through barriers and want to join a rapidly growing company with a team of creative thinkers, then we want to work with you.',
           overrideMobile: false,
           overrideTablet: false,
         }),
         groupField('ctaButton', 'Call to action', { hideGutter: false }, [
           getButtonField({
-            buttonText: 'Join us',
-            link: 'http://...',
+            buttonText: 'Join the team',
+            link: '/careers',
           }),
         ]),
       ]

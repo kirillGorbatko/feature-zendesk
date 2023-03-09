@@ -44,14 +44,14 @@ const getFeatureFields = (options: {
       type: 'text',
       required: true,
       admin: {
-        readOnly: true,
+        readOnly: false,
       },
     },
     {
       name: 'topCapabilites',
       type: 'array',
-      minRows: 2,
-      maxRows: 6,
+      minRows: 0,
+      maxRows: 8,
       fields: [
         {
           name: 'capability',
@@ -72,7 +72,7 @@ const getFeatureFields = (options: {
           label: 'Inverse Color',
           defaultValue: false,
           admin: {
-            readOnly: true,
+            readOnly: false,
           },
         },
         {
@@ -148,7 +148,7 @@ const getSolutionListFields = (
       type: 'array',
       required: true,
       minRows: 3,
-      maxRows: 6,
+      maxRows: 8,
       fields: getFeatureFields({
         includeTags: options?.includeTags,
         includeTopCapabilites: options?.includeTopCapabilites,

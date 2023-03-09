@@ -81,7 +81,7 @@ export async function getServerSideProps({ req, query, res }) {
   // Fetch data from external API
   const pageData: SolutionAnalyticsProps =
     await loadPageProps<SolutionAnalyticsProps>(
-      'solutions-analytics',
+      'solution-analytics-pages',
       query || null,
       req,
       res,

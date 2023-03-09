@@ -3,7 +3,7 @@
   "sourceRoot": "apps/website",
   "projectType": "application",
   "targets": {
-    "build": {
+    "compile": {
       "executor": "@nrwl/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
@@ -18,20 +18,32 @@
         "production": {}
       }
     },
+    "build": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["compile"],
+      "options": {
+        "commands": [
+          {
+            "command": "../../../node_modules/.bin/next-sitemap --config ../../../apps/website/next-sitemap.config.js"
+          }
+        ],
+        "cwd": "dist/apps/website"
+      }
+    },
     "serve": {
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "website:build",
+        "buildTarget": "website:compile",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "website:build:development",
+          "buildTarget": "website:compile:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "website:build:production",
+          "buildTarget": "website:compile:production",
           "dev": false
         }
       }
