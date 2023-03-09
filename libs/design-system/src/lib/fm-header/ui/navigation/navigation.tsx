@@ -108,6 +108,7 @@ export function Navigation({ items, isShowing }: NavigationProps) {
                 {dropdown?.length ? (
                   <>
                     <div
+                      onClick={handleOutsideClick}
                       className={classNames(styles['header__overlay'], {
                         [styles['header__overlay--show_state']]: isActive,
                       })}
