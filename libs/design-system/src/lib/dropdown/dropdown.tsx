@@ -64,6 +64,12 @@ export function Dropdown({ items }: DropdownProps) {
     }
   }, [items]);
 
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      handleDropdownList();
+    });
+  }, []);
+
   useOnClickOutside(dropdownRef, handleClose);
 
   return (
