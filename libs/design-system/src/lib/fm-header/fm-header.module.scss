@@ -93,12 +93,9 @@ $header_vr_padding: 1.6rem;
 	transition: transform $menu_animation_duration $base_ease;
 
 	&:not(:last-child) {
-		margin-right: calculateSize(3rem);
+		margin-right: calculateSize(4rem);
 	}
 
-	@include bp(theme('screens.fm-desktop'), min) {
-		margin-top: calculateSize(-1rem);
-	}
 
 	// @include bp(theme('screens.fm-tablet')) {
 	// 	.body--menu_open_state & {

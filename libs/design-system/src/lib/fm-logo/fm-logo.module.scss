@@ -2,16 +2,24 @@
 
 .logo {
 	display: block;
-	height: calculateSize(3.4rem);
-	width: calculateSize(12.6rem);
+	height: calculateSize(4rem);
+	width: calculateSize(14.4rem);
 
-	color: $black;
-
+	color: #212121;
 	transition: color .4s ease-in-out;
+
+	.logo__decor {
+		transition: color .4s ease-in-out;
+		color: $white;
+	}
 }
 
 .logo--inverted {
 	color: $white;
+
+	.logo__decor {
+		color: #343434;
+	}
 }
 
 .logo svg,
