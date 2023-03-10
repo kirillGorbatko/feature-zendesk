@@ -86,6 +86,7 @@
 
 	width: 100%;
 	height: auto;
+	max-height: calculateSize(50rem);
 	padding: calculateSize(4.5rem) calculateSize(4rem) calculateSize(8rem);
 
 	background: $white

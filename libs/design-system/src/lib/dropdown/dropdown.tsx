@@ -43,7 +43,10 @@ export function Dropdown({ items }: DropdownProps) {
         },
         onComplete: () => {
           const topPos = el.getBoundingClientRect().top;
-          el.style.maxHeight = window.innerHeight - topPos + 'px';
+          const height = window.innerHeight - topPos;
+          if (height < 500) {
+            el.style.maxHeight = height + 'px';
+          }
         },
       });
     }
