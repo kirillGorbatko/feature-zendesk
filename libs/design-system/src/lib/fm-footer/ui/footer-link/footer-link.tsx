@@ -2,9 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 
 import styles from './footer-link.module.scss';
-import { FooterNavigationLink } from '@featurefm/shared/types';
+import { Link } from '@featurefm/shared/types';
 
-export type FooterLinkProps = FooterNavigationLink & {
+export type FooterLinkProps = Link & {
   variant?: 'accent';
 };
 
