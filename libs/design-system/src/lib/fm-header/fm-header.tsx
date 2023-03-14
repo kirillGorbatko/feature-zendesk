@@ -92,7 +92,7 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
     <header
       className={classNames(styles['header'], {
         [styles['header--menu_open_state']]: isMobileNavOpen,
-        [styles['header--scroll_state']]: true,
+        [styles['header--scroll_state']]: isScrollState,
         [styles['header--transparent_mod']]: variant === 'transparent',
         [styles['header--inverted_mod']]: variant === 'inverted',
         [styles['header--hidden_mod']]: scrollDirection === 'down',
