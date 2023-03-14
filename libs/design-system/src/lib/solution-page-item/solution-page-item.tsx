@@ -1,5 +1,5 @@
 /* eslint-disable-next-line */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import classnames from 'classnames';
 import {
@@ -79,6 +79,14 @@ export function SolutionPageItem(props: SolutionPageItemProps) {
     (props.topCapabilites || []).map((x) => x.capability),
     (props.topCapabilites || []).length > 4 ? 2 : 1
   );
+
+  useEffect(() => {
+    return () => {
+      if (document?.body) {
+        document.body.classList.remove('dark')
+      }
+    }
+  }, []);
 
   return (
     <div className="relative" ref={ref}>
