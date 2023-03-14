@@ -12,6 +12,7 @@
 		transition: color .4s ease-in-out;
 		color: $white;
 	}
+	&.logo--inverted,
 	:global(.dark) & {
 		color: $white;
 	
