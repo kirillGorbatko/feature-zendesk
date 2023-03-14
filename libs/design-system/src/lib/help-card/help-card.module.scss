@@ -1,8 +1,6 @@
 @import '../sass-helpers/helpers-all.scss';
 
 .help_card {
-	@include flex_block(row, nowrap, flex-start);
-
 	position: relative;
 
 	min-height: 100%;
@@ -55,7 +53,8 @@
 }
 
 .help_card__link {
-	display: block;
+	@include flex_block(row, nowrap, flex-start);
+
 	width: 100%;
 	height: 100%;
 }

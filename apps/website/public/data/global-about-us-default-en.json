@@ -1,5 +1,4 @@
 {
-  "id": "63ea268ccc7f872de61d6d30",
   "heroSection": {
     "heroTitle": {
       "desktop": "Built for the unique needs of the music industry.",
@@ -12,26 +11,26 @@
       {
         "kpi": "2013",
         "title": "Founded Feature.fm",
-        "description": "We’ve spent nearly a decade understanding your needs to create the most advanced music marketing technology.",
-        "id": "63ea256beddcd2e768ffcdc3"
+        "description": "We’ve spent nearly a decade creating the most advanced music marketing technology.",
+        "id": "63ebdd0641eadd2d12fc4e66"
       },
       {
-        "kpi": "3MM+",
+        "kpi": "3M+",
         "title": "Links created",
         "description": "Feature.fm has created over 3 million links and landing pages for artists.",
-        "id": "63ea256beddcd2e768ffcdc4"
+        "id": "63ebdd0641eadd2d12fc4e67"
       },
       {
         "kpi": "300K",
         "title": "Artists",
         "description": "Over 300K artists use Feature.fm to promote their work.",
-        "id": "63ea256beddcd2e768ffcdc5"
+        "id": "63ebdd0641eadd2d12fc4e68"
       },
       {
         "kpi": "+1B",
         "title": "Fans reached",
-        "description": "Feature.fm reaches fans in every country on the planet, helping artists all over the world reach their fans.",
-        "id": "63ea256beddcd2e768ffcdc6"
+        "description": "Reaching fans in every country, helping artists all over the world reach their fans.",
+        "id": "63ebdd0641eadd2d12fc4e69"
       }
     ]
   },
@@ -47,40 +46,100 @@
         "quote": "We founded Feaure.fm with a mission to provide any artist, no matter how early in their career, professional music marketing tools along with guidance and education to help more artists be able to make a living doing what they love.",
         "quoter": "Lior Aharoni",
         "quoterTitle": "Founder & CEO",
-        "image": "63cd56867098174d18b72e87",
-        "id": "63ea256beddcd2e768ffcdc7"
+        "image": {
+          "id": "640ae14eca7548a4e73cc0b7",
+          "alt": "Lior Aharoni",
+          "filename": "liora.png",
+          "mimeType": "image/png",
+          "filesize": 472542,
+          "width": 500,
+          "height": 500,
+          "createdAt": "2023-03-10T07:50:38.053Z",
+          "updatedAt": "2023-03-10T07:50:38.053Z",
+          "url": "https://featurefm-payload-store.s3.us-west-2.amazonaws.com/liora.png"
+        },
+        "themeColor": "secondary",
+        "id": "63ebdd0641eadd2d12fc4e6a"
       },
       {
         "quoteTitle": "We are in the age of the artist",
         "quote": "Today, there are more opportunities than ever before for artists to build a fanbase and generate revenue. With such a massive volume of tracks uploaded to DSPs every day, we are truly in the “age of the artist” where the role of technology is critical to scale with the explosion of music creators.",
         "quoter": "Dan Sander",
         "quoterTitle": "CCO",
-        "image": "634345ee3afbea0791e3b416",
-        "id": "63ea256beddcd2e768ffcdc8"
+        "image": {
+          "id": "640ae170ca7548a4e73cc0f2",
+          "alt": "Lior Shapsa",
+          "filename": "shapsa.png",
+          "mimeType": "image/png",
+          "filesize": 277763,
+          "width": 500,
+          "height": 500,
+          "createdAt": "2023-03-10T07:51:12.952Z",
+          "updatedAt": "2023-03-10T07:51:12.952Z",
+          "url": "https://featurefm-payload-store.s3.us-west-2.amazonaws.com/shapsa.png"
+        },
+        "themeColor": "primary",
+        "id": "63ebdd0641eadd2d12fc4e6b"
       },
       {
         "quoteTitle": "Artists are at the forefront of everything we do",
         "quote": "Feature.fm helps artists of all sizes promote their work, grow their fan base and build their careers through smart marketing technology designed specifically for the unique needs of the music industry.",
         "quoter": "Mikey Sherman",
         "quoterTitle": "Director, Business Development",
-        "image": "634345733afbea0791e3b3d9",
-        "id": "63ea256beddcd2e768ffcdc9"
+        "image": {
+          "id": "640ae14eca7548a4e73cc0b7",
+          "alt": "Lior Aharoni",
+          "filename": "liora.png",
+          "mimeType": "image/png",
+          "filesize": 472542,
+          "width": 500,
+          "height": 500,
+          "createdAt": "2023-03-10T07:50:38.053Z",
+          "updatedAt": "2023-03-10T07:50:38.053Z",
+          "url": "https://featurefm-payload-store.s3.us-west-2.amazonaws.com/liora.png"
+        },
+        "themeColor": "primary",
+        "id": "63ebdd0641eadd2d12fc4e6c"
       },
       {
         "quoteTitle": "We strive to earn trust with our highly scalable and reliable technology",
         "quote": "With successful large-scale integrations with enterprise distribution, streaming, and ad tech companies, I am grateful to be at the forefront of technology that helps support so many artists. Feature.fm sits on a powerful infrastrcture of highly scalable technology that is built to handle large amounts of data, processing billions of monthly requests and deliver real-time analytics to our customers.",
         "quoter": "Zohar Aharoni",
         "quoterTitle": "Zohar Aharoni, Co-founder & CTO",
-        "image": "634345733afbea0791e3b3d9",
-        "id": "63ea256beddcd2e768ffcdca"
+        "image": {
+          "id": "640ae163ca7548a4e73cc0df",
+          "alt": "Zohar Aharoni",
+          "filename": "zohar.png",
+          "mimeType": "image/png",
+          "filesize": 238592,
+          "width": 501,
+          "height": 500,
+          "createdAt": "2023-03-10T07:50:59.849Z",
+          "updatedAt": "2023-03-10T07:50:59.849Z",
+          "url": "https://featurefm-payload-store.s3.us-west-2.amazonaws.com/zohar.png"
+        },
+        "themeColor": "primary",
+        "id": "63ebdd0641eadd2d12fc4e6d"
       },
       {
         "quoteTitle": "The music industry deserves its own, specialized marketing technology",
         "quote": "I am proud to lead the development of a team that utilizes technology to empower musicians and enhances the music listening experience for fans. We are revolutionizing the way music is marketed and discovered through cutting-edge technology that allows artists to directly connect with their fans and promote their music effectively.",
         "quoter": "Lior Shapsa",
         "quoterTitle": "Lior Shapsa, Co-founder & VP R&D",
-        "image": "634345733afbea0791e3b3d9",
-        "id": "63ea256beddcd2e768ffcdcb"
+        "image": {
+          "id": "640ae170ca7548a4e73cc0f2",
+          "alt": "Lior Shapsa",
+          "filename": "shapsa.png",
+          "mimeType": "image/png",
+          "filesize": 277763,
+          "width": 500,
+          "height": 500,
+          "createdAt": "2023-03-10T07:51:12.952Z",
+          "updatedAt": "2023-03-10T07:51:12.952Z",
+          "url": "https://featurefm-payload-store.s3.us-west-2.amazonaws.com/shapsa.png"
+        },
+        "themeColor": "tertiary",
+        "id": "63ebdd0641eadd2d12fc4e6e"
       }
     ]
   },
@@ -92,54 +151,54 @@
     },
     "partners": [
       {
-        "name": "Universal Music",
+        "name": "YouTube",
         "imageUrl": "/img/about-us/partners/youtube.png",
-        "id": "63ea256beddcd2e768ffcdcc"
+        "id": "63ebdd0641eadd2d12fc4e6f"
       },
       {
-        "name": "Secretly Group",
+        "name": "Audiomack",
         "imageUrl": "/img/about-us/partners/audiomack.png",
-        "id": "63ea256beddcd2e768ffcdcd"
+        "id": "63ebdd0641eadd2d12fc4e70"
       },
       {
-        "name": "Secretly Canadian",
+        "name": "Tidal",
         "imageUrl": "/img/about-us/partners/tidal.png",
-        "id": "63ea256beddcd2e768ffcdce"
+        "id": "63ebdd0641eadd2d12fc4e71"
       },
       {
-        "name": "Foundation Media",
+        "name": "Bandsintown",
         "imageUrl": "/img/about-us/partners/bandsintown.png",
-        "id": "63ea256beddcd2e768ffcdcf"
+        "id": "63ebdd0641eadd2d12fc4e72"
       },
       {
-        "name": "Janjaguwar",
+        "name": "Amazon Music",
         "imageUrl": "/img/about-us/partners/amazonmusic.png",
-        "id": "63ea256beddcd2e768ffcdd0"
+        "id": "63ebdd0641eadd2d12fc4e73"
       },
       {
-        "name": "Dangerbird",
+        "name": "Ditto",
         "imageUrl": "/img/about-us/partners/ditto.png",
-        "id": "63ea256beddcd2e768ffcdd1"
+        "id": "63ebdd0641eadd2d12fc4e74"
       },
       {
-        "name": "Janjaguwar",
+        "name": "AWAL",
         "imageUrl": "/img/about-us/partners/awal.png",
-        "id": "63ea256beddcd2e768ffcdd2"
+        "id": "63ebdd0641eadd2d12fc4e75"
       },
       {
-        "name": "Dead Oceans",
+        "name": "OneRPM",
         "imageUrl": "/img/about-us/partners/onerpm.png",
-        "id": "63ea256beddcd2e768ffcdd3"
+        "id": "63ebdd0641eadd2d12fc4e76"
       },
       {
-        "name": "300 Entertainnent",
+        "name": "Symphonic Distribution",
         "imageUrl": "/img/about-us/partners/symphonic.png",
-        "id": "63ea256beddcd2e768ffcdd4"
+        "id": "63ebdd0641eadd2d12fc4e77"
       },
       {
-        "name": "Secretly Group",
+        "name": "Altafonte",
         "imageUrl": "/img/about-us/partners/altafonte.png",
-        "id": "63ea256beddcd2e768ffcdd5"
+        "id": "63ebdd0641eadd2d12fc4e78"
       }
     ]
   },
@@ -162,7 +221,8 @@
   },
   "_status": "published",
   "globalType": "global-about-us",
-  "createdAt": "2023-02-13T12:01:16.961Z",
-  "updatedAt": "2023-02-13T12:01:16.961Z",
-  "meta": {}
+  "createdAt": "2023-02-14T19:12:09.797Z",
+  "updatedAt": "2023-03-12T17:20:23.971Z",
+  "meta": {},
+  "id": "63ebdd09c8d2da25b2314bee"
 }

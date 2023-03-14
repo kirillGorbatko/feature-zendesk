@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, MutableRefObject, useState } from 'react';
 import {
   Button,
   H2,
@@ -28,6 +28,42 @@ export interface TestimonialsProps {
   testimonials: Testimonial[];
 }
 
+type TestimonialSliderProps = {
+  testimonials: Testimonial[];
+  activeSlide: number;
+  timeout: MutableRefObject<NodeJS.Timeout | null>;
+  setPrevSlide: (x: number) => void;
+  setActiveSlide: (x: number) => void;
+}
+
+function TestimonialSlider(props: TestimonialSliderProps) {
+ return (
+   <div className="flex flex-col-reverse desktop:flex-row">
+     <div className="relative w-full tablet:w-[400px]"></div>
+     <div className="tablet:mx-0 flex justify-center tablet:justify-start z-40">
+       <div className="flex flex-row gap-x-[15px] absolute -bottom-[60px] desktop:bottom-[60px]">
+         {props.testimonials.map((item, index) => (
+           <a
+             key={index}
+             href="#"
+             className={classnames('w-8 h-5 border-foreground', {
+               'border-b-4': index === props.activeSlide,
+               'border-b border-line2': index != props.activeSlide,
+             })}
+             onClick={(ev) => {
+               ev.preventDefault();
+               props.setPrevSlide(props.activeSlide);
+               props.setActiveSlide(index);
+               props.timeout.current ? clearTimeout(props.timeout.current) : {};
+             }}
+           />
+         ))}
+       </div>
+     </div>
+   </div>
+ )
+}
+
 export function Testimonials(props: TestimonialsProps) {
   const [activeSlide, setActiveSlide] = useState(0);
   const timeout = useRef<NodeJS.Timeout | null>(null);
@@ -46,6 +82,13 @@ export function Testimonials(props: TestimonialsProps) {
         <H2 className="font-supergt z-1">
           <Text text={props.title} />
         </H2>
+        <Button
+          width="full"
+          type="tertiary-inverted"
+          size="extra-large"
+          className="tablet:hidden my-20"
+          text="Start now for free"
+        />
       </ViewPort>
       <ViewPort padding="0">
         <div className="mt-24 tablet:mt-[192px]">
@@ -200,29 +243,13 @@ export function Testimonials(props: TestimonialsProps) {
             </div>
           ))}
         </div>
-        <div className="flex flex-col-reverse desktop:flex-row">
-          <div className="relative w-full tablet:w-[400px]"></div>
-          <div className="tablet:mx-0 flex justify-center tablet:justify-start">
-            <div className="flex flex-row gap-x-[15px] absolute -bottom-[60px] desktop:bottom-[60px]">
-              {props.testimonials.map((item, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className={classnames('w-8 h-5 border-foreground', {
-                    'border-b-4': index === activeSlide,
-                    'border-b border-line2': index != activeSlide,
-                  })}
-                  onClick={(ev) => {
-                    ev.preventDefault();
-                    setPrevSlide(activeSlide);
-                    setActiveSlide(index);
-                    clearTimeout(timeout.current as NodeJS.Timeout);
-                  }}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+        <TestimonialSlider
+          testimonials={props.testimonials}
+          activeSlide={activeSlide}
+          timeout={timeout}
+          setPrevSlide={setPrevSlide}
+          setActiveSlide={setActiveSlide}
+        />
       </ViewPort>
     </section>
   );

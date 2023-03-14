@@ -22,12 +22,17 @@ $header_vr_padding: 1.6rem;
 
 	font-size: 1rem;
 
-	z-index: 100;
+	// override tailwind class
+	z-index: 200000;
 
 	&.header--transparent_mod {
 		&::before {
 			display: none;
 		}
+	}
+
+	&.header--hidden_mod {
+		transform: translateY(-100%);
 	}
 
 	&.header--transparent_mod:not(.header--scroll_state) {
@@ -42,6 +47,28 @@ $header_vr_padding: 1.6rem;
 		background-color: theme('colors.background');
 	}
 
+	:global(.dark) & {
+		background-color: theme('colors.foreground');
+
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		
+			width: 100%;
+			height: 100%;
+
+			background-color: $black;
+		
+			content: '';
+		}
+	}
+
 	&::before {
 		position: absolute;
 		bottom: 0;
@@ -52,10 +79,18 @@ $header_vr_padding: 1.6rem;
 		content: ''
 	}
 
-	@include bp(theme('screens.fm-desktop'), min) {
-		height: $header_height_desktop;
+	@include bp(theme('screens.desktop'), min) {
 		padding-left: $gl_desktop_indent;
 		padding-right: $gl_desktop_indent;
+	}
+
+	@include bp(theme('screens.desktop-max')) {
+		padding-left: $gl_mobile_indent;
+		padding-right: $gl_mobile_indent;
+	}
+
+	@include bp(theme('screens.fm-desktop'), min) {
+		height: $header_height_desktop;
 
 		transition: transform $menu_animation_duration $base_ease, background .3s $base_ease;
 
@@ -64,10 +99,8 @@ $header_vr_padding: 1.6rem;
 
 	@include bp(theme('screens.fm-tablet')) {
 		height: $header_height_mobile;
-		padding-left: $gl_mobile_indent;
-		padding-right: $gl_mobile_indent;
 
-		transition: height $menu_animation_duration $base_ease, background .3s $base_ease;
+		transition: height $menu_animation_duration $base_ease, background .3s $base_ease, transform $menu_animation_duration $base_ease,;
 
 		&.header--menu_open_state {
 			height: $header_height_mobile_menu_open;

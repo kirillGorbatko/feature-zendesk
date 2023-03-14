@@ -14,12 +14,14 @@ import {
   TestimonialsQuote,
   EnterpriseCustomersSlider,
   Button,
+  FmHeader,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../src/helpers/variant';
 import { ActionBoxProps, BusinessProps } from '@featurefm/design-system/props';
 import classnames from 'classnames';
 import React from 'react';
 import { getSelectorsByUserAgent } from 'react-device-detect';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export function ActionBox(props: ActionBoxProps) {
   return (
@@ -51,7 +53,7 @@ export function ActionBox(props: ActionBoxProps) {
           <Image
             src="/img/business/retarget-box.png"
             mobileSrc="hide"
-            className="absolute -bottom-[187px] left-0"
+            className="absolute -bottom-[115px] left-0"
           />
         )}
       </div>
@@ -96,7 +98,7 @@ export function Business(props: BusinessProps) {
 
   return (
     <>
-      <Header solutions={solutions} />
+      <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
       <div className="relative bg-foreground text-background w-full pt-4 desktop:pt-6">
         <ViewPort>
           <div className="flex flex-col">
@@ -203,7 +205,16 @@ export function Business(props: BusinessProps) {
       <ViewPort>
         <div className="flex flex-col desktop:flex-row mt-[160px] desktop:mt-[200px] justify-between desktop:items-center">
           <div>
-            <Text text={props.featuresSectionIntro.title} as="h3" />
+            <Text
+              className="hidden"
+              text={props.featuresSectionIntro.title}
+              as="h3"
+            />
+            <Text
+              className="desktop:hidden"
+              text={props.featuresSectionIntro.title}
+              as="h2"
+            />
           </div>
           <div className="text-[20px] font-normal desktop:font-light desktop:w-[570px] mt-10 desktop:mt-0 leading-[25px]">
             <Text text={props.featuresSectionIntro.description} />
@@ -220,7 +231,7 @@ export function Business(props: BusinessProps) {
         <div className="w-full desktop:max-w-[500px] mt-[20px] desktop:mt-0">
           {props.manageFeatures.features.map((x, indx) => (
             <div
-              className="pt-[60px] tablet:mt-[100px] tablet:[&:first-child]:mt-[200px]"
+              className="pt-[60px] tablet:mt-5 tablet:[&:first-child]:mt-[200px]"
               key={indx}
             >
               <Text
@@ -257,13 +268,22 @@ export function Business(props: BusinessProps) {
           ))}
         </div>
         <div className="mt-[160px] desktop:mt-[200px]">
-          <Text text={props.moreFeaturesSection.title} as="h3" />
-          <div className="grid grid-cols-1 desktop:grid-cols-2 gap-10 desktop:gap-x-[60px] desktop:gap-y-[80px] mt-[80px] desktop:mt-[100px]">
+          <Text
+            className="hidden"
+            text={props.moreFeaturesSection.title}
+            as="h3"
+          />
+          <Text
+            className="desktop:hidden"
+            text={props.moreFeaturesSection.title}
+            as="h2"
+          />
+          <div className="grid grid-cols-1 desktop:grid-cols-2 gap-10 desktop:gap-[60px] desktop:gap-y-0 mt-[80px] desktop:mt-[100px]">
             {props.moreFeaturesSection.features.map((x, i) => (
               <ActionBox {...x} indx={i} key={i} />
             ))}
           </div>
-          <div className="flex justify-end">
+          <div className="block tablet:flex justify-end">
             <Button
               {...props.moreFeaturesSection.ctaButton}
               size="extra-large"
@@ -275,7 +295,16 @@ export function Business(props: BusinessProps) {
       <div className="relative bg-foreground text-background w-full mt-[160px] desktop:mt-[200px] pt-[90px] desktop:pt-[200px]">
         <ViewPort className="relative">
           <div className="relative desktop:absolute top-0 right-0 desktop:w-[570px]">
-            <Text text={props.fanRelationshipSection.title} as="h3" />
+            <Text
+              className="hidden"
+              text={props.fanRelationshipSection.title}
+              as="h3"
+            />
+            <Text
+              className="desktop:hidden"
+              text={props.fanRelationshipSection.title}
+              as="h2"
+            />
             <Text
               text={props.fanRelationshipSection.description}
               className="font-light mt-10 desktop:mt-8"
@@ -303,7 +332,16 @@ export function Business(props: BusinessProps) {
       <ViewPort>
         <div className="flex mt-[160px] desktop:mt-[200px] flex-col desktop:flex-row desktop:justify-between desktop:items-center">
           <div>
-            <Text text={props.needScaleSection.title} as="h3" />
+            <Text
+              className="hidden"
+              text={props.needScaleSection.title}
+              as="h3"
+            />
+            <Text
+              className="desktop:hidden"
+              text={props.needScaleSection.title}
+              as="h2"
+            />
           </div>
           <div className="desktop:w-[570px] font-normal desktop:font-light leading-[25px] text-xl mt-10">
             <Text text={props.needScaleSection.description} />
@@ -364,7 +402,16 @@ export function Business(props: BusinessProps) {
         <ViewPort>
           <div className="desktop:grid grid-cols-2 text-background pt-20 desktop:pt-[200px]">
             <div className="w-full">
-              <Text text={props.weAreYourPartnersSection.title} as="h3" />
+              <Text
+                className="hidden"
+                text={props.weAreYourPartnersSection.title}
+                as="h3"
+              />
+              <Text
+                className="desktop:hidden"
+                text={props.weAreYourPartnersSection.title}
+                as="h2"
+              />
             </div>
             <div className="text-xl mt-10 desktop:mt-20 font-normal desktop:font-light leading-[25px]">
               <Text text={props.weAreYourPartnersSection.subtitle} />

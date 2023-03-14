@@ -117,11 +117,14 @@ export function SolutionPageItem(props: SolutionPageItemProps) {
             {notes && notes.length > 0 && (
               <div className="mt-[60px]">
                 {notes.map((subNotes, index) => (
-                  <div key={index} className="flex flex-col tablet:flex-row">
+                  <div
+                    key={index}
+                    className="flex flex-col gap-[30px] tablet:flex-row"
+                  >
                     {subNotes.map((note, index) => (
                       <div
                         key={index}
-                        className="flex text-center justify-center desktop:text-left mr-[30px] px-[30px] py-4 desktop:py-5 mb-5 desktop:mb-10 font-regular text-[13px] desktop:text-sm w-full desktop:w-fit border border-[#cfcfcf] dark:border-[#3a3a3a] rounded-full"
+                        className="flex text-center justify-center desktop:text-left px-[30px] py-4 desktop:py-5 mb-5 desktop:mb-10 font-regular text-[13px] desktop:text-sm w-full desktop:w-fit border border-[#cfcfcf] dark:border-[#3a3a3a] rounded-[25px]"
                       >
                         {note}
                       </div>
@@ -133,7 +136,7 @@ export function SolutionPageItem(props: SolutionPageItemProps) {
             {props.ctaButton && props.ctaButton.text && (
               <Button
                 {...props.ctaButton}
-                className="hidden desktop:block mt-10 w-fit"
+                className="hidden desktop:block mt-[60px] w-fit"
                 size="extra-large"
               />
             )}

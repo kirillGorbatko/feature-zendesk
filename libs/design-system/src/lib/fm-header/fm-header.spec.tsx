@@ -1,11 +1,11 @@
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 import { render } from '@testing-library/react';
-import { NAVIGATION_MOCK_DATA } from './data';
 
 import FmHeader from './fm-header';
 
 describe('FmHeader', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<FmHeader items={NAVIGATION_MOCK_DATA} />);
+    const { baseElement } = render(<FmHeader items={HEADER_NAVIGATION} />);
     expect(baseElement).toBeTruthy();
   });
 });

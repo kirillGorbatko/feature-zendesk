@@ -1,4 +1,6 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
+import { SocialItem } from '../social-item/social-item';
+import SocialLink from '../social-link/social-link';
 import { SocialList } from './social-list';
 
 const Story: ComponentMeta<typeof SocialList> = {
@@ -15,7 +17,17 @@ const Story: ComponentMeta<typeof SocialList> = {
 export default Story;
 
 const Template: ComponentStory<typeof SocialList> = (args) => (
-  <SocialList {...args} />
+  <SocialList {...args}>
+    <SocialItem>
+      <SocialLink href="/" iconName="facebook" />
+    </SocialItem>
+    <SocialItem>
+      <SocialLink href="/" iconName="instagram" />
+    </SocialItem>
+    <SocialItem>
+      <SocialLink href="/" iconName="linkedin" />
+    </SocialItem>
+  </SocialList>
 );
 
 export const Default = Template.bind({});

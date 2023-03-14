@@ -27,11 +27,16 @@ export function NavigationList({
       )}
     >
       <ul className={styles['footer__nav_list']}>
-        {items.map(({ href, title }) => {
+        {items.map(({ href, title, target }) => {
           const linkVariant = variant === 'accent' ? 'accent' : undefined;
           return (
             <li className={styles['footer__nav_item']} key={title}>
-              <FooterLink href={href} title={title} variant={linkVariant} />
+              <FooterLink
+                href={href}
+                title={title}
+                target={target}
+                variant={linkVariant}
+              />
             </li>
           );
         })}

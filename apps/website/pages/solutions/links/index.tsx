@@ -1,7 +1,6 @@
 /* eslint-disable-next-line */
 import {
   H1,
-  Header,
   H4,
   ViewPort,
   Text,
@@ -21,10 +20,11 @@ import {
   SolutionBenefit,
   Image,
   GetStartedCtaProps,
+  FmHeader,
 } from '@featurefm/design-system';
-import { solutions } from '../../../src/configuration/header-solutions';
 import { loadPageProps } from '../../../src/helpers/variant';
 import React from 'react';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 type SolutionBenefitsProps = {
   title: string;
@@ -65,7 +65,7 @@ export function SolutionLinks(props: SolutionLinksProps) {
         transition: 'background-color 0.5s ease',
       }}
     >
-      <Header solutions={solutions} darkMode={false} />
+      <FmHeader items={HEADER_NAVIGATION} />
       <SolutionHero {...props.heroSection} />
       <ViewPort>
         <div className="flex flex-col desktop:flex-row text-2xl font-normal desktop:text-3xl justify-between items-center mt-20 desktop:mt-0 desktop:mb-[150px]">

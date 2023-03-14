@@ -7,7 +7,7 @@ const Story: ComponentMeta<typeof FMButton> = {
   argTypes: {
     variant: {
       defaultValue: 'primary',
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['primary', 'secondary', 'tertiary', 'inverted'],
       control: { type: 'select' },
     },
     size: {
@@ -48,4 +48,10 @@ export const Tertiary = Template.bind({});
 Tertiary.args = {
   variant: 'tertiary',
   children: 'Tertiary',
+};
+
+export const Inverted = Template.bind({});
+Inverted.args = {
+  variant: 'inverted',
+  children: 'Inverted',
 };

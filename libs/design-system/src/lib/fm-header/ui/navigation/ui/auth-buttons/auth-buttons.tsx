@@ -4,12 +4,22 @@ import styles from './auth-buttons.module.scss';
 import classNames from 'classnames';
 import Link from 'next/link';
 
-export function AuthButtons() {
+interface AuthButtonsProps {
+  variant?: 'transparent' | 'inverted';
+}
+
+export function AuthButtons({ variant }: AuthButtonsProps) {
   return (
-    <div className={styles['header__auth']}>
+    <div
+      className={classNames(styles['header__auth'], {
+        [styles['header__auth--inverted_mod']]: variant === 'inverted',
+      })}
+    >
       <div className={styles['header__auth_item']}>
         <div className={styles['header__auth_link']}>
-          <Link href="/">Login</Link>
+          <Link href={`${process.env['NEXT_PUBLIC_LOGIN_DOMAIN']}/login/`}>
+            Login
+          </Link>
         </div>
       </div>
       <div className={styles['header__auth_item']}>
@@ -18,18 +28,25 @@ export function AuthButtons() {
             styles['header__auth_button--mobile_mod'],
           ])}
         >
-          <FMButton variant="primary" size="lg" mobileWidth="full">
-            Start now
-          </FMButton>
+          <a href={`${process.env['NEXT_PUBLIC_LOGIN_DOMAIN']}/signup/`}>
+            <FMButton variant="primary" size="lg" mobileWidth="full">
+              Start now
+            </FMButton>
+          </a>
         </div>
         <div
           className={classNames(styles['header__auth_button'], [
             styles['header__auth_button--desktop_mod'],
           ])}
         >
-          <FMButton variant="secondary" size="sm">
-            Start now
-          </FMButton>
+          <a href={`${process.env['NEXT_PUBLIC_LOGIN_DOMAIN']}/signup/`}>
+            <FMButton
+              variant={variant === 'inverted' ? 'inverted' : 'secondary'}
+              size="sm"
+            >
+              Start now
+            </FMButton>
+          </a>
         </div>
       </div>
     </div>

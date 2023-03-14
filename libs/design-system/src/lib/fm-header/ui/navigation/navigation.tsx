@@ -1,23 +1,24 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import { useMatchMedia } from '@featurefm/shared/hooks';
 import { useOnClickOutside } from '@featurefm/shared/hooks';
 
-import styles from './navigation.module.scss';
-
 import { Dropdown, AuthButtons } from './ui';
-import { NavigationItem } from '../../types';
 
 import classNames from 'classnames';
-import { Transition } from '@headlessui/react';
 import Link from 'next/link';
+import { Transition } from '@headlessui/react';
+import { HeaderNavigationItem } from '@featurefm/shared/types';
+
+import styles from './navigation.module.scss';
 
 export interface NavigationProps {
-  items: NavigationItem[];
+  items: HeaderNavigationItem[];
   isShowing?: boolean;
+  variant?: 'transparent' | 'inverted';
 }
 
-export function Navigation({ items, isShowing }: NavigationProps) {
+export function Navigation({ items, isShowing, variant }: NavigationProps) {
   const [activeItem, setActiveItem] = useState<null | string>(null);
   const [isScrolled, setScrolled] = useState<null | boolean>(null);
   const { isMobile } = useMatchMedia();
@@ -39,6 +40,13 @@ export function Navigation({ items, isShowing }: NavigationProps) {
     title: string,
     isDropdownExist: boolean
   ) => {
+    if (
+      isDropdownExist !== true &&
+      $documentBody.current?.classList.contains(styles['body--menu_open'])
+    ) {
+      $documentBody.current.classList.remove(styles['body--menu_open']);
+    }
+
     if (isDropdownExist && !isMobile) {
       event?.preventDefault();
 
@@ -62,11 +70,23 @@ export function Navigation({ items, isShowing }: NavigationProps) {
     }
   };
 
+  useEffect(() => {
+    const $bodyEl = $documentBody.current;
+
+    return () => {
+      if ($bodyEl) {
+        $bodyEl.classList.remove(styles['body--menu_open']);
+      }
+    };
+  }, []);
+
   useOnClickOutside($linksContainer, handleOutsideClick);
 
   return (
     <Transition
-      className={styles['header__menu']}
+      className={classNames(styles['header__menu'], {
+        [styles['header__menu--inverted_mod']]: variant === 'inverted',
+      })}
       enterFrom={styles['header__menu--hiden_state']}
       leaveTo={styles['header__menu--hiden_state']}
       show={isShowing}
@@ -124,7 +144,7 @@ export function Navigation({ items, isShowing }: NavigationProps) {
           })}
         </ul>
       </div>
-      <AuthButtons />
+      <AuthButtons variant={variant} />
     </Transition>
   );
 }

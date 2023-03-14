@@ -1,21 +1,21 @@
 /* eslint-disable-next-line */
 import React from 'react';
 import { loadPageProps } from '../../../src/helpers/variant';
-import { CurrencyElement, Footer, Header } from '@featurefm/design-system';
+import { CurrencyElement, FmHeader, Footer } from '@featurefm/design-system';
 import { Pricing, PricingProps } from '../../../src/templates/pricing';
 import { MobilePricing } from '../../../src/templates/pricing/mobile';
 import { FetchPricingResponse } from '../../../src/templates/pricing/types';
-import { solutions } from '../../../src/configuration/header-solutions';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export function PricingArtist(props: PricingProps) {
   return (
     <>
       <div className="hidden desktop:block">
-        <Header solutions={solutions} darkMode={false} />
+        <FmHeader items={HEADER_NAVIGATION} />
         <Pricing {...props} />
       </div>
       <div className="desktop:hidden">
-        <Header solutions={solutions} darkMode={true} />
+        <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
         <MobilePricing {...props} />
       </div>
       <Footer />

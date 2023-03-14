@@ -12,15 +12,15 @@
 		transition: color .4s ease-in-out;
 		color: $white;
 	}
-}
-
-.logo--inverted {
-	color: $white;
-
-	.logo__decor {
-		color: #343434;
+	:global(.dark) & {
+		color: $white;
+	
+		.logo__decor {
+			color: #343434;
+		}
 	}
 }
+
 
 .logo svg,
 .logo__img {

@@ -10,20 +10,26 @@ import {
   MainPart3,
   Testimonials,
   GetStartedCta,
-  Footer,
-  LineSeparator,
   ForProfessionalsCta,
   TestimonialsProps,
   ForProfessionalsCtaProps,
   HeroArtistCarousel,
   GetStartedCtaProps,
+  FMFooter,
+  FmHeader,
+  Header,
 } from '@featurefm/design-system';
-import { Header, MainHero1, MainHeroProps } from '@featurefm/design-system';
+import { MainHero1, MainHeroProps } from '@featurefm/design-system';
 import { getSelectorsByUserAgent } from 'react-device-detect';
 import { loadPageProps } from '../src/helpers/variant';
-import { solutions } from '../src/configuration/header-solutions';
 import React from 'react';
 import Head from 'next/head';
+import { solutions } from '../src/configuration/header-solutions';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export type PageData = {
   heroSection: MainHeroProps;
@@ -39,7 +45,7 @@ export type PageData = {
 export function Index(props: PageData) {
   return (
     <div>
-      <Header solutions={solutions} />
+      <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
       <MainHero1 {...props.heroSection} />
       <div className="relative h-[400px] tablet:h-[510px] -mt-20">
         <HeroArtistCarousel isMobile={props.isMobile} />
@@ -61,7 +67,10 @@ export function Index(props: PageData) {
         <ForProfessionalsCta {...props.forProfessionalsCTASection} />
       </ViewPort>
       <GetStartedCta {...props.getStartedCTASection} />
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </div>
   );
 }

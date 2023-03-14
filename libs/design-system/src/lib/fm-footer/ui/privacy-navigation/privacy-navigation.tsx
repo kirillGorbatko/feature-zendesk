@@ -1,10 +1,11 @@
+import { FooterNavigationLink } from '@featurefm/shared/types';
 import React from 'react';
-import { FooterLink, FooterLinkProps } from '../footer-link/footer-link';
+import { FooterLink } from '../footer-link/footer-link';
 
 import styles from './privacy-navigation.module.scss';
 
 export type PrivacyNavigationProps = {
-  items: FooterLinkProps[];
+  items: FooterNavigationLink[];
   copyright: string;
 };
 
@@ -14,10 +15,10 @@ export function PrivacyNavigation({
 }: PrivacyNavigationProps) {
   return (
     <ul className={styles['footer__copy']}>
-      {items.map(({ href, title }, index) => {
+      {items.map(({ href, title, target }, index) => {
         return (
           <li className={styles['footer__copy_item']} key={index}>
-            <FooterLink href={href} title={title} />
+            <FooterLink href={href} title={title} target={target} />
           </li>
         );
       })}

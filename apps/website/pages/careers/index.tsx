@@ -11,10 +11,12 @@ import {
   Image,
   H3,
   TestimonialsQuote,
+  FmHeader,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../src/helpers/variant';
 import classnames from 'classnames';
 import React from 'react';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export type CareerQualityProps = {
   title?: string;
@@ -57,7 +59,7 @@ export interface CareersProps {
 export function Careers(props: CareersProps) {
   return (
     <>
-      <Header solutions={solutions} darkMode={false} />
+      <FmHeader items={HEADER_NAVIGATION} />
       <ViewPort className="relative">
         <Image
           src="/img/careers/hero.png"

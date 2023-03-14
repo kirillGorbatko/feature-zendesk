@@ -20,7 +20,7 @@ export function Logo(props: LogoProps) {
       <Link href={props.href || '/'}>
         <a
           href={props.href || '/'}
-          className="flex focus:outline-none h-10 items-center"
+          className="flex focus:outline-none h-10 items-center -mt-1"
         >
           <span className="sr-only">Feature.fm Logo</span>
           <svg

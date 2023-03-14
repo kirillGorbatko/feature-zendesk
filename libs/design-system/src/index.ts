@@ -74,6 +74,7 @@ export * from './lib/button/button';
 export * from './lib/blend/blend';
 export * from './lib/fm-button/fm-button';
 export * from './lib/social-link/social-link';
+export * from './lib/social-item/social-item';
 export * from './lib/social-list/social-list';
 export * from './lib/fm-footer/fm-footer';
 export * from './lib/fm-header/fm-header';

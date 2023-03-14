@@ -95,7 +95,7 @@ function FloatingFooter(props: FloatingFooterProps) {
             )}
         </div>
       </div>
-      <div className="h-10 w-full" />
+      <div className="h-[200px] w-full" />
     </>
   );
 }

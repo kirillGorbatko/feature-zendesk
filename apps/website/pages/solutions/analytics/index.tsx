@@ -1,7 +1,6 @@
 /* eslint-disable-next-line */
 import {
   H1,
-  Header,
   H4,
   SolutionPageItemsProps,
   H3,
@@ -16,10 +15,11 @@ import {
   SolutionHeroProps,
   MoreSolutionsProps,
   GetStartedCtaProps,
+  FmHeader,
 } from '@featurefm/design-system';
-import { solutions } from '../../../src/configuration/header-solutions';
 import { loadPageProps } from '../../../src/helpers/variant';
 import React from 'react';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export interface SolutionAnalyticsProps {
   heroSection: SolutionHeroProps;
@@ -36,7 +36,7 @@ export function SolutionAnalytics(props: SolutionAnalyticsProps) {
         transition: 'background-color 0.5s ease',
       }}
     >
-      <Header solutions={solutions} darkMode={false} />
+      <FmHeader items={HEADER_NAVIGATION} />
       <SolutionHero {...props.heroSection} />
       <H4 className="px-[30px] desktop:mb-10 desktop:px-0 mt-[150px] desktop:mt-0 desktop:w-[1220px] m-auto">
         What insights can you
@@ -60,6 +60,7 @@ export function SolutionAnalytics(props: SolutionAnalyticsProps) {
           <SolutionPageItem
             key={counter}
             {...x}
+            mobileImageOnTop={true}
             counter={counter + 1}
             threshold={0.2}
             className="desktop:py-[110px]"

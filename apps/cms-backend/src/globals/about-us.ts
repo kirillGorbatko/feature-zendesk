@@ -3,6 +3,7 @@ import groupField from '../fields/group';
 import getButtonField from '../fields/button';
 import { saveGlobalToJson } from '../hooks/save-to-json';
 import getResponsiveTextField from '../fields/responsive-text';
+import getOptionsField from '../fields/options';
 
 const PAGE_COLLECTION_NAME = 'global-about-us';
 
@@ -143,6 +144,25 @@ const GlobalAboutUs: GlobalConfig = {
                   'Maximum upload file size: 12MB. Recommended file size for images is <500KB.',
               },
             },
+            getOptionsField(
+              'themeColor',
+              [
+                {
+                  label: 'Primary',
+                  value: 'primary',
+                },
+                {
+                  label: 'Secondary',
+                  value: 'secondary',
+                },
+                {
+                  label: 'Tertiary',
+                  value: 'tertiary',
+                },
+              ],
+              'primary',
+              '33.3%'
+            ),
           ],
           admin: {
             className: PAGE_COLLECTION_NAME,

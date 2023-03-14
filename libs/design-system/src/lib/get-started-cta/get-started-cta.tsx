@@ -77,7 +77,7 @@ export function GetStartedCta(props: GetStartedCtaProps) {
           <GetStartedRightImage darkLayout={true} />
         </div>
       </div>
-      <div className="absolute -bottom-[31px] w-full z-1 desktop:hidden">
+      <div className="absolute -bottom-[31px] w-full z-1 desktop:hidden overflow-hidden">
         <GetStartedBottomImage darkLayout={true} />
       </div>
     </div>

@@ -2,8 +2,12 @@ import { FMFooter, FmHeader } from '@featurefm/design-system';
 import { CustomHead } from '../custom-head/custom-head';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import { NAVIGATION_MOCK_DATA } from '../src/data';
 import './styles.css';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -14,14 +18,19 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <CustomHead title="Welcome to zendesk!" />
       <main className="app">
         <FmHeader
-          items={NAVIGATION_MOCK_DATA}
+          items={HEADER_NAVIGATION}
           variant={isErrorPage && 'transparent'}
         />
         <div className="wrapper">
           <div className="base">
             <Component {...pageProps} />
           </div>
-          {!isErrorPage && <FMFooter />}
+          {!isErrorPage && (
+            <FMFooter
+              mainNavigation={FOOTER_NAVIGATION}
+              privacyNavigation={PRIVACY_NAVIGATION}
+            />
+          )}
         </div>
       </main>
     </>

@@ -3,25 +3,25 @@ import React, { useEffect, useState } from 'react';
 import { Pricing, PricingProps } from '../../../src/templates/pricing';
 import {
   CurrencyElement,
+  FmHeader,
   Footer,
-  Header,
   PricingSummaryBoxProps,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../../src/helpers/variant';
 import { FetchPricingResponse } from '../../../src/templates/pricing/types';
-import { solutions } from '../../../src/configuration/header-solutions';
 import { MobilePricing } from '../../../src/templates/pricing/mobile';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export function PricingBusiness(props: PricingProps) {
   return (
     <>
       <div className="hidden desktop:block dark bg-foreground">
-        <Header solutions={solutions} darkMode={true} autoHide={false} />
+        <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
         <Pricing {...props} />
         <Footer />
       </div>
       <div className="desktop:hidden dark">
-        <Header solutions={solutions} darkMode={true} autoHide={false} />
+        <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
         <MobilePricing {...props} />
         <Footer />
       </div>

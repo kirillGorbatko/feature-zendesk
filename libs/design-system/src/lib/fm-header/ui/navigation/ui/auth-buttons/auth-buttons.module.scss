@@ -53,6 +53,15 @@
 		color: $white;
 		font-weight: 500;
 	}
+
+	:global(.dark) & {
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
 }
 
 .header__auth_button {

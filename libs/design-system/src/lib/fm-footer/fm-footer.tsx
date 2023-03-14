@@ -1,30 +1,64 @@
 import React from 'react';
-import { FMButton, SocialList } from '@featurefm/design-system';
-import { NAVIGATION_MOCK_DATA, PRIVACY_NAVIGATION_MOCK_DATA } from './data';
+import {
+  FMButton,
+  SocialLink,
+  SocialList,
+  SocialItem,
+} from '@featurefm/design-system';
 
 import { Navigation, PrivacyNavigation } from './ui';
 
 import styles from './fm-footer.module.scss';
+import { FooterNavigation, Link } from '@featurefm/shared/types';
 
-export function FMFooter() {
+type FMFooterProps = {
+  mainNavigation: FooterNavigation;
+  privacyNavigation: Link[];
+};
+
+export function FMFooter({ mainNavigation, privacyNavigation }: FMFooterProps) {
   return (
     <footer className={styles['footer']}>
       <div className={styles['footer__in']}>
         <div className={styles['footer__top']}>
-          <Navigation navigationItems={NAVIGATION_MOCK_DATA} />
+          <Navigation items={mainNavigation} />
           <div className={styles['footer__side']}>
             <div className={styles['footer__btn_w']}>
-              <FMButton variant="secondary" size="lg" mobileWidth="full">
-                Request a Demo
-              </FMButton>
+              <a href="https://login.feature.fm/signup/">
+                <FMButton variant="secondary" size="lg" mobileWidth="full">
+                  Request a Demo
+                </FMButton>
+              </a>
             </div>
-            <SocialList align="center" />
+            <SocialList align="center">
+              <SocialItem>
+                <SocialLink
+                  href="https://www.facebook.com/ffm.to/"
+                  iconName="facebook"
+                  target="_blank"
+                />
+              </SocialItem>
+              <SocialItem>
+                <SocialLink
+                  href="https://www.instagram.com/feature.fm/"
+                  iconName="instagram"
+                  target="_blank"
+                />
+              </SocialItem>
+              <SocialItem>
+                <SocialLink
+                  href="https://www.linkedin.com/company/feature-fm"
+                  iconName="linkedin"
+                  target="_blank"
+                />
+              </SocialItem>
+            </SocialList>
           </div>
         </div>
         <div className={styles['footer__bottom']}>
           <PrivacyNavigation
-            items={PRIVACY_NAVIGATION_MOCK_DATA}
-            copyright="©Feature FM 2022"
+            items={privacyNavigation}
+            copyright="©Feature FM 2023"
           />
         </div>
       </div>

@@ -21,8 +21,9 @@
       "@featurefm/design-system/props": [
         "libs/design-system/src/props/index.ts"
       ],
+      "@featurefm/shared/data": ["libs/shared/data/src/index.ts"],
       "@featurefm/shared/hooks": ["libs/shared/hooks/src/index.ts"],
-      "@featurefm/shared/types": ["libs/shared/types/index.ts"]
+      "@featurefm/shared/types": ["libs/shared/types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

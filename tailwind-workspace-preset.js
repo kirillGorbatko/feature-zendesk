@@ -6,6 +6,7 @@ module.exports = {
     screens: {
       tablet: '960px',
       desktop: '1366px',
+      'desktop-max': '1365px',
       'desktop-xl': '1920px',
       'fm-desktop': '1024px',
       'fm-tablet': '1023px',
@@ -13,7 +14,7 @@ module.exports = {
       'fm-mobile-max': '767px',
     },
     colors: {
-      primary1: '#7931f8',
+      primary1: '#9B62FF',
       primary2: '#FF5262',
       primary3: '#58ECCA',
       muted: '#737373',

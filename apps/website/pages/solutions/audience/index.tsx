@@ -1,6 +1,5 @@
 /* eslint-disable-next-line */
 import {
-  Header,
   SolutionPageItem,
   SolutionPageItemsProps,
   Footer,
@@ -12,10 +11,11 @@ import {
   SolutionPageItemProps,
   MoreSolutionsProps,
   GetStartedCtaProps,
+  FmHeader,
 } from '@featurefm/design-system';
-import { solutions } from '../../../src/configuration/header-solutions';
 import { loadPageProps } from '../../../src/helpers/variant';
 import React from 'react';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export interface SolutionAudienceProps {
   heroSection: SolutionHeroProps;
@@ -32,7 +32,7 @@ export function SolutionAudience(props: SolutionAudienceProps) {
         transition: 'background-color 0.5s ease',
       }}
     >
-      <Header solutions={solutions} darkMode={false} />
+      <FmHeader items={HEADER_NAVIGATION} />
       <SolutionHero {...props.heroSection} />
       {props.featuresSection.features.map((x, counter) => (
         <SolutionPageItem

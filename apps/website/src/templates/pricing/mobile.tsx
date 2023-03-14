@@ -105,12 +105,7 @@ export function MobilePricing(props: PricingProps) {
             <TierSelector isArtist={props.isArtist} />
             <PeriodSelector isAnnual={isAnnual} setIsAnnual={setIsAnnual} />
             <PricingSummaryBox
-              {...mapSummary(
-                summary.planOne,
-                'primary',
-                isAnnual,
-                '#9B62FF'
-              )}
+              {...mapSummary(summary.planOne, 'primary', isAnnual, '#9B62FF')}
               className="mt-10"
               isAnnual={isAnnual}
             />
@@ -118,12 +113,7 @@ export function MobilePricing(props: PricingProps) {
               <PricingWaves dark={!props.isArtist} width="60px" />
             </div>
             <PricingSummaryBox
-              {...mapSummary(
-                summary.planTwo,
-                'secondary',
-                isAnnual,
-                '#FF5262'
-              )}
+              {...mapSummary(summary.planTwo, 'secondary', isAnnual, '#FF5262')}
               isAnnual={isAnnual}
               className="mt-16"
             />
@@ -150,24 +140,26 @@ export function MobilePricing(props: PricingProps) {
             />
             <div className="font-supergt mt-16 text-4xl">All Features</div>
           </div>
-          <div className="flex flex-row scrollbar-hide overflow-x-scroll whitespace-nowrap gap-2 my-8">
-            {detailed.map((x, index) => (
-              <div
-                key={index}
-                className={classnames(
-                  'py-4 px-5 rounded-[25px] text-sm font-medium',
-                  {
-                    'border border-foreground dark:border-background':
-                      x[0] === selectedDetailed,
-                  }
-                )}
-                data-option={x[0]}
-                onClick={onSelectedDetailedClicked}
-              >
-                {x[0]}
-              </div>
-            ))}
-          </div>
+        </ViewPort>
+        <div className="flex pl-8 flex-row scrollbar-hide overflow-x-scroll whitespace-nowrap gap-2 my-8">
+          {detailed.map((x, index) => (
+            <div
+              key={index}
+              className={classnames(
+                'py-4 px-5 rounded-[25px] text-sm font-medium',
+                {
+                  'border-[2px] border-foreground dark:border-background':
+                    x[0] === selectedDetailed,
+                }
+              )}
+              data-option={x[0]}
+              onClick={onSelectedDetailedClicked}
+            >
+              {x[0]}
+            </div>
+          ))}
+        </div>
+        <ViewPort>
           <div className="flex-1 pb-10">
             <div className="flex flex-row">
               {['Free', 'Pro', 'Pro Artist'].map((x, index) => (

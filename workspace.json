@@ -5,7 +5,9 @@
     "cms-backend": "apps/cms-backend",
     "cms-types": "libs/cms-types",
     "design-system": "libs/design-system",
+    "shared-data": "libs/shared/data",
     "shared-hooks": "libs/shared/hooks",
+    "shared-types": "libs/shared/types",
     "website": "apps/website",
     "zendesk": "apps/zendesk"
   }

@@ -29,14 +29,14 @@ export function HelpCard({
         [styles['help_card--tertiary']]: variant === 'tertiary',
       })}
     >
-      <Link href={href} className="help_card__link">
-        <>
+      <Link href={href} className={styles['help_card__link']}>
+        <a className={styles['help_card__link']} href={href}>
           <HelpCardIcon iconName={iconName} variant={iconVariant} />
           <div className={styles['help_card__content']}>
             <div className={styles['help_card__title']}>{title}</div>
             <div className={styles['help_card__descr']}>{description}</div>
           </div>
-        </>
+        </a>
       </Link>
     </div>
   );

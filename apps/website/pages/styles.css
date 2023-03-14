@@ -49,3 +49,15 @@
     rgba(0, 0, 0, 0.7) 100%
   );
 }
+
+@media screen and (min-width: 1024px) {
+  .app {
+    padding-top: 5.75rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .app {
+    padding-top: 4.875rem;
+  }
+}

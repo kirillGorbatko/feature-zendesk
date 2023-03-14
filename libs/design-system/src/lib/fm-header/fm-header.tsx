@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 export interface FmHeaderProps extends NavigationProps {
-  variant?: string;
+  variant?: 'transparent' | 'inverted';
 }
 
 export function FmHeader({ items, variant }: FmHeaderProps) {
@@ -34,6 +34,34 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
       ? setScrollState(true)
       : setScrollState(false);
   };
+
+  function useScrollDirection() {
+    const [scrollDirection, setScrollDirection] = useState<string | null>(null);
+  
+    useEffect(() => {
+      let lastScrollY = window.pageYOffset;
+  
+      const updateScrollDirection = () => {
+        const scrollY = window.pageYOffset;
+        const direction = scrollY > lastScrollY ? 'down' : 'up';
+        if (
+          direction !== scrollDirection &&
+          (scrollY - lastScrollY > 1 || scrollY - lastScrollY < -1)
+        ) {
+          setScrollDirection(direction);
+        }
+        lastScrollY = scrollY > 0 ? scrollY : 0;
+      };
+      window.addEventListener('scroll', updateScrollDirection); // add event listener
+      return () => {
+        window.removeEventListener('scroll', updateScrollDirection); // clean up
+      };
+    }, [scrollDirection]);
+  
+    return scrollDirection;
+  }
+
+  const scrollDirection = useScrollDirection();
 
   useEffect(() => {
     handleNavState();
@@ -64,8 +92,10 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
     <header
       className={classNames(styles['header'], {
         [styles['header--menu_open_state']]: isMobileNavOpen,
-        [styles['header--scroll_state']]: isScrollState,
+        [styles['header--scroll_state']]: true,
         [styles['header--transparent_mod']]: variant === 'transparent',
+        [styles['header--inverted_mod']]: variant === 'inverted',
+        [styles['header--hidden_mod']]: scrollDirection === 'down',
       })}
     >
       <div className={styles['header__in']}>
@@ -73,14 +103,22 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
           <div className={styles['header__logo']}>
             <FmLogo
               href="/"
-              variant={isMobileNavOpen ? 'inverted' : undefined}
+              variant={
+                isMobileNavOpen || variant === 'inverted'
+                  ? 'inverted'
+                  : undefined
+              }
             />
           </div>
-          <Navigation items={items} isShowing={isNavOpen} />
+          <Navigation items={items} isShowing={isNavOpen} variant={variant} />
           <div className={styles['hamburger']}>
             <Hamburger
               onClick={handleTriggerClick}
-              variant={isMobileNavOpen ? 'secondary' : undefined}
+              variant={
+                isMobileNavOpen || variant === 'inverted'
+                  ? 'secondary'
+                  : undefined
+              }
               isMenuOpen={isMobileNavOpen}
             />
           </div>

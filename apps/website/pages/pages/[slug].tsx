@@ -9,7 +9,9 @@ import {
   Footer,
   LineSeparator,
   ForProfessionalsCta,
+  FmHeader,
 } from '@featurefm/design-system';
+import { HEADER_NAVIGATION } from '@featurefm/shared/data';
 
 export default function ContentPage(props) {
   return (
@@ -18,7 +20,7 @@ export default function ContentPage(props) {
         <div key={key}>{block.blockType}</div>;
         switch (block.blockType) {
           case 'brand-header': {
-            return <Header solutions={[]} />;
+            return <FmHeader items={HEADER_NAVIGATION} variant="inverted" />;
           }
           case 'main-hero': {
             return <MainHero {...block} />;
