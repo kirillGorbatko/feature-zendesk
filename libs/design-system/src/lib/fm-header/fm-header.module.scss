@@ -48,6 +48,7 @@ $header_vr_padding: 1.6rem;
 		}
 	}
 
+	&.header--inverted_mod,
 	:global(.dark) & {
 		background-color: theme('colors.foreground');
 

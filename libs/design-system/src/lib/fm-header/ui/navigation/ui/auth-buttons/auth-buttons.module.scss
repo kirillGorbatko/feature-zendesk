@@ -54,6 +54,7 @@
 		font-weight: 500;
 	}
 
+	.header__auth--inverted_mod &,
 	:global(.dark) & {
 		color: $white;
 
