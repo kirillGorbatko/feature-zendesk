@@ -19,7 +19,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <main className="app">
         <FmHeader
           items={HEADER_NAVIGATION}
-          variant={isErrorPage && 'transparent'}
+          variant={isErrorPage ? 'transparent' : undefined}
         />
         <div className="wrapper">
           <div className="base">
