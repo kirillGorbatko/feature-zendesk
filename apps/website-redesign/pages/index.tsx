@@ -20,6 +20,7 @@ import {
   FmGetStartedCta,
   FmGetStartedCtaProps,
   ProfessionalsProps,
+  Cookies,
 } from '@featurefm/design-system';
 
 import { getPageData } from '../api';
@@ -48,6 +49,24 @@ export function Index({
 }: IndexProps) {
   return (
     <>
+      <Cookies>
+        <Cookies.Content>
+          Like everyone else, we use cookies. You can read about thier use in
+          our <a href="#">Privacy Policy</a>
+        </Cookies.Content>
+        <Cookies.ActionBar>
+          <Cookies.ActionItem>
+            <FMButton width="full" size="xl" variant="quaternary">
+              Essential only
+            </FMButton>
+          </Cookies.ActionItem>
+          <Cookies.ActionItem>
+            <FMButton width="full" size="xl" variant="secondary">
+              Essential only
+            </FMButton>
+          </Cookies.ActionItem>
+        </Cookies.ActionBar>
+      </Cookies>
       <div>Home page</div>
       {heroSection && (
         <Hero>
