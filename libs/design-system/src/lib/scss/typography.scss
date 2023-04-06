@@ -1,0 +1,207 @@
+@import 'variables';
+@import 'mixins';
+
+@function calculateSizeTypo($value) {
+  @return $value * 1;
+}
+
+@mixin h1 {
+  font-weight: 700;
+  font-family: $font_gpsuper;
+  letter-spacing: 0.005em;
+
+  @include bp($tablet_max, min) {
+    font-size: calculateSizeTypo(7rem);
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: calculateSizeTypo(4rem);
+    line-height: 1.15;
+  }
+}
+
+@mixin h1_secondary {
+  font-weight: 400;
+  font-family: $font_gpsuper;
+
+  @include bp($tablet_max, min) {
+    font-size: 10rem;
+    line-height: 1.06;
+  }
+  @include bp($tablet_max - 1) {
+    font-size: 6rem;
+    line-height: 1.15;
+  }
+}
+
+@mixin h2 {
+  font-weight: 900;
+  font-family: $font_gpsuper;
+
+  @include bp($tablet_max, min) {
+    font-size: calculateSizeTypo(6rem);
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: calculateSizeTypo(4rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+@mixin h2_secondary {
+  font-weight: 400;
+  font-family: $font_gpsuper;
+  line-height: 1.18;
+
+  @include bp($tablet_max, min) {
+    font-size: 9rem;
+  }
+  @include bp($tablet_max - 1) {
+    font-size: 6rem;
+  }
+}
+
+@mixin h3 {
+  @include bp($tablet_max, min) {
+    font-size: calculateSizeTypo(4rem);
+    font-weight: 400;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: calculateSizeTypo(3rem);
+    font-weight: 500;
+  }
+}
+
+@mixin h3_secondary {
+  font-family: $font_gpsuper;
+  letter-spacing: 0.004em;
+
+  @include bp($tablet_max, min) {
+    line-height: 1.14;
+    font-size: 5rem;
+  }
+  @include bp($tablet_max - 1) {
+    line-height: 1.022;
+    font-size: 4rem;
+  }
+}
+
+@mixin h4 {
+  font-weight: 400;
+  line-height: 1.17;
+
+  @include bp($tablet_max, min) {
+    font-size: calculateSizeTypo(3rem);
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: calculateSizeTypo(1.6rem);
+  }
+}
+
+@mixin h4_secondary {
+  font-family: $font_gpsuper;
+  letter-spacing: 0.004em;
+
+  @include bp($tablet_max, min) {
+    line-height: 1.12;
+    font-size: 7rem;
+  }
+  @include bp($tablet_max - 1) {
+    line-height: 1.03;
+    font-size: 4rem;
+  }
+}
+
+@mixin h5 {
+  font-weight: 500;
+
+  @include bp($tablet_max, min) {
+    font-size: calculateSizeTypo(1.8rem);
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: calculateSizeTypo(1.6rem);
+  }
+}
+
+@mixin h6 {
+  font-weight: 500;
+  font-size: calculateSizeTypo(1.6rem);
+}
+
+@mixin text {
+  font-weight: 400;
+  font-size: calculateSizeTypo(1.6rem);
+}
+
+@mixin text_light {
+  font-weight: 300;
+
+  @include bp($tablet_max, min) {
+    line-height: 1.52;
+    font-size: calculateSizeTypo(1.7rem);
+  }
+
+  @include bp($tablet_max - 1) {
+    line-height: 1.4;
+    font-size: calculateSizeTypo(1.6rem);
+  }
+}
+
+@mixin link_light {
+  font-weight: 300;
+  color: theme('colors.primary1');
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @include transition_color;
+}
+
+@mixin link_1 {
+  font-size: calculateSizeTypo(1.5rem);
+  line-height: 1.6;
+  // font-weight: 500;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+@mixin link_hover_dark {
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: theme('colors.foreground');
+    text-decoration: none;
+  }
+}
+
+@mixin link_hover_dark_shadow {
+  transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: theme('colors.foreground');
+    text-shadow: 0.6px 0 0 currentColor;
+    text-decoration: none;
+  }
+}
+
+@mixin link_hover_light {
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    // color: rgba(theme('colors.foreground'), .6);
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}

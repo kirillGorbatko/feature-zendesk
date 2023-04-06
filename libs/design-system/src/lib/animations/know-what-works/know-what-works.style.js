@@ -5,7 +5,17 @@ export default css.feature`
 		padding: 3em 0;
 		font-family: "Outfit", sans-serif;
 		font-size: 10px;
+		-webkit-user-select: none; /* Safari */
+		-ms-user-select: none; /* IE 10 and IE 11 */
+		user-select: none; /* Standard syntax */
 	}
+
+	@media only screen and (max-width: 1024px) {
+		.section {
+		  font-size: 8px;
+		}
+	  }
+
 	.know_wrap {
 		position: relative;
 		margin: 0 auto;

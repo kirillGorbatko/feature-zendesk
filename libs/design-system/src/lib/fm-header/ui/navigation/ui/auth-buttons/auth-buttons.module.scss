@@ -1,4 +1,4 @@
-@import '../../../../../sass-helpers/helpers-all.scss';
+@import '../../../../../scss/helpers-all.scss';
 
 .header__auth {
 	@include bp(theme('screens.fm-desktop'), min) {

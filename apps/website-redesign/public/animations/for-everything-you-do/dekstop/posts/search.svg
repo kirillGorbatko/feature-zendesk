@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="10.69989px" height="10.69989px" viewBox="0 0 10.69989 10.69989" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Group-22">
+    <g id="Oval">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
+      </g>
+    </g>
+    <path d="M6.56048 6.56048L10.1999 10.1999" id="Path-2" fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="1" />
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+@use 'sass:math';
+
+//---------------------------------------------fonts
+$font_outfit: 'Outfit', sans-serif;
+$font_gpsuper: 'GTSuper', sans-serif;
+//---------------------------------------------fonts###
+
+//---------------------------------------------breakpoints
+$desktop_xl: 1920px;
+$desktop: 1367px;
+$tablet_max: 1024px;
+$tablet_min: 768px;
+$mobile: 390px;
+//---------------------------------------------breakpoints###
+
+$font_size_base: 1.6;
+
+// COLORS
+$black: #000;
+$white: #fff;
+$gray: #737373;
+$dark: #1d1d1b;
+$red: #ff5262;
+$purple: #9b62ff;
+$purple_2: #cfb4ff;
+$turquoise: #58ecca;
+
+// INDENTS & CONTAINERS
+$gl_desktop_indent: 8.4rem;
+$gl_mobile_indent: 3rem;
+
+$page_width: 130rem;
+
+// OTHER
+$menu_animation_duration: 0.4s;
+$base_ease: ease-in-out;
+
+// SIZES
+// $header_height_desktop: math.div(9.2rem, $font_size_base);
+$header_height_desktop: 6rem;
+// $header_height_mobile: math.div(7.8rem, $font_size_base);
+$header_height_mobile: 5rem;
+$header_height_mobile_menu_open: $header_height_mobile + 1.4rem;
+
+// @include bp($desktop, min) {
+// }
+// @include bp($desktop - 1, $tablet_max) {
+// }
+// @include bp($tablet_max - 1) {
+// }

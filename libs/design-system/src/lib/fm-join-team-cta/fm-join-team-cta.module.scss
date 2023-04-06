@@ -1,0 +1,218 @@
+@import '../scss/helpers-all.scss';
+
+.fm_join_team {
+  z-index: 0;
+
+  @include bp($tablet_max, min) {
+    padding: 0 $gl_desktop_indent 5rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 0 $gl_mobile_indent 3.4rem;
+  }
+}
+
+.fm_join_team_in {
+  position: relative;
+  // max-width: $page_width;
+  z-index: 1;
+
+  @include bp($tablet_max, min) {
+    padding: 8rem (7.5rem + 3rem);
+    margin: 0 auto;
+  }
+
+  @include bp($tablet_max - 1) {
+    margin-left: -$gl_mobile_indent;
+    width: calc(100% + $gl_mobile_indent * 2);
+    padding: 5.5rem $gl_mobile_indent 11.2rem;
+  }
+
+  &::after {
+    z-index: 0;
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    background-color: $black;
+    content: '';
+
+    @include bp($tablet_max, min) {
+      left: 7.5rem;
+      right: 7.5rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.fm_join_team__decors {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  @include bp($tablet_max, min) {
+    &.fm_join_team__decors--mobile_mod {
+      display: none;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    &.fm_join_team__decors--desktop_mod {
+      display: none;
+    }
+  }
+}
+
+.fm_join_team__decor {
+  position: absolute;
+
+  // position + sizes
+  &.fm_join_team__decor--pos-1-mod {
+    @include bp($tablet_max, min) {
+      top: 0;
+      left: 0;
+    }
+
+    @include bp($tablet_max - 1) {
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &.fm_join_team__decor--pos-2-mod {
+    @include bp($tablet_max, min) {
+      right: 0;
+      top: 0;
+    }
+
+    @include bp($tablet_max - 1) {
+      bottom: 5.1rem;
+      right: 0;
+    }
+  }
+
+  &.fm_join_team__decor--pos-3-mod {
+    @include bp($tablet_max, min) {
+      bottom: 0;
+      right: 0;
+    }
+
+    @include bp($tablet_max - 1) {
+      bottom: 0;
+      right: 5.1rem;
+    }
+  }
+
+  &.fm_join_team__decor--pos-4-mod {
+    @include bp($tablet_max, min) {
+      bottom: -5rem;
+      right: 15rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      bottom: -3.4rem;
+      right: 15.4rem;
+    }
+  }
+}
+
+.fm_join_team__content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  color: $white;
+
+  @include bp($tablet_max, min) {
+    max-width: 53rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    max-width: 40rem;
+  }
+}
+
+.fm_join_team__title {
+  line-height: 1.18;
+
+  @include bp($tablet_max, min) {
+    &:not(:last-child) {
+      margin-bottom: 1.9rem;
+    }
+    &.fm_join_team__title--mobile_mod {
+      display: none;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.fm_join_team__title--desktop_mod {
+      display: none;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+  }
+}
+
+.fm_join_team__text {
+  letter-spacing: 0.024em;
+
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 4rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 2.9rem;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    line-height: 1.5;
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+.fm_join_team__button {
+  @include flex_block(row, wrap, center, center, center);
+  display: inline-flex;
+
+  @include bp($tablet_max, min) {
+    min-width: 23.2rem;
+
+    &.fm_join_team__button--mobile_mod {
+      display: none;
+    }
+  }
+  @include bp($tablet_max - 1) {
+    min-width: 22rem;
+    &.fm_join_team__button--desktop_mod {
+      display: none;
+    }
+  }
+}

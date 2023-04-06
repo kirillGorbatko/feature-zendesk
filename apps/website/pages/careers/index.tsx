@@ -1,22 +1,25 @@
 /* eslint-disable-next-line */
 import { solutions } from '../../src/configuration/header-solutions';
 import {
-  Header,
   H4,
   ViewPort,
   Text,
   TextInlineProps,
   GetStartedCta,
-  Footer,
   Image,
   H3,
   TestimonialsQuote,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../src/helpers/variant';
 import classnames from 'classnames';
 import React from 'react';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export type CareerQualityProps = {
   title?: string;
@@ -63,10 +66,10 @@ export function Careers(props: CareersProps) {
       <ViewPort className="relative">
         <Image
           src="/img/careers/hero.png"
-          className="hidden desktop:flex justify-end"
+          className="hidden desktop:flex justify-end desktop:pt-24"
         />
-        <div className="desktop:absolute top-0">
-          <Text text={props.heroSection.title} as="h4" className="mt-16" />
+        <div className="desktop:absolute top-24">
+          <Text text={props.heroSection.title} as="h4" className="mt-16 pt-20 desktop:pt-0" />
           <Text
             text={props.heroSection.description}
             className="mt-20 font-light tablet:max-w-[600px]"
@@ -136,7 +139,10 @@ export function Careers(props: CareersProps) {
           width="100%"
         />
       </div>
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </>
   );
 }

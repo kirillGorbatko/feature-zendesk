@@ -37,10 +37,10 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
 
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState<string | null>(null);
-  
+
     useEffect(() => {
       let lastScrollY = window.pageYOffset;
-  
+
       const updateScrollDirection = () => {
         const scrollY = window.pageYOffset;
         const direction = scrollY > lastScrollY ? 'down' : 'up';
@@ -57,7 +57,7 @@ export function FmHeader({ items, variant }: FmHeaderProps) {
         window.removeEventListener('scroll', updateScrollDirection); // clean up
       };
     }, [scrollDirection]);
-  
+
     return scrollDirection;
   }
 

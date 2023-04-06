@@ -55,14 +55,14 @@ export function MainPart2(props: MainPart2Props) {
         <ViewPort className="hidden z-10">
           <Text text={props.title} as="h2" className="text-primary2" />
         </ViewPort>
-        <div className="desktop:hidden my-32">
+        <div className="tablet:hidden my-32">
           <YourFansMobile />
         </div>
-        <div className="hidden tablet:flex desktop:absolute desktop:w-[1200px] desktop:justify-end desktop:z-[100000] right-64 desktop:-top-32">
+        <div className="hidden tablet:flex tablet:absolute tablet:w-full desktop:w-[1200px] tablet:justify-end tablet:z-[100000] right-64 tablet:-top-32">
           <YourFans />
         </div>
         <ViewPort className="z-10">
-          <div className="mt-24 desktop:mt-[300px] text-xl font-light">
+          <div className="mt-24 tablet:mt-[300px] text-xl font-light">
             {props.tag}
           </div>
           <div

@@ -11,7 +11,7 @@ const getLinkField = (defaults: {
         name: 'name',
         label: 'Link Name',
         type: 'text',
-        required: true,
+        required: false,
         defaultValue: defaults.linkName,
         admin: {
           width: '40%',
@@ -21,7 +21,7 @@ const getLinkField = (defaults: {
         name: 'url',
         type: 'text',
         label: 'Link Url',
-        required: true,
+        required: false,
         defaultValue: defaults.linkUrl,
         admin: {
           width: '60%',

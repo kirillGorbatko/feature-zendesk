@@ -1,17 +1,20 @@
 import {
   MainHero,
-  Header,
   MainPart1,
   MainPart3,
   MainPart2,
   Testimonials,
   GetStartedCta,
-  Footer,
   LineSeparator,
   ForProfessionalsCta,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export default function ContentPage(props) {
   return (
@@ -60,7 +63,12 @@ export default function ContentPage(props) {
             );
           }
           case 'brand-footer': {
-            return <Footer />;
+            return (
+              <FMFooter
+                mainNavigation={FOOTER_NAVIGATION}
+                privacyNavigation={PRIVACY_NAVIGATION}
+              />
+            );
           }
           default: {
             return <GetStartedCta {...block} />;

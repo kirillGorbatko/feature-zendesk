@@ -4,10 +4,25 @@ export default css.feature`
 	.section {
 		font-family: "Outfit", sans-serif;
 		font-size: 10px;
+		-webkit-user-select: none; /* Safari */
+		-ms-user-select: none; /* IE 10 and IE 11 */
+		user-select: none; /* Standard syntax */
 	}
+
+	@media only screen and (max-width: 1024px) {
+		.section {
+		  font-size: 8px;
+		}
+	  }
+
 
 	.section button {
 		font-family: "Outfit", sans-serif;
+	}
+
+	a, button, input {
+		cursor: default;
+		pointer-events: none;
 	}
 
 	.feature {
@@ -289,7 +304,7 @@ export default css.feature`
 		justify-content: center;
 		align-items: center;
 		color: #fff;
-		cursor: pointer;
+		/*cursor: pointer;*/
 		will-change: opacity;
 	}
 	.feature--v1_mod .feature_subscribe__btn {

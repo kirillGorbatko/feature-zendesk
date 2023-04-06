@@ -26,7 +26,7 @@ export function FMFooter({ mainNavigation, privacyNavigation }: FMFooterProps) {
             <div className={styles['footer__btn_w']}>
               <a href="https://login.feature.fm/signup/">
                 <FMButton variant="secondary" size="lg" mobileWidth="full">
-                  Request a Demo
+                  Start now
                 </FMButton>
               </a>
             </div>
@@ -58,7 +58,7 @@ export function FMFooter({ mainNavigation, privacyNavigation }: FMFooterProps) {
         <div className={styles['footer__bottom']}>
           <PrivacyNavigation
             items={privacyNavigation}
-            copyright="©Feature FM 2023"
+            copyright="©Feature.fm 2023"
           />
         </div>
       </div>

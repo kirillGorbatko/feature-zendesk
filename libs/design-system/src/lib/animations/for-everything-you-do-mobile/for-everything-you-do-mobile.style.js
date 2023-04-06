@@ -4,7 +4,18 @@ export default css.feature`
 .section {
   font-family: "Outfit", sans-serif;
   font-size: 10px;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
 }
+
+a, button, input, div {
+  cursor: default;
+  pointer-events: none;
+}
+
 
 .for-everyting {
   display: flex;

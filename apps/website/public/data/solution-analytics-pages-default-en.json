@@ -1,6 +1,6 @@
 {
-  "id": "63e7b60d08e5327e9c4ad133",
-  "title": "Solutions Page - Analytics",
+  "id": "63ecbfd728f449a3c4d4c553",
+  "title": "Solutions Page - Default",
   "slug": "default",
   "heroSection": {
     "title": "Your music.<br/>Your fans.<br/>Your data.",
@@ -23,7 +23,7 @@
         "imageUrl": "/img/solutions/fan-contact-info.png",
         "isInverse": false,
         "padding": "normal",
-        "id": "63e7b60013e63d708f38dfe1"
+        "id": "63ecbfca87a93121e6fcac17"
       },
       {
         "tag": "Geo-location",
@@ -40,7 +40,7 @@
         "imageUrl": "/img/solutions/geo-location.png",
         "isInverse": false,
         "padding": "normal",
-        "id": "63e7b60013e63d708f38dfe2"
+        "id": "63ecbfca87a93121e6fcac18"
       },
       {
         "tag": "Social platforms",
@@ -57,7 +57,7 @@
         "imageUrl": "/img/solutions/social-platforms.png",
         "isInverse": false,
         "padding": "normal",
-        "id": "63e7b60013e63d708f38dfe3"
+        "id": "63ecbfca87a93121e6fcac19"
       },
       {
         "tag": "Streaming services",
@@ -74,7 +74,7 @@
         "imageUrl": "/img/solutions/streaming-services.png",
         "isInverse": false,
         "padding": "normal",
-        "id": "63e7b60013e63d708f38dfe4"
+        "id": "63ecbfca87a93121e6fcac1a"
       },
       {
         "tag": "Marketing campaigns and activities",
@@ -91,7 +91,7 @@
         "imageUrl": "/img/solutions/marketing-campaigns-and-activities.png",
         "isInverse": false,
         "padding": "normal",
-        "id": "63e7b60013e63d708f38dfe5"
+        "id": "63ecbfca87a93121e6fcac1b"
       },
       {
         "tag": "Sales conversion tracking",
@@ -108,10 +108,10 @@
         "imageUrl": "/img/solutions/sales-conversion-tracking.png",
         "isInverse": false,
         "padding": "normal",
-        "id": "63e7b60013e63d708f38dfe6"
+        "id": "63ecbfca87a93121e6fcac1c"
       },
       {
-        "tag": "Real-time insights",
+        "tag": "",
         "title": {
           "desktop": "Track your progress at both the link and artist level.",
           "overrideMobile": false,
@@ -125,10 +125,10 @@
         "imageUrl": "/img/solutions/real-time-data.png",
         "isInverse": true,
         "padding": "medium",
-        "id": "63e7b60013e63d708f38dfe7"
+        "id": "63ecbfca87a93121e6fcac1d"
       },
       {
-        "tag": "Ad retargeting",
+        "tag": "",
         "title": {
           "desktop": "Put your data to work with ad retargeting.",
           "overrideMobile": false,
@@ -142,7 +142,7 @@
         "imageUrl": "/img/solutions/improve-ad-performance.png",
         "isInverse": true,
         "padding": "medium",
-        "id": "63e7b60013e63d708f38dfe8"
+        "id": "63ecbfca87a93121e6fcac1e"
       }
     ]
   },
@@ -162,7 +162,7 @@
         },
         "link": "/solutions/links",
         "imageUrl": "/img/solutions/feature-links.png",
-        "id": "63e7b60013e63d708f38dfe9",
+        "id": "63ecbfca87a93121e6fcac1f",
         "iconImage": {}
       },
       {
@@ -178,7 +178,7 @@
         },
         "link": "/solutions/audience",
         "imageUrl": "/img/solutions/audience.png",
-        "id": "63e7b60013e63d708f38dfea",
+        "id": "63ecbfca87a93121e6fcac20",
         "iconImage": {}
       }
     ]
@@ -201,8 +201,8 @@
       "type": "secondary"
     }
   },
-  "_status": "draft",
-  "createdAt": "2023-02-11T15:36:45.498Z",
-  "updatedAt": "2023-02-11T15:36:45.498Z",
+  "_status": "published",
+  "createdAt": "2023-02-15T11:19:51.033Z",
+  "updatedAt": "2023-03-11T23:12:40.342Z",
   "meta": {}
 }

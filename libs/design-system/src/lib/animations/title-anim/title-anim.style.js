@@ -4,29 +4,16 @@ export default css.feature`
 .anim_title__wrap {
   position: relative;
   margin: 0 0;
-
-  font-size: 10px;
 }
 
 .anim_title {
-  font-size: 9em;
-  line-height: calc(9.5em / 9);
-  font-weight: 700;
-  font-family: 'GT-Super-Display-Super';
   overflow: hidden;
   
   will-change: transform;
 }
 
-@media (max-width: 1023px) {
-  .anim_title {
-    font-size: 5em;
-  }
-}
-
 .anim_title.anim_title--v1_mod {
   color: white;
-  /* color: blue; */
 }
 
 
@@ -51,7 +38,6 @@ export default css.feature`
   width: 200vw;
   margin-left: -50vw;
   height: 300%;
-  /* background-color: gray; */
   background-color: currentColor;
   will-change: transform;
 }

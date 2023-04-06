@@ -1,0 +1,98 @@
+@import '../../../scss/helpers-all.scss';
+
+.column {
+  flex: 0 0 50%;
+  height: 100%;
+
+  @include bp($tablet_max, min) {
+    &:not(:last-child) {
+      border-right: 1px solid #dedede;
+      padding-right: 4rem;
+    }
+    &:not(:first-child) {
+      padding-left: 6.2rem;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.column__label {
+  line-height: 1.5;
+
+  @include bp($desktop, min) {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  @include bp($tablet_max, min) {
+    letter-spacing: -0.03em;
+    font-size: 1.7rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+.column__title {
+  font-weight: 500;
+
+  @include bp($desktop, min) {
+    line-height: 1.22;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    line-height: 1.25;
+
+    &:not(:last-child) {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  @include bp($tablet_max, min) {
+    font-size: 4rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 2.4rem;
+    line-height: 1.25;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.column__descr {
+  font-size: 1.6rem;
+  @include bp($tablet_max, min) {
+    line-height: 1.5;
+  }
+
+  @include bp($tablet_max - 1) {
+    line-height: 1.38;
+  }
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}

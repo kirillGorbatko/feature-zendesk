@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Checkmark } from '@featurefm/design-system';
+import classnames from 'classnames'
 import dynamic from 'next/dynamic'
 
 export interface DetailedTableProps {
@@ -18,7 +19,9 @@ export function DetailedTable(props: DetailedTableProps) {
       <div className="text-sm font-semibold sticky top-10 z-20 h-[44px] flex items-center">
         {props.name}
       </div>
-      <div id={props.code} className="relative mb-10 font-normal text-sm">
+      <div id={props.code} className={classnames("relative font-normal text-sm", {
+        'mb-10': props.code !== "support"
+      })}>
         {props.data.map((x, index) => (
           <div key={index} className="flex flex-row justify-end">
             <ReactTooltip

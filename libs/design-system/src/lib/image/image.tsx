@@ -24,7 +24,10 @@ Image.defaultProps = {
 
 const withCloudinary = (path: string) => {
   if (path && path.startsWith('https://')) {
-    return `https://cloudinary-cdn.feature.fm/f_auto/${path}`;
+    return `https://res.cloudinary.com/feature-fm/image/fetch/f_auto/${path.replace(
+      'img/',
+      `img/v${process.env.NEXT_PUBLIC_BUILD_NUMBER || process.env.BUILD_NUMBER}/`
+    )}`;
   }
   return path;
 };
@@ -40,7 +43,8 @@ export function Image(props: ImageProps) {
   if (!(props.src || '').endsWith('hide')) {
     src =
       props.src && !props.src.startsWith('https://')
-        ? (process.env.NEXT_PUBLIC_FFM_CDN || process.env.FFM_CDN || '') + props.src
+        ? (process.env.NEXT_PUBLIC_FFM_CDN || process.env.FFM_CDN || '') +
+          props.src
         : props.src;
   }
   let mobileSrc = '';
@@ -49,7 +53,7 @@ export function Image(props: ImageProps) {
       props.mobileSrc && !props.mobileSrc.startsWith('https://')
         ? (process.env.NEXT_PUBLIC_FFM_CDN || process.env.FFM_CDN || '') +
           (props.mobileSrc || props.src || '')
-        : props.mobileSrc || props.src || '';
+        : props.mobileSrc || src || '';
   }
 
   const srcset = `${withCloudinary(src)} 1x, ${toRetina(
@@ -62,11 +66,11 @@ export function Image(props: ImageProps) {
   let img = (
     <picture>
       <source
-        media="(max-width: 1366px)"
+        media="(max-width: 1023px)"
         srcSet={srcsetMobile}
         width={props.mobileWidth || props.width}
       />
-      <source media="(min-width: 1366px)" srcSet={srcset} width={props.width} />
+      <source media="(min-width: 1024px)" srcSet={srcset} width={props.width} />
       <img src={withCloudinary(src)} alt={props.alt} />
     </picture>
   );

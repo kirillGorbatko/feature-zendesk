@@ -48,7 +48,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
                 <path
@@ -56,7 +56,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
                 <path
@@ -64,7 +64,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
                 <path
@@ -72,7 +72,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
                 <path
@@ -80,7 +80,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
                 <path
@@ -88,7 +88,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
                 <path
@@ -96,7 +96,7 @@ export function FiveHundred() {
                   id="Path"
                   fill="none"
                   fillRule="evenodd"
-                  stroke="#000000"
+                  stroke="currentColor"
                   strokeWidth={3}
                 />
               </g>
@@ -107,7 +107,7 @@ export function FiveHundred() {
           <path
             d="M41.6 144C71.8 144 95.6 126.4 95.6 97.4C95.6 74.8 81.2 56 49.8 56C38.6 56 29 58.6 23.4 62.6L31 30L94.8 30L104 0L28.4 0L12 70.2L17.2 73.4C19.8 70.6 24.8 67 32.8 67C46.2 67 54.6 78.8 54.6 97.2C54.6 121 43.6 133.8 27.2 133.8C16.2 133.8 8 128.6 3.6 120.2L0 122.4C6.4 135 20.4 144 41.6 144Z"
             id="Path"
-            fill="#000000"
+            fill="currentColor"
             stroke="none"
           />
         </g>

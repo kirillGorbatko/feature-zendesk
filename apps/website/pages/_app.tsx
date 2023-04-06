@@ -222,6 +222,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
           style={{
             background: 'transparent',
             left: 'unset',
+            zIndex: 999999
           }}
           declineButtonText="Decline"
           buttonText="Accept"
@@ -244,7 +245,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
         </CookieConsent>
         {showConsent && (
           <div
-            className="fixed bottom-0 w-full desktop:w-[460px] h-[274px] desktop:h-[200px] border-r-10 rounded-t-[40px] desktop:rounded-t-[0px] z-40 right-0"
+            className="fixed bottom-0 w-full desktop:w-[460px] h-[274px] desktop:h-[200px] border-r-10 rounded-t-[40px] desktop:rounded-t-[0px] z-40 desktop:z-[999998] right-0"
             style={{
               background: 'white',
               boxShadow: '2px 40px 70px 0px rgba(19,25,62, 0.3)',
@@ -252,7 +253,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
           />
         )}
         {showConsent && (
-          <div className="fixed bottom-[224px] desktop:bottom-0 right-0 desktop:right-[380px] z-20 desktop:z-[999]">
+          <div className="fixed bottom-[224px] desktop:bottom-0 right-0 desktop:right-[380px] z-20 desktop:z-[999999]">
             <Image src="/img/bitmap.png" mobileSrc="/img/bitmap-mobile.png" />
           </div>
         )}

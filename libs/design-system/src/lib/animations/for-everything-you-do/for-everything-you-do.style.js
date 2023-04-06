@@ -4,6 +4,15 @@ export default css.feature`
 .section {
   font-family: "Outfit", sans-serif;
   font-size: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    font-size: 8px;
+  }
 }
 
 .for-everyting {
@@ -145,14 +154,14 @@ export default css.feature`
   background-color: #FF5262;
   border-radius: 50%;
 
-  cursor: pointer;
+  /*cursor: pointer;*/
   z-index: 4;
 
   transition: background-color .2s ease-in-out;
 }
 
 .for-everyting__card_third_decor:hover {
-  background-color: #ff5263c4;
+  /*background-color: #ff5263c4;*/
 }
 
 .for-everyting__card_third_decor::after,
@@ -287,6 +296,7 @@ export default css.feature`
 
 .for-everyting__card_first_head {
   display: flex;
+	align-items: center;
   justify-content: flex-start;
   margin-bottom: 1.8em;
 }
@@ -308,7 +318,7 @@ export default css.feature`
   height: 1.2em;
   margin-top: .4em;
   margin-left: auto;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .for-everyting__card_third .for-everyting__card_burger {
@@ -364,7 +374,7 @@ export default css.feature`
   position: absolute;
   right: 0;
   width: 1em;
-  cursor: pointer;
+  /*cursor: pointer;*/
   height: 1em;
 }
 .for-everyting__card_first_icon > img{
@@ -394,12 +404,12 @@ export default css.feature`
 }
 
 .for-everyting__card_first_icon:hover::before {
-  background-color: #ededed;
+  /*background-color: #ededed;*/
 }
 
 
 .for-everyting__card_first_icon.for-everyting__card_first_icon--pos_1_mod:hover::before {
-  background-color: #ff5263e6;
+  /*background-color: #ff5263e6;*/
 }
 
 .for-everyting__card_first_icon--pos_2_mod {
@@ -476,11 +486,11 @@ export default css.feature`
   min-height: 3.54em;
   padding: .86em 1.2em;
   transition: background-color 0.3s;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .for-everyting__card_socials_item_in:hover {
-  background-color: #ededed;
+  /*background-color: #ededed;*/
 }
 
 .for-everyting__card_socials_item_icon {
@@ -507,7 +517,7 @@ export default css.feature`
 .for-everyting__card_first_video {
   width: 100%;
   height: 11.2em;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .for-everyting__card_first_video_play {
@@ -584,7 +594,7 @@ export default css.feature`
   width: 1em;
   height: 1em;
   margin-right: 1.56em;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .for-everyting__card_first_bar_add::after,
@@ -618,7 +628,7 @@ export default css.feature`
   height: 1.1em;
   margin-left: auto;
   border-radius: 50%;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .for-everyting__card_first_bar_setting > img {
@@ -626,7 +636,7 @@ export default css.feature`
 }
 
 .for-everyting__card_first_bar_setting:hover::before {
-  background-color: #ff5263c4;
+  /*background-color: #ff5263c4;*/
 }
 
 .for-everyting__card_first_bar_setting::before {
@@ -671,6 +681,8 @@ export default css.feature`
 
 .for-everyting__card_second .for-everyting__card_socials_item_icon {
   margin-right: 1.6em;
+	display: flex;
+	align-items: center;
 }
 
 .for-everyting--v1_mod .for-everyting__card_second {
@@ -755,6 +767,36 @@ export default css.feature`
   color: #9b9b9b;
 }
 
+.for-everyting__card_first_burger {
+	position: relative;
+
+	flex-shrink: 0;
+  margin-left: auto;
+  width: 1.2em;
+  height: .2em;
+  background-color: #000;
+}
+
+.for-everyting__card_first_burger:before,
+.for-everyting__card_first_burger:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+
+  height: 100%;
+  width: .7em;
+  margin-left: -.35em;
+  background-color: #000;
+}
+
+.for-everyting__card_first_burger:before {
+  top: -.6em;
+}
+
+.for-everyting__card_first_burger:after {
+  bottom: -.6em;
+}
+
 .card_head__decor {
   position: relative;
 
@@ -822,7 +864,7 @@ export default css.feature`
 
 .card_info__tabs_item {
   position: relative;
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition: opacity .2s ease-in-out;
 }
 
@@ -924,7 +966,7 @@ export default css.feature`
   width: 4em;
   height: 4em;
   margin-right: 1em;
-  cursor: pointer;
+  /*cursor: pointer;*/
   flex-shrink: 0;
 }
 
@@ -937,13 +979,13 @@ export default css.feature`
 .card_post__title {
   font-weight: 700;
   margin-bottom: .1em;
-  cursor: pointer;
+  /*cursor: pointer;*/
   font-size: .8em;
 }
 
 .card_post__author {
   font-weight: 500;
-  cursor: pointer;
+  /*cursor: pointer;*/
   font-size: .8em;
 }
 
@@ -954,7 +996,7 @@ export default css.feature`
   letter-spacing: .01em;
   color: #9B9B9B;
   transition: opacity .2s ease-in-out;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 .card_post__link:hover {
   opacity: .8;
@@ -1009,7 +1051,7 @@ export default css.feature`
   display: flex;
   align-items: center;
   transition: opacity .2s ease-in-out;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .cart_post__bottom_item:hover {

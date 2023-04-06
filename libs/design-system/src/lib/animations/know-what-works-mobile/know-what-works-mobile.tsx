@@ -25,7 +25,7 @@ export function KnowWhatWorksMobile() {
 
     ScrollTrigger.create({
       trigger: $block.current,
-      start: 'top 30%',
+      start: 'top 65%',
       once: true,
       onEnter: () => {
         tl.play();
@@ -249,7 +249,7 @@ export function KnowWhatWorksMobile() {
                 <div className="know_list__pic">
                   <img
                     className="know_list__img"
-                    src="/animations/know-what-works/girl1.jpg"
+                    src="/animations/know-what-works/bg_3.png"
                     alt=""
                     sizes="all"
                   />
@@ -274,7 +274,7 @@ export function KnowWhatWorksMobile() {
                 <div className="know_list__pic">
                   <img
                     className="know_list__img"
-                    src="/animations/know-what-works/girl2.jpg"
+                    src="/animations/know-what-works/bg_2.png"
                     alt=""
                     sizes="all"
                   />
@@ -299,7 +299,7 @@ export function KnowWhatWorksMobile() {
                 <div className="know_list__pic">
                   <img
                     className="know_list__img"
-                    src="/animations/know-what-works/girl3.jpg"
+                    src="/animations/know-what-works/bg_1.png"
                     alt=""
                     sizes="all"
                   />

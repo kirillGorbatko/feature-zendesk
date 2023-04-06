@@ -12,6 +12,9 @@ FROM node:16.13.0-alpine
 WORKDIR /app
 COPY --from=storage /storage/node_modules node_modules
 
+ARG CACHE_BUST
+ENV BUILD_NUMBER=$BUILD_NUMBER
+
 COPY dist/apps/website/next.config.js .
 COPY dist/apps/website/package.json .
 COPY dist/apps/website/public public/

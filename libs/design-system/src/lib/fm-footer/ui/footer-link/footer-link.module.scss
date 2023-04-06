@@ -1,9 +1,15 @@
-@import '../../../sass-helpers/helpers-all.scss';
+@import '../../../scss/helpers-all.scss';
 
 .footer_link {
-	transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out, opacity .2s ease-in-out;
 	color: theme('colors.muted');
 	font-weight: 300;
+	:global(.dark) & {
+
+		&:hover, &:focus {
+			color: theme('colors.background');
+		}
+	}
 
 	&:hover,
 	&:focus {
@@ -25,6 +31,14 @@
 	color: theme('colors.foreground');
 	font-weight: 500;
 	font-size: 1rem;
+
+	:global(.dark) & {
+		color: theme('colors.background');
+
+		&:hover, &:focus {
+			opacity: .6;
+		}
+	}
 
 	&:hover {
 		color: rgba(0, 0, 0, 0.6);

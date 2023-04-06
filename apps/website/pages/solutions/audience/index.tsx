@@ -2,7 +2,6 @@
 import {
   SolutionPageItem,
   SolutionPageItemsProps,
-  Footer,
   SolutionHero,
   MoreSolutions,
   GetStartedCta,
@@ -12,10 +11,15 @@ import {
   MoreSolutionsProps,
   GetStartedCtaProps,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../../src/helpers/variant';
-import React from 'react';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import React, { useEffect } from 'react';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export interface SolutionAudienceProps {
   heroSection: SolutionHeroProps;
@@ -25,9 +29,15 @@ export interface SolutionAudienceProps {
 }
 
 export function SolutionAudience(props: SolutionAudienceProps) {
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('dark');
+    };
+  }, []);
+
   return (
     <div
-      className="bg-background dark:bg-foreground"
+      className="bg-background dark:bg-foreground pt-20 desktop:pt-24"
       style={{
         transition: 'background-color 0.5s ease',
       }}
@@ -49,7 +59,10 @@ export function SolutionAudience(props: SolutionAudienceProps) {
       <div className="mt-20">
         <GetStartedCta {...props.getStartedCTASection} />
       </div>
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </div>
   );
 }

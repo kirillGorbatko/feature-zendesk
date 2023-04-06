@@ -120,7 +120,7 @@ export function SearchForm({
         {
           opacity: 1,
         },
-        'step2-=.8'
+        'step2'
       )
       .to(
         $hint.current,
@@ -171,8 +171,7 @@ export function SearchForm({
         <div
           ref={$formWrap}
           className={classNames(styles['search_form__container'], {
-            [styles['search_form__container--active_state']]:
-              inputText && inputText.length > 0,
+            [styles['search_form__container--active_state']]:inputText && inputText.length > 0,
           })}
         >
           <form
@@ -222,6 +221,7 @@ export function SearchForm({
         className={classNames(styles['search_form__trigger'], {
           [styles['search_form__trigger--center_align']]: mobAlign === 'center',
           [styles['search_form__trigger--right_align']]: mobAlign === 'right',
+          [styles['search_form__trigger--open_state']]: isOpen,
         })}
       >
         <div className={styles['search_form__wrap']} ref={$trigger}>

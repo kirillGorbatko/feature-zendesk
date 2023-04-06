@@ -1,4 +1,4 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
 
 .list {
 	@include bp(theme('screens.fm-mobile-min'), min) {

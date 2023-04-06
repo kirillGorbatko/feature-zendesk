@@ -1,0 +1,25 @@
+@import '../scss/helpers-all.scss';
+
+.advantage {
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.004em;
+  text-align: center;
+
+  @include bp($tablet_max, min) {
+    padding: 1.8rem 3rem;
+  }
+  @include bp($tablet_max - 1) {
+    padding: 1.6rem 3rem;
+  }
+
+  &:not(.advantage--color_mod) {
+    color: $white;
+    border: 1px solid #3a3a3a;
+  }
+
+  &.advantage--color_mod {
+    color: $black;
+    border: 1px solid #cfcfcf;
+  }
+}

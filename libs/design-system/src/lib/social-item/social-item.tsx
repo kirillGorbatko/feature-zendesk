@@ -10,6 +10,10 @@ export function SocialItem({ children }: SocialItem) {
       {children}
       <style jsx>
         {`
+          .social_item a {
+            background-color: tomato;
+            color: white;
+          }
           @media screen and (min-width: 1024px) {
             .social_item {
               padding: 0 1.2rem 1.2rem 0;

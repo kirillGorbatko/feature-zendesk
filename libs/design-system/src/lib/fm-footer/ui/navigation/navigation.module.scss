@@ -1,4 +1,4 @@
-@import '../../../sass-helpers/helpers-all.scss';
+@import '../../../scss/helpers-all.scss';
 
 .footer__nav {
 	@include bp(theme('screens.fm-desktop'), min) {
@@ -45,6 +45,10 @@
 	@include h6;
 
   line-height: 1.33;
+
+	:global(.dark) & {
+		color: white;
+	}
 
 	@include bp(theme('screens.fm-desktop'), min) {
 		&:not(:last-child) {

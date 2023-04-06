@@ -1,0 +1,17 @@
+{
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "Professionals Page - Default",
+  "slug": "default",
+
+  "getStartedSection": {
+    "title": "Talk to one of our experts",
+    "descr": "Interested in learning more about the feature.fm enterprise offering? Let one of our experts show you how Feature.fm can benefit you and take your business to the next level.",
+    "button": {
+      "title": "Book a demo"
+    }
+  },
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
+}

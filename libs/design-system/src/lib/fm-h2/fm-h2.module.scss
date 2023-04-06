@@ -1,5 +1,19 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
 
 .fm-h2 {
-  @include h2;
+  &:not(.fm-h2--secondary_mod) {
+    @include h2;
+  }
+  &.fm-h2--secondary_mod {
+    @include h2_secondary;
+  }
+  &.fm-h2--color_1_mod {
+    color: $black;
+  }
+  &.fm-h2--color_2_mod {
+    color: $red;
+  }
+  &.fm-h2--color_3_mod {
+    color: $purple;
+  }
 }

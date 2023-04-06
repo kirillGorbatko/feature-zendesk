@@ -1,25 +1,27 @@
 import { FMFooter, FmHeader } from '@featurefm/design-system';
 import { CustomHead } from '../custom-head/custom-head';
+import React from 'react';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import './styles.css';
 import {
-  FOOTER_NAVIGATION,
-  HEADER_NAVIGATION,
+  getFooterNavigation,
+  getHeaderNavigation,
   PRIVACY_NAVIGATION,
 } from '@featurefm/shared/data';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const isErrorPage = router.pathname === '/404' || router.pathname === '/500';
-
   return (
     <>
       <CustomHead title="Welcome to zendesk!" />
       <main className="app">
         <FmHeader
-          items={HEADER_NAVIGATION}
-          variant={isErrorPage ? 'transparent' : undefined}
+          items={getHeaderNavigation(
+            process.env.NEXT_PUBLIC_MAIN_WEBSITE_URL || 'https://dev.feature.fm'
+          )}
+          variant={(isErrorPage && 'transparent') || null}
         />
         <div className="wrapper">
           <div className="base">
@@ -27,7 +29,10 @@ function CustomApp({ Component, pageProps }: AppProps) {
           </div>
           {!isErrorPage && (
             <FMFooter
-              mainNavigation={FOOTER_NAVIGATION}
+              mainNavigation={getFooterNavigation(
+                process.env.NEXT_PUBLIC_MAIN_WEBSITE_URL ||
+                  'https://dev.feature.fm'
+              )}
               privacyNavigation={PRIVACY_NAVIGATION}
             />
           )}

@@ -2,17 +2,37 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react';
 import { RectangleDecor } from './rectangle-decor';
 
 const Story: ComponentMeta<typeof RectangleDecor> = {
-  title: 'Glivera/RectangleDecor',
+  title: 'Website-redesign/RectangleDecor',
   component: RectangleDecor,
   argTypes: {
     variant: {
       defaultValue: 'black',
-      options: ['black', 'purple', 'tortoise', 'gradient', 'image'],
+      options: [
+        'black',
+        'purple',
+        'turquoise',
+        'gradient',
+        'secondary_gradient',
+        'tertiary_gradient',
+        'image',
+      ],
       control: { type: 'select' },
     },
     size: {
       defaultValue: 'large',
-      options: ['normal', 'large', 'medium', 'xxl', 'sm', 'sm2', 'long'],
+      options: [
+        'normal',
+        'large',
+        'medium',
+        'xxl',
+        'sm',
+        'sm2',
+        'long',
+        'xl',
+        'secondary_sm',
+        'secondary_md',
+        'secondary_long',
+      ],
       control: { type: 'select' },
     },
   },
@@ -28,9 +48,9 @@ export const Purple = Template.bind({});
 Purple.args = {
   variant: 'purple',
 };
-export const Tortoise = Template.bind({});
-Tortoise.args = {
-  variant: 'tortoise',
+export const turquoise = Template.bind({});
+turquoise.args = {
+  variant: 'turquoise',
 };
 export const Gradient = Template.bind({});
 Gradient.args = {

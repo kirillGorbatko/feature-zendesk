@@ -99,11 +99,12 @@ export function Navigation({ items, isShowing, variant }: NavigationProps) {
         onScroll={handleScroll}
       >
         <ul className={styles['header__links']} ref={$linksContainer}>
-          {items.map(({ title, href, dropdown }, index) => {
+          {items.map(({ title, href, dropdown, target }, index) => {
             const isDropdownExist =
               dropdown && dropdown?.length !== 0 ? true : false;
             const preparedTitle = title.toLowerCase();
             const isActive = preparedTitle === activeItem;
+            const linkTarget = target || '_self';
 
             return (
               <li
@@ -115,6 +116,7 @@ export function Navigation({ items, isShowing, variant }: NavigationProps) {
                 <Link href={href}>
                   <a
                     href={href}
+                    target={linkTarget}
                     className={classNames(styles['header__link'], {
                       [styles['header__link--current_state']]: isActive,
                     })}

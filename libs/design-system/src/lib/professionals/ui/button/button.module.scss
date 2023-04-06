@@ -1,0 +1,20 @@
+@import '../../../scss/helpers-all.scss';
+
+.button {
+  @include bp($tablet_max, min) {
+    width: 33rem;
+    max-width: 100%;
+
+    &.button--desktop_hidden_mod {
+      display: none;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 100%;
+
+    &.button--mobile_hidden_mod {
+      display: none;
+    }
+  }
+}

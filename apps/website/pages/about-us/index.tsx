@@ -1,7 +1,6 @@
 /* eslint-disable-next-line */
 import { solutions } from '../../src/configuration/header-solutions';
 import {
-  Header,
   H4,
   JoinTheTeamProps,
   JoinTheTeam,
@@ -9,16 +8,20 @@ import {
   Text,
   TextInlineProps,
   GetStartedCta,
-  Footer,
   Image,
   H3,
   TestimonialsQuote,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../src/helpers/variant';
 import classnames from 'classnames';
 import React from 'react';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export interface KPIProps {
   kpi: string;
@@ -35,7 +38,7 @@ function KPI(props: KPIProps) {
       <div className="text-[16px] desktop:text-[20px] text-center font-medium mt-2.5">
         {props.title}
       </div>
-      <div className="text-[12px] desktop:text-[16px] font-light text-[#959595] mt-4 desktop:mt-5 text-center">
+      <div className="text-[12px] desktop:text-[16px] min-h-[72px] font-light text-[#959595] mt-4 desktop:mt-5 text-center">
         {props.description}
       </div>
     </div>
@@ -145,7 +148,7 @@ export function AboutUs(props: AboutUsProps) {
   return (
     <>
       <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
-      <div className="bg-foreground relative">
+      <div className="bg-foreground relative desktop-xl:h-[625px] pt-20 desktop:pt-24">
         <ViewPort>
           <Text
             text={props.heroSection.heroTitle}
@@ -245,7 +248,7 @@ export function AboutUs(props: AboutUsProps) {
         }}
       >
         <ViewPort>
-          <div className="desktop:px-32 mt-20 desktop:mt-[150px] desktop:mt-[60px] pb-20 pt-[60px] desktop:pb-[70px]">
+          <div className="desktop:px-32 mt-20 desktop:mt-[150px] pb-20 pt-[60px] desktop:pb-[70px]">
             <Text text={props.ourPartnersSection.text} as="h4" />
             <div className="flex flex-wrap items-center">
               {props.ourPartnersSection.partners.map((x, index) => (
@@ -265,7 +268,10 @@ export function AboutUs(props: AboutUsProps) {
         </ViewPort>
       </div>
       <JoinTheTeam {...props.joinTheTeamSection} />
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </>
   );
 }

@@ -292,7 +292,7 @@ export function ForEverythingYouDoMobile() {
                   Father John Misty
                 </div>
                 <div className="for-everyting__card_first_descr">
-                  Welcome to my Bio Link
+                  welcome to my bio link
                 </div>
               </div>
             </div>
@@ -391,7 +391,7 @@ export function ForEverythingYouDoMobile() {
             </div>
             <div className="for-everyting__card_second_content">
               <div className="for-everyting__card_second_subtitle">Mxmtoon</div>
-              <div className="for-everyting__card_second_title">Rising</div>
+              <div className="for-everyting__card_second_title">Mona Lisa</div>
               <ul className="for-everyting__card_socials">
                 <li className="for-everyting__card_socials_item">
                   <div className="for-everyting__card_socials_item_in">
@@ -471,6 +471,7 @@ export function ForEverythingYouDoMobile() {
             viewBox="0 0 127 165"
             ref={$lineMobDecors}
           >
+            <rect x="0" y="0" width="100%" height="100%" fill="#fff" />
             <defs>
               <clipPath id="ad2c9fe4-8045-41fc-98b1-59c35020560e">
                 <rect width={127} height={165} style={{ fill: 'none' }} />

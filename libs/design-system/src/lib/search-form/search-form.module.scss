@@ -1,4 +1,4 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
 
 .search_form {
   &.search_form--hidden_mobile_mod {
@@ -19,7 +19,7 @@
     padding: calculateSize(4rem) calculateSize(3rem);
 
     overflow-y: auto;
-    z-index: 101;
+    z-index: 200003;
 
     &:not(.search_form__main--open_state) {
       pointer-events: none;
@@ -27,6 +27,7 @@
 
     &.search_form__main--open_state {
       pointer-events: initial;
+      z-index: 200001;
     }
   }
 }
@@ -164,6 +165,10 @@
 
   &.search_form__trigger--right_align {
     justify-content: flex-end;
+  }
+
+  &.search_form__trigger--open_state {
+    z-index: 200001;
   }
 
   @include bp(theme('screens.fm-mobile-min'), min) {

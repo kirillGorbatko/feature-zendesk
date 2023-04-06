@@ -7,6 +7,8 @@ import {
   HeroArtistCarousel,
 } from '@featurefm/design-system';
 
+import styles from './main-hero-1.module.scss';
+
 export interface MainHero1Props {
   heroTitle: TextInlineProps;
   ctaButton: ButtonProps;
@@ -14,7 +16,7 @@ export interface MainHero1Props {
 
 export function MainHero1(props: MainHero1Props) {
   return (
-    <div className="relative bg-foreground ">
+    <div className={styles['hero-gradient']}>
       <div className="text-left tablet:text-center text-background w-full pt-4 tablet:pt-[70px] pb-36 desktop:pb-48">
         <ViewPort>
           <Text text={props.heroTitle} as="h1" />

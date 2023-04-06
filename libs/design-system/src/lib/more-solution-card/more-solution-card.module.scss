@@ -1,0 +1,87 @@
+@import '../scss/helpers-all.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ff5262;
+  box-shadow: 1rem 1rem 5rem rgba(19, 25, 62, 0.1);
+
+  &.card--v2_mod {
+    background-color: var(--dark);
+    color: var(--light);
+  }
+
+  @include bp($tablet_max, min) {
+    padding: 5rem 5rem 6rem;
+    width: calc(50% + 3rem);
+    min-height: 52.4rem;
+
+    &:nth-child(odd) {
+      margin-right: -3rem;
+      padding-right: 12rem;
+    }
+
+    &:nth-child(even) {
+      margin: 7rem 0 -7rem -3rem;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 100%;
+    padding: 4rem 4rem;
+  }
+}
+
+.icon {
+  position: relative;
+  height: 10.4rem;
+  width: 11.8rem;
+
+  @include bp($tablet_max, min) {
+    margin-bottom: 2.6rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    margin-bottom: 2rem;
+  }
+}
+
+.title {
+  max-width: 35rem;
+  margin-bottom: 4rem;
+
+  line-height: 1.25;
+  font-weight: 500;
+  color: var(--light);
+
+  @include bp($tablet_max, min) {
+    font-size: 3.5rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 2.5rem;
+  }
+}
+
+.text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+  @include bp($desktop + 1, min) {
+    margin-bottom: 6.2rem;
+  }
+
+  @include bp($desktop, $tablet_max) {
+    margin-bottom: 4.2rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    margin-bottom: 3.8rem;
+  }
+}
+
+.link {
+  // margin-top: auto;
+}

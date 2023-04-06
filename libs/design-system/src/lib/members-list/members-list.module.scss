@@ -1,0 +1,21 @@
+@import '../scss/helpers-all.scss';
+
+//---------------------------------------------MembersList
+.component {
+	@include bp($tablet_max, min) {
+		@include flex_block(row, wrap, flex-start, center);
+	}
+}
+
+.item {
+	&:not(:last-of-type) {
+		@include bp($tablet_max, min) {
+			margin-bottom: 6.2rem;
+		}
+	
+		@include bp($tablet_max - 1) {
+			margin-bottom: 8rem;
+		}
+	}
+}
+//---------------------------------------------MembersList###

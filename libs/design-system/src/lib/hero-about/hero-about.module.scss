@@ -1,0 +1,31 @@
+@import '../scss/helpers-all.scss';
+
+.section {
+  background-color: var(--dark);
+
+  @include bp($tablet_max, min) {
+    padding: 7rem 8.2rem 2rem;
+    margin-bottom: 36rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 6rem 3rem;
+  }
+}
+
+.title {
+  margin-bottom: 9rem;
+}
+
+.list__wrap {
+  display: block;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include bp($tablet_max, min) {
+    margin-bottom: -18.5rem;
+  }
+}

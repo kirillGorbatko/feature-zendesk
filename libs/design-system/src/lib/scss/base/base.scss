@@ -1,0 +1,71 @@
+@import 'reset';
+@import 'fonts';
+@import '../variables.scss';
+@import '../mixins.scss';
+
+//------------------------------------------------------------base styles
+:root {
+  --light: #fff;
+  --dark: #000;
+  --primary-color: #9b62ff;
+  --primary-color-2: #ff5262;
+  --primary-color-3: #58ecca;
+  --global-hr-indent: 8.4rem;
+
+  @include bp($tablet_max, min) {
+    --header-height: 9.2rem;
+    --global-hr-indent: 8.4rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    --header-height: 7.6rem;
+    --global-hr-indent: 3rem;
+  }
+}
+
+html {
+  height: 100%;
+
+  font-family: $font_outfit;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.33;
+  // font-size: calc(100vw / 1920 * 10);
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  height: 100%;
+
+  font-size: 1.6rem;
+  color: var(--dark);
+
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--light);
+
+  @supports (display: grid) {
+    display: block;
+  }
+
+  // __next element
+  > div {
+    height: 100%;
+  }
+}
+
+.section {
+  padding-left: var(--global-hr-indent);
+  padding-right: var(--global-hr-indent);
+}
+
+section {
+  z-index: 1;
+  position: relative;
+}
+
+//------------------------------------------------------------base styles###

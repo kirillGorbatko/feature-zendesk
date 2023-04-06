@@ -1,0 +1,31 @@
+@import '../scss/helpers-all.scss';
+
+.section {
+  @include bp($tablet_max, min) {
+    margin-top: -8rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    margin-top: -6rem;
+  }
+}
+
+.slide {
+  @include bp($tablet_max, min) {
+    width: 35rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 28rem;
+  }
+
+  &:nth-child(even) {
+    @include bp($tablet_max, min) {
+      margin-top: 8rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-top: 6rem;
+    }
+  }
+}

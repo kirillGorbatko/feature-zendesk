@@ -1,5 +1,13 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
 
 .fm-h1 {
-  @include h1;
+  &:not(.fm-h1--secondary_mod) {
+    @include h1;
+  }
+  &.fm-h1--secondary_mod {
+    @include h1_secondary;
+  }
+  &.fm-h1--color_1_mod {
+    color: $white;
+  }
 }

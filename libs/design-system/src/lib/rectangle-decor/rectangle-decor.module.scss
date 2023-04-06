@@ -1,79 +1,115 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
+
+@function calculateSize($value) {
+  @return $value * 1;
+}
 
 .rectangle_decor {
   // colors
   &.rectangle_decor--color_1_mod {
-    background: theme('colors.foreground');
+    background: $black;
+    // background: theme('colors.foreground');
   }
   &.rectangle_decor--color_2_mod {
-    background: theme('colors.primary1');
+    background: $purple;
   }
   &.rectangle_decor--color_3_mod {
-    background: theme('colors.primary3');
+    background: $turquoise;
   }
   &.rectangle_decor--color_4_mod {
     background: linear-gradient(
       180deg,
-      rgba(#9b62ff, 0.5) 0%,
-      rgba(#9b62ff, 0) 91%
+      rgba($purple, 0.5) 0%,
+      rgba($purple, 0) 91%
+    );
+  }
+  &.rectangle_decor--color_5_mod {
+    background: linear-gradient(
+        25deg,
+        rgba($red, 0.5) 0%,
+        rgba(#ff6775, 0) 100%
+      )
+      $white;
+  }
+  &.rectangle_decor--color_4_mod {
+    background: linear-gradient(
+      180deg,
+      $turquoise 0%,
+      rgba(88, 236, 202, 0) 100%
     );
   }
   &.rectangle_decor--image_mod {
-    background: theme('colors.background');
+    background: $white;
   }
 
-  &.rectangle_decor--mod_1 {
+  &.rectangle_decor--size_1_mod {
     width: calculateSize(15rem);
     height: calculateSize(15rem);
   }
 
-  &.rectangle_decor--mod_2 {
-    @include bp(theme('screens.fm-desktop'), min) {
+  &.rectangle_decor--size_2_mod {
+    @include bp($tablet_max, min) {
       width: calculateSize(14.8rem);
       height: calculateSize(7.3rem);
     }
-    @include bp(theme('screens.fm-tablet')) {
+    @include bp($tablet_max - 1) {
       width: calculateSize(10rem);
       height: calculateSize(5rem);
     }
   }
-  &.rectangle_decor--mod_3 {
+  &.rectangle_decor--size_3_mod {
     width: calculateSize(7.7rem);
     height: calculateSize(7.7rem);
   }
-  &.rectangle_decor--mod_4 {
-    @include bp(theme('screens.fm-desktop'), min) {
+  &.rectangle_decor--size_4_mod {
+    @include bp($tablet_max, min) {
       width: calculateSize(5.1rem);
       height: calculateSize(5.1rem);
     }
-    @include bp(theme('screens.fm-tablet')) {
+    @include bp($tablet_max - 1) {
       width: calculateSize(3rem);
       height: calculateSize(3rem);
     }
   }
-  &.rectangle_decor--mod_5 {
-    @include bp(theme('screens.fm-desktop'), min) {
+  &.rectangle_decor--size_5_mod {
+    @include bp($tablet_max, min) {
       width: calculateSize(5rem);
       height: calculateSize(5rem);
     }
-    @include bp(theme('screens.fm-tablet')) {
+    @include bp($tablet_max - 1) {
       width: calculateSize(3rem);
       height: calculateSize(3rem);
     }
   }
-  &.rectangle_decor--mod_6 {
+  &.rectangle_decor--size_6_mod {
     width: calculateSize(20.2rem);
     height: calculateSize(20.2rem);
   }
-  &.rectangle_decor--mod_7 {
-    @include bp(theme('screens.fm-desktop'), min) {
+  &.rectangle_decor--size_7_mod {
+    @include bp($tablet_max, min) {
       width: calculateSize(7.5rem);
       height: calculateSize(7.5rem);
     }
-    @include bp(theme('screens.fm-tablet')) {
+    @include bp($tablet_max - 1) {
       width: calculateSize(5rem);
       height: calculateSize(5rem);
     }
+  }
+  &.rectangle_decor--size_8_mod {
+    width: 16.9rem;
+    height: 16.9rem;
+  }
+  &.rectangle_decor--size_9_mod {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  &.rectangle_decor--size_10_mod {
+    width: 5.1rem;
+    height: 5.1rem;
+  }
+  &.rectangle_decor--size_11_mod {
+    width: 10.2rem;
+    height: 5.1rem;
   }
 }
 

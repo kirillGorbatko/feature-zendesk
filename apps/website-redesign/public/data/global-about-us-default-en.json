@@ -1,0 +1,17 @@
+{
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "About Page - Default",
+  "slug": "default",
+
+  "joinTeamSection": {
+    "title": "Join the team",
+    "descr": "This section will lead to the career section and open positions. Lorem ipsum dolor sit amet lorem ipsum etc",
+    "button": {
+      "title": "Why should I?"
+    }
+  },
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
+}

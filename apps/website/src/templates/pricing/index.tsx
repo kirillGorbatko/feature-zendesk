@@ -83,7 +83,7 @@ function FloatingFooter(props: FloatingFooterProps) {
 
   return (
     <>
-      <div className="sticky bottom-0 w-full h-[170px] bg-gradient-to-b from-[rgba(255,255,255,0)] dark:from-[rgba(0,0,0,0)] via-[rgba(255,255,255,0.75)_38%] dark:via-[rgba(0,0,0,0.75)_38%] to-[rgba(255,255,255,1)_51%] dark:to-[rgba(0,0,0,1)_51%] z-40">
+      <div className="sticky bottom-0 w-full h-[140px] bg-gradient-to-b from-[rgba(255,255,255,0)] dark:from-[rgba(0,0,0,0)] via-[rgba(255,255,255,0.75)_38%] dark:via-[rgba(0,0,0,0.75)_38%] to-[rgba(255,255,255,1)_51%] dark:to-[rgba(0,0,0,1)_51%] z-40">
         <div className="w-[1200px] m-auto h-full flex flex-row justify-end items-end">
           {props.buttons[0] && FloatingButton(props.buttons[0], 'primary')}
           {props.buttons[1] && FloatingButton(props.buttons[1], 'secondary')}
@@ -95,7 +95,7 @@ function FloatingFooter(props: FloatingFooterProps) {
             )}
         </div>
       </div>
-      <div className="h-[200px] w-full" />
+      <div className="h-[180px] w-full" />
     </>
   );
 }
@@ -138,7 +138,7 @@ export function Pricing(props: PricingProps) {
 
   return (
     <>
-      <div className="flex flex-col w-[1200px] m-auto text-foreground dark:text-background">
+      <div className="flex flex-col w-[1200px] m-auto text-foreground dark:text-background pt-20 desktop:pt-24">
         <H4 className="mt-14">{props.hero.title}</H4>
         <div className="mt-5 font-regular text-[17px]">
           {props.hero.description}

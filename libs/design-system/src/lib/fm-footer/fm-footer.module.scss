@@ -1,10 +1,11 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
 
 .footer {
 	width: 100%;
 	min-height: calculateSize(41rem);
 	border-top: 1px solid theme('colors.line2');
 	flex: 0 0 auto;
+	overflow: hidden;
 
 	@include bp(theme('screens.fm-desktop'), min) {
 		padding: calculateSize(4.5rem) $gl_desktop_indent calculateSize(2rem);

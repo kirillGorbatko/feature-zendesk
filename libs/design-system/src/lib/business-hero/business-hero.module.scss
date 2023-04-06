@@ -1,0 +1,106 @@
+@import '../scss/helpers-all.scss';
+
+.hero {
+  background-color: $black;
+  color: $white;
+
+  @include bp($tablet_max, min) {
+    padding: 2.3rem $gl_desktop_indent;
+
+    .hero__title h1 {
+      line-height: 1.16;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 1.7rem $gl_mobile_indent 0;
+  }
+}
+
+.hero__row {
+  @include bp($tablet_max, min) {
+    display: flex;
+  }
+}
+
+.hero__column {
+  @include bp($tablet_max, min) {
+    &:nth-child(1) {
+      width: 67rem;
+    }
+
+    &:nth-child(2) {
+      width: calc(100% - 67rem);
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 8.2rem;
+    }
+  }
+}
+
+.hero__title {
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 6rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.hero__descr {
+  max-width: 50rem;
+
+  color: inherit;
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 1.42;
+
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+.hero__image {
+  height: 100%;
+
+  @include bp($tablet_max, min) {
+    margin-top: 12rem;
+    width: 53.8rem;
+  }
+
+  @include bp($desktop, min) {
+    margin-left: 4.2rem;
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    margin-left: -1rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 100vw;
+    margin-left: calc($gl_mobile_indent * -1);
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+
+  &.image--desktop_mod {
+    @include bp($tablet_max - 1) {
+      display: none;
+    }
+  }
+
+  &.image--mobile_mod {
+    @include bp($tablet_max, min) {
+      display: none;
+    }
+  }
+}

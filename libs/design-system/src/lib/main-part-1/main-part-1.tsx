@@ -27,7 +27,7 @@ export interface MainPart1Props {
 export function MainPart1(props: MainPart1Props) {
   return (
     <>
-      <div className="flex flex-col desktop:items-center bg-gradient-to-b from-[#9b62ff] to-[#6335b3] desktop:bg-none pt-[240px] tablet:pt-[100px] tablet:bp-0 relative text-background desktop:text-foreground">
+      <div className="flex flex-col desktop:items-center bg-gradient-to-b from-[#9b62ff] to-[#6335b3] tablet:bg-none pt-[240px] tablet:pt-[100px] tablet:bp-0 relative text-background tablet:text-foreground">
         <ViewPort className="z-10">
           <div className="max-w-[400px]">
             <Text text={props.title} as="h2" />
@@ -37,22 +37,22 @@ export function MainPart1(props: MainPart1Props) {
             />
           </div>
         </ViewPort>
-        <div className="desktop:hidden mt-20">
+        <div className="tablet:hidden mt-20">
           <ForEverythingYouDoMobile />
         </div>
-        <div className="hidden tablet:flex desktop:absolute desktop:w-[1200px] desktop:justify-end desktop:top-36">
-          <div className="w-[750px] z-[1000]">
+        <div className="hidden tablet:overflow-hidden tablet:flex tablet:absolute tablet:w-full desktop:w-[1200px] tablet:justify-end tablet:top-36">
+          <div className="w-[750px]">
             <ForEverythingYouDo />
           </div>
         </div>
       </div>
       <ViewPort>
         <div>
-          <div className="desktop:ml-[88px] relative z-50 mx-auto bg-background grid grid-cols-1 desktop:grid-cols-2 desktop:gap-[50px] shadow-[0px_1px_13px_rgba(150,150,150,0.2)] desktop:shadow-none max-w-[450px] -mt-[30px] desktop:mt-[120px]">
+          <div className="tablet:ml-[44px] desktop:ml-[88px] relative z-50 mx-auto bg-background grid grid-cols-1 tablet:grid-cols-2 tablet:gap-[30px] desktop:gap-[50px] shadow-[0px_1px_13px_rgba(150,150,150,0.2)] tablet:shadow-none max-w-[450px] -mt-[30px] tablet:mt-[120px]">
             {props.elements.map((x, index) => (
               <div
                 key={index}
-                className="w-full pt-8 px-5 pb-6 desktop:p-0 desktop:w-[200px] flex desktop:block flex-row border-t border-line1 desktop:border-none"
+                className="w-full pt-8 px-5 pb-6 tablet:p-0 tablet:w-[200px] flex tablet:block flex-row border-t border-line1 tablet:border-none"
               >
                 <Image
                   src={x.icon}
@@ -60,7 +60,7 @@ export function MainPart1(props: MainPart1Props) {
                   alt={x.title}
                   svg
                 />
-                <div className="ml-6 desktop:ml-0 desktop:mt-6">
+                <div className="ml-6 tablet:ml-0 tablet:mt-6">
                   <div className="text-[15px] tablet:text-base font-medium">
                     {x.title}
                   </div>
@@ -74,14 +74,14 @@ export function MainPart1(props: MainPart1Props) {
               <Button
                 {...props.ctaButton}
                 size="extra-large"
-                className="self-end whitespace-nowrap hidden desktop:block overflow-hidden"
+                className="self-end whitespace-nowrap hidden tablet:block overflow-hidden"
               />
             </div>
           </div>
           <Button
             {...props.ctaButton}
             size="extra-large"
-            className="desktop:hidden mt-16"
+            className="tablet:hidden mt-16"
           />
         </div>
       </ViewPort>

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
-const HOST_URL = 'https://feature-zendesk.vercel.app';
+const HOST_URL = process.env.HOST_URL || 'https://feature-zendesk.vercel.app';
 
 module.exports = {
   siteUrl: HOST_URL,

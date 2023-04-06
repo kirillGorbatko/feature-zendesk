@@ -32,12 +32,12 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
   const [activeSlide, setActiveSlide] = useState(0);
   const timeout = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
+  /*useEffect(() => {
     timeout.current = setTimeout(
       () => setActiveSlide((activeSlide + 1) % props.testimonials.length),
       7500
     );
-  }, [timeout, activeSlide, props]);
+  }, [timeout, activeSlide, props]);*/
 
   return (
     <div
@@ -46,7 +46,7 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
     >
       <div className="absolute -mx-8 tablet:-mx-[84px] -top-[60px] tablet:-top-[50px] w-[169px] h-[169px] bg-foreground"></div>
       <div
-        className="flex flex-col tablet:flex-row w-full bg-background border-t-4 border-foreground pt-[30px] desktop:p-[50px] relative z-10 gap-10 tablet:gap-[62px]"
+        className="flex flex-col tablet:flex-row w-full bg-background border-t-4 border-foreground pt-[30px] tablet:p-[50px] relative z-10 gap-10 tablet:gap-[62px]"
         style={{
           boxShadow: '10px 30px 50px rgba(19,25,62, 0.15)',
           opacity: 1,
@@ -66,7 +66,7 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
           />
           <a
             href={props.ctaButton.link}
-            className="hidden desktop:inline-block mt-16 w-full tablet:w-fit"
+            className="hidden tablet:inline-block mt-16 w-full tablet:w-fit"
           >
             <Button
               size="large"
@@ -100,17 +100,20 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
               >
                 {item.quoterTitle}
               </p>
-              <div className="mt-[44px] tablet:mt-8">
-                <a
-                  href={item.url}
-                  className="text-[15px] font-medium tablet:font-semibold flex items-center"
-                >
-                  <div>Read case study</div>
-                  <div className="ml-3">
-                    <RightArrowIcon />
-                  </div>
-                </a>
-              </div>
+              {item.name && item.name.length > 0 && (
+                <div className="mt-[44px] tablet:mt-8">
+                  <a
+                    href={item.url}
+                    target={'_blank'}
+                    className="text-[15px] font-medium tablet:font-semibold flex items-center"
+                  >
+                    <div>{item.name}</div>
+                    <div className="ml-3">
+                      <RightArrowIcon />
+                    </div>
+                  </a>
+                </div>
+              )}
             </div>
           ))}
           <div className="flex flex-row gap-x-4 mt-8 tablet:absolute tablet:bottom-0 tablet:mt-0">
@@ -132,7 +135,7 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
           </div>
           <a
             href={props.ctaButton.link}
-            className="desktop:hidden block my-10 w-full tablet:w-fit"
+            className="tablet:hidden block my-10 w-full tablet:w-fit"
           >
             <Button
               size="normal"
@@ -143,7 +146,7 @@ export function ForProfessionalsCta(props: ForProfessionalsCtaProps) {
           </a>
         </div>
       </div>
-      <div className="relative bg-foreground h-20 desktop:h-[134px] overflow-hidden">
+      <div className="relative bg-foreground h-20 tablet:h-[134px] overflow-hidden">
         <div className="w-[calc(180px*12)] tablet:w-[calc(220px*12)] h-full items-center flex flex-row animate-[scroll-mobile_20s_linear_infinite] tablet:animate-[scroll_20s_linear_infinite]">
           {[
             { id: 1, name: 'Secretly Group' },

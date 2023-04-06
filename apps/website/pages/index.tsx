@@ -18,6 +18,7 @@ import {
   FMFooter,
   FmHeader,
   Header,
+  Footer,
 } from '@featurefm/design-system';
 import { MainHero1, MainHeroProps } from '@featurefm/design-system';
 import { getSelectorsByUserAgent } from 'react-device-detect';
@@ -47,10 +48,10 @@ export function Index(props: PageData) {
     <div>
       <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
       <MainHero1 {...props.heroSection} />
-      <div className="relative h-[400px] tablet:h-[510px] -mt-20">
+      <div className="relative h-[400px] tablet:h-[510px] -mt-20 overflow-hidden">
         <HeroArtistCarousel isMobile={props.isMobile} />
       </div>
-      <div className="-mt-[120px] tablet:mt-[0px]">
+      <div className="-mt-[120px] desktop:mt-[0px]">
         <MainPart1 {...props.marketingSection} />
       </div>
       <MainPart2

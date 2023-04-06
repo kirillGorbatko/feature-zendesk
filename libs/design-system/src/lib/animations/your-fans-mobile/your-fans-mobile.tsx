@@ -37,7 +37,7 @@ export function YourFansMobile() {
 
     ScrollTrigger.create({
       trigger: $block.current,
-      start: 'center 65%',
+      start: 'top 65%',
       once: true,
       onEnter: () => {
         tl.play();
@@ -250,19 +250,19 @@ export function YourFansMobile() {
               <div className="feature_top__in" ref={$songPreview1}>
                 <picture className="feature_top__pic">
                   <source
-                    srcSet="/animations/your-fans/desktop/tukker.jpg"
+                    srcSet="/animations/your-fans/desktop/aoki.jpg"
                     type="image/jpeg"
                   />
                   <img
                     className="feature_top__img"
-                    src="/animations/tukker.jpg"
+                    src="/animations/aoki.jpg"
                     alt=" "
                     loading="eager"
                     sizes="all"
                   />
                 </picture>
                 <div className="feature_top__content">
-                  <div className="feature_top__artist">SOFI TUKKER</div>
+                  <div className="feature_top__artist">Steve Aoki</div>
                   <div className="feature_top__song">Welcome to my Biolink</div>
                 </div>
               </div>

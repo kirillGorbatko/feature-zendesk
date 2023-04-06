@@ -1,6 +1,6 @@
 {
-  "id": "63cc7d837098174d18b72e43",
-  "title": "Solutions Page - ",
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "Solutions Page - Default",
   "slug": "default",
   "heroSection": {
     "title": "Bring fans <br/> into your <br/> world.",
@@ -27,37 +27,37 @@
         "topCapabilites": [
           {
             "capability": "Releases",
-            "id": "63cc7d81fa7808160979a69f"
+            "id": "63ec1cc5694ee0e3f49ab8f5"
           },
           {
             "capability": "Email capture and fan messaging",
-            "id": "63cc7d81fa7808160979a6a0"
+            "id": "63ec1cc5694ee0e3f49ab8f6"
           },
           {
             "capability": "Videos and embeds",
-            "id": "63cc7d81fa7808160979a6a1"
+            "id": "63ec1cc5694ee0e3f49ab8f7"
           },
           {
             "capability": "Pre-Save and follow",
-            "id": "63cc7d81fa7808160979a6a2"
+            "id": "63ec1cc5694ee0e3f49ab8f8"
           },
           {
             "capability": "Tour dates",
-            "id": "63cc7d81fa7808160979a6a3"
+            "id": "63ec1cc5694ee0e3f49ab8f9"
           },
           {
             "capability": "Merch",
-            "id": "63cc7d81fa7808160979a6a4"
+            "id": "63ec1cc5694ee0e3f49ab8fa"
           }
         ],
         "isInverse": true,
         "padding": "normal",
         "ctaButton": {
           "text": "Start free",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "primary"
         },
-        "id": "63cc7d81fa7808160979a694"
+        "id": "63ec1cc5694ee0e3f49ab8ea"
       },
       {
         "tag": "Release Links",
@@ -75,25 +75,25 @@
         "topCapabilites": [
           {
             "capability": "Automatically find your music in popular services",
-            "id": "63cc7d81fa7808160979a6a5"
+            "id": "63ec1cc5694ee0e3f49ab8fb"
           },
           {
             "capability": "Convert your Pre-Save links automatically on release day",
-            "id": "63cc7d81fa7808160979a6a6"
+            "id": "63ec1cc5694ee0e3f49ab8fc"
           },
           {
             "capability": "Customize by country with geo-aware links and language localization",
-            "id": "63cc7d81fa7808160979a6a7"
+            "id": "63ec1cc5694ee0e3f49ab8fd"
           }
         ],
         "isInverse": false,
         "padding": "normal",
         "ctaButton": {
           "text": "Create a Release Link",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "secondary"
         },
-        "id": "63cc7d81fa7808160979a695"
+        "id": "63ec1cc5694ee0e3f49ab8eb"
       },
       {
         "tag": "Pre-Save Links",
@@ -111,25 +111,25 @@
         "topCapabilites": [
           {
             "capability": "Your music saved automatically on release day",
-            "id": "63cc7d81fa7808160979a6a8"
+            "id": "63ec1cc5694ee0e3f49ab8fe"
           },
           {
             "capability": "Automatically notify fans the moment your music drops",
-            "id": "63cc7d81fa7808160979a6a9"
+            "id": "63ec1cc5694ee0e3f49ab8ff"
           },
           {
             "capability": "Grow artist follows and playlist additions in one click",
-            "id": "63cc7d81fa7808160979a6aa"
+            "id": "63ec1cc5694ee0e3f49ab900"
           }
         ],
         "isInverse": true,
         "padding": "normal",
         "ctaButton": {
           "text": "Create a Pre-Save Link",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "primary"
         },
-        "id": "63cc7d81fa7808160979a696"
+        "id": "63ec1cc5694ee0e3f49ab8ec"
       },
       {
         "tag": "Tour Links",
@@ -147,35 +147,35 @@
         "topCapabilites": [
           {
             "capability": "Quickly add your tour dates by importing shows from Bandsintown",
-            "id": "63cc7d81fa7808160979a6ab"
+            "id": "63ec1cc5694ee0e3f49ab901"
           },
           {
             "capability": "Keep loyal fans up to date on your show schedule",
-            "id": "63cc7d81fa7808160979a6ac"
+            "id": "63ec1cc5694ee0e3f49ab902"
           },
           {
             "capability": "Retarget fans based on locations",
-            "id": "63cc7d81fa7808160979a6ad"
+            "id": "63ec1cc5694ee0e3f49ab903"
           }
         ],
         "isInverse": false,
         "padding": "normal",
         "ctaButton": {
           "text": "Create a Tour Link",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "secondary"
         },
-        "id": "63cc7d81fa7808160979a697"
+        "id": "63ec1cc5694ee0e3f49ab8ed"
       },
       {
         "tag": "Podcast Links",
         "title": {
-          "desktop": "Speak to your fans with your own voice so they can get closer to you.",
+          "desktop": "Let fans get to know more about your passions",
           "overrideMobile": false,
           "overrideTablet": false
         },
         "description": {
-          "desktop": "Make it easy for fans to find your podcast with automated Smart Podcast Links that connect listeners to your podcast in their favorite audio platform.",
+          "desktop": "Convert fans into podcast subscribers with automated Podcast Links that make it easy for fans to find your podcast in their favorite audio platform.",
           "overrideMobile": false,
           "overrideTablet": false
         },
@@ -183,25 +183,25 @@
         "topCapabilites": [
           {
             "capability": "Showcase your Podcast or latest episode",
-            "id": "63cc7d81fa7808160979a6ae"
+            "id": "63ec1cc5694ee0e3f49ab904"
           },
           {
             "capability": "Collect emails from your Podcast fans",
-            "id": "63cc7d81fa7808160979a6af"
+            "id": "63ec1cc5694ee0e3f49ab905"
           },
           {
             "capability": "Grow your Podcast subscribers",
-            "id": "63cc7d81fa7808160979a6b0"
+            "id": "63ec1cc5694ee0e3f49ab906"
           }
         ],
         "isInverse": true,
         "padding": "normal",
         "ctaButton": {
           "text": "Create a Podcast Link",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "primary"
         },
-        "id": "63cc7d81fa7808160979a698"
+        "id": "63ec1cc5694ee0e3f49ab8ee"
       },
       {
         "tag": "Contests",
@@ -219,21 +219,57 @@
         "topCapabilites": [
           {
             "capability": "Supercharge your growth with music-focused actions",
-            "id": "63cc7d81fa7808160979a6b1"
+            "id": "63ec1cc5694ee0e3f49ab907"
           },
           {
             "capability": "Go viral with referrals",
-            "id": "63cc7d81fa7808160979a6b2"
+            "id": "63ec1cc5694ee0e3f49ab908"
           }
         ],
         "isInverse": false,
         "padding": "normal",
         "ctaButton": {
           "text": "Create a Contest",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "secondary"
         },
-        "id": "63cc7d81fa7808160979a699"
+        "id": "63ec1cc5694ee0e3f49ab8ef"
+      },
+      {
+        "tag": "Short Links",
+        "title": {
+          "desktop": "Shorten and track every link you share with fans",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Make sure you’re always capturing valuable data with short, branded links that send fans directly to any destination like your merch store or website.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/short-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Get rid of long, bulky URLs",
+            "id": "63f24233bd797d7e3a0d3f6f"
+          },
+          {
+            "capability": "Capture more data",
+            "id": "63f24236bd797d7e3a0d3f70"
+          },
+          {
+            "capability": "Set conditional routing rules",
+            "id": "63f24240bd797d7e3a0d3f71"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a short link",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63f24210bd797d7e3a0d3f6e"
       }
     ]
   },
@@ -252,7 +288,7 @@
           "overrideTablet": false
         },
         "link": "https://",
-        "id": "63cc7d81fa7808160979a69a"
+        "id": "63ec1cc5694ee0e3f49ab8f0"
       },
       {
         "title": {
@@ -266,7 +302,7 @@
           "overrideTablet": false
         },
         "link": "https://",
-        "id": "63cc7d81fa7808160979a69b"
+        "id": "63ec1cc5694ee0e3f49ab8f1"
       },
       {
         "title": {
@@ -280,12 +316,12 @@
           "overrideTablet": false
         },
         "link": "https://",
-        "id": "63cc7d81fa7808160979a69c"
+        "id": "63ec1cc5694ee0e3f49ab8f2"
       }
     ]
   },
   "youShouldAlsoCheckOut": {
-    "title": "Discover More",
+    "title": "Discover more",
     "features": [
       {
         "title": {
@@ -294,18 +330,18 @@
           "overrideTablet": false
         },
         "description": {
-          "desktop": "Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis.",
+          "desktop": "Learn how to keep your fans engaged by understanding fan behaviors and preferences across all of your marketing activities.",
           "overrideMobile": false,
           "overrideTablet": false
         },
         "link": "/solutions/analytics",
         "imageUrl": "/img/solutions/analytics.png",
-        "id": "63cc7d81fa7808160979a69d",
+        "id": "63ec1cc5694ee0e3f49ab8f3",
         "iconImage": {}
       },
       {
         "title": {
-          "desktop": "Audience Relationship Management",
+          "desktop": "Fan Base Management",
           "overrideMobile": false,
           "overrideTablet": false
         },
@@ -316,7 +352,7 @@
         },
         "link": "/solutions/audience",
         "imageUrl": "/img/solutions/audience.png",
-        "id": "63cc7d81fa7808160979a69e",
+        "id": "63ec1cc5694ee0e3f49ab8f4",
         "iconImage": {}
       }
     ]
@@ -339,23 +375,8 @@
       "type": "secondary"
     }
   },
-  "meta": {
-    "title": "Feature.fm | Music Marketing | Grow your fanbase and career!",
-    "description": "Be part of a community of artists, labels, managers, and distributors who professionally grow their fanbase  with the  best music marketing tools. ",
-    "image": {
-      "id": "63cd56867098174d18b72e87",
-      "alt": "dsadsa",
-      "filename": "DraxAfricaBio Copy 3.png",
-      "mimeType": "image/png",
-      "filesize": 152938,
-      "width": 330,
-      "height": 342,
-      "createdAt": "2023-01-22T15:30:14.688Z",
-      "updatedAt": "2023-01-22T15:30:14.688Z",
-      "url": "/media/DraxAfricaBio Copy 3.png"
-    }
-  },
-  "_status": "draft",
-  "createdAt": "2023-01-22T21:46:21.602Z",
-  "updatedAt": "2023-01-22T21:46:21.602Z"
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
 }

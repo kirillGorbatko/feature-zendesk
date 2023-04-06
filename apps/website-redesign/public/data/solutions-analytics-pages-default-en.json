@@ -1,0 +1,160 @@
+{
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "Solutions Page - Default",
+  "slug": "default",
+  "benefitsSection": {
+    "title": "More amazing features that apply to all links",
+    "benefits": [
+      {
+        "title": "Use time to your advantage and create some buzz",
+        "descr": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+      },
+      {
+        "title": "Use time to your advantage and create some buzz",
+        "descr": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+      },
+      {
+        "title": "Use time to your advantage and create some buzz",
+        "descr": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+      }
+    ]
+  },
+  "getStartedSection": {
+    "title": "Get started for free",
+    "descr": "<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>",
+    "button": {
+      "title": "Start now"
+    }
+  },
+  "solutionsSection": [
+    {
+      "label": "Artist Bio Links",
+      "title": "A single link that connects fans to all of your content",
+      "descr": "A Link in Bio made for music. Connect fans to your latest release, video, merch, tour, website, press coverage from all of your social media bios. Add any button type you need:",
+      "image": {
+        "img": "images/solutions/1.png",
+        "img2x": "images/solutions/1@2x.png",
+        "webp": "images/solutions/1.webp",
+        "webp2x": "images/solutions/1@2x.webp",
+        "alt": ""
+      },
+      "advantages": [
+        "Simple Links",
+        "Email Collection Widgets",
+        "Action Buttons",
+        "Feature.fm Campaigns",
+        "Media Embeds",
+        "Messaging"
+      ],
+      "button": {
+        "children": "Read more about Bio link"
+      }
+    },
+    {
+      "label": "Release Links",
+      "title": "The fastest way for fans to consume your music",
+      "descr": "A smart music link that automatically routes fans to your released music in the services they already use and tracks everything you need to grow your streams.",
+      "imageSize": "sm",
+      "image": {
+        "img": "images/solutions/2.png",
+        "img2x": "images/solutions/2@2x.png",
+        "webp": "images/solutions/2.webp",
+        "webp2x": "images/solutions/2@2x.webp",
+        "alt": ""
+      },
+      "advantages": [
+        "Automatically finds your music in popular services",
+        "Convert your pre-release music links automatically on release day",
+        "Customize by country with geo-aware links and language localization"
+      ],
+      "button": {
+        "children": "Learn about Release links"
+      }
+    },
+    {
+      "label": "Pre-Save Links",
+      "title": "Build hype and maximize your streams on release day",
+      "imageSize": "md",
+      "descr": "Market your music to fans ahead of your release date. Get fans to Pre-Save your music and guarantee streams, follows and playlist adds from day one.",
+      "image": {
+        "img": "images/solutions/3.png",
+        "img2x": "images/solutions/3@2x.png",
+        "webp": "images/solutions/3.webp",
+        "webp2x": "images/solutions/3@2x.webp",
+        "alt": ""
+      },
+      "advantages": [
+        "Your music saved automatically on release day",
+        "Grow artist follows and playlist additions in one click"
+      ],
+      "button": {
+        "children": "Read more about Pre-Save links"
+      }
+    },
+    {
+      "label": "Tour Links",
+      "title": "Sell more tickets to shows",
+      "imageSize": "lg",
+      "descr": "A Link in Bio made for music. Connect fans to your latest release, video, merch, tour, website, press coverage from all of your social media bios. Add any button type you need:",
+      "image": {
+        "img": "images/solutions/4.png",
+        "img2x": "images/solutions/4@2x.png",
+        "webp": "images/solutions/4.webp",
+        "webp2x": "images/solutions/4@2x.webp",
+        "alt": ""
+      },
+      "advantages": [
+        "Quickly add your tour dates by importing shows from Bandsintown ",
+        "Keep loyal fans up to date on your show schedule"
+      ],
+      "button": {
+        "children": "Read more about Tour link"
+      }
+    },
+    {
+      "label": "Podcast Links",
+      "title": "Drive listeners to your Podcast",
+      "imageSize": "xl",
+      "descr": "Automated Smart Podcast Links connect listeners to your podcast in their favorite audio platform.",
+      "image": {
+        "img": "images/solutions/5.png",
+        "img2x": "images/solutions/5@2x.png",
+        "webp": "images/solutions/5.webp",
+        "webp2x": "images/solutions/5@2x.webp",
+        "alt": ""
+      },
+      "advantages": [
+        "Your music saved automatically on release day",
+        "Grow artist follows and playlist additions in one click"
+      ],
+      "button": {
+        "children": "Read more about Bio link"
+      }
+    },
+    {
+      "label": "Contests",
+      "title": "Reward your most loyal fans with contests and giveaways",
+      "imageSize": "xxl",
+      "descr": "Build fan loyalty with easy-to-create contests that reward your fans with prizes and encourage additional entries for taking actions of your choice.",
+      "image": {
+        "img": "images/solutions/6.png",
+        "img2x": "images/solutions/6@2x.png",
+        "webp": "images/solutions/6.webp",
+        "webp2x": "images/solutions/6@2x.webp",
+        "alt": ""
+      },
+      "advantages": [
+        "Supercharge your growth with music-focused actions",
+        "Go viral with referrals"
+      ],
+      "button": {
+        "children": "Read more about Contests links"
+      }
+    }
+  ],
+
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
+}

@@ -6,7 +6,6 @@ import {
   H3,
   SolutionPageItem,
   SolutionItemProps,
-  Footer,
   SolutionHero,
   GetStartedCta,
   MoreSolutions,
@@ -16,10 +15,16 @@ import {
   MoreSolutionsProps,
   GetStartedCtaProps,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
+
 import { loadPageProps } from '../../../src/helpers/variant';
-import React from 'react';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import React, { useEffect } from 'react';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export interface SolutionAnalyticsProps {
   heroSection: SolutionHeroProps;
@@ -29,9 +34,15 @@ export interface SolutionAnalyticsProps {
 }
 
 export function SolutionAnalytics(props: SolutionAnalyticsProps) {
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('dark');
+    };
+  }, []);
+
   return (
     <div
-      className="bg-background dark:bg-foreground"
+      className="bg-background dark:bg-foreground pt-20 desktop:pt-24"
       style={{
         transition: 'background-color 0.5s ease',
       }}
@@ -73,7 +84,10 @@ export function SolutionAnalytics(props: SolutionAnalyticsProps) {
       <div className="mt-20">
         <GetStartedCta {...props.getStartedCTASection} />
       </div>
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </div>
   );
 }

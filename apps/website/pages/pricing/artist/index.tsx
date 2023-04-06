@@ -1,11 +1,15 @@
 /* eslint-disable-next-line */
 import React from 'react';
 import { loadPageProps } from '../../../src/helpers/variant';
-import { CurrencyElement, FmHeader, Footer } from '@featurefm/design-system';
+import { CurrencyElement, FMFooter, FmHeader } from '@featurefm/design-system';
 import { Pricing, PricingProps } from '../../../src/templates/pricing';
 import { MobilePricing } from '../../../src/templates/pricing/mobile';
 import { FetchPricingResponse } from '../../../src/templates/pricing/types';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export function PricingArtist(props: PricingProps) {
   return (
@@ -18,7 +22,10 @@ export function PricingArtist(props: PricingProps) {
         <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
         <MobilePricing {...props} />
       </div>
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </>
   );
 }

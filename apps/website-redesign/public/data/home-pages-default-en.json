@@ -1,0 +1,74 @@
+{
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "Home Page - Default",
+  "slug": "default",
+
+  "heroSection": {
+    "title": "Build your fan base and music career.",
+    "button": {
+      "title": "Start for free"
+    }
+  },
+  "getStartedSection": {
+    "title": "Get started for free",
+    "descr": "<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>",
+    "button": {
+      "title": "Start now"
+    }
+  },
+  "professionalsSection": {
+    "label": "Marketing Professionals",
+    "title": "Learn how Feature.fm can help scale your business across your artist roster",
+    "descr": "Join thousands of labels, managers, marketers and distributors who manage their marketing efforts across artist rosters and utilize aggregated data at scale.",
+    "button": {
+      "title": "Feature.fm for professionals"
+    },
+    "logos": [
+      {
+        "src": "/images/professionals-logos/1.png",
+        "alt": "security group logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/2.png",
+        "alt": "awal logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/3.png",
+        "alt": "300 entertaiment logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/4.png",
+        "alt": "disraptor records logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/5.png",
+        "alt": "redeye worldwide logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/6.png",
+        "alt": "complex logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/5.png",
+        "alt": "redeye worldwide logo",
+        "loading": "lazy"
+      },
+      {
+        "src": "/images/professionals-logos/6.png",
+        "alt": "complex logo",
+        "loading": "lazy"
+      }
+    ]
+  },
+
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
+}

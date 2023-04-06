@@ -34,7 +34,7 @@ export function FourHundredFour() {
             <path
               d="M50.509 141L88.4406 141L88.4406 98.4L111 98.4L111 89.8L88.4406 89.8L88.4406 0L72.4694 0L0 91.2L0 98.4L50.509 98.4L50.509 141ZM11 89L51 39L51 89L11 89Z"
               id="Shape"
-              fill="#000000"
+              fill="currentColor"
               stroke="none"
             />
           </g>
@@ -42,7 +42,7 @@ export function FourHundredFour() {
             <path
               d="M50.509 141L88.4406 141L88.4406 98.4L111 98.4L111 89.8L88.4406 89.8L88.4406 0L72.4694 0L0 91.2L0 98.4L50.509 98.4L50.509 141ZM11 89L51 39L51 89L11 89Z"
               id="Shape"
-              fill="#000000"
+              fill="currentColor"
               stroke="none"
             />
           </g>

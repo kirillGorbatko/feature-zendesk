@@ -396,7 +396,7 @@ export function ForEverythingYouDo() {
                   Father John Misty
                 </div>
                 <div className="for-everyting__card_first_descr">
-                  Welcome to my Bio Link
+                  welcome to my bio link
                 </div>
               </div>
             </div>
@@ -496,7 +496,7 @@ export function ForEverythingYouDo() {
             </div>
             <div className="for-everyting__card_second_content">
               <div className="for-everyting__card_second_subtitle">Mxmtoon</div>
-              <div className="for-everyting__card_second_title">Rising</div>
+              <div className="for-everyting__card_second_title">Mona Lisa</div>
               <ul className="for-everyting__card_socials">
                 <li className="for-everyting__card_socials_item">
                   <div className="for-everyting__card_socials_item_in">
@@ -590,15 +590,13 @@ export function ForEverythingYouDo() {
                     />
                   </div>
                   <div className="card_post__head_main">
-                    <div className="card_post__title">Sad Surfing</div>
-                    <div className="card_post__author">Vôx Vé</div>
-                    <div className="card_post__link">
-                      vox-ve.ffm.to/sadsurfing
-                    </div>
+                    <div className="card_post__title">Fun times in Babylon</div>
+                    <div className="card_post__author">Father John Misty</div>
+                    <div className="card_post__link">ffm.to/qgenvke</div>
                   </div>
                 </div>
                 <div className="card_post__info">
-                  <div className="card_post__info_item">98,842 visits</div>
+                  <div className="card_post__info_item">85,129 Visits</div>
                   <div className="card_post__info_item">Post Release</div>
                 </div>
                 <div className="cart_post__bottom">
@@ -634,15 +632,13 @@ export function ForEverythingYouDo() {
                     />
                   </div>
                   <div className="card_post__head_main">
-                    <div className="card_post__title">Into the wild</div>
-                    <div className="card_post__author">Vôx Vé</div>
-                    <div className="card_post__link">
-                      vox-ve.ffm.to/intothewild
-                    </div>
+                    <div className="card_post__title">Fun times in Babylon</div>
+                    <div className="card_post__author">Father John Misty</div>
+                    <div className="card_post__link">ffm.to/qgenvke</div>
                   </div>
                 </div>
                 <div className="card_post__info">
-                  <div className="card_post__info_item">85,129 visits</div>
+                  <div className="card_post__info_item">98,842 visits</div>
                   <div className="card_post__info_item">Post Release</div>
                 </div>
                 <div className="cart_post__bottom">
@@ -678,17 +674,13 @@ export function ForEverythingYouDo() {
                     />
                   </div>
                   <div className="card_post__head_main">
-                    <div className="card_post__title">
-                      Stranger (Than I Look)
-                    </div>
-                    <div className="card_post__author">Vôx Vé</div>
-                    <div className="card_post__link">
-                      vox-ve.ffm.to/Stranger
-                    </div>
+                    <div className="card_post__title">Fun times in Babylon</div>
+                    <div className="card_post__author">Father John Misty</div>
+                    <div className="card_post__link">ffm.to/qgenvke</div>
                   </div>
                 </div>
                 <div className="card_post__info">
-                  <div className="card_post__info_item">71,380 visits</div>
+                  <div className="card_post__info_item">76,152 visits</div>
                   <div className="card_post__info_item">Post Release</div>
                 </div>
                 <div className="cart_post__bottom">

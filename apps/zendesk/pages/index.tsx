@@ -29,8 +29,8 @@ export function Index({ categories }: IndexProps) {
       <SearchWrap
         align="center"
         setLoadingStatus={setLoadingStatus}
-        title="Don’t sweat it, we got you"
-        subTitle="Here you’ll find everything you need to know to start promoting your music like a pro."
+        title="Don’t sweat it, we got you."
+        subTitle="Resources, knowledge and tips to be successful with Feature.fm"
       />
       <TopicList<Category> items={categories} />
       <FmGetStartedCta

@@ -1,0 +1,141 @@
+@import '../scss/helpers-all.scss';
+
+.item {
+  width: 100%;
+  max-width: 35rem;
+}
+
+.link {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+.picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--primary-color-3);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.artist {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+
+  &:before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    z-index: -1;
+    transition: opacity 0.3s;
+
+    background-color: var(--primary-color-2);
+
+    .item--v2_mod & {
+      background-color: var(--primary-color);
+    }
+
+    .link:hover & {
+      opacity: 0.6;
+    }
+  }
+}
+
+.artist__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  margin-top: auto;
+  padding: 1rem 2rem;
+
+  font-size: 1.4rem;
+  color: var(--light);
+
+  transform: translateY(100%);
+  transition: transform 0.3s;
+
+  background-color: var(--primary-color-2);
+
+  .item--v2_mod & {
+    background-color: var(--primary-color);
+  }
+
+  @include bp($tablet_max, min) {
+    min-height: 8rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    min-height: 6rem;
+  }
+
+  .link:hover & {
+    transform: translateY(0);
+  }
+}
+
+.label {
+  width: 50%;
+  margin-left: auto;
+
+  picture {
+    display: block;
+    width: 100%;
+    background-color: var(--dark);
+
+    @include bp($tablet_max, min) {
+      height: 8rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      height: 6rem;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

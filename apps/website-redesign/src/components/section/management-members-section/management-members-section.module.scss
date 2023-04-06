@@ -1,0 +1,13 @@
+@import 'libs/design-system/src/lib/scss/helpers-all.scss';
+
+//---------------------------------------------ManagementMemberSection
+.title {
+	@include bp($tablet_max, min) {
+		margin-bottom: 7.4rem;
+  }
+
+  @include bp($tablet_max - 1) {
+		margin-bottom: 5.8rem;
+  }
+}
+//---------------------------------------------ManagementMemberSection###

@@ -1,0 +1,17 @@
+{
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "Solutions Page - Default",
+  "slug": "default",
+  "getStartedSection": {
+    "title": "Get started for free",
+    "descr": "<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>",
+    "button": {
+      "title": "Start now"
+    }
+  },
+
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
+}

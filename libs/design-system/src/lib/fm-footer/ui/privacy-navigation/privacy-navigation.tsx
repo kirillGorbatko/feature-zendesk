@@ -1,11 +1,11 @@
-import { Link } from '@featurefm/shared/types';
+import { Link as FooterNavigationLink } from '@featurefm/shared/types';
 import React from 'react';
 import { FooterLink } from '../footer-link/footer-link';
 
 import styles from './privacy-navigation.module.scss';
 
 export type PrivacyNavigationProps = {
-  items: Link[];
+  items: FooterNavigationLink[];
   copyright: string;
 };
 

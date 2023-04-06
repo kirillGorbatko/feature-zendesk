@@ -47,7 +47,7 @@ export function Text(props: TextProps) {
       {(tablet || desktop).map((text, index) =>
         createElement(
           Components[props.as],
-          { className: 'hidden tablet:block: desktop:hidden', key: index },
+          { className: 'hidden tablet:block desktop:hidden', key: index },
           text
         )
       )}

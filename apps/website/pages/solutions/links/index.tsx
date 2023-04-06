@@ -13,7 +13,6 @@ import {
   H3,
   SolutionPageItem,
   SolutionItemProps,
-  Footer,
   SolutionHero,
   MoreSolutions,
   GetStartedCta,
@@ -21,10 +20,15 @@ import {
   Image,
   GetStartedCtaProps,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../../src/helpers/variant';
-import React from 'react';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import React, { useEffect } from 'react';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 type SolutionBenefitsProps = {
   title: string;
@@ -58,9 +62,15 @@ const integratedIcon = servicesIconsList.map(
 );
 
 export function SolutionLinks(props: SolutionLinksProps) {
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove('dark');
+    };
+  }, []);
+
   return (
     <div
-      className="bg-background dark:bg-foreground"
+      className="bg-background dark:bg-foreground pt-20 desktop:pt-24"
       style={{
         transition: 'background-color 0.5s ease',
       }}
@@ -74,12 +84,11 @@ export function SolutionLinks(props: SolutionLinksProps) {
               Integrated with hundreds of digital music services
             </div>
           </div>
-          <div className="flex justify-center flex-wrap items-center mt-10 desktop:mt-0">
+          <div className="flex desktop:justify-center flex-wrap items-center mt-10 desktop:mt-0">
             {integratedIcon.map((x, index) => (
               <div
                 key={index}
-                className="mx-4 desktop:mx-2 my-6 w-fit flex justify-center"
-                style={{ flex: '12%' }}
+                className="mx-4 desktop:mx-2 my-6 w-fit flex desktop:flex-[12%] justify-center"
               >
                 <Image
                   src={x}
@@ -119,7 +128,10 @@ export function SolutionLinks(props: SolutionLinksProps) {
       <div className="desktop:mt-20">
         <GetStartedCta {...props.getStartedCTASection} />
       </div>
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </div>
   );
 }

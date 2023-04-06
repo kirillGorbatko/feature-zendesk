@@ -1,4 +1,4 @@
-@import '../sass-helpers/helpers-all.scss';
+@import '../scss/helpers-all.scss';
 
 $top_offset: 2.2rem;
 $header_vr_padding: 1.6rem;
@@ -24,6 +24,14 @@ $header_vr_padding: 1.6rem;
 
 	// override tailwind class
 	z-index: 200000;
+
+	&:not(.header--scroll_state) {
+		background-color: transparent !important; 
+
+		&:after {
+			background-color: transparent !important;
+		}
+	}
 
 	&.header--hidden_mod {
 		transform: translateY(-100%);

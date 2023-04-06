@@ -1,0 +1,45 @@
+@import '../scss/helpers-all.scss';
+
+.fm-title {
+  color: $black;
+
+  &.fm-title--style_h1_mod {
+    @include h1_secondary;
+  }
+
+  &.fm-title--style_h2_mod {
+    @include h2_secondary;
+  }
+
+  &.fm-title--style_h3_mod {
+    @include h2;
+  }
+
+  &.fm-title--style_h4_mod {
+    @include h3_secondary;
+  }
+
+  &.fm-title--style_h5_mod {
+    @include h4_secondary;
+  }
+
+  &.fm-title--color_1_mod {
+    color: $white;
+  }
+
+  &.fm-title--color_2_mod {
+    color: $red;
+  }
+
+  &.fm-title--color_3_mod {
+    color: $purple;
+  }
+
+  &.fm-title--color_4_mod {
+    color: $purple_2;
+  }
+
+  &.fm-title--color_inherit_mod {
+    color: inherit;
+  }
+}

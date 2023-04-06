@@ -1,9 +1,9 @@
 {
-  "id": "63cea3b691f51a7df7f0d90f",
-  "title": "Solutions Page - ",
+  "id": "63ec1d6dc8d2da25b2314d1d",
+  "title": "Solutions Page - Default",
   "slug": "default",
   "heroSection": {
-    "title": "Own your<br/>relationships<br/>with your<br/>fans.",
+    "title": "Keep your <br/>fans within <br/>reach.",
     "description": "Manage your relationships with your fans like never before, collect fan contact info, get real-time insights and keep your fans notified about your latest drops."
   },
   "featuresSection": {
@@ -24,10 +24,10 @@
         "padding": "normal",
         "ctaButton": {
           "text": "Start for free",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "primary"
         },
-        "id": "63cea3b3735310fb6610a0a6"
+        "id": "63ec1cf5694ee0e3f49ab90f"
       },
       {
         "title": {
@@ -45,10 +45,10 @@
         "padding": "normal",
         "ctaButton": {
           "text": "Start for free",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "secondary"
         },
-        "id": "63cea3b3735310fb6610a0a7"
+        "id": "63ec1cf5694ee0e3f49ab910"
       },
       {
         "title": {
@@ -66,10 +66,10 @@
         "padding": "normal",
         "ctaButton": {
           "text": "Start for free",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "primary"
         },
-        "id": "63cea3b3735310fb6610a0a8"
+        "id": "63ec1cf5694ee0e3f49ab911"
       },
       {
         "title": {
@@ -87,10 +87,10 @@
         "padding": "normal",
         "ctaButton": {
           "text": "Start for free",
-          "link": "https://login.feature.fm/signup",
+          "link": "https://login.feature.fm/signup/",
           "type": "secondary"
         },
-        "id": "63cea3b3735310fb6610a0a9"
+        "id": "63ec1cf5694ee0e3f49ab912"
       }
     ]
   },
@@ -104,13 +104,13 @@
           "overrideTablet": false
         },
         "description": {
-          "desktop": "Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis.",
+          "desktop": "Learn how to keep your fans engaged by understanding fan behaviors and preferences across all of your marketing activities.",
           "overrideMobile": false,
           "overrideTablet": false
         },
         "link": "/solutions/analytics",
         "imageUrl": "/img/solutions/analytics.png",
-        "id": "63cea3b3735310fb6610a0aa",
+        "id": "63ec1cf5694ee0e3f49ab913",
         "iconImage": {}
       },
       {
@@ -126,7 +126,7 @@
         },
         "link": "/solutions/links",
         "imageUrl": "/img/solutions/feature-links.png",
-        "id": "63cea3b3735310fb6610a0ab",
+        "id": "63ec1cf5694ee0e3f49ab914",
         "iconImage": {}
       }
     ]
@@ -149,8 +149,8 @@
       "type": "secondary"
     }
   },
-  "_status": "draft",
-  "createdAt": "2023-01-23T15:11:50.067Z",
-  "updatedAt": "2023-01-23T15:11:50.067Z",
+  "_status": "published",
+  "createdAt": "2023-02-14T23:46:53.575Z",
+  "updatedAt": "2023-03-15T17:57:16.766Z",
   "meta": {}
 }

@@ -1,5 +1,5 @@
 /* eslint-disable-next-line */
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   PricingGradient,
   PricingLines,
@@ -10,6 +10,7 @@ import {
   PricingSummaryBox,
   Switch,
 } from '@featurefm/design-system';
+import Sticky from 'react-stickynode';
 import { PricingSummaryElement, PricingSummaryElements } from './types';
 import classnames from 'classnames';
 import Link from 'next/link';
@@ -72,22 +73,130 @@ function PeriodSelector({ isAnnual, setIsAnnual }) {
   );
 }
 
+export function FullPricingContentName(props: {
+  name: string;
+  tooltip: string;
+}) {
+  const [open, setOpen] = useState<boolean>(false);
+
+  return (
+    <div className="flex flex-row">
+      <div className="my-4 mx-2" onClick={() => setOpen(!open)}>
+        {open ? (
+          <svg
+            width="27px"
+            height="28px"
+            viewBox="0 0 27 28"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <title>Group 21</title>
+            <g
+              id="Website-Design"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="Mobile-Pricing---Fold-Collapse"
+                transform="translate(-44.000000, -210.000000)"
+                stroke="#E9E9E9"
+                stroke-width="2.002568"
+              >
+                <g
+                  id="Group-21"
+                  transform="translate(57.500000, 224.115385) scale(1, -1) translate(-57.500000, -224.115385) translate(45.000000, 211.615385)"
+                >
+                  <polyline
+                    id="Combined-Shape-Copy-9"
+                    transform="translate(13.000000, 13.500000) scale(-1, 1) rotate(-360.000000) translate(-13.000000, -13.500000) "
+                    points="18 11 13 16 8 11"
+                  ></polyline>
+                  <circle id="Oval" cx="12.5" cy="12.5" r="12.5"></circle>
+                </g>
+              </g>
+            </g>
+          </svg>
+        ) : (
+          <svg
+            width="27px"
+            height="28px"
+            viewBox="0 0 27 28"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <title>Group 21</title>
+            <g
+              id="Website-Design"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="Mobile-Pricing---Fold"
+                transform="translate(-44.000000, -210.000000)"
+                stroke="#E9E9E9"
+                stroke-width="2.002568"
+              >
+                <g
+                  id="Group-11-Copy"
+                  transform="translate(30.000000, 107.000000)"
+                >
+                  <g id="Group-21" transform="translate(15.000000, 104.615385)">
+                    <polyline
+                      id="Combined-Shape-Copy-9"
+                      transform="translate(13.000000, 13.500000) scale(-1, 1) rotate(-360.000000) translate(-13.000000, -13.500000) "
+                      points="18 11 13 16 8 11"
+                    ></polyline>
+                    <circle id="Oval" cx="12.5" cy="12.5" r="12.5"></circle>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        )}
+      </div>
+      <div>
+        <div className="m-4 mx-2">{props.name}</div>
+        {open && <div className="my-4 mx-2 text-sm">{props.tooltip}</div>}
+      </div>
+    </div>
+  );
+}
+
 export function MobilePricing(props: PricingProps) {
   const [isAnnual, setIsAnnual] = useState(props.isAnnual);
   const { summary, detailed } = props;
+  const pageRef = useRef(null);
   const [selectedDetailed, setSelectedDetailed] = useState(detailed[0][0]);
   const selectedDetailedObject = detailed.find(
     (x) => x[0] === selectedDetailed
   );
+
+  const [bottomBoundary, setBottomBoundary] = useState<number>(0);
 
   const onSelectedDetailedClicked = (e) => {
     const option = e.currentTarget.getAttribute('data-option');
     setSelectedDetailed(option);
   };
 
+  useEffect(() => {
+    const height =
+      (pageRef.current && pageRef.current.getBoundingClientRect().height) || 0;
+    if (pageRef.current && height > 0) {
+      setTimeout(() => {
+        setBottomBoundary(height);
+      }, 400);
+    }
+  });
+
   return (
-    <>
-      <div className="bg-foreground text-background dark:bg-background dark:text-foreground">
+    <div ref={pageRef}>
+      <div className="bg-foreground text-background dark:bg-background dark:text-foreground pt-20">
         <ViewPort>
           <div className="font-supergt font-regular pt-16 text-center text-4xl">
             Grow
@@ -138,46 +247,64 @@ export function MobilePricing(props: PricingProps) {
               className="mt-16"
               isAnnual={isAnnual}
             />
-            <div className="font-supergt mt-16 text-4xl">All Features</div>
+            <div className="font-supergt mt-16 mb-4 text-4xl">All Features</div>
           </div>
         </ViewPort>
-        <div className="flex pl-8 flex-row scrollbar-hide overflow-x-scroll whitespace-nowrap gap-2 my-8">
-          {detailed.map((x, index) => (
-            <div
-              key={index}
-              className={classnames(
-                'py-4 px-5 rounded-[25px] text-sm font-medium',
-                {
-                  'border-[2px] border-foreground dark:border-background':
-                    x[0] === selectedDetailed,
-                }
-              )}
-              data-option={x[0]}
-              onClick={onSelectedDetailedClicked}
-            >
-              {x[0]}
-            </div>
-          ))}
-        </div>
+        <Sticky
+          innerZ={101}
+          top={0}
+          bottomBoundary={bottomBoundary + 90}
+          innerClass="bg-background dark:bg-foreground"
+        >
+          <div className="flex pl-8 flex-row scrollbar-hide overflow-x-scroll whitespace-nowrap gap-2 pt-3 mb-8">
+            {detailed.map((x, index) => (
+              <div
+                key={index}
+                className={classnames(
+                  'py-4 px-5 rounded-[25px] text-sm font-medium',
+                  {
+                    'border-[2px] border-foreground dark:border-background':
+                      x[0] === selectedDetailed,
+                  }
+                )}
+                data-option={x[0]}
+                onClick={onSelectedDetailedClicked}
+              >
+                {x[0]}
+              </div>
+            ))}
+          </div>
+        </Sticky>
         <ViewPort>
           <div className="flex-1 pb-10">
-            <div className="flex flex-row">
-              {['Free', 'Pro', 'Pro Artist'].map((x, index) => (
-                <div
-                  key={index}
-                  className="border-2 border-b-0 border-r-0 [&:last-child]:border-r-2 border-[#E9E9E9] w-full text-center py-4"
-                >
-                  {x}
-                </div>
-              ))}
-            </div>
+            <Sticky
+              innerZ={100}
+              top={100}
+              bottomBoundary={bottomBoundary}
+              innerClass="bg-background dark:bg-foreground"
+            >
+              <div className="flex flex-row">
+                {[
+                  summary.planOne.planName,
+                  summary.planTwo.planName,
+                  summary.planThree.planName,
+                ].map((x, index) => (
+                  <div
+                    key={index}
+                    className="border-2 border-b-0 border-r-0 [&:last-child]:border-r-2 border-[#E9E9E9] w-full text-center py-4"
+                  >
+                    {x}
+                  </div>
+                ))}
+              </div>
+            </Sticky>
             <div className="border-2 border-[#E9E9E9]">
               {selectedDetailedObject[1].map((x, index) => (
                 <div
                   key={index}
                   className="flex flex-col border-t border-[#E9E9E9] [&:first-child]:border-t-0"
                 >
-                  <div className="m-4">{x.name}</div>
+                  <FullPricingContentName {...x} />
                   <div className="flex flex-row">
                     <div className="w-[240px] p-4 flex items-center justify-center text-primary1">
                       {x.planOne === true || x.planOne === false ? (
@@ -207,7 +334,7 @@ export function MobilePricing(props: PricingProps) {
           </div>
         </ViewPort>
       </div>
-    </>
+    </div>
   );
 }
 

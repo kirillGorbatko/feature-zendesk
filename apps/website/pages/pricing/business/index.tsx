@@ -3,14 +3,18 @@ import React, { useEffect, useState } from 'react';
 import { Pricing, PricingProps } from '../../../src/templates/pricing';
 import {
   CurrencyElement,
+  FMFooter,
   FmHeader,
-  Footer,
   PricingSummaryBoxProps,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../../src/helpers/variant';
 import { FetchPricingResponse } from '../../../src/templates/pricing/types';
 import { MobilePricing } from '../../../src/templates/pricing/mobile';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export function PricingBusiness(props: PricingProps) {
   return (
@@ -18,12 +22,18 @@ export function PricingBusiness(props: PricingProps) {
       <div className="hidden desktop:block dark bg-foreground">
         <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
         <Pricing {...props} />
-        <Footer />
+        <FMFooter
+          mainNavigation={FOOTER_NAVIGATION}
+          privacyNavigation={PRIVACY_NAVIGATION}
+        />
       </div>
       <div className="desktop:hidden dark">
         <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
         <MobilePricing {...props} />
-        <Footer />
+        <FMFooter
+          mainNavigation={FOOTER_NAVIGATION}
+          privacyNavigation={PRIVACY_NAVIGATION}
+        />
       </div>
     </>
   );

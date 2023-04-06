@@ -1,27 +1,30 @@
 /* eslint-disable-next-line */
 import { solutions } from '../../src/configuration/header-solutions';
 import {
-  Header,
   H4,
   H2,
   ViewPort,
   Text,
   TextInlineProps,
   GetStartedCta,
-  Footer,
   Image,
   H3,
   TestimonialsQuote,
   EnterpriseCustomersSlider,
   Button,
   FmHeader,
+  FMFooter,
 } from '@featurefm/design-system';
 import { loadPageProps } from '../../src/helpers/variant';
 import { ActionBoxProps, BusinessProps } from '@featurefm/design-system/props';
 import classnames from 'classnames';
 import React from 'react';
 import { getSelectorsByUserAgent } from 'react-device-detect';
-import { HEADER_NAVIGATION } from '@featurefm/shared/data';
+import {
+  FOOTER_NAVIGATION,
+  HEADER_NAVIGATION,
+  PRIVACY_NAVIGATION,
+} from '@featurefm/shared/data';
 
 export function ActionBox(props: ActionBoxProps) {
   return (
@@ -99,7 +102,7 @@ export function Business(props: BusinessProps) {
   return (
     <>
       <FmHeader items={HEADER_NAVIGATION} variant="inverted" />
-      <div className="relative bg-foreground text-background w-full pt-4 desktop:pt-6">
+      <div className="relative bg-foreground text-background w-full pt-24 desktop:pt-28">
         <ViewPort>
           <div className="flex flex-col">
             <div className="absolute right-0">
@@ -206,7 +209,7 @@ export function Business(props: BusinessProps) {
         <div className="flex flex-col desktop:flex-row mt-[160px] desktop:mt-[200px] justify-between desktop:items-center">
           <div>
             <Text
-              className="hidden"
+              className="hidden desktop:block"
               text={props.featuresSectionIntro.title}
               as="h3"
             />
@@ -224,7 +227,7 @@ export function Business(props: BusinessProps) {
       <Image
         src={props.manageFeatures.imageUrl}
         mobileSrc={props.manageFeatures.imageUrl.replace('-1', '-1-mobile')}
-        className="desktop:absolute right-0 mt-10 desktop:mt-20"
+        className="desktop:absolute desktop:w-[844px] desktop-xl:w-[1070px] right-0 mt-10 desktop:mt-20"
         alt="Dashboard illustration"
       />
       <ViewPort>
@@ -249,11 +252,11 @@ export function Business(props: BusinessProps) {
       <Image
         src={props.automationFeatures.imageUrl}
         mobileSrc={props.automationFeatures.imageUrl.replace('-2', '-2-mobile')}
-        className="desktop:absolute -left-28 mt-[20px] desktop:mt-[200px]"
+        className="desktop:absolute -left-28 mt-[20px] desktop:mt-[200px] desktop-xl:mt-[380px]"
         alt="Automation feature illustration"
       />
       <ViewPort>
-        <div className="desktop:flex -mt-10 desktop:mt-[220px] flex-col items-end">
+        <div className="desktop:flex -mt-10 desktop:mt-[220px] desktop-xl:mt-[380px] flex-col items-end">
           {props.automationFeatures.features.map((x, indx) => (
             <div className="w-full desktop:w-[500px]" key={indx}>
               <Text
@@ -269,7 +272,7 @@ export function Business(props: BusinessProps) {
         </div>
         <div className="mt-[160px] desktop:mt-[200px]">
           <Text
-            className="hidden"
+            className="hidden desktop:block"
             text={props.moreFeaturesSection.title}
             as="h3"
           />
@@ -296,7 +299,7 @@ export function Business(props: BusinessProps) {
         <ViewPort className="relative">
           <div className="relative desktop:absolute top-0 right-0 desktop:w-[570px]">
             <Text
-              className="hidden"
+              className="hidden desktop:block"
               text={props.fanRelationshipSection.title}
               as="h3"
             />
@@ -333,7 +336,7 @@ export function Business(props: BusinessProps) {
         <div className="flex mt-[160px] desktop:mt-[200px] flex-col desktop:flex-row desktop:justify-between desktop:items-center">
           <div>
             <Text
-              className="hidden"
+              className="hidden desktop:block"
               text={props.needScaleSection.title}
               as="h3"
             />
@@ -403,7 +406,7 @@ export function Business(props: BusinessProps) {
           <div className="desktop:grid grid-cols-2 text-background pt-20 desktop:pt-[200px]">
             <div className="w-full">
               <Text
-                className="hidden"
+                className="hidden desktop:block"
                 text={props.weAreYourPartnersSection.title}
                 as="h3"
               />
@@ -427,7 +430,12 @@ export function Business(props: BusinessProps) {
                 className="max-w-[470px] mt-[60px] desktop:odd:mt-0 even:flex even:text-right desktop:even:text-left flex-col items-end desktop:items-start"
                 key={x.title.toLowerCase()}
               >
-                <Image src={x.icon} width="90px" alt={`${x.title} icon`} />
+                <Image
+                  src={x.icon}
+                  mobileSrc={x.icon.replace(/(@2x\.png|\.png)/, '-mobile$1')}
+                  width="90px"
+                  alt={`${x.title} icon`}
+                />
                 <div className="text-[26px] text-background font-medium mt-8">
                   {x.title}
                 </div>
@@ -437,7 +445,10 @@ export function Business(props: BusinessProps) {
         </ViewPort>
       </div>
       <GetStartedCta {...props.bottomCTASection} />
-      <Footer />
+      <FMFooter
+        mainNavigation={FOOTER_NAVIGATION}
+        privacyNavigation={PRIVACY_NAVIGATION}
+      />
     </>
   );
 }

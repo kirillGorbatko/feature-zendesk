@@ -9,6 +9,7 @@
     "shared-hooks": "libs/shared/hooks",
     "shared-types": "libs/shared/types",
     "website": "apps/website",
+    "website-redesign": "apps/website-redesign",
     "zendesk": "apps/zendesk"
   }
 }

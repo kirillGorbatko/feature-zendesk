@@ -11,7 +11,7 @@ export interface HeroArtistCarouselProps {
 }
 
 export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
-  const numSlides = 19;
+  const numSlides = 22;
   const slides = [
     {
       artist: 'Rina Sawayama',
@@ -28,11 +28,11 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
       linkUrl: 'https://mxmtoon.ffm.to/comingofage',
     },
     {
-      artist: 'beabadoobee',
-      imageUrl: '/img/artist-carousel/beabadoobee.png',
-      label: 'Dirty Hit',
-      labelImageUrl: '/img/artist-carousel/labels/dirty-hit.png',
-      linkUrl: 'https://beabadoobee.ffm.to/beatopia',
+      artist: 'Dirty Heads',
+      imageUrl: '/img/artist-carousel/dirty-heads.png',
+      label: 'Better Noise Music',
+      labelImageUrl: '/img/artist-carousel/labels/bnm.png',
+      linkUrl: 'http://dirtyheads.ffm.to/swimteam',
     },
     {
       artist: 'Toro y Moi',
@@ -42,13 +42,12 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
       linkUrl: 'https://toroymoi.deadoc.co/deja-vu',
     },
     {
-      artist: 'Fireboy DML',
-      imageUrl: '/img/artist-carousel/fireboy-dml.png',
-      label: 'Empire',
-      labelImageUrl: '/img/artist-carousel/labels/empire.png',
-      linkUrl: 'https://music.empi.re/playboyalbum',
+      artist: 'Foxes',
+      imageUrl: '/img/artist-carousel/foxes.png',
+      label: 'PIAS',
+      labelImageUrl: '/img/artist-carousel/labels/pias.png',
+      linkUrl: 'http://foxes.ffm.to/thekick',
     },
-    //
     {
       artist: 'Bon Iver',
       imageUrl: '/img/artist-carousel/bon-iver.png',
@@ -78,13 +77,12 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
       linkUrl: 'https://dayglow.ffm.to/peopleinmotion',
     },
     {
-      artist: 'Young the Giant',
-      imageUrl: '/img/artist-carousel/young-the-giant.png',
-      label: 'AWAL',
-      labelImageUrl: '/img/artist-carousel/labels/awal.png',
-      linkUrl: 'https://youngthegiant.ffm.to/act1',
+      artist: 'Bad Bunny',
+      imageUrl: '/img/artist-carousel/bad-bunny.png',
+      label: 'Rimas Music',
+      labelImageUrl: '/img/artist-carousel/labels/rimas.png',
+      linkUrl: 'http://rimas.ffm.to/unveranosinti',
     },
-    //
     {
       artist: 'Tove Lo',
       imageUrl: '/img/artist-carousel/tove-lo.png',
@@ -114,13 +112,12 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
       linkUrl: 'https://ffm.to/iamwoman',
     },
     {
-      artist: 'Sofi Tukker',
-      imageUrl: '/img/artist-carousel/sofi-tukker.png',
-      label: 'Ultra',
-      labelImageUrl: '/img/artist-carousel/labels/ultra.png',
-      linkUrl: 'https://ffm.to/wettennis',
+      artist: 'Diplo',
+      imageUrl: '/img/artist-carousel/diplo.png',
+      label: 'Mad Decent',
+      labelImageUrl: '/img/artist-carousel/labels/mad-decent.png',
+      linkUrl: 'https://higherground.ffm.to/diplolp',
     },
-    //
     {
       artist: 'Megan Thee Stallion',
       imageUrl: '/img/artist-carousel/megan-thee-stallion.png',
@@ -149,13 +146,12 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
       labelImageUrl: '/img/artist-carousel/labels/empire.png',
       linkUrl: 'https://burnaboy.ffm.to/lovedamini',
     },
-    //
     {
       artist: 'Ze Felipe',
       imageUrl: '/img/artist-carousel/ze-felipe.png',
       label: 'Som Livre',
       labelImageUrl: '/img/artist-carousel/labels/som-livre.png',
-      linkUrl: 'todo', // Add
+      linkUrl: 'https://ffm.to/bandido_',
     },
     {
       artist: 'Kid Ink',
@@ -163,6 +159,13 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
       label: 'Foundation Media',
       labelImageUrl: '/img/artist-carousel/labels/foundation.png',
       linkUrl: 'https://foundation-media.ffm.to/alive',
+    },
+    {
+      artist: 'Arctic Monkeys',
+      imageUrl: '/img/artist-carousel/arctic-monkeys.png',
+      label: 'Domino Records',
+      labelImageUrl: '/img/artist-carousel/labels/domino.png',
+      linkUrl: 'http://arcticmonkeys.ffm.to/thecar',
     },
   ];
   return (
@@ -184,13 +187,13 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
             <div className="relative">
               <div
                 className={classnames(
-                  'flex flex-col w-[280px] tablet:w-[350px] h-[310] tablet:h-[430px]',
+                  'flex flex-col w-[280px] desktop:w-[350px] h-[310] desktop:h-[430px]',
                   {
-                    'mt-[60px] tablet:mt-[80px]': index % 2 === 0,
+                    'mt-[60px] desktop:mt-[80px]': index % 2 === 0,
                   }
                 )}
               >
-                <div className="relative w-[280px] tablet:w-[350px] h-[280px] tablet:h-[350px]">
+                <div className="relative w-[280px] desktop:w-[350px] h-[280px] desktop:h-[350px]">
                   <a
                     className="group"
                     href={item.linkUrl}
@@ -212,7 +215,7 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
                     >
                       <div
                         className={classnames(
-                          'h-0 flex duration-200 transition-all absolute left-0 bottom-0 w-[140px] tablet:w-[175px] group-hover:h-[60px] tablet:group-hover:h-[80px] text-background justify-center items-center',
+                          'h-0 flex duration-200 transition-all absolute left-0 bottom-0 w-[140px] desktop:w-[175px] group-hover:h-[60px] desktop:group-hover:h-[80px] text-background justify-center items-center',
                           {
                             'bg-primary1': index % 2 !== 0,
                             'bg-primary2': index % 2 === 0,
@@ -220,18 +223,16 @@ export function HeroArtistCarousel(props: HeroArtistCarouselProps) {
                         )}
                       >
                         <div className="px-2 break-words overflow-hidden text-[14px]">
-                          {`ffm.to/${item.linkUrl.split('/').pop()}`}
+                          {`/ ${item.artist}`}
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
-                <div className="flex justify-end h-[60px] tablet:h-[80px] w-full">
+                <div className="flex justify-end h-[60px] desktop:h-[80px] w-full overflow-hidden">
                   <Image
                     className="w-1/2"
-                    src={
-                      item.labelImageUrl
-                    }
+                    src={item.labelImageUrl}
                     alt={`Lable: ${item.label}`}
                   />
                 </div>

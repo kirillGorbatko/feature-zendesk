@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import classNames from 'classnames';
 import styles from './topic-icon.module.scss';
 

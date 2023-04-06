@@ -1,0 +1,81 @@
+@import '../scss/helpers-all.scss';
+
+.hero {
+  position: relative;
+  background-color: $black;
+
+  @include bp($tablet_max, min) {
+    padding: 16.6rem $gl_desktop_indent 19.2rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 9.6rem $gl_mobile_indent 14.4rem;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    pointer-events: none;
+    content: '';
+  }
+
+  &::before {
+    right: 0;
+
+    @include bp($tablet_max, min) {
+      top: -6rem;
+      height: calc(100% + 6rem);
+      width: 27%;
+      background: linear-gradient(
+        258deg,
+        rgba($red, 0.2) 10%,
+        rgba(255, 103, 117, 0) 60%
+      );
+    }
+
+    @include bp($tablet_max - 1) {
+      top: -5rem;
+      height: calc(100% + 5rem);
+      width: 100%;
+      background: linear-gradient(
+        258deg,
+        rgba($red, 0.2) 0%,
+        rgba(255, 103, 117, 0) 60%
+      );
+    }
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+
+    width: 73.333%;
+    height: 100%;
+
+    background: linear-gradient(
+      17deg,
+      rgba(155, 98, 255, 0.35) 5%,
+      rgba(155, 98, 255, 0) 40%
+    );
+    @include bp($tablet_max - 1) {
+      display: none;
+    }
+  }
+}
+
+.hero__button_wrap {
+  @include flex_block(row, wrap, center, center, center);
+  width: 100%;
+}
+
+.hero__title_wrap {
+  margin-bottom: 8rem;
+
+  @include bp($tablet_max, min) {
+    text-align: center;
+  }
+
+  @include bp($tablet_max - 1) {
+    max-width: 32rem;
+  }
+}

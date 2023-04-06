@@ -1,0 +1,66 @@
+@import '../scss/helpers-all.scss';
+
+.fm_solution_benefit_section {
+  @include bp($tablet_max, min) {
+    padding: 10rem $gl_desktop_indent 7.5rem;
+  }
+  @include bp($tablet_max - 1) {
+    padding: 10rem $gl_mobile_indent 7.5rem;
+  }
+}
+
+.fm_solution_benefit_section__title {
+  max-width: 70rem;
+
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 10.2rem;
+    }
+    @include bp($tablet_max - 1) {
+      margin-bottom: 5.6rem;
+    }
+  }
+}
+
+.fm_solution_benefit_section__list {
+  @include flex_block(row, wrap, flex-start, flex-start, flex-start);
+
+  width: calc(100% + var(--gap));
+  margin: 0 calc(var(--gap) * -1) calc(var(--gap) * -1) 0;
+
+  @include bp($desktop, min) {
+    --gap: 7.8rem;
+  }
+  @include bp($desktop - 1, $tablet_max) {
+    --gap: 2.8rem;
+  }
+  @include bp($tablet_max - 1) {
+    --gap: 4rem;
+  }
+}
+
+.fm_solution_benefit_section__item_wrap {
+  @include flex_block(column, wrap, flex-start, center, center);
+  padding: 0 var(--gap) var(--gap) 0;
+
+  @include bp($desktop, min) {
+    min-height: 46rem;
+  }
+  @include bp($desktop - 1, $tablet_max) {
+    min-height: 41rem;
+  }
+
+  @include bp($tablet_max, min) {
+    width: 33.333%;
+
+    &:nth-child(3n + 2) {
+      margin-top: 6rem;
+    }
+    &:nth-child(3n + 3) {
+      margin-top: 12rem;
+    }
+  }
+  @include bp($tablet_max - 1) {
+    width: 100%;
+  }
+}

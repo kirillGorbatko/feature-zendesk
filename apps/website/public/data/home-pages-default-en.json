@@ -1,6 +1,6 @@
 {
-  "id": "63cc288d70c7c427768d7314",
-  "title": "HomePage - ",
+  "id": "63ebdc90c8d2da25b2314af1",
+  "title": "HomePage - Default",
   "slug": "default",
   "heroSection": {
     "heroTitle": {
@@ -11,7 +11,7 @@
     },
     "ctaButton": {
       "text": "Start for free",
-      "link": "https://login.feature.fm/signup",
+      "link": "https://login.feature.fm/signup/",
       "type": "primary"
     },
     "trustedBySection": {
@@ -29,7 +29,7 @@
       "overrideTablet": false
     },
     "subtitle": {
-      "desktop": "Marketing, built for music. From your new single to merch, tours, NFTs and everything in between.",
+      "desktop": "Marketing, built for music. ",
       "overrideMobile": false,
       "overrideTablet": false
     },
@@ -39,49 +39,49 @@
         "description": "Connect fans to all of your content with a single Link in Bio.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/artist_bio_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f21fb"
+        "id": "63ebdc8941eadd2d12fc4c17"
       },
       {
         "title": "Pre-Save Links",
         "description": "Build momentum ahead of your music release.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/pre_release_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f21fc"
+        "id": "63ebdc8941eadd2d12fc4c18"
       },
       {
         "title": "Release Links",
         "description": "Get more streams with a link to your music in all services.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/released_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f21fd"
+        "id": "63ebdc8941eadd2d12fc4c19"
       },
       {
         "title": "Contest & Unlock Pages",
         "description": "Reward your fans with prizes for taking actions you want.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/contest_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f21fe"
+        "id": "63ebdc8941eadd2d12fc4c1a"
       },
       {
         "title": "Tour and Event Links",
         "description": "Sell more tickets to shows with a link to all of your tour dates.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/tour_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f21ff"
+        "id": "63ebdc8941eadd2d12fc4c1b"
       },
       {
         "title": "Podcast Links",
         "description": "Grow listeners on your Podcast with a link to all audio platforms.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/podcast_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f2200"
+        "id": "63ebdc8941eadd2d12fc4c1c"
       },
       {
         "title": "Short Links",
         "description": "Shorten and track any URL you share online to any destination.",
         "learnMoreLink": "http://...",
         "icon": "/img/link-icons/short_link_icon.svg",
-        "id": "63cc288a9f81d24f2b7f2201"
+        "id": "63ebdc8941eadd2d12fc4c1d"
       }
     ],
     "ctaButton": {
@@ -147,12 +147,12 @@
       {
         "quote": "When my song went viral on TikTok, Feature.fm allowed us to capture hundreds of thousands of Pre-Saves and turn it into millions of streams on release day.",
         "quoter": "Stacey Ryan",
-        "quoterTitle": "Indie Artist",
+        "quoterTitle": "Jazz Queen",
         "quoterLink": {
-          "name": "Read Success Story",
-          "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE"
+          "name": "Read success story",
+          "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE/"
         },
-        "id": "63cc288a9f81d24f2b7f2207",
+        "id": "63ebdc8941eadd2d12fc4c23",
         "quoterImageSection": {
           "profileImage": {},
           "landingPageImage": {},
@@ -160,14 +160,14 @@
         }
       },
       {
-        "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
-        "quoter": "Emmy Meli",
-        "quoterTitle": "Indie Artist",
+        "quote": "Feature.fm has completely transformed the way I approach music promotion. Their platform has helped me reach more fans and build a dedicated following that has allowed me to pursue my dreams as an artist.",
+        "quoter": "David Kushner",
+        "quoterTitle": "Singer Songwriter",
         "quoterLink": {
-          "name": "Read Success Story",
-          "url": "https://ffm.to/emmymelicasestudy.OWE"
+          "name": "Read success story",
+          "url": "https://ffm.link/davidkushnercasestudy.OWE"
         },
-        "id": "63cc288a9f81d24f2b7f2206",
+        "id": "63ebdc8941eadd2d12fc4c21",
         "quoterImageSection": {
           "profileImage": {},
           "landingPageImage": {},
@@ -177,12 +177,12 @@
       {
         "quote": "Its quick, easy, and accessible for people to check out my music!",
         "quoter": "Carol Souki",
-        "quoterTitle": "Indie Artist",
+        "quoterTitle": "Singer Songwriter",
         "quoterLink": {
-          "name": "Check out my Bio Link",
-          "url": " https://ffm.bio/zmn269q"
+          "name": "",
+          "url": ""
         },
-        "id": "63cc288a9f81d24f2b7f2202",
+        "id": "63ebdc8941eadd2d12fc4c1e",
         "quoterImageSection": {
           "profileImage": {},
           "landingPageImage": {},
@@ -192,12 +192,12 @@
       {
         "quote": "Great and easy to use interface and tons of great features. Well worth the price.",
         "quoter": "Softspoken",
-        "quoterTitle": "Indie Artist",
+        "quoterTitle": "A post-hardcore band from Kentucky",
         "quoterLink": {
-          "name": "Check out our music",
-          "url": "https://ssffm.co/join"
+          "name": "",
+          "url": ""
         },
-        "id": "63cc288a9f81d24f2b7f2203",
+        "id": "63ebdc8941eadd2d12fc4c1f",
         "quoterImageSection": {
           "profileImage": {},
           "landingPageImage": {},
@@ -205,29 +205,14 @@
         }
       },
       {
-        "quote": "Simply the best Marketing Plartform for Musicians!",
-        "quoter": "Drax Africa",
-        "quoterTitle": "Indie Artist",
+        "quote": "I couldn't promote myself to my fans without Feature.fm",
+        "quoter": "Madge",
+        "quoterTitle": "Hyperpop alien",
         "quoterLink": {
-          "name": "Check out my Bio Link",
-          "url": "https://ffm.bio/draxafrica"
+          "name": "",
+          "url": ""
         },
-        "id": "63cc288a9f81d24f2b7f2204",
-        "quoterImageSection": {
-          "profileImage": {},
-          "landingPageImage": {},
-          "mobileLandingPageImage": {}
-        }
-      },
-      {
-        "quote": "This platform blows the competition away for prices and services.",
-        "quoter": "Eric Martin",
-        "quoterTitle": "Indie Artist",
-        "quoterLink": {
-          "name": "Check out my Bio Link",
-          "url": "https://ffm.bio/8q5dvyb"
-        },
-        "id": "63cc288a9f81d24f2b7f2205",
+        "id": "63ebdc8941eadd2d12fc4c20",
         "quoterImageSection": {
           "profileImage": {},
           "landingPageImage": {},
@@ -237,7 +222,7 @@
     ]
   },
   "forProfessionalsCTASection": {
-    "sectionTag": "Marketing professionals",
+    "sectionTag": "For business",
     "title": {
       "desktop": "Learn how Feature.fm can help scale your business.",
       "overrideMobile": false,
@@ -249,7 +234,7 @@
       "overrideTablet": false
     },
     "ctaButton": {
-      "text": "Feature.fm for professionals",
+      "text": "Feature.fm for business",
       "link": "/business",
       "type": "secondary"
     },
@@ -258,49 +243,49 @@
         "quote": "Feature.fm allowed us to turn the creation and virality into a marketing campaign, capturing the data and the Pre-Saves.",
         "quoter": "Nils Gums",
         "quoterTitle": "Founder, The Complex Group",
-        "name": "Read case study",
-        "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE",
-        "id": "63cc288de07de4a48ff3d0ae"
+        "name": "Read success story",
+        "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE/",
+        "id": "63ebdc8941eadd2d12fc4c24"
       },
       {
         "quote": "The biggest problem was solved in that we were able to capitalize on the TikTok traffic our artists were gaining, converting fans of the track via the pre-save and resulting in 125MM streams within 4 months.",
         "quoter": "Sam Lockhart",
         "quoterTitle": "Manager, Disruptor",
-        "name": "Read case study",
-        "url": "https://ffm.to/emmymelicasestudy.OWE",
-        "id": "63cc288de07de4a48ff3d0b0"
+        "name": "Read success story",
+        "url": "https://ffm.to/emmymelicasestudy.OWE/",
+        "id": "63ebdc8941eadd2d12fc4c25"
       },
       {
         "quote": "We love using Feature.fm! we’ve tried many different platforms, and this one is by far our favourite. Also, the customer service is excellent!",
         "quoter": "Tom Davies",
         "quoterTitle": "Marketing Director, Secretly Group",
-        "name": "Read case study",
-        "url": "https://...",
-        "id": "63cc288de07de4a48ff3d0b2"
+        "name": "",
+        "url": "",
+        "id": "63ebdc8941eadd2d12fc4c26"
       },
       {
         "quote": "Feature.fm has allowed us to upgrade our Pre-Save campaigns to increase both Spotify and Apple Music conversions on release. We've collected thousands of Spotify followers and the data collected empowers and informs our teams.",
         "quoter": "Aaron Bogucki",
         "quoterTitle": "Global Head of Audience Development, AWAL",
-        "name": "Read case study",
-        "url": "https://...",
-        "id": "63cc288de07de4a48ff3d0b4"
+        "name": "",
+        "url": "",
+        "id": "63ebdc8941eadd2d12fc4c27"
       },
       {
         "quote": "Feature.fm provides us with the most dynamic tool we have ever used to accomplish our mission of engaging new fans at a global scale.",
         "quoter": "Hank Stockard",
         "quoterTitle": "Marketing Director, Red Eye Distribution",
-        "name": "Read case study",
-        "url": "https://...",
-        "id": "63cc288de07de4a48ff3d0b6"
+        "name": "",
+        "url": "",
+        "id": "63ebdc8941eadd2d12fc4c28"
       },
       {
         "quote": "Feature.fm really listens to the digital marketing community and build things they need. They're so open minded to hearing feedback and actually putting action to it.",
         "quoter": "Josh D'Amore",
         "quoterTitle": "Head of Digital, 300 Entertainment",
-        "name": "Read case study",
-        "url": "https://...",
-        "id": "63cc288de07de4a48ff3d0b8"
+        "name": "",
+        "url": "",
+        "id": "63ebdc8941eadd2d12fc4c29"
       }
     ]
   },
@@ -322,23 +307,8 @@
       "type": "secondary"
     }
   },
-  "meta": {
-    "title": "Feature.fm | Music Marketing | Grow your fanbase and career!",
-    "description": "dasd dasdsa dadasd sadsad asdas dsad asdsadasd asd adasd asdasdsad adsad asdasd dsad asddasdd dasdasd ddasdasd",
-    "image": {
-      "id": "63cd56867098174d18b72e87",
-      "alt": "dsadsa",
-      "filename": "DraxAfricaBio Copy 3.png",
-      "mimeType": "image/png",
-      "filesize": 152938,
-      "width": 330,
-      "height": 342,
-      "createdAt": "2023-01-22T15:30:14.688Z",
-      "updatedAt": "2023-01-22T15:30:14.688Z",
-      "url": "/media/DraxAfricaBio Copy 3.png"
-    }
-  },
-  "_status": "draft",
-  "createdAt": "2023-01-22T15:30:32.792Z",
-  "updatedAt": "2023-01-22T15:30:32.792Z"
+  "_status": "published",
+  "createdAt": "2023-02-14T19:10:08.572Z",
+  "updatedAt": "2023-03-15T17:24:03.305Z",
+  "meta": {}
 }
