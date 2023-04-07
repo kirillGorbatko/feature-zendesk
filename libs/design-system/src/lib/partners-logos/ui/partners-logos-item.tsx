@@ -31,4 +31,4 @@ function PartnersLogosItem({
   );
 }
 
-export { PartnersLogosItem };
+export { PartnersLogosItem, PartnersLogosItemProps };

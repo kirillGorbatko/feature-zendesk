@@ -10,7 +10,9 @@
     padding: 1.7rem 0;
   }
   @include bp($tablet_max - 1) {
-    padding: 2.4rem 0;
+    padding: 2.2rem 0;
+    margin-left: -$gl_mobile_indent;
+    width: calc(100% + $gl_mobile_indent * 2);
   }
 }
 
@@ -55,7 +57,7 @@
 
     &.partners_logos__item--offset_mod {
       transform: translateX(var(--mob-row-offset));
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.8rem;
     }
   }
 }

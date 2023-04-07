@@ -1,1 +1,86 @@
 @import '../../../scss/helpers-all.scss';
+
+.tab {
+}
+
+.tab__quote {
+  @include bp($tablet_max, min) {
+    line-height: 1.22;
+    font-size: 2.5rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+  @include bp($tablet_max - 1) {
+    font-size: 1.8rem;
+    line-height: 1.4;
+
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+  }
+}
+
+.tab__credits {
+  @include bp($tablet_max, min) {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.tab__name {
+  font-weight: 700;
+}
+
+.tab__name,
+.tab__position {
+  font-size: 1.6rem;
+
+  @include bp($tablet_max, min) {
+    line-height: 1.68;
+  }
+  @include bp($tablet_max) {
+    line-height: 1.4;
+  }
+}
+
+.tab__link {
+  @include flex_block(row, wrap, flex-start, center, center);
+  display: inline-flex;
+
+  line-height: 1.43;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: $black;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: -0.04em;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.8);
+    text-decoration: none;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.tab__link_icon {
+  margin: 0.2rem 0 0 0.8rem;
+  width: 0.8rem;
+  height: 1rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}

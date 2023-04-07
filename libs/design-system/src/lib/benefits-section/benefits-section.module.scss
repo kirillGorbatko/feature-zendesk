@@ -1,0 +1,16 @@
+.benefits {}
+
+.benefits__row {
+  display: flex;
+  align-items: center;
+}
+
+.benefits__column {
+  &:nth-child(1) {
+    width: 61.5%;
+  }
+
+  &:nth-child(2) {
+    width: 38.5%;
+  }
+}

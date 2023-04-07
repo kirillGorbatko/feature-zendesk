@@ -3,7 +3,8 @@ import {
   FMButton,
   FmGetStartedCta,
   FmGetStartedCtaProps,
-  Distributors,
+  KpiList,
+  BenefitsSection,
 } from '@featurefm/design-system';
 import { getPageData } from '../../api';
 
@@ -22,7 +23,38 @@ export function Business({ getStartedSection }: BusinessProps) {
           Try free for 14-days
         </FMButton>
       </BusinessHero>
-      <Distributors label="Trusted by the industry’s top labels, managers and distributors" />
+      <KpiList
+        items={[
+          {
+            kpi: '+300K',
+            title: 'Artists',
+          },
+          {
+            kpi: '10%',
+            title: 'of recorded music',
+          },
+          {
+            kpi: '+200M',
+            title: 'Fans collected',
+          },
+        ]}
+      />
+      <BenefitsSection
+        benefits={[
+          {
+            title: 'Automate your workflows',
+            text: 'Focus on automating your marketing lifecycle from pre-release to post release, touring, fan contact capture and communications to be more efficient and reduce your manual workload.',
+          },
+          {
+            title: 'Improve your conversions',
+            text: 'Feature.fm landing pages are optimized for conversions with Pre-Saves that convert in each local time-zone, the fastest page load speeds in the industry, geo-aware behaviors and language localization.',
+          },
+          {
+            title: 'Monetize with Affiliate Partners',
+            text: 'Generate additional revenue from every campaign with affiliate marketing integrations like Apple, Amazon and Spotify.',
+          },
+        ]}
+      />
       {getStartedSection && (
         <FmGetStartedCta {...getStartedSection} variant="v2" />
       )}

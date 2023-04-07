@@ -25,11 +25,11 @@
 
   @include bp($desktop, min) {
     @include flex_block(row, wrap, flex-start, stretch, stretch);
-    padding: 4.5rem 7.8% 8rem;
+    padding: 4.5rem 7.8% 5rem;
   }
 
   @include bp($desktop - 1, $tablet_max) {
-    padding: 4.4rem 5rem 8rem;
+    padding: 4.4rem 5rem 5.6rem;
   }
   @include bp($tablet_max, min) {
     @include flex_block(row, wrap, flex-start, stretch, stretch);
@@ -61,7 +61,52 @@
 }
 
 .professionals__tabs {
+  @include flex_block(column, nowrap, flex-start, stretch, stretch);
+  position: relative;
+  height: 100%;
+
+  @include bp($tablet_max, min) {
+    padding: 4.4rem 0 0 3.4rem;
+  }
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
 .professionals__tabs_decor {
+  @include bp($tablet_max, min) {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 13.1rem;
+    height: 11.4rem;
+  }
+  @include bp($tablet_max - 1) {
+    width: 5rem;
+    height: 3.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+.professionals__tabs_list {
+  @include bp($tablet_max, min) {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+  }
+}
+
+.professionals__tabs_pagination {
+  margin-top: auto;
 }

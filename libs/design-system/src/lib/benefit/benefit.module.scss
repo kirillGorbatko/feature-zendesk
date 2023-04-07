@@ -1,0 +1,34 @@
+@import '../scss/helpers-all.scss';
+
+.benefit {
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 8rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 6.4rem;
+    }
+  }
+}
+
+.benefit__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 2.8rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 3.8rem;
+    }
+  }
+}
+
+.benefit__text {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.35;
+}

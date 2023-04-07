@@ -13,14 +13,15 @@ import {
   YourFansMobile,
   KnowWhatWorks,
   KnowWhatWorksMobile,
+  Quote,
   Professionals,
   PartnersLogos,
-  // PartnersLogosItemProps,
+  PartnersLogosItemProps,
   ArtistCarousel,
   FmGetStartedCta,
   FmGetStartedCtaProps,
   ProfessionalsProps,
-  Cookies,
+  TabsPagination,
 } from '@featurefm/design-system';
 
 import { getPageData } from '../api';
@@ -32,11 +33,12 @@ export interface IndexProps {
     };
   };
   getStartedSection: FmGetStartedCtaProps;
-  professionalsSection: ProfessionalsProps & {
+  forProfessionalsCTASection: ProfessionalsProps & {
     button?: {
       title: string;
+      link?: string;
     };
-    logos?: any[];
+    logos?: PartnersLogosItemProps[];
   };
 }
 
@@ -45,28 +47,10 @@ import { ARTIST_CAROUSEL_DATA } from '@featurefm/shared/data';
 export function Index({
   heroSection,
   getStartedSection,
-  professionalsSection,
+  forProfessionalsCTASection,
 }: IndexProps) {
   return (
     <>
-      <Cookies>
-        <Cookies.Content>
-          Like everyone else, we use cookies. You can read about thier use in
-          our <a href="#">Privacy Policy</a>
-        </Cookies.Content>
-        <Cookies.ActionBar>
-          <Cookies.ActionItem>
-            <FMButton width="full" size="xl" variant="quaternary">
-              Essential only
-            </FMButton>
-          </Cookies.ActionItem>
-          <Cookies.ActionItem>
-            <FMButton width="full" size="xl" variant="secondary">
-              Essential only
-            </FMButton>
-          </Cookies.ActionItem>
-        </Cookies.ActionBar>
-      </Cookies>
       <div>Home page</div>
       {heroSection && (
         <Hero>
@@ -242,35 +226,45 @@ export function Index({
           </InfoRow.AnimationBlock>
         </InfoRow.Column>
       </InfoRow>
-
-      {professionalsSection && (
+      <Quote />
+      {forProfessionalsCTASection && (
         <Professionals>
           <Professionals.Inner>
             <Professionals.Column
-              label={professionalsSection.label}
-              title={professionalsSection.title}
-              descr={professionalsSection.descr}
+              sectionTag={forProfessionalsCTASection.sectionTag}
+              title={forProfessionalsCTASection.title}
+              description={forProfessionalsCTASection.description}
             >
-              {professionalsSection.button && (
+              {forProfessionalsCTASection.ctaButton && (
                 <Professionals.Button mobileHidden>
-                  <FMButton size="md" width="full" variant="primary">
-                    {professionalsSection.button?.title}
+                  <FMButton
+                    size="md"
+                    width="full"
+                    variant="primary"
+                    href={forProfessionalsCTASection.ctaButton?.link}
+                  >
+                    {forProfessionalsCTASection.ctaButton?.text}
                   </FMButton>
                 </Professionals.Button>
               )}
             </Professionals.Column>
             <Professionals.Column>
-              {professionalsSection.button && (
+              {forProfessionalsCTASection?.testimonials?.length > 0 && (
+                <Professionals.Tabs
+                  testimonials={forProfessionalsCTASection?.testimonials}
+                />
+              )}
+              {forProfessionalsCTASection.ctaButton && (
                 <Professionals.Button desktopHidden>
                   <FMButton size="md" width="full" variant="primary">
-                    {professionalsSection.button?.title}
+                    {forProfessionalsCTASection.ctaButton?.text}
                   </FMButton>
                 </Professionals.Button>
               )}
             </Professionals.Column>
           </Professionals.Inner>
-          {professionalsSection.logos && (
-            <PartnersLogos data={professionalsSection.logos} />
+          {forProfessionalsCTASection.logos && (
+            <PartnersLogos data={forProfessionalsCTASection.logos} />
           )}
         </Professionals>
       )}

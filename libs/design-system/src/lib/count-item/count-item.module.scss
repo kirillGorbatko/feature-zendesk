@@ -1,0 +1,38 @@
+@import '../scss/helpers-all.scss';
+
+.item {
+  text-align: center;
+}
+
+.item__kpi {
+  font-family: $font_gpsuper;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 1rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  @include bp($tablet_max, min) {
+    font-size: 9rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 6rem;
+  }
+}
+
+.item__title {
+  @include bp($tablet_max, min) {
+    font-size: 1.8rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 1.6rem;
+  }
+}

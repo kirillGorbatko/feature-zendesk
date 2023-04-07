@@ -124,6 +124,9 @@ export * from './lib/preloader/preloader';
 
 export * from './lib/artist-carousel/artist-carousel';
 export * from './lib/cookies/cookies';
+
+export * from './lib/quote/quote';
+export * from './lib/quote-icon/quote-icon';
 export * from './lib/content-links/content-links';
 export * from './lib/hero/hero';
 export * from './lib/hero-about/hero-about';
@@ -139,7 +142,11 @@ export * from './lib/fm-solutions-benefit-section/fm-solutions-benefit-section';
 export * from './lib/fm-solutions-benefit/fm-solutions-benefit';
 export * from './lib/fm-join-team-cta/fm-join-team-cta';
 export * from './lib/solution-icons/solution-icons';
+export * from './lib/tabs-pagination/tabs-pagination';
 export * from './lib/business-hero/business-hero';
+export * from './lib/count-item/count-item';
+export * from './lib/kpi-list/kpi-list';
 export * from './lib/solutions-section/solutions-section';
 export * from './lib/picture';
-export * from './lib/disrtibutors/disrtibutors';
+export * from './lib/benefit/benefit';
+export * from './lib/benefits-section/benefits-section';

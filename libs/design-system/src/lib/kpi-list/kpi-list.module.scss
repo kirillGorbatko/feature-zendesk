@@ -1,0 +1,50 @@
+@import '../scss/helpers-all.scss';
+
+.kpi {
+  background-color: $black;
+  color: $white;
+
+  @include bp($tablet_max, min) {
+    padding: 1rem $gl_desktop_indent 8rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 0 $gl_mobile_indent 6rem;
+  }
+}
+
+.kpi__list {
+  @include bp($desktop, min) {
+    padding-right: 1rem;
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    margin-right: -7rem;
+  }
+
+  @include bp($tablet_max, min) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.kpi__item {
+  @include bp($tablet_max, min) {
+    flex: 0 1 28.6rem;
+    padding-right: 7rem;
+
+    &:nth-child(2) {
+      padding-top: 8rem;
+    }
+
+    &:nth-child(3) {
+      padding-top: 16rem;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 7.4rem;
+    }
+  }
+}

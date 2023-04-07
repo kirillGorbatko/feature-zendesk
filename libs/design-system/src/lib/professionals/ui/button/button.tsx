@@ -3,13 +3,13 @@ import { ReactNode } from 'react';
 
 import styles from './button.module.scss';
 
-type ButtonProps = {
+export type ButtonProps = {
   children: ReactNode;
   mobileHidden?: boolean;
   desktopHidden?: boolean;
 };
 
-function Button({ children, mobileHidden, desktopHidden }: ButtonProps) {
+export function Button({ children, mobileHidden, desktopHidden }: ButtonProps) {
   return (
     <div
       className={classNames(styles['button'], {
@@ -21,5 +21,3 @@ function Button({ children, mobileHidden, desktopHidden }: ButtonProps) {
     </div>
   );
 }
-
-export default Button;

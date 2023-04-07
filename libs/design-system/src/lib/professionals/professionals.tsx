@@ -1,27 +1,24 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import Container from '../container/container';
 import RectangleDecor from '../rectangle-decor/rectangle-decor';
-import Button from './ui/button/button';
-import Column, { ColumnProps } from './ui/column/column';
+import { Button } from './ui/button/button';
+import { Column, ColumnProps } from './ui/column/column';
 
 import styles from './professionals.module.scss';
+import { Tab, TabProps } from './ui/tab/tab';
+import TabsPagination from '../tabs-pagination/tabs-pagination';
+import QuoteIcon from '../quote-icon/quote-icon';
+import { PartnersLogosItemProps } from '../partners-logos/partners-logos';
 
 export type ProfessionalsProps = {
-  children: ReactNode;
+  children: ReactNode | ReactNode[];
+  testimonials?: TabProps[];
+  ctaButton?: {
+    text: string;
+    link?: string;
+  };
+  logos?: PartnersLogosItemProps[];
 } & ColumnProps;
-
-export function Tabs({ children }: ProfessionalsProps) {
-  return (
-    <div className={styles['professionals__tabs']}>
-      <div className="professionals__tabs_decor"></div>
-      {children}
-    </div>
-  );
-}
-
-export function Inner({ children }: ProfessionalsProps) {
-  return <div className={styles['professionals__in']}>{children}</div>;
-}
 
 function Professionals({ children }: ProfessionalsProps) {
   return (
@@ -38,8 +35,45 @@ function Professionals({ children }: ProfessionalsProps) {
   );
 }
 
+export function Tabs({ testimonials }: { testimonials?: TabProps[] }) {
+  const [activeTab, setActiveTab] = useState(0);
+
+  if (!testimonials?.length) return null;
+
+  return (
+    <div className={styles['professionals__tabs']}>
+      <div className={styles['professionals__tabs_decor']}>
+        <QuoteIcon fill="tertiary" />
+      </div>
+      <div className={styles['professionals__tabs_list']}>
+        {testimonials?.map((tab, index) => {
+          if (activeTab === index) {
+            return <Professionals.Tab key={index} {...tab} />;
+          } else {
+            return null;
+          }
+        })}
+      </div>
+
+      <div className={styles['professionals__tabs_pagination']}>
+        <TabsPagination
+          amount={testimonials.length}
+          activeIndex={activeTab}
+          handleClick={setActiveTab}
+        />
+      </div>
+    </div>
+  );
+}
+
+export function Inner({ children }: ProfessionalsProps) {
+  return <div className={styles['professionals__in']}>{children}</div>;
+}
+
 Professionals.Column = Column;
 Professionals.Button = Button;
 Professionals.Inner = Inner;
+Professionals.Tabs = Tabs;
+Professionals.Tab = Tab;
 
 export { Professionals };
