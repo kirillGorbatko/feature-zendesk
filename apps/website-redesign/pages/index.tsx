@@ -16,7 +16,6 @@ import {
   Quote,
   Professionals,
   PartnersLogos,
-  PartnersLogosItemProps,
   ArtistCarousel,
   FmGetStartedCta,
   FmGetStartedCtaProps,
@@ -38,7 +37,7 @@ export interface IndexProps {
       title: string;
       link?: string;
     };
-    logos?: PartnersLogosItemProps[];
+    logos?: any[];
   };
 }
 

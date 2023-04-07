@@ -8,7 +8,7 @@ import styles from './professionals.module.scss';
 import { Tab, TabProps } from './ui/tab/tab';
 import TabsPagination from '../tabs-pagination/tabs-pagination';
 import QuoteIcon from '../quote-icon/quote-icon';
-import { PartnersLogosItemProps } from '../partners-logos/partners-logos';
+// import { PartnersLogosItemProps } from '../partners-logos/partners-logos';
 
 export type ProfessionalsProps = {
   children: ReactNode | ReactNode[];
@@ -17,7 +17,7 @@ export type ProfessionalsProps = {
     text: string;
     link?: string;
   };
-  logos?: PartnersLogosItemProps[];
+  logos?: any[];
 } & ColumnProps;
 
 function Professionals({ children }: ProfessionalsProps) {
