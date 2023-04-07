@@ -51,26 +51,20 @@ export function Index({
   return (
     <>
       <div>Home page</div>
-      {heroSection && (
-        <Hero>
-          <Container>
-            {heroSection.title && (
-              <Hero.Title>
-                <FmTitle variant="h1" color="white">
-                  {heroSection.title}
-                </FmTitle>
-              </Hero.Title>
-            )}
-            {heroSection.button && (
-              <Hero.Button>
-                <FMButton variant="tertiary" size="xxl" mobileWidth="full">
-                  {heroSection.button?.title}
-                </FMButton>
-              </Hero.Button>
-            )}
-          </Container>
-        </Hero>
-      )}
+      <Hero>
+        <Container>
+          <Hero.Title>
+            <FmTitle variant="h1" color="white">
+              Build your fan base and music career.
+            </FmTitle>
+          </Hero.Title>
+          <Hero.Button>
+            <FMButton variant="tertiary" size="xxl" mobileWidth="full">
+              Start for free
+            </FMButton>
+          </Hero.Button>
+        </Container>
+      </Hero>
 
       <ArtistCarousel slides={ARTIST_CAROUSEL_DATA} />
 
