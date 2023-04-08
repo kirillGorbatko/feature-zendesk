@@ -42,7 +42,7 @@ export function ArtistCarouselItem({
         </div>
       </a>
       <div className={styles['label']}>
-        <Image src={labelImageUrl} alt={labelAlt} />
+				<Picture alt={labelAlt} img={labelImageUrl} />
       </div>
     </div>
   );
