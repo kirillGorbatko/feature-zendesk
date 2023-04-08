@@ -3,6 +3,7 @@ import { Autoplay } from 'swiper';
 import { Image } from '@featurefm/design-system';
 import 'swiper/css';
 import classNames from 'classnames';
+import { Picture } from '@featurefm/design-system';
 
 import styles from './artist-carousel-item.module.scss';
 
@@ -34,7 +35,7 @@ export function ArtistCarouselItem({
     >
       <a href={linkUrl} className={styles['link']}>
         <div className={styles['picture']}>
-          <Image alt={imgAlt} src={imageUrl} />
+          <Picture alt={imgAlt} img={imageUrl} />
           <div className={styles['artist']}>
             <div className={styles['artist__label']}>{artist}</div>
           </div>
