@@ -10,13 +10,6 @@ import {
   SolutionsSectionsProps,
   MoreSolutionCard,
 } from '@featurefm/design-system';
-import { getPageData } from '../../../api';
-export interface SolutionAnalyticsProps {
-  benefitsSection: FmSolutionsBenefitProps & {
-    benefits: FmSolutionsBenefitProps[];
-  };
-  solutionsSections: SolutionsSectionsProps[];
-}
 
 const getStartedSection = {
   title: 'Get started for free',
@@ -27,10 +20,28 @@ const getStartedSection = {
   },
 };
 
-export function SolutionAnalytics({
-  benefitsSection,
-  solutionsSections,
-}: SolutionAnalyticsProps) {
+const benefitsSection = {
+  title: 'More amazing features that apply to all links',
+  benefits: [
+    {
+      title: 'Use time to your advantage and create some buzz',
+      descr:
+        'Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.',
+    },
+    {
+      title: 'Use time to your advantage and create some buzz',
+      descr:
+        'Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.',
+    },
+    {
+      title: 'Use time to your advantage and create some buzz',
+      descr:
+        'Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.',
+    },
+  ],
+};
+
+export function SolutionAnalytics() {
   return (
     <>
       <HeroSolutions
@@ -40,13 +51,13 @@ export function SolutionAnalytics({
         <SolutionIcons label="Integrated with hundreds of digital music services" />
       </HeroSolutions>
 
-      {solutionsSections?.map((solutionsSection, index) => (
+      {/* {solutionsSections?.map((solutionsSection, index) => (
         <SolutionsSection
           {...solutionsSection}
           key={index}
           reverted={Boolean(index % 2)}
         />
-      ))}
+      ))} */}
 
       {benefitsSection && (
         <FmSolutionsBenefitSection title={benefitsSection.title}>
@@ -101,20 +112,6 @@ export function SolutionAnalytics({
       {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
     </>
   );
-}
-
-export async function getServerSideProps({ req, query, res }) {
-  const pageData: SolutionAnalyticsProps =
-    await getPageData<SolutionAnalyticsProps>(
-      'solutions-analytics-pages',
-      query || {},
-      req,
-      res,
-      72,
-      'en'
-    );
-
-  return { props: pageData };
 }
 
 export default SolutionAnalytics;
