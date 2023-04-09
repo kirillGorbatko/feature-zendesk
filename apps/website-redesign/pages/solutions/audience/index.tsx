@@ -1,16 +1,20 @@
 import {
   HeroSolutions,
   FmGetStartedCta,
-  FmGetStartedCtaProps,
   CheckIt,
   MoreSolutionCard,
 } from '@featurefm/design-system';
-import { getPageData } from '../../../api';
-export interface SolutionAudienceProps {
-  getStartedSection: FmGetStartedCtaProps;
-}
 
-export function SolutionAudience({ getStartedSection }: SolutionAudienceProps) {
+const getStartedSection = {
+  title: 'Get started for free',
+  descr:
+    '<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>',
+  button: {
+    title: 'Start now',
+  },
+};
+
+export function SolutionAudience() {
   return (
     <>
       <HeroSolutions
@@ -36,20 +40,6 @@ export function SolutionAudience({ getStartedSection }: SolutionAudienceProps) {
       {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
     </>
   );
-}
-
-export async function getServerSideProps({ req, query, res }) {
-  const pageData: SolutionAudienceProps =
-    await getPageData<SolutionAudienceProps>(
-      'solutions-audience-pages',
-      query || {},
-      req,
-      res,
-      72,
-      'en'
-    );
-
-  return { props: pageData };
 }
 
 export default SolutionAudience;

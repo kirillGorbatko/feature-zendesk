@@ -1,7 +1,6 @@
 import {
   HeroSolutions,
   FmGetStartedCta,
-  FmGetStartedCtaProps,
   FmSolutionsBenefitSection,
   FmSolutionsBenefit,
   FmSolutionsBenefitProps,
@@ -17,11 +16,19 @@ export interface SolutionAnalyticsProps {
     benefits: FmSolutionsBenefitProps[];
   };
   solutionsSections: SolutionsSectionsProps[];
-  getStartedSection: FmGetStartedCtaProps;
 }
+
+const getStartedSection = {
+  title: 'Get started for free',
+  descr:
+    '<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>',
+  button: {
+    title: 'Start now',
+  },
+};
+
 export function SolutionAnalytics({
   benefitsSection,
-  getStartedSection,
   solutionsSections,
 }: SolutionAnalyticsProps) {
   return (
