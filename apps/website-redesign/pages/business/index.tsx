@@ -2,17 +2,20 @@ import {
   BusinessHero,
   FMButton,
   FmGetStartedCta,
-  FmGetStartedCtaProps,
   KpiList,
   BenefitsSection,
 } from '@featurefm/design-system';
-import { getPageData } from '../../api';
 
-export interface BusinessProps {
-  getStartedSection: FmGetStartedCtaProps;
-}
+const getStartedSection = {
+  title: 'Talk to one of our experts',
+  descr:
+    'Interested in learning more about the feature.fm enterprise offering? Let one of our experts show you how Feature.fm can benefit you and take your business to the next level.',
+  button: {
+    title: 'Book a demo',
+  },
+};
 
-export function Business({ getStartedSection }: BusinessProps) {
+export function Business() {
   return (
     <>
       <BusinessHero
@@ -60,19 +63,6 @@ export function Business({ getStartedSection }: BusinessProps) {
       )}
     </>
   );
-}
-
-export async function getServerSideProps({ req, query, res }) {
-  const pageData: BusinessProps = await getPageData<BusinessProps>(
-    'professionals-pages',
-    query || {},
-    req,
-    res,
-    72,
-    'en'
-  );
-
-  return { props: pageData };
 }
 
 export default Business;
