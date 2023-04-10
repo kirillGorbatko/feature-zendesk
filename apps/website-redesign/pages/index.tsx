@@ -44,7 +44,6 @@ export interface IndexProps {
   };
 }
 
-import { ARTIST_CAROUSEL_DATA } from '@featurefm/shared/data';
 import { useEffect } from 'react';
 
 const getStartedSection = {
