@@ -1,97 +1,97 @@
 @import '../scss/helpers-all.scss';
 
 .links_card {
-	display: flex;
+  display: flex;
 
-	color: $black;
+  color: $black;
 
-	@include bp($tablet_max, min) {
-		flex-direction: column;
-		height: 100%;
-		max-width: 20rem;
-	}
+  @include bp($tablet_max, min) {
+    flex-direction: column;
+    height: 100%;
+    max-width: 20rem;
+  }
 }
 
 .links_card__wrap {
-	&:not(:last-child) {
-		@include bp($tablet_max, min) {
-			margin-bottom: 2.3rem;
-		}
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 2.3rem;
+    }
 
-		@include bp($tablet_max - 1) {
-			margin-right: 2rem;
-		}
-	}
+    @include bp($tablet_max - 1) {
+      margin-right: 2rem;
+    }
+  }
 
-	@include bp($tablet_max - 1) {
-		padding-top: 5px;
-	}
+  @include bp($tablet_max - 1) {
+    padding-top: 5px;
+  }
 }
 
 .links_card__info {
-	@include bp($tablet_max, min) {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-	}
+  @include bp($tablet_max, min) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .links_card__icon {
-	display: block;
+  display: block;
 
-	@include bp($tablet_max, min) {
-		width: 5.7rem;
-		height: 4.6rem;
-	}
+  @include bp($tablet_max, min) {
+    width: 5.7rem;
+    height: 4.6rem;
+  }
 
-	@include bp($tablet_max - 1) {
-		width: 5rem;
-		height: 5rem;
-	}
+  @include bp($tablet_max - 1) {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .icon {
-	&.icon--mobile_mod {
-		@include bp($tablet_max, min) {
-			display: none;
-		}
-	}
+  &.icon--mobile_mod {
+    @include bp($tablet_max, min) {
+      display: none;
+    }
+  }
 
-	&.icon--desktop_mod {
-		@include bp($tablet_max - 1) {
-			display: none;
-		}
-	}
+  &.icon--desktop_mod {
+    @include bp($tablet_max - 1) {
+      display: none;
+    }
+  }
 }
 
 .links_card__title {
-	font-size: 1.6rem;
-	font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 500;
 
-	&:not(:last-child) {
-		@include bp($tablet_max, min) {
-			margin-bottom: 1.1rem;
-		}
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 1.1rem;
+    }
 
-		@include bp($tablet_max - 1) {
-			margin-bottom: .8rem;
-		}
-	}
+    @include bp($tablet_max - 1) {
+      margin-bottom: .8rem;
+    }
+  }
 
-	@include bp($tablet_max, min) {
-		flex: 1 1 auto;
-	}
+  @include bp($tablet_max, min) {
+    flex: 1 1 auto;
+  }
 }
 
-.links_card__text {
-	font-size: 1.4rem;
+.links_card__descr {
+  font-size: 1.4rem;
 
-	@include bp($tablet_max, min) {
-		line-height: 1.28;
-	}
+  @include bp($tablet_max, min) {
+    line-height: 1.28;
+  }
 
-	@include bp($tablet_max - 1) {
-		font-weight: 300;
-		line-height: 1.43;
-	}
+  @include bp($tablet_max - 1) {
+    font-weight: 300;
+    line-height: 1.43;
+  }
 }

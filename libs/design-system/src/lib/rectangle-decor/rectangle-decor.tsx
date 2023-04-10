@@ -24,7 +24,8 @@ type RectangleDecorProps = {
     | 'xl'
     | 'secondary_sm'
     | 'secondary_md'
-    | 'secondary_long';
+    | 'secondary_long'
+    | 'secondary_xxl';
 };
 
 export function RectangleDecor({
@@ -111,6 +112,10 @@ export function RectangleDecor({
     }
     case 'secondary_long': {
       sizeMod = 'rectangle_decor--size_11_mod';
+      break;
+    }
+    case 'secondary_xxl': {
+      sizeMod = 'rectangle_decor--size_12_mod';
       break;
     }
 

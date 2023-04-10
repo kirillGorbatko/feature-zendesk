@@ -4,7 +4,9 @@ import styles from './advantage.module.scss';
 
 export type AdvantageProps = {
   reverted?: boolean;
-  children: ReactNode | string;
+  children?: ReactNode | string;
+  capability?: ReactNode | string;
+  id?: string;
 };
 
 export function Advantage({ children, reverted }: AdvantageProps) {

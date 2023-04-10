@@ -5,26 +5,30 @@ import {
   FmGetStartedCtaProps,
   Distributors,
   KpiList,
+  ContentLinks,
+  LinksCard,
+  BusinessLinks,
   BannerSection,
   DataSection,
   FEATURES_MOCK,
   BenefitsSection,
   ContentBlock,
+  PartnersSection,
 } from '@featurefm/design-system';
 import { getPageData } from '../../api';
 
 export interface BusinessProps {
-  getStartedSection: FmGetStartedCtaProps;
+  bottomCTASection: FmGetStartedCtaProps;
 }
 
-export function Business({ getStartedSection }: BusinessProps) {
+export function Business({ bottomCTASection }: BusinessProps) {
   return (
     <>
       <BusinessHero
         title="Scalable Marketing for your catalog."
         descr="Grow your business with our unified marketing stack, built for any scale and trusted by top music companies."
       >
-        <FMButton variant="tertiary" size="lg" mobileWidth="full">
+        <FMButton variant="tertiary" size="xxl" mobileWidth="full">
           Try free for 14-days
         </FMButton>
       </BusinessHero>
@@ -47,6 +51,94 @@ export function Business({ getStartedSection }: BusinessProps) {
       />
 
       <Distributors text="Trusted by the industry’s top labels, managers and distributors" />
+
+      <BusinessLinks>
+        <ContentLinks variant="business">
+          <ContentLinks.List>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Artist Bio Links"
+                description="Connect your work together in a music-focused Link-in-Bio. "
+                icon={{
+                  img: '/images/link-icons/artist_bio_link_icon.svg',
+                  imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Pre-Release Links"
+                description="Build momentum ahead of your release."
+                icon={{
+                  img: '/images/link-icons/pre_release_link_icon.svg',
+                  imgMob: '/images/link-icons/pre_release_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Release Links"
+                description="Get more streams with a link to your music in all services."
+                icon={{
+                  img: '/images/link-icons/released_link_icon.svg',
+                  imgMob: '/images/link-icons/released_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Contest & Unlock Pages"
+                description="Reward your fans with prizes for taking actions you want."
+                icon={{
+                  img: '/images/link-icons/contest_link_icon.svg',
+                  imgMob: '/images/link-icons/contest_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Tour and Event Links"
+                description="Sell more tickets to shows with a link to all of your tour dates."
+                icon={{
+                  img: '/images/link-icons/tour_link_icon.svg',
+                  imgMob: '/images/link-icons/tour_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Podcast Links"
+                description="Grow listeners on your Podcast with a link to all audio platforms."
+                icon={{
+                  img: '/images/link-icons/podcast_link_icon.svg',
+                  imgMob: '/images/link-icons/podcast_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item>
+              <LinksCard
+                title="Short Links"
+                description="Shorten and track any URL you share online to any destination."
+                icon={{
+                  img: '/images/link-icons/short_link_icon.svg',
+                  imgMob: '/images/link-icons/short_link_icon-mobile.svg',
+                }}
+              />
+            </ContentLinks.Item>
+            <ContentLinks.Item mobileHidden>
+              <FMButton size="xxl" width="full" variant="tertiary">
+                More about Links
+              </FMButton>
+            </ContentLinks.Item>
+          </ContentLinks.List>
+
+          <ContentLinks.MobileContent>
+            <FMButton size="xxl" width="full" variant="tertiary">
+              More about Links
+            </FMButton>
+          </ContentLinks.MobileContent>
+        </ContentLinks>
+      </BusinessLinks>
 
       <ContentBlock
         title="Designed to make your life easier."
@@ -107,11 +199,6 @@ export function Business({ getStartedSection }: BusinessProps) {
         </FMButton>
       </DataSection>
 
-      <ContentBlock
-        title="Need something that really scales? "
-        text="Nearly half of the world’s largest music distribution companies have integrated Feature.fm’s enterprise solutions to power their marketing tech stack."
-      />
-
       <BannerSection
         title="Fans are the lifeblood of your business."
         description="Building relationships with fans is the most important asset to grow an artist’s career."
@@ -125,8 +212,56 @@ export function Business({ getStartedSection }: BusinessProps) {
         </FMButton>
       </BannerSection>
 
-      {getStartedSection && (
-        <FmGetStartedCta {...getStartedSection} variant="v2" />
+      <ContentBlock
+        title="Need something that really scales? "
+        text="Nearly half of the world’s largest music distribution companies have integrated Feature.fm’s enterprise solutions to power their marketing tech stack."
+      />
+
+      <PartnersSection
+        title="We are <br/> your partners"
+        subtitle="<p>We take pride in our unmatched, professional service, support and guidance.</p><p>Leverage our team of industry and product experts to get set up on Feature.fm and be successful with our technology.</p>"
+        services={[
+          {
+            title: 'Dedicated Account Management',
+            icon: {
+              img: '/images/business-partners/dedicated-account-manager.png',
+            },
+          },
+          {
+            title: 'Private training sessions',
+            icon: {
+              img: '/images/business-partners/private-training-sessions.png',
+            },
+          },
+          {
+            title: 'Direct support channels',
+            icon: {
+              img: '/images/business-partners/direct-support-channels.png',
+            },
+          },
+          {
+            title: 'Marketing advice and guidance',
+            icon: {
+              img: '/images/business-partners/marketing-advice-and-guidance.png',
+            },
+          },
+          {
+            title: 'Personalized onboarding sessions',
+            icon: {
+              img: '/images/business-partners/personalized-onboarding-sessions-mobile.png',
+            },
+          },
+          {
+            title: 'Custom reporting and development available',
+            icon: {
+              img: '/images/business-partners/custom-reporting-and-dev.png',
+            },
+          },
+        ]}
+      />
+
+      {bottomCTASection && (
+        <FmGetStartedCta {...bottomCTASection} variant="v2" />
       )}
     </>
   );

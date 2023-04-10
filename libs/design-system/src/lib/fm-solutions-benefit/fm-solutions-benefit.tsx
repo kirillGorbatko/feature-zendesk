@@ -1,4 +1,5 @@
 import { cva, VariantProps } from 'class-variance-authority';
+import { Typography, TypographyProps } from '../typography/typography';
 import styles from './fm-solutions-benefit.module.scss';
 
 const className = cva(styles['fm_solutions_benefit'], {
@@ -15,12 +16,8 @@ const className = cva(styles['fm_solutions_benefit'], {
 });
 
 export type FmSolutionsBenefitProps = {
-  title?: {
-    desktop: string;
-  };
-  description?: {
-    desktop: string;
-  };
+  title?: TypographyProps;
+  description?: TypographyProps;
 } & VariantProps<typeof className>;
 
 export function FmSolutionsBenefit({
@@ -31,10 +28,10 @@ export function FmSolutionsBenefit({
   return (
     <div className={className({ variant })}>
       <div className={styles['fm_solutions_benefit__title']}>
-        {title?.desktop}
+        <Typography {...title} />
       </div>
       <div className={styles['fm_solutions_benefit__description']}>
-        {description?.desktop}
+        <Typography {...description} disableEscaping />
       </div>
     </div>
   );

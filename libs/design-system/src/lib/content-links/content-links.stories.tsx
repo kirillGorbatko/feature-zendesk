@@ -15,50 +15,71 @@ const Template: ComponentStory<typeof ContentLinks> = () => (
       <ContentLinks.Item>
         <LinksCard
           title="Artist Bio Links"
-          text="Connect your work together in a music-focused Link-in-Bio. "
-          iconName="artist"
+          description="Connect your work together in a music-focused Link-in-Bio. "
+          icon={{
+            img: '/images/link-icons/artist_bio_link_icon.svg',
+            imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item>
         <LinksCard
           title="Pre-Release Links"
-          text="Build momentum ahead of your release."
-          iconName="calendar"
+          description="Build momentum ahead of your release."
+          icon={{
+            img: '/images/link-icons/pre_release_link_icon.svg',
+            imgMob: '/images/link-icons/pre_release_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item>
         <LinksCard
           title="Release Links"
-          text="Link to your music across all streaming platforms and services."
-          iconName="release"
+          description="Get more streams with a link to your music in all services."
+          icon={{
+            img: '/images/link-icons/released_link_icon.svg',
+            imgMob: '/images/link-icons/released_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item>
         <LinksCard
           title="Contest & Unlock Pages"
-          text="Grow your followers by rewarding them for their engagement."
-          iconName="contest"
+          description="Reward your fans with prizes for taking actions you want."
+          icon={{
+            img: '/images/link-icons/contest_link_icon.svg',
+            imgMob: '/images/link-icons/contest_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item>
         <LinksCard
           title="Tour and Event Links"
-          text="Automated links that maintains all of your tour dates."
-          iconName="tour"
+          description="Sell more tickets to shows with a link to all of your tour dates."
+          icon={{
+            img: '/images/link-icons/tour_link_icon.svg',
+            imgMob: '/images/link-icons/tour_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item>
         <LinksCard
           title="Podcast Links"
-          text="Routes fans to listen to your podcast in their favorite platform."
-          iconName="podcast"
+          description="Grow listeners on your Podcast with a link to all audio platforms."
+          icon={{
+            img: '/images/link-icons/podcast_link_icon.svg',
+            imgMob: '/images/link-icons/podcast_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item>
         <LinksCard
           title="Short Links"
-          text="Shorten and track urls to send traffic directly to any destination."
-          iconName="link"
+          description="Shorten and track any URL you share online to any destination."
+          icon={{
+            img: '/images/link-icons/short_link_icon.svg',
+            imgMob: '/images/link-icons/short_link_icon-mobile.svg',
+          }}
         />
       </ContentLinks.Item>
       <ContentLinks.Item mobileHidden>

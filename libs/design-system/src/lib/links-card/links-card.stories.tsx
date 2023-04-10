@@ -9,22 +9,15 @@ const Story: ComponentMeta<typeof LinksCard> = {
       defaultValue: 'Some title',
       control: { type: 'text' },
     },
-    text: {
+    description: {
       defaultValue: 'Lorem ipsum dolor sit amet.',
       control: { type: 'text' },
     },
-    iconName: {
-      defaultValue: 'artist',
-      options: [
-        'artist',
-        'calendar',
-        'release',
-        'contest',
-        'tour',
-        'podcast',
-        'link',
-      ],
-      control: { type: 'select' },
+    icon: {
+      defaultValue: {
+        img: '/images/link-icons/short_link_icon.svg',
+        imgMob: '/images/link-icons/short_link_icon-mobile.svg',
+      },
     },
   },
 };

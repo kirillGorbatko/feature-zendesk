@@ -32,6 +32,7 @@ const Story: ComponentMeta<typeof RectangleDecor> = {
         'secondary_sm',
         'secondary_md',
         'secondary_long',
+        'secondary_xxl',
       ],
       control: { type: 'select' },
     },

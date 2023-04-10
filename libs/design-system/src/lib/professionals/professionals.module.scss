@@ -96,7 +96,7 @@
 .professionals__tabs_list {
   @include bp($tablet_max, min) {
     &:not(:last-child) {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
   }
   @include bp($tablet_max - 1) {

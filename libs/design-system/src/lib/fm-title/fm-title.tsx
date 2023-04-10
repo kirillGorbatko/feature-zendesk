@@ -11,6 +11,7 @@ const className = cva(styles['fm-title'], {
       h4: styles['fm-title--style_h4_mod'],
       h5: styles['fm-title--style_h5_mod'],
       h6: styles['fm-title--style_h6_mod'],
+      h7: styles['fm-title--style_h7_mod'],
     },
     color: {
       primary: '',

@@ -2,12 +2,164 @@
   "id": "63ec1ccdc8d2da25b2314ce4",
   "title": "Solutions Page - Default",
   "slug": "default",
-  "getStartedSection": {
-    "title": "Get started for free",
-    "descr": "<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>",
-    "button": {
-      "title": "Start now"
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Start for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideMobile": true,
+      "mobile": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Get started",
+      "link": "https://login.feature.fm/signup",
+      "type": "secondary"
     }
+  },
+
+  "featuresSection": {
+    "features": [
+      {
+        "tag": "Fan contact info",
+        "title": {
+          "desktop": "Who are my fans?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Collect fan contact info and organize your fan base in an Audience Dashboard that you can sort, segment and sync to email platforms like Mailchimp and Active Campaign.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/fan-contact-info.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "63ecbfca87a93121e6fcac17"
+      },
+      {
+        "tag": "Geo-location",
+        "title": {
+          "desktop": "Where do my fans live?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Identify which countries drive the most streams and where your fans live to focus on building an authentic community of fans.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/geo-location.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "63ecbfca87a93121e6fcac18"
+      },
+      {
+        "tag": "Social platforms",
+        "title": {
+          "desktop": "Which music services do my fans use?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Track which music services your fans use most to listen to your music and take advantage of opportunities for in service promotion.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/social-platforms.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "63ecbfca87a93121e6fcac19"
+      },
+      {
+        "tag": "Streaming services",
+        "title": {
+          "desktop": "Which music services do my fans use?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "See which music services your fans use most to listen to your music and take advantage of opportunities for in service promotion.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/streaming-services.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "63ecbfca87a93121e6fcac1a"
+      },
+      {
+        "tag": "Marketing campaigns and activities",
+        "title": {
+          "desktop": "How do I track my marketing efforts?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Wherever you share your links online, identify which marketing channels, like posts, ads or email newsletters, give you the best results.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/marketing-campaigns-and-activities.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "63ecbfca87a93121e6fcac1b"
+      },
+      {
+        "tag": "Sales conversion tracking",
+        "title": {
+          "desktop": "How much am I selling?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Track sales revenue and streams from your merch store as well as from Feature.fm’s data partners including YouTube Music, Rough Trade, Boomplay, Anghami, and Qobuz.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/sales-conversion-tracking.png",
+        "isInverse": false,
+        "padding": "normal",
+        "id": "63ecbfca87a93121e6fcac1c"
+      },
+      {
+        "tag": "",
+        "title": {
+          "desktop": "Track your progress at both the link and artist level.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Get the most holistic view of your performance through a consolidated Artist Analytics Dashboard or drill down into the data for any individual link.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/real-time-data.png",
+        "isInverse": true,
+        "padding": "medium",
+        "id": "63ecbfca87a93121e6fcac1d"
+      },
+      {
+        "tag": "",
+        "title": {
+          "desktop": "Put your data to work with ad retargeting.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Improve your ad campaigns and conversions with powerful retargeting data sent directly to your ad platforms.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/improve-ad-performance.png",
+        "isInverse": true,
+        "padding": "medium",
+        "id": "63ecbfca87a93121e6fcac1e"
+      }
+    ]
   },
 
   "_status": "published",

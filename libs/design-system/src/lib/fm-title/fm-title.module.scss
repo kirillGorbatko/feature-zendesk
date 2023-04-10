@@ -33,8 +33,11 @@
     @include h5_secondary;
   }
 
-  &.fm-title--style_h5_mod {
+  &.fm-title--style_h6_mod {
     @include h6_secondary;
+  }
+  &.fm-title--style_h7_mod {
+    @include h7_secondary;
   }
 
   &.fm-title--color_1_mod {

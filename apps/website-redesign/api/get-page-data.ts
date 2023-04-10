@@ -20,13 +20,15 @@ export async function getPageData<Type>(
 
   try {
     pageDataResponse = await fetch(
-      `http://localhost:4201/data/${name}-${effectiveVariant}-${language}.json`
+      // `http://localhost:4201/data/${name}-${effectiveVariant}-${language}.json`
+      `https://feature-zendesk.vercel.app/data/${name}-${effectiveVariant}-${language}.json`
     );
 
     if (pageDataResponse.status < 200 || pageDataResponse.status >= 400) {
       effectiveVariant = 'default';
       pageDataResponse = await fetch(
-        `http://localhost:4201/data/${name}-default-${language}.json`
+        // `http://localhost:4201/data/${name}-default-${language}.json`
+        `https://feature-zendesk.vercel.app/data/${name}-default-${language}.json`
       );
     }
 

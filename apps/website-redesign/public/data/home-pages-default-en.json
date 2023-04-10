@@ -4,16 +4,16 @@
   "slug": "default",
 
   "heroSection": {
-    "title": "Build your fan base and music career.",
-    "button": {
-      "title": "Start for free"
-    }
-  },
-  "getStartedSection": {
-    "title": "Get started for free",
-    "descr": "<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>",
-    "button": {
-      "title": "Start now"
+    "heroTitle": {
+      "desktop": "Build your fan base and<br/> music career.",
+      "overrideMobile": true,
+      "mobile": "Build your <br/>fan base <br/>and music<br/> career.",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Start for free",
+      "link": "https://login.feature.fm/signup/",
+      "type": "primary"
     }
   },
   "getStartedCTASection": {
@@ -41,22 +41,44 @@
         "quote": "Its quick, easy, and accessible for people to check out my music! ",
         "quoter": "Carol Souki",
         "quoterTitle": "Independent Artist",
-        "quoterLink": { "name": "Read success story", "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE/" },
+        "quoterLink": {
+          "name": "Read success story",
+          "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE/"
+        },
         "id": "63ebdc8941eadd2d12fc4c23",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "quoterCount": "100k monthly listeners",
         "imgMain": "/images/quote/1.jpg",
-        "animBlock": { "head": "/images/quote/1_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/1_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "Great and easy to use interface and tons of great features. Well worth the price.",
         "quoter": "Softspoken",
         "quoterTitle": "Singer Songwriter",
-        "quoterLink": { "name": "Read success story", "url": "https://ffm.link/davidkushnercasestudy.OWE" },
+        "quoterLink": {
+          "name": "Read success story",
+          "url": "https://ffm.link/davidkushnercasestudy.OWE"
+        },
         "id": "63ebdc8941eadd2d12fc4c21",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/2_main.jpg",
-        "animBlock": { "head": "/images/quote/2_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/2_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "This platform blows the competition away for prices and services",
@@ -64,9 +86,17 @@
         "quoterTitle": "Singer Songwriter",
         "quoterLink": { "name": "Read Success story", "url": "#" },
         "id": "63ebdc8941eadd2d12fc4c1e",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/3_main.jpg",
-        "animBlock": { "head": "/images/quote/3_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/3_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "Simply the best Marketing Plartform for Musicians!",
@@ -74,9 +104,17 @@
         "quoterTitle": "A post-hardcore band from Kentucky",
         "quoterLink": { "name": "Read Success story", "url": "#" },
         "id": "63ebdc8941eadd2d12fc4c1f",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/4_main.jpg",
-        "animBlock": { "head": "/images/quote/4_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/4_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "When my song went viral on TikTok, Feature.fm allowed us to capture hundreds of thousands of Pre-Saves and turn it into millions of streams on release day.",
@@ -84,9 +122,17 @@
         "quoterTitle": "Hyperpop alien",
         "quoterLink": { "name": "", "url": "" },
         "id": "63ebdc8941eadd2d12fc4c20",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/5_main.jpg",
-        "animBlock": { "head": "/images/quote/5_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/5_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
@@ -94,9 +140,17 @@
         "quoterTitle": "Hyperpop alien",
         "quoterLink": { "name": "Read Success story", "url": "#" },
         "id": "63ebdc8941eadd2d12fc4c20",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/6_main.jpg",
-        "animBlock": { "head": "/images/quote/6_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/6_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
@@ -104,9 +158,17 @@
         "quoterTitle": "Singer Songwriter",
         "quoterLink": { "name": "Read Success story  ", "url": "" },
         "id": "63ebdc8941eadd2d12fc4c20",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/7_main .jpg",
-        "animBlock": { "head": "/images/quote/7_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/7_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       },
       {
         "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info. ",
@@ -114,9 +176,17 @@
         "quoterTitle": "Singer Songwriter",
         "quoterLink": { "name": "Read Success story ", "url": "#" },
         "id": "63ebdc8941eadd2d12fc4c20",
-        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterImageSection": {
+          "profileImage": {},
+          "landingPageImage": {},
+          "mobileLandingPageImage": {}
+        },
         "imgMain": "/images/quote/8_main.jpg",
-        "animBlock": { "head": "/images/quote/8_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+        "animBlock": {
+          "head": "/images/quote/8_head.jpg",
+          "avatar": "/images/quote/avatar_1.jpg",
+          "video": "/images/quote/video_1.jpg"
+        }
       }
     ]
   },

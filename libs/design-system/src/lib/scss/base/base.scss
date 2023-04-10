@@ -68,4 +68,16 @@ section {
   position: relative;
 }
 
+.solutions_title {
+  @include bp($tablet_max, min) {
+    padding: 0 $gl_desktop_indent;
+  }
+  @include bp($tablet_max - 1) {
+    padding: 0 $gl_mobile_indent;
+  }
+}
+.solutions_title__in {
+  max-width: 62rem;
+}
+
 //------------------------------------------------------------base styles###

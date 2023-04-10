@@ -1,0 +1,102 @@
+@import '../scss/helpers-all.scss';
+
+.partners_section {
+  background-color: $purple;
+  color: $white;
+
+  @include bp($tablet_max, min) {
+    padding: 20rem $gl_desktop_indent;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 9rem $gl_mobile_indent 8rem;
+  }
+}
+
+.partners_section__head {
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+}
+
+.partners_section__row {
+  @include bp($tablet_max, min) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -2rem;
+  }
+}
+
+.partners_section__column {
+  @include bp($tablet_max, min) {
+    max-width: 59rem;
+    padding-right: 2rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+}
+
+.partners_section__subtitle {
+  font-size: 2rem;
+  line-height: 1.25;
+
+  p:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 4rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include bp($tablet_max, min) {
+    padding-top: 8rem;
+  }
+}
+
+.partners_section__services {
+  @include bp($tablet_max, min) {
+    max-width: 112rem;
+  }
+}
+
+.partners_section__list {
+  @include bp($tablet_max, min) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -2rem;
+  }
+
+}
+
+.partners_section__item {
+  &:nth-child(2n+2) {
+    @include bp($tablet_max, min) {
+      padding-top: 6rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+    }
+  }
+
+  @include bp($tablet_max, min) {
+    flex: 0 0 49rem;
+    padding-right: 2rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+  }
+}

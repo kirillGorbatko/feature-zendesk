@@ -1,18 +1,25 @@
 @import '../scss/helpers-all.scss';
 
-@function calculateSize($value) {
-  @return $value * 1;
-}
-
 .fm_get_started {
   z-index: 0;
 
   @include bp($tablet_max, min) {
-    padding: calculateSize(7rem) $gl_desktop_indent calculateSize(12rem);
+    padding: 7rem $gl_desktop_indent 12rem;
   }
 
   @include bp($tablet_max - 1) {
-    padding: calculateSize(10rem) $gl_mobile_indent calculateSize(14rem);
+    padding: 10rem $gl_mobile_indent 14rem;
+    overflow: hidden;
+  }
+
+  &.fm_get_started--v2_mod {
+    @include bp($tablet_max, min) {
+      padding-top: 16rem;
+      padding-bottom: 8rem;
+    }
+    @include bp($tablet_max - 1) {
+      padding-top: 15.4rem;
+    }
   }
 }
 
@@ -33,6 +40,12 @@
   height: 100%;
 
   pointer-events: none;
+
+  .fm_get_started--v2_mod & {
+    @include bp($tablet_max, min) {
+      margin-top: -4rem;
+    }
+  }
 }
 
 .fm_get_started__decor {
@@ -43,12 +56,12 @@
   }
 
   // position + sizes
-  &.fm_get_started__decor--pos-1-mod {
+  &.fm_get_started__decor--pos_1_mod {
     @include bp($tablet_max, min) {
       bottom: 0;
       left: 0;
 
-      margin: 0 0 calculateSize(1rem) calculateSize(-8.4rem);
+      margin: 0 0 1rem -8.4rem;
     }
 
     @include bp($tablet_max - 1) {
@@ -56,25 +69,25 @@
     }
   }
 
-  &.fm_get_started__decor--pos-2-mod {
+  &.fm_get_started__decor--pos_2_mod {
     right: 0;
 
     @include bp($tablet_max, min) {
       bottom: 0;
-      margin: 0 calculateSize(-0.9rem) calculateSize(-7rem) 0;
+      margin: 0 -0.9rem -7rem 0;
     }
 
     @include bp($tablet_max - 1) {
-      margin: 0 calculateSize(2rem) calculateSize(-14rem) 0;
+      margin: 0 2rem -14rem 0;
     }
   }
 
-  &.fm_get_started__decor--pos-3-mod {
+  &.fm_get_started__decor--pos_3_mod {
     @include bp($tablet_max, min) {
       bottom: 0;
       left: 0;
 
-      margin: 0 0 calculateSize(-6.7rem) calculateSize(6.6rem);
+      margin: 0 0 -6.7rem 6.6rem;
     }
 
     @include bp($tablet_max - 1) {
@@ -82,38 +95,42 @@
     }
   }
 
-  &.fm_get_started__decor--pos-4-mod {
+  &.fm_get_started__decor--pos_4_mod {
     @include bp($tablet_max, min) {
-      top: 50%;
+      bottom: 8rem;
       right: 0;
-      margin: calculateSize(-1.6rem) calculateSize(-0.8rem) 0 0;
+      margin: -1.6rem -0.8rem 0 0;
     }
 
     @include bp($tablet_max - 1) {
       left: 0;
-      margin: 0 0 calculateSize(-14rem) calculateSize(-3rem);
+      margin: 0 0 -14rem -3rem;
     }
   }
 
-  &.fm_get_started__decor--pos-5-mod {
+  &.fm_get_started__decor--pos_5_mod {
     right: 0;
 
     @include bp($tablet_max, min) {
       bottom: 0;
-      margin: 0 calculateSize(14rem) calculateSize(-12rem) 0;
+      margin: 0 14rem -12rem 0;
     }
 
     @include bp($tablet_max - 1) {
-      margin: 0 calculateSize(12rem) calculateSize(-17.1rem) 0;
+      margin: 0 12rem -17.1rem 0;
     }
   }
 
-  &.fm_get_started__decor--pos-6-mod {
+  &.fm_get_started__decor--pos_6_mod {
     @include bp($desktop, min) {
-      margin: calculateSize(-18.6rem) calculateSize(-$gl_desktop_indent) 0 0;
+      margin: -18.6rem (-$gl_desktop_indent) 0 0;
+
+      .fm_get_started--v2_mod & {
+        margin-top: -12rem;
+      }
     }
     @include bp($desktop - 1, $tablet_max) {
-      margin: calculateSize(-18rem) calculateSize(-$gl_desktop_indent) 0 0;
+      margin: -18rem (-$gl_desktop_indent) 0 0;
     }
     @include bp($tablet_max, min) {
       top: 0;
@@ -125,16 +142,16 @@
     }
   }
 
-  &.fm_get_started__decor--pos-7-mod {
+  &.fm_get_started__decor--pos_7_mod {
     right: 0;
 
     @include bp($tablet_max, min) {
       bottom: 0;
-      margin: 0 calculateSize(-8.5rem) 4px 0;
+      margin: 0 -8.5rem 4px 0;
     }
 
     @include bp($tablet_max - 1) {
-      margin: 0 calculateSize(-3rem) calculateSize(-9rem) 0;
+      margin: 0 -3rem -9rem 0;
     }
   }
 }
@@ -154,7 +171,7 @@
 
   // @include bp($tablet_max - 1) {
   //   margin: 0 auto;
-  //   // max-width: calculateSize(60rem);
+  //   // max-width: 60rem);
   // }
 }
 
@@ -166,7 +183,11 @@
 
   @include bp($tablet_max, min) {
     &:not(:last-child) {
-      margin-bottom: calculateSize(1.9rem);
+      margin-bottom: 1.9rem;
+
+      .fm_get_started--v2_mod & {
+        margin-bottom: 2.8rem;
+      }
     }
   }
 
@@ -175,7 +196,7 @@
     margin-right: auto;
 
     &:not(:last-child) {
-      margin-bottom: calculateSize(1.8rem);
+      margin-bottom: 1.8rem;
     }
   }
 }
@@ -184,13 +205,17 @@
   max-width: 65rem;
   margin: 0 auto;
 
+  .fm_get_started--v2_mod & {
+    max-width: 61rem;
+  }
+
   &:not(:last-child) {
     @include bp($tablet_max, min) {
-      margin-bottom: calculateSize(4rem);
+      margin-bottom: 4rem;
     }
 
     @include bp($tablet_max - 1) {
-      margin-bottom: calculateSize(2.9rem);
+      margin-bottom: 2.9rem;
     }
   }
 

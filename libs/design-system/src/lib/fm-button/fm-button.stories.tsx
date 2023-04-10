@@ -28,6 +28,11 @@ const Story: ComponentMeta<typeof FMButton> = {
       options: [true, false],
       control: { type: 'radio' },
     },
+    mobileFontSize: {
+      defaultValue: 'base',
+      options: ['base', 'lg'],
+      control: { type: 'select' },
+    },
     children: {
       defaultValue: 'Primary',
     },

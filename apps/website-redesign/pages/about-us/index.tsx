@@ -10,10 +10,10 @@ import { ManagementMemberSection } from '../../src/components/section/management
 
 type AboutUsProps = {
   mock: string;
-  joinTeamSection: FmJoinTeamCtaProps;
+  joinTheTeamSection: FmJoinTeamCtaProps;
 };
 
-export function AboutUs({ mock, joinTeamSection }: AboutUsProps) {
+export function AboutUs({ mock, joinTheTeamSection }: AboutUsProps) {
   return (
     <>
       <HeroAbout>
@@ -49,7 +49,7 @@ export function AboutUs({ mock, joinTeamSection }: AboutUsProps) {
         </HeroAbout.List>
       </HeroAbout>
       <ManagementMemberSection />
-      <FmJoinTeamCta {...joinTeamSection} />
+      <FmJoinTeamCta {...joinTheTeamSection} />
     </>
   );
 }

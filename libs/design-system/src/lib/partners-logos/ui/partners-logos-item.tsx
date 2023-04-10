@@ -2,14 +2,14 @@ import classNames from 'classnames';
 
 import styles from '../partners-logos.module.scss';
 
-type PartnersLogosItemProps = {
+export type PartnersLogosItemProps = {
   src: string;
   alt?: string;
   loading?: 'eager' | 'lazy';
   offsetMod?: boolean;
 };
 
-function PartnersLogosItem({
+export function PartnersLogosItem({
   src,
   alt = '#',
   loading = 'eager',
@@ -30,5 +30,3 @@ function PartnersLogosItem({
     </li>
   );
 }
-
-export { PartnersLogosItem, PartnersLogosItemProps };

@@ -1,12 +1,20 @@
 @import '../scss/helpers-all.scss';
 
 .content_block {
+  .content_block__title {
+    line-height: 1.16;
+  }
+
   @include bp($tablet_max, min) {
-    padding: 0 $gl_desktop_indent;
+    padding: 20rem $gl_desktop_indent 0;
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    padding-bottom: 8rem;
   }
 
   @include bp($tablet_max - 1) {
-    padding: 0 $gl_mobile_indent;
+    padding: 8.2rem $gl_mobile_indent 3rem;
   }
 }
 
@@ -24,20 +32,11 @@
   padding: 0 4rem 4rem 0;
 
   @include bp($tablet_max, min) {
-    max-width: 59rem;
+    max-width: 61rem;
   }
 }
 
-.content_block__title {
-  @include bp($tablet_max, min) {
-    @include h1;
-    line-height: 1.16;
-  }
-
-  @include bp($tablet_max - 1) {
-    @include h1_secondary;
-  }
-}
+.content_block__title {}
 
 .content_block__descr {
   font-size: 2rem;

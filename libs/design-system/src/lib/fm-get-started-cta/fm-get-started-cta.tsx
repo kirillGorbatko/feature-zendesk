@@ -7,31 +7,37 @@ import RectangleDecor from '../rectangle-decor/rectangle-decor';
 import classNames from 'classnames';
 import { FmTitle } from '../fm-title/fm-title';
 import Container from '../container/container';
+import { Typography, TypographyProps } from '../typography/typography';
 
 export type FmGetStartedCtaProps = {
-  title: string;
-  descr: string;
-  button?: {
-    title: string;
+  title: TypographyProps;
+  description: TypographyProps;
+  ctaButton?: {
+    text: string;
+    link?: string;
   };
   variant?: 'base' | 'v2';
 };
 
 export function FmGetStartedCta({
   title,
-  descr,
-  button,
+  description,
+  ctaButton,
   variant = 'base',
 }: FmGetStartedCtaProps) {
   return (
-    <section className={styles['fm_get_started']}>
+    <section
+      className={classNames(styles['fm_get_started'], {
+        [styles['fm_get_started--v2_mod']]: variant === 'v2',
+      })}
+    >
       <Container width="full">
         <div className={styles['fm_get_started_in']}>
           <div className={styles['fm_get_started__decors']}>
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-1-mod']
+                styles['fm_get_started__decor--pos_1_mod']
               )}
             >
               <RectangleDecor size="large" />
@@ -39,7 +45,7 @@ export function FmGetStartedCta({
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-2-mod']
+                styles['fm_get_started__decor--pos_2_mod']
               )}
             >
               <RectangleDecor size="long" />
@@ -47,7 +53,7 @@ export function FmGetStartedCta({
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-3-mod']
+                styles['fm_get_started__decor--pos_3_mod']
               )}
             >
               <RectangleDecor size="normal" variant={'purple'} />
@@ -55,7 +61,7 @@ export function FmGetStartedCta({
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-4-mod']
+                styles['fm_get_started__decor--pos_4_mod']
               )}
             >
               <RectangleDecor size="sm" variant={'purple'} />
@@ -63,7 +69,7 @@ export function FmGetStartedCta({
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-5-mod']
+                styles['fm_get_started__decor--pos_5_mod']
               )}
             >
               <RectangleDecor size="sm2" variant={'turquoise'} />
@@ -71,11 +77,14 @@ export function FmGetStartedCta({
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-6-mod']
+                styles['fm_get_started__decor--pos_6_mod']
               )}
             >
               {variant === 'v2' ? (
-                <RectangleDecor size="xxl" variant={'tertiary_gradient'} />
+                <RectangleDecor
+                  size="secondary_xxl"
+                  variant={'tertiary_gradient'}
+                />
               ) : (
                 <RectangleDecor size="xxl" variant={'gradient'} />
               )}
@@ -83,31 +92,45 @@ export function FmGetStartedCta({
             <div
               className={classNames(
                 styles['fm_get_started__decor'],
-                styles['fm_get_started__decor--pos-7-mod']
+                styles['fm_get_started__decor--pos_7_mod']
               )}
             >
               <RectangleDecor size="medium" variant={'image'} />
             </div>
           </div>
           <div className={styles['fm_get_started__content']}>
-            <div className={styles['fm_get_started__title']}>
-              <FmTitle variant="h4">{title}</FmTitle>
-            </div>
-            <div className={styles['fm_get_started__text']}>
-              <FmDescr>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(descr),
-                  }}
-                ></div>
-              </FmDescr>
-            </div>
-            {button && (
+            {title && (
+              <div className={styles['fm_get_started__title']}>
+                <FmTitle variant="h4">
+                  <Typography
+                    desktop={title.desktop}
+                    mobile={title.mobile}
+                    overrideMobile={title.overrideMobile}
+                  />
+                </FmTitle>
+              </div>
+            )}
+
+            {description && (
+              <div className={styles['fm_get_started__text']}>
+                <FmDescr>
+                  <Typography
+                    desktop={description.desktop}
+                    mobile={description.mobile}
+                    overrideMobile={description.overrideMobile}
+                    disableEscaping
+                  />
+                </FmDescr>
+              </div>
+            )}
+
+            {ctaButton && (
               <div className={styles['fm_get_started__button']}>
                 <FMButton
                   variant="primary"
-                  children={button.title}
+                  children={ctaButton.text}
                   width="full"
+                  href={ctaButton.link}
                 />
               </div>
             )}

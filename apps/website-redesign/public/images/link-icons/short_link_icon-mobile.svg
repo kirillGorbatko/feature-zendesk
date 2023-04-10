@@ -1,36 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 48@3x</title>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="50" height="50"></rect>
-    </defs>
-    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mobile-homepage-v4" transform="translate(-50.000000, -2731.000000)">
-            <g id="Group-52" transform="translate(0.000000, 879.000000)">
-                <g id="Group-2" transform="translate(0.000000, 992.000000)">
-                    <g id="Group-48" transform="translate(50.000000, 860.000000)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <g id="Mask"></g>
-                        <g mask="url(#mask-2)">
-                            <g transform="translate(1.600505, 0.054136)">
-                                <g id="Stroke-2">
-                                    <g id="Mask" fill="#9B62FF">
-                                        <rect id="Rectangle" x="0" y="0" width="25" height="25"></rect>
-                                    </g>
-                                    <path d="M25.2243866,35 L19.9179474,35 C14.8210093,35 10.6875,30.6589103 10.6875,25.304224 C10.6875,19.9480897 14.8210093,15.607 19.9179474,15.607 L25.2243866,15.607" fill="#FF6775"></path>
-                                </g>
-                                <g id="Group-15" transform="translate(11.327381, 15.294500)">
-                                    <line x1="9.57777304" y1="8.69675973" x2="25.8149625" y2="8.69675973" id="Stroke-1" stroke="#000000" stroke-width="2"></line>
-                                    <path d="M13.6970037,17.393 L8.69714933,17.393 C3.89469178,17.393 0,13.4996069 0,8.69714933 C0,3.89339312 3.89469178,0 8.69714933,0 L13.6970037,0" id="Stroke-2" stroke="#000000" stroke-width="2"></path>
-                                    <path d="M21.6957318,17.393 L26.6968849,17.393 C31.4993425,17.393 35.3927356,13.4996069 35.3927356,8.69714933 C35.3927356,3.89339312 31.4993425,0 26.6968849,0 L21.6957318,0" id="Stroke-4" stroke="#000000" stroke-width="2"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_16024_18)">
+<mask id="mask0_16024_18" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+<path d="M0 0H50V50H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_16024_18)">
+<path d="M1.59998 0.0499878H26.6V25H1.59998V0.0499878Z" fill="#9B62FF"/>
+<path d="M26.6211 25H21.524C16.2657 25 16.5 25 12.5 25C12.5 22.5139 16.2657 16 21.524 16H26.6211" fill="#FF6775"/>
+<path d="M22.5099 24H38.7469" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+<path d="M26.6269 32.743H21.6269C16.8249 32.743 12.9299 28.85 12.9299 24C12.9299 19.243 16.8249 15.35 21.6269 15.35H26.6269" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+<path d="M34.6199 32.743H39.6209C44.4239 32.743 48.3169 28.85 48.3169 24C48.3169 19.243 44.4239 15.35 39.6209 15.35H34.6199" stroke="black" stroke-width="2" stroke-miterlimit="20"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_16024_18">
+<rect width="50" height="50" fill="white"/>
+</clipPath>
+</defs>
 </svg>

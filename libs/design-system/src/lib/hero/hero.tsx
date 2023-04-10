@@ -7,7 +7,7 @@ type HeroProps = {
 };
 
 export const Hero = ({ children }: HeroProps) => {
-  return <div className={styles['hero']}>{children}</div>;
+  return <section className={styles['hero']}>{children}</section>;
 };
 
 export const HeroTitle = ({ children }: HeroProps) => {

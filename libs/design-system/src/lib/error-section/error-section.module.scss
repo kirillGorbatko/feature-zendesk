@@ -1,254 +1,254 @@
 @import '../scss/helpers-all.scss';
 
 .error_section {
-	position: relative;
-	z-index: 2;
-	height: 100%;
+  position: relative;
+  z-index: 2;
+  height: 100%;
 
-	background-color: $white;
-	color: $black;
+  background-color: $white;
+  color: $black;
 
-	:global(.dark) & {
-		background-color: $black;
-		color: $white;
-	}
+  :global(.dark) & {
+    background-color: $black;
+    color: $white;
+  }
 
-	&::before,
-	&::after {
-		position: absolute;
-		z-index: -1;
+  &::before,
+  &::after {
+    position: absolute;
+    z-index: -1;
 
-		pointer-events: none;
-		content: '';
-	}
+    pointer-events: none;
+    content: '';
+  }
 
-	&::before {
-		right: 0;
+  &::before {
+    right: 0;
 
-		@include bp($tablet_max, min) {
-			top: -6rem;
-			height: calc(100% + 6rem);
-			width: 27%;
-			background: linear-gradient(258deg, rgba(255, 82, 98, .1) 10%, rgba(255, 103, 117, 0) 60%);
+    @include bp($tablet_max, min) {
+      top: -6rem;
+      height: calc(100% + 6rem);
+      width: 27%;
+      background: linear-gradient(258deg, rgba(255, 82, 98, .1) 10%, rgba(255, 103, 117, 0) 60%);
 
-			:global(.dark) & {
-				background: linear-gradient(258deg, rgba(255, 82, 98, .3) 10%, rgba(255, 103, 117, 0) 60%);
-			}
-		}
+      :global(.dark) & {
+        background: linear-gradient(258deg, rgba(255, 82, 98, .3) 10%, rgba(255, 103, 117, 0) 60%);
+      }
+    }
 
-		@include bp($tablet_max - 1) {
-			top: -5rem;
-			height: calc(100% + 5rem);
-			width: 100%;
-			background: linear-gradient(258deg, rgba(255, 82, 98, .2) 0%, rgba(255, 103, 117, 0) 60%);
-		}
-	}
+    @include bp($tablet_max - 1) {
+      top: -5rem;
+      height: calc(100% + 5rem);
+      width: 100%;
+      background: linear-gradient(258deg, rgba(255, 82, 98, .2) 0%, rgba(255, 103, 117, 0) 44%);
+    }
+  }
 
-	&::after {
-		top: 0;
-		left: 0;
+  &::after {
+    top: 0;
+    left: 0;
 
-		width: 73.333%;
-		height: 100%;
+    width: 73.333%;
+    height: 100%;
 
-		background: linear-gradient(17deg, rgba(155, 98, 255, .2) 5%, rgba(155, 98, 255, 0) 30%);
+    background: linear-gradient(30deg, rgba(155, 98, 255, .2) 5%, rgba(155, 98, 255, 0) 30%);
 
-		:global(.dark) & {
-			background: linear-gradient(24deg, rgba(155, 98, 255, .4) 5%, rgba(155, 98, 255, 0) 40%);
-		}
+    :global(.dark) & {
+      background: linear-gradient(24deg, rgba(155, 98, 255, .4) 5%, rgba(155, 98, 255, 0) 40%);
+    }
 
-		@include bp($tablet_max - 1) {
-			display: none;
-		}
-	}
+    @include bp($tablet_max - 1) {
+      display: none;
+    }
+  }
 
-	@include bp($tablet_max, min) {
-		min-height: calc(100vh - 6rem);
+  @include bp($tablet_max, min) {
+    min-height: calc(100vh - 6rem);
 
-		&.error_section--404_mod {
-			padding: calculateSizeMultiply(7rem) $gl_desktop_indent;
-		}
+    &.error_section--404_mod {
+      padding: calculateSizeMultiply(7rem) $gl_desktop_indent;
+    }
 
-		&.error_section--500_mod {
-			padding: calculateSizeMultiply(5.1rem) $gl_desktop_indent;
-		}
-	}
+    &.error_section--500_mod {
+      padding: calculateSizeMultiply(5.1rem) $gl_desktop_indent;
+    }
+  }
 
-	@include bp($tablet_max - 1) {
-		min-height: calc(100vh - 4.875rem);
+  @include bp($tablet_max - 1) {
+    min-height: calc(100vh - 4.875rem);
 
-		&.error_section--404_mod {
-			padding: calculateSizeMultiply(4.9rem) $gl_mobile_indent;
-		}
+    &.error_section--404_mod {
+      padding: calculateSizeMultiply(4.9rem) $gl_mobile_indent;
+    }
 
-		&.error_section--500_mod {
-			padding: calculateSizeMultiply(5.1rem) $gl_mobile_indent;
-		}
-	}
+    &.error_section--500_mod {
+      padding: calculateSizeMultiply(5.1rem) $gl_mobile_indent;
+    }
+  }
 }
 
 .error_section__in {
-	max-width: $page_width;
-	width: 100%;
-	margin: 0 auto;
+  max-width: $page_width;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .error_section__content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-	a {
-		text-decoration: none;
-	}
+  a {
+    text-decoration: none;
+  }
 }
 
 .error_section__number {
-	position: relative;
+  position: relative;
 
-	color: inherit;
+  color: inherit;
 
-	>svg {
-		display: block;
-	}
+  >svg {
+    display: block;
+  }
 
-	.error_section--404_mod & {
-		>svg {
-			height: calculateSizeMultiply(20.8rem);
-			width: calculateSizeMultiply(32rem);
-		}
-	}
+  .error_section--404_mod & {
+    >svg {
+      height: calculateSizeMultiply(20.8rem);
+      width: calculateSizeMultiply(32rem);
+    }
+  }
 
-	.error_section--500_mod & {
-		>svg {
-			height: calculateSizeMultiply(20rem);
-			width: calculateSizeMultiply(40.6rem);
-		}
+  .error_section--500_mod & {
+    >svg {
+      height: calculateSizeMultiply(20rem);
+      width: calculateSizeMultiply(40.6rem);
+    }
 
-		@include bp($tablet_max, min) {
-			&:not(:last-child) {
-				margin-bottom: .6rem;
-			}
-		}
+    @include bp($tablet_max, min) {
+      &:not(:last-child) {
+        margin-bottom: .6rem;
+      }
+    }
 
-		@include bp($tablet_min - 1) {
-			margin-left: calculateSizeMultiply(10rem);
-		}
-	}
+    @include bp($tablet_min - 1) {
+      margin-left: calculateSizeMultiply(10rem);
+    }
+  }
 
-	&::after {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-		display: block;
-		content: '';
-		pointer-events: none;
+    display: block;
+    content: '';
+    pointer-events: none;
 
-		.error_section--404_mod & {
-			width: calculateSizeMultiply(23.1rem);
-			height: calculateSizeMultiply(20.1rem);
+    .error_section--404_mod & {
+      width: calculateSizeMultiply(23.1rem);
+      height: calculateSizeMultiply(20.1rem);
 
-			margin-top: calculateSizeMultiply(6.6rem);
-			margin-left: calculateSizeMultiply(-18rem);
+      margin-top: calculateSizeMultiply(6.6rem);
+      margin-left: calculateSizeMultiply(-18rem);
 
-			clip-path: polygon(1% 31%, 0% 100%, 100% 100%, 100% 0%, 79% 32%);
+      clip-path: polygon(1% 31%, 0% 100%, 100% 100%, 100% 0%, 79% 32%);
 
-			@include bp($tablet_max, min) {
-				background: linear-gradient(203deg, rgba(255, 103, 117, 0.1) 0%, rgba(255, 103, 117, 0) 100%);
+      @include bp($tablet_max, min) {
+        background: linear-gradient(203deg, rgba(255, 103, 117, 0.1) 0%, rgba(255, 103, 117, 0) 100%);
 
-				:global(.dark) & {
-					background: linear-gradient(203deg, rgba(255, 103, 117, 0.2) 0%, rgba(255, 103, 117, 0) 100%);
-				}
-			}
-		}
+        :global(.dark) & {
+          background: linear-gradient(203deg, rgba(255, 103, 117, 0.2) 0%, rgba(255, 103, 117, 0) 100%);
+        }
+      }
+    }
 
-		.error_section--500_mod & {
-			width: calculateSizeMultiply(16.2rem);
-			height: calculateSizeMultiply(14rem);
+    .error_section--500_mod & {
+      width: calculateSizeMultiply(16.2rem);
+      height: calculateSizeMultiply(14rem);
 
-			margin-top: calculateSizeMultiply(2.7rem);
-			margin-left: calculateSizeMultiply(-10.5rem);
+      margin-top: calculateSizeMultiply(2.7rem);
+      margin-left: calculateSizeMultiply(-10.5rem);
 
-			clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 46%, 76% 44%, 88% 0%);
+      clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 46%, 76% 44%, 88% 0%);
 
-			@include bp($tablet_max, min) {
-				background: linear-gradient(229deg, rgba(255, 103, 117, .2) 20%, rgba(255, 103, 117, 0) 65%);
-			}
-		}
+      @include bp($tablet_max, min) {
+        background: linear-gradient(229deg, rgba(255, 103, 117, .2) 20%, rgba(255, 103, 117, 0) 65%);
+      }
+    }
 
-		@include bp($tablet_max - 1) {
-			background: linear-gradient(23deg, rgba(88, 236, 202, 0) 26%, rgba(88, 236, 202, .3) 100%);
-		}
-	}
+    @include bp($tablet_max - 1) {
+      background: linear-gradient(23deg, rgba(88, 236, 202, 0) 26%, rgba(88, 236, 202, .3) 100%);
+    }
+  }
 
-	@include bp($tablet_max - 1) {
-		&:not(:last-child) {
-			.error_section--404_mod & {
-				margin-bottom: 5px;
-			}
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      .error_section--404_mod & {
+        margin-bottom: 5px;
+      }
 
-			.error_section--500_mod & {
-				margin-bottom: 1.1rem;
-			}
-		}
-	}
+      .error_section--500_mod & {
+        margin-bottom: 1.1rem;
+      }
+    }
+  }
 }
 
 .error_section__waves {
-	position: absolute;
-	top: 0;
-	right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-	display: block;
+  display: block;
 
-	svg {
-		width: calculateSizeMultiply(22.8rem);
-		height: calculateSizeMultiply(18.8rem);
-	}
+  svg {
+    width: calculateSizeMultiply(22.8rem);
+    height: calculateSizeMultiply(18.8rem);
+  }
 
-	margin-top: calculateSizeMultiply(-1.2rem);
-	margin-right: calculateSizeMultiply(-20rem);
+  margin-top: calculateSizeMultiply(-1.2rem);
+  margin-right: calculateSizeMultiply(-20rem);
 
-	pointer-events: none;
-	color: inherit;
+  pointer-events: none;
+  color: inherit;
 
-	:global(.dark) & {
-		color: $white;
-	}
+  :global(.dark) & {
+    color: $white;
+  }
 }
 
 .error_section__title {
-	font-family: $font_gpsuper;
-	font-size: calculateSizeMultiply(6rem);
-	font-weight: 900;
-	line-height: 1.317;
-	color: inherit;
+  font-family: $font_gpsuper;
+  font-size: calculateSizeMultiply(6rem);
+  font-weight: 900;
+  line-height: 1.317;
+  color: inherit;
 
-	&:not(:last-child) {
-		@include bp($tablet_max, min) {
-			margin-bottom: calculateSizeMultiply(1.5rem);
-		}
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: calculateSizeMultiply(1.5rem);
+    }
 
-		@include bp($tablet_max - 1) {
-			margin-bottom: calculateSizeMultiply(2rem);
-		}
-	}
+    @include bp($tablet_max - 1) {
+      margin-bottom: calculateSizeMultiply(2rem);
+    }
+  }
 }
 
 .error_section__text {
-	font-size: calculateSizeMultiply(2rem);
-	line-height: 1.25;
-	color: inherit;
+  font-size: calculateSizeMultiply(2rem);
+  line-height: 1.25;
+  color: inherit;
 
-	&:not(:last-child) {
-		margin-bottom: calculateSizeMultiply(4rem);
-	}
+  &:not(:last-child) {
+    margin-bottom: calculateSizeMultiply(4rem);
+  }
 }
 
 .error_section__btn_text {
-	font-size: calculateSizeMultiply(1.8rem);
-	font-weight: 500;
+  font-size: calculateSizeMultiply(1.8rem);
+  font-weight: 500;
 }

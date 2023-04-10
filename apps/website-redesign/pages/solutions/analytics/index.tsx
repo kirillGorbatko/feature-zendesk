@@ -17,13 +17,16 @@ export interface SolutionAnalyticsProps {
   allLinksComeWithMore: FmSolutionsBenefitSectionProps & {
     features: FmSolutionsBenefitProps[];
   };
-  solutionsSections: SolutionsSectionsProps[];
-  getStartedSection: FmGetStartedCtaProps;
+  landingPagesSection: {
+    features: SolutionsSectionsProps[];
+  };
+  getStartedCTASection: FmGetStartedCtaProps;
 }
+
 export function SolutionAnalytics({
   allLinksComeWithMore,
-  getStartedSection,
-  solutionsSections,
+  getStartedCTASection,
+  landingPagesSection,
 }: SolutionAnalyticsProps) {
   return (
     <>
@@ -34,11 +37,12 @@ export function SolutionAnalytics({
         <SolutionIcons label="Integrated with hundreds of digital music services" />
       </HeroSolutions>
 
-      {solutionsSections?.map((solutionsSection, index) => (
+      {landingPagesSection?.features?.map((solutionsSection, index) => (
         <SolutionsSection
           {...solutionsSection}
           key={index}
-          reverted={Boolean(index % 2)}
+          inverseLayout={solutionsSection.isInverse}
+          // reverted={Boolean(index % 2)}
         />
       ))}
 
@@ -94,7 +98,7 @@ export function SolutionAnalytics({
           variant="secondary"
         />
       </CheckIt>
-      {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
+      {getStartedCTASection && <FmGetStartedCta {...getStartedCTASection} />}
     </>
   );
 }

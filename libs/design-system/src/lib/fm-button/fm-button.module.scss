@@ -293,6 +293,10 @@
       line-height: 4.8rem;
     }
 
+    &.button--mobile_font_mod {
+      font-size: 1.6rem !important;
+    }
+
     &.button-base-size {
       padding: 0 calculateSize(3.2rem);
       font-size: calculateSize(1.05rem);

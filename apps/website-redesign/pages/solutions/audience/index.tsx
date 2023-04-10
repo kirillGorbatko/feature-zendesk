@@ -7,10 +7,12 @@ import {
 } from '@featurefm/design-system';
 import { getPageData } from '../../../api';
 export interface SolutionAudienceProps {
-  getStartedSection: FmGetStartedCtaProps;
+  getStartedCTASection: FmGetStartedCtaProps;
 }
 
-export function SolutionAudience({ getStartedSection }: SolutionAudienceProps) {
+export function SolutionAudience({
+  getStartedCTASection,
+}: SolutionAudienceProps) {
   return (
     <>
       <HeroSolutions
@@ -33,7 +35,7 @@ export function SolutionAudience({ getStartedSection }: SolutionAudienceProps) {
           variant="secondary"
         />
       </CheckIt>
-      {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
+      {getStartedCTASection && <FmGetStartedCta {...getStartedCTASection} />}
     </>
   );
 }

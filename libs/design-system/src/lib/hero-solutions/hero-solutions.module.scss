@@ -1,69 +1,82 @@
 @import '../scss/helpers-all.scss';
 
 .hero_solution {
-	color: $black;
+  padding-top: 6rem;
+  color: $black;
 
-	:global(.dark) & {
-		color: $white;
-	}
+  :global(.dark) & {
+    color: $white;
+  }
 
-	.hero_solution__item h1 {
-		line-height: 1.16;
-	}
+  .hero_solution__item h1 {
+    line-height: 1.16;
+  }
 
-	@include bp($tablet_max, min) {
-		padding: 0 $gl_desktop_indent;
-	}
 
-	@include bp($tablet_max - 1) {
-		padding: 0 $gl_mobile_indent;
-	}
+  @include bp($tablet_max, min) {
+    padding-left: $gl_desktop_indent;
+    padding-right: $gl_desktop_indent;
+  }
+
+  @include bp($desktop, min) {
+    padding-bottom: 20rem;
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    padding-bottom: 15rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding-left: $gl_mobile_indent;
+    padding-right: $gl_mobile_indent;
+    padding-bottom: 12rem;
+  }
 }
 
 .hero_solution__wrap {
-	&:not(:last-child) {
-		@include bp($desktop, min) {
-			margin-bottom: 14.8rem;
-		}
+  &:not(:last-child) {
+    @include bp($desktop, min) {
+      margin-bottom: 14.8rem;
+    }
 
-		@include bp($desktop - 1, $tablet_max) {
-			margin-bottom: 19.8rem;
-		}
+    @include bp($desktop - 1, $tablet_max) {
+      margin-bottom: 19.8rem;
+    }
 
-		@include bp($tablet_max - 1) {
-			margin-bottom: 8rem;
-		}
-	}
+    @include bp($tablet_max - 1) {
+      margin-bottom: 8rem;
+    }
+  }
 }
 
 .hero_solution__item {
-	max-width: 60rem;
+  max-width: 60rem;
 
-	&:nth-child(2n+2) {
-		margin-left: auto;
-	}
+  &:nth-child(2n+2) {
+    margin-left: auto;
+  }
 
-	&:not(:last-child) {
-		@include bp($tablet_max, min) {
-			margin-bottom: .8rem;
-		}
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: .8rem;
+    }
 
-		@include bp($tablet_max - 1) {
-			margin-bottom: 4rem;
-		}
-	}
+    @include bp($tablet_max - 1) {
+      margin-bottom: 4rem;
+    }
+  }
 }
 
 .hero_solution__descr {
-	font-weight: 300;
+  font-weight: 300;
 
-	@include bp($tablet_max, min) {
-		font-size: 2.4rem;
-		line-height: 1.125;
-	}
+  @include bp($tablet_max, min) {
+    font-size: 2.4rem;
+    line-height: 1.125;
+  }
 
-	@include bp($tablet_max - 1) {
-		font-size: 1.6rem;
-		line-height: 1.43;
-	}
+  @include bp($tablet_max - 1) {
+    font-size: 1.6rem;
+    line-height: 1.43;
+  }
 }

@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import styles from './data-section.module.scss';
 import classNames from 'classnames';
 import Container from '../container/container';
+import { FmTitle } from '../fm-title/fm-title';
 import { DataCard, DataCardProps } from '../data-card/data-card';
 import { BlackWaves, WhiteWaves } from './assets';
 
@@ -13,9 +14,13 @@ type DataSectionProps = {
 
 export function DataSection({ title, features, children }: DataSectionProps) {
   return (
-    <div className={styles['data_section']}>
+    <section className={styles['data_section']}>
       <Container>
-        <div className={styles['data_section__title']}>{title}</div>
+        <div className={styles['data_section__title']}>
+          <FmTitle variant="h3_secondary" tag="h3">
+            {title}
+          </FmTitle>
+        </div>
         <div className={styles['data_section__body']}>
           <div className={styles['data_section__row']}>
             {features.map(({ title, description }, index) => {
@@ -45,6 +50,6 @@ export function DataSection({ title, features, children }: DataSectionProps) {
         </div>
         <div className={styles['data_section__footer']}>{children}</div>
       </Container>
-    </div>
+    </section>
   );
 }

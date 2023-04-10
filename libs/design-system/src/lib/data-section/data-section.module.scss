@@ -3,11 +3,11 @@ $offset: 6rem;
 
 .data_section {
   @include bp($tablet_max, min) {
-    padding: 0 $gl_desktop_indent;
+    padding: 0 $gl_desktop_indent 22rem;
   }
 
   @include bp($tablet_max - 1) {
-    padding: 0 $gl_mobile_indent;
+    padding: 14rem $gl_mobile_indent 15rem;
   }
 }
 
@@ -22,14 +22,6 @@ $offset: 6rem;
     @include bp($tablet_max - 1) {
       margin-bottom: 19rem;
     }
-  }
-
-  @include bp($tablet_max, min) {
-    @include h3_secondary;
-  }
-
-  @include bp($tablet_max - 1) {
-    @include h1_secondary;
   }
 }
 

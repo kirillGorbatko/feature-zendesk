@@ -1,25 +1,57 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
-import { FmGetStartedCta } from './solutions-section';
+import { SolutionsSection, SolutionsSectionsProps } from './solutions-section';
 
-const Story: ComponentMeta<typeof FmGetStartedCta> = {
-  title: 'Glivera/FmGetStartedCta',
-  component: FmGetStartedCta,
+const data: SolutionsSectionsProps = {
+  tag: 'Artist Bio Links',
+  title: {
+    desktop: 'Connect fans to what’s most important to you from a single link.',
+  },
+  description: {
+    desktop:
+      'A Link in Bio made for music that showcases your latest release, video, merch, tour, website, press and more. Your Bio Link is created for you automatically.',
+  },
+  imageUrl: '/img/solutions/artist-bio-links.png',
+  topCapabilites: [
+    {
+      capability: 'Releases',
+      id: '63ec1cc5694ee0e3f49ab8f5',
+    },
+    {
+      capability: 'Email capture and fan messaging',
+      id: '63ec1cc5694ee0e3f49ab8f6',
+    },
+    {
+      capability: 'Videos and embeds',
+      id: '63ec1cc5694ee0e3f49ab8f7',
+    },
+    {
+      capability: 'Pre-Save and follow',
+      id: '63ec1cc5694ee0e3f49ab8f8',
+    },
+    {
+      capability: 'Tour dates',
+      id: '63ec1cc5694ee0e3f49ab8f9',
+    },
+    {
+      capability: 'Merch',
+      id: '63ec1cc5694ee0e3f49ab8fa',
+    },
+  ],
+  isInverse: true,
+  ctaButton: {
+    text: 'Start free',
+    link: 'https://login.feature.fm/signup/',
+    type: 'primary',
+  },
+  id: '63ec1cc5694ee0e3f49ab8ea',
+};
+
+const Story: ComponentMeta<typeof SolutionsSection> = {
+  title: 'Glivera/SolutionsSection',
+  component: SolutionsSection,
 };
 export default Story;
 
-const Template: ComponentStory<typeof FmGetStartedCta> = (args) => (
-  <FmGetStartedCta {...args} />
+const Template: ComponentStory<typeof SolutionsSection> = (args) => (
+  <SolutionsSection {...data} />
 );
-
-export const Default = Template.bind({});
-Default.args = {
-  title: 'Get started for free',
-  descr: (
-    <>
-      <p>
-        You can use Feature.fm for free or subscribe to one of our paid plans.
-      </p>
-      <p>All paid plans come with a free trial of our Pro plan'</p>
-    </>
-  ),
-};

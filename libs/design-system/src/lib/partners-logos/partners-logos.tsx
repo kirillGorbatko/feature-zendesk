@@ -5,11 +5,11 @@ import {
 } from './ui/partners-logos-item';
 import { PartnersLogosList } from './ui/partners-logos-list';
 
-type PartnersLogosProps = {
+export type PartnersLogosProps = {
   data: PartnersLogosItemProps[];
 };
 
-function PartnersLogos({ data, ...rest }: PartnersLogosProps) {
+export function PartnersLogos({ data, ...rest }: PartnersLogosProps) {
   if (!data || !data.length) return null;
 
   const styleAttr = { '--logos-count': data.length } as React.CSSProperties;
@@ -37,4 +37,4 @@ function PartnersLogos({ data, ...rest }: PartnersLogosProps) {
   );
 }
 
-export { PartnersLogos, PartnersLogosItemProps };
+export type { PartnersLogosItemProps };

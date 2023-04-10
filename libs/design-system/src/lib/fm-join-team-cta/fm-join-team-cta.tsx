@@ -8,10 +8,15 @@ import { FmTitle } from '../fm-title/fm-title';
 import Container from '../container/container';
 import styles from './fm-join-team-cta.module.scss';
 import { FmGetStartedCtaProps } from '../fm-get-started-cta/fm-get-started-cta';
+import { Typography } from '../typography/typography';
 
 export type FmJoinTeamCtaProps = FmGetStartedCtaProps;
 
-export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
+export function FmJoinTeamCta({
+  title,
+  description,
+  ctaButton,
+}: FmJoinTeamCtaProps) {
   return (
     <section className={styles['fm_join_team']}>
       <Container>
@@ -25,7 +30,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-1-mod']
+                styles['fm_join_team__decor--pos_1_mod']
               )}
             >
               <RectangleDecor size="medium" variant="purple" />
@@ -33,7 +38,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-2-mod']
+                styles['fm_join_team__decor--pos_2_mod']
               )}
             >
               <RectangleDecor size="medium" variant="image" />
@@ -41,7 +46,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-3-mod']
+                styles['fm_join_team__decor--pos_3_mod']
               )}
             >
               <RectangleDecor size="large" variant="purple" />
@@ -49,7 +54,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-4-mod']
+                styles['fm_join_team__decor--pos_4_mod']
               )}
             >
               <RectangleDecor size="sm2" variant="turquoise" />
@@ -64,7 +69,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-1-mod']
+                styles['fm_join_team__decor--pos_1_mod']
               )}
             >
               <RectangleDecor size="secondary_sm" variant="purple" />
@@ -72,7 +77,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-4-mod']
+                styles['fm_join_team__decor--pos_4_mod']
               )}
             >
               <RectangleDecor size="secondary_sm" variant="turquoise" />
@@ -80,7 +85,7 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-3-mod']
+                styles['fm_join_team__decor--pos_3_mod']
               )}
             >
               <RectangleDecor
@@ -91,43 +96,60 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
             <div
               className={classNames(
                 styles['fm_join_team__decor'],
-                styles['fm_join_team__decor--pos-2-mod']
+                styles['fm_join_team__decor--pos_2_mod']
               )}
             >
               <RectangleDecor size="secondary_md" variant="image" />
             </div>
           </div>
           <div className={styles['fm_join_team__content']}>
-            <div
-              className={classNames(
-                styles['fm_join_team__title'],
-                styles['fm_join_team__title--desktop_mod']
-              )}
-            >
-              <FmTitle variant="h3" color="white">
-                {title}
-              </FmTitle>
-            </div>
-            <div
-              className={classNames(
-                styles['fm_join_team__title'],
-                styles['fm_join_team__title--mobile_mod']
-              )}
-            >
-              <FmTitle variant="h3" color="secondary_purple">
-                {title}
-              </FmTitle>
-            </div>
-            <div className={styles['fm_join_team__text']}>
-              <FmDescr>
+            {title && (
+              <>
                 <div
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(descr),
-                  }}
-                ></div>
-              </FmDescr>
-            </div>
-            {button && (
+                  className={classNames(
+                    styles['fm_join_team__title'],
+                    styles['fm_join_team__title--desktop_mod']
+                  )}
+                >
+                  <FmTitle variant="h4" color="white">
+                    <Typography
+                      desktop={title.desktop}
+                      mobile={title.mobile}
+                      overrideMobile={title.overrideMobile}
+                    />
+                  </FmTitle>
+                </div>
+                <div
+                  className={classNames(
+                    styles['fm_join_team__title'],
+                    styles['fm_join_team__title--mobile_mod']
+                  )}
+                >
+                  <FmTitle variant="h4" color="secondary_purple">
+                    <Typography
+                      desktop={title.desktop}
+                      mobile={title.mobile}
+                      overrideMobile={title.overrideMobile}
+                    />
+                  </FmTitle>
+                </div>
+              </>
+            )}
+
+            {description && (
+              <div className={styles['fm_join_team__text']}>
+                <FmDescr>
+                  <Typography
+                    desktop={description.desktop}
+                    mobile={description.mobile}
+                    overrideMobile={description.overrideMobile}
+                    disableEscaping
+                  />
+                </FmDescr>
+              </div>
+            )}
+
+            {ctaButton && (
               <>
                 <div
                   className={classNames(
@@ -138,7 +160,8 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
                   <FMButton
                     variant="primary"
                     size="xxl"
-                    children={button.title}
+                    children={ctaButton.text}
+                    href={ctaButton.link}
                     width="full"
                   />
                 </div>
@@ -150,8 +173,9 @@ export function FmJoinTeamCta({ title, descr, button }: FmJoinTeamCtaProps) {
                 >
                   <FMButton
                     variant="tertiary"
-                    children={button.title}
+                    children={ctaButton.text}
                     width="full"
+                    href={ctaButton.link}
                   />
                 </div>
               </>

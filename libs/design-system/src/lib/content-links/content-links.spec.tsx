@@ -11,15 +11,21 @@ describe('ContentLinks', () => {
           <ContentLinks.Item>
             <LinksCard
               title="Artist Bio Links"
-              text="Connect your work together in a music-focused Link-in-Bio. "
-              iconName="artist"
+              description="Connect your work together in a music-focused Link-in-Bio. "
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item mobileHidden>
             <LinksCard
               title="Release Links"
-              text="Link to your music across all streaming platforms and services."
-              iconName="release"
+              description="Link to your music across all streaming platforms and services."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
         </ContentLinks.List>

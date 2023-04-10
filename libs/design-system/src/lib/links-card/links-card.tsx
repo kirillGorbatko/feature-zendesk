@@ -1,21 +1,23 @@
 import styles from './links-card.module.scss';
-import { Icon } from './ui';
+import { Picture, PictureProps } from '../picture';
 
 type LinksCardProps = {
-  iconName: string;
+  icon: PictureProps;
   title: string;
-  text: string;
+  description: string;
 };
 
-export function LinksCard({ iconName, title, text }: LinksCardProps) {
+export function LinksCard({ icon, title, description }: LinksCardProps) {
   return (
     <div className={styles['links_card']}>
       <div className={styles['links_card__wrap']}>
-        <Icon className={styles['links_card__icon']} iconName={iconName} />
+        <div className={styles['links_card__icon']}>
+          <Picture {...icon} />
+        </div>
       </div>
       <div className={styles['links_card__info']}>
         <h5 className={styles['links_card__title']}>{title}</h5>
-        <div className={styles['links_card__text']}>{text}</div>
+        <div className={styles['links_card__descr']}>{description}</div>
       </div>
     </div>
   );

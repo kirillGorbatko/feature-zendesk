@@ -3,11 +3,21 @@
   "title": "Professionals Page - Default",
   "slug": "default",
 
-  "getStartedSection": {
-    "title": "Talk to one of our experts",
-    "descr": "Interested in learning more about the feature.fm enterprise offering? Let one of our experts show you how Feature.fm can benefit you and take your business to the next level.",
-    "button": {
-      "title": "Book a demo"
+  "bottomCTASection": {
+    "title": {
+      "desktop": "Talk to one of our experts",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Interested in learning more about how Feature.fm works for your business?",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Book a demo",
+      "link": "http://...",
+      "type": "primary"
     }
   },
   "_status": "published",

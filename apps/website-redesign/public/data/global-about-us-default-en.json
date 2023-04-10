@@ -3,11 +3,21 @@
   "title": "About Page - Default",
   "slug": "default",
 
-  "joinTeamSection": {
-    "title": "Join the team",
-    "descr": "This section will lead to the career section and open positions. Lorem ipsum dolor sit amet lorem ipsum etc",
-    "button": {
-      "title": "Why should I?"
+  "joinTheTeamSection": {
+    "title": {
+      "desktop": "Join the team",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "If you believe in helping artists break through barriers and want to join a rapidly growing company with a team of creative thinkers, then we want to work with you.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Join the team",
+      "link": "/careers",
+      "type": "primary"
     }
   },
   "_status": "published",

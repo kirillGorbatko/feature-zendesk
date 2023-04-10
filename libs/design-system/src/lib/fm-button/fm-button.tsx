@@ -26,6 +26,10 @@ const buttonStyles = cva(styles['button'], {
       base: '',
       lg: styles['button--indent_mod'],
     },
+    mobileFontSize: {
+      base: '',
+      lg: styles['button--mobile_font_mod'],
+    },
     mobileWidth: {
       full: styles['button--mobile-width-full'],
     },
@@ -34,6 +38,7 @@ const buttonStyles = cva(styles['button'], {
     },
   },
   defaultVariants: {
+    mobileFontSize: 'base',
     variant: 'primary',
     size: 'base',
     indent: 'base',
@@ -41,7 +46,7 @@ const buttonStyles = cva(styles['button'], {
 });
 
 export interface GbuttonProps extends VariantProps<typeof buttonStyles> {
-  children: ReactNode;
+  children: ReactNode | string;
   isLoading?: boolean;
   href?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement> | undefined;
@@ -56,6 +61,7 @@ export function FMButton({
   isLoading,
   handleClick,
   href,
+  mobileFontSize,
   indent,
   ...props
 }: GbuttonProps) {
@@ -63,7 +69,13 @@ export function FMButton({
     return (
       <Link href={href}>
         <a
-          className={buttonStyles({ variant, size, width, mobileWidth })}
+          className={buttonStyles({
+            variant,
+            size,
+            width,
+            mobileWidth,
+            mobileFontSize,
+          })}
           href={href}
         >
           {isLoading ? <>Loading...</> : children}
@@ -74,7 +86,14 @@ export function FMButton({
     return (
       <button
         type="button"
-        className={buttonStyles({ variant, size, width, mobileWidth, indent })}
+        className={buttonStyles({
+          variant,
+          size,
+          width,
+          mobileWidth,
+          indent,
+          mobileFontSize,
+        })}
         onClick={handleClick}
         disabled={isLoading}
       >
