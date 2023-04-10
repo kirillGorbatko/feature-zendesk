@@ -10,11 +10,19 @@
 
   @include bp($tablet_max - 1) {
     padding: 6rem 3rem;
+    margin-bottom: 36rem;
   }
 }
 
 .title {
-  margin-bottom: 9rem;
+  @include bp($tablet_max, min) {
+    margin-bottom: 9rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
 }
 
 .list__wrap {
@@ -25,7 +33,15 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include bp($tablet_max, min) {
+  @include bp($desktop + 1, min) {
     margin-bottom: -18.5rem;
+  }
+
+  @include bp($desktop, $tablet_max) {
+    margin-bottom: -17.2rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    margin-bottom: -30rem;
   }
 }

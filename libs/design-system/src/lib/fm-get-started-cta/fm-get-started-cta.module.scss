@@ -109,10 +109,15 @@
   }
 
   &.fm_get_started__decor--pos-6-mod {
+    @include bp($desktop, min) {
+      margin: calculateSize(-18.6rem) calculateSize(-$gl_desktop_indent) 0 0;
+    }
+    @include bp($desktop - 1, $tablet_max) {
+      margin: calculateSize(-18rem) calculateSize(-$gl_desktop_indent) 0 0;
+    }
     @include bp($tablet_max, min) {
       top: 0;
       right: 0;
-      margin: calculateSize(-18rem) calculateSize(-8.2rem) 0 0;
     }
 
     @include bp($tablet_max - 1) {

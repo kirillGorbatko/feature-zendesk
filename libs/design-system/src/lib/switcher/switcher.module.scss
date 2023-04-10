@@ -1,0 +1,46 @@
+@import '../scss/helpers-all.scss';
+
+.block {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.4rem;
+
+  &:not(:last-child) {
+    margin-right: 1.4rem;
+  }
+}
+
+.field {
+  position: relative;
+
+  width: 6rem;
+  height: 3rem;
+  margin-right: 1.4rem;
+
+  border: 2px solid var(--dark);
+  border-radius: 1.5rem;
+
+  cursor: pointer;
+}
+
+.field__label {
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+
+  width: 2rem;
+  height: 2rem;
+  margin-top: -1rem;
+
+  background-color: var(--dark);
+  border-radius: 50%;
+
+  transition: transform 0.3s;
+
+  &.field__label--active_state {
+    transform: translateX(3rem);
+  }
+}

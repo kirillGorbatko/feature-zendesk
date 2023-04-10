@@ -15,19 +15,27 @@ const className = cva(styles['fm_solutions_benefit'], {
 });
 
 export type FmSolutionsBenefitProps = {
-  title?: string;
-  descr?: string;
+  title?: {
+    desktop: string;
+  };
+  description?: {
+    desktop: string;
+  };
 } & VariantProps<typeof className>;
 
 export function FmSolutionsBenefit({
   title,
-  descr,
+  description,
   variant,
 }: FmSolutionsBenefitProps) {
   return (
     <div className={className({ variant })}>
-      <div className={styles['fm_solutions_benefit__title']}>{title}</div>
-      <div className={styles['fm_solutions_benefit__descr']}>{descr}</div>
+      <div className={styles['fm_solutions_benefit__title']}>
+        {title?.desktop}
+      </div>
+      <div className={styles['fm_solutions_benefit__description']}>
+        {description?.desktop}
+      </div>
     </div>
   );
 }

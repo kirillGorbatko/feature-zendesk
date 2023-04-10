@@ -1,9 +1,12 @@
 import styles from './partners-logos.module.scss';
-import { PartnersLogosItem } from './ui/partners-logos-item';
+import {
+  PartnersLogosItem,
+  PartnersLogosItemProps,
+} from './ui/partners-logos-item';
 import { PartnersLogosList } from './ui/partners-logos-list';
 
 type PartnersLogosProps = {
-  data: any[];
+  data: PartnersLogosItemProps[];
 };
 
 function PartnersLogos({ data, ...rest }: PartnersLogosProps) {
@@ -34,4 +37,4 @@ function PartnersLogos({ data, ...rest }: PartnersLogosProps) {
   );
 }
 
-export { PartnersLogos };
+export { PartnersLogos, PartnersLogosItemProps };

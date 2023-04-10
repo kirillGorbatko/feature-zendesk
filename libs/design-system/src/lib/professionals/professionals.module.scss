@@ -2,11 +2,11 @@
 
 .professionals {
   @include bp($tablet_max, min) {
-    padding: 12rem $gl_desktop_indent 0;
+    padding: 12rem $gl_desktop_indent 5.4rem;
   }
 
   @include bp($tablet_max - 1) {
-    padding: 12rem $gl_mobile_indent 0;
+    padding: 12rem $gl_mobile_indent 5.4rem;
   }
 }
 
@@ -24,7 +24,6 @@
   box-shadow: 10px 30px 50px rgba(19, 25, 62, 0.15);
 
   @include bp($desktop, min) {
-    @include flex_block(row, wrap, flex-start, stretch, stretch);
     padding: 4.5rem 7.8% 5rem;
   }
 
@@ -32,7 +31,7 @@
     padding: 4.4rem 5rem 5.6rem;
   }
   @include bp($tablet_max, min) {
-    @include flex_block(row, wrap, flex-start, stretch, stretch);
+    @include flex_block(row, nowrap, flex-start, stretch, stretch);
   }
 
   @include bp($tablet_max - 1) {
@@ -66,7 +65,7 @@
   height: 100%;
 
   @include bp($tablet_max, min) {
-    padding: 4.4rem 0 0 3.4rem;
+    padding: 4.2rem 0 0 3.4rem;
   }
   @include bp($tablet_max - 1) {
     &:not(:last-child) {
@@ -79,7 +78,7 @@
   @include bp($tablet_max, min) {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 1rem;
 
     width: 13.1rem;
     height: 11.4rem;

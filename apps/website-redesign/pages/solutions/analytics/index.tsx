@@ -1,6 +1,7 @@
 import {
   HeroSolutions,
   FmGetStartedCta,
+  FmGetStartedCtaProps,
   FmSolutionsBenefitSection,
   FmSolutionsBenefit,
   FmSolutionsBenefitProps,
@@ -9,39 +10,21 @@ import {
   SolutionsSection,
   SolutionsSectionsProps,
   MoreSolutionCard,
+  FmSolutionsBenefitSectionProps,
 } from '@featurefm/design-system';
-
-const getStartedSection = {
-  title: 'Get started for free',
-  descr:
-    '<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>',
-  button: {
-    title: 'Start now',
-  },
-};
-
-const benefitsSection = {
-  title: 'More amazing features that apply to all links',
-  benefits: [
-    {
-      title: 'Use time to your advantage and create some buzz',
-      descr:
-        'Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.',
-    },
-    {
-      title: 'Use time to your advantage and create some buzz',
-      descr:
-        'Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.',
-    },
-    {
-      title: 'Use time to your advantage and create some buzz',
-      descr:
-        'Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.',
-    },
-  ],
-};
-
-export function SolutionAnalytics() {
+import { getPageData } from '../../../api';
+export interface SolutionAnalyticsProps {
+  allLinksComeWithMore: FmSolutionsBenefitSectionProps & {
+    features: FmSolutionsBenefitProps[];
+  };
+  solutionsSections: SolutionsSectionsProps[];
+  getStartedSection: FmGetStartedCtaProps;
+}
+export function SolutionAnalytics({
+  allLinksComeWithMore,
+  getStartedSection,
+  solutionsSections,
+}: SolutionAnalyticsProps) {
   return (
     <>
       <HeroSolutions
@@ -51,45 +34,47 @@ export function SolutionAnalytics() {
         <SolutionIcons label="Integrated with hundreds of digital music services" />
       </HeroSolutions>
 
-      {/* {solutionsSections?.map((solutionsSection, index) => (
+      {solutionsSections?.map((solutionsSection, index) => (
         <SolutionsSection
           {...solutionsSection}
           key={index}
           reverted={Boolean(index % 2)}
         />
-      ))} */}
+      ))}
 
-      {benefitsSection && (
-        <FmSolutionsBenefitSection title={benefitsSection.title}>
-          {benefitsSection.benefits && benefitsSection.benefits.length > 0 && (
+      {allLinksComeWithMore && (
+        <FmSolutionsBenefitSection title={allLinksComeWithMore.title}>
+          {allLinksComeWithMore.features?.length > 0 && (
             <FmSolutionsBenefitSection.List>
-              {benefitsSection.benefits.map(({ title, descr }, index) => {
-                let variant: FmSolutionsBenefitProps['variant'] = 'red';
+              {allLinksComeWithMore.features.map(
+                ({ title, description }, index) => {
+                  let variant: FmSolutionsBenefitProps['variant'] = 'red';
 
-                switch (index % 3) {
-                  case 0:
-                    variant = 'red';
-                    break;
-                  case 1:
-                    variant = 'turquoise';
-                    break;
-                  case 2:
-                    variant = 'purple';
-                    break;
-                  default:
-                    break;
+                  switch (index % 3) {
+                    case 0:
+                      variant = 'red';
+                      break;
+                    case 1:
+                      variant = 'turquoise';
+                      break;
+                    case 2:
+                      variant = 'purple';
+                      break;
+                    default:
+                      break;
+                  }
+
+                  return (
+                    <FmSolutionsBenefitSection.Item key={index}>
+                      <FmSolutionsBenefit
+                        title={title}
+                        description={description}
+                        variant={variant}
+                      />
+                    </FmSolutionsBenefitSection.Item>
+                  );
                 }
-
-                return (
-                  <FmSolutionsBenefitSection.Item key={index}>
-                    <FmSolutionsBenefit
-                      title={title}
-                      descr={descr}
-                      variant={variant}
-                    />
-                  </FmSolutionsBenefitSection.Item>
-                );
-              })}
+              )}
             </FmSolutionsBenefitSection.List>
           )}
         </FmSolutionsBenefitSection>
@@ -112,6 +97,20 @@ export function SolutionAnalytics() {
       {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
     </>
   );
+}
+
+export async function getServerSideProps({ req, query, res }) {
+  const pageData: SolutionAnalyticsProps =
+    await getPageData<SolutionAnalyticsProps>(
+      'solutions-analytics-pages',
+      query || {},
+      req,
+      res,
+      72,
+      'en'
+    );
+
+  return { props: pageData };
 }
 
 export default SolutionAnalytics;

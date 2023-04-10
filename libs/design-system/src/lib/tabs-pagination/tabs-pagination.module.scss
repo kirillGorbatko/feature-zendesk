@@ -12,12 +12,14 @@
 
 .tabs_pagination__item {
   padding: 0 1.5rem 2rem 0;
+
+  flex: 0 1 6.5rem;
 }
 
 .tabs_pagination__btn {
   position: relative;
   display: block;
-  width: 5rem;
+  width: 100%;
   height: 1px;
   cursor: pointer;
 

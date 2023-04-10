@@ -1,0 +1,46 @@
+@import '../scss/helpers-all.scss';
+
+.content_block {
+  @include bp($tablet_max, min) {
+    padding: 0 $gl_desktop_indent;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 0 $gl_mobile_indent;
+  }
+}
+
+.content_block__row {
+  margin: 0 -4rem -4rem 0;
+
+  @include bp($tablet_max, min) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.content_block__column {
+  padding: 0 4rem 4rem 0;
+
+  @include bp($tablet_max, min) {
+    max-width: 59rem;
+  }
+}
+
+.content_block__title {
+  @include bp($tablet_max, min) {
+    @include h1;
+    line-height: 1.16;
+  }
+
+  @include bp($tablet_max - 1) {
+    @include h1_secondary;
+  }
+}
+
+.content_block__descr {
+  font-size: 2rem;
+  letter-spacing: .005em;
+  line-height: normal;
+}

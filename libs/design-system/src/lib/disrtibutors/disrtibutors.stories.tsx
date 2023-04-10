@@ -5,7 +5,7 @@ const Story: ComponentMeta<typeof Distributors> = {
   title: 'Website-redesign/Distributors',
   component: Distributors,
   argTypes: {
-    label: {
+    text: {
       defaultValue:
         'Trusted by the industry’s top labels, managers and distributors',
       control: { type: 'text' },

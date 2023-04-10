@@ -74,8 +74,11 @@ export function FmGetStartedCta({
                 styles['fm_get_started__decor--pos-6-mod']
               )}
             >
-              <RectangleDecor size="xxl" variant={'gradient'} />
-              <RectangleDecor size="xxl" variant={'tertiary_gradient'} />
+              {variant === 'v2' ? (
+                <RectangleDecor size="xxl" variant={'tertiary_gradient'} />
+              ) : (
+                <RectangleDecor size="xxl" variant={'gradient'} />
+              )}
             </div>
             <div
               className={classNames(
@@ -88,7 +91,7 @@ export function FmGetStartedCta({
           </div>
           <div className={styles['fm_get_started__content']}>
             <div className={styles['fm_get_started__title']}>
-              <FmTitle variant="h3">{title}</FmTitle>
+              <FmTitle variant="h4">{title}</FmTitle>
             </div>
             <div className={styles['fm_get_started__text']}>
               <FmDescr>

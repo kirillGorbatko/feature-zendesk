@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
 
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Outfit', sans-serif;
   text-align: center;
   line-height: normal;
@@ -105,7 +105,8 @@
   &.button-quaternary-variant {
     color: #737373;
     font-weight: 400;
-    background-color: transparent;
+    // background-color: transparent;
+    background-color: var(--light);
     border: 1px solid #979797;
   }
 
@@ -189,6 +190,28 @@
     border-radius: 2.8rem;
   }
 
+  &.button-md-2-size {
+    width: 100%;
+    padding: 0 2.2rem;
+    font-weight: 500;
+
+    @include bp($tablet_max, min) {
+      height: 5rem;
+
+      font-size: 1.7rem;
+
+      border-radius: 2.8rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      height: 7rem;
+
+      font-size: 1.8rem;
+
+      border-radius: 4rem;
+    }
+  }
+
   &.button-sm-size {
     min-width: 9.2rem;
     height: 2.5rem;
@@ -215,7 +238,7 @@
     line-height: 7rem;
 
     min-width: 22.6rem;
-    padding: 0 1.6rem;
+    padding: 0 3.4rem;
     font-size: 1.8rem;
   }
 

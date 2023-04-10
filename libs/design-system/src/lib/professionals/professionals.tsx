@@ -8,7 +8,7 @@ import styles from './professionals.module.scss';
 import { Tab, TabProps } from './ui/tab/tab';
 import TabsPagination from '../tabs-pagination/tabs-pagination';
 import QuoteIcon from '../quote-icon/quote-icon';
-// import { PartnersLogosItemProps } from '../partners-logos/partners-logos';
+import { PartnersLogosItemProps } from '../partners-logos/partners-logos';
 
 export type ProfessionalsProps = {
   children: ReactNode | ReactNode[];
@@ -17,7 +17,7 @@ export type ProfessionalsProps = {
     text: string;
     link?: string;
   };
-  logos?: any[];
+  logos?: PartnersLogosItemProps[];
 } & ColumnProps;
 
 function Professionals({ children }: ProfessionalsProps) {
@@ -43,7 +43,7 @@ export function Tabs({ testimonials }: { testimonials?: TabProps[] }) {
   return (
     <div className={styles['professionals__tabs']}>
       <div className={styles['professionals__tabs_decor']}>
-        <QuoteIcon fill="tertiary" />
+        <QuoteIcon fill="tertiary" opacity="1" />
       </div>
       <div className={styles['professionals__tabs_list']}>
         {testimonials?.map((tab, index) => {

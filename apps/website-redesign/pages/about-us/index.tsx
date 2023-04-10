@@ -18,7 +18,7 @@ export function AboutUs({ mock, joinTeamSection }: AboutUsProps) {
     <>
       <HeroAbout>
         <HeroAbout.Title>
-          <FmTitle variant="h5" color="secondary_purple">
+          <FmTitle variant="h3" color="secondary_purple">
             First let’s drop a few numbers
           </FmTitle>
         </HeroAbout.Title>
@@ -37,7 +37,7 @@ export function AboutUs({ mock, joinTeamSection }: AboutUsProps) {
           <KpiItem
             number="30"
             title="Important KPI"
-            text="We’ve spent nearly a decade understanding the needs of artists to create the most advanced music marketing technology."
+            text="Alii autem, quibus ego cum a natura incorrupte atque integre iudicante itaque earum."
             decor="v2"
           />
           <KpiItem

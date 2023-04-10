@@ -9,7 +9,7 @@
     width: 50%;
 
     &:nth-child(2) {
-      margin-top: 12rem !important;
+      margin-top: 11.8rem !important;
     }
 
     &:nth-child(3) {
@@ -18,8 +18,12 @@
   }
 
   &:nth-child(even) {
-    @include bp($tablet_max, min) {
+    @include bp($desktop + 1, min) {
       margin-top: 16.2rem;
+    }
+
+    @include bp($desktop, $tablet_max) {
+      margin-top: 15rem;
     }
 
     @include bp($tablet_max - 1) {
@@ -68,6 +72,10 @@
   color: #cfb4ff;
   font-family: $font_gpsuper;
 
+  @include bp($desktop, $tablet_max) {
+    line-height: 1.1;
+  }
+
   @include bp($tablet_max, min) {
     margin-bottom: 1rem;
     font-size: 6rem;
@@ -82,8 +90,15 @@
 .title {
   font-weight: 500;
 
-  @include bp($tablet_max, min) {
+  @include bp($desktop + 1, min) {
     margin-bottom: 3.6rem;
+  }
+
+  @include bp($desktop, $tablet_max) {
+    margin-bottom: 3rem;
+  }
+
+  @include bp($tablet_max, min) {
     font-size: 2rem;
   }
 
@@ -94,11 +109,12 @@
 }
 
 .text {
-  font-weight: 300;
+  // font-weight: 300;
   color: #959595;
 
   @include bp($tablet_max, min) {
     font-size: 1.6rem;
+    letter-spacing: 0.43px;
   }
 
   @include bp($tablet_max - 1) {
@@ -112,11 +128,18 @@
   &.decor--v0_mod {
     border: 3px solid var(--light);
 
+    @include bp($desktop + 1, min) {
+      height: 7rem;
+    }
+
+    @include bp($desktop, $tablet_max) {
+      height: 6.2rem;
+    }
+
     @include bp($tablet_max, min) {
       top: 100%;
       left: -3px;
       right: -3px;
-      height: 7rem;
     }
 
     @include bp($tablet_max - 1) {
@@ -133,10 +156,18 @@
       top: 100%;
       right: 100%;
 
-      width: 6.4rem;
-      height: 6.4rem;
-
       background-color: var(--primary-color);
+
+      @include bp($desktop + 1, min) {
+        width: 6.4rem;
+        height: 6.4rem;
+      }
+
+      @include bp($desktop, $tablet_max) {
+        width: 5.8rem;
+        height: 5.8rem;
+        margin: 0.4rem 0.4rem 0 0;
+      }
 
       @include bp($tablet_max - 1) {
         display: none;
@@ -155,13 +186,17 @@
       rgba(207, 180, 255, 1) 100%
     );
 
-    @include bp($tablet_max, min) {
+    @include bp($desktop + 1, min) {
       height: 8.8rem;
+    }
+
+    @include bp($tablet_max, min) {
+      height: 8.2rem;
       right: -3px;
     }
 
     @include bp($tablet_max - 1) {
-      height: 12.2rem;
+      height: 12.3rem;
       width: 9.2rem;
     }
   }
@@ -170,12 +205,19 @@
     border: 3px solid var(--light);
     background-color: var(--primary-color);
 
+    @include bp($desktop + 1, min) {
+      width: 16.5rem;
+      height: 16.5rem;
+    }
+
+    @include bp($desktop, $tablet_max) {
+      width: 15.3rem;
+      height: 15.3rem;
+    }
+
     @include bp($tablet_max, min) {
       top: 100%;
       right: -3px;
-
-      width: 16.5rem;
-      height: 16.5rem;
     }
 
     @include bp($tablet_max - 1) {
@@ -193,9 +235,14 @@
 
     border: 3px solid var(--light);
 
-    @include bp($tablet_max, min) {
+    @include bp($desktop + 1, min) {
       width: 17.2rem;
       height: 16.5rem;
+    }
+
+    @include bp($desktop, $tablet_max) {
+      width: 15.8rem;
+      height: 15.3rem;
     }
 
     @include bp($tablet_max - 1) {

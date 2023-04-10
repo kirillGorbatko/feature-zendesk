@@ -45,7 +45,7 @@
   @include bp($tablet_max, min) {
     line-height: 1.68;
   }
-  @include bp($tablet_max) {
+  @include bp($tablet_max - 1) {
     line-height: 1.4;
   }
 }
@@ -56,10 +56,10 @@
 
   line-height: 1.43;
   font-size: 1.6rem;
+  font-weight: 600;
   text-decoration: none;
   color: $black;
   transition: color 0.2s ease-in-out;
-  letter-spacing: -0.04em;
 
   &:hover,
   &:focus {
@@ -73,7 +73,7 @@
 }
 
 .tab__link_icon {
-  margin: 0.2rem 0 0 0.8rem;
+  margin: 0.2rem 0 0 0.4rem;
   width: 0.8rem;
   height: 1rem;
 

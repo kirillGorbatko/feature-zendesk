@@ -1,20 +1,16 @@
 import {
   HeroSolutions,
   FmGetStartedCta,
+  FmGetStartedCtaProps,
   CheckIt,
   MoreSolutionCard,
 } from '@featurefm/design-system';
+import { getPageData } from '../../../api';
+export interface SolutionLinksProps {
+  getStartedSection: FmGetStartedCtaProps;
+}
 
-const getStartedSection = {
-  title: 'Get started for free',
-  descr:
-    '<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>',
-  button: {
-    title: 'Start now',
-  },
-};
-
-export function SolutionLinks() {
+export function SolutionLinks({ getStartedSection }: SolutionLinksProps) {
   return (
     <>
       <HeroSolutions
@@ -40,6 +36,19 @@ export function SolutionLinks() {
       {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
     </>
   );
+}
+
+export async function getServerSideProps({ req, query, res }) {
+  const pageData: SolutionLinksProps = await getPageData<SolutionLinksProps>(
+    'solutions-links-pages',
+    query || {},
+    req,
+    res,
+    72,
+    'en'
+  );
+
+  return { props: pageData };
 }
 
 export default SolutionLinks;

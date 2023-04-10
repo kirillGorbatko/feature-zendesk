@@ -2,23 +2,43 @@
   "id": "63ec1ccdc8d2da25b2314ce4",
   "title": "Solutions Page - Default",
   "slug": "default",
-  "benefitsSection": {
-    "title": "More amazing features that apply to all links",
-    "benefits": [
+
+  "allLinksComeWithMore": {
+    "title": "Customize and convert",
+    "features": [
       {
-        "title": "Use time to your advantage and create some buzz",
-        "descr": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+        "title": {
+          "desktop": "Custom domains & sub-domains"
+        },
+        "description": {
+          "desktop": "Brand your links with custom sub-domains or full domains that let your fans recognize your campaigns."
+        },
+        "link": "https://",
+        "id": "63ec1cc5694ee0e3f49ab8f0"
       },
       {
-        "title": "Use time to your advantage and create some buzz",
-        "descr": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+        "title": {
+          "desktop": "Custom stores & services"
+        },
+        "description": {
+          "desktop": "Enjoy the flexibility to add any custom store to your links, like your merch store, with custom logos and icons."
+        },
+        "link": "https://",
+        "id": "63ec1cc5694ee0e3f49ab8f1"
       },
       {
-        "title": "Use time to your advantage and create some buzz",
-        "descr": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+        "title": {
+          "desktop": ">95% Google Page Load Speeds"
+        },
+        "description": {
+          "desktop": "Feature.fm has the fastest page load speeds in the market, helping fans get to your music faster."
+        },
+        "link": "https://",
+        "id": "63ec1cc5694ee0e3f49ab8f2"
       }
     ]
   },
+
   "getStartedSection": {
     "title": "Get started for free",
     "descr": "<p>You can use Feature.fm for free or subscribe to one of our paid plans.</p><p>All paid plans come with a free trial of our Pro plan</p>",

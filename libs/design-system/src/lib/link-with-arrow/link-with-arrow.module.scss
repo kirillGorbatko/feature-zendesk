@@ -9,6 +9,17 @@
 
   transition: color 0.3s;
 
+  &.link--v2_mod {
+    color: var(--light);
+  }
+
+  &.link--hover_v2_mod {
+    &:hover,
+    &:focus {
+      color: var(--light);
+    }
+  }
+
   &:hover,
   &:focus {
     color: var(--primary-color-2);

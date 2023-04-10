@@ -23,9 +23,9 @@
     right: 0;
 
     @include bp($tablet_max, min) {
-      top: -6rem;
-      height: calc(100% + 6rem);
-      width: 27%;
+      top: 0;
+      height: 100%;
+      width: 20.8%;
       background: linear-gradient(
         258deg,
         rgba($red, 0.2) 10%,
@@ -46,11 +46,11 @@
   }
 
   &::after {
-    top: 0;
+    bottom: 0;
     left: 0;
 
-    width: 73.333%;
-    height: 100%;
+    width: 52.333%;
+    height: 87.4%;
 
     background: linear-gradient(
       17deg,

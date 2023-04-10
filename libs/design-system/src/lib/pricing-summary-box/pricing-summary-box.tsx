@@ -1,3 +1,4 @@
+// FIXME: delete it
 /* eslint-disable-next-line */
 import { Button, Checkmark } from '@featurefm/design-system';
 import React from 'react';

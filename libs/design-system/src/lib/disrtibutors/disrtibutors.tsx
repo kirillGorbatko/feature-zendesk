@@ -2,7 +2,7 @@ import Container from '../container/container';
 import styles from './disrtibutors.module.scss';
 
 type DistributorsProps = {
-  label: string;
+  text: string;
   logoList?: string[];
 };
 
@@ -30,7 +30,7 @@ const integratedBrands = defaultBrands.map(
 );
 
 export function Distributors({
-  label,
+  text,
   logoList = integratedBrands,
 }: DistributorsProps) {
   return (
@@ -38,7 +38,7 @@ export function Distributors({
       <Container>
         <div className={styles['distributors__row']}>
           <div className={styles['distributors__column']}>
-            <div className={styles['distributors__label']}>{label}</div>
+            <div className={styles['distributors__label']}>{text}</div>
           </div>
           <div className={styles['distributors__column']}>
             <div className={styles['distributors__brands']}>

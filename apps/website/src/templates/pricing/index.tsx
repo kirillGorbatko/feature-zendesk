@@ -148,12 +148,7 @@ export function Pricing(props: PricingProps) {
           <PricingPeriodSelector isAnnual={isAnnual} onChange={setIsAnnual} />
           <div>
             <PricingSummaryBox
-              {...mapSummary(
-                summary.planOne,
-                'primary',
-                isAnnual,
-                '#9B62FF'
-              )}
+              {...mapSummary(summary.planOne, 'primary', isAnnual, '#9B62FF')}
               currency={props.currency}
               className="mt-14"
               isAnnual={isAnnual}
@@ -167,12 +162,7 @@ export function Pricing(props: PricingProps) {
           />
           <div>
             <PricingSummaryBox
-              {...mapSummary(
-                summary.planTwo,
-                'secondary',
-                isAnnual,
-                '#FF5262'
-              )}
+              {...mapSummary(summary.planTwo, 'secondary', isAnnual, '#FF5262')}
               currency={props.currency}
               isAnnual={isAnnual}
               className="-mx-0.5"

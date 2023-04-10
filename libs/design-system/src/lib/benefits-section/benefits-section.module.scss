@@ -1,16 +1,114 @@
-.benefits {}
+@import '../scss/helpers-all.scss';
+
+.benefits {
+  @include bp($tablet_max, min) {
+    padding: 5.2rem $gl_desktop_indent;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 1rem $gl_mobile_indent;
+  }
+}
 
 .benefits__row {
-  display: flex;
-  align-items: center;
+  @include bp($tablet_max, min) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .benefits__column {
   &:nth-child(1) {
-    width: 61.5%;
+    .benefits--reverse_mod & {
+      order: 2;
+      margin-left: auto;
+    }
+
+    @include bp($tablet_max, min) {
+      width: calc(100% - 50rem);
+    }
   }
 
   &:nth-child(2) {
-    width: 38.5%;
+    .benefits--reverse_mod & {
+      order: 1;
+    }
+
+    @include bp($tablet_max, min) {
+      width: 50rem;
+    }
+  }
+
+  &:not(:last-child) {
+    @include bp($tablet_max - 1) {
+
+      .benefits--base_mod & {
+        margin-bottom: 2rem;
+      }
+
+      .benefits--lg_size & {
+        margin-bottom: 7.8rem;
+      }
+    }
+  }
+}
+
+.benefits__image {
+  position: relative;
+  display: block;
+
+  @include bp($desktop_lg, min) {
+    .benefits--reverse_mod & {
+      margin-left: auto;
+      margin-right: calc($page_width / 2 - 50vw);
+    }
+
+    .benefits--base_mod & {
+      margin-left: calc($page_width / 2 - 50vw);
+    }
+  }
+
+  @include bp($desktop_lg - 1, $desktop) {
+    .benefits--reverse_mod & {
+      margin-right: calc($gl_desktop_indent * -1);
+    }
+
+    .benefits--base_mod & {
+      margin-left: calc($gl_desktop_indent * -1);
+    }
+  }
+
+  @include bp($desktop, min) {
+    .benefits--lg_size & {
+      width: 107rem;
+      height: 72.8rem;
+    }
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    .benefits--reverse_mod & {
+      margin-left: -6.2rem;
+    }
+
+    .benefits--base_mod & {
+      margin-left: calc(($gl_desktop_indent + 22.8rem) * -1);
+    }
+
+    .benefits--lg_size & {
+      width: 84.4rem;
+      height: 57.4rem;
+    }
+  }
+
+  @include bp($tablet_max, min) {
+    .benefits--base_size & {
+      width: 90.5rem;
+      height: 74.5rem;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 118%;
+    margin-left: calc($gl_mobile_indent * -1);
   }
 }

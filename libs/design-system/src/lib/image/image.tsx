@@ -26,7 +26,9 @@ const withCloudinary = (path: string) => {
   if (path && path.startsWith('https://')) {
     return `https://res.cloudinary.com/feature-fm/image/fetch/f_auto/${path.replace(
       'img/',
-      `img/v${process.env.NEXT_PUBLIC_BUILD_NUMBER || process.env.BUILD_NUMBER}/`
+      `img/v${
+        process.env.NEXT_PUBLIC_BUILD_NUMBER || process.env.BUILD_NUMBER
+      }/`
     )}`;
   }
   return path;

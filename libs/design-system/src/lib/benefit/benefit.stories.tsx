@@ -9,7 +9,7 @@ const Story: ComponentMeta<typeof Benefit> = {
       defaultValue: 'Some title',
       control: { type: 'text' },
     },
-    text: {
+    description: {
       defaultValue:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus obcaecati eveniet vel nulla quae fugiat!',
       control: { type: 'text' },

@@ -20,6 +20,7 @@ const buttonStyles = cva(styles['button'], {
       xl: styles['button-xl-size'],
       xxl: styles['button-xxl-size'],
       md: styles['button-md-size'],
+      md2: styles['button-md-2-size'],
     },
     indent: {
       base: '',

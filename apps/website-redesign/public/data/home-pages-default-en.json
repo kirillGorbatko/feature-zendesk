@@ -16,6 +16,110 @@
       "title": "Start now"
     }
   },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Get started for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideMobile": true,
+      "mobile": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Get started",
+      "link": "https://login.feature.fm/signup",
+      "type": "secondary"
+    }
+  },
+  "quoteSection": {
+    "title": "There is no better time in history to be an artist",
+    "data": [
+      {
+        "quote": "Its quick, easy, and accessible for people to check out my music! ",
+        "quoter": "Carol Souki",
+        "quoterTitle": "Independent Artist",
+        "quoterLink": { "name": "Read success story", "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE/" },
+        "id": "63ebdc8941eadd2d12fc4c23",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "quoterCount": "100k monthly listeners",
+        "imgMain": "/images/quote/1.jpg",
+        "animBlock": { "head": "/images/quote/1_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "Great and easy to use interface and tons of great features. Well worth the price.",
+        "quoter": "Softspoken",
+        "quoterTitle": "Singer Songwriter",
+        "quoterLink": { "name": "Read success story", "url": "https://ffm.link/davidkushnercasestudy.OWE" },
+        "id": "63ebdc8941eadd2d12fc4c21",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/2_main.jpg",
+        "animBlock": { "head": "/images/quote/2_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "This platform blows the competition away for prices and services",
+        "quoter": "Eric Martin",
+        "quoterTitle": "Singer Songwriter",
+        "quoterLink": { "name": "Read Success story", "url": "#" },
+        "id": "63ebdc8941eadd2d12fc4c1e",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/3_main.jpg",
+        "animBlock": { "head": "/images/quote/3_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "Simply the best Marketing Plartform for Musicians!",
+        "quoter": "Drax Africa",
+        "quoterTitle": "A post-hardcore band from Kentucky",
+        "quoterLink": { "name": "Read Success story", "url": "#" },
+        "id": "63ebdc8941eadd2d12fc4c1f",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/4_main.jpg",
+        "animBlock": { "head": "/images/quote/4_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "When my song went viral on TikTok, Feature.fm allowed us to capture hundreds of thousands of Pre-Saves and turn it into millions of streams on release day.",
+        "quoter": "Stacey Ryan",
+        "quoterTitle": "Hyperpop alien",
+        "quoterLink": { "name": "", "url": "" },
+        "id": "63ebdc8941eadd2d12fc4c20",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/5_main.jpg",
+        "animBlock": { "head": "/images/quote/5_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
+        "quoter": "Emmy Meli",
+        "quoterTitle": "Hyperpop alien",
+        "quoterLink": { "name": "Read Success story", "url": "#" },
+        "id": "63ebdc8941eadd2d12fc4c20",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/6_main.jpg",
+        "animBlock": { "head": "/images/quote/6_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
+        "quoter": "Mudge",
+        "quoterTitle": "Singer Songwriter",
+        "quoterLink": { "name": "Read Success story  ", "url": "" },
+        "id": "63ebdc8941eadd2d12fc4c20",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/7_main .jpg",
+        "animBlock": { "head": "/images/quote/7_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      },
+      {
+        "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info. ",
+        "quoter": "David Kushner",
+        "quoterTitle": "Singer Songwriter",
+        "quoterLink": { "name": "Read Success story ", "url": "#" },
+        "id": "63ebdc8941eadd2d12fc4c20",
+        "quoterImageSection": { "profileImage": {}, "landingPageImage": {}, "mobileLandingPageImage": {} },
+        "imgMain": "/images/quote/8_main.jpg",
+        "animBlock": { "head": "/images/quote/8_head.jpg", "avatar": "/images/quote/avatar_1.jpg", "video": "/images/quote/video_1.jpg" }
+      }
+    ]
+  },
   "forProfessionalsCTASection": {
     "sectionTag": "For business",
     "title": {

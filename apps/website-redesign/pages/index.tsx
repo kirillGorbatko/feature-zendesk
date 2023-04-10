@@ -16,12 +16,13 @@ import {
   Quote,
   Professionals,
   PartnersLogos,
+  PartnersLogosItemProps,
   ArtistCarousel,
   FmGetStartedCta,
   FmGetStartedCtaProps,
   ProfessionalsProps,
+  QuoteProps,
   TabsPagination,
-  Cookies,
 } from '@featurefm/design-system';
 
 import { getPageData } from '../api';
@@ -33,14 +34,18 @@ export interface IndexProps {
     };
   };
   getStartedSection: FmGetStartedCtaProps;
+  quoteSection: QuoteProps;
   forProfessionalsCTASection: ProfessionalsProps & {
     button?: {
       title: string;
       link?: string;
     };
-    logos?: any[];
+    logos?: PartnersLogosItemProps[];
   };
 }
+
+import { ARTIST_CAROUSEL_DATA } from '@featurefm/shared/data';
+import { useEffect } from 'react';
 
 const getStartedSection = {
   title: 'Get started for free',
@@ -324,24 +329,36 @@ const ARTIST_CAROUSEL_DATA = [
   },
 ];
 
-export function Index() {
+export function Index({
+  heroSection,
+  getStartedSection,
+  quoteSection,
+  forProfessionalsCTASection,
+}: IndexProps) {
+  console.log(forProfessionalsCTASection); //!
   return (
     <>
       <div>Home page</div>
-      <Hero>
-        <Container>
-          <Hero.Title>
-            <FmTitle variant="h1" color="white">
-              Build your fan base and music career.
-            </FmTitle>
-          </Hero.Title>
-          <Hero.Button>
-            <FMButton variant="tertiary" size="xxl" mobileWidth="full">
-              Start for free
-            </FMButton>
-          </Hero.Button>
-        </Container>
-      </Hero>
+      {heroSection && (
+        <Hero>
+          <Container>
+            {heroSection.title && (
+              <Hero.Title>
+                <FmTitle variant="h1" color="white">
+                  {heroSection.title}
+                </FmTitle>
+              </Hero.Title>
+            )}
+            {heroSection.button && (
+              <Hero.Button>
+                <FMButton variant="tertiary" size="xxl" mobileWidth="full">
+                  {heroSection.button?.title}
+                </FMButton>
+              </Hero.Button>
+            )}
+          </Container>
+        </Hero>
+      )}
 
       <ArtistCarousel slides={ARTIST_CAROUSEL_DATA} />
 
@@ -496,8 +513,9 @@ export function Index() {
           </InfoRow.AnimationBlock>
         </InfoRow.Column>
       </InfoRow>
-      <Quote />
-
+      {quoteSection && (
+        <Quote title={quoteSection.title} data={quoteSection.data} />
+      )}
       {forProfessionalsCTASection && (
         <Professionals>
           <Professionals.Inner>
@@ -540,25 +558,6 @@ export function Index() {
         </Professionals>
       )}
       {getStartedSection && <FmGetStartedCta {...getStartedSection} />}
-
-      <Cookies>
-        <Cookies.Content>
-          Like everyone else, we use cookies. You can read about thier use in
-          our <a href="#">Privacy Policy</a>
-        </Cookies.Content>
-        <Cookies.ActionBar>
-          <Cookies.ActionItem>
-            <FMButton width="full" size="xl" variant="quaternary">
-              Essential only
-            </FMButton>
-          </Cookies.ActionItem>
-          <Cookies.ActionItem>
-            <FMButton width="full" size="xl" variant="secondary">
-              Essential only
-            </FMButton>
-          </Cookies.ActionItem>
-        </Cookies.ActionBar>
-      </Cookies>
     </>
   );
 }

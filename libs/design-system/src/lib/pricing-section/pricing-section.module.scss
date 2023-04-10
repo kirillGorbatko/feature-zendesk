@@ -1,0 +1,143 @@
+@import '../scss/helpers-all.scss';
+
+.section {
+  @include bp($tablet_max, min) {
+    padding: 4rem 8rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 4rem 3rem 0;
+    background-color: var(--dark);
+  }
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 1rem;
+
+  @include bp($tablet_max - 1) {
+    text-align: center;
+
+    * {
+      color: var(--light);
+    }
+  }
+}
+
+.description {
+  margin-bottom: 5.8rem;
+  letter-spacing: 0.6px;
+
+  @include bp($tablet_max - 1) {
+    text-align: center;
+    color: var(--light);
+  }
+}
+
+.body {
+  position: relative;
+
+  @include bp($tablet_max - 1) {
+    margin: 0 -3rem;
+    padding: 2rem 3rem 8rem;
+    background-color: var(--light);
+    border-radius: 3rem 3rem 0 0;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  margin-bottom: 2.8rem;
+}
+
+.links {
+  display: flex;
+
+  @include bp($tablet_max - 1) {
+    position: relative;
+
+    width: 100%;
+    padding-bottom: 1.8rem;
+    margin-bottom: 2.8rem;
+    justify-content: center;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      left: 50%;
+      top: 100%;
+
+      width: 100vw;
+      margin-left: -50vw;
+      height: 1px;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.links__item {
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.links__link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--dark);
+
+  &.links__link--disabled_mod {
+    opacity: 0.4;
+  }
+}
+
+.switcher {
+  @include bp($tablet_max, min) {
+    margin-left: auto;
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.list {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.decor__shadow {
+  position: absolute;
+
+  @include bp($tablet_max, min) {
+    top: 0;
+    right: 100%;
+
+    width: 20rem;
+    height: 28.8rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    top: calc(100% - 13.2rem);
+    left: -3rem;
+
+    width: 16rem;
+    height: 16rem;
+
+    transform-origin: 50% 50%;
+    transform: rotate(180deg);
+  }
+}

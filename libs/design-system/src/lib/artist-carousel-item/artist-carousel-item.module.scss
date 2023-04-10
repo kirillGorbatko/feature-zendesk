@@ -7,6 +7,9 @@
 
 .link {
   position: relative;
+
+  display: block;
+
   overflow: hidden;
 
   &:before {

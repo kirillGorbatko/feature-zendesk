@@ -10,6 +10,7 @@ type PictureProps = {
   webpMob?: string;
   webpMob2x?: string;
   alt?: string;
+  media?: number;
 };
 
 const Picture = ({
@@ -22,6 +23,7 @@ const Picture = ({
   webpMob,
   webpMob2x,
   alt = '#',
+  media = 1024,
 }: PictureProps) => {
   if (!img) return null;
 
@@ -31,26 +33,26 @@ const Picture = ({
         <source
           srcSet={`${webp}${webp2x ? `, ${webp2x} 2x` : ''}`}
           type="image/webp"
-          media={webpMob && '(min-width: 1024px)'}
+          media={webpMob && `(min-width: ${media}px)`}
         />
       )}
       {img2x && (
         <source
           srcSet={`${img}${`, ${img2x} 2x`}`}
-          media={imgMob && '(min-width: 1024px)'}
+          media={imgMob && `(min-width: ${media}px)`}
         />
       )}
       {webpMob && (
         <source
           srcSet={`${webpMob}${webpMob2x ? `, ${webpMob2x} 2x` : ''}`}
           type="image/webp"
-          media="(max-width: 1023px)"
+          media={`(max-width: ${media - 1}px)`}
         />
       )}
       {imgMob && (
         <source
           srcSet={`${imgMob}${imgMob2x ? `, ${imgMob2x} 2x` : ''}`}
-          media="(max-width: 1023px)"
+          media={`(max-width: ${media - 1}px)`}
         />
       )}
 

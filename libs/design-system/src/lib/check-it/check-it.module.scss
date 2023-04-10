@@ -1,23 +1,21 @@
 @import '../scss/helpers-all.scss';
 
 .section {
-  @include bp($tablet_max, min) {
-    padding: 4rem 8.2rem;
-  }
+  position: relative;
+  padding: 4rem 3rem 5rem;
 
-  @include bp($tablet_max - 1) {
-    padding: 4rem 3rem;
-  }
+  z-index: 2;
 }
 
 .title {
   max-width: 78rem;
 
-  line-height: 1.1;
+  line-height: 1.15;
+  letter-spacing: 0.4px;
   font-family: $font_gpsuper;
 
   @include bp($tablet_max, min) {
-    margin-bottom: 10.2rem;
+    margin-bottom: 10rem;
     font-size: 5rem;
   }
 
@@ -31,6 +29,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  @include bp($desktop, $tablet_max) {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
 
   @include bp($tablet_max, min) {
     padding-bottom: 7rem;

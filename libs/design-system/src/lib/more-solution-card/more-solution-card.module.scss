@@ -13,7 +13,7 @@
   }
 
   @include bp($tablet_max, min) {
-    padding: 5rem 5rem 6rem;
+    padding: 5rem 5rem 5.6rem;
     width: calc(50% + 3rem);
     min-height: 52.4rem;
 
@@ -39,7 +39,7 @@
   width: 11.8rem;
 
   @include bp($tablet_max, min) {
-    margin-bottom: 2.6rem;
+    margin-bottom: 3rem;
   }
 
   @include bp($tablet_max - 1) {

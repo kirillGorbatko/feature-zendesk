@@ -1,6 +1,7 @@
 import styles from './more-solution-card.module.scss';
 import classNames from 'classnames';
 import Image from 'next/image';
+import LinkWithArrow from '../link-with-arrow/link-with-arrow';
 
 export interface MoreSolutionCardProps {
   icon?: string;
@@ -29,8 +30,13 @@ export function MoreSolutionCard({
       <div className={styles['title']}>{title}</div>
       <div className={styles['text']}>{text}</div>
       <div className={styles['link']}>
-        {link}
-        {/* qqfix: "link-with-arrow" component here */}
+        <LinkWithArrow
+          href="#"
+          color={variant === 'secondary' ? 'secondary' : undefined}
+          hover={variant !== 'secondary' ? 'secondary' : undefined}
+        >
+          {link}
+        </LinkWithArrow>
       </div>
     </div>
   );

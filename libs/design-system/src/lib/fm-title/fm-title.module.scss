@@ -12,15 +12,29 @@
   }
 
   &.fm-title--style_h3_mod {
-    @include h2;
-  }
-
-  &.fm-title--style_h4_mod {
     @include h3_secondary;
   }
 
-  &.fm-title--style_h5_mod {
+  &.fm-title--style_h3_secondary_mod {
+    @include bp($tablet_max, min) {
+      @include h3_secondary;
+    }
+
+    @include bp($tablet_max - 1) {
+      @include h1_secondary;
+    }
+  }
+
+  &.fm-title--style_h4_mod {
     @include h4_secondary;
+  }
+
+  &.fm-title--style_h5_mod {
+    @include h5_secondary;
+  }
+
+  &.fm-title--style_h5_mod {
+    @include h6_secondary;
   }
 
   &.fm-title--color_1_mod {
