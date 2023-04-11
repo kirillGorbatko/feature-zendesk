@@ -2,52 +2,87 @@ import {
   HeroSolutions,
   FmGetStartedCta,
   FmGetStartedCtaProps,
+  FmSolutionsBenefitSection,
+  FmSolutionsBenefit,
+  FmSolutionsBenefitProps,
+  SolutionIcons,
   CheckIt,
-  MoreSolutionCard,
-  SolutionsSectionsProps,
   SolutionsSection,
-  FmTitle,
-  Container,
+  SolutionsSectionsProps,
+  MoreSolutionCard,
+  FmSolutionsBenefitSectionProps,
 } from '@featurefm/design-system';
 import { getPageData } from '../../../api';
+
 export interface SolutionLinksProps {
-  featuresSection: {
+  allLinksComeWithMore: FmSolutionsBenefitSectionProps & {
+    features: FmSolutionsBenefitProps[];
+  };
+  landingPagesSection: {
     features: SolutionsSectionsProps[];
   };
   getStartedCTASection: FmGetStartedCtaProps;
 }
 
 export function SolutionLinks({
+  allLinksComeWithMore,
   getStartedCTASection,
-  featuresSection,
+  landingPagesSection,
 }: SolutionLinksProps) {
   return (
     <>
       <HeroSolutions
-        title="Your music. Your fans. Your data."
-        descr="Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis."
-      />
+        title="Bring fans into your world."
+        descr="Create links and landing pages that direct fans to listen to your music in the right service, save your music, pre-save, follow, subscribe, buy tickets, enter a contest or connect it all together in your Artist Bio Link."
+      >
+        <SolutionIcons label="Integrated with hundreds of digital music services" />
+      </HeroSolutions>
 
-      <div className="solutions_title">
-        <Container>
-          <div className="solutions_title__in">
-            <FmTitle variant="h5">
-              What insights can you gain with Feature.Fm?
-            </FmTitle>
-          </div>
-        </Container>
-      </div>
-      {featuresSection?.features?.map((solutionsSection, index) => {
-        return (
-          <SolutionsSection
-            {...solutionsSection}
-            key={index}
-            version="v2"
-            inverseLayout={Boolean(index % 2)}
-          />
-        );
-      })}
+      {landingPagesSection?.features?.map((solutionsSection, index) => (
+        <SolutionsSection
+          {...solutionsSection}
+          key={index}
+          inverseLayout={solutionsSection.isInverse}
+        />
+      ))}
 
+      {allLinksComeWithMore && (
+        <FmSolutionsBenefitSection title={allLinksComeWithMore.title}>
+          {allLinksComeWithMore.features?.length > 0 && (
+            <FmSolutionsBenefitSection.List>
+              {allLinksComeWithMore.features.map(
+                ({ title, description }, index) => {
+                  let variant: FmSolutionsBenefitProps['variant'] = 'red';
+
+                  switch (index % 3) {
+                    case 0:
+                      variant = 'red';
+                      break;
+                    case 1:
+                      variant = 'turquoise';
+                      break;
+                    case 2:
+                      variant = 'purple';
+                      break;
+                    default:
+                      break;
+                  }
+
+                  return (
+                    <FmSolutionsBenefitSection.Item key={index}>
+                      <FmSolutionsBenefit
+                        title={title}
+                        description={description}
+                        variant={variant}
+                      />
+                    </FmSolutionsBenefitSection.Item>
+                  );
+                }
+              )}
+            </FmSolutionsBenefitSection.List>
+          )}
+        </FmSolutionsBenefitSection>
+      )}
       <CheckIt title="Two more things you should check out">
         <MoreSolutionCard
           icon="/images/solutions/analytics.png"

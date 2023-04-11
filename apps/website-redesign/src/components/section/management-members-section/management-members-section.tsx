@@ -11,7 +11,7 @@ import {
 
 export function ManagementMemberSection() {
   return (
-    <section className="section">
+    <section className={`${styles.section} section`}>
       <Container>
         <div className={styles.title}>
           <FmH2>From the horse’s mouth</FmH2>

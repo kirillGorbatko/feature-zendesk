@@ -1,6 +1,16 @@
 @import 'libs/design-system/src/lib/scss/helpers-all.scss';
 
 //---------------------------------------------ManagementMemberSection
+.section {
+	@include bp($tablet_max, min) {
+		padding-bottom: 15rem;
+  }
+
+  @include bp($tablet_max - 1) {
+		padding-bottom: 12rem;
+  }
+}
+
 .title {
 	@include bp($tablet_max, min) {
 		margin-bottom: 7.4rem;

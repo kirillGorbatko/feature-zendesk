@@ -2,87 +2,69 @@ import {
   HeroSolutions,
   FmGetStartedCta,
   FmGetStartedCtaProps,
-  FmSolutionsBenefitSection,
-  FmSolutionsBenefit,
-  FmSolutionsBenefitProps,
-  SolutionIcons,
   CheckIt,
-  SolutionsSection,
-  SolutionsSectionsProps,
   MoreSolutionCard,
-  FmSolutionsBenefitSectionProps,
+  SolutionsSectionsProps,
+  SolutionsSection,
+  FmTitle,
+  Container,
 } from '@featurefm/design-system';
 import { getPageData } from '../../../api';
+
 export interface SolutionAnalyticsProps {
-  allLinksComeWithMore: FmSolutionsBenefitSectionProps & {
-    features: FmSolutionsBenefitProps[];
-  };
-  landingPagesSection: {
+  featuresSection: {
     features: SolutionsSectionsProps[];
   };
   getStartedCTASection: FmGetStartedCtaProps;
 }
 
 export function SolutionAnalytics({
-  allLinksComeWithMore,
   getStartedCTASection,
-  landingPagesSection,
+  featuresSection,
 }: SolutionAnalyticsProps) {
   return (
     <>
       <HeroSolutions
-        title="Bring fans into your world."
-        descr="Create links and landing pages that direct fans to listen to your music in the right service, save your music, pre-save, follow, subscribe, buy tickets, enter a contest or connect it all together in your Artist Bio Link."
-      >
-        <SolutionIcons label="Integrated with hundreds of digital music services" />
-      </HeroSolutions>
+        title="Your music. Your fans. Your data."
+        descr="Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis."
+      />
+      <div className="solutions_wrap">
+        <div className="solutions_title">
+          <Container>
+            <div className="solutions_title__in">
+              <FmTitle variant="h5">
+                What insights can you gain with Feature.Fm?
+              </FmTitle>
+            </div>
+          </Container>
+        </div>
+        {featuresSection?.features
+          ?.slice(0, -2)
+          .map((solutionsSection, index) => {
+            return (
+              <SolutionsSection
+                {...solutionsSection}
+                key={index}
+                version="v2"
+                inverseLayout={Boolean(index % 2)}
+              />
+            );
+          })}
+      </div>
 
-      {landingPagesSection?.features?.map((solutionsSection, index) => (
-        <SolutionsSection
-          {...solutionsSection}
-          key={index}
-          inverseLayout={solutionsSection.isInverse}
-          // reverted={Boolean(index % 2)}
-        />
-      ))}
+      <div className="solutions_wrap solutions_wrap--bg_mod solutions_wrap--offset_mod">
+        {featuresSection?.features?.slice(-2).map((solutionsSection, index) => {
+          return (
+            <SolutionsSection
+              {...solutionsSection}
+              key={index}
+              version="v3"
+              inverseLayout={!(index % 2)}
+            />
+          );
+        })}
+      </div>
 
-      {allLinksComeWithMore && (
-        <FmSolutionsBenefitSection title={allLinksComeWithMore.title}>
-          {allLinksComeWithMore.features?.length > 0 && (
-            <FmSolutionsBenefitSection.List>
-              {allLinksComeWithMore.features.map(
-                ({ title, description }, index) => {
-                  let variant: FmSolutionsBenefitProps['variant'] = 'red';
-
-                  switch (index % 3) {
-                    case 0:
-                      variant = 'red';
-                      break;
-                    case 1:
-                      variant = 'turquoise';
-                      break;
-                    case 2:
-                      variant = 'purple';
-                      break;
-                    default:
-                      break;
-                  }
-
-                  return (
-                    <FmSolutionsBenefitSection.Item key={index}>
-                      <FmSolutionsBenefit
-                        title={title}
-                        description={description}
-                        variant={variant}
-                      />
-                    </FmSolutionsBenefitSection.Item>
-                  );
-                }
-              )}
-            </FmSolutionsBenefitSection.List>
-          )}
-        </FmSolutionsBenefitSection>
-      )}
       <CheckIt title="Two more things you should check out">
         <MoreSolutionCard
           icon="/images/solutions/analytics.png"

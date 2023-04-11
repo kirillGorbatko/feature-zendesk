@@ -4,12 +4,12 @@ import { Container } from '../container/container';
 import FMButton from '../fm-button/fm-button';
 import { FmTitle } from '../fm-title/fm-title';
 import Image from '../image/image';
-import { Picture, PictureProps } from '../picture';
+import { PictureProps } from '../picture';
 import { Typography, TypographyProps } from '../typography/typography';
 import styles from './solutions-section.module.scss';
 
 export type SolutionsSectionsProps = {
-  version?: 'base' | 'v2' | 'v3';
+  version?: 'base' | 'v2' | 'v3' | 'v4';
   isInverse?: boolean;
   inverseLayout?: boolean;
   tag?: string | React.ReactNode;
@@ -51,7 +51,10 @@ export function SolutionsSection({
       className={classNames(styles['solutions_section'], {
         [styles['solutions_section--reverted_mod']]: inverseLayout,
         [styles['solutions_section--bg_mod']]: isInverse,
+        [styles['solutions_section--v1_mod']]: version === 'base',
         [styles['solutions_section--v2_mod']]: version === 'v2',
+        [styles['solutions_section--v3_mod']]: version === 'v3',
+        [styles['solutions_section--v4_mod']]: version === 'v4',
       })}
     >
       <Container>
@@ -130,7 +133,6 @@ export function SolutionsSection({
                 children={ctaButton.text}
                 href={ctaButton.link}
                 mobileFontSize="lg"
-                width="full"
               />
             </div>
           )}

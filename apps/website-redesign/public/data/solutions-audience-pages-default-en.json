@@ -2,6 +2,95 @@
   "id": "63ec1ccdc8d2da25b2314ce4",
   "title": "Solutions Page - Default",
   "slug": "default",
+
+  "featuresSection": {
+    "features": [
+      {
+        "title": {
+          "desktop": "Know your fans.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Easily manage all of your fan contacts, collected in an intuitive fan database to keep control of fan contact info, activity and demographics.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/maintain-your-fans.png",
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start for free",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63ec1cf5694ee0e3f49ab90f"
+      },
+      {
+        "title": {
+          "desktop": "Target the right fans with Smart Audiences.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Automatically group your fans into smart lists like super fans, influencers, and Spotify users based on their attributes.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/use-smart-audience.png",
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start for free",
+          "link": "https://login.feature.fm/signup/",
+          "type": "secondary"
+        },
+        "id": "63ec1cf5694ee0e3f49ab910"
+      },
+      {
+        "title": {
+          "desktop": "Sync fan contacts to your email platform.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Sync your fan emails to your preferred email platform like Mailchimp and ActiveCampaign to communicate with your growing fanbase.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/sync-fans-contacts.png",
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start for free",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63ec1cf5694ee0e3f49ab911"
+      },
+      {
+        "title": {
+          "desktop": "Put your email subscriber growth on auto-pilot.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Encourage fans to share their contact info and subscribe to your email list from any of your links and landing pages.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/collect-fans-contacts.png",
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start for free",
+          "link": "https://login.feature.fm/signup/",
+          "type": "secondary"
+        },
+        "id": "63ec1cf5694ee0e3f49ab912"
+      }
+    ]
+  },
   "getStartedCTASection": {
     "title": {
       "desktop": "Start for free",

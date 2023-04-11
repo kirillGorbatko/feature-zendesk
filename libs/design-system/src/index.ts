@@ -161,5 +161,6 @@ export * from './lib/benefits-section/benefits-section';
 export * from './lib/disrtibutors/disrtibutors';
 export * from './lib/content-block/content-block';
 export * from './lib/typography/typography';
+export * from './lib/need-section/need-section';
 export * from './lib/partners-item/partners-item';
 export * from './lib/partners-section/partners-section';

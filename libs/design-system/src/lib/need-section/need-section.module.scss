@@ -1,0 +1,94 @@
+@import '../scss/helpers-all.scss';
+
+.need_section {
+  overflow: hidden;
+
+  @include bp($desktop, min) {
+    padding-top: 8.2rem;
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    padding-top: 4px;
+  }
+
+  @include bp($tablet_max, min) {
+    padding-left: $gl_desktop_indent;
+    padding-right: $gl_desktop_indent;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 2.4rem $gl_mobile_indent 0;
+  }
+}
+
+.need_section__row {
+  @include bp($tablet_max, min) {
+    display: flex;
+  }
+}
+
+.need_section__column {
+  @include bp($tablet_max, min) {
+    &:nth-child(1) {
+      order: 2;
+
+      max-width: 57rem;
+      margin-left: auto;
+    }
+
+    &:nth-child(2) {
+      order: 1;
+
+      width: 54rem;
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+.need_section__benefits {
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+.need_section__item {
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+.need_section__label {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  &:not(:last-child) {
+    margin-bottom: 3.8rem;
+  }
+}
+
+.need_section__slider {
+  pointer-events: none;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  @include bp($tablet_max, min) {
+    margin-top: 11rem;
+    margin-left: -12rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 100vw;
+    margin-left: calc($gl_mobile_indent * -1);
+  }
+}

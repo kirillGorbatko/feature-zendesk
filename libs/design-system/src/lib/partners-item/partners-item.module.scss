@@ -4,12 +4,12 @@
 }
 
 .partners_item__icon {
-  display: block;
+  display: inline-block;
   width: 9rem;
   height: 7rem;
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 }
 

@@ -78,7 +78,7 @@
 
 	.management_member--reversed & {
 		@include bp($desktop, min) {
-			padding-left: 12.8rem;
+			padding-left: 12.2rem;
 			padding-right: 7rem;
 		}
 
@@ -91,19 +91,20 @@
 
 .management_member__title {
 	color: $black;
-	font-weight: 600;
 	letter-spacing: -0.02rem;
 
 	@include bp($tablet_max, min) {
 		margin-bottom: 1.8rem;
 
 		font-size: 3rem;
+		font-weight: 600;
 	}
 
 	@include bp($tablet_max - 1) {
 		margin-bottom: 4.6rem;
 
 		font-size: 2.5rem;
+		font-weight: 500;
 		text-align: center;
 		line-height: 1.3;
 	}
@@ -131,6 +132,8 @@
 	}
 
 	@include bp($tablet_max - 1) {
+		position: relative;
+
 		margin-bottom: 2rem;
 
 		font-size: 1.6rem;
@@ -140,6 +143,7 @@
 
 .management_member__decor {
 	position: absolute;
+	right: 0;
 
 	z-index: -1;
 
@@ -164,12 +168,10 @@
 		fill: currentColor;
 	}
 
-	&:not(.management_member--reversed &) {
-		right: 0;
-	}
-
 	.management_member--reversed & {
-		left: 0;
+		@include bp($tablet_max, min) {
+			left: 0;
+		}
 	}
 
 	@include bp($tablet_max, min) {
@@ -180,7 +182,7 @@
 	}
 
 	@include bp($tablet_max - 1) {
-		bottom: 3.6rem;
+		top: -2rem;
 
 		width: 14.8rem;
 		height: 12rem;
@@ -189,6 +191,8 @@
 
 .management_member__info {
 	color: $black;
+
+	font-weight: 300;
 
 	@include bp($tablet_max, min) {
 		font-size: 1.5rem;

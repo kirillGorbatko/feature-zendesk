@@ -96,6 +96,7 @@
   font-weight: 400;
   font-family: $font_gpsuper;
   line-height: 1.18;
+  letter-spacing: .03rem;
 
   @include bp($tablet_max, min) {
     font-size: 9rem;

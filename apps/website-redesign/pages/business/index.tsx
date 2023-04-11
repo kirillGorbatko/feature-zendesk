@@ -13,7 +13,9 @@ import {
   FEATURES_MOCK,
   BenefitsSection,
   ContentBlock,
+  NeedSection,
   PartnersSection,
+  Typography,
 } from '@featurefm/design-system';
 import { getPageData } from '../../api';
 
@@ -208,7 +210,10 @@ export function Business({ bottomCTASection }: BusinessProps) {
         }}
       >
         <FMButton mobileWidth="full" size="xxl" variant="tertiary">
-          Fan Base Relationship Management
+          <Typography
+            desktop="Fan Base Relationship Management"
+            mobile="Fan Base Management "
+          />
         </FMButton>
       </BannerSection>
 
@@ -216,6 +221,31 @@ export function Business({ bottomCTASection }: BusinessProps) {
         title="Need something that really scales? "
         text="Nearly half of the world’s largest music distribution companies have integrated Feature.fm’s enterprise solutions to power their marketing tech stack."
       />
+
+      <NeedSection
+        label="Want to learn more about Enterprise solutions?"
+        features={[
+          {
+            title: 'API + Automation',
+            description:
+              'Automatically create all of your marketing assets at scale using our advanced API.',
+          },
+          {
+            title: 'White Label Solutions',
+            description:
+              'Provide an out of the box marketing suite directly to your artist and label customers, connected to your platform.',
+          },
+          {
+            title: 'Custom Solution Architecture',
+            description:
+              'No enterprise solutions are alike. We will work with you to customize a dedicated solution that meets your goals and leverages our powerful enterprise level technology.',
+          },
+        ]}
+      >
+        <FMButton mobileWidth="full" size="xxl">
+          Book a demo
+        </FMButton>
+      </NeedSection>
 
       <PartnersSection
         title="We are <br/> your partners"
@@ -231,6 +261,8 @@ export function Business({ bottomCTASection }: BusinessProps) {
             title: 'Private training sessions',
             icon: {
               img: '/images/business-partners/private-training-sessions.png',
+              imgMob:
+                '/images/business-partners/private-training-sessions-mobile.png',
             },
           },
           {

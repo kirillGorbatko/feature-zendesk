@@ -1,6 +1,8 @@
 @import '../scss/helpers-all.scss';
 
 .solutions_section {
+  @include flex_block(row, wrap, flex-start, center, center);
+
   &:not(.solutions_section--bg_mod) {
     background-color: $white;
     color: $black;
@@ -10,20 +12,38 @@
     color: $white;
   }
 
-  &.solutions_section--v2_mod {
-    @include bp($tablet_max, min) {
-      padding: 12.4rem $gl_desktop_indent;
-    }
-    @include bp($tablet_max - 1) {
-      padding: 8.2rem $gl_mobile_indent;
-    }
-  }
-  &:not(.solutions_section--v2_mod) {
+  &.solutions_section--v1_mod {
     @include bp($tablet_max, min) {
       padding: 20rem $gl_desktop_indent;
     }
     @include bp($tablet_max - 1) {
       padding: 8.2rem $gl_mobile_indent;
+    }
+  }
+
+  &.solutions_section--v2_mod {
+    @include bp($tablet_max, min) {
+      padding: 12.4rem $gl_desktop_indent;
+    }
+    @include bp($tablet_max - 1) {
+      padding: 2rem $gl_mobile_indent;
+    }
+  }
+  &.solutions_section--v3_mod {
+    @include bp($tablet_max, min) {
+      padding: 14.1rem $gl_desktop_indent;
+    }
+    @include bp($tablet_max - 1) {
+      padding: 2.5rem $gl_mobile_indent;
+    }
+  }
+  &.solutions_section--v4_mod {
+    @include bp($tablet_max, min) {
+      min-height: 97.5rem;
+      padding: 14.1rem $gl_desktop_indent;
+    }
+    @include bp($tablet_max - 1) {
+      padding: 8rem $gl_mobile_indent;
     }
   }
 }
@@ -38,18 +58,29 @@
       flex-direction: row;
     }
   }
+
+  .solutions_section--v2_mod &,
+  .solutions_section--v3_mod & {
+    @include bp($tablet_max - 1) {
+      @include flex_block(column-reverse, nowrap, flex-start, stretch, stretch);
+    }
+  }
 }
 
 .solutions_section__image_col {
+  z-index: 1;
+
   @include bp($tablet_max, min) {
     flex: auto;
   }
   @include bp($tablet_max - 1) {
+    @include flex_block(row, wrap, center, center, center);
+
     width: 100%;
 
-    // &:not(:last-child) {
-    //   margin-bottom: 2rem;
-    // }
+    .solutions_section--v3_mod & {
+      margin-bottom: 3.4rem;
+    }
   }
 }
 
@@ -58,14 +89,35 @@
     @include flex_block(row, wrap, flex-end, flex-start, flex-start);
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: $page_width;
     width: 100%;
+    max-height: 100%;
+
+    .solutions_section--v1_mod & {
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    .solutions_section--v2_mod &,
+    .solutions_section--v3_mod &,
+    .solutions_section--v4_mod & {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .solutions_section--v1_mod &,
+    .solutions_section--v2_mod & {
+      max-width: $page_width;
+    }
+    .solutions_section--v3_mod &,
+    .solutions_section--v4_mod & {
+      max-width: $page_width + 6.6rem;
+    }
   }
   @include bp($tablet_max - 1) {
     width: calc(100% + $gl_mobile_indent * 2);
     margin-left: -$gl_mobile_indent;
+    margin-right: -$gl_mobile_indent;
+    max-width: 50rem;
   }
 
   .solutions_section:not(.solutions_section--reverted_mod) & {
@@ -77,14 +129,13 @@
 
     @include bp($tablet_max - 1) {
       width: 100%;
-      // height: 133vw;
     }
 
-    .solutions_section:not(.solutions_section--v2_mod) & {
+    .solutions_section--v1_mod & {
       @include bp($tablet_max, min) {
         height: auto;
         width: 56%;
-        max-width: 720px;
+        max-width: 72rem;
       }
     }
 
@@ -92,7 +143,16 @@
       @include bp($tablet_max, min) {
         height: auto;
         width: 47%;
-        max-width: 600px;
+        max-width: 60rem;
+      }
+    }
+
+    .solutions_section--v3_mod &,
+    .solutions_section--v4_mod & {
+      @include bp($tablet_max, min) {
+        height: auto;
+        width: 50%;
+        max-width: 68.3rem;
       }
     }
   }
@@ -115,16 +175,24 @@
   position: relative;
   z-index: 2;
 
+  .solutions_section--v1_mod &,
+  .solutions_section--v3_mod & {
+    @include bp($tablet_max, min) {
+      flex: 0 0 51%;
+      max-width: 60rem;
+    }
+  }
   .solutions_section--v2_mod & {
     @include bp($tablet_max, min) {
       flex: 0 0 47%;
       max-width: 56rem;
     }
   }
-  .solutions_section:not(.solutions_section--v2_mod) & {
+
+  .solutions_section--v4_mod & {
     @include bp($tablet_max, min) {
-      flex: 0 0 47%;
-      max-width: 60rem;
+      flex: 0 0 45%;
+      max-width: 50rem;
     }
   }
 
@@ -135,6 +203,11 @@
 
 .solutions_section__label {
   font-size: 1.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
   .solutions_section--v2_mod & {
     letter-spacing: 0.04em;
 
@@ -142,38 +215,46 @@
       margin-bottom: 0.8rem;
     }
   }
-  .solutions_section:not(.solutions_section--v2_mod) & {
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
-  }
 }
 
 .solutions_section__descr {
+  margin-bottom: 6rem;
   font-size: 1.6rem;
   letter-spacing: -0.001em;
   line-height: 1.4;
+  font-weight: 300;
 
-  &:not(:last-child) {
-    margin-bottom: 6rem;
+  .solutions_section--v4_mod & {
+    margin-bottom: 3rem;
   }
 }
 
 .solutions_section__title {
-  .solutions_section--v2_mod & {
+  .solutions_section--v1_mod & {
     &:not(:last-child) {
       @include bp($tablet_max, min) {
-        margin-bottom: 3rem;
+        margin-bottom: 3.2rem;
       }
       @include bp($tablet_max - 1) {
         margin-bottom: 3.8rem;
       }
     }
   }
-  .solutions_section:not(.solutions_section--v2_mod) & {
+  .solutions_section--v2_mod & {
     &:not(:last-child) {
       @include bp($tablet_max, min) {
-        margin-bottom: 3.2rem;
+        margin-bottom: 3rem;
+      }
+      @include bp($tablet_max - 1) {
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+  .solutions_section--v3_mod &,
+  .solutions_section--v4_mod & {
+    &:not(:last-child) {
+      @include bp($tablet_max, min) {
+        margin-bottom: 3rem;
       }
       @include bp($tablet_max - 1) {
         margin-bottom: 3.8rem;
@@ -190,6 +271,9 @@
       margin-bottom: 8rem;
     }
   }
+  @include bp($tablet_max - 1) {
+    @include flex_block(row, wrap, center, center, center);
+  }
 }
 
 .solutions_section__advantages_list {
@@ -200,7 +284,8 @@
     margin: 0 -3.6rem -4rem 0;
   }
   @include bp($tablet_max - 1) {
-    margin: 0 -3.6rem -1.8rem 0;
+    justify-content: center;
+    margin: 0 -1.8rem -1.8rem 0;
   }
 }
 
@@ -209,17 +294,29 @@
     padding: 0 3.6rem 4rem 0;
   }
   @include bp($tablet_max - 1) {
-    padding: 0 3.6rem 1.8rem 0;
+    padding: 0 1.8rem 1.8rem 0;
+  }
+  @include bp($tablet_min - 1) {
     width: 100%;
   }
 }
 
 .solutions_section__button {
   &.solutions_section__button--mobile_mod {
-    width: 100%;
+    @include flex_block(row, wrap, center, center, center);
+
+    & > * {
+      min-width: 22rem;
+    }
 
     @include bp($tablet_max, min) {
       display: none;
+    }
+
+    @include bp($tablet_min - 1) {
+      & > * {
+        width: 100%;
+      }
     }
   }
   &.solutions_section__button--desktop_mod {

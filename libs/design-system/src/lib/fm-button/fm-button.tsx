@@ -36,6 +36,9 @@ const buttonStyles = cva(styles['button'], {
     width: {
       full: styles['button--width-full'],
     },
+    minWidth: {
+      md: styles['button--min-md-width'],
+    },
   },
   defaultVariants: {
     mobileFontSize: 'base',
@@ -63,6 +66,7 @@ export function FMButton({
   href,
   mobileFontSize,
   indent,
+  minWidth,
   ...props
 }: GbuttonProps) {
   if (href) {
@@ -75,6 +79,8 @@ export function FMButton({
             width,
             mobileWidth,
             mobileFontSize,
+            minWidth,
+            indent,
           })}
           href={href}
         >
@@ -93,6 +99,7 @@ export function FMButton({
           mobileWidth,
           indent,
           mobileFontSize,
+          minWidth,
         })}
         onClick={handleClick}
         disabled={isLoading}

@@ -72,6 +72,7 @@ export function Index({
                 <FMButton
                   variant="tertiary"
                   size="xxl"
+                  minWidth="md"
                   mobileWidth="full"
                   href={heroSection.ctaButton.link}
                 >

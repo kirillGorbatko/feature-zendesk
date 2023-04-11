@@ -7,7 +7,6 @@ const Story: ComponentMeta<typeof PartnersSection> = {
   argTypes: {
     title: {
       defaultValue: 'Some title',
-      control: { type: 'text' },
     },
     subtitle: {
       defaultValue: 'Some subtitle',

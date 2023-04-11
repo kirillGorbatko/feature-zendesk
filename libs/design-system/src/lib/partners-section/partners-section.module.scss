@@ -61,8 +61,17 @@
 }
 
 .partners_section__services {
-  @include bp($tablet_max, min) {
+
+  @include bp($desktop, min) {
     max-width: 112rem;
+  }
+
+  @include bp($desktop - 1) {
+    max-width: 101.8rem;
+  }
+
+  @include bp($tablet_max, min) {
+    margin-left: 8rem;
   }
 }
 

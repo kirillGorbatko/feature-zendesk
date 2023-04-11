@@ -13,11 +13,11 @@ export function ContentBlock({ title, text }: ContentBlockProps) {
       <Container>
         <div className={styles['content_block__row']}>
           <div className={styles['content_block__column']}>
-            <h2 className={styles['content_block__title']}>
+            <div className={styles['content_block__title']}>
               <FmTitle tag="h3" variant="h3_secondary">
                 {title}
               </FmTitle>
-            </h2>
+            </div>
           </div>
           <div className={styles['content_block__column']}>
             <div className={styles['content_block__descr']}>{text}</div>

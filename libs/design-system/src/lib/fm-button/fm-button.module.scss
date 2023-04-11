@@ -237,7 +237,6 @@
     border-radius: 3.5rem;
     line-height: 7rem;
 
-    min-width: 22.6rem;
     padding: 0 3.4rem;
     font-size: 1.8rem;
   }
@@ -248,7 +247,11 @@
   }
 
   &.button--indent_mod {
-    padding: 0 5.6rem !important;
+    padding: 0 5.6rem;
+  }
+
+  &.button--min-md-width {
+    min-width: 22.6rem;
   }
 
   @include bp($desktop, min) {

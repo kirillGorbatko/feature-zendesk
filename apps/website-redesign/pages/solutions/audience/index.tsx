@@ -4,14 +4,20 @@ import {
   FmGetStartedCtaProps,
   CheckIt,
   MoreSolutionCard,
+  SolutionsSection,
+  SolutionsSectionsProps,
 } from '@featurefm/design-system';
 import { getPageData } from '../../../api';
 export interface SolutionAudienceProps {
   getStartedCTASection: FmGetStartedCtaProps;
+  featuresSection: {
+    features: SolutionsSectionsProps[];
+  };
 }
 
 export function SolutionAudience({
   getStartedCTASection,
+  featuresSection,
 }: SolutionAudienceProps) {
   return (
     <>
@@ -19,6 +25,17 @@ export function SolutionAudience({
         title="Keep your fans within reach."
         descr="Create links and landing pages that direct fans to listen to your music in the right service, save your music, pre-save, follow, subscribe, buy tickets, enter a contest or connect it all together in your Artist Bio Link."
       />
+
+      {featuresSection?.features.map((solutionsSection, index) => {
+        return (
+          <SolutionsSection
+            {...solutionsSection}
+            key={index}
+            version="v4"
+            inverseLayout={!(index % 2)}
+          />
+        );
+      })}
 
       <CheckIt title="Two more things you should check out">
         <MoreSolutionCard

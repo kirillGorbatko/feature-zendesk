@@ -125,11 +125,11 @@ $offset: 6rem;
       opacity: 0.4;
 
       @include bp($tablet_max, min) {
-        background-image: radial-gradient(circle 8.6rem at center, #50d7b7 0%, rgba(80, 215, 183, 0.28) 59%, rgba(80, 215, 183, 0) 100%);
+        background: radial-gradient(circle 8.6rem at center, #50d7b7 0%, rgba(80, 215, 183, 0.28) 39%, rgba(80, 215, 183, 0) 100%);
       }
 
       @include bp($tablet_max - 1) {
-        background-image: radial-gradient(circle 5.6rem at center, #50d7b7 0%, rgba(80, 215, 183, 0.28) 70%, rgba(80, 215, 183, 0) 100%);
+        background: radial-gradient(circle 5.6rem at center, #50d7b7 0%, rgba(80, 215, 183, 0.28) 70%, rgba(80, 215, 183, 0) 100%);
         max-width: 30rem;
       }
     }
@@ -161,11 +161,11 @@ $offset: 6rem;
       left: 0;
 
       @include bp($tablet_max, min) {
-        background-image: linear-gradient(166deg, rgba(155, 98, 255, .48) 0%, rgba(153, 96, 252, 0) 38%);
+        background: linear-gradient(166deg, rgba(155, 98, 255, .48) 0%, rgba(153, 96, 252, 0) 38%);
       }
 
       @include bp($tablet_max - 1) {
-        background-image: linear-gradient(158deg, rgba(155, 98, 255, .48) 0%, rgba(153, 96, 252, 0) 42%);
+        background: linear-gradient(158deg, rgba(155, 98, 255, .48) 0%, rgba(153, 96, 252, 0) 42%);
         max-width: 33rem;
       }
     }

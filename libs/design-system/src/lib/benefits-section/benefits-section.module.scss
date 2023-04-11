@@ -2,7 +2,7 @@
 
 .benefits {
   @include bp($tablet_max, min) {
-    padding: 0 $gl_desktop_indent 10.2rem;
+    padding: 0 $gl_desktop_indent 9.6rem;
   }
 
   @include bp($tablet_max - 1) {
@@ -54,12 +54,10 @@
 }
 
 .benefits__image {
-  position: relative;
   display: block;
 
   @include bp($desktop_lg, min) {
     .benefits--reverse_mod & {
-      margin-left: auto;
       margin-right: calc($page_width / 2 - 50vw);
     }
 
@@ -68,47 +66,34 @@
     }
   }
 
-  @include bp($desktop_lg - 1, $desktop) {
+  @include bp($desktop_lg - 1, $tablet_max) {
     .benefits--reverse_mod & {
       margin-right: calc($gl_desktop_indent * -1);
     }
 
     .benefits--base_mod & {
+      // margin-left: calc(($gl_desktop_indent + 22.8rem) * -1);
       margin-left: calc($gl_desktop_indent * -1);
     }
   }
 
-  @include bp($desktop, min) {
-    .benefits--lg_size & {
-      width: 107rem;
-      height: 72.8rem;
-    }
-  }
-
-  @include bp($desktop - 1, $tablet_max) {
-    .benefits--reverse_mod & {
-      margin-left: -6.2rem;
-    }
-
-    .benefits--base_mod & {
-      margin-left: calc(($gl_desktop_indent + 22.8rem) * -1);
-    }
-
-    .benefits--lg_size & {
-      width: 84.4rem;
-      height: 57.4rem;
-    }
-  }
-
   @include bp($tablet_max, min) {
+    .benefits--reverse_mod & {
+      margin-left: auto;
+    }
+
     .benefits--base_size & {
-      width: 90.5rem;
-      height: 74.5rem;
+      max-width: 90.5rem;
+    }
+
+    .benefits--lg_size & {
+      max-width: 107rem;
+      width: 100%;
     }
   }
 
   @include bp($tablet_max - 1) {
-    width: 118%;
+    width: 100vw;
     margin-left: calc($gl_mobile_indent * -1);
   }
 }
