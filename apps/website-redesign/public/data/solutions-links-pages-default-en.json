@@ -35,7 +35,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/fan-contact-info.png",
+        "imageUrl": "/images/solutions/fan-contact-info.png",
         "isInverse": false,
         "padding": "normal",
         "id": "63ecbfca87a93121e6fcac17"
@@ -52,7 +52,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/geo-location.png",
+        "imageUrl": "/images/solutions/geo-location.png",
         "isInverse": false,
         "padding": "normal",
         "id": "63ecbfca87a93121e6fcac18"
@@ -69,7 +69,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/social-platforms.png",
+        "imageUrl": "/images/solutions/social-platforms.png",
         "isInverse": false,
         "padding": "normal",
         "id": "63ecbfca87a93121e6fcac19"
@@ -86,7 +86,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/streaming-services.png",
+        "imageUrl": "/images/solutions/streaming-services.png",
         "isInverse": false,
         "padding": "normal",
         "id": "63ecbfca87a93121e6fcac1a"
@@ -103,7 +103,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/marketing-campaigns-and-activities.png",
+        "imageUrl": "/images/solutions/marketing-campaigns-and-activities.png",
         "isInverse": false,
         "padding": "normal",
         "id": "63ecbfca87a93121e6fcac1b"
@@ -120,7 +120,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/sales-conversion-tracking.png",
+        "imageUrl": "/images/solutions/sales-conversion-tracking.png",
         "isInverse": false,
         "padding": "normal",
         "id": "63ecbfca87a93121e6fcac1c"
@@ -137,7 +137,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/real-time-data.png",
+        "imageUrl": "/images/solutions/real-time-data.png",
         "isInverse": true,
         "padding": "medium",
         "id": "63ecbfca87a93121e6fcac1d"
@@ -154,7 +154,7 @@
           "overrideMobile": false,
           "overrideTablet": false
         },
-        "imageUrl": "/img/solutions/improve-ad-performance.png",
+        "imageUrl": "/images/solutions/improve-ad-performance.png",
         "isInverse": true,
         "padding": "medium",
         "id": "63ecbfca87a93121e6fcac1e"
