@@ -116,8 +116,8 @@ export function EnterpriseCustomersSlider() {
     const decorsArray = decor.current.querySelectorAll(
       '[data-name="decor_el"]'
     );
-    console.log('---');
-    console.log(decorsArray);
+    // console.log('---');
+    // console.log(decorsArray);
 
     const decorTimelines = [];
 
@@ -279,7 +279,6 @@ export function EnterpriseCustomersSlider() {
                 src="/animations/enterprise-customers-slider/shuffle/cardLogo.svg"
                 alt=""
                 className="shuffle_second__logo_img"
-                fill
               />
             </div>
           </div>
@@ -303,7 +302,6 @@ export function EnterpriseCustomersSlider() {
                   <img
                     src={`/animations/enterprise-customers-slider/shuffle-card-3/${img}`}
                     alt=" "
-                    fill
                   />
                 </div>
                 <div className="shuffle-component__card_third_subtitle">
@@ -322,7 +320,7 @@ export function EnterpriseCustomersSlider() {
                     >
                       <div className="shuffle-component__card_third_socials_item_in">
                         <div className="shuffle-component__card_third_socials_item_icon">
-                          <img src={`/animations/${icon}`} alt=" " fill />
+                          <img src={`/animations/${icon}`} alt=" " />
                         </div>
                         <div className="shuffle-component__card_third_socials_item_title">
                           {socialTitle}
