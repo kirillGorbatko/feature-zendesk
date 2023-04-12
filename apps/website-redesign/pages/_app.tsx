@@ -3,6 +3,7 @@ import { AppProps } from 'next/app';
 import { NextRouter } from 'next/router';
 import { AppWrapper } from '@featurefm/design-system';
 import Head from 'next/head';
+import * as fbq from '../src/helpers/facebook-pixel';
 import { FB_PIXEL_ID } from '../src/helpers/facebook-pixel';
 import { FMFooter, FmHeader } from '@featurefm/design-system';
 
