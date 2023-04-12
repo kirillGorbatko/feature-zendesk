@@ -2,35 +2,61 @@
 
 .hero_solution {
   padding-top: 6rem;
-  color: $black;
+  color: $white;
+  background: $white;
+
+  @include bp($tablet_max, min) {
+    min-height: 100vh;
+  }
 
   :global(.dark) & {
-    color: $white;
+    color: $black;
+    background: $black;
   }
 
   .hero_solution__item h1 {
     line-height: 1.16;
   }
 
-
   @include bp($tablet_max, min) {
-    padding-left: $gl_desktop_indent;
-    padding-right: $gl_desktop_indent;
-  }
-
-  @include bp($desktop, min) {
-    padding-bottom: 20rem;
-  }
-
-  @include bp($desktop - 1, $tablet_max) {
-    padding-bottom: 15rem;
+    padding: 6rem $gl_desktop_indent 7.8rem;
   }
 
   @include bp($tablet_max - 1) {
-    padding-left: $gl_mobile_indent;
-    padding-right: $gl_mobile_indent;
-    padding-bottom: 12rem;
+    padding: 6rem $gl_mobile_indent 4rem;
   }
+}
+.hero_solution__cover {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+.hero_solution__bg {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  background-color: $black;
+
+  @include bp($tablet_max, min) {
+    width: 120%;
+  }
+  @include bp($tablet_max - 1) {
+    width: 70%;
+  }
+}
+.hero_solution__cover {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
 }
 
 .hero_solution__wrap {
@@ -50,15 +76,21 @@
 }
 
 .hero_solution__item {
+  position: relative;
+  z-index: 2;
   max-width: 60rem;
 
-  &:nth-child(2n+2) {
+  &:first-child {
+    mix-blend-mode: difference;
+  }
+
+  &:nth-child(2n + 2) {
     margin-left: auto;
   }
 
   &:not(:last-child) {
     @include bp($tablet_max, min) {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
 
     @include bp($tablet_max - 1) {
@@ -69,6 +101,11 @@
 
 .hero_solution__descr {
   font-weight: 300;
+
+  color: $black;
+  :global(.dark) & {
+    color: $white;
+  }
 
   @include bp($tablet_max, min) {
     font-size: 2.4rem;

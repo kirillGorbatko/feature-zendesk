@@ -1,8 +1,7 @@
 {
-  "id": "63ec1ccdc8d2da25b2314ce4",
-  "title": "Home Page - Default",
+  "id": "63ebdc90c8d2da25b2314af1",
+  "title": "HomePage - Default",
   "slug": "default",
-
   "heroSection": {
     "heroTitle": {
       "desktop": "Build your fan base and<br/> music career.",
@@ -14,29 +13,137 @@
       "text": "Start for free",
       "link": "https://login.feature.fm/signup/",
       "type": "primary"
+    },
+    "trustedBySection": {
+      "text": {
+        "desktop": "Loved by 300K+ independent artists, managers & record labels.",
+        "overrideMobile": false,
+        "overrideTablet": false
+      }
     }
   },
-  "getStartedCTASection": {
+  "marketingSection": {
     "title": {
-      "desktop": "Get started for free",
+      "desktop": "For <br/>every<br/>thing<br/>you do.",
       "overrideMobile": false,
       "overrideTablet": false
     },
-    "description": {
-      "desktop": "Join thousands of artists already marketing themselves with Feature.fm.",
-      "overrideMobile": true,
-      "mobile": "Join thousands of artists already marketing themselves with Feature.fm.",
+    "subtitle": {
+      "desktop": "Marketing, built for music. ",
+      "overrideMobile": false,
       "overrideTablet": false
     },
+    "elements": [
+      {
+        "title": "Artist Bio Links",
+        "description": "Connect fans to all of your content with a single Link in Bio.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/artist_bio_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c17"
+      },
+      {
+        "title": "Pre-Save Links",
+        "description": "Build momentum ahead of your music release.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/pre_release_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c18"
+      },
+      {
+        "title": "Release Links",
+        "description": "Get more streams with a link to your music in all services.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/released_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c19"
+      },
+      {
+        "title": "Contest & Unlock Pages",
+        "description": "Reward your fans with prizes for taking actions you want.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/contest_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c1a"
+      },
+      {
+        "title": "Tour and Event Links",
+        "description": "Sell more tickets to shows with a link to all of your tour dates.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/tour_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c1b"
+      },
+      {
+        "title": "Podcast Links",
+        "description": "Grow listeners on your Podcast with a link to all audio platforms.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/podcast_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c1c"
+      },
+      {
+        "title": "Short Links",
+        "description": "Shorten and track any URL you share online to any destination.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/short_link_icon.svg",
+        "id": "63ebdc8941eadd2d12fc4c1d"
+      }
+    ],
     "ctaButton": {
-      "text": "Get started",
-      "link": "https://login.feature.fm/signup",
-      "type": "secondary"
+      "text": "Learn more",
+      "link": "/solutions/links",
+      "type": "primary"
     }
   },
-  "quoteSection": {
-    "title": "There is no better time in history to be an artist",
-    "data": [
+  "fanbaseManagementSection": {
+    "title": {
+      "desktop": "Your fans are <br/>your most <br/>valuable <br/>asset.",
+      "overrideMobile": true,
+      "mobile": "Your fans<br/>are your<br/>most<br/>valuable<br/>asset.",
+      "overrideTablet": false,
+      "tablet": "Your fans are <br/>your most <br/>valuable <br/>asset."
+    },
+    "description": {
+      "desktop": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info.",
+      "overrideMobile": false,
+      "mobile": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info.",
+      "overrideTablet": false,
+      "tablet": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info."
+    },
+    "tag": "Fan Base Management",
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/audience",
+      "type": "primary",
+      "isVisible": true
+    }
+  },
+  "analyticsAndInsightsSection": {
+    "title": {
+      "desktop": "Know what<br/>works and<br/>use it to grow.",
+      "overrideMobile": true,
+      "mobile": "Know<br/>what<br/>works and<br/>use it to<br/>grow.",
+      "overrideTablet": false,
+      "tablet": "Know what<br/>works and<br/>use it to grow."
+    },
+    "description": {
+      "desktop": "Track fan behaviors across your links, get artist level insights and send it all to your ad retargeting platforms.",
+      "overrideMobile": false,
+      "mobile": "Track fan behaviors across your links, get artist level insights and send it all to your ad retargeting platforms.",
+      "overrideTablet": false,
+      "tablet": "Track fan behaviors across your links, get artist level insights and send it all to your ad retargeting platforms."
+    },
+    "tag": "Analytics and Insights",
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/analytics",
+      "type": "primary",
+      "isVisible": true
+    }
+  },
+  "testimonialsSection": {
+    "title": {
+      "desktop": "There is no<br/> better time in history<br/> to be an artist.",
+      "overrideMobile": true,
+      "mobile": "There is no<br/> better time<br/>in history<br/>to be an artist.",
+      "overrideTablet": false
+    },
+    "testimonials": [
       {
         "quote": "Its quick, easy, and accessible for people to check out my music! ",
         "quoter": "Carol Souki",
@@ -84,7 +191,10 @@
         "quote": "This platform blows the competition away for prices and services",
         "quoter": "Eric Martin",
         "quoterTitle": "Singer Songwriter",
-        "quoterLink": { "name": "Read Success story", "url": "#" },
+        "quoterLink": {
+          "name": "Read Success story",
+          "url": "#"
+        },
         "id": "63ebdc8941eadd2d12fc4c1e",
         "quoterImageSection": {
           "profileImage": {},
@@ -102,7 +212,10 @@
         "quote": "Simply the best Marketing Plartform for Musicians!",
         "quoter": "Drax Africa",
         "quoterTitle": "A post-hardcore band from Kentucky",
-        "quoterLink": { "name": "Read Success story", "url": "#" },
+        "quoterLink": {
+          "name": "Read Success story",
+          "url": "#"
+        },
         "id": "63ebdc8941eadd2d12fc4c1f",
         "quoterImageSection": {
           "profileImage": {},
@@ -120,7 +233,10 @@
         "quote": "When my song went viral on TikTok, Feature.fm allowed us to capture hundreds of thousands of Pre-Saves and turn it into millions of streams on release day.",
         "quoter": "Stacey Ryan",
         "quoterTitle": "Hyperpop alien",
-        "quoterLink": { "name": "", "url": "" },
+        "quoterLink": {
+          "name": "",
+          "url": ""
+        },
         "id": "63ebdc8941eadd2d12fc4c20",
         "quoterImageSection": {
           "profileImage": {},
@@ -138,7 +254,10 @@
         "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
         "quoter": "Emmy Meli",
         "quoterTitle": "Hyperpop alien",
-        "quoterLink": { "name": "Read Success story", "url": "#" },
+        "quoterLink": {
+          "name": "Read Success story",
+          "url": "#"
+        },
         "id": "63ebdc8941eadd2d12fc4c20",
         "quoterImageSection": {
           "profileImage": {},
@@ -156,7 +275,10 @@
         "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info.",
         "quoter": "Mudge",
         "quoterTitle": "Singer Songwriter",
-        "quoterLink": { "name": "Read Success story  ", "url": "" },
+        "quoterLink": {
+          "name": "Read Success story  ",
+          "url": ""
+        },
         "id": "63ebdc8941eadd2d12fc4c20",
         "quoterImageSection": {
           "profileImage": {},
@@ -174,7 +296,10 @@
         "quote": "While I was getting millions of visitors per day to my song on TikTok, Feature.fm helped me make sure I knew who my fans were by capturing their contact info. ",
         "quoter": "David Kushner",
         "quoterTitle": "Singer Songwriter",
-        "quoterLink": { "name": "Read Success story ", "url": "#" },
+        "quoterLink": {
+          "name": "Read Success story ",
+          "url": "#"
+        },
         "id": "63ebdc8941eadd2d12fc4c20",
         "quoterImageSection": {
           "profileImage": {},
@@ -300,9 +425,26 @@
       }
     ]
   },
-
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Start for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideMobile": true,
+      "mobile": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Get started",
+      "link": "https://login.feature.fm/signup",
+      "type": "secondary"
+    }
+  },
   "_status": "published",
-  "createdAt": "2023-02-14T23:44:13.194Z",
-  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "createdAt": "2023-02-14T19:10:08.572Z",
+  "updatedAt": "2023-03-15T17:24:03.305Z",
   "meta": {}
 }

@@ -37,50 +37,71 @@ export const ForEverything = () => (
           <ContentLinks.Item>
             <LinksCard
               title="Artist Bio Links"
-              text="Connect your work together in a music-focused Link-in-Bio. "
-              iconName="artist"
+              description="Connect your work together in a music-focused Link-in-Bio. "
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item>
             <LinksCard
               title="Pre-Release Links"
-              text="Build momentum ahead of your release."
-              iconName="calendar"
+              description="Build momentum ahead of your release."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item>
             <LinksCard
               title="Release Links"
-              text="Link to your music across all streaming platforms and services."
-              iconName="release"
+              description="Link to your music across all streaming platforms and services."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item>
             <LinksCard
               title="Contest & Unlock Pages"
-              text="Grow your followers by rewarding them for their engagement."
-              iconName="contest"
+              description="Grow your followers by rewarding them for their engagement."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item>
             <LinksCard
               title="Tour and Event Links"
-              text="Automated links that maintains all of your tour dates."
-              iconName="tour"
+              description="Automated links that maintains all of your tour dates."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item>
             <LinksCard
               title="Podcast Links"
-              text="Routes fans to listen to your podcast in their favorite platform."
-              iconName="podcast"
+              description="Routes fans to listen to your podcast in their favorite platform."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item>
             <LinksCard
               title="Short Links"
-              text="Shorten and track urls to send traffic directly to any destination."
-              iconName="link"
+              description="Shorten and track urls to send traffic directly to any destination."
+              icon={{
+                img: '/images/link-icons/artist_bio_link_icon.svg',
+                imgMob: '/images/link-icons/artist_bio_link_icon-mobile.svg',
+              }}
             />
           </ContentLinks.Item>
           <ContentLinks.Item mobileHidden>

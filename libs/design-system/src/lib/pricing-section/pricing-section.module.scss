@@ -17,7 +17,7 @@
 }
 
 .title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
 
   @include bp($tablet_max - 1) {
     text-align: center;
@@ -134,8 +134,8 @@
     top: calc(100% - 13.2rem);
     left: -3rem;
 
-    width: 16rem;
-    height: 16rem;
+    width: 20rem;
+    height: 20rem;
 
     transform-origin: 50% 50%;
     transform: rotate(180deg);

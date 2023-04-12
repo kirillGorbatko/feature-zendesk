@@ -1,12 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
-
 @font-face {
   font-display: swap;
   font-family: GTSuper;
   font-style: normal;
   font-weight: 900;
-  src: url(/fonts/GTSuperDsTrial-Su.woff2) format('woff2'),
-    url(/fonts/GTSuperDsTrial-Su.woff) format('woff');
+  src: url(/fonts/GT-Super-Display-Super.woff2) format('woff2'),
+    url(/fonts/GT-Super-Display-Super.woff) format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/Outfit-Light.woff2) format('woff2'),
+    url(/fonts/Outfit-Light.woff) format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Outfit-Regular.woff2) format('woff2'),
+    url(/fonts/Outfit-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/Outfit-Medium.woff2) format('woff2'),
+    url(/fonts/Outfit-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Outfit-Bold.woff2) format('woff2'),
+    url(/fonts/Outfit-Bold.woff) format('woff');
 }
 
 @tailwind base;

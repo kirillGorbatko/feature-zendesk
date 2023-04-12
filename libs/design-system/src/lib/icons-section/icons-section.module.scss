@@ -1,0 +1,22 @@
+@import '../scss/helpers-all.scss';
+
+.section {
+  @include bp($desktop, min) {
+    padding-top: 7rem;
+    padding-bottom: 20rem;
+  }
+
+  @include bp($desktop - 1, $tablet_max) {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+  }
+
+  @include bp($tablet_max, min) {
+    padding-left: $gl_desktop_indent;
+    padding-right: $gl_desktop_indent;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 4rem $gl_mobile_indent 12rem;
+  }
+}

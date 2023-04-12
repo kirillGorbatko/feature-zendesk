@@ -1,0 +1,93 @@
+@import '../scss/helpers-all.scss';
+
+.hero {
+  @include bp($tablet_max, min) {
+    padding: 0 $gl_desktop_indent;
+  }
+
+  @include bp($tablet_max - 1) {
+    padding: 6rem $gl_mobile_indent 3rem;
+  }
+}
+
+.hero__row {
+  @include bp($tablet_max, min) {
+    display: flex;
+  }
+}
+
+.hero__column {
+  @include bp($tablet_max, min) {
+    &:nth-child(1) {
+      width: 66.8rem;
+    }
+
+    &:nth-child(2) {
+      width: calc(100% - 66.8rem);
+    }
+  }
+
+  @include bp($tablet_max - 1) {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.hero__content {
+  @include bp($tablet_max, min) {
+    padding-top: 7rem;
+  }
+}
+
+.hero__title {
+  span {
+    line-height: 1.16;
+  }
+
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 6rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 2.8rem;
+    }
+  }
+}
+
+.hero__descr {
+  font-weight: 300;
+
+  @include bp($tablet_max, min) {
+    font-size: 2rem;
+    line-height: 1.35;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
+
+  @include bp($desktop_lg, min) {
+    margin-left: -4.6rem;
+  }
+
+  @include bp($desktop_lg - 1, $tablet_max) {
+    margin-left: -14.6rem;
+  }
+
+  @include bp($tablet_max, min) {
+    min-width: 68rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    width: 100vw;
+    margin-left: calc($gl_mobile_indent * -1);
+  }
+}

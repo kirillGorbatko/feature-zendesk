@@ -1,0 +1,382 @@
+{
+  "id": "63ec1ccdc8d2da25b2314ce4",
+  "title": "Solutions Page - Default",
+  "slug": "default",
+  "heroSection": {
+    "title": "Bring fans <br/> into your <br/> world.",
+    "description": "Create smart links and landing pages for everything you need to promote as an artist. Track fan engagement and measure results with in-depth analytics & insights."
+  },
+  "integratedWith": {
+    "title": "Integrated with hundreds of digital music services"
+  },
+  "landingPagesSection": {
+    "features": [
+      {
+        "tag": "Artist Bio Links",
+        "title": {
+          "desktop": "Connect fans to what’s most important to you from a single link.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "A Link in Bio made for music that showcases your latest release, video, merch, tour, website, press and more. Your Bio Link is created for you automatically.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/artist-bio-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Releases",
+            "id": "63ec1cc5694ee0e3f49ab8f5"
+          },
+          {
+            "capability": "Email capture and fan messaging",
+            "id": "63ec1cc5694ee0e3f49ab8f6"
+          },
+          {
+            "capability": "Videos and embeds",
+            "id": "63ec1cc5694ee0e3f49ab8f7"
+          },
+          {
+            "capability": "Pre-Save and follow",
+            "id": "63ec1cc5694ee0e3f49ab8f8"
+          },
+          {
+            "capability": "Tour dates",
+            "id": "63ec1cc5694ee0e3f49ab8f9"
+          },
+          {
+            "capability": "Merch",
+            "id": "63ec1cc5694ee0e3f49ab8fa"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63ec1cc5694ee0e3f49ab8ea"
+      },
+      {
+        "tag": "Release Links",
+        "title": {
+          "desktop": "Make it easier for fans to find your music and never miss a stream.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Get more streams by sending fans to your music in the services they already use and track everything you need to keep growing.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/release-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Automatically find your music in popular services",
+            "id": "63ec1cc5694ee0e3f49ab8fb"
+          },
+          {
+            "capability": "Convert your Pre-Save links automatically on release day",
+            "id": "63ec1cc5694ee0e3f49ab8fc"
+          },
+          {
+            "capability": "Customize by country with geo-aware links and language localization",
+            "id": "63ec1cc5694ee0e3f49ab8fd"
+          }
+        ],
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a Release Link",
+          "link": "https://login.feature.fm/signup/",
+          "type": "secondary"
+        },
+        "id": "63ec1cc5694ee0e3f49ab8eb"
+      },
+      {
+        "tag": "Pre-Save Links",
+        "title": {
+          "desktop": "Build hype before your music drops to maximize release day.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Market your music to fans ahead of your release date. Get fans to Pre-Save your music and guarantee streams, follows and playlist adds from day one.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/pre-save-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Your music saved automatically on release day",
+            "id": "63ec1cc5694ee0e3f49ab8fe"
+          },
+          {
+            "capability": "Automatically notify fans the moment your music drops",
+            "id": "63ec1cc5694ee0e3f49ab8ff"
+          },
+          {
+            "capability": "Grow artist follows and playlist additions in one click",
+            "id": "63ec1cc5694ee0e3f49ab900"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a Pre-Save Link",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63ec1cc5694ee0e3f49ab8ec"
+      },
+      {
+        "tag": "Tour Links",
+        "title": {
+          "desktop": "Invite fans to fall in love with you in person.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Sell out more shows by connecting fans to buy tickets to all of your upcoming tour dates.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/tour-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Quickly add your tour dates by importing shows from Bandsintown",
+            "id": "63ec1cc5694ee0e3f49ab901"
+          },
+          {
+            "capability": "Keep loyal fans up to date on your show schedule",
+            "id": "63ec1cc5694ee0e3f49ab902"
+          },
+          {
+            "capability": "Retarget fans based on locations",
+            "id": "63ec1cc5694ee0e3f49ab903"
+          }
+        ],
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a Tour Link",
+          "link": "https://login.feature.fm/signup/",
+          "type": "secondary"
+        },
+        "id": "63ec1cc5694ee0e3f49ab8ed"
+      },
+      {
+        "tag": "Podcast Links",
+        "title": {
+          "desktop": "Let fans get to know more about your passions",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Convert fans into podcast subscribers with automated Podcast Links that make it easy for fans to find your podcast in their favorite audio platform.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/podcast-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Showcase your Podcast or latest episode",
+            "id": "63ec1cc5694ee0e3f49ab904"
+          },
+          {
+            "capability": "Collect emails from your Podcast fans",
+            "id": "63ec1cc5694ee0e3f49ab905"
+          },
+          {
+            "capability": "Grow your Podcast subscribers",
+            "id": "63ec1cc5694ee0e3f49ab906"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a Podcast Link",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63ec1cc5694ee0e3f49ab8ee"
+      },
+      {
+        "tag": "Contests",
+        "title": {
+          "desktop": "Reward your fans with prizes and giveaways.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Build fan loyalty with easy-to-create contests that reward your fans with prizes and encourage additional entries for taking actions of your choice.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/contests-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Supercharge your growth with music-focused actions",
+            "id": "63ec1cc5694ee0e3f49ab907"
+          },
+          {
+            "capability": "Go viral with referrals",
+            "id": "63ec1cc5694ee0e3f49ab908"
+          }
+        ],
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a Contest",
+          "link": "https://login.feature.fm/signup/",
+          "type": "secondary"
+        },
+        "id": "63ec1cc5694ee0e3f49ab8ef"
+      },
+      {
+        "tag": "Short Links",
+        "title": {
+          "desktop": "Shorten and track every link you share with fans",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Make sure you’re always capturing valuable data with short, branded links that send fans directly to any destination like your merch store or website.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/short-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Get rid of long, bulky URLs",
+            "id": "63f24233bd797d7e3a0d3f6f"
+          },
+          {
+            "capability": "Capture more data",
+            "id": "63f24236bd797d7e3a0d3f70"
+          },
+          {
+            "capability": "Set conditional routing rules",
+            "id": "63f24240bd797d7e3a0d3f71"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Create a short link",
+          "link": "https://login.feature.fm/signup/",
+          "type": "primary"
+        },
+        "id": "63f24210bd797d7e3a0d3f6e"
+      }
+    ]
+  },
+  "allLinksComeWithMore": {
+    "title": "Customize and convert",
+    "features": [
+      {
+        "title": {
+          "desktop": "Custom domains & sub-domains",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Brand your links with custom sub-domains or full domains that let your fans recognize your campaigns.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "https://",
+        "id": "63ec1cc5694ee0e3f49ab8f0"
+      },
+      {
+        "title": {
+          "desktop": "Custom stores & services",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Enjoy the flexibility to add any custom store to your links, like your merch store, with custom logos and icons.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "https://",
+        "id": "63ec1cc5694ee0e3f49ab8f1"
+      },
+      {
+        "title": {
+          "desktop": ">95% Google Page Load Speeds",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Feature.fm has the fastest page load speeds in the market, helping fans get to your music faster.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "https://",
+        "id": "63ec1cc5694ee0e3f49ab8f2"
+      }
+    ]
+  },
+  "youShouldAlsoCheckOut": {
+    "title": "Discover more",
+    "features": [
+      {
+        "title": {
+          "desktop": "Performance Analytics & Insights",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Learn how to keep your fans engaged by understanding fan behaviors and preferences across all of your marketing activities.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/analytics",
+        "imageUrl": "/img/solutions/analytics.png",
+        "id": "63ec1cc5694ee0e3f49ab8f3",
+        "iconImage": {}
+      },
+      {
+        "title": {
+          "desktop": "Fan Base Management",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Manage your relationships with your fans like never before, collect fan contact info, get real-time insights and keep your fans notified about your latest drops.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/audience",
+        "imageUrl": "/img/solutions/audience.png",
+        "id": "63ec1cc5694ee0e3f49ab8f4",
+        "iconImage": {}
+      }
+    ]
+  },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Start for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideMobile": true,
+      "mobile": "Join thousands of artists already marketing themselves with Feature.fm.",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Get started",
+      "link": "https://login.feature.fm/signup",
+      "type": "secondary"
+    }
+  },
+  "_status": "published",
+  "createdAt": "2023-02-14T23:44:13.194Z",
+  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "meta": {}
+}

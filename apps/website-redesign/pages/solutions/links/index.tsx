@@ -5,7 +5,7 @@ import {
   FmSolutionsBenefitSection,
   FmSolutionsBenefit,
   FmSolutionsBenefitProps,
-  SolutionIcons,
+  IconsSection,
   CheckIt,
   SolutionsSection,
   SolutionsSectionsProps,
@@ -34,9 +34,9 @@ export function SolutionLinks({
       <HeroSolutions
         title="Bring fans into your world."
         descr="Create links and landing pages that direct fans to listen to your music in the right service, save your music, pre-save, follow, subscribe, buy tickets, enter a contest or connect it all together in your Artist Bio Link."
-      >
-        <SolutionIcons label="Integrated with hundreds of digital music services" />
-      </HeroSolutions>
+      />
+
+      <IconsSection label="Integrated with hundreds of digital music services" />
 
       {landingPagesSection?.features?.map((solutionsSection, index) => (
         <SolutionsSection

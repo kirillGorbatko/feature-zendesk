@@ -1,8 +1,391 @@
 {
-  "id": "63ec1ccdc8d2da25b2314ce4",
-  "title": "Professionals Page - Default",
+  "id": "63e8147c70e4ae172b6dfd0c",
+  "title": "Professional Page - Default",
   "slug": "default",
-
+  "heroSection": {
+    "imageUrl": "/img/business/hero.png",
+    "title": {
+      "desktop": "Market your artists with confidence.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Join the world’s best music companies who trust Feature.fm to grow artist fan bases and future proof their marketing capabilities.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Try free for 14-days",
+      "link": "https://login.feature.fm/signup",
+      "type": "primary"
+    }
+  },
+  "mainKPIsSection": {
+    "kpiList": [
+      {
+        "kpi": "+300K",
+        "title": "Artists",
+        "id": "63e814704e0988f35b1b92ad"
+      },
+      {
+        "kpi": "+3MM",
+        "title": "Links creataed",
+        "id": "63e814704e0988f35b1b92ae"
+      },
+      {
+        "kpi": "+1B",
+        "title": "Fans reached",
+        "id": "63e814704e0988f35b1b92af"
+      }
+    ]
+  },
+  "trustedBySection": {
+    "text": {
+      "desktop": "Trusted by top labels, managers <br/> and distributors",
+      "overrideMobile": false,
+      "overrideTablet": false
+    }
+  },
+  "marketingSection": {
+    "elements": [
+      {
+        "title": "Artist Bio Links",
+        "description": "Connect fans to all of your content with a single Link in Bio.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/artist_bio_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b0"
+      },
+      {
+        "title": "Pre-Save Links",
+        "description": "Build momentum ahead of your music release.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/pre_release_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b1"
+      },
+      {
+        "title": "Release Links",
+        "description": "Get more streams with a link to your music in all services.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/released_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b2"
+      },
+      {
+        "title": "Contest & Unlock Pages",
+        "description": "Reward your fans with prizes for taking actions you want.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/contest_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b3"
+      },
+      {
+        "title": "Tour and Event Links",
+        "description": "Sell more tickets to shows with a link to all of your tour dates.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/tour_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b4"
+      },
+      {
+        "title": "Podcast Links",
+        "description": "Grow listeners on your Podcast with a link to all audio platforms.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/podcast_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b5"
+      },
+      {
+        "title": "Short Links",
+        "description": "Shorten and track any URL you share online to any destination.",
+        "icon": "/img/link-icons/short_link_icon.svg",
+        "id": "63e814704e0988f35b1b92b6"
+      }
+    ],
+    "ctaButton": {
+      "text": "More about  Links",
+      "link": "/solutions/links",
+      "type": "primary"
+    }
+  },
+  "featuresSectionIntro": {
+    "title": {
+      "desktop": "Designed to <br/>make your life<br/> easier.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "We’ve spent nearly a decade understanding the needs of music marketers to create the most advanced marketing solution.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    }
+  },
+  "manageFeatures": {
+    "imageUrl": "/img/business/pros-1.png",
+    "features": [
+      {
+        "title": {
+          "desktop": "Easily manage multiple artists.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Organize your marketing efforts in artist folders, invite artist teams to manage their assets and access deep insights at the artist level.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e814704e0988f35b1b92b7"
+      },
+      {
+        "title": {
+          "desktop": "Collaborate with all of your team members.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Unite your team members all around the world to work together, granting access at the account or artist level.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e814704e0988f35b1b92b8"
+      }
+    ]
+  },
+  "automationFeatures": {
+    "imageUrl": "/img/business/pros-2.png",
+    "features": [
+      {
+        "title": {
+          "desktop": "Automate your workflows.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Focus on automating your marketing lifecycle from pre-release to post release, touring, fan contact capture and communications to be more efficient and reduce your manual workload.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e814704e0988f35b1b92b9"
+      },
+      {
+        "title": {
+          "desktop": "Improve your conversions.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Feature.fm landing pages are optimized for conversions with Pre-Saves that convert in each local time-zone, the fastest page load speeds in the industry, geo-aware behaviors and language localization.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e814704e0988f35b1b92ba"
+      },
+      {
+        "title": {
+          "desktop": "Monetize with Affiliate Partners",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Generate additional revenue from every campaign with affiliate marketing integrations like Apple, Amazon and Spotify.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e814704e0988f35b1b92bb"
+      }
+    ]
+  },
+  "moreFeaturesSection": {
+    "title": {
+      "desktop": "Powerfully <br/>actionable insights <br/>that work for you.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "features": [
+      {
+        "title": {
+          "desktop": "Use your aggregatted artist roster data to your advantage.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Capture powerful data across your entire roster and build intelligently segmented audiences to use for the benefit of any individual artist campaign.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff72"
+      },
+      {
+        "title": {
+          "desktop": "Access artist level performance statistics.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Every artist has an artist dashboard with aggregated insights across all of your marketing efforts, giving you a comprehensive view into how fans engage across all campaigns.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff73"
+      },
+      {
+        "title": {
+          "desktop": "Retarget fans across your ad platforms.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Integrate with your preferred retargeting program and build highly segmented audiences by detailed event data like genres, artist names, locations and more.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff74"
+      },
+      {
+        "title": {
+          "desktop": "Attribute sales and streams.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Track sales revenue and streams from your merch store as well as from Feature.fm’s streaming data partners like YouTube Music, Rough Trade, Boomplay, Anghami, and Qobuz.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff75"
+      }
+    ],
+    "ctaButton": {
+      "text": "Learn more about Analytics",
+      "link": "/solutions/analytics/",
+      "type": "primary"
+    }
+  },
+  "fanRelationshipSection": {
+    "imageUrl": "/img/business/fans.png",
+    "title": {
+      "desktop": "Fans are the <br/>lifeblood of your <br/>business.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Building relationships with fans is the most important asset to grow an artist’s career.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Fan Base Management",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "needScaleSection": {
+    "title": {
+      "desktop": "Need something <br/>that really <br/>scales? ",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": " The industry’s largest music distribution companies have integrated Feature.fm’s enterprise solutions to power their marketing tech stack.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "features": [
+      {
+        "title": {
+          "desktop": "API + Automation",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Automatically create all of your marketing assets at scale using our advanced API.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff76"
+      },
+      {
+        "title": {
+          "desktop": "White Label Solutions",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Provide an out of the box marketing suite directly to your artist and label customers, connected to your platform.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff77"
+      },
+      {
+        "title": {
+          "desktop": "Custom Solution Architecture",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "No enterprise solutions are alike. We will work with you to customize a dedicated solution that meets your goals and leverages our powerful enterprise level technology.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "id": "63e8147c45c54d4edddeff78"
+      }
+    ],
+    "ctaButton": {
+      "title": {
+        "desktop": "Want to learn more about Enterprise solutions?",
+        "overrideMobile": false,
+        "overrideTablet": false
+      },
+      "text": "Book a demo",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "weAreYourPartnersSection": {
+    "title": {
+      "desktop": "We are <br/>your partners",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "subtitle": {
+      "desktop": "We take pride in our unmatched, professional service, support and guidance.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "subtitle2": {
+      "desktop": "Leverage our team of industry and product experts to get set up on Feature.fm and be successful with our technology.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "services": [
+      {
+        "title": "Dedicated Account Management",
+        "icon": "/img/business/services/dedicated-account-manager.png",
+        "id": "63e8147c45c54d4edddeff79"
+      },
+      {
+        "title": "Private training sessions",
+        "icon": "/img/business/services/private-training-sessions.png",
+        "id": "63e8147c45c54d4edddeff7a"
+      },
+      {
+        "title": "Direct support channels",
+        "icon": "/img/business/services/direct-support-channels.png",
+        "id": "63e8147c45c54d4edddeff7b"
+      },
+      {
+        "title": "Marketing advice and guidance",
+        "icon": "/img/business/services/marketing-advice-and-guidance.png",
+        "id": "63e8147c45c54d4edddeff7c"
+      },
+      {
+        "title": "Personalized onboarding sessions",
+        "icon": "/img/business/services/personalized-onboarding-sessions.png",
+        "id": "63e8147c45c54d4edddeff7d"
+      },
+      {
+        "title": "Custom reporting and development available",
+        "icon": "/img/business/services/custom-reporting-and-dev.png",
+        "id": "63e8147c45c54d4edddeff7e"
+      }
+    ]
+  },
   "bottomCTASection": {
     "title": {
       "desktop": "Talk to one of our experts",
@@ -20,8 +403,8 @@
       "type": "primary"
     }
   },
-  "_status": "published",
-  "createdAt": "2023-02-14T23:44:13.194Z",
-  "updatedAt": "2023-03-15T17:56:37.061Z",
+  "_status": "draft",
+  "createdAt": "2023-02-11T22:19:40.317Z",
+  "updatedAt": "2023-02-11T22:19:40.317Z",
   "meta": {}
 }

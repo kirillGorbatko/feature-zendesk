@@ -1,0 +1,610 @@
+{
+  "id": "6343444f3afbea0791e3b362",
+  "title": "HomePage - Default",
+  "slug": "default",
+  "heroSection": {
+    "heroTitle": {
+      "desktop": "Build your fan base and<br/> music career. [VARIANT1]",
+      "overrideMobile": false,
+      "mobile": "Build your<br/> fan base<br/> and music<br/> career. [VARIANT1]",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Start for free",
+      "link": "https://login.feature.fm/signup",
+      "type": "primary"
+    },
+    "trustedBySection": {
+      "text": {
+        "desktop": "Loved by 300K+ independent artists, managers & record labels.",
+        "overrideMobile": false,
+        "overrideTablet": false
+      }
+    }
+  },
+  "marketingSection": {
+    "title": {
+      "desktop": "For <br/>every<br/>thing<br/>you do.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "subtitle": {
+      "desktop": "Marketing, built for music. From your new single to merch, tours, NFTs and everything in between.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "elements": [
+      {
+        "title": "Artist Bio Links",
+        "description": "Connect fans to all of your content with a single Link in Bio.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/artist_bio_link_icon.svg",
+        "id": "6343435cbae02a70cb2f400d"
+      },
+      {
+        "title": "Pre-Release Links",
+        "description": "Build momentum ahead of your music release.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/pre_release_link_icon.svg",
+        "id": "6343435cbae02a70cb2f400e"
+      },
+      {
+        "title": "Release Links",
+        "description": "Get more streams with a link to your music in all services.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/released_link_icon.svg",
+        "id": "6343435cbae02a70cb2f400f"
+      },
+      {
+        "title": "Contest & Unlock Pages",
+        "description": "Reward your fans with prizes for taking actions you want.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/contest_link_icon.svg",
+        "id": "6343435cbae02a70cb2f4010"
+      },
+      {
+        "title": "Tour and Event Links",
+        "description": "Sell more tickets to shows with a link to all of your tour dates.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/tour_link_icon.svg",
+        "id": "6343435cbae02a70cb2f4011"
+      },
+      {
+        "title": "Podcast Links",
+        "description": "Grow listeners on your Podcast with a link to all audio platforms.",
+        "learnMoreLink": "http://...",
+        "icon": "/img/link-icons/podcast_link_icon.svg",
+        "id": "6343435cbae02a70cb2f4012"
+      },
+      {
+        "title": "Short Links",
+        "description": "Shorten and track any URL you share online to any destination.",
+        "learnMoreLink": "https://",
+        "icon": "/img/link-icons/short_link_icon.svg",
+        "id": "6343435cbae02a70cb2f4013"
+      }
+    ],
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/links",
+      "type": "primary"
+    }
+  },
+  "fanbaseManagementSection": {
+    "title": {
+      "desktop": "Your fans are <br/>your most <br/>valuable <br/>asset.",
+      "overrideMobile": true,
+      "mobile": "Your fans<br/>are your<br/>most<br/>valuable<br/>asset.",
+      "overrideTablet": false,
+      "tablet": "Your fans are <br/>your most <br/>valuable <br/>asset."
+    },
+    "description": {
+      "desktop": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info.",
+      "overrideMobile": false,
+      "mobile": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info.",
+      "overrideTablet": false,
+      "tablet": "Know who your fans are and contact them directly with dozens of ways to collect, organize and sync fan contact info."
+    },
+    "tag": "Fan Base Management",
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/audience",
+      "type": "primary"
+    }
+  },
+  "analyticsAndInsightsSection": {
+    "title": {
+      "desktop": "Know what<br/>works and<br/>use it to grow.",
+      "overrideMobile": true,
+      "mobile": "Know<br/>what<br/>works and<br/>use it to<br/>grow.",
+      "overrideTablet": false,
+      "tablet": "Know what<br/>works and<br/>use it to grow."
+    },
+    "description": {
+      "desktop": "Use data to grow faster. All our links come with real-time insights and can be optmized to enhance your ad retargeting strategy.",
+      "overrideMobile": false,
+      "mobile": "Use data to grow faster. All our links come with real-time insights and can be optmized to enhance your ad retargeting strategy.",
+      "overrideTablet": false,
+      "tablet": "Use data to grow faster. All our links come with real-time insights and can be optmized to enhance your ad retargeting strategy."
+    },
+    "tag": "Analytics and Insights",
+    "ctaButton": {
+      "text": "Learn more",
+      "link": "/solutions/analytics",
+      "type": "primary"
+    }
+  },
+  "testimonialsSection": {
+    "title": {
+      "desktop": "There is no<br/> better time in history<br/> to be an artist.",
+      "overrideMobile": true,
+      "mobile": "There is no<br/> better time<br/>in history<br/>to be an artist.",
+      "overrideTablet": false
+    },
+    "testimonials": [
+      {
+        "quote": "Its quick, easy, and accessible for people to check out my music!",
+        "quoter": "Carol Souki",
+        "quoterTitle": "Indie Artist",
+        "quoterImageSection": {
+          "profileImage": {
+            "url": {
+              "id": "634343cd3afbea0791e3b339",
+              "alt": "Stacey Ryan",
+              "filename": "testimonial-1-profile-image.png",
+              "mimeType": "image/png",
+              "filesize": 227960,
+              "width": 400,
+              "height": 400,
+              "createdAt": "2022-10-09T21:57:33.734Z",
+              "updatedAt": "2022-10-09T21:57:33.734Z",
+              "url": "/media/testimonial-1-profile-image.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634343de3afbea0791e3b340",
+              "alt": "Stacey Ryan",
+              "filename": "testimonial-1-profile-image@2x.png",
+              "mimeType": "image/png",
+              "filesize": 816111,
+              "width": 800,
+              "height": 800,
+              "createdAt": "2022-10-09T21:57:50.474Z",
+              "updatedAt": "2022-10-09T21:57:50.474Z",
+              "url": "/media/testimonial-1-profile-image@2x.png"
+            }
+          },
+          "landingPageImage": {
+            "url": {
+              "id": "634344053afbea0791e3b347",
+              "alt": "Stacey Ryan Landing Page",
+              "filename": "testimonial-1-desktop.png",
+              "mimeType": "image/png",
+              "filesize": 154504,
+              "width": 436,
+              "height": 522,
+              "createdAt": "2022-10-09T21:58:29.741Z",
+              "updatedAt": "2022-10-09T21:58:29.741Z",
+              "url": "/media/testimonial-1-desktop.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634344123afbea0791e3b34e",
+              "alt": "Stacey Ryan Landing Page",
+              "filename": "testimonial-1-desktop@2x.png",
+              "mimeType": "image/png",
+              "filesize": 514596,
+              "width": 872,
+              "height": 1044,
+              "createdAt": "2022-10-09T21:58:42.419Z",
+              "updatedAt": "2022-10-09T21:58:42.419Z",
+              "url": "/media/testimonial-1-desktop@2x.png"
+            }
+          },
+          "mobileLandingPageImage": {
+            "url": {
+              "id": "6343441e3afbea0791e3b355",
+              "alt": "Stacey Ryan Landing Page",
+              "filename": "testimonial-1-mobile.png",
+              "mimeType": "image/png",
+              "filesize": 138999,
+              "width": 390,
+              "height": 353,
+              "createdAt": "2022-10-09T21:58:54.611Z",
+              "updatedAt": "2022-10-09T21:58:54.611Z",
+              "url": "/media/testimonial-1-mobile.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "6343444b3afbea0791e3b35c",
+              "alt": "Stacey Ryan Landing Page",
+              "filename": "testimonial-1-mobile@2x.png",
+              "mimeType": "image/png",
+              "filesize": 458208,
+              "width": 780,
+              "height": 706,
+              "createdAt": "2022-10-09T21:59:39.752Z",
+              "updatedAt": "2022-10-09T21:59:39.752Z",
+              "url": "/media/testimonial-1-mobile@2x.png"
+            }
+          }
+        },
+        "quoterLink": {
+          "name": "Check out my Bio Link",
+          "url": " https://ffm.bio/zmn269q"
+        },
+        "id": "6343435cbae02a70cb2f4014"
+      },
+      {
+        "quote": "Great and easy to use interface and tons of great features. Well worth the price.",
+        "quoter": "Softspoken",
+        "quoterTitle": "Indie Artist",
+        "quoterImageSection": {
+          "profileImage": {
+            "url": {
+              "id": "634344953afbea0791e3b387",
+              "alt": "Softspoen Profile Image",
+              "filename": "testimonial-2-profile-image.png",
+              "mimeType": "image/png",
+              "filesize": 198341,
+              "width": 400,
+              "height": 400,
+              "createdAt": "2022-10-09T22:00:53.293Z",
+              "updatedAt": "2022-10-09T22:00:53.293Z",
+              "url": "/media/testimonial-2-profile-image.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634344aa3afbea0791e3b38e",
+              "alt": "Softspoen Profile Image",
+              "filename": "testimonial-2-profile-image@2x.png",
+              "mimeType": "image/png",
+              "filesize": 781673,
+              "width": 800,
+              "height": 800,
+              "createdAt": "2022-10-09T22:01:14.595Z",
+              "updatedAt": "2022-10-09T22:01:14.595Z",
+              "url": "/media/testimonial-2-profile-image@2x.png"
+            }
+          },
+          "landingPageImage": {
+            "url": {
+              "id": "634344da3afbea0791e3b395",
+              "alt": "Softspoken Landing Page",
+              "filename": "testimonial-2-desktop.png",
+              "mimeType": "image/png",
+              "filesize": 124857,
+              "width": 436,
+              "height": 521,
+              "createdAt": "2022-10-09T22:02:02.285Z",
+              "updatedAt": "2022-10-09T22:02:02.285Z",
+              "url": "/media/testimonial-2-desktop.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634344ec3afbea0791e3b39c",
+              "alt": "Softspoken Landing Page",
+              "filename": "testimonial-2-desktop@2x.png",
+              "mimeType": "image/png",
+              "filesize": 424308,
+              "width": 872,
+              "height": 1042,
+              "createdAt": "2022-10-09T22:02:20.417Z",
+              "updatedAt": "2022-10-09T22:02:20.417Z",
+              "url": "/media/testimonial-2-desktop@2x.png"
+            }
+          },
+          "mobileLandingPageImage": {
+            "url": {
+              "id": "634344f73afbea0791e3b3a3",
+              "alt": "Softspoken Landing Page",
+              "filename": "testimonial-2-mobile.png",
+              "mimeType": "image/png",
+              "filesize": 117474,
+              "width": 330,
+              "height": 342,
+              "createdAt": "2022-10-09T22:02:31.635Z",
+              "updatedAt": "2022-10-09T22:02:31.635Z",
+              "url": "/media/testimonial-2-mobile.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634345053afbea0791e3b3aa",
+              "alt": "Softspoken Landing Page",
+              "filename": "testimonial-2-mobile@2x.png",
+              "mimeType": "image/png",
+              "filesize": 415875,
+              "width": 660,
+              "height": 684,
+              "createdAt": "2022-10-09T22:02:45.643Z",
+              "updatedAt": "2022-10-09T22:02:45.643Z",
+              "url": "/media/testimonial-2-mobile@2x.png"
+            }
+          }
+        },
+        "quoterLink": {
+          "name": "Check out our Bio Link",
+          "url": "https://ssffm.co/all"
+        },
+        "id": "6343435cbae02a70cb2f4015"
+      },
+      {
+        "quote": "Simply the best Marketing Plartform for Musicians!",
+        "quoter": "Drax Africa",
+        "quoterTitle": "Indie Artist",
+        "quoterImageSection": {
+          "profileImage": {
+            "url": {
+              "id": "6343452f3afbea0791e3b3bd",
+              "alt": "Drax Africa Profile Image",
+              "filename": "testimonial-3-profile-image.png",
+              "mimeType": "image/png",
+              "filesize": 208037,
+              "width": 400,
+              "height": 400,
+              "createdAt": "2022-10-09T22:03:27.054Z",
+              "updatedAt": "2022-10-09T22:03:27.054Z",
+              "url": "/media/testimonial-3-profile-image.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "6343453e3afbea0791e3b3c4",
+              "alt": "Drax Africa Profile Image",
+              "filename": "testimonial-3-profile-image@2x.png",
+              "mimeType": "image/png",
+              "filesize": 858382,
+              "width": 800,
+              "height": 800,
+              "createdAt": "2022-10-09T22:03:42.855Z",
+              "updatedAt": "2022-10-09T22:03:42.855Z",
+              "url": "/media/testimonial-3-profile-image@2x.png"
+            }
+          },
+          "landingPageImage": {
+            "url": {
+              "id": "634345553afbea0791e3b3cb",
+              "alt": "Drax Africa Landing Page",
+              "filename": "testimonial-3-desktop.png",
+              "mimeType": "image/png",
+              "filesize": 153232,
+              "width": 436,
+              "height": 521,
+              "createdAt": "2022-10-09T22:04:05.205Z",
+              "updatedAt": "2022-10-09T22:04:05.205Z",
+              "url": "/media/testimonial-3-desktop.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634345603afbea0791e3b3d2",
+              "alt": "Drax Africa Landing Page",
+              "filename": "testimonial-3-desktop@2x.png",
+              "mimeType": "image/png",
+              "filesize": 501022,
+              "width": 872,
+              "height": 1042,
+              "createdAt": "2022-10-09T22:04:16.558Z",
+              "updatedAt": "2022-10-09T22:04:16.558Z",
+              "url": "/media/testimonial-3-desktop@2x.png"
+            }
+          },
+          "mobileLandingPageImage": {
+            "url": {
+              "id": "634345733afbea0791e3b3d9",
+              "alt": "Drax Africa Landing Page",
+              "filename": "testimonial-3-mobile.png",
+              "mimeType": "image/png",
+              "filesize": 135396,
+              "width": 330,
+              "height": 342,
+              "createdAt": "2022-10-09T22:04:35.459Z",
+              "updatedAt": "2022-10-09T22:04:35.459Z",
+              "url": "/media/testimonial-3-mobile.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634345843afbea0791e3b3e0",
+              "alt": "Drax Africa Landing Page",
+              "filename": "testimonial-3-mobile@2x.png",
+              "mimeType": "image/png",
+              "filesize": 437565,
+              "width": 660,
+              "height": 684,
+              "createdAt": "2022-10-09T22:04:52.126Z",
+              "updatedAt": "2022-10-09T22:04:52.126Z",
+              "url": "/media/testimonial-3-mobile@2x.png"
+            }
+          }
+        },
+        "quoterLink": {
+          "name": "Check out my Bio Link",
+          "url": "https://ffm.bio/draxafrica"
+        },
+        "id": "6343435cbae02a70cb2f4016"
+      },
+      {
+        "quote": "This platform blows the competition away for prices and services",
+        "quoter": "Eric Martin",
+        "quoterTitle": "Indie Artist",
+        "quoterImageSection": {
+          "profileImage": {
+            "url": {
+              "id": "634345a53afbea0791e3b3f3",
+              "alt": "Eric Martin Profile Image",
+              "filename": "testimonial-4-profile-image.png",
+              "mimeType": "image/png",
+              "filesize": 204820,
+              "width": 400,
+              "height": 400,
+              "createdAt": "2022-10-09T22:05:25.248Z",
+              "updatedAt": "2022-10-09T22:05:25.248Z",
+              "url": "/media/testimonial-4-profile-image.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634345b23afbea0791e3b3fa",
+              "alt": "Eric Martin Profile Image",
+              "filename": "testimonial-4-profile-image@2x.png",
+              "mimeType": "image/png",
+              "filesize": 720612,
+              "width": 800,
+              "height": 800,
+              "createdAt": "2022-10-09T22:05:38.864Z",
+              "updatedAt": "2022-10-09T22:05:38.864Z",
+              "url": "/media/testimonial-4-profile-image@2x.png"
+            }
+          },
+          "landingPageImage": {
+            "url": {
+              "id": "634345c03afbea0791e3b401",
+              "alt": "Eric Martin Landing Page",
+              "filename": "testimonial-4-desktop.png",
+              "mimeType": "image/png",
+              "filesize": 115767,
+              "width": 436,
+              "height": 521,
+              "createdAt": "2022-10-09T22:05:52.380Z",
+              "updatedAt": "2022-10-09T22:05:52.380Z",
+              "url": "/media/testimonial-4-desktop.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634345d13afbea0791e3b408",
+              "alt": "Eric Martin Landing Page",
+              "filename": "testimonial-4-desktop@2x.png",
+              "mimeType": "image/png",
+              "filesize": 363680,
+              "width": 872,
+              "height": 1042,
+              "createdAt": "2022-10-09T22:06:09.452Z",
+              "updatedAt": "2022-10-09T22:06:09.452Z",
+              "url": "/media/testimonial-4-desktop@2x.png"
+            }
+          },
+          "mobileLandingPageImage": {
+            "url": {
+              "id": "634345df3afbea0791e3b40f",
+              "alt": "Eric Martin Landing Page",
+              "filename": "testimonial-4-mobile.png",
+              "mimeType": "image/png",
+              "filesize": 104288,
+              "width": 330,
+              "height": 342,
+              "createdAt": "2022-10-09T22:06:23.483Z",
+              "updatedAt": "2022-10-09T22:06:23.483Z",
+              "url": "/media/testimonial-4-mobile.png"
+            },
+            "setRetinaVersion": true,
+            "retinaUrl": {
+              "id": "634345ee3afbea0791e3b416",
+              "alt": "Eric Martin Landing Page",
+              "filename": "testimonial-4-mobile@2x.png",
+              "mimeType": "image/png",
+              "filesize": 315064,
+              "width": 660,
+              "height": 684,
+              "createdAt": "2022-10-09T22:06:38.050Z",
+              "updatedAt": "2022-10-09T22:06:38.050Z",
+              "url": "/media/testimonial-4-mobile@2x.png"
+            }
+          }
+        },
+        "quoterLink": {
+          "name": "Check out my Bio Link",
+          "url": "https://ffm.bio/8q5dvyb"
+        },
+        "id": "6343435cbae02a70cb2f4017"
+      }
+    ]
+  },
+  "forProfessionalsCTASection": {
+    "sectionTag": "Marketing professionals",
+    "title": {
+      "desktop": "Learn how Feature.fm can help scale your business across your artist roster",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "Join thousands of labels, managers, marketers and distributors who manage their marketing efforts across artist rosters and utilize aggregated data at scale.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Feature.fm for professionals",
+      "link": "/business",
+      "type": "secondary"
+    },
+    "testimonials": [
+      {
+        "quote": "Feature.fm allowed us to turn the creation and virality into a marketing campaign, capturing the data and the Pre-Saves.",
+        "quoter": "Nils Gums",
+        "quoterTitle": "Founder, The Complex Group",
+        "name": "Read case study",
+        "url": "https://ffm.to/staceyryan_zai1k_casestudy.OWE",
+        "id": "63434366bae02a70cb2f4018"
+      },
+      {
+        "quote": "The biggest problem was solved in that we were able to capitalize on the TikTok traffic our artists were gaining, converting fans of the track via the pre-save and resulting in 125MM streams within 4 months.",
+        "quoter": "Sam Lockhart",
+        "quoterTitle": "Manager, Disruptor",
+        "name": "Read case study",
+        "url": "https://ffm.to/emmymelicasestudy.OWE",
+        "id": "63434366bae02a70cb2f4019"
+      },
+      {
+        "quote": "We love using Feature.fm! we’ve tried many different platforms, and this one is by far our favourite. Also, the customer service is excellent!",
+        "quoter": "Tom Davies",
+        "quoterTitle": "Marketing Director, Secretly Group",
+        "name": "Read case study",
+        "url": "https://...",
+        "id": "63434366bae02a70cb2f401a"
+      },
+      {
+        "quote": "Feature.fm has allowed us to upgrade our Pre-Save campaigns to increase both Spotify and Apple Music conversions on release. We've collected thousands of Spotify followers and the data collected empowers and informs our teams.",
+        "quoter": "Aaron Bogucki",
+        "quoterTitle": "Global Head of Audience Development, AWAL",
+        "name": "Read case study",
+        "url": "https://...",
+        "id": "63434366bae02a70cb2f401b"
+      },
+      {
+        "quote": "Feature.fm provides us with the most dynamic tool we have ever used to accomplish our mission of engaging new fans at a global scale.",
+        "quoter": "Hank Stockard",
+        "quoterTitle": "Marketing Director, Red Eye Distribution",
+        "name": "Read case study",
+        "url": "https://...",
+        "id": "63434366bae02a70cb2f401c"
+      },
+      {
+        "quote": "Feature.fm really listens to the digital marketing community and build things they need. They're so open minded to hearing feedback and actually putting action to it.",
+        "quoter": "Josh D'Amore",
+        "quoterTitle": "Head of Digital, 300 Entertainment",
+        "name": "Read case study",
+        "url": "https://...",
+        "id": "63434366bae02a70cb2f401d"
+      }
+    ]
+  },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Get Started for free",
+      "overrideMobile": true,
+      "mobile": "Get Started<br/>for free",
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "You can use Feature.fm for free or subscribe to one of our paid plans.<br/> All paid plans come with a free trial of our Pro plan",
+      "overrideMobile": true,
+      "mobile": "You can use Feature.fm for free or subscribe to<br/>one of our paid plans. All paid plans come with a free trial of our Pro plan",
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Start free",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "_status": "published",
+  "createdAt": "2022-10-09T21:59:43.581Z",
+  "updatedAt": "2022-10-09T22:07:27.391Z",
+  "meta": {}
+}

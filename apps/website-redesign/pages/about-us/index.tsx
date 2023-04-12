@@ -4,16 +4,21 @@ import {
   FmTitle,
   HeroAbout,
   KpiItem,
+  OurPartnersSection,
+  OurPartnersSectionProps,
 } from '@featurefm/design-system';
 import { getPageData } from '../../api';
 import { ManagementMemberSection } from '../../src/components/section/management-members-section';
 
 type AboutUsProps = {
-  mock: string;
   joinTheTeamSection: FmJoinTeamCtaProps;
+  ourPartnersSection: OurPartnersSectionProps;
 };
 
-export function AboutUs({ mock, joinTheTeamSection }: AboutUsProps) {
+export function AboutUs({
+  joinTheTeamSection,
+  ourPartnersSection,
+}: AboutUsProps) {
   return (
     <>
       <HeroAbout>
@@ -49,6 +54,10 @@ export function AboutUs({ mock, joinTheTeamSection }: AboutUsProps) {
         </HeroAbout.List>
       </HeroAbout>
       <ManagementMemberSection />
+      <OurPartnersSection
+        title="Our partners"
+        partners={ourPartnersSection?.partners}
+      />
       <FmJoinTeamCta {...joinTheTeamSection} />
     </>
   );

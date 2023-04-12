@@ -7,4 +7,8 @@
   &:not(.container--width_mod) {
     max-width: $page_width;
   }
+
+  &.container--sm {
+    max-width: 91rem;
+  }
 }

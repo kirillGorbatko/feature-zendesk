@@ -18,7 +18,7 @@ const integratedIcons = defaultIcons.map(
   (iconName) => `/images/solution-icons/${iconName}.png`
 );
 
-type SolutionIconsProps = {
+export type SolutionIconsProps = {
   icons?: string[];
   label?: string;
 };

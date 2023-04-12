@@ -89,7 +89,7 @@ export function PricingCard({
           <Image src="/images/pricing/line.png" layout="fill" />
         </div>
       )}
-      {index === 2 && (
+      {index === 1 && (
         <div className={classNames(styles['decor'], styles['decor--v3_mod'])}>
           <div className={styles['decor__shadow']}>
             <Image src="/images/pricing/purple-gradient.png" layout="fill" />

@@ -1,0 +1,380 @@
+{
+  "title": "Solutions Page - new_default",
+  "slug": "new_default",
+  "heroSection": {
+    "title": "Everything <br/>you need in <br/>one place. [VARIANT1]",
+    "description": "Create links and landing pages that direct fans to listen to your music in the right service, save your music, pre-save, follow, subscribe, buy tickets, enter a contest or connect it all together in your Artist Bio Link."
+  },
+  "allLinksComeWith": {
+    "title": "You should know that all our smart links come with:",
+    "features": [
+      {
+        "title": {
+          "desktop": "Automated content discovery",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "We automatically find your music in popular music services like Spotify, Apple Music, Amazon and more to create your link in seconds. You can choose from hundreds of additional services or add your own.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "http://",
+        "imageUrl": "/img/solutions/feature-links.png",
+        "id": "6324e96d6982b64faba17609"
+      },
+      {
+        "title": {
+          "desktop": "Audience managment",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Learn how your fans get to your music and understand key behavioral insights to make smarter marketing decisions. Connect your data to retargeting and 3rd party data platforms",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "http://",
+        "imageUrl": "/img/solutions/audience.png",
+        "id": "6324e96d6982b64faba1760a"
+      },
+      {
+        "title": {
+          "desktop": "Analytics and insights",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Maintain all of your fan contacts. Easily manage all of your fan contacts, collected in an intuitive fan database to keep control of fan contact info, activity and demographics.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "http://",
+        "imageUrl": "/img/solutions/analytics.png",
+        "id": "6324e96d6982b64faba1760b"
+      }
+    ]
+  },
+  "landingPagesSection": {
+    "features": [
+      {
+        "tag": "Artist Bio Links",
+        "title": {
+          "desktop": "A single link that connects fans to all of your content",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "A Link in Bio made for music. Connect fans to your latest release, video, merch, tour, website, press coverage from all of your social media bios. Add any button type you need:",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/artist-bio-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Simple Links",
+            "id": "6324e96d6982b64faba17617"
+          },
+          {
+            "capability": "Messaging",
+            "id": "6324e96d6982b64faba17618"
+          },
+          {
+            "capability": "Action Buttons",
+            "id": "6324e96d6982b64faba17619"
+          },
+          {
+            "capability": "Email Collection Widgets",
+            "id": "6324e96d6982b64faba1761a"
+          },
+          {
+            "capability": "Media Embeds",
+            "id": "6324e96d6982b64faba1761b"
+          },
+          {
+            "capability": "Feature.fm Campaigns",
+            "id": "6324e96d6982b64faba1761c"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "primary"
+        },
+        "id": "6324e96d6982b64faba1760c"
+      },
+      {
+        "tag": "Release Links",
+        "title": {
+          "desktop": "The fastest way for fans to consume your music",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "A smart music link that automatically routes fans to your released music in the services they already use and tracks everything you need to grow your streams.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/release-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Automatically finds your music in popular services",
+            "id": "6324e96d6982b64faba1761d"
+          },
+          {
+            "capability": "Convert your pre-release music links automatically on release day",
+            "id": "6324e96d6982b64faba1761e"
+          },
+          {
+            "capability": "Customize by country with geo-aware links and language localization",
+            "id": "6324e96d6982b64faba1761f"
+          }
+        ],
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "secondary"
+        },
+        "id": "6324e96d6982b64faba1760d"
+      },
+      {
+        "tag": "Pre-Save Links",
+        "title": {
+          "desktop": "Build hype and maximize your streams on release day",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Market your music to fans ahead of your release date. Get fans to Pre-Save your music and guarantee streams, follows and playlist adds from day one.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/pre-save-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Your music saved automatically on release day",
+            "id": "6324e96d6982b64faba17620"
+          },
+          {
+            "capability": "Grow artist follows and playlist additions in one click",
+            "id": "6324e96d6982b64faba17621"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "primary"
+        },
+        "id": "6324e96d6982b64faba1760e"
+      },
+      {
+        "tag": "Tour Links",
+        "title": {
+          "desktop": "Sell more tickets to shows",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "A Link in Bio made for music. Connect fans to your latest release, video, merch, tour, website, press coverage from all of your social media bios. Add any button type you need:",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/tour-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Quickly add your tour dates by importing shows from Bandsintown ",
+            "id": "6324e96d6982b64faba17622"
+          },
+          {
+            "capability": "Keep loyal fans up to date on your show schedule",
+            "id": "6324e96d6982b64faba17623"
+          }
+        ],
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "secondary"
+        },
+        "id": "6324e96d6982b64faba1760f"
+      },
+      {
+        "tag": "Podcast Links",
+        "title": {
+          "desktop": "Drive listeners to your Podcast",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Automated Smart Podcast Links connect listeners to your podcast in their favorite audio platform.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/podcast-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Simple Links",
+            "id": "6324e96d6982b64faba17624"
+          },
+          {
+            "capability": "Messaging",
+            "id": "6324e96d6982b64faba17625"
+          },
+          {
+            "capability": "Action Buttons",
+            "id": "6324e96d6982b64faba17626"
+          }
+        ],
+        "isInverse": true,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "primary"
+        },
+        "id": "6324e96d6982b64faba17610"
+      },
+      {
+        "tag": "Contests",
+        "title": {
+          "desktop": "Reward your most loyal fans with contests and giveaways",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Build fan loyalty with easy-to-create contests that reward your fans with prizes and encourage additional entries for taking actions of your choice.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "imageUrl": "/img/solutions/contests-links.png",
+        "topCapabilites": [
+          {
+            "capability": "Supercharge your growth with music-focused actions",
+            "id": "6324e96d6982b64faba17627"
+          },
+          {
+            "capability": "Go viral with referrals",
+            "id": "6324e96d6982b64faba17628"
+          }
+        ],
+        "isInverse": false,
+        "padding": "normal",
+        "ctaButton": {
+          "text": "Start free",
+          "link": "https://login.feature.fm/signup",
+          "type": "secondary"
+        },
+        "id": "6324e96d6982b64faba17611"
+      }
+    ]
+  },
+  "allLinksComeWithMore": {
+    "title": "More amazing features that apply to all links",
+    "features": [
+      {
+        "title": {
+          "desktop": "Use time to your advantage and create some buzz",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Set a timer to your content drops. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "https://",
+        "id": "6324e96d6982b64faba17612"
+      },
+      {
+        "title": {
+          "desktop": "To be global is to interact with each fan locally",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Set different templates for geo locations and timezones. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "https://",
+        "id": "6324e96d6982b64faba17613"
+      },
+      {
+        "title": {
+          "desktop": "Another feature. customization maybe?",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "https://",
+        "id": "6324e96d6982b64faba17614"
+      }
+    ]
+  },
+  "youShouldAlsoCheckOut": {
+    "title": "Two more things you should check out ",
+    "features": [
+      {
+        "title": {
+          "desktop": "Performance Analytics & Insights",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Become a better music marketer by understanding fan behaviors and preferences across all of your marketing activities. Measure fan interactions, from visits to conversions, and break out data for deeper analysis.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/analytics",
+        "imageUrl": "/img/solutions/analytics.png",
+        "id": "6324e96d6982b64faba17615"
+      },
+      {
+        "title": {
+          "desktop": "Audience Relationship Management",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "description": {
+          "desktop": "Manage your relationships with your fans like never before, collect fan contact info, get real-time insights and keep your fans notified about your latest drops.",
+          "overrideMobile": false,
+          "overrideTablet": false
+        },
+        "link": "/solutions/audience",
+        "imageUrl": "/img/solutions/audience.png",
+        "id": "6324e96d6982b64faba17616"
+      }
+    ]
+  },
+  "getStartedCTASection": {
+    "title": {
+      "desktop": "Get Started for free",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "You can use Feature.fm for free or subscribe to one of our paid plans. All paid plans come with a free trial of our Pro plan",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Start free",
+      "link": "http://...",
+      "type": "primary"
+    }
+  },
+  "_status": "draft",
+  "id": "6324e9a9a5f0557e9fdfb9e4",
+  "meta": {}
+}

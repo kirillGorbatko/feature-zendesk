@@ -7,6 +7,7 @@ const className = cva(styles['container'], {
   variants: {
     width: {
       base: '',
+      sm: styles['container--sm'],
       full: styles['container--width_mod'],
     },
   },

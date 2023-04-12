@@ -39,7 +39,12 @@ export function FmTitle({
   variant,
   color,
   tag = 'div',
+  ...rest
 }: FmTitleProps) {
   const Tag = tag;
-  return <Tag className={className({ variant, color })}>{children}</Tag>;
+  return (
+    <Tag className={className({ variant, color })} {...rest}>
+      {children}
+    </Tag>
+  );
 }

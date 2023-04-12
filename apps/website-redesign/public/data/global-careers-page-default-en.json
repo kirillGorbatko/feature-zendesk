@@ -1,0 +1,71 @@
+{
+  "id": "63ea2d09dcebb0d2a419df86",
+  "heroSection": {
+    "title": {
+      "desktop": "Join our team and help artists <br/> turn their passion into <br/> successful careers.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "We want to work with pioneers who have a passion for music, can solve challenging problems, and want to make a real impact on helping artists reach their fans.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    }
+  },
+  "lookingForSection": {
+    "title": {
+      "desktop": "We are looking for…",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "qualities": [
+      {
+        "title": "Hard workers",
+        "description": "You do what it takes to get the job done, getting out what you put into it.",
+        "id": "63e82136b056c2c238b5de8f"
+      },
+      {
+        "title": "Self motivators",
+        "description": "You have the drive to push yourself, the team and the company forward.",
+        "id": "63e82136b056c2c238b5de90"
+      },
+      {
+        "title": "Problem solvers",
+        "description": "When things get challenging, you focus on finding solutions.",
+        "id": "63e82136b056c2c238b5de91"
+      },
+      {
+        "title": "Team players",
+        "description": "You value others abilities and contributions, allowing others to work together towards our common goals.",
+        "id": "63e82136b056c2c238b5de92"
+      },
+      {
+        "title": "Creative thinkers",
+        "description": "You have the aptitude to be creative and entrepreneurial in how you approach your work.",
+        "id": "63e82136b056c2c238b5de93"
+      }
+    ]
+  },
+  "joinTheTeamSection": {
+    "title": {
+      "desktop": "Ready to join us?",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "description": {
+      "desktop": "We are always open to connecting with people who believe in our mission and eager to join the team.",
+      "overrideMobile": false,
+      "overrideTablet": false
+    },
+    "ctaButton": {
+      "text": "Contact us at",
+      "link": "careers@feature.fm",
+      "type": "primary"
+    }
+  },
+  "_status": "published",
+  "globalType": "global-careers-page",
+  "createdAt": "2023-02-13T12:28:57.662Z",
+  "updatedAt": "2023-02-13T12:28:57.662Z",
+  "meta": {}
+}

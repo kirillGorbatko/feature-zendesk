@@ -1,0 +1,39 @@
+@import '../scss/helpers-all.scss';
+
+.card {}
+
+.card__title {
+  font-family: $font_gpsuper;
+
+  @include bp($tablet_max, min) {
+    font-size: 4rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    font-size: 3.5rem;
+  }
+
+  &:not(:last-child) {
+    @include bp($tablet_max, min) {
+      margin-bottom: 3.6rem;
+    }
+
+    @include bp($tablet_max - 1) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.card__descr {
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  @include bp($tablet_max, min) {
+    line-height: 1.45;
+    padding-left: 4rem;
+  }
+
+  @include bp($tablet_max - 1) {
+    line-height: 1.5;
+  }
+}
